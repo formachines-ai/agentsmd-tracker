@@ -49,6 +49,12 @@ PUBLIC_DIR = ROOT / "public"
 STATIC_DIR = ROOT / "static"                       # files copied verbatim into public/ (style.css)
 
 SITE_NAME = "AGENTS.md Tracker"
+TITLE_MAX = 70
+DESC_MAX = 160
+DEFAULT_DESCRIPTION = (f"{SITE_NAME}: daily count of AGENTS.md, CLAUDE.md, .cursorrules, copilot-instructions.md, "
+                       "llms.txt and other agent-instruction files in top GitHub repos.")
+METHOD = ("Top-by-stars sample of public repositories per language; one HEAD request per tracked path on the default branch; "
+          "only presence and size are recorded, never file contents.")
 SITE_HOST = "agentsmd.formachines.ai"
 SITE_BASE = f"https://{SITE_HOST}"
 RESPONSIBLE = "Dmitry, formachines.ai"
@@ -430,9 +436,29 @@ class GoLinks:
 
 
 # ----------------------------------------------------------------------------- rendering
-def layout(title: str, body: str, updated: str, *, description: str = "", canonical: str = "", extra_head: str = "") -> str:
-    desc = description or f"{SITE_NAME}: daily count of AGENTS.md, CLAUDE.md, .cursorrules, copilot-instructions.md, llms.txt and other agent-instruction files in top GitHub repositories."
+def clamp(text: str, limit: int) -> str:
+    """Shorten text to at most `limit` chars, cutting at a word boundary and ending with an ellipsis."""
+    if len(text) <= limit:
+        return text
+    cut = text[:limit - 1].rsplit(" ", 1)[0].rstrip(" ,;:-—·")
+    return cut + "…"
+
+
+def jsonld_block(data: dict) -> str:
+    """JSON-LD script; '<' is escaped so the payload can never close the tag."""
+    return '<script type="application/ld+json">' + json.dumps(data, ensure_ascii=False).replace("<", "\\u003c") + "</script>"
+
+
+def layout(title: str, body: str, updated: str, *, description: str = "", canonical: str = "", extra_head: str = "",
+           jsonld: dict | None = None) -> str:
+    title = clamp(title, TITLE_MAX)
+    desc = clamp(description or DEFAULT_DESCRIPTION, DESC_MAX)
     canon = f'<link rel="canonical" href="{esc(canonical)}">' if canonical else ""
+    og = (f'<meta property="og:title" content="{esc(title)}">\n<meta property="og:description" content="{esc(desc)}">\n'
+          f'<meta property="og:type" content="website">\n<meta property="og:site_name" content="{esc(SITE_NAME)}">\n')
+    og += f'<meta property="og:url" content="{esc(canonical or SITE_BASE + "/")}">\n'
+    if jsonld:
+        og += jsonld_block(jsonld) + "\n"
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -443,7 +469,7 @@ def layout(title: str, body: str, updated: str, *, description: str = "", canoni
 <meta name="color-scheme" content="light dark">
 <meta name="generator" content="agentsmd-tracker build.py (AI agents, no human editing)">
 {canon}
-<link rel="stylesheet" href="/style.css">
+{og}<link rel="stylesheet" href="/style.css">
 <link rel="alternate" type="application/rss+xml" title="New AGENTS.md files" href="/feed.xml">
 {extra_head}
 </head>
@@ -462,6 +488,11 @@ def layout(title: str, body: str, updated: str, *, description: str = "", canoni
 </body>
 </html>
 """
+
+
+def webpage_ld(name: str, url: str, modified: str) -> dict:
+    return {"@context": "https://schema.org", "@type": "WebPage", "name": clamp(name, TITLE_MAX), "url": url,
+            "dateModified": modified, "inLanguage": "en", "isPartOf": {"@type": "WebSite", "name": SITE_NAME, "url": SITE_BASE + "/"}}
 
 
 def sparkline(values: list[float], width: int = 260, height: int = 48, label: str = "") -> str:
@@ -602,9 +633,19 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
 <li><strong>Not done.</strong> No file contents are stored or shown. No accounts, no cookies, no JavaScript, no tracking of visitors.</li>
 </ul>
 </section>"""
-    write_text(out / "index.html", layout(f"{SITE_NAME} — which top GitHub repos have AGENTS.md, CLAUDE.md, .cursorrules?",
-                                           banner + hero + '<div class="cards">' + "".join(cards) + '</div>' + today_sec + lang_table + hist_sec + method,
-                                           updated, canonical=SITE_BASE + "/"))
+    day = updated[:10]
+    cite = f'<p class="cite muted">Cite as: {esc(SITE_NAME)}, {esc(SITE_HOST)}, {esc(day)}, CC BY 4.0</p>'
+    home_desc = (f"{agg['counts'][PRIMARY_PATH]:,} of {total:,} top GitHub repos have AGENTS.md ({pct(agg['counts'][PRIMARY_PATH], total)} %). "
+                 "Daily tracker of CLAUDE.md, .cursorrules, llms.txt and more.")
+    home_ld = {"@context": "https://schema.org", "@type": "Dataset", "name": f"{SITE_NAME}: agent-instruction files in top GitHub repositories",
+               "description": home_desc, "url": SITE_BASE + "/", "license": "https://creativecommons.org/licenses/by/4.0/",
+               "dateModified": updated, "isAccessibleForFree": True, "inLanguage": "en",
+               "creator": {"@type": "Organization", "name": "formachines.ai", "url": "https://formachines.ai/"},
+               "distribution": [{"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": SITE_BASE + "/stats.json"},
+                                {"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": SITE_BASE + "/today.json"}]}
+    write_text(out / "index.html", layout(f"{SITE_NAME} — AGENTS.md adoption in top GitHub repos",
+                                           banner + hero + cite + '<div class="cards">' + "".join(cards) + '</div>' + today_sec + lang_table + hist_sec + method,
+                                           updated, canonical=SITE_BASE + "/", description=home_desc, jsonld=home_ld))
 
     # ---- repo pages
     urls = [SITE_BASE + "/", SITE_BASE + "/legal/"]
@@ -635,9 +676,10 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
 <div class="scroll"><table><thead><tr><th>Path</th><th>Present</th><th>Size</th><th>Link</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div>
 <p class="muted">Only presence, size and a link are published; the file contents belong to the repository and are not reproduced here.</p>
 </section>"""
-        write_text(rdir / "index.html", layout(f"{r['full_name']} — agent instruction files — {SITE_NAME}", body, updated,
-                                              description=f"Does {r['full_name']} have AGENTS.md, CLAUDE.md, .cursorrules, copilot-instructions.md, llms.txt? Daily check by {SITE_NAME}.",
-                                              canonical=f"{SITE_BASE}/repo/{r['owner']}/{r['name']}/"))
+        write_text(rdir / "index.html", layout(f"{r['full_name']} — {SITE_NAME}", body, updated,
+                                              description=f"Does {r['full_name']} have AGENTS.md, CLAUDE.md, .cursorrules, copilot-instructions.md or llms.txt? Daily check by {SITE_NAME}.",
+                                              canonical=f"{SITE_BASE}/repo/{r['owner']}/{r['name']}/",
+                                              jsonld=webpage_ld(f"{r['full_name']} — {SITE_NAME}", f"{SITE_BASE}/repo/{r['owner']}/{r['name']}/", updated)))
         write_json(rdir / "index.json", {"repo": r["full_name"], "owner": r["owner"], "name": r["name"], "language": r["language"],
                                           "stars": r["stars"], "default_branch": (sc or {}).get("default_branch") or r.get("default_branch"),
                                           "status": status, "checked": checked if sc else None, "files": files_json,
@@ -647,6 +689,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
     # ---- JSON endpoints
     stats = {
         "site": SITE_BASE, "generated": updated, "license": "CC BY 4.0", "data_delayed": delayed,
+        "method": METHOD, "attribution": f"{SITE_NAME}, {SITE_HOST}, {updated[:10]}, CC BY 4.0",
         "sample": sample, "scanned": total, "pending": len(agg["pending"]), "unreachable": len(agg["unreachable"]),
         "paths": [s["path"] for s in PATHS],
         "counts": agg["counts"], "any": agg["any"],
@@ -714,9 +757,10 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
 <p class="muted">Sorted alphabetically by owner/name — not a ranking.</p>
 <div class="scroll"><table><thead><tr><th>Repository</th>{heads}</tr></thead><tbody>{''.join(trs)}</tbody></table></div>
 </section>"""
-        write_text(out / "lang" / slug / "index.html", layout(f"{lang} repositories — agent instruction files — {SITE_NAME}", body, updated,
+        write_text(out / "lang" / slug / "index.html", layout(f"{lang} repos — {SITE_NAME}", body, updated,
                    description=f"Which of the {v['repos']} sampled {lang} repositories have AGENTS.md, CLAUDE.md, .cursorrules and other agent-instruction files.",
-                   canonical=f"{SITE_BASE}/lang/{slug}/"))
+                   canonical=f"{SITE_BASE}/lang/{slug}/",
+                   jsonld=webpage_ld(f"{lang} repos — {SITE_NAME}", f"{SITE_BASE}/lang/{slug}/", updated)))
         urls.append(f"{SITE_BASE}/lang/{slug}/")
 
     # ---- llms.txt, robots.txt, sitemap.xml, 404, legal, go pages
@@ -769,7 +813,9 @@ Latest ({updated}): {agg['counts'][PRIMARY_PATH]} of {total} scanned repos ({pct
 <p>A maintainer who does not want their repository listed can ask via the contact on <a href="{esc(LEGAL_UPSTREAM)}">formachines.ai/legal</a>; the repository is then dropped from the sample at the next build.</p>
 <h2>AI disclosure</h2>
 <p>Texts, pages and daily social posts of this project are written by AI agents and marked as such (EU AI Act, Article 50).</p>
-</section>""", updated, canonical=SITE_BASE + "/legal/"))
+</section>""", updated, canonical=SITE_BASE + "/legal/",
+        description=f"Who is responsible for {SITE_NAME}, where the data comes from, CC BY 4.0 licence, privacy and removal requests.",
+        jsonld=webpage_ld("Legal — " + SITE_NAME, SITE_BASE + "/legal/", updated)))
     n_go = go.render(out)
     go.save()
     log.info("rendered: index, %d repo cards, %d go pages, stats/today/build json, feed, llms.txt, robots.txt, sitemap, 404, legal", len(repos), n_go)
