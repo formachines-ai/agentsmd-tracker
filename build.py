@@ -120,6 +120,10 @@ def scan_file_for(repo: dict) -> Path:
     return SCAN_DIR / f"{repo['owner']}__{repo['name']}.json"
 
 
+def lang_slug(lang: str) -> str:
+    s = lang.lower().replace("++", "-plus-plus").replace("#", "-sharp")
+    return re.sub(r"[^a-z0-9]+", "-", s).strip("-") or "other"
+
 def pct(n: int, m: int) -> float:
     return round(100.0 * n / m, 1) if m else 0.0
 
@@ -541,7 +545,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
     rows = []
     for lang, v in sorted(agg["by_lang"].items(), key=lambda kv: -kv[1]["repos"]):
         cells = "".join(f'<td>{v[s["path"]]}<span class="pc"> ({pct(v[s["path"]], v["repos"])} %)</span></td>' for s in PATHS)
-        rows.append(f"<tr><th scope=\"row\">{esc(lang)}</th><td>{v['repos']}</td><td>{v['any']}<span class=\"pc\"> ({pct(v['any'], v['repos'])} %)</span></td>{cells}</tr>")
+        rows.append(f"<tr><th scope=\"row\"><a href=\"/lang/{lang_slug(lang)}/\">{esc(lang)}</a></th><td>{v['repos']}</td><td>{v['any']}<span class=\"pc\"> ({pct(v['any'], v['repos'])} %)</span></td>{cells}</tr>")
     heads = "".join(f'<th><code>{esc(s["label"])}</code></th>' for s in PATHS)
     lang_table = f"""<section id="languages">
 <h2>By language</h2>
@@ -693,6 +697,28 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
 """
     write_text(out / "feed.xml", feed)
 
+    # ---- language pages
+    for lang, v in sorted(agg["by_lang"].items()):
+        slug = lang_slug(lang)
+        lrepos = sorted((r for r in agg["ok"] if r["language"] == lang), key=lambda r: r["full_name"].lower())
+        trs = []
+        for r in lrepos:
+            fl = scans[r["full_name"]]["files"]
+            cells = "".join('<td class="yes">yes</td>' if fl.get(sp["path"], {}).get("present") else '<td class="no">no</td>' for sp in PATHS)
+            trs.append(f'<tr><th scope="row"><a href="/repo/{esc(r["owner"])}/{esc(r["name"])}/">{esc(r["full_name"])}</a></th>{cells}</tr>')
+        heads = "".join(f'<th><code>{esc(sp["label"])}</code></th>' for sp in PATHS)
+        body = f"""<section>
+<p class="crumb"><a href="/">{esc(SITE_NAME)}</a> › <a href="/#languages">languages</a> › {esc(lang)}</p>
+<h1>{esc(lang)} repositories</h1>
+<p class="lead">{v['repos']:,} of {total:,} scanned repositories ({pct(v['repos'], total)} %) are {esc(lang)}; {v[PRIMARY_PATH]} ({pct(v[PRIMARY_PATH], v['repos'])} %) have AGENTS.md. Data as of {esc(updated)}. Source: public GitHub, presence checks only; stats CC BY 4.0, cite as "{esc(SITE_NAME)}, {esc(SITE_HOST)}".</p>
+<p class="muted">Sorted alphabetically by owner/name — not a ranking.</p>
+<div class="scroll"><table><thead><tr><th>Repository</th>{heads}</tr></thead><tbody>{''.join(trs)}</tbody></table></div>
+</section>"""
+        write_text(out / "lang" / slug / "index.html", layout(f"{lang} repositories — agent instruction files — {SITE_NAME}", body, updated,
+                   description=f"Which of the {v['repos']} sampled {lang} repositories have AGENTS.md, CLAUDE.md, .cursorrules and other agent-instruction files.",
+                   canonical=f"{SITE_BASE}/lang/{slug}/"))
+        urls.append(f"{SITE_BASE}/lang/{slug}/")
+
     # ---- llms.txt, robots.txt, sitemap.xml, 404, legal, go pages
     write_text(out / "llms.txt", f"""# {SITE_NAME}
 
@@ -709,6 +735,7 @@ Latest ({updated}): {agg['counts'][PRIMARY_PATH]} of {total} scanned repos ({pct
 
 ## Pages
 - [Home]({SITE_BASE}/): headline numbers, added-today feed, by-language table, by-day table, method
+- [Language page]({SITE_BASE}/lang/<slug>/): every sampled repo of one language (e.g. /lang/go/, /lang/c-plus-plus/) with yes/no per tracked path, alphabetical
 - [Repo card]({SITE_BASE}/repo/<owner>/<name>/): per-repository presence table with links
 - [Legal]({SITE_BASE}/legal/): responsible person, data source, licence
 

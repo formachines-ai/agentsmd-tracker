@@ -1,7 +1,7 @@
 {
  "site": "https://agentsmd.formachines.ai",
- "built_at": "2026-11-02T18:26:07Z",
- "build_seconds": 3.7,
+ "built_at": "2026-11-02T21:29:38Z",
+ "build_seconds": 0.1,
  "sample": 1922,
  "scanned_ok": 1922,
  "pending": 0,
@@ -9,17 +9,7 @@
  "last_checked": "2026-11-02T18:26:07Z",
  "data_delayed": false,
  "delay_reason": "",
- "scan": {
-  "scanned": 1,
-  "ok": 1,
-  "unreachable": 0,
-  "error": 0,
-  "partial": 0,
-  "rate_limited": false,
-  "stopped": false,
-  "added": 0,
-  "removed": 0
- },
+ "scan": null,
  "paths": [
   "AGENTS.md",
   "CLAUDE.md",
@@ -30,5 +20,5 @@
   "GEMINI.md",
   ".windsurfrules"
  ],
- "github_token": false
+ "github_token": true
 }
