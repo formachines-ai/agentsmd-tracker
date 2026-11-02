@@ -1,0 +1,54 @@
+{
+ "repo": "Sylius/Sylius",
+ "owner": "Sylius",
+ "name": "Sylius",
+ "language": "PHP",
+ "stars": 8564,
+ "default_branch": "2.3",
+ "status": "ok",
+ "checked": "2026-11-02T18:13:27Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 6697,
+   "url": "https://github.com/Sylius/Sylius/blob/2.3/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 15,
+   "url": "https://github.com/Sylius/Sylius/blob/2.3/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 49,
+   "url": "https://github.com/Sylius/Sylius/blob/2.3/.github/copilot-instructions.md"
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/Sylius/Sylius/",
+ "license": "CC BY 4.0"
+}

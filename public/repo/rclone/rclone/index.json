@@ -1,0 +1,54 @@
+{
+ "repo": "rclone/rclone",
+ "owner": "rclone",
+ "name": "rclone",
+ "language": "Go",
+ "stars": 60728,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T17:10:51Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 8333,
+   "url": "https://github.com/rclone/rclone/blob/master/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 151,
+   "url": "https://github.com/rclone/rclone/blob/master/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/rclone/rclone/",
+ "license": "CC BY 4.0"
+}

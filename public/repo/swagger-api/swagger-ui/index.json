@@ -1,0 +1,54 @@
+{
+ "repo": "swagger-api/swagger-ui",
+ "owner": "swagger-api",
+ "name": "swagger-ui",
+ "language": "JavaScript",
+ "stars": 29071,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:36:56Z",
+ "files": {
+  "AGENTS.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 30748,
+   "url": "https://github.com/swagger-api/swagger-ui/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/swagger-api/swagger-ui/",
+ "license": "CC BY 4.0"
+}

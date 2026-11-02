@@ -1,0 +1,54 @@
+{
+ "repo": "doorkeeper-gem/doorkeeper",
+ "owner": "doorkeeper-gem",
+ "name": "doorkeeper",
+ "language": "Ruby",
+ "stars": 5532,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T18:21:53Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 3840,
+   "url": "https://github.com/doorkeeper-gem/doorkeeper/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": true,
+   "size": null,
+   "url": "https://github.com/doorkeeper-gem/doorkeeper/tree/main/.cursor/rules"
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/doorkeeper-gem/doorkeeper/",
+ "license": "CC BY 4.0"
+}

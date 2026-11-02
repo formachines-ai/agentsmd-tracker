@@ -1,0 +1,54 @@
+{
+ "repo": "kestra-io/kestra",
+ "owner": "kestra-io",
+ "name": "kestra",
+ "language": "Java",
+ "stars": 30122,
+ "default_branch": "develop",
+ "status": "ok",
+ "checked": "2026-11-02T17:35:28Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 31051,
+   "url": "https://github.com/kestra-io/kestra/blob/develop/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 10,
+   "url": "https://github.com/kestra-io/kestra/blob/develop/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/kestra-io/kestra/",
+ "license": "CC BY 4.0"
+}

@@ -1,0 +1,54 @@
+{
+ "repo": "ant-design/ant-design",
+ "owner": "ant-design",
+ "name": "ant-design",
+ "language": "TypeScript",
+ "stars": 100045,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T17:03:13Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 14851,
+   "url": "https://github.com/ant-design/ant-design/blob/master/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 9,
+   "url": "https://github.com/ant-design/ant-design/blob/master/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 9593,
+   "url": "https://github.com/ant-design/ant-design/blob/master/.github/copilot-instructions.md"
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/ant-design/ant-design/",
+ "license": "CC BY 4.0"
+}

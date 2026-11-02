@@ -1,0 +1,54 @@
+{
+ "repo": "highlightjs/highlight.js",
+ "owner": "highlightjs",
+ "name": "highlight.js",
+ "language": "JavaScript",
+ "stars": 25012,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:43:07Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 6727,
+   "url": "https://github.com/highlightjs/highlight.js/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/highlightjs/highlight.js/",
+ "license": "CC BY 4.0"
+}

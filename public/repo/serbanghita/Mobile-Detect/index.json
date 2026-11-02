@@ -1,0 +1,54 @@
+{
+ "repo": "serbanghita/Mobile-Detect",
+ "owner": "serbanghita",
+ "name": "Mobile-Detect",
+ "language": "PHP",
+ "stars": 10676,
+ "default_branch": "4.x",
+ "status": "ok",
+ "checked": "2026-11-02T18:09:14Z",
+ "files": {
+  "AGENTS.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 3084,
+   "url": "https://github.com/serbanghita/Mobile-Detect/blob/4.x/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/serbanghita/Mobile-Detect/",
+ "license": "CC BY 4.0"
+}

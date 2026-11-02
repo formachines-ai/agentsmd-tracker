@@ -1,0 +1,54 @@
+{
+ "repo": "addyosmani/agent-skills",
+ "owner": "addyosmani",
+ "name": "agent-skills",
+ "language": "JavaScript",
+ "stars": 112735,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:02:22Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 5386,
+   "url": "https://github.com/addyosmani/agent-skills/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 4094,
+   "url": "https://github.com/addyosmani/agent-skills/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/addyosmani/agent-skills/",
+ "license": "CC BY 4.0"
+}

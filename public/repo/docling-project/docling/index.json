@@ -1,0 +1,54 @@
+{
+ "repo": "docling-project/docling",
+ "owner": "docling-project",
+ "name": "docling",
+ "language": "Python",
+ "stars": 70014,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:08:17Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 4103,
+   "url": "https://github.com/docling-project/docling/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 149,
+   "url": "https://github.com/docling-project/docling/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/docling-project/docling/",
+ "license": "CC BY 4.0"
+}

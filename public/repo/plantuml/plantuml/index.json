@@ -1,0 +1,54 @@
+{
+ "repo": "plantuml/plantuml",
+ "owner": "plantuml",
+ "name": "plantuml",
+ "language": "Java",
+ "stars": 13393,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T18:04:44Z",
+ "files": {
+  "AGENTS.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 4594,
+   "url": "https://github.com/plantuml/plantuml/blob/master/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 141,
+   "url": "https://github.com/plantuml/plantuml/blob/master/.github/copilot-instructions.md"
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/plantuml/plantuml/",
+ "license": "CC BY 4.0"
+}

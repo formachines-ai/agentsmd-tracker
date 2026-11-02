@@ -1,0 +1,54 @@
+{
+ "repo": "ai-job-search-dev/ai-job-search",
+ "owner": "ai-job-search-dev",
+ "name": "ai-job-search",
+ "language": "Python",
+ "stars": 68985,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T17:08:33Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 1586,
+   "url": "https://github.com/ai-job-search-dev/ai-job-search/blob/master/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 8957,
+   "url": "https://github.com/ai-job-search-dev/ai-job-search/blob/master/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/ai-job-search-dev/ai-job-search/",
+ "license": "CC BY 4.0"
+}

@@ -1,0 +1,54 @@
+{
+ "repo": "theonedev/onedev",
+ "owner": "theonedev",
+ "name": "onedev",
+ "language": "Java",
+ "stars": 15336,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:59:51Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 1447,
+   "url": "https://github.com/theonedev/onedev/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": true,
+   "size": null,
+   "url": "https://github.com/theonedev/onedev/tree/main/.cursor/rules"
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/theonedev/onedev/",
+ "license": "CC BY 4.0"
+}

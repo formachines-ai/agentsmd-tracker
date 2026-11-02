@@ -1,0 +1,54 @@
+{
+ "repo": "alibaba/druid",
+ "owner": "alibaba",
+ "name": "druid",
+ "language": "Java",
+ "stars": 28154,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T17:38:23Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 2447,
+   "url": "https://github.com/alibaba/druid/blob/master/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/alibaba/druid/",
+ "license": "CC BY 4.0"
+}

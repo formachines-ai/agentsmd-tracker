@@ -1,0 +1,54 @@
+{
+ "repo": "reactiveui/ReactiveUI",
+ "owner": "reactiveui",
+ "name": "ReactiveUI",
+ "language": "C#",
+ "stars": 8553,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T18:13:30Z",
+ "files": {
+  "AGENTS.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 12381,
+   "url": "https://github.com/reactiveui/ReactiveUI/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 409,
+   "url": "https://github.com/reactiveui/ReactiveUI/blob/main/.github/copilot-instructions.md"
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/reactiveui/ReactiveUI/",
+ "license": "CC BY 4.0"
+}

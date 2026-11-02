@@ -1,0 +1,54 @@
+{
+ "repo": "btcpayserver/btcpayserver",
+ "owner": "btcpayserver",
+ "name": "btcpayserver",
+ "language": "C#",
+ "stars": 7884,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T18:15:16Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 864,
+   "url": "https://github.com/btcpayserver/btcpayserver/blob/master/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/btcpayserver/btcpayserver/",
+ "license": "CC BY 4.0"
+}

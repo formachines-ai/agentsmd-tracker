@@ -1,0 +1,54 @@
+{
+ "repo": "Freika/dawarich",
+ "owner": "Freika",
+ "name": "dawarich",
+ "language": "Ruby",
+ "stars": 10814,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T18:08:56Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 2994,
+   "url": "https://github.com/Freika/dawarich/blob/master/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 25576,
+   "url": "https://github.com/Freika/dawarich/blob/master/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/Freika/dawarich/",
+ "license": "CC BY 4.0"
+}

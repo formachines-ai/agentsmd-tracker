@@ -1,0 +1,54 @@
+{
+ "repo": "barryvdh/laravel-ide-helper",
+ "owner": "barryvdh",
+ "name": "laravel-ide-helper",
+ "language": "PHP",
+ "stars": 14973,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T18:00:45Z",
+ "files": {
+  "AGENTS.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/barryvdh/laravel-ide-helper/",
+ "license": "CC BY 4.0"
+}

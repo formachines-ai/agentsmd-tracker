@@ -1,0 +1,54 @@
+{
+ "repo": "guzzle/promises",
+ "owner": "guzzle",
+ "name": "promises",
+ "language": "PHP",
+ "stars": 7705,
+ "default_branch": "3.1",
+ "status": "ok",
+ "checked": "2026-11-02T18:15:53Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 3758,
+   "url": "https://github.com/guzzle/promises/blob/3.1/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 11,
+   "url": "https://github.com/guzzle/promises/blob/3.1/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/guzzle/promises/",
+ "license": "CC BY 4.0"
+}

@@ -1,0 +1,54 @@
+{
+ "repo": "apache/skywalking",
+ "owner": "apache",
+ "name": "skywalking",
+ "language": "Java",
+ "stars": 24984,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T17:43:09Z",
+ "files": {
+  "AGENTS.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 26416,
+   "url": "https://github.com/apache/skywalking/blob/master/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/apache/skywalking/",
+ "license": "CC BY 4.0"
+}

@@ -1,0 +1,54 @@
+{
+ "repo": "google-gemini/gemini-cli",
+ "owner": "google-gemini",
+ "name": "gemini-cli",
+ "language": "TypeScript",
+ "stars": 108671,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:02:43Z",
+ "files": {
+  "AGENTS.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": true,
+   "size": 4610,
+   "url": "https://github.com/google-gemini/gemini-cli/blob/main/GEMINI.md"
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/google-gemini/gemini-cli/",
+ "license": "CC BY 4.0"
+}

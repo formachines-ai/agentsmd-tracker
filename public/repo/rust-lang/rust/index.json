@@ -1,0 +1,54 @@
+{
+ "repo": "rust-lang/rust",
+ "owner": "rust-lang",
+ "name": "rust",
+ "language": "Rust",
+ "stars": 120978,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:01:54Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 13848,
+   "url": "https://github.com/rust-lang/rust/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/rust-lang/rust/",
+ "license": "CC BY 4.0"
+}

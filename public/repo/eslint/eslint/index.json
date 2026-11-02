@@ -1,0 +1,54 @@
+{
+ "repo": "eslint/eslint",
+ "owner": "eslint",
+ "name": "eslint",
+ "language": "JavaScript",
+ "stars": 27604,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:39:11Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 8242,
+   "url": "https://github.com/eslint/eslint/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/eslint/eslint/",
+ "license": "CC BY 4.0"
+}

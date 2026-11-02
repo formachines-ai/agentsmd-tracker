@@ -1,0 +1,54 @@
+{
+ "repo": "forem/forem",
+ "owner": "forem",
+ "name": "forem",
+ "language": "Ruby",
+ "stars": 22818,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:46:30Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 9957,
+   "url": "https://github.com/forem/forem/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 11,
+   "url": "https://github.com/forem/forem/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": true,
+   "size": 9957,
+   "url": "https://github.com/forem/forem/blob/main/.cursorrules"
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 9957,
+   "url": "https://github.com/forem/forem/blob/main/.github/copilot-instructions.md"
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": true,
+   "size": 9957,
+   "url": "https://github.com/forem/forem/blob/main/.windsurfrules"
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/forem/forem/",
+ "license": "CC BY 4.0"
+}

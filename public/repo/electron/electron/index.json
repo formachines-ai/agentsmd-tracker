@@ -1,0 +1,54 @@
+{
+ "repo": "electron/electron",
+ "owner": "electron",
+ "name": "electron",
+ "language": "C++",
+ "stars": 123714,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:01:50Z",
+ "files": {
+  "AGENTS.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 13996,
+   "url": "https://github.com/electron/electron/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 4707,
+   "url": "https://github.com/electron/electron/blob/main/.github/copilot-instructions.md"
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/electron/electron/",
+ "license": "CC BY 4.0"
+}

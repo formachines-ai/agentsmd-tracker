@@ -1,0 +1,54 @@
+{
+ "repo": "maboloshi/github-chinese",
+ "owner": "maboloshi",
+ "name": "github-chinese",
+ "language": "JavaScript",
+ "stars": 37535,
+ "default_branch": "gh-pages",
+ "status": "ok",
+ "checked": "2026-11-02T17:26:33Z",
+ "files": {
+  "AGENTS.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 51,
+   "url": "https://github.com/maboloshi/github-chinese/blob/gh-pages/.github/copilot-instructions.md"
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/maboloshi/github-chinese/",
+ "license": "CC BY 4.0"
+}

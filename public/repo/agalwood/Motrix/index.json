@@ -1,0 +1,54 @@
+{
+ "repo": "agalwood/Motrix",
+ "owner": "agalwood",
+ "name": "Motrix",
+ "language": "TypeScript",
+ "stars": 57710,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:12:01Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 694,
+   "url": "https://github.com/agalwood/Motrix/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 2704,
+   "url": "https://github.com/agalwood/Motrix/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/agalwood/Motrix/",
+ "license": "CC BY 4.0"
+}

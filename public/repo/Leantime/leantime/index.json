@@ -1,0 +1,54 @@
+{
+ "repo": "Leantime/leantime",
+ "owner": "Leantime",
+ "name": "leantime",
+ "language": "PHP",
+ "stars": 11954,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T18:07:13Z",
+ "files": {
+  "AGENTS.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 53766,
+   "url": "https://github.com/Leantime/leantime/blob/master/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/Leantime/leantime/",
+ "license": "CC BY 4.0"
+}

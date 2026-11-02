@@ -1,0 +1,54 @@
+{
+ "repo": "CopilotKit/CopilotKit",
+ "owner": "CopilotKit",
+ "name": "CopilotKit",
+ "language": "TypeScript",
+ "stars": 38475,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:25:38Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 9809,
+   "url": "https://github.com/CopilotKit/CopilotKit/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 4185,
+   "url": "https://github.com/CopilotKit/CopilotKit/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": true,
+   "size": null,
+   "url": "https://github.com/CopilotKit/CopilotKit/tree/main/.cursor/rules"
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/CopilotKit/CopilotKit/",
+ "license": "CC BY 4.0"
+}

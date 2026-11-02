@@ -1,0 +1,54 @@
+{
+ "repo": "Dokploy/dokploy",
+ "owner": "Dokploy",
+ "name": "dokploy",
+ "language": "TypeScript",
+ "stars": 38195,
+ "default_branch": "canary",
+ "status": "ok",
+ "checked": "2026-11-02T17:25:55Z",
+ "files": {
+  "AGENTS.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 326,
+   "url": "https://github.com/Dokploy/dokploy/blob/canary/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/Dokploy/dokploy/",
+ "license": "CC BY 4.0"
+}

@@ -1,0 +1,54 @@
+{
+ "repo": "bagisto/bagisto",
+ "owner": "bagisto",
+ "name": "bagisto",
+ "language": "PHP",
+ "stars": 28324,
+ "default_branch": "2.5",
+ "status": "ok",
+ "checked": "2026-11-02T17:38:10Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 15462,
+   "url": "https://github.com/bagisto/bagisto/blob/2.5/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 119,
+   "url": "https://github.com/bagisto/bagisto/blob/2.5/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 343,
+   "url": "https://github.com/bagisto/bagisto/blob/2.5/.github/copilot-instructions.md"
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/bagisto/bagisto/",
+ "license": "CC BY 4.0"
+}

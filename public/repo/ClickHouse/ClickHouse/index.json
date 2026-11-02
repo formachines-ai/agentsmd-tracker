@@ -1,0 +1,54 @@
+{
+ "repo": "ClickHouse/ClickHouse",
+ "owner": "ClickHouse",
+ "name": "ClickHouse",
+ "language": "C++",
+ "stars": 50719,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T17:15:10Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 17,
+   "url": "https://github.com/ClickHouse/ClickHouse/blob/master/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 87,
+   "url": "https://github.com/ClickHouse/ClickHouse/blob/master/.github/copilot-instructions.md"
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/ClickHouse/ClickHouse/",
+ "license": "CC BY 4.0"
+}

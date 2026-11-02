@@ -1,0 +1,54 @@
+{
+ "repo": "wled/WLED",
+ "owner": "wled",
+ "name": "WLED",
+ "language": "C++",
+ "stars": 18956,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:52:29Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 26283,
+   "url": "https://github.com/wled/WLED/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 8306,
+   "url": "https://github.com/wled/WLED/blob/main/.github/copilot-instructions.md"
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/wled/WLED/",
+ "license": "CC BY 4.0"
+}

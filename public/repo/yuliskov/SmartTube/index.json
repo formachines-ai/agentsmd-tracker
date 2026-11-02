@@ -1,0 +1,54 @@
+{
+ "repo": "yuliskov/SmartTube",
+ "owner": "yuliskov",
+ "name": "SmartTube",
+ "language": "Java",
+ "stars": 35844,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T17:28:18Z",
+ "files": {
+  "AGENTS.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/yuliskov/SmartTube/",
+ "license": "CC BY 4.0"
+}

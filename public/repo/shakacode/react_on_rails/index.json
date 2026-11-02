@@ -1,0 +1,54 @@
+{
+ "repo": "shakacode/react_on_rails",
+ "owner": "shakacode",
+ "name": "react_on_rails",
+ "language": "Ruby",
+ "stars": 5192,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T18:22:33Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 83746,
+   "url": "https://github.com/shakacode/react_on_rails/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 2831,
+   "url": "https://github.com/shakacode/react_on_rails/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": true,
+   "size": 4767,
+   "url": "https://github.com/shakacode/react_on_rails/blob/main/llms.txt"
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/shakacode/react_on_rails/",
+ "license": "CC BY 4.0"
+}

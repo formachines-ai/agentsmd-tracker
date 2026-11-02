@@ -1,0 +1,54 @@
+{
+ "repo": "laurent22/joplin",
+ "owner": "laurent22",
+ "name": "joplin",
+ "language": "TypeScript",
+ "stars": 56992,
+ "default_branch": "dev",
+ "status": "ok",
+ "checked": "2026-11-02T17:12:32Z",
+ "files": {
+  "AGENTS.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 2184,
+   "url": "https://github.com/laurent22/joplin/blob/dev/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/laurent22/joplin/",
+ "license": "CC BY 4.0"
+}

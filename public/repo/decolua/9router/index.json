@@ -1,0 +1,54 @@
+{
+ "repo": "decolua/9router",
+ "owner": "decolua",
+ "name": "9router",
+ "language": "JavaScript",
+ "stars": 31849,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T17:33:45Z",
+ "files": {
+  "AGENTS.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 8186,
+   "url": "https://github.com/decolua/9router/blob/master/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/decolua/9router/",
+ "license": "CC BY 4.0"
+}

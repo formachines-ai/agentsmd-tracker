@@ -1,0 +1,54 @@
+{
+ "repo": "openmediavault/openmediavault",
+ "owner": "openmediavault",
+ "name": "openmediavault",
+ "language": "PHP",
+ "stars": 7061,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T18:17:58Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 4389,
+   "url": "https://github.com/openmediavault/openmediavault/blob/master/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 1750,
+   "url": "https://github.com/openmediavault/openmediavault/blob/master/.github/copilot-instructions.md"
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/openmediavault/openmediavault/",
+ "license": "CC BY 4.0"
+}

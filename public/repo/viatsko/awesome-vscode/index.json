@@ -1,0 +1,54 @@
+{
+ "repo": "viatsko/awesome-vscode",
+ "owner": "viatsko",
+ "name": "awesome-vscode",
+ "language": "JavaScript",
+ "stars": 29187,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T17:36:43Z",
+ "files": {
+  "AGENTS.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 2086,
+   "url": "https://github.com/viatsko/awesome-vscode/blob/master/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/viatsko/awesome-vscode/",
+ "license": "CC BY 4.0"
+}

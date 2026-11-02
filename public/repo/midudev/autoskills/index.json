@@ -1,0 +1,54 @@
+{
+ "repo": "midudev/autoskills",
+ "owner": "midudev",
+ "name": "autoskills",
+ "language": "Ruby",
+ "stars": 6983,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T18:18:14Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 2296,
+   "url": "https://github.com/midudev/autoskills/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/midudev/autoskills/",
+ "license": "CC BY 4.0"
+}

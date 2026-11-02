@@ -1,0 +1,54 @@
+{
+ "repo": "FreshRSS/FreshRSS",
+ "owner": "FreshRSS",
+ "name": "FreshRSS",
+ "language": "PHP",
+ "stars": 16492,
+ "default_branch": "edge",
+ "status": "ok",
+ "checked": "2026-11-02T17:57:12Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 4594,
+   "url": "https://github.com/FreshRSS/FreshRSS/blob/edge/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/FreshRSS/FreshRSS/",
+ "license": "CC BY 4.0"
+}

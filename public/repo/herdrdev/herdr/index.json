@@ -1,0 +1,54 @@
+{
+ "repo": "herdrdev/herdr",
+ "owner": "herdrdev",
+ "name": "herdr",
+ "language": "Rust",
+ "stars": 47528,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T17:17:06Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 30942,
+   "url": "https://github.com/herdrdev/herdr/blob/master/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/herdrdev/herdr/",
+ "license": "CC BY 4.0"
+}

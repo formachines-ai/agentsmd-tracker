@@ -1,0 +1,20 @@
+{
+ "site": "https://agentsmd.formachines.ai",
+ "date": "2026-11-02",
+ "generated": "2026-11-02T18:26:07Z",
+ "license": "CC BY 4.0",
+ "added": [],
+ "removed": [],
+ "counts": {
+  "AGENTS.md": 540,
+  "CLAUDE.md": 325,
+  ".cursorrules": 16,
+  ".cursor/rules": 35,
+  ".github/copilot-instructions.md": 163,
+  "llms.txt": 17,
+  "GEMINI.md": 21,
+  ".windsurfrules": 6
+ },
+ "scanned": 1922,
+ "pending": 0
+}

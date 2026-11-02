@@ -1,0 +1,54 @@
+{
+ "repo": "Significant-Gravitas/AutoGPT",
+ "owner": "Significant-Gravitas",
+ "name": "AutoGPT",
+ "language": "Python",
+ "stars": 187873,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T17:00:15Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 12066,
+   "url": "https://github.com/Significant-Gravitas/AutoGPT/blob/master/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 11,
+   "url": "https://github.com/Significant-Gravitas/AutoGPT/blob/master/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 12359,
+   "url": "https://github.com/Significant-Gravitas/AutoGPT/blob/master/.github/copilot-instructions.md"
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/Significant-Gravitas/AutoGPT/",
+ "license": "CC BY 4.0"
+}

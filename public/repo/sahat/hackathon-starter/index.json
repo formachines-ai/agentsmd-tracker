@@ -1,0 +1,54 @@
+{
+ "repo": "sahat/hackathon-starter",
+ "owner": "sahat",
+ "name": "hackathon-starter",
+ "language": "JavaScript",
+ "stars": 35260,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T17:28:44Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 29994,
+   "url": "https://github.com/sahat/hackathon-starter/blob/master/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 171,
+   "url": "https://github.com/sahat/hackathon-starter/blob/master/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/sahat/hackathon-starter/",
+ "license": "CC BY 4.0"
+}

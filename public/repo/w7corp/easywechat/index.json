@@ -1,0 +1,54 @@
+{
+ "repo": "w7corp/easywechat",
+ "owner": "w7corp",
+ "name": "easywechat",
+ "language": "PHP",
+ "stars": 10365,
+ "default_branch": "6.x",
+ "status": "ok",
+ "checked": "2026-11-02T18:09:39Z",
+ "files": {
+  "AGENTS.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/w7corp/easywechat/",
+ "license": "CC BY 4.0"
+}

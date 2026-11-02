@@ -1,0 +1,54 @@
+{
+ "repo": "ml-explore/mlx",
+ "owner": "ml-explore",
+ "name": "mlx",
+ "language": "C++",
+ "stars": 29026,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:36:58Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 1595,
+   "url": "https://github.com/ml-explore/mlx/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/ml-explore/mlx/",
+ "license": "CC BY 4.0"
+}

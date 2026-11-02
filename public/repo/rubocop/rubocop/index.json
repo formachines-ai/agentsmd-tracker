@@ -1,0 +1,54 @@
+{
+ "repo": "rubocop/rubocop",
+ "owner": "rubocop",
+ "name": "rubocop",
+ "language": "Ruby",
+ "stars": 12918,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T18:05:30Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 12286,
+   "url": "https://github.com/rubocop/rubocop/blob/master/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 11,
+   "url": "https://github.com/rubocop/rubocop/blob/master/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/rubocop/rubocop/",
+ "license": "CC BY 4.0"
+}

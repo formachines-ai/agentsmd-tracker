@@ -1,0 +1,54 @@
+{
+ "repo": "JanDeDobbeleer/oh-my-posh",
+ "owner": "JanDeDobbeleer",
+ "name": "oh-my-posh",
+ "language": "Go",
+ "stars": 23696,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:45:25Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 4523,
+   "url": "https://github.com/JanDeDobbeleer/oh-my-posh/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 258,
+   "url": "https://github.com/JanDeDobbeleer/oh-my-posh/blob/main/.github/copilot-instructions.md"
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/JanDeDobbeleer/oh-my-posh/",
+ "license": "CC BY 4.0"
+}

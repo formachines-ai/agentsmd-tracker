@@ -1,0 +1,54 @@
+{
+ "repo": "hyprwm/Hyprland",
+ "owner": "hyprwm",
+ "name": "Hyprland",
+ "language": "C++",
+ "stars": 39757,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:23:39Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 6206,
+   "url": "https://github.com/hyprwm/Hyprland/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/hyprwm/Hyprland/",
+ "license": "CC BY 4.0"
+}

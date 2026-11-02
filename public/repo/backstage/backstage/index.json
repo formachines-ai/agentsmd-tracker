@@ -1,0 +1,54 @@
+{
+ "repo": "backstage/backstage",
+ "owner": "backstage",
+ "name": "backstage",
+ "language": "TypeScript",
+ "stars": 34768,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T17:29:26Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 8254,
+   "url": "https://github.com/backstage/backstage/blob/master/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 2855,
+   "url": "https://github.com/backstage/backstage/blob/master/.github/copilot-instructions.md"
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/backstage/backstage/",
+ "license": "CC BY 4.0"
+}

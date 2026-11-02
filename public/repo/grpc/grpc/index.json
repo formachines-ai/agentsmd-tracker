@@ -1,0 +1,54 @@
+{
+ "repo": "grpc/grpc",
+ "owner": "grpc",
+ "name": "grpc",
+ "language": "C++",
+ "stars": 45418,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T17:18:45Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 3176,
+   "url": "https://github.com/grpc/grpc/blob/master/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/grpc/grpc/",
+ "license": "CC BY 4.0"
+}

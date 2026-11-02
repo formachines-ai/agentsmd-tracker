@@ -1,0 +1,54 @@
+{
+ "repo": "unknwon/the-way-to-go_ZH_CN",
+ "owner": "unknwon",
+ "name": "the-way-to-go_ZH_CN",
+ "language": "Go",
+ "stars": 35002,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T17:29:07Z",
+ "files": {
+  "AGENTS.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/unknwon/the-way-to-go_ZH_CN/",
+ "license": "CC BY 4.0"
+}

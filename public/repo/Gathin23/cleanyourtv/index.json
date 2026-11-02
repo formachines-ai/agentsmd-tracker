@@ -1,0 +1,54 @@
+{
+ "repo": "Gathin23/cleanyourtv",
+ "owner": "Gathin23",
+ "name": "cleanyourtv",
+ "language": "Python",
+ "stars": 50090,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:15:42Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 16138,
+   "url": "https://github.com/Gathin23/cleanyourtv/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 117,
+   "url": "https://github.com/Gathin23/cleanyourtv/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": true,
+   "size": 116,
+   "url": "https://github.com/Gathin23/cleanyourtv/blob/main/GEMINI.md"
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/Gathin23/cleanyourtv/",
+ "license": "CC BY 4.0"
+}

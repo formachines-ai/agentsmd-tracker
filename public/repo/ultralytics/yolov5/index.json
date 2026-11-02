@@ -1,0 +1,54 @@
+{
+ "repo": "ultralytics/yolov5",
+ "owner": "ultralytics",
+ "name": "yolov5",
+ "language": "Python",
+ "stars": 58246,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T17:11:49Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 7624,
+   "url": "https://github.com/ultralytics/yolov5/blob/master/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 9,
+   "url": "https://github.com/ultralytics/yolov5/blob/master/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/ultralytics/yolov5/",
+ "license": "CC BY 4.0"
+}

@@ -1,0 +1,54 @@
+{
+ "repo": "reactiveui/refit",
+ "owner": "reactiveui",
+ "name": "refit",
+ "language": "C#",
+ "stars": 9577,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T18:11:15Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 122,
+   "url": "https://github.com/reactiveui/refit/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 15120,
+   "url": "https://github.com/reactiveui/refit/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/reactiveui/refit/",
+ "license": "CC BY 4.0"
+}

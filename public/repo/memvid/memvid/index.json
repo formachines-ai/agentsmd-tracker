@@ -1,0 +1,54 @@
+{
+ "repo": "memvid/memvid",
+ "owner": "memvid",
+ "name": "memvid",
+ "language": "Rust",
+ "stars": 17354,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:55:43Z",
+ "files": {
+  "AGENTS.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 3499,
+   "url": "https://github.com/memvid/memvid/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/memvid/memvid/",
+ "license": "CC BY 4.0"
+}

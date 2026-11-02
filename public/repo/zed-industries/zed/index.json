@@ -1,0 +1,54 @@
+{
+ "repo": "zed-industries/zed",
+ "owner": "zed-industries",
+ "name": "zed",
+ "language": "Rust",
+ "stars": 92559,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:04:10Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 6,
+   "url": "https://github.com/zed-industries/zed/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 6,
+   "url": "https://github.com/zed-industries/zed/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": true,
+   "size": 6,
+   "url": "https://github.com/zed-industries/zed/blob/main/GEMINI.md"
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/zed-industries/zed/",
+ "license": "CC BY 4.0"
+}

@@ -1,0 +1,54 @@
+{
+ "repo": "carla-simulator/carla",
+ "owner": "carla-simulator",
+ "name": "carla",
+ "language": "C++",
+ "stars": 14566,
+ "default_branch": "ue58-dev",
+ "status": "ok",
+ "checked": "2026-11-02T18:01:54Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 13583,
+   "url": "https://github.com/carla-simulator/carla/blob/ue58-dev/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/carla-simulator/carla/",
+ "license": "CC BY 4.0"
+}

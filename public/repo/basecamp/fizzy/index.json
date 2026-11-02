@@ -1,0 +1,54 @@
+{
+ "repo": "basecamp/fizzy",
+ "owner": "basecamp",
+ "name": "fizzy",
+ "language": "Ruby",
+ "stars": 8280,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T18:14:00Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 3696,
+   "url": "https://github.com/basecamp/fizzy/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/basecamp/fizzy/",
+ "license": "CC BY 4.0"
+}

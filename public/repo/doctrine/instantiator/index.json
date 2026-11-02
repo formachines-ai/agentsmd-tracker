@@ -1,0 +1,54 @@
+{
+ "repo": "doctrine/instantiator",
+ "owner": "doctrine",
+ "name": "instantiator",
+ "language": "PHP",
+ "stars": 10979,
+ "default_branch": "2.1.x",
+ "status": "ok",
+ "checked": "2026-11-02T18:08:43Z",
+ "files": {
+  "AGENTS.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/doctrine/instantiator/",
+ "license": "CC BY 4.0"
+}

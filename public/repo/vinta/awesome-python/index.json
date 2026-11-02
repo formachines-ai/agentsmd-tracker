@@ -1,0 +1,54 @@
+{
+ "repo": "vinta/awesome-python",
+ "owner": "vinta",
+ "name": "awesome-python",
+ "language": "Python",
+ "stars": 331960,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T16:58:36Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 2042,
+   "url": "https://github.com/vinta/awesome-python/blob/master/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 11,
+   "url": "https://github.com/vinta/awesome-python/blob/master/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/vinta/awesome-python/",
+ "license": "CC BY 4.0"
+}

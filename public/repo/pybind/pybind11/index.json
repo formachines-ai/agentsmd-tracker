@@ -1,0 +1,54 @@
+{
+ "repo": "pybind/pybind11",
+ "owner": "pybind",
+ "name": "pybind11",
+ "language": "C++",
+ "stars": 18027,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T17:54:06Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 6804,
+   "url": "https://github.com/pybind/pybind11/blob/master/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/pybind/pybind11/",
+ "license": "CC BY 4.0"
+}

@@ -1,0 +1,54 @@
+{
+ "repo": "Semantic-Org/Semantic-UI",
+ "owner": "Semantic-Org",
+ "name": "Semantic-UI",
+ "language": "JavaScript",
+ "stars": 51004,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T17:15:00Z",
+ "files": {
+  "AGENTS.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/Semantic-Org/Semantic-UI/",
+ "license": "CC BY 4.0"
+}

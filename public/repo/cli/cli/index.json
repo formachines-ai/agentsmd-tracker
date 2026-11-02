@@ -1,0 +1,54 @@
+{
+ "repo": "cli/cli",
+ "owner": "cli",
+ "name": "cli",
+ "language": "Go",
+ "stars": 46843,
+ "default_branch": "trunk",
+ "status": "ok",
+ "checked": "2026-11-02T17:17:33Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 5770,
+   "url": "https://github.com/cli/cli/blob/trunk/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/cli/cli/",
+ "license": "CC BY 4.0"
+}

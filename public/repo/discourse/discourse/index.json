@@ -1,0 +1,54 @@
+{
+ "repo": "discourse/discourse",
+ "owner": "discourse",
+ "name": "discourse",
+ "language": "Ruby",
+ "stars": 48047,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:16:43Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 12,
+   "url": "https://github.com/discourse/discourse/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 12,
+   "url": "https://github.com/discourse/discourse/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": true,
+   "size": null,
+   "url": "https://github.com/discourse/discourse/tree/main/.cursor/rules"
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": true,
+   "size": 12,
+   "url": "https://github.com/discourse/discourse/blob/main/GEMINI.md"
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/discourse/discourse/",
+ "license": "CC BY 4.0"
+}

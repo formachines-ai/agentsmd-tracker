@@ -1,0 +1,54 @@
+{
+ "repo": "hiyouga/LlamaFactory",
+ "owner": "hiyouga",
+ "name": "LlamaFactory",
+ "language": "Python",
+ "stars": 75848,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:07:03Z",
+ "files": {
+  "AGENTS.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 13,
+   "url": "https://github.com/hiyouga/LlamaFactory/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 6059,
+   "url": "https://github.com/hiyouga/LlamaFactory/blob/main/.github/copilot-instructions.md"
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/hiyouga/LlamaFactory/",
+ "license": "CC BY 4.0"
+}

@@ -1,0 +1,54 @@
+{
+ "repo": "headroomlabs-ai/headroom",
+ "owner": "headroomlabs-ai",
+ "name": "headroom",
+ "language": "Python",
+ "stars": 78645,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:06:19Z",
+ "files": {
+  "AGENTS.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 697,
+   "url": "https://github.com/headroomlabs-ai/headroom/blob/main/.github/copilot-instructions.md"
+  },
+  "llms.txt": {
+   "present": true,
+   "size": 6219,
+   "url": "https://github.com/headroomlabs-ai/headroom/blob/main/llms.txt"
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/headroomlabs-ai/headroom/",
+ "license": "CC BY 4.0"
+}

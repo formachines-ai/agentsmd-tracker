@@ -1,0 +1,54 @@
+{
+ "repo": "unoplatform/uno",
+ "owner": "unoplatform",
+ "name": "uno",
+ "language": "C#",
+ "stars": 10102,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T18:10:12Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 22449,
+   "url": "https://github.com/unoplatform/uno/blob/master/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 279,
+   "url": "https://github.com/unoplatform/uno/blob/master/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/unoplatform/uno/",
+ "license": "CC BY 4.0"
+}

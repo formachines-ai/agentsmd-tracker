@@ -1,0 +1,54 @@
+{
+ "repo": "doocs/leetcode",
+ "owner": "doocs",
+ "name": "leetcode",
+ "language": "Java",
+ "stars": 36749,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:27:19Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 10201,
+   "url": "https://github.com/doocs/leetcode/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 11,
+   "url": "https://github.com/doocs/leetcode/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/doocs/leetcode/",
+ "license": "CC BY 4.0"
+}

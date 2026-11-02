@@ -1,0 +1,54 @@
+{
+ "repo": "medusajs/medusa",
+ "owner": "medusajs",
+ "name": "medusa",
+ "language": "TypeScript",
+ "stars": 37059,
+ "default_branch": "develop",
+ "status": "ok",
+ "checked": "2026-11-02T17:27:07Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 18717,
+   "url": "https://github.com/medusajs/medusa/blob/develop/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 11,
+   "url": "https://github.com/medusajs/medusa/blob/develop/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/medusajs/medusa/",
+ "license": "CC BY 4.0"
+}

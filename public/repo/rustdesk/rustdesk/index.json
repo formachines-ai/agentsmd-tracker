@@ -1,0 +1,54 @@
+{
+ "repo": "rustdesk/rustdesk",
+ "owner": "rustdesk",
+ "name": "rustdesk",
+ "language": "Rust",
+ "stars": 127914,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T17:01:42Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 17465,
+   "url": "https://github.com/rustdesk/rustdesk/blob/master/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 11,
+   "url": "https://github.com/rustdesk/rustdesk/blob/master/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": true,
+   "size": 10,
+   "url": "https://github.com/rustdesk/rustdesk/blob/master/GEMINI.md"
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/rustdesk/rustdesk/",
+ "license": "CC BY 4.0"
+}

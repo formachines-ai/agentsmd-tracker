@@ -1,0 +1,54 @@
+{
+ "repo": "storybookjs/storybook",
+ "owner": "storybookjs",
+ "name": "storybook",
+ "language": "TypeScript",
+ "stars": 91427,
+ "default_branch": "next",
+ "status": "ok",
+ "checked": "2026-11-02T17:04:29Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 4028,
+   "url": "https://github.com/storybookjs/storybook/blob/next/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": true,
+   "size": 1763,
+   "url": "https://github.com/storybookjs/storybook/blob/next/.cursorrules"
+  },
+  ".cursor/rules": {
+   "present": true,
+   "size": null,
+   "url": "https://github.com/storybookjs/storybook/tree/next/.cursor/rules"
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/storybookjs/storybook/",
+ "license": "CC BY 4.0"
+}

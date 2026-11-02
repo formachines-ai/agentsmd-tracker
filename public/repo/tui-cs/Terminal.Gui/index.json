@@ -1,0 +1,54 @@
+{
+ "repo": "tui-cs/Terminal.Gui",
+ "owner": "tui-cs",
+ "name": "Terminal.Gui",
+ "language": "C#",
+ "stars": 11301,
+ "default_branch": "develop",
+ "status": "ok",
+ "checked": "2026-11-02T18:08:05Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 33319,
+   "url": "https://github.com/tui-cs/Terminal.Gui/blob/develop/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 7877,
+   "url": "https://github.com/tui-cs/Terminal.Gui/blob/develop/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": true,
+   "size": 4260,
+   "url": "https://github.com/tui-cs/Terminal.Gui/blob/develop/.cursorrules"
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 7793,
+   "url": "https://github.com/tui-cs/Terminal.Gui/blob/develop/.github/copilot-instructions.md"
+  },
+  "llms.txt": {
+   "present": true,
+   "size": 13344,
+   "url": "https://github.com/tui-cs/Terminal.Gui/blob/develop/llms.txt"
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": true,
+   "size": 4262,
+   "url": "https://github.com/tui-cs/Terminal.Gui/blob/develop/.windsurfrules"
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/tui-cs/Terminal.Gui/",
+ "license": "CC BY 4.0"
+}

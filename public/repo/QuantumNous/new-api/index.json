@@ -1,0 +1,54 @@
+{
+ "repo": "QuantumNous/new-api",
+ "owner": "QuantumNous",
+ "name": "new-api",
+ "language": "Go",
+ "stars": 51214,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:14:45Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 27282,
+   "url": "https://github.com/QuantumNous/new-api/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 995,
+   "url": "https://github.com/QuantumNous/new-api/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/QuantumNous/new-api/",
+ "license": "CC BY 4.0"
+}

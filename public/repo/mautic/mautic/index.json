@@ -1,0 +1,54 @@
+{
+ "repo": "mautic/mautic",
+ "owner": "mautic",
+ "name": "mautic",
+ "language": "PHP",
+ "stars": 10893,
+ "default_branch": "7.x",
+ "status": "ok",
+ "checked": "2026-11-02T18:08:48Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 5398,
+   "url": "https://github.com/mautic/mautic/blob/7.x/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 148,
+   "url": "https://github.com/mautic/mautic/blob/7.x/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": true,
+   "size": 148,
+   "url": "https://github.com/mautic/mautic/blob/7.x/GEMINI.md"
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/mautic/mautic/",
+ "license": "CC BY 4.0"
+}

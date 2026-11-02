@@ -1,0 +1,54 @@
+{
+ "repo": "halo-dev/halo",
+ "owner": "halo-dev",
+ "name": "halo",
+ "language": "Java",
+ "stars": 40105,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:23:24Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 2072,
+   "url": "https://github.com/halo-dev/halo/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 11,
+   "url": "https://github.com/halo-dev/halo/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/halo-dev/halo/",
+ "license": "CC BY 4.0"
+}

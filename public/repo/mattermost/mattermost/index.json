@@ -1,0 +1,54 @@
+{
+ "repo": "mattermost/mattermost",
+ "owner": "mattermost",
+ "name": "mattermost",
+ "language": "TypeScript",
+ "stars": 39509,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T17:24:08Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 742,
+   "url": "https://github.com/mattermost/mattermost/blob/master/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/mattermost/mattermost/",
+ "license": "CC BY 4.0"
+}

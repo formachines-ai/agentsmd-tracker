@@ -1,0 +1,54 @@
+{
+ "repo": "instructure/canvas-lms",
+ "owner": "instructure",
+ "name": "canvas-lms",
+ "language": "Ruby",
+ "stars": 6900,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T18:18:30Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 2515,
+   "url": "https://github.com/instructure/canvas-lms/blob/master/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 9,
+   "url": "https://github.com/instructure/canvas-lms/blob/master/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/instructure/canvas-lms/",
+ "license": "CC BY 4.0"
+}

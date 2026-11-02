@@ -1,0 +1,54 @@
+{
+ "repo": "infiniflow/ragflow",
+ "owner": "infiniflow",
+ "name": "ragflow",
+ "language": "Go",
+ "stars": 93365,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:04:03Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 17189,
+   "url": "https://github.com/infiniflow/ragflow/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 558,
+   "url": "https://github.com/infiniflow/ragflow/blob/main/.github/copilot-instructions.md"
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/infiniflow/ragflow/",
+ "license": "CC BY 4.0"
+}

@@ -1,0 +1,54 @@
+{
+ "repo": "quii/learn-go-with-tests",
+ "owner": "quii",
+ "name": "learn-go-with-tests",
+ "language": "Go",
+ "stars": 23937,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:45:09Z",
+ "files": {
+  "AGENTS.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 5364,
+   "url": "https://github.com/quii/learn-go-with-tests/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/quii/learn-go-with-tests/",
+ "license": "CC BY 4.0"
+}

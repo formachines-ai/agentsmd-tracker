@@ -1,0 +1,54 @@
+{
+ "repo": "Yeachan-Heo/oh-my-claudecode",
+ "owner": "Yeachan-Heo",
+ "name": "oh-my-claudecode",
+ "language": "TypeScript",
+ "stars": 40513,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:22:46Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 22751,
+   "url": "https://github.com/Yeachan-Heo/oh-my-claudecode/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 6002,
+   "url": "https://github.com/Yeachan-Heo/oh-my-claudecode/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/Yeachan-Heo/oh-my-claudecode/",
+ "license": "CC BY 4.0"
+}

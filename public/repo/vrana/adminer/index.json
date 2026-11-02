@@ -1,0 +1,54 @@
+{
+ "repo": "vrana/adminer",
+ "owner": "vrana",
+ "name": "adminer",
+ "language": "PHP",
+ "stars": 7944,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T18:15:03Z",
+ "files": {
+  "AGENTS.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 7515,
+   "url": "https://github.com/vrana/adminer/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/vrana/adminer/",
+ "license": "CC BY 4.0"
+}

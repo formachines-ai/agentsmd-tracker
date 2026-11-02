@@ -1,0 +1,54 @@
+{
+ "repo": "SixLabors/ImageSharp",
+ "owner": "SixLabors",
+ "name": "ImageSharp",
+ "language": "C#",
+ "stars": 8046,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T18:14:47Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 5364,
+   "url": "https://github.com/SixLabors/ImageSharp/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 240,
+   "url": "https://github.com/SixLabors/ImageSharp/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 271,
+   "url": "https://github.com/SixLabors/ImageSharp/blob/main/.github/copilot-instructions.md"
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": true,
+   "size": 239,
+   "url": "https://github.com/SixLabors/ImageSharp/blob/main/GEMINI.md"
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/SixLabors/ImageSharp/",
+ "license": "CC BY 4.0"
+}

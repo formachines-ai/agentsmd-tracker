@@ -1,0 +1,54 @@
+{
+ "repo": "apache/druid",
+ "owner": "apache",
+ "name": "druid",
+ "language": "Java",
+ "stars": 14093,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T18:03:09Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 5399,
+   "url": "https://github.com/apache/druid/blob/master/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/apache/druid/",
+ "license": "CC BY 4.0"
+}

@@ -1,0 +1,54 @@
+{
+ "repo": "firecrawl/pdf-inspector",
+ "owner": "firecrawl",
+ "name": "pdf-inspector",
+ "language": "Rust",
+ "stars": 19809,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:51:01Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 4966,
+   "url": "https://github.com/firecrawl/pdf-inspector/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 5065,
+   "url": "https://github.com/firecrawl/pdf-inspector/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/firecrawl/pdf-inspector/",
+ "license": "CC BY 4.0"
+}

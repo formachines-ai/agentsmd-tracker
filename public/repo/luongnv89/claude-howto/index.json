@@ -1,0 +1,54 @@
+{
+ "repo": "luongnv89/claude-howto",
+ "owner": "luongnv89",
+ "name": "claude-howto",
+ "language": "Python",
+ "stars": 46412,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:17:56Z",
+ "files": {
+  "AGENTS.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 4404,
+   "url": "https://github.com/luongnv89/claude-howto/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/luongnv89/claude-howto/",
+ "license": "CC BY 4.0"
+}

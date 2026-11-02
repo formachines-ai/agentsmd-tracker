@@ -1,0 +1,54 @@
+{
+ "repo": "k2-fsa/sherpa-onnx",
+ "owner": "k2-fsa",
+ "name": "sherpa-onnx",
+ "language": "C++",
+ "stars": 15686,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T17:58:51Z",
+ "files": {
+  "AGENTS.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 3856,
+   "url": "https://github.com/k2-fsa/sherpa-onnx/blob/master/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/k2-fsa/sherpa-onnx/",
+ "license": "CC BY 4.0"
+}

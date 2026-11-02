@@ -1,0 +1,54 @@
+{
+ "repo": "filamentphp/filament",
+ "owner": "filamentphp",
+ "name": "filament",
+ "language": "PHP",
+ "stars": 32396,
+ "default_branch": "4.x",
+ "status": "ok",
+ "checked": "2026-11-02T17:32:51Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 7620,
+   "url": "https://github.com/filamentphp/filament/blob/4.x/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 11,
+   "url": "https://github.com/filamentphp/filament/blob/4.x/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/filamentphp/filament/",
+ "license": "CC BY 4.0"
+}

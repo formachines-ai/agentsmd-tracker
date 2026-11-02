@@ -1,0 +1,54 @@
+{
+ "repo": "crmne/ruby_llm",
+ "owner": "crmne",
+ "name": "ruby_llm",
+ "language": "Ruby",
+ "stars": 4490,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T18:23:52Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 28710,
+   "url": "https://github.com/crmne/ruby_llm/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 11,
+   "url": "https://github.com/crmne/ruby_llm/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 8132,
+   "url": "https://github.com/crmne/ruby_llm/blob/main/.github/copilot-instructions.md"
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/crmne/ruby_llm/",
+ "license": "CC BY 4.0"
+}

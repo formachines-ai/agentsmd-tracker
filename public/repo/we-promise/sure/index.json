@@ -1,0 +1,54 @@
+{
+ "repo": "we-promise/sure",
+ "owner": "we-promise",
+ "name": "sure",
+ "language": "Ruby",
+ "stars": 10764,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T18:09:09Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 5125,
+   "url": "https://github.com/we-promise/sure/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 11,
+   "url": "https://github.com/we-promise/sure/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": true,
+   "size": null,
+   "url": "https://github.com/we-promise/sure/tree/main/.cursor/rules"
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 240,
+   "url": "https://github.com/we-promise/sure/blob/main/.github/copilot-instructions.md"
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/we-promise/sure/",
+ "license": "CC BY 4.0"
+}

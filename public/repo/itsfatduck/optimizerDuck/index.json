@@ -1,0 +1,54 @@
+{
+ "repo": "itsfatduck/optimizerDuck",
+ "owner": "itsfatduck",
+ "name": "optimizerDuck",
+ "language": "C#",
+ "stars": 10769,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T18:09:03Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 19715,
+   "url": "https://github.com/itsfatduck/optimizerDuck/blob/master/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": true,
+   "size": 733,
+   "url": "https://github.com/itsfatduck/optimizerDuck/blob/master/.windsurfrules"
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/itsfatduck/optimizerDuck/",
+ "license": "CC BY 4.0"
+}

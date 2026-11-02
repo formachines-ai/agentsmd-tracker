@@ -1,0 +1,54 @@
+{
+ "repo": "microsoft/playwright",
+ "owner": "microsoft",
+ "name": "playwright",
+ "language": "TypeScript",
+ "stars": 99111,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:03:17Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 9877,
+   "url": "https://github.com/microsoft/playwright/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 635,
+   "url": "https://github.com/microsoft/playwright/blob/main/.github/copilot-instructions.md"
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/microsoft/playwright/",
+ "license": "CC BY 4.0"
+}

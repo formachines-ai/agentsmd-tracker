@@ -1,0 +1,54 @@
+{
+ "repo": "meteor/meteor",
+ "owner": "meteor",
+ "name": "meteor",
+ "language": "JavaScript",
+ "stars": 44800,
+ "default_branch": "devel",
+ "status": "ok",
+ "checked": "2026-11-02T17:19:09Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 3671,
+   "url": "https://github.com/meteor/meteor/blob/devel/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 2014,
+   "url": "https://github.com/meteor/meteor/blob/devel/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/meteor/meteor/",
+ "license": "CC BY 4.0"
+}

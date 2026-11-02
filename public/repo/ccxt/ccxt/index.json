@@ -1,0 +1,54 @@
+{
+ "repo": "ccxt/ccxt",
+ "owner": "ccxt",
+ "name": "ccxt",
+ "language": "Python",
+ "stars": 44683,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T17:19:21Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 9,
+   "url": "https://github.com/ccxt/ccxt/blob/master/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 38221,
+   "url": "https://github.com/ccxt/ccxt/blob/master/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": true,
+   "size": 5571,
+   "url": "https://github.com/ccxt/ccxt/blob/master/llms.txt"
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/ccxt/ccxt/",
+ "license": "CC BY 4.0"
+}

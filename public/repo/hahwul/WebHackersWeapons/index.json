@@ -1,0 +1,54 @@
+{
+ "repo": "hahwul/WebHackersWeapons",
+ "owner": "hahwul",
+ "name": "WebHackersWeapons",
+ "language": "Ruby",
+ "stars": 5106,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T18:22:43Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 6582,
+   "url": "https://github.com/hahwul/WebHackersWeapons/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/hahwul/WebHackersWeapons/",
+ "license": "CC BY 4.0"
+}

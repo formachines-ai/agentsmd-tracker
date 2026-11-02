@@ -1,0 +1,54 @@
+{
+ "repo": "roboflow/supervision",
+ "owner": "roboflow",
+ "name": "supervision",
+ "language": "Python",
+ "stars": 51466,
+ "default_branch": "develop",
+ "status": "ok",
+ "checked": "2026-11-02T17:14:37Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 8949,
+   "url": "https://github.com/roboflow/supervision/blob/develop/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 163,
+   "url": "https://github.com/roboflow/supervision/blob/develop/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 4533,
+   "url": "https://github.com/roboflow/supervision/blob/develop/.github/copilot-instructions.md"
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/roboflow/supervision/",
+ "license": "CC BY 4.0"
+}

@@ -1,0 +1,54 @@
+{
+ "repo": "cline/cline",
+ "owner": "cline",
+ "name": "cline",
+ "language": "TypeScript",
+ "stars": 71216,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:07:59Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 5449,
+   "url": "https://github.com/cline/cline/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 3804,
+   "url": "https://github.com/cline/cline/blob/main/.github/copilot-instructions.md"
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/cline/cline/",
+ "license": "CC BY 4.0"
+}

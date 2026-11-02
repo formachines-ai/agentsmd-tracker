@@ -1,0 +1,54 @@
+{
+ "repo": "storytold/filmcraft",
+ "owner": "storytold",
+ "name": "filmcraft",
+ "language": "Rust",
+ "stars": 17285,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:55:48Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 13349,
+   "url": "https://github.com/storytold/filmcraft/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 7070,
+   "url": "https://github.com/storytold/filmcraft/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/storytold/filmcraft/",
+ "license": "CC BY 4.0"
+}

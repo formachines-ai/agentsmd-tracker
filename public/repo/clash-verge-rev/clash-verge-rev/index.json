@@ -1,0 +1,54 @@
+{
+ "repo": "clash-verge-rev/clash-verge-rev",
+ "owner": "clash-verge-rev",
+ "name": "clash-verge-rev",
+ "language": "Rust",
+ "stars": 155792,
+ "default_branch": "dev",
+ "status": "ok",
+ "checked": "2026-11-02T17:00:46Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 4104,
+   "url": "https://github.com/clash-verge-rev/clash-verge-rev/blob/dev/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 11,
+   "url": "https://github.com/clash-verge-rev/clash-verge-rev/blob/dev/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": true,
+   "size": 61,
+   "url": "https://github.com/clash-verge-rev/clash-verge-rev/blob/dev/GEMINI.md"
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/clash-verge-rev/clash-verge-rev/",
+ "license": "CC BY 4.0"
+}

@@ -1,0 +1,54 @@
+{
+ "repo": "apache/dolphinscheduler",
+ "owner": "apache",
+ "name": "dolphinscheduler",
+ "language": "Java",
+ "stars": 14551,
+ "default_branch": "dev",
+ "status": "ok",
+ "checked": "2026-11-02T18:01:56Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 1001,
+   "url": "https://github.com/apache/dolphinscheduler/blob/dev/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 10505,
+   "url": "https://github.com/apache/dolphinscheduler/blob/dev/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/apache/dolphinscheduler/",
+ "license": "CC BY 4.0"
+}

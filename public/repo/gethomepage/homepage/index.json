@@ -1,0 +1,54 @@
+{
+ "repo": "gethomepage/homepage",
+ "owner": "gethomepage",
+ "name": "homepage",
+ "language": "JavaScript",
+ "stars": 33484,
+ "default_branch": "dev",
+ "status": "ok",
+ "checked": "2026-11-02T17:31:16Z",
+ "files": {
+  "AGENTS.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/gethomepage/homepage/",
+ "license": "CC BY 4.0"
+}

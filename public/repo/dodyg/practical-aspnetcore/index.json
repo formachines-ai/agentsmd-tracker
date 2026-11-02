@@ -1,0 +1,54 @@
+{
+ "repo": "dodyg/practical-aspnetcore",
+ "owner": "dodyg",
+ "name": "practical-aspnetcore",
+ "language": "C#",
+ "stars": 10417,
+ "default_branch": "net10.0",
+ "status": "ok",
+ "checked": "2026-11-02T18:09:33Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 7963,
+   "url": "https://github.com/dodyg/practical-aspnetcore/blob/net10.0/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/dodyg/practical-aspnetcore/",
+ "license": "CC BY 4.0"
+}

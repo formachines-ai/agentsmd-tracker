@@ -1,0 +1,54 @@
+{
+ "repo": "agno-agi/agno",
+ "owner": "agno-agi",
+ "name": "agno",
+ "language": "Python",
+ "stars": 43017,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:20:14Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 9,
+   "url": "https://github.com/agno-agi/agno/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 7577,
+   "url": "https://github.com/agno-agi/agno/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": true,
+   "size": 4446,
+   "url": "https://github.com/agno-agi/agno/blob/main/.cursorrules"
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/agno-agi/agno/",
+ "license": "CC BY 4.0"
+}

@@ -1,0 +1,54 @@
+{
+ "repo": "mongodb/mongoid",
+ "owner": "mongodb",
+ "name": "mongoid",
+ "language": "Ruby",
+ "stars": 3908,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T18:25:33Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 2995,
+   "url": "https://github.com/mongodb/mongoid/blob/master/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 11,
+   "url": "https://github.com/mongodb/mongoid/blob/master/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/mongodb/mongoid/",
+ "license": "CC BY 4.0"
+}

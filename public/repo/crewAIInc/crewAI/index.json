@@ -1,0 +1,54 @@
+{
+ "repo": "crewAIInc/crewAI",
+ "owner": "crewAIInc",
+ "name": "crewAI",
+ "language": "Python",
+ "stars": 60425,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:10:56Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 1869,
+   "url": "https://github.com/crewAIInc/crewAI/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/crewAIInc/crewAI/",
+ "license": "CC BY 4.0"
+}

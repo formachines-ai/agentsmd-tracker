@@ -1,0 +1,54 @@
+{
+ "repo": "abhigyanpatwari/GitNexus",
+ "owner": "abhigyanpatwari",
+ "name": "GitNexus",
+ "language": "TypeScript",
+ "stars": 48213,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:16:36Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 21299,
+   "url": "https://github.com/abhigyanpatwari/GitNexus/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 10484,
+   "url": "https://github.com/abhigyanpatwari/GitNexus/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": true,
+   "size": 194,
+   "url": "https://github.com/abhigyanpatwari/GitNexus/blob/main/.cursorrules"
+  },
+  ".cursor/rules": {
+   "present": true,
+   "size": null,
+   "url": "https://github.com/abhigyanpatwari/GitNexus/tree/main/.cursor/rules"
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": true,
+   "size": 834,
+   "url": "https://github.com/abhigyanpatwari/GitNexus/blob/main/llms.txt"
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": true,
+   "size": 209,
+   "url": "https://github.com/abhigyanpatwari/GitNexus/blob/main/.windsurfrules"
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/abhigyanpatwari/GitNexus/",
+ "license": "CC BY 4.0"
+}

@@ -1,0 +1,54 @@
+{
+ "repo": "DenverCoder1/github-readme-streak-stats",
+ "owner": "DenverCoder1",
+ "name": "github-readme-streak-stats",
+ "language": "PHP",
+ "stars": 7185,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T18:17:30Z",
+ "files": {
+  "AGENTS.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/DenverCoder1/github-readme-streak-stats/",
+ "license": "CC BY 4.0"
+}

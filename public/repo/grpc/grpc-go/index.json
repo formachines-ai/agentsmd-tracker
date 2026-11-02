@@ -1,0 +1,54 @@
+{
+ "repo": "grpc/grpc-go",
+ "owner": "grpc",
+ "name": "grpc-go",
+ "language": "Go",
+ "stars": 23100,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T17:46:11Z",
+ "files": {
+  "AGENTS.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/grpc/grpc-go/",
+ "license": "CC BY 4.0"
+}

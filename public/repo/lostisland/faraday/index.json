@@ -1,0 +1,54 @@
+{
+ "repo": "lostisland/faraday",
+ "owner": "lostisland",
+ "name": "faraday",
+ "language": "Ruby",
+ "stars": 5954,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T18:21:19Z",
+ "files": {
+  "AGENTS.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": true,
+   "size": 1591,
+   "url": "https://github.com/lostisland/faraday/blob/main/.cursorrules"
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 2384,
+   "url": "https://github.com/lostisland/faraday/blob/main/.github/copilot-instructions.md"
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/lostisland/faraday/",
+ "license": "CC BY 4.0"
+}

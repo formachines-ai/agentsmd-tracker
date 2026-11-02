@@ -1,0 +1,54 @@
+{
+ "repo": "reactphp/reactphp",
+ "owner": "reactphp",
+ "name": "reactphp",
+ "language": "PHP",
+ "stars": 9087,
+ "default_branch": "1.x",
+ "status": "ok",
+ "checked": "2026-11-02T18:12:18Z",
+ "files": {
+  "AGENTS.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/reactphp/reactphp/",
+ "license": "CC BY 4.0"
+}

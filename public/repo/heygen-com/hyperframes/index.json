@@ -1,0 +1,54 @@
+{
+ "repo": "heygen-com/hyperframes",
+ "owner": "heygen-com",
+ "name": "hyperframes",
+ "language": "TypeScript",
+ "stars": 77564,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:06:36Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 6947,
+   "url": "https://github.com/heygen-com/hyperframes/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 9310,
+   "url": "https://github.com/heygen-com/hyperframes/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/heygen-com/hyperframes/",
+ "license": "CC BY 4.0"
+}

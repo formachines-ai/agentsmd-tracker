@@ -1,0 +1,54 @@
+{
+ "repo": "keycloak/keycloak",
+ "owner": "keycloak",
+ "name": "keycloak",
+ "language": "Java",
+ "stars": 37655,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:26:28Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 1122,
+   "url": "https://github.com/keycloak/keycloak/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 4035,
+   "url": "https://github.com/keycloak/keycloak/blob/main/.github/copilot-instructions.md"
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/keycloak/keycloak/",
+ "license": "CC BY 4.0"
+}

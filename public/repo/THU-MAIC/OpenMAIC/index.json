@@ -1,0 +1,54 @@
+{
+ "repo": "THU-MAIC/OpenMAIC",
+ "owner": "THU-MAIC",
+ "name": "OpenMAIC",
+ "language": "TypeScript",
+ "stars": 42480,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:20:46Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 2114,
+   "url": "https://github.com/THU-MAIC/OpenMAIC/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/THU-MAIC/OpenMAIC/",
+ "license": "CC BY 4.0"
+}

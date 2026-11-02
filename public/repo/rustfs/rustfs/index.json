@@ -1,0 +1,54 @@
+{
+ "repo": "rustfs/rustfs",
+ "owner": "rustfs",
+ "name": "rustfs",
+ "language": "Rust",
+ "stars": 35657,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:28:28Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 14307,
+   "url": "https://github.com/rustfs/rustfs/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 12,
+   "url": "https://github.com/rustfs/rustfs/blob/main/.github/copilot-instructions.md"
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/rustfs/rustfs/",
+ "license": "CC BY 4.0"
+}

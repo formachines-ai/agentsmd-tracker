@@ -1,0 +1,54 @@
+{
+ "repo": "alan2207/bulletproof-react",
+ "owner": "alan2207",
+ "name": "bulletproof-react",
+ "language": "TypeScript",
+ "stars": 36028,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T17:28:03Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 9161,
+   "url": "https://github.com/alan2207/bulletproof-react/blob/master/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/alan2207/bulletproof-react/",
+ "license": "CC BY 4.0"
+}

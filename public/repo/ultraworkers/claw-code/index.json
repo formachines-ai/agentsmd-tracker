@@ -1,0 +1,54 @@
+{
+ "repo": "ultraworkers/claw-code",
+ "owner": "ultraworkers",
+ "name": "claw-code",
+ "language": "Rust",
+ "stars": 194976,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T16:59:39Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 6316,
+   "url": "https://github.com/ultraworkers/claw-code/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 1181,
+   "url": "https://github.com/ultraworkers/claw-code/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/ultraworkers/claw-code/",
+ "license": "CC BY 4.0"
+}

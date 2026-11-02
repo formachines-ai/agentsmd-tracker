@@ -1,0 +1,54 @@
+{
+ "repo": "quasarframework/quasar",
+ "owner": "quasarframework",
+ "name": "quasar",
+ "language": "JavaScript",
+ "stars": 27211,
+ "default_branch": "dev",
+ "status": "ok",
+ "checked": "2026-11-02T17:39:42Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 5252,
+   "url": "https://github.com/quasarframework/quasar/blob/dev/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 9,
+   "url": "https://github.com/quasarframework/quasar/blob/dev/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/quasarframework/quasar/",
+ "license": "CC BY 4.0"
+}

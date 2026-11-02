@@ -1,0 +1,54 @@
+{
+ "repo": "motiondivision/motion",
+ "owner": "motiondivision",
+ "name": "motion",
+ "language": "TypeScript",
+ "stars": 34806,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:29:24Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 1270,
+   "url": "https://github.com/motiondivision/motion/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 13214,
+   "url": "https://github.com/motiondivision/motion/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": true,
+   "size": 235,
+   "url": "https://github.com/motiondivision/motion/blob/main/.cursorrules"
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/motiondivision/motion/",
+ "license": "CC BY 4.0"
+}

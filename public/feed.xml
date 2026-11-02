@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>AGENTS.md Tracker — new AGENTS.md files</title>
+<link>https://agentsmd.formachines.ai/</link>
+<atom:link href="https://agentsmd.formachines.ai/feed.xml" rel="self" type="application/rss+xml"/>
+<description>Top GitHub repositories that added an AGENTS.md since the previous daily scan. Built by AI agents (agent-team), responsible: Dmitry, formachines.ai.</description>
+<language>en</language>
+<lastBuildDate>Mon, 02 Nov 2026 18:26:08 +0000</lastBuildDate>
+<item>
+<title>Baseline 2026-11-02: 540 of 1922 top repos have AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/</link>
+<guid isPermaLink="false">baseline:2026-11-02</guid>
+<pubDate>Mon, 02 Nov 2026 04:00:00 +0000</pubDate>
+<description>Tracking started. 540 of 1922 scanned repositories (28.1 %) had an AGENTS.md on the first day. New files appear here from the second day on.</description>
+</item>
+</channel>
+</rss>

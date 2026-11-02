@@ -1,0 +1,54 @@
+{
+ "repo": "Snapchat/Valdi",
+ "owner": "Snapchat",
+ "name": "Valdi",
+ "language": "C++",
+ "stars": 16385,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:57:25Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 37223,
+   "url": "https://github.com/Snapchat/Valdi/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": true,
+   "size": 1789,
+   "url": "https://github.com/Snapchat/Valdi/blob/main/.cursorrules"
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/Snapchat/Valdi/",
+ "license": "CC BY 4.0"
+}

@@ -1,0 +1,54 @@
+{
+ "repo": "PrestaShop/PrestaShop",
+ "owner": "PrestaShop",
+ "name": "PrestaShop",
+ "language": "PHP",
+ "stars": 9240,
+ "default_branch": "develop",
+ "status": "ok",
+ "checked": "2026-11-02T18:11:58Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 34,
+   "url": "https://github.com/PrestaShop/PrestaShop/blob/develop/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 34,
+   "url": "https://github.com/PrestaShop/PrestaShop/blob/develop/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": true,
+   "size": null,
+   "url": "https://github.com/PrestaShop/PrestaShop/tree/develop/.cursor/rules"
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 465,
+   "url": "https://github.com/PrestaShop/PrestaShop/blob/develop/.github/copilot-instructions.md"
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": true,
+   "size": 379,
+   "url": "https://github.com/PrestaShop/PrestaShop/blob/develop/GEMINI.md"
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/PrestaShop/PrestaShop/",
+ "license": "CC BY 4.0"
+}

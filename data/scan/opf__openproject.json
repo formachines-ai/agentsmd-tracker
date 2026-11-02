@@ -1,0 +1,39 @@
+{
+ "checked": "2026-11-02T17:56:24Z",
+ "status": "ok",
+ "default_branch": "dev",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 5333
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 9
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 135
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null
+  }
+ }
+}

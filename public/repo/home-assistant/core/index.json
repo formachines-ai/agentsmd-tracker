@@ -1,0 +1,54 @@
+{
+ "repo": "home-assistant/core",
+ "owner": "home-assistant",
+ "name": "core",
+ "language": "Python",
+ "stars": 91917,
+ "default_branch": "dev",
+ "status": "ok",
+ "checked": "2026-11-02T17:04:20Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 5708,
+   "url": "https://github.com/home-assistant/core/blob/dev/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 9,
+   "url": "https://github.com/home-assistant/core/blob/dev/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 12690,
+   "url": "https://github.com/home-assistant/core/blob/dev/.github/copilot-instructions.md"
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/home-assistant/core/",
+ "license": "CC BY 4.0"
+}

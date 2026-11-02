@@ -1,0 +1,54 @@
+{
+ "repo": "analysis-tools-dev/static-analysis",
+ "owner": "analysis-tools-dev",
+ "name": "static-analysis",
+ "language": "Rust",
+ "stars": 14862,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T18:00:53Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 2540,
+   "url": "https://github.com/analysis-tools-dev/static-analysis/blob/master/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 11,
+   "url": "https://github.com/analysis-tools-dev/static-analysis/blob/master/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": true,
+   "size": 9,
+   "url": "https://github.com/analysis-tools-dev/static-analysis/blob/master/.cursorrules"
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 12,
+   "url": "https://github.com/analysis-tools-dev/static-analysis/blob/master/.github/copilot-instructions.md"
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": true,
+   "size": 9,
+   "url": "https://github.com/analysis-tools-dev/static-analysis/blob/master/.windsurfrules"
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/analysis-tools-dev/static-analysis/",
+ "license": "CC BY 4.0"
+}

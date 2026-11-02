@@ -1,0 +1,54 @@
+{
+ "repo": "realworld-apps/realworld",
+ "owner": "realworld-apps",
+ "name": "realworld",
+ "language": "TypeScript",
+ "stars": 84359,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:05:16Z",
+ "files": {
+  "AGENTS.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 2748,
+   "url": "https://github.com/realworld-apps/realworld/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/realworld-apps/realworld/",
+ "license": "CC BY 4.0"
+}

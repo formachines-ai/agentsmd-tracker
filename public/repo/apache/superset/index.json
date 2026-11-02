@@ -1,0 +1,54 @@
+{
+ "repo": "apache/superset",
+ "owner": "apache",
+ "name": "superset",
+ "language": "Python",
+ "stars": 75392,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T17:07:08Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 16740,
+   "url": "https://github.com/apache/superset/blob/master/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 9,
+   "url": "https://github.com/apache/superset/blob/master/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": true,
+   "size": null,
+   "url": "https://github.com/apache/superset/tree/master/.cursor/rules"
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 12,
+   "url": "https://github.com/apache/superset/blob/master/.github/copilot-instructions.md"
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": true,
+   "size": 9,
+   "url": "https://github.com/apache/superset/blob/master/GEMINI.md"
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/apache/superset/",
+ "license": "CC BY 4.0"
+}

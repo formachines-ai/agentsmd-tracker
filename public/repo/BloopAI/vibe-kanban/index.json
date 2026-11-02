@@ -1,0 +1,54 @@
+{
+ "repo": "BloopAI/vibe-kanban",
+ "owner": "BloopAI",
+ "name": "vibe-kanban",
+ "language": "Rust",
+ "stars": 28566,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:37:43Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 3989,
+   "url": "https://github.com/BloopAI/vibe-kanban/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 9,
+   "url": "https://github.com/BloopAI/vibe-kanban/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/BloopAI/vibe-kanban/",
+ "license": "CC BY 4.0"
+}

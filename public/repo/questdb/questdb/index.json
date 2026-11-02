@@ -1,0 +1,54 @@
+{
+ "repo": "questdb/questdb",
+ "owner": "questdb",
+ "name": "questdb",
+ "language": "Java",
+ "stars": 17496,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T17:55:16Z",
+ "files": {
+  "AGENTS.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 30849,
+   "url": "https://github.com/questdb/questdb/blob/master/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/questdb/questdb/",
+ "license": "CC BY 4.0"
+}

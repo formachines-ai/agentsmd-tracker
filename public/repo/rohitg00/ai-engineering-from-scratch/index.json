@@ -1,0 +1,54 @@
+{
+ "repo": "rohitg00/ai-engineering-from-scratch",
+ "owner": "rohitg00",
+ "name": "ai-engineering-from-scratch",
+ "language": "Python",
+ "stars": 76362,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:06:56Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 16047,
+   "url": "https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/rohitg00/ai-engineering-from-scratch/",
+ "license": "CC BY 4.0"
+}

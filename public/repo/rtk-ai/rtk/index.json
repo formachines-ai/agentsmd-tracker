@@ -1,0 +1,54 @@
+{
+ "repo": "rtk-ai/rtk",
+ "owner": "rtk-ai",
+ "name": "rtk",
+ "language": "Rust",
+ "stars": 85318,
+ "default_branch": "develop",
+ "status": "ok",
+ "checked": "2026-11-02T17:05:08Z",
+ "files": {
+  "AGENTS.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 9664,
+   "url": "https://github.com/rtk-ai/rtk/blob/develop/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 3429,
+   "url": "https://github.com/rtk-ai/rtk/blob/develop/.github/copilot-instructions.md"
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/rtk-ai/rtk/",
+ "license": "CC BY 4.0"
+}

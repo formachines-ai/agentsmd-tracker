@@ -1,0 +1,54 @@
+{
+ "repo": "OtterMind/Chat2DB",
+ "owner": "OtterMind",
+ "name": "Chat2DB",
+ "language": "Java",
+ "stars": 28349,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:38:06Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 18840,
+   "url": "https://github.com/OtterMind/Chat2DB/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/OtterMind/Chat2DB/",
+ "license": "CC BY 4.0"
+}

@@ -1,0 +1,54 @@
+{
+ "repo": "coding-horror/basic-computer-games",
+ "owner": "coding-horror",
+ "name": "basic-computer-games",
+ "language": "C#",
+ "stars": 11092,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T18:08:33Z",
+ "files": {
+  "AGENTS.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/coding-horror/basic-computer-games/",
+ "license": "CC BY 4.0"
+}

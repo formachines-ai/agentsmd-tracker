@@ -1,0 +1,54 @@
+{
+ "repo": "oxc-project/oxc",
+ "owner": "oxc-project",
+ "name": "oxc",
+ "language": "Rust",
+ "stars": 23299,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:45:51Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 15194,
+   "url": "https://github.com/oxc-project/oxc/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 790,
+   "url": "https://github.com/oxc-project/oxc/blob/main/.github/copilot-instructions.md"
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/oxc-project/oxc/",
+ "license": "CC BY 4.0"
+}

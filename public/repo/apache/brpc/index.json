@@ -1,0 +1,54 @@
+{
+ "repo": "apache/brpc",
+ "owner": "apache",
+ "name": "brpc",
+ "language": "C++",
+ "stars": 17641,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T17:54:52Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 2829,
+   "url": "https://github.com/apache/brpc/blob/master/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 5556,
+   "url": "https://github.com/apache/brpc/blob/master/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/apache/brpc/",
+ "license": "CC BY 4.0"
+}

@@ -1,0 +1,54 @@
+{
+ "repo": "supabase/supabase",
+ "owner": "supabase",
+ "name": "supabase",
+ "language": "TypeScript",
+ "stars": 114443,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T17:02:17Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 7035,
+   "url": "https://github.com/supabase/supabase/blob/master/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 11,
+   "url": "https://github.com/supabase/supabase/blob/master/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 6608,
+   "url": "https://github.com/supabase/supabase/blob/master/.github/copilot-instructions.md"
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/supabase/supabase/",
+ "license": "CC BY 4.0"
+}

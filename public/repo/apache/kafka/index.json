@@ -1,0 +1,54 @@
+{
+ "repo": "apache/kafka",
+ "owner": "apache",
+ "name": "kafka",
+ "language": "Java",
+ "stars": 34116,
+ "default_branch": "trunk",
+ "status": "ok",
+ "checked": "2026-11-02T17:30:19Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 10000,
+   "url": "https://github.com/apache/kafka/blob/trunk/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/apache/kafka/",
+ "license": "CC BY 4.0"
+}

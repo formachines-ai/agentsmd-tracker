@@ -1,0 +1,54 @@
+{
+ "repo": "h5bp/html5-boilerplate",
+ "owner": "h5bp",
+ "name": "html5-boilerplate",
+ "language": "JavaScript",
+ "stars": 57654,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:12:10Z",
+ "files": {
+  "AGENTS.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/h5bp/html5-boilerplate/",
+ "license": "CC BY 4.0"
+}

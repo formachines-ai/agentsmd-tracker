@@ -1,0 +1,54 @@
+{
+ "repo": "runcat-dev/RunCat365",
+ "owner": "runcat-dev",
+ "name": "RunCat365",
+ "language": "C#",
+ "stars": 10342,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T18:09:41Z",
+ "files": {
+  "AGENTS.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 3152,
+   "url": "https://github.com/runcat-dev/RunCat365/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/runcat-dev/RunCat365/",
+ "license": "CC BY 4.0"
+}

@@ -1,0 +1,54 @@
+{
+ "repo": "dataease/dataease",
+ "owner": "dataease",
+ "name": "dataease",
+ "language": "Java",
+ "stars": 24666,
+ "default_branch": "dev-v3",
+ "status": "ok",
+ "checked": "2026-11-02T17:43:40Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 24514,
+   "url": "https://github.com/dataease/dataease/blob/dev-v3/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 5069,
+   "url": "https://github.com/dataease/dataease/blob/dev-v3/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/dataease/dataease/",
+ "license": "CC BY 4.0"
+}

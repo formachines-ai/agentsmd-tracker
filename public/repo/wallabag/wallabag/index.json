@@ -1,0 +1,54 @@
+{
+ "repo": "wallabag/wallabag",
+ "owner": "wallabag",
+ "name": "wallabag",
+ "language": "PHP",
+ "stars": 13039,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T18:05:16Z",
+ "files": {
+  "AGENTS.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/wallabag/wallabag/",
+ "license": "CC BY 4.0"
+}

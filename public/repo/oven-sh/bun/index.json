@@ -1,0 +1,54 @@
+{
+ "repo": "oven-sh/bun",
+ "owner": "oven-sh",
+ "name": "bun",
+ "language": "Rust",
+ "stars": 96516,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:03:40Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 9,
+   "url": "https://github.com/oven-sh/bun/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 17554,
+   "url": "https://github.com/oven-sh/bun/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/oven-sh/bun/",
+ "license": "CC BY 4.0"
+}

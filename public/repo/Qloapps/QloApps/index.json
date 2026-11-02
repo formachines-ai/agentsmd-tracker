@@ -1,0 +1,54 @@
+{
+ "repo": "Qloapps/QloApps",
+ "owner": "Qloapps",
+ "name": "QloApps",
+ "language": "PHP",
+ "stars": 14456,
+ "default_branch": "develop",
+ "status": "ok",
+ "checked": "2026-11-02T18:02:08Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 7360,
+   "url": "https://github.com/Qloapps/QloApps/blob/develop/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/Qloapps/QloApps/",
+ "license": "CC BY 4.0"
+}

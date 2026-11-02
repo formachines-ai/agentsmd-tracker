@@ -1,0 +1,54 @@
+{
+ "repo": "remix-run/react-router",
+ "owner": "remix-run",
+ "name": "react-router",
+ "language": "TypeScript",
+ "stars": 56633,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:12:48Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 7415,
+   "url": "https://github.com/remix-run/react-router/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 988,
+   "url": "https://github.com/remix-run/react-router/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/remix-run/react-router/",
+ "license": "CC BY 4.0"
+}

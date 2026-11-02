@@ -1,0 +1,54 @@
+{
+ "repo": "eyaltoledano/claude-task-master",
+ "owner": "eyaltoledano",
+ "name": "claude-task-master",
+ "language": "JavaScript",
+ "stars": 28293,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:38:15Z",
+ "files": {
+  "AGENTS.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 7610,
+   "url": "https://github.com/eyaltoledano/claude-task-master/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": true,
+   "size": null,
+   "url": "https://github.com/eyaltoledano/claude-task-master/tree/main/.cursor/rules"
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/eyaltoledano/claude-task-master/",
+ "license": "CC BY 4.0"
+}

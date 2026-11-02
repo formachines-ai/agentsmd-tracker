@@ -1,0 +1,54 @@
+{
+ "repo": "BerriAI/litellm",
+ "owner": "BerriAI",
+ "name": "litellm",
+ "language": "Python",
+ "stars": 62557,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:10:25Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 19749,
+   "url": "https://github.com/BerriAI/litellm/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": true,
+   "size": 38,
+   "url": "https://github.com/BerriAI/litellm/blob/main/GEMINI.md"
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/BerriAI/litellm/",
+ "license": "CC BY 4.0"
+}

@@ -1,0 +1,54 @@
+{
+ "repo": "dbeaver/dbeaver",
+ "owner": "dbeaver",
+ "name": "dbeaver",
+ "language": "Java",
+ "stars": 52270,
+ "default_branch": "devel",
+ "status": "ok",
+ "checked": "2026-11-02T17:14:15Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 7097,
+   "url": "https://github.com/dbeaver/dbeaver/blob/devel/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 130,
+   "url": "https://github.com/dbeaver/dbeaver/blob/devel/.github/copilot-instructions.md"
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/dbeaver/dbeaver/",
+ "license": "CC BY 4.0"
+}

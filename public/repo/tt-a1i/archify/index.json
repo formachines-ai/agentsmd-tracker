@@ -1,0 +1,54 @@
+{
+ "repo": "tt-a1i/archify",
+ "owner": "tt-a1i",
+ "name": "archify",
+ "language": "JavaScript",
+ "stars": 92669,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:04:07Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 2241,
+   "url": "https://github.com/tt-a1i/archify/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 71,
+   "url": "https://github.com/tt-a1i/archify/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": true,
+   "size": 2657,
+   "url": "https://github.com/tt-a1i/archify/blob/main/llms.txt"
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/tt-a1i/archify/",
+ "license": "CC BY 4.0"
+}

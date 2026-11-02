@@ -1,0 +1,54 @@
+{
+ "repo": "labstack/echo",
+ "owner": "labstack",
+ "name": "echo",
+ "language": "Go",
+ "stars": 32786,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T17:32:18Z",
+ "files": {
+  "AGENTS.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 3132,
+   "url": "https://github.com/labstack/echo/blob/master/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": true,
+   "size": 5523,
+   "url": "https://github.com/labstack/echo/blob/master/llms.txt"
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/labstack/echo/",
+ "license": "CC BY 4.0"
+}

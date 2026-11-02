@@ -1,0 +1,54 @@
+{
+ "repo": "photoprism/photoprism",
+ "owner": "photoprism",
+ "name": "photoprism",
+ "language": "Go",
+ "stars": 40395,
+ "default_branch": "develop",
+ "status": "ok",
+ "checked": "2026-11-02T17:22:57Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 17510,
+   "url": "https://github.com/photoprism/photoprism/blob/develop/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 8236,
+   "url": "https://github.com/photoprism/photoprism/blob/develop/.github/copilot-instructions.md"
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/photoprism/photoprism/",
+ "license": "CC BY 4.0"
+}

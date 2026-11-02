@@ -1,0 +1,54 @@
+{
+ "repo": "codewhale-hq/Codewhale",
+ "owner": "codewhale-hq",
+ "name": "Codewhale",
+ "language": "Rust",
+ "stars": 41166,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:21:44Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 15312,
+   "url": "https://github.com/codewhale-hq/Codewhale/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 472,
+   "url": "https://github.com/codewhale-hq/Codewhale/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/codewhale-hq/Codewhale/",
+ "license": "CC BY 4.0"
+}

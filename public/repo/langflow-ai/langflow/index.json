@@ -1,0 +1,54 @@
+{
+ "repo": "langflow-ai/langflow",
+ "owner": "langflow-ai",
+ "name": "langflow",
+ "language": "Python",
+ "stars": 156263,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:00:44Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 11859,
+   "url": "https://github.com/langflow-ai/langflow/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 427,
+   "url": "https://github.com/langflow-ai/langflow/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": true,
+   "size": null,
+   "url": "https://github.com/langflow-ai/langflow/tree/main/.cursor/rules"
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/langflow-ai/langflow/",
+ "license": "CC BY 4.0"
+}

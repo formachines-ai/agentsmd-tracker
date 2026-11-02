@@ -1,0 +1,54 @@
+{
+ "repo": "containerd/containerd",
+ "owner": "containerd",
+ "name": "containerd",
+ "language": "Go",
+ "stars": 21454,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:48:19Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 4513,
+   "url": "https://github.com/containerd/containerd/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 9,
+   "url": "https://github.com/containerd/containerd/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/containerd/containerd/",
+ "license": "CC BY 4.0"
+}

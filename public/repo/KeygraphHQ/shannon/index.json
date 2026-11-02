@@ -1,0 +1,54 @@
+{
+ "repo": "KeygraphHQ/shannon",
+ "owner": "KeygraphHQ",
+ "name": "shannon",
+ "language": "TypeScript",
+ "stars": 50953,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:15:05Z",
+ "files": {
+  "AGENTS.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 36429,
+   "url": "https://github.com/KeygraphHQ/shannon/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": true,
+   "size": 2715,
+   "url": "https://github.com/KeygraphHQ/shannon/blob/main/llms.txt"
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/KeygraphHQ/shannon/",
+ "license": "CC BY 4.0"
+}

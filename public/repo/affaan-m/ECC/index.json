@@ -1,0 +1,54 @@
+{
+ "repo": "affaan-m/ECC",
+ "owner": "affaan-m",
+ "name": "ECC",
+ "language": "JavaScript",
+ "stars": 295365,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T16:58:39Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 13204,
+   "url": "https://github.com/affaan-m/ECC/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 4421,
+   "url": "https://github.com/affaan-m/ECC/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": true,
+   "size": null,
+   "url": "https://github.com/affaan-m/ECC/tree/main/.cursor/rules"
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 4592,
+   "url": "https://github.com/affaan-m/ECC/blob/main/.github/copilot-instructions.md"
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/affaan-m/ECC/",
+ "license": "CC BY 4.0"
+}

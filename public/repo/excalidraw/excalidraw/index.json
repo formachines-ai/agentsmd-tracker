@@ -1,0 +1,54 @@
+{
+ "repo": "excalidraw/excalidraw",
+ "owner": "excalidraw",
+ "name": "excalidraw",
+ "language": "TypeScript",
+ "stars": 135040,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T17:01:29Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 373,
+   "url": "https://github.com/excalidraw/excalidraw/blob/master/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 1295,
+   "url": "https://github.com/excalidraw/excalidraw/blob/master/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 1638,
+   "url": "https://github.com/excalidraw/excalidraw/blob/master/.github/copilot-instructions.md"
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/excalidraw/excalidraw/",
+ "license": "CC BY 4.0"
+}

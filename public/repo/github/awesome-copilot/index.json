@@ -1,0 +1,54 @@
+{
+ "repo": "github/awesome-copilot",
+ "owner": "github",
+ "name": "awesome-copilot",
+ "language": "JavaScript",
+ "stars": 40718,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:22:26Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 17851,
+   "url": "https://github.com/github/awesome-copilot/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 4629,
+   "url": "https://github.com/github/awesome-copilot/blob/main/.github/copilot-instructions.md"
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/github/awesome-copilot/",
+ "license": "CC BY 4.0"
+}

@@ -1,0 +1,54 @@
+{
+ "repo": "colbymchenry/codegraph",
+ "owner": "colbymchenry",
+ "name": "codegraph",
+ "language": "TypeScript",
+ "stars": 76228,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:06:58Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 41395,
+   "url": "https://github.com/colbymchenry/codegraph/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 735,
+   "url": "https://github.com/colbymchenry/codegraph/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": true,
+   "size": null,
+   "url": "https://github.com/colbymchenry/codegraph/tree/main/.cursor/rules"
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/colbymchenry/codegraph/",
+ "license": "CC BY 4.0"
+}

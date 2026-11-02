@@ -1,0 +1,54 @@
+{
+ "repo": "litedb-org/LiteDB",
+ "owner": "litedb-org",
+ "name": "LiteDB",
+ "language": "C#",
+ "stars": 9493,
+ "default_branch": "dev",
+ "status": "ok",
+ "checked": "2026-11-02T18:11:20Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 2141,
+   "url": "https://github.com/litedb-org/LiteDB/blob/dev/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 295,
+   "url": "https://github.com/litedb-org/LiteDB/blob/dev/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/litedb-org/LiteDB/",
+ "license": "CC BY 4.0"
+}

@@ -1,0 +1,54 @@
+{
+ "repo": "ansible/ansible",
+ "owner": "ansible",
+ "name": "ansible",
+ "language": "Python",
+ "stars": 71199,
+ "default_branch": "devel",
+ "status": "ok",
+ "checked": "2026-11-02T17:08:01Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 7212,
+   "url": "https://github.com/ansible/ansible/blob/devel/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 56,
+   "url": "https://github.com/ansible/ansible/blob/devel/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/ansible/ansible/",
+ "license": "CC BY 4.0"
+}

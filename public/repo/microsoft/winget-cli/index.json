@@ -1,0 +1,54 @@
+{
+ "repo": "microsoft/winget-cli",
+ "owner": "microsoft",
+ "name": "winget-cli",
+ "language": "C++",
+ "stars": 26556,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T17:40:32Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 1312,
+   "url": "https://github.com/microsoft/winget-cli/blob/master/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 8633,
+   "url": "https://github.com/microsoft/winget-cli/blob/master/.github/copilot-instructions.md"
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/microsoft/winget-cli/",
+ "license": "CC BY 4.0"
+}

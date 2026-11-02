@@ -1,0 +1,54 @@
+{
+ "repo": "lerna/lerna",
+ "owner": "lerna",
+ "name": "lerna",
+ "language": "TypeScript",
+ "stars": 36041,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:28:01Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 3306,
+   "url": "https://github.com/lerna/lerna/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 6755,
+   "url": "https://github.com/lerna/lerna/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/lerna/lerna/",
+ "license": "CC BY 4.0"
+}

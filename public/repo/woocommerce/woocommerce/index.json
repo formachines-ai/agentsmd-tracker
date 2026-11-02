@@ -1,0 +1,54 @@
+{
+ "repo": "woocommerce/woocommerce",
+ "owner": "woocommerce",
+ "name": "woocommerce",
+ "language": "PHP",
+ "stars": 10574,
+ "default_branch": "trunk",
+ "status": "ok",
+ "checked": "2026-11-02T18:09:19Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 29146,
+   "url": "https://github.com/woocommerce/woocommerce/blob/trunk/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 11,
+   "url": "https://github.com/woocommerce/woocommerce/blob/trunk/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": true,
+   "size": null,
+   "url": "https://github.com/woocommerce/woocommerce/tree/trunk/.cursor/rules"
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/woocommerce/woocommerce/",
+ "license": "CC BY 4.0"
+}

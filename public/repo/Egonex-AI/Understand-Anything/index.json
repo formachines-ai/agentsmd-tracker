@@ -1,0 +1,54 @@
+{
+ "repo": "Egonex-AI/Understand-Anything",
+ "owner": "Egonex-AI",
+ "name": "Understand-Anything",
+ "language": "TypeScript",
+ "stars": 89812,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:04:49Z",
+ "files": {
+  "AGENTS.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 6844,
+   "url": "https://github.com/Egonex-AI/Understand-Anything/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/Egonex-AI/Understand-Anything/",
+ "license": "CC BY 4.0"
+}

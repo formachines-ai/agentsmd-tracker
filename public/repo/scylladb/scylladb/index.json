@@ -1,0 +1,54 @@
+{
+ "repo": "scylladb/scylladb",
+ "owner": "scylladb",
+ "name": "scylladb",
+ "language": "C++",
+ "stars": 15817,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T17:58:34Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 831,
+   "url": "https://github.com/scylladb/scylladb/blob/master/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 4729,
+   "url": "https://github.com/scylladb/scylladb/blob/master/.github/copilot-instructions.md"
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/scylladb/scylladb/",
+ "license": "CC BY 4.0"
+}

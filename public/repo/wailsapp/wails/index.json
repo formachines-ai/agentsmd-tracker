@@ -1,0 +1,54 @@
+{
+ "repo": "wailsapp/wails",
+ "owner": "wailsapp",
+ "name": "wails",
+ "language": "Go",
+ "stars": 36918,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T17:27:15Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 10881,
+   "url": "https://github.com/wailsapp/wails/blob/master/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 493,
+   "url": "https://github.com/wailsapp/wails/blob/master/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/wailsapp/wails/",
+ "license": "CC BY 4.0"
+}

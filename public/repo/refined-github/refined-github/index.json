@@ -1,0 +1,54 @@
+{
+ "repo": "refined-github/refined-github",
+ "owner": "refined-github",
+ "name": "refined-github",
+ "language": "TypeScript",
+ "stars": 32425,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:32:47Z",
+ "files": {
+  "AGENTS.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 9,
+   "url": "https://github.com/refined-github/refined-github/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 427,
+   "url": "https://github.com/refined-github/refined-github/blob/main/.github/copilot-instructions.md"
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/refined-github/refined-github/",
+ "license": "CC BY 4.0"
+}

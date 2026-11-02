@@ -1,0 +1,54 @@
+{
+ "repo": "prometheus/prometheus",
+ "owner": "prometheus",
+ "name": "prometheus",
+ "language": "Go",
+ "stars": 66905,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:08:57Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 6415,
+   "url": "https://github.com/prometheus/prometheus/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 11,
+   "url": "https://github.com/prometheus/prometheus/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/prometheus/prometheus/",
+ "license": "CC BY 4.0"
+}

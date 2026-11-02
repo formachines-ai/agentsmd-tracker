@@ -1,0 +1,54 @@
+{
+ "repo": "h4ckf0r0day/obscura",
+ "owner": "h4ckf0r0day",
+ "name": "obscura",
+ "language": "Rust",
+ "stars": 30105,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:35:31Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 10406,
+   "url": "https://github.com/h4ckf0r0day/obscura/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/h4ckf0r0day/obscura/",
+ "license": "CC BY 4.0"
+}

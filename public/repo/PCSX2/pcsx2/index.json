@@ -1,0 +1,54 @@
+{
+ "repo": "PCSX2/pcsx2",
+ "owner": "PCSX2",
+ "name": "pcsx2",
+ "language": "C++",
+ "stars": 15972,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T17:58:20Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 6919,
+   "url": "https://github.com/PCSX2/pcsx2/blob/master/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 10,
+   "url": "https://github.com/PCSX2/pcsx2/blob/master/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": true,
+   "size": 10,
+   "url": "https://github.com/PCSX2/pcsx2/blob/master/GEMINI.md"
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/PCSX2/pcsx2/",
+ "license": "CC BY 4.0"
+}

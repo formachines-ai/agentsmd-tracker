@@ -1,0 +1,54 @@
+{
+ "repo": "OrcaSlicer/OrcaSlicer",
+ "owner": "OrcaSlicer",
+ "name": "OrcaSlicer",
+ "language": "C++",
+ "stars": 16284,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:57:52Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 9912,
+   "url": "https://github.com/OrcaSlicer/OrcaSlicer/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 10,
+   "url": "https://github.com/OrcaSlicer/OrcaSlicer/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/OrcaSlicer/OrcaSlicer/",
+ "license": "CC BY 4.0"
+}

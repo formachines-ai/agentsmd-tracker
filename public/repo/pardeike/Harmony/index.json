@@ -1,0 +1,54 @@
+{
+ "repo": "pardeike/Harmony",
+ "owner": "pardeike",
+ "name": "Harmony",
+ "language": "C#",
+ "stars": 6724,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T18:19:20Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 459,
+   "url": "https://github.com/pardeike/Harmony/blob/master/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 629,
+   "url": "https://github.com/pardeike/Harmony/blob/master/.github/copilot-instructions.md"
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/pardeike/Harmony/",
+ "license": "CC BY 4.0"
+}

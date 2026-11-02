@@ -1,0 +1,54 @@
+{
+ "repo": "BigPizzaV3/CodexPlusPlus",
+ "owner": "BigPizzaV3",
+ "name": "CodexPlusPlus",
+ "language": "Rust",
+ "stars": 32838,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:32:06Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 5822,
+   "url": "https://github.com/BigPizzaV3/CodexPlusPlus/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/BigPizzaV3/CodexPlusPlus/",
+ "license": "CC BY 4.0"
+}

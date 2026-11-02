@@ -1,0 +1,54 @@
+{
+ "repo": "jesseduffield/lazygit",
+ "owner": "jesseduffield",
+ "name": "lazygit",
+ "language": "Go",
+ "stars": 83608,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T17:05:31Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 27624,
+   "url": "https://github.com/jesseduffield/lazygit/blob/master/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 58,
+   "url": "https://github.com/jesseduffield/lazygit/blob/master/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/jesseduffield/lazygit/",
+ "license": "CC BY 4.0"
+}

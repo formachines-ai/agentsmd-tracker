@@ -1,0 +1,54 @@
+{
+ "repo": "dapr/dapr",
+ "owner": "dapr",
+ "name": "dapr",
+ "language": "Go",
+ "stars": 26173,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T17:40:58Z",
+ "files": {
+  "AGENTS.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 9234,
+   "url": "https://github.com/dapr/dapr/blob/master/.github/copilot-instructions.md"
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/dapr/dapr/",
+ "license": "CC BY 4.0"
+}

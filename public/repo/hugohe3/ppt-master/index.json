@@ -1,0 +1,54 @@
+{
+ "repo": "hugohe3/ppt-master",
+ "owner": "hugohe3",
+ "name": "ppt-master",
+ "language": "Python",
+ "stars": 72563,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:07:43Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 11962,
+   "url": "https://github.com/hugohe3/ppt-master/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 307,
+   "url": "https://github.com/hugohe3/ppt-master/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/hugohe3/ppt-master/",
+ "license": "CC BY 4.0"
+}

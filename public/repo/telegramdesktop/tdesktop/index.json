@@ -1,0 +1,54 @@
+{
+ "repo": "telegramdesktop/tdesktop",
+ "owner": "telegramdesktop",
+ "name": "tdesktop",
+ "language": "C++",
+ "stars": 33435,
+ "default_branch": "dev",
+ "status": "ok",
+ "checked": "2026-11-02T17:31:21Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 47351,
+   "url": "https://github.com/telegramdesktop/tdesktop/blob/dev/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 100,
+   "url": "https://github.com/telegramdesktop/tdesktop/blob/dev/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/telegramdesktop/tdesktop/",
+ "license": "CC BY 4.0"
+}

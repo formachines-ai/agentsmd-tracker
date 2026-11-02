@@ -1,0 +1,54 @@
+{
+ "repo": "apache/dubbo",
+ "owner": "apache",
+ "name": "dubbo",
+ "language": "Java",
+ "stars": 41583,
+ "default_branch": "3.3",
+ "status": "ok",
+ "checked": "2026-11-02T17:21:23Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 1677,
+   "url": "https://github.com/apache/dubbo/blob/3.3/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/apache/dubbo/",
+ "license": "CC BY 4.0"
+}

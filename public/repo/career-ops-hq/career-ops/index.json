@@ -1,0 +1,54 @@
+{
+ "repo": "career-ops-hq/career-ops",
+ "owner": "career-ops-hq",
+ "name": "career-ops",
+ "language": "JavaScript",
+ "stars": 79502,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:06:08Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 94161,
+   "url": "https://github.com/career-ops-hq/career-ops/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 103,
+   "url": "https://github.com/career-ops-hq/career-ops/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 4553,
+   "url": "https://github.com/career-ops-hq/career-ops/blob/main/.github/copilot-instructions.md"
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": true,
+   "size": 298,
+   "url": "https://github.com/career-ops-hq/career-ops/blob/main/GEMINI.md"
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/career-ops-hq/career-ops/",
+ "license": "CC BY 4.0"
+}

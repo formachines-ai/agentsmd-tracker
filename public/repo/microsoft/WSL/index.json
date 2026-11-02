@@ -1,0 +1,54 @@
+{
+ "repo": "microsoft/WSL",
+ "owner": "microsoft",
+ "name": "WSL",
+ "language": "C++",
+ "stars": 34291,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T17:29:58Z",
+ "files": {
+  "AGENTS.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 19502,
+   "url": "https://github.com/microsoft/WSL/blob/master/.github/copilot-instructions.md"
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/microsoft/WSL/",
+ "license": "CC BY 4.0"
+}

@@ -1,0 +1,54 @@
+{
+ "repo": "alibaba/arthas",
+ "owner": "alibaba",
+ "name": "arthas",
+ "language": "Java",
+ "stars": 37603,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-02T17:26:31Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 3461,
+   "url": "https://github.com/alibaba/arthas/blob/master/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/alibaba/arthas/",
+ "license": "CC BY 4.0"
+}

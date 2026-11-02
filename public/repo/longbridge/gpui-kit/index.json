@@ -1,0 +1,54 @@
+{
+ "repo": "longbridge/gpui-kit",
+ "owner": "longbridge",
+ "name": "gpui-kit",
+ "language": "Rust",
+ "stars": 18898,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:52:44Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 18782,
+   "url": "https://github.com/longbridge/gpui-kit/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 26,
+   "url": "https://github.com/longbridge/gpui-kit/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/longbridge/gpui-kit/",
+ "license": "CC BY 4.0"
+}

@@ -1,0 +1,54 @@
+{
+ "repo": "calesthio/OpenMontage",
+ "owner": "calesthio",
+ "name": "OpenMontage",
+ "language": "Python",
+ "stars": 75053,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:07:16Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 384,
+   "url": "https://github.com/calesthio/OpenMontage/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 402,
+   "url": "https://github.com/calesthio/OpenMontage/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": true,
+   "size": null,
+   "url": "https://github.com/calesthio/OpenMontage/tree/main/.cursor/rules"
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 405,
+   "url": "https://github.com/calesthio/OpenMontage/blob/main/.github/copilot-instructions.md"
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": true,
+   "size": 380,
+   "url": "https://github.com/calesthio/OpenMontage/blob/main/.windsurfrules"
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/calesthio/OpenMontage/",
+ "license": "CC BY 4.0"
+}

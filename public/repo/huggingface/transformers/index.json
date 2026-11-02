@@ -1,0 +1,54 @@
+{
+ "repo": "huggingface/transformers",
+ "owner": "huggingface",
+ "name": "transformers",
+ "language": "Python",
+ "stars": 168449,
+ "default_branch": "main",
+ "status": "ok",
+ "checked": "2026-11-02T17:00:30Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 13,
+   "url": "https://github.com/huggingface/transformers/blob/main/AGENTS.md"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 13,
+   "url": "https://github.com/huggingface/transformers/blob/main/CLAUDE.md"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".github/copilot-instructions.md": {
+   "present": true,
+   "size": 3529,
+   "url": "https://github.com/huggingface/transformers/blob/main/.github/copilot-instructions.md"
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null
+  }
+ },
+ "page": "https://agentsmd.formachines.ai/repo/huggingface/transformers/",
+ "license": "CC BY 4.0"
+}
