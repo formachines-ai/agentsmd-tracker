@@ -1,8 +1,10 @@
 {
  "site": "https://agentsmd.formachines.ai",
- "generated": "2026-11-02T21:29:38Z",
+ "generated": "2026-11-02T22:11:55Z",
  "license": "CC BY 4.0",
  "data_delayed": false,
+ "method": "Top-by-stars sample of public repositories per language; one HEAD request per tracked path on the default branch; only presence and size are recorded, never file contents.",
+ "attribution": "AGENTS.md Tracker, agentsmd.formachines.ai, 2026-11-02, CC BY 4.0",
  "sample": 1922,
  "scanned": 1922,
  "pending": 0,
