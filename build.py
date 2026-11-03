@@ -367,9 +367,11 @@ def aggregate(repos: list[dict]) -> dict:
             "any": any_count, "by_lang": by_lang, "last_checked": last_checked}
 
 
-def update_history(agg: dict, scan_stats: dict | None) -> dict:
+def update_history(agg: dict, scan_stats: dict | None, write: bool = True) -> dict:
     today = now_utc().strftime("%Y-%m-%d")
     hfile = HISTORY_DIR / f"{today}.json"
+    if not write and hfile.exists():   # --no-scan: keep today's file (and its scan timestamp) untouched
+        return read_json(hfile, {"date": today, "added": [], "removed": []})
     doc = read_json(hfile, {"date": today, "added": [], "removed": []})
     if scan_stats:   # union with earlier runs of the same day
         for key in ("added", "removed"):
@@ -389,7 +391,8 @@ def update_history(agg: dict, scan_stats: dict | None) -> dict:
         "any": agg["any"],
         "by_language": {k: {"repos": v["repos"], **{s["path"]: v[s["path"]] for s in PATHS}} for k, v in sorted(agg["by_lang"].items())},
     })
-    write_json(hfile, doc)
+    if write:
+        write_json(hfile, doc)
     log.info("history %s: scanned=%d pending=%d counts=%s added=%d removed=%d", today, doc["scanned"], doc["pending"], doc["counts"], len(doc["added"]), len(doc["removed"]))
     return doc
 
@@ -690,8 +693,9 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
         urls.append(f"{SITE_BASE}/repo/{r['owner']}/{r['name']}/")
 
     # ---- JSON endpoints
+    generated = today.get("generated") or (history[-1].get("generated") if history else None) or updated  # time of the last real scan
     stats = {
-        "site": SITE_BASE, "generated": updated, "license": "CC BY 4.0", "data_delayed": delayed,
+        "site": SITE_BASE, "generated": generated, "license": "CC BY 4.0", "data_delayed": delayed,
         "method": METHOD, "attribution": f"{SITE_NAME}, {SITE_HOST}, {updated[:10]}, CC BY 4.0",
         "sample": sample, "scanned": total, "pending": len(agg["pending"]), "unreachable": len(agg["unreachable"]),
         "paths": [s["path"] for s in PATHS],
@@ -702,7 +706,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
                      "added": len(d.get("added", [])), "removed": len(d.get("removed", []))} for d in history],
     }
     write_json(out / "stats.json", stats)
-    write_json(out / "today.json", {"site": SITE_BASE, "date": today.get("date"), "generated": updated, "license": "CC BY 4.0",
+    write_json(out / "today.json", {"site": SITE_BASE, "date": today.get("date"), "generated": generated, "license": "CC BY 4.0",
                                     "added": added, "removed": removed, "counts": agg["counts"], "scanned": total, "pending": len(agg["pending"])})
     write_json(out / "build.json", build_info)
 
@@ -863,7 +867,7 @@ def main() -> int:
         scan_stats = run_scan(repos, a.limit, a.max_seconds, a.force)
 
     agg = aggregate(repos)
-    today = update_history(agg, scan_stats)
+    today = update_history(agg, scan_stats, write=not a.no_scan)
     history = load_history()
 
     last = agg["last_checked"]
