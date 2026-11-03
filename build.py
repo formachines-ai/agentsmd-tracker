@@ -752,17 +752,34 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
         slug = lang_slug(lang)
         lrepos = sorted((r for r in agg["ok"] if r["language"] == lang), key=lambda r: r["full_name"].lower())
         trs = []
+        agents_items = []
         for r in lrepos:
-            fl = scans[r["full_name"]]["files"]
-            cells = "".join('<td class="yes">yes</td>' if fl.get(sp["path"], {}).get("present") else '<td class="no">no</td>' for sp in PATHS)
+            sc = scans[r["full_name"]]
+            fl = sc["files"]
+            cells = ""
+            for sp in PATHS:
+                f = fl.get(sp["path"], {})
+                if f.get("present"):
+                    href = go.href(r, sp["path"], file_url(r, sp["path"], sc.get("default_branch")))
+                    cells += f'<td class="yes"><a href="{href}" rel="nofollow">yes</a></td>'
+                else:
+                    cells += '<td class="no">no</td>'
             trs.append(f'<tr><th scope="row"><a href="/repo/{esc(r["owner"])}/{esc(r["name"])}/">{esc(r["full_name"])}</a></th>{cells}</tr>')
+            fa = fl.get(PRIMARY_PATH, {})
+            if fa.get("present"):
+                href = go.href(r, PRIMARY_PATH, file_url(r, PRIMARY_PATH, sc.get("default_branch")))
+                sz = f' <span class="muted">({fa["size"]:,} bytes)</span>' if fa.get("size") else ""
+                agents_items.append(f'<li><a href="/repo/{esc(r["owner"])}/{esc(r["name"])}/">{esc(r["full_name"])}</a> · <a href="{href}" rel="nofollow">AGENTS.md on GitHub</a>{sz}</li>')
+        agents_sec = (f'<h2>AGENTS.md in {esc(lang)} ({len(agents_items)})</h2>\n'
+                      + (f'<ul class="plain">{"".join(agents_items)}</ul>' if agents_items else '<p class="muted">None of the sampled repositories has AGENTS.md yet.</p>')
+                      + '\n<h2>All sampled repositories</h2>\n')
         heads = "".join(f'<th><code>{esc(sp["label"])}</code></th>' for sp in PATHS)
         body = f"""<section>
 <p class="crumb"><a href="/">{esc(SITE_NAME)}</a> › <a href="/#languages">languages</a> › {esc(lang)}</p>
 <h1>{esc(lang)} repositories</h1>
 <p class="lead">{v['repos']:,} of {total:,} scanned repositories ({pct(v['repos'], total)} %) are {esc(lang)}; {v[PRIMARY_PATH]} ({pct(v[PRIMARY_PATH], v['repos'])} %) have AGENTS.md. Data as of {esc(updated)}. Source: public GitHub, presence checks only; stats CC BY 4.0, cite as "{esc(SITE_NAME)}, {esc(SITE_HOST)}".</p>
 <p class="muted">Sorted alphabetically by owner/name — not a ranking.</p>
-<div class="scroll"><table><thead><tr><th>Repository</th>{heads}</tr></thead><tbody>{''.join(trs)}</tbody></table></div>
+{agents_sec}<div class="scroll"><table><thead><tr><th>Repository</th>{heads}</tr></thead><tbody>{''.join(trs)}</tbody></table></div>
 </section>"""
         write_text(out / "lang" / slug / "index.html", layout(f"{lang} repos — {SITE_NAME}", body, updated,
                    description=f"Which of the {v['repos']} sampled {lang} repositories have AGENTS.md, CLAUDE.md, .cursorrules and other agent-instruction files.",
