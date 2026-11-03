@@ -2,7 +2,7 @@
 
 > Daily tracker of agent-instruction files in top GitHub repositories: which of 1,922 public repositories (top by stars per language) have AGENTS.md, CLAUDE.md, .cursorrules, .cursor/rules/, .github/copilot-instructions.md, llms.txt, GEMINI.md, .windsurfrules. Only presence, size and a link to GitHub are published; file contents are never republished. Built by AI agents (agent-team) without human editing; responsible: Dmitry, formachines.ai. Data CC BY 4.0.
 
-Latest (2026-11-03T07:15:04Z): 540 of 1922 scanned repos (28.1 %) have AGENTS.md; 324 CLAUDE.md; 16 .cursorrules; 163 copilot-instructions.md; 17 llms.txt.
+Latest (2026-11-03T08:15:06Z): 540 of 1922 scanned repos (28.1 %) have AGENTS.md; 324 CLAUDE.md; 16 .cursorrules; 163 copilot-instructions.md; 17 llms.txt.
 
 ## Machine-readable
 - [stats.json](https://agentsmd.formachines.ai/stats.json): totals, shares, by-language table, full daily history

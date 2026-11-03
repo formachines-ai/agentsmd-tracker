@@ -696,7 +696,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
     generated = today.get("generated") or (history[-1].get("generated") if history else None) or updated  # time of the last real scan
     stats = {
         "site": SITE_BASE, "generated": generated, "license": "CC BY 4.0", "data_delayed": delayed,
-        "method": METHOD, "attribution": f"{SITE_NAME}, {SITE_HOST}, {updated[:10]}, CC BY 4.0",
+        "method": METHOD, "attribution": f"{SITE_NAME}, {SITE_HOST}, {generated[:10]}, CC BY 4.0",
         "sample": sample, "scanned": total, "pending": len(agg["pending"]), "unreachable": len(agg["unreachable"]),
         "paths": [s["path"] for s in PATHS],
         "counts": agg["counts"], "any": agg["any"],
@@ -888,7 +888,11 @@ def main() -> int:
     today = update_history(agg, scan_stats, write=bool(scan_stats and scan_stats.get("ok")))
     history = load_history()
 
+    if not (scan_stats and scan_stats.get("ok")) and history and history[-1].get("generated"):
+        today = dict(today, generated=history[-1]["generated"])   # no real scan: keep the last real scan time, never the build clock
     last = agg["last_checked"]
+    if today.get("generated") and (not last or today["generated"] > last):
+        last = today["generated"]   # the scan finishes (and stamps 'generated') after its last repo check
     delayed, reason = False, ""
     if not agg["ok"]:
         delayed, reason = True, "No repository has been scanned successfully yet."
