@@ -6,11 +6,11 @@
  "stars": 40838,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-02T17:22:14Z",
+ "checked": "2026-11-03T06:15:40Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 24592,
+   "size": 24604,
    "url": "https://github.com/pingdotgg/t3code/blob/main/AGENTS.md"
   },
   "CLAUDE.md": {

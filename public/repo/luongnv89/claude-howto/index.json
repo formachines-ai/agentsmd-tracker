@@ -6,7 +6,7 @@
  "stars": 46412,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-02T17:17:56Z",
+ "checked": "2026-11-03T06:11:47Z",
  "files": {
   "AGENTS.md": {
    "present": false,
@@ -15,7 +15,7 @@
   },
   "CLAUDE.md": {
    "present": true,
-   "size": 4404,
+   "size": 4419,
    "url": "https://github.com/luongnv89/claude-howto/blob/main/CLAUDE.md"
   },
   ".cursorrules": {

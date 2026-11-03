@@ -6,7 +6,7 @@
  "stars": 13393,
  "default_branch": "master",
  "status": "ok",
- "checked": "2026-11-02T18:04:44Z",
+ "checked": "2026-11-03T06:54:16Z",
  "files": {
   "AGENTS.md": {
    "present": false,
@@ -15,7 +15,7 @@
   },
   "CLAUDE.md": {
    "present": true,
-   "size": 4594,
+   "size": 4783,
    "url": "https://github.com/plantuml/plantuml/blob/master/CLAUDE.md"
   },
   ".cursorrules": {

@@ -6,11 +6,11 @@
  "stars": 45251,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-02T17:18:56Z",
+ "checked": "2026-11-03T06:12:42Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 9886,
+   "size": 10101,
    "url": "https://github.com/vercel-labs/agent-browser/blob/main/AGENTS.md"
   },
   "CLAUDE.md": {

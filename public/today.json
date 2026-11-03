@@ -1,13 +1,24 @@
 {
  "site": "https://agentsmd.formachines.ai",
  "date": "2026-11-03",
- "generated": "2026-11-02T18:26:07Z",
+ "generated": "2026-11-03T07:13:27Z",
  "license": "CC BY 4.0",
  "added": [],
- "removed": [],
+ "removed": [
+  {
+   "full_name": "rustdesk/rustdesk",
+   "owner": "rustdesk",
+   "name": "rustdesk",
+   "language": "Rust",
+   "stars": 127914,
+   "path": "CLAUDE.md",
+   "size": null,
+   "url": "https://github.com/rustdesk/rustdesk/blob/master/CLAUDE.md"
+  }
+ ],
  "counts": {
   "AGENTS.md": 540,
-  "CLAUDE.md": 325,
+  "CLAUDE.md": 324,
   ".cursorrules": 16,
   ".cursor/rules": 35,
   ".github/copilot-instructions.md": 163,

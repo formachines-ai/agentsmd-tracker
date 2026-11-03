@@ -6,11 +6,11 @@
  "stars": 21416,
  "default_branch": "master",
  "status": "ok",
- "checked": "2026-11-02T17:48:29Z",
+ "checked": "2026-11-03T06:39:15Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 5101,
+   "size": 5383,
    "url": "https://github.com/1jehuang/jcode/blob/master/AGENTS.md"
   },
   "CLAUDE.md": {

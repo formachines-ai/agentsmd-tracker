@@ -6,16 +6,16 @@
  "stars": 17025,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-02T17:56:09Z",
+ "checked": "2026-11-03T06:46:20Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 10942,
+   "size": 11654,
    "url": "https://github.com/storytold/wordcraft/blob/main/AGENTS.md"
   },
   "CLAUDE.md": {
    "present": true,
-   "size": 9515,
+   "size": 10227,
    "url": "https://github.com/storytold/wordcraft/blob/main/CLAUDE.md"
   },
   ".cursorrules": {

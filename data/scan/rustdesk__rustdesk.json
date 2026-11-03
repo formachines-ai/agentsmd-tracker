@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-02T17:01:42Z",
+ "checked": "2026-11-03T05:57:13Z",
  "status": "ok",
  "default_branch": "master",
  "files": {
@@ -8,8 +8,8 @@
    "size": 17465
   },
   "CLAUDE.md": {
-   "present": true,
-   "size": 11
+   "present": false,
+   "size": null
   },
   ".cursorrules": {
    "present": false,
@@ -29,7 +29,7 @@
   },
   "GEMINI.md": {
    "present": true,
-   "size": 10
+   "size": 11
   },
   ".windsurfrules": {
    "present": false,

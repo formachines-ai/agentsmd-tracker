@@ -1,15 +1,26 @@
 {
  "date": "2026-11-03",
  "added": [],
- "removed": [],
- "generated": "2026-11-02T18:26:07Z",
+ "removed": [
+  {
+   "full_name": "rustdesk/rustdesk",
+   "owner": "rustdesk",
+   "name": "rustdesk",
+   "language": "Rust",
+   "stars": 127914,
+   "path": "CLAUDE.md",
+   "size": null,
+   "url": "https://github.com/rustdesk/rustdesk/blob/master/CLAUDE.md"
+  }
+ ],
+ "generated": "2026-11-03T07:13:27Z",
  "sample": 1922,
  "scanned": 1922,
  "pending": 0,
  "unreachable": 0,
  "counts": {
   "AGENTS.md": 540,
-  "CLAUDE.md": 325,
+  "CLAUDE.md": 324,
   ".cursorrules": 16,
   ".cursor/rules": 35,
   ".github/copilot-instructions.md": 163,
@@ -110,7 +121,7 @@
   "Rust": {
    "repos": 198,
    "AGENTS.md": 88,
-   "CLAUDE.md": 56,
+   "CLAUDE.md": 55,
    ".cursorrules": 1,
    ".cursor/rules": 5,
    ".github/copilot-instructions.md": 13,

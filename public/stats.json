@@ -1,6 +1,6 @@
 {
  "site": "https://agentsmd.formachines.ai",
- "generated": "2026-11-02T18:26:07Z",
+ "generated": "2026-11-03T07:13:27Z",
  "license": "CC BY 4.0",
  "data_delayed": false,
  "method": "Top-by-stars sample of public repositories per language; one HEAD request per tracked path on the default branch; only presence and size are recorded, never file contents.",
@@ -21,7 +21,7 @@
  ],
  "counts": {
   "AGENTS.md": 540,
-  "CLAUDE.md": 325,
+  "CLAUDE.md": 324,
   ".cursorrules": 16,
   ".cursor/rules": 35,
   ".github/copilot-instructions.md": 163,
@@ -141,7 +141,7 @@
    "repos": 198,
    "any": 98,
    "AGENTS.md": 88,
-   "CLAUDE.md": 56,
+   "CLAUDE.md": 55,
    ".cursorrules": 1,
    ".cursor/rules": 5,
    ".github/copilot-instructions.md": 13,
@@ -185,7 +185,7 @@
    "scanned": 1922,
    "counts": {
     "AGENTS.md": 540,
-    "CLAUDE.md": 325,
+    "CLAUDE.md": 324,
     ".cursorrules": 16,
     ".cursor/rules": 35,
     ".github/copilot-instructions.md": 163,
@@ -195,7 +195,7 @@
    },
    "any": 675,
    "added": 0,
-   "removed": 0
+   "removed": 1
   }
  ]
 }

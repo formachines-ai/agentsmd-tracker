@@ -6,11 +6,11 @@
  "stars": 51021,
  "default_branch": "develop",
  "status": "ok",
- "checked": "2026-11-02T17:14:57Z",
+ "checked": "2026-11-03T06:09:10Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 27729,
+   "size": 28263,
    "url": "https://github.com/cypress-io/cypress/blob/develop/AGENTS.md"
   },
   "CLAUDE.md": {

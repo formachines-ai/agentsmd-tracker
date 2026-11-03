@@ -6,7 +6,7 @@
  "stars": 127914,
  "default_branch": "master",
  "status": "ok",
- "checked": "2026-11-02T17:01:42Z",
+ "checked": "2026-11-03T05:57:13Z",
  "files": {
   "AGENTS.md": {
    "present": true,
@@ -14,9 +14,9 @@
    "url": "https://github.com/rustdesk/rustdesk/blob/master/AGENTS.md"
   },
   "CLAUDE.md": {
-   "present": true,
-   "size": 11,
-   "url": "https://github.com/rustdesk/rustdesk/blob/master/CLAUDE.md"
+   "present": false,
+   "size": null,
+   "url": null
   },
   ".cursorrules": {
    "present": false,
@@ -40,7 +40,7 @@
   },
   "GEMINI.md": {
    "present": true,
-   "size": 10,
+   "size": 11,
    "url": "https://github.com/rustdesk/rustdesk/blob/master/GEMINI.md"
   },
   ".windsurfrules": {

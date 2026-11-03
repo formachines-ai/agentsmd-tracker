@@ -6,11 +6,11 @@
  "stars": 50139,
  "default_branch": "master",
  "status": "ok",
- "checked": "2026-11-02T17:15:40Z",
+ "checked": "2026-11-03T06:09:47Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 8830,
+   "size": 9337,
    "url": "https://github.com/mudler/LocalAI/blob/master/AGENTS.md"
   },
   "CLAUDE.md": {

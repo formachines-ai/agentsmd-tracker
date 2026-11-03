@@ -6,11 +6,11 @@
  "stars": 18359,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-02T17:53:45Z",
+ "checked": "2026-11-03T06:44:06Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 24833,
+   "size": 25424,
    "url": "https://github.com/windmill-labs/windmill/blob/main/AGENTS.md"
   },
   "CLAUDE.md": {

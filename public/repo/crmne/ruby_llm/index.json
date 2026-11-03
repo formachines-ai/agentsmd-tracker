@@ -6,11 +6,11 @@
  "stars": 4490,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-02T18:23:52Z",
+ "checked": "2026-11-03T07:11:49Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 28710,
+   "size": 28755,
    "url": "https://github.com/crmne/ruby_llm/blob/main/AGENTS.md"
   },
   "CLAUDE.md": {
