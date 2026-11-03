@@ -599,7 +599,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
     hero = f"""<section class="hero">
 <h1>{agg['counts'][PRIMARY_PATH]:,} of {total:,} top GitHub repositories ({pct(agg['counts'][PRIMARY_PATH], total)} %) have an <code>AGENTS.md</code></h1>
 <p class="lead">{any_n:,} ({pct(any_n, total)} %) have at least one agent-instruction file of the {len(PATHS)} kinds tracked here. Sample: {sample:,} public repositories, top by stars across {len(agg['by_lang']) or '—'} languages, re-checked every day at 04:00 UTC. Only presence, size and a link are recorded — never the contents.</p>
-<p class="limit">What this share measures: whether a listed file path exists at the repository root of the default branch, in a sample of popular repositories per language. It is file presence only — not the quality or use of a file, and not all of GitHub.</p>
+<p class="limit">What this share measures: whether a listed file path exists at one of its fixed conventional locations on the default branch (AGENTS.md, CLAUDE.md, GEMINI.md, llms.txt, .cursorrules and .windsurfrules at the repository root; .github/copilot-instructions.md; .cursor/rules/), in a sample of popular repositories per language. It is file presence only — not the quality or use of a file, and not all of GitHub.</p>
 <p class="paths"><a href="#languages">Explore your language</a> · <a href="#method">See the sampling method</a></p>
 </section>"""
 
@@ -660,7 +660,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
 <ul>
 <li><strong>Sample.</strong> {sample:,} public, non-fork, non-archived repositories with the most stars per language (GitHub Search API, collected once and extended over time). {len(agg['unreachable'])} are currently unreachable (moved or removed) and excluded.</li>
 <li><strong>Check.</strong> Once a day a HEAD request per path against the default branch: a <code>200</code> means the file exists, <code>Content-Length</code> is its size. <code>.cursor/rules/</code> is checked as a directory. Names are matched case-sensitively, exactly as the conventions spell them.</li>
-<li><strong>Paths checked.</strong> Only the listed paths at the repository root ({', '.join(esc(x['label']) for x in PATHS)}). Nested files, for example in subdirectories or packages, are not checked.</li>
+<li><strong>Paths checked.</strong> Only these fixed locations on the default branch: AGENTS.md, CLAUDE.md, GEMINI.md, llms.txt, .cursorrules and .windsurfrules at the repository root, plus .github/copilot-instructions.md and .cursor/rules/ ({', '.join(esc(x['label']) for x in PATHS)}). Nested files, for example in subdirectories or packages, are not checked.</li>
 <li><strong>Added today.</strong> A path present in today's scan and absent in the previous snapshot of the same repository. Links go to the file on GitHub via <code>/go/&lt;id&gt;/</code>, a plain redirect page.</li>
 <li><strong>Languages.</strong> Each language in the table above has a full list of its sampled repositories (every sampled repository is listed) at <code>/lang/&lt;slug&gt;/</code>, for example <a href="/lang/python/">/lang/python/</a>.</li>
 <li><strong>Baseline.</strong> A repository seen for the first time is baseline: files it already has are counted, but not shown as added.</li>
