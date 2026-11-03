@@ -811,7 +811,7 @@ Latest ({updated}): {agg['counts'][PRIMARY_PATH]} of {total} scanned repos ({pct
 - Cite as "{SITE_NAME}, {SITE_HOST}, <date>". Attribution satisfies CC BY 4.0.
 - Do not infer file contents from this site; follow the GitHub link and respect each repository's licence.
 """)
-    write_text(out / "robots.txt", f"User-agent: *\nAllow: /\n\nSitemap: {SITE_BASE}/sitemap.xml\n")
+    write_text(out / "robots.txt", f"User-agent: *\nAllow: /\nDisallow: /go/\n\nSitemap: {SITE_BASE}/sitemap.xml\n")
     write_text(out / "sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
                + "".join(f"<url><loc>{xml_escape(u)}</loc></url>\n" for u in urls) + "</urlset>\n")
     write_text(out / "404.html", layout("Page not found — " + SITE_NAME, f"""<section>
