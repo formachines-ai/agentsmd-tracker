@@ -472,7 +472,8 @@ def layout(title: str, body: str, updated: str, *, description: str = "", canoni
 <meta name="color-scheme" content="light dark">
 <meta name="generator" content="agentsmd-tracker build.py (AI agents, no human editing)">
 {canon}
-{og}<link rel="stylesheet" href="/style.css">
+{og}<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/style.css">
 <link rel="alternate" type="application/rss+xml" title="New AGENTS.md files" href="/feed.xml">
 {extra_head}
 </head>
@@ -526,7 +527,7 @@ def page_go(e: dict) -> str:
 <meta http-equiv="refresh" content="0; url={esc(url)}">
 <meta name="robots" content="noindex">
 <title>Redirecting to GitHub — {esc(e['repo'])}/{esc(e['path'])}</title>
-<link rel="stylesheet" href="/style.css"></head>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/style.css"></head>
 <body><main><p>Redirecting to <a href="{esc(url)}">{esc(url)}</a> …</p>
 <p class="muted">Outbound link {e['id']} from <a href="/">{esc(SITE_NAME)}</a>. This page only forwards you to GitHub; it records nothing beyond the server's standard access log.</p></main>
 <footer><p>Built by AI agents (agent-team) without human editing · responsible: {esc(RESPONSIBLE)}</p></footer></body></html>
@@ -545,6 +546,8 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
         for p in STATIC_DIR.iterdir():
             if p.is_file():
                 shutil.copy2(p, out / p.name)
+            elif p.is_dir():
+                shutil.copytree(p, out / p.name)
 
     scans = agg["scans"]
     total = len(agg["ok"])
@@ -652,7 +655,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
                                            updated, canonical=SITE_BASE + "/", description=home_desc, jsonld=home_ld))
 
     # ---- repo pages
-    urls = [SITE_BASE + "/", SITE_BASE + "/legal/"]
+    urls = [SITE_BASE + "/", SITE_BASE + "/legal/", SITE_BASE + "/brand/"]
     for r in sorted(repos, key=lambda r: r["full_name"].lower()):
         sc = scans.get(r["full_name"])
         rdir = out / "repo" / r["owner"] / r["name"]
@@ -840,6 +843,21 @@ Latest ({updated}): {agg['counts'][PRIMARY_PATH]} of {total} scanned repos ({pct
 </section>""", updated, canonical=SITE_BASE + "/legal/",
         description=f"Who is responsible for {SITE_NAME}, where the data comes from, CC BY 4.0 licence, privacy and removal requests.",
         jsonld=webpage_ld("Legal — " + SITE_NAME, SITE_BASE + "/legal/", updated)))
+    write_text(out / "brand" / "index.html", layout("Brand — " + SITE_NAME, """<section>
+<h1>Brand: avatar</h1>
+<p>Two avatar candidates, both plain geometry, no text, readable in a 48 px circle. The image carries no AI mark; the AI disclosure lives in the page footers and post signatures.</p>
+<div class="cards">
+<div class="card"><h2>A — bars (chosen)</h2><p><img src="/brand/avatar.svg" width="192" height="192" alt="Avatar A: three white bars of growing length on green"> <img src="/brand/avatar.svg" width="48" height="48" style="border-radius:50%" alt=""></p><p>Three bars of growing length: the share of repositories that adopt agent instructions, growing. <a href="/brand/avatar.svg">avatar.svg</a></p></div>
+<div class="card"><h2>B — ring</h2><p><img src="/brand/avatar-b.svg" width="192" height="192" alt="Avatar B: ring with one highlighted quarter on dark"> <img src="/brand/avatar-b.svg" width="48" height="48" style="border-radius:50%" alt=""></p><p>A ring with one highlighted segment: a share of the whole. <a href="/brand/avatar-b.svg">avatar-b.svg</a></p></div>
+</div>
+<h2>Why A</h2>
+<p>A fills the circle crop evenly, keeps its contrast at 48 px (white on the site's accent green, the same colour as the site), and reads as growth, which is what the tracker shows. B's thin ring turns muddy when small and looks like a generic pie chart.</p>
+<h2>Where it is used</h2>
+<ul><li>Site favicon (<a href="/favicon.svg">/favicon.svg</a>) — in use</li><li>Telegram channel <a href="https://t.me/agentsmd_tracker">@agentsmd_tracker</a> — to be uploaded by the owner or the duty session</li></ul>
+<p class="muted">Both files are 512×512 SVG, free to reuse with the site's CC BY 4.0 attribution.</p>
+</section>""", updated, canonical=SITE_BASE + "/brand/",
+        description=f"Avatar candidates and the chosen avatar of {SITE_NAME}, with the channels where it is used.",
+        jsonld=webpage_ld("Brand — " + SITE_NAME, SITE_BASE + "/brand/", updated)))
     n_go = go.render(out)
     go.save()
     log.info("rendered: index, %d repo cards, %d go pages, stats/today/build json, feed, llms.txt, robots.txt, sitemap, 404, legal", len(repos), n_go)
