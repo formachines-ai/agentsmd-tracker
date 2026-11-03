@@ -370,7 +370,7 @@ def aggregate(repos: list[dict]) -> dict:
 def update_history(agg: dict, scan_stats: dict | None, write: bool = True) -> dict:
     today = now_utc().strftime("%Y-%m-%d")
     hfile = HISTORY_DIR / f"{today}.json"
-    if not write and hfile.exists():   # --no-scan: keep today's file (and its scan timestamp) untouched
+    if not write and hfile.exists():   # nothing was scanned: keep today's file (and its scan timestamp) untouched
         return read_json(hfile, {"date": today, "added": [], "removed": []})
     doc = read_json(hfile, {"date": today, "added": [], "removed": []})
     if scan_stats:   # union with earlier runs of the same day
@@ -884,7 +884,8 @@ def main() -> int:
         scan_stats = run_scan(repos, a.limit, a.max_seconds, a.force)
 
     agg = aggregate(repos)
-    today = update_history(agg, scan_stats, write=not a.no_scan)
+    # write history only if a scan actually checked something; a run that scanned nothing (--no-scan, or all repos fresh) keeps the scan timestamp
+    today = update_history(agg, scan_stats, write=bool(scan_stats and scan_stats.get("ok")))
     history = load_history()
 
     last = agg["last_checked"]
