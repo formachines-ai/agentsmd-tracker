@@ -1,10 +1,10 @@
 {
  "site": "https://agentsmd.formachines.ai",
- "generated": "2026-11-02T22:11:55Z",
+ "generated": "2026-11-03T01:13:15Z",
  "license": "CC BY 4.0",
  "data_delayed": false,
  "method": "Top-by-stars sample of public repositories per language; one HEAD request per tracked path on the default branch; only presence and size are recorded, never file contents.",
- "attribution": "AGENTS.md Tracker, agentsmd.formachines.ai, 2026-11-02, CC BY 4.0",
+ "attribution": "AGENTS.md Tracker, agentsmd.formachines.ai, 2026-11-03, CC BY 4.0",
  "sample": 1922,
  "scanned": 1922,
  "pending": 0,
@@ -165,6 +165,23 @@
  "history": [
   {
    "date": "2026-11-02",
+   "scanned": 1922,
+   "counts": {
+    "AGENTS.md": 540,
+    "CLAUDE.md": 325,
+    ".cursorrules": 16,
+    ".cursor/rules": 35,
+    ".github/copilot-instructions.md": 163,
+    "llms.txt": 17,
+    "GEMINI.md": 21,
+    ".windsurfrules": 6
+   },
+   "any": 675,
+   "added": 0,
+   "removed": 0
+  },
+  {
+   "date": "2026-11-03",
    "scanned": 1922,
    "counts": {
     "AGENTS.md": 540,

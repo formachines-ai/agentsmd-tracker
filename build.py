@@ -630,6 +630,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
 <li><strong>Sample.</strong> {sample:,} public, non-fork, non-archived repositories with the most stars per language (GitHub Search API, collected once and extended over time). {len(agg['unreachable'])} are currently unreachable (moved or removed) and excluded.</li>
 <li><strong>Check.</strong> Once a day a HEAD request per path against the default branch: a <code>200</code> means the file exists, <code>Content-Length</code> is its size. <code>.cursor/rules/</code> is checked as a directory. Names are matched case-sensitively, exactly as the conventions spell them.</li>
 <li><strong>Added today.</strong> A path present in today's scan and absent in the previous snapshot of the same repository. Links go to the file on GitHub via <code>/go/&lt;id&gt;/</code>, a plain redirect page.</li>
+<li><strong>Languages.</strong> Each language in the table above has a full list of its sampled repositories at <code>/lang/&lt;slug&gt;/</code>, for example <a href="/lang/python/">/lang/python/</a>.</li>
 <li><strong>Not done.</strong> No file contents are stored or shown. No accounts, no cookies, no JavaScript, no tracking of visitors.</li>
 </ul>
 </section>"""
@@ -668,13 +669,15 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
                 rows.append(f'<tr><td><code>{esc(s["label"])}</code></td><td class="muted">not checked yet</td><td>—</td><td></td></tr>')
         status = (sc or {}).get("status", "pending")
         checked = (sc or {}).get("checked", "—")
+        lang_line = (f'<p><a href="/lang/{lang_slug(r["language"])}/">Other {esc(r["language"])} repos in the sample →</a></p>\n'
+                     if r.get("language") else "")
         body = f"""<section>
 <p class="crumb"><a href="/">{esc(SITE_NAME)}</a> › repo</p>
 <h1>{esc(r['full_name'])}</h1>
 <p class="lead">{esc(r['language'])} · {r['stars']:,} stars · default branch <code>{esc((sc or {}).get('default_branch') or r.get('default_branch') or 'main')}</code> · <a href="{esc(r.get('html_url') or GH_BASE + '/' + r['full_name'])}" rel="nofollow">repository on GitHub</a></p>
 <p class="muted">Scan status: {esc(status)} · last checked {esc(checked)} · <a href="/repo/{esc(r['owner'])}/{esc(r['name'])}/index.json">index.json</a></p>
 <div class="scroll"><table><thead><tr><th>Path</th><th>Present</th><th>Size</th><th>Link</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div>
-<p class="muted">Only presence, size and a link are published; the file contents belong to the repository and are not reproduced here.</p>
+{lang_line}<p class="muted">Only presence, size and a link are published; the file contents belong to the repository and are not reproduced here.</p>
 </section>"""
         write_text(rdir / "index.html", layout(f"{r['full_name']} — {SITE_NAME}", body, updated,
                                               description=f"Does {r['full_name']} have AGENTS.md, CLAUDE.md, .cursorrules, copilot-instructions.md or llms.txt? Daily check by {SITE_NAME}.",
