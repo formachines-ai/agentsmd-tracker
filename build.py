@@ -56,6 +56,7 @@ DEFAULT_DESCRIPTION = (f"{SITE_NAME}: daily count of AGENTS.md, CLAUDE.md, .curs
 METHOD = ("Top-by-stars sample of public repositories per language; one HEAD request per tracked path on the default branch; "
           "only presence and size are recorded, never file contents.")
 SITE_HOST = "agentsmd.formachines.ai"
+FEEDBACK_ISSUES_URL = "https://github.com/formachines-ai/agentsmd-tracker/issues/new"
 SITE_BASE = f"https://{SITE_HOST}"
 RESPONSIBLE = "Dmitry, formachines.ai"
 LEGAL_UPSTREAM = "https://formachines.ai/legal/"
@@ -534,6 +535,28 @@ def page_go(e: dict) -> str:
 """
 
 
+def page_vote(r: dict, direction: str) -> str:
+    back = f"/repo/{r['owner']}/{r['name']}/"
+    return f"""<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="refresh" content="0; url={esc(back)}">
+<meta name="robots" content="noindex">
+<title>Thanks — {esc(r['full_name'])}</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/style.css"></head>
+<body><main><p>Noted ({'useful' if direction == 'up' else 'not useful'}). Returning to <a href="{esc(back)}">{esc(r['full_name'])}</a> …</p>
+<p class="muted">This page only forwards you back; it records nothing beyond the server's standard access log.</p></main>
+<footer><p>Built by AI agents (agent-team) without human editing · responsible: {esc(RESPONSIBLE)}</p></footer></body></html>
+"""
+
+
+def feedback_links(r: dict) -> str:
+    rid = r["id"]
+    title = urllib.parse.quote(f"Error on /repo/{r['full_name']}/: ")
+    return (f'<p class="feedback muted">Was this useful? <a href="/go/vote/{rid}/up/" rel="nofollow">useful</a> · '
+            f'<a href="/go/vote/{rid}/down/" rel="nofollow">not useful</a> · '
+            f'<a href="{FEEDBACK_ISSUES_URL}?title={title}" rel="nofollow">Report an error</a></p>')
+
+
 def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, build_info: dict) -> None:
     updated = build_info["built_at"]
     go = GoLinks()
@@ -683,12 +706,15 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
 <p class="lead">{esc(r['language'])} · {r['stars']:,} stars · default branch <code>{esc((sc or {}).get('default_branch') or r.get('default_branch') or 'main')}</code> · <a href="{esc(r.get('html_url') or GH_BASE + '/' + r['full_name'])}" rel="nofollow">repository on GitHub</a></p>
 <p class="muted">Scan status: {esc(status)} · last checked {esc(checked)} · <a href="/repo/{esc(r['owner'])}/{esc(r['name'])}/index.json">index.json</a></p>
 <div class="scroll"><table><thead><tr><th>Path</th><th>Present</th><th>Size</th><th>Link</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div>
-{lang_line}<p class="muted">Only presence, size and a link are published; the file contents belong to the repository and are not reproduced here.</p>
+{lang_line}{feedback_links(r)}
+<p class="muted">Only presence, size and a link are published; the file contents belong to the repository and are not reproduced here.</p>
 </section>"""
         write_text(rdir / "index.html", layout(f"{r['full_name']} — {SITE_NAME}", body, updated,
                                               description=f"Does {r['full_name']} have AGENTS.md, CLAUDE.md, .cursorrules, copilot-instructions.md or llms.txt? Daily check by {SITE_NAME}.",
                                               canonical=f"{SITE_BASE}/repo/{r['owner']}/{r['name']}/",
                                               jsonld=webpage_ld(f"{r['full_name']} — {SITE_NAME}", f"{SITE_BASE}/repo/{r['owner']}/{r['name']}/", updated)))
+        for d in ("up", "down"):
+            write_text(out / "go" / "vote" / str(r["id"]) / d / "index.html", page_vote(r, d))
         write_json(rdir / "index.json", {"repo": r["full_name"], "owner": r["owner"], "name": r["name"], "language": r["language"],
                                           "stars": r["stars"], "default_branch": (sc or {}).get("default_branch") or r.get("default_branch"),
                                           "status": status, "checked": checked if sc else None, "files": files_json,
