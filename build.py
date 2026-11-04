@@ -599,9 +599,13 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
 {sparkline(series, label=f"{s['label']} share by day")}
 </section>""")
     any_n = agg["any"]
+    gen_raw = today.get("generated") or (history[-1].get("generated") if history else None) or updated  # same value as stats.json 'generated'
+    gen_txt = gen_raw[:10] + " " + gen_raw[11:16]
+    stale_txt = "" if gen_raw[:10] == updated[:10] else f" (not today's: scan dated {gen_raw[:10]})"
     hero = f"""<section class="hero">
 <h1>{agg['counts'][PRIMARY_PATH]:,} of {total:,} top GitHub repositories ({pct(agg['counts'][PRIMARY_PATH], total)} %) have an <code>AGENTS.md</code></h1>
-<p class="lead">{any_n:,} ({pct(any_n, total)} %) have at least one agent-instruction file of the {len(PATHS)} kinds tracked here. Sample: {sample:,} public repositories, top by stars across {len(agg['by_lang']) or '—'} languages, re-checked every day at 04:00 UTC. Only presence, size and a link are recorded — never the contents.</p>
+<p class="lead">{any_n:,} ({pct(any_n, total)} %) have at least one agent-instruction file of the {len(PATHS)} kinds tracked here. Sample: {sample:,} public repositories, top by stars across {len(agg['by_lang']) or '—'} languages, rescanned daily. Only presence, size and a link are recorded — never the contents.</p>
+<p class="asof"><strong>Latest published scan: {esc(gen_txt)} UTC.</strong> A new scan starts daily at 04:00 UTC; results are published when it finishes. Numbers on this page are from the latest published scan{esc(stale_txt)}.</p>
 <p class="limit">What this share measures: whether a listed file path exists at one of its fixed conventional locations on the default branch (AGENTS.md, CLAUDE.md, GEMINI.md, llms.txt, .cursorrules and .windsurfrules at the repository root; .github/copilot-instructions.md; .cursor/rules/), in a sample of popular repositories per language. It is file presence only — not the quality or use of a file, and not all of GitHub.</p>
 <p class="paths"><a href="#languages">Explore your language</a> · <a href="#method">See the sampling method</a></p>
 </section>"""
@@ -642,7 +646,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
         removed_html = "<h3>Removed today</h3><ul class=\"feed\">" + "".join(
             f'<li><a href="/repo/{esc(x["owner"])}/{esc(x["name"])}/">{esc(x["full_name"])}</a> removed <code>{esc(x["path"])}</code></li>' for x in removed) + "</ul>"
     today_sec = f"""<section id="today">
-<h2>Added today <span class="muted">({esc(today.get('date', ''))} UTC)</span></h2>
+<h2>Added today <span class="muted">(scan of {esc(today.get('date', ''))} UTC)</span></h2>
 {today_html}
 {removed_html}
 <p class="muted">Machine-readable: <a href="/today.json">today.json</a> · <a href="/stats.json">stats.json</a> · <a href="/feed.xml">RSS of new AGENTS.md files</a>.</p>
