@@ -85,6 +85,8 @@ BACKOFF_429_S = 60
 RESCAN_HOURS = 20                # a repo checked less than this many hours ago is not rescanned
 STALE_HOURS = 36                 # no successful scan for this long => "data delayed" banner
 FEED_DAYS = 30                   # history window for feed.xml
+SPARK_MIN_SPAN_PP = 5.0          # sparkline y-axis never spans less than this many percentage points
+BASELINE_DAYS = 14               # show the "baseline" label while history is shorter than this
 SPARK_DAYS = 60                  # history window for the sparklines
 MAX_TODAY_ITEMS = 200            # feed on the front page
 
@@ -507,9 +509,10 @@ def sparkline(values: list[float], width: int = 260, height: int = 48, label: st
     """Inline SVG line of daily values (percent). No JS."""
     if not values:
         return ""
-    vmax = max(values) or 1.0
-    vmin = min(values)
-    span = (vmax - vmin) or 1.0
+    # fixed minimum span (SPARK_MIN_SPAN_PP percentage points): tiny changes stay tiny
+    vmax = max(values)
+    span = max(vmax - min(values), SPARK_MIN_SPAN_PP)
+    vmin = max(0.0, (vmax + min(values)) / 2 - span / 2)
     pad = 4
     n = len(values)
     pts = []
@@ -675,7 +678,14 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
 </ul>
 </section>"""
     day = updated[:10]
-    cite = f'<p class="cite muted">Cite as: {esc(SITE_NAME)}, {esc(SITE_HOST)}, {esc(day)}, CC BY 4.0</p>'
+    scan_day = gen_raw[:10]
+    cite = (f'<p class="cite muted">Cite as: {esc(SITE_NAME)}, {esc(SITE_HOST)}, scan of {esc(scan_day)}, CC BY 4.0. '
+            f'Values for each date stay in <a href="/stats.json">{esc(SITE_BASE)}/stats.json</a> history[].</p>')
+    base_note = ""
+    if history and len(history) < BASELINE_DAYS:
+        base_note = (f'<p class="muted baseline">baseline: {len(history)} days since {esc(history[0]["date"])}. '
+                     f'Sparkline axes span at least {SPARK_MIN_SPAN_PP:g} percentage points, so small day-to-day changes look small.</p>')
+
     home_desc = (f"{agg['counts'][PRIMARY_PATH]:,} of {total:,} top GitHub repos have AGENTS.md ({pct(agg['counts'][PRIMARY_PATH], total)} %). "
                  "Daily tracker of CLAUDE.md, .cursorrules, llms.txt and more.")
     home_ld = {"@context": "https://schema.org", "@type": "Dataset", "name": f"{SITE_NAME}: agent-instruction files in top GitHub repositories",
@@ -685,7 +695,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
                "distribution": [{"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": SITE_BASE + "/stats.json"},
                                 {"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": SITE_BASE + "/today.json"}]}
     write_text(out / "index.html", layout(f"{SITE_NAME} — AGENTS.md adoption in top GitHub repos",
-                                           banner + hero + cite + '<div class="cards">' + "".join(cards) + '</div>' + today_sec + lang_table + hist_sec + method,
+                                           banner + hero + cite + base_note + '<div class="cards">' + "".join(cards) + '</div>' + today_sec + lang_table + hist_sec + method,
                                            updated, canonical=SITE_BASE + "/", description=home_desc, jsonld=home_ld))
 
     # ---- repo pages
