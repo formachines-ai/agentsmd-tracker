@@ -11,12 +11,16 @@
   "AGENTS.md": {
    "present": true,
    "size": 36873,
-   "url": "https://github.com/koel/koel/blob/master/AGENTS.md"
+   "url": "https://github.com/koel/koel/blob/master/AGENTS.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "CLAUDE.md": {
    "present": true,
    "size": 9,
-   "url": "https://github.com/koel/koel/blob/master/CLAUDE.md"
+   "url": "https://github.com/koel/koel/blob/master/CLAUDE.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".cursorrules": {
    "present": false,
@@ -26,12 +30,16 @@
   ".cursor/rules": {
    "present": true,
    "size": null,
-   "url": "https://github.com/koel/koel/tree/master/.cursor/rules"
+   "url": "https://github.com/koel/koel/tree/master/.cursor/rules",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".github/copilot-instructions.md": {
    "present": true,
    "size": 13815,
-   "url": "https://github.com/koel/koel/blob/master/.github/copilot-instructions.md"
+   "url": "https://github.com/koel/koel/blob/master/.github/copilot-instructions.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "llms.txt": {
    "present": false,

@@ -16,7 +16,9 @@
   "CLAUDE.md": {
    "present": true,
    "size": 6369,
-   "url": "https://github.com/phpstan/phpstan/blob/2.3.x/CLAUDE.md"
+   "url": "https://github.com/phpstan/phpstan/blob/2.3.x/CLAUDE.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".cursorrules": {
    "present": false,

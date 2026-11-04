@@ -26,7 +26,9 @@
   ".cursor/rules": {
    "present": true,
    "size": null,
-   "url": "https://github.com/flipped-aurora/gin-vue-admin/tree/main/.cursor/rules"
+   "url": "https://github.com/flipped-aurora/gin-vue-admin/tree/main/.cursor/rules",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".github/copilot-instructions.md": {
    "present": false,

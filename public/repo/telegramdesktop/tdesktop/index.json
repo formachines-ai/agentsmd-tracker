@@ -11,12 +11,16 @@
   "AGENTS.md": {
    "present": true,
    "size": 47351,
-   "url": "https://github.com/telegramdesktop/tdesktop/blob/dev/AGENTS.md"
+   "url": "https://github.com/telegramdesktop/tdesktop/blob/dev/AGENTS.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "CLAUDE.md": {
    "present": true,
    "size": 100,
-   "url": "https://github.com/telegramdesktop/tdesktop/blob/dev/CLAUDE.md"
+   "url": "https://github.com/telegramdesktop/tdesktop/blob/dev/CLAUDE.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".cursorrules": {
    "present": false,

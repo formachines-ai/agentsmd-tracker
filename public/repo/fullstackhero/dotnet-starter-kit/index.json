@@ -11,12 +11,16 @@
   "AGENTS.md": {
    "present": true,
    "size": 9614,
-   "url": "https://github.com/fullstackhero/dotnet-starter-kit/blob/main/AGENTS.md"
+   "url": "https://github.com/fullstackhero/dotnet-starter-kit/blob/main/AGENTS.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "CLAUDE.md": {
    "present": true,
    "size": 146,
-   "url": "https://github.com/fullstackhero/dotnet-starter-kit/blob/main/CLAUDE.md"
+   "url": "https://github.com/fullstackhero/dotnet-starter-kit/blob/main/CLAUDE.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".cursorrules": {
    "present": false,
@@ -41,7 +45,9 @@
   "GEMINI.md": {
    "present": true,
    "size": 145,
-   "url": "https://github.com/fullstackhero/dotnet-starter-kit/blob/main/GEMINI.md"
+   "url": "https://github.com/fullstackhero/dotnet-starter-kit/blob/main/GEMINI.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".windsurfrules": {
    "present": false,

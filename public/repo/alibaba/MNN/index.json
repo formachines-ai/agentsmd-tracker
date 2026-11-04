@@ -11,12 +11,16 @@
   "AGENTS.md": {
    "present": true,
    "size": 8145,
-   "url": "https://github.com/alibaba/MNN/blob/master/AGENTS.md"
+   "url": "https://github.com/alibaba/MNN/blob/master/AGENTS.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "CLAUDE.md": {
    "present": true,
    "size": 15,
-   "url": "https://github.com/alibaba/MNN/blob/master/CLAUDE.md"
+   "url": "https://github.com/alibaba/MNN/blob/master/CLAUDE.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".cursorrules": {
    "present": false,

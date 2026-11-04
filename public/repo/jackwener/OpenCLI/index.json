@@ -36,7 +36,9 @@
   "llms.txt": {
    "present": true,
    "size": 4343,
-   "url": "https://github.com/jackwener/OpenCLI/blob/main/llms.txt"
+   "url": "https://github.com/jackwener/OpenCLI/blob/main/llms.txt",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "GEMINI.md": {
    "present": false,

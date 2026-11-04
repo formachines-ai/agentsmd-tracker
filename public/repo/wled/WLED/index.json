@@ -11,7 +11,9 @@
   "AGENTS.md": {
    "present": true,
    "size": 26736,
-   "url": "https://github.com/wled/WLED/blob/main/AGENTS.md"
+   "url": "https://github.com/wled/WLED/blob/main/AGENTS.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "CLAUDE.md": {
    "present": false,
@@ -31,7 +33,9 @@
   ".github/copilot-instructions.md": {
    "present": true,
    "size": 8306,
-   "url": "https://github.com/wled/WLED/blob/main/.github/copilot-instructions.md"
+   "url": "https://github.com/wled/WLED/blob/main/.github/copilot-instructions.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "llms.txt": {
    "present": false,

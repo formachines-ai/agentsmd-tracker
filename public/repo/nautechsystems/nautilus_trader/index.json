@@ -11,12 +11,16 @@
   "AGENTS.md": {
    "present": true,
    "size": 5350,
-   "url": "https://github.com/nautechsystems/nautilus_trader/blob/develop/AGENTS.md"
+   "url": "https://github.com/nautechsystems/nautilus_trader/blob/develop/AGENTS.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "CLAUDE.md": {
    "present": true,
    "size": 29,
-   "url": "https://github.com/nautechsystems/nautilus_trader/blob/develop/CLAUDE.md"
+   "url": "https://github.com/nautechsystems/nautilus_trader/blob/develop/CLAUDE.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".cursorrules": {
    "present": false,

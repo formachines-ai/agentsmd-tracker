@@ -11,12 +11,16 @@
   "AGENTS.md": {
    "present": true,
    "size": 94638,
-   "url": "https://github.com/career-ops-hq/career-ops/blob/main/AGENTS.md"
+   "url": "https://github.com/career-ops-hq/career-ops/blob/main/AGENTS.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "CLAUDE.md": {
    "present": true,
    "size": 103,
-   "url": "https://github.com/career-ops-hq/career-ops/blob/main/CLAUDE.md"
+   "url": "https://github.com/career-ops-hq/career-ops/blob/main/CLAUDE.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".cursorrules": {
    "present": false,
@@ -31,7 +35,9 @@
   ".github/copilot-instructions.md": {
    "present": true,
    "size": 4553,
-   "url": "https://github.com/career-ops-hq/career-ops/blob/main/.github/copilot-instructions.md"
+   "url": "https://github.com/career-ops-hq/career-ops/blob/main/.github/copilot-instructions.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "llms.txt": {
    "present": false,
@@ -41,7 +47,9 @@
   "GEMINI.md": {
    "present": true,
    "size": 298,
-   "url": "https://github.com/career-ops-hq/career-ops/blob/main/GEMINI.md"
+   "url": "https://github.com/career-ops-hq/career-ops/blob/main/GEMINI.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".windsurfrules": {
    "present": false,

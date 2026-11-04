@@ -41,7 +41,9 @@
   "GEMINI.md": {
    "present": true,
    "size": 11785,
-   "url": "https://github.com/google/comprehensive-rust/blob/main/GEMINI.md"
+   "url": "https://github.com/google/comprehensive-rust/blob/main/GEMINI.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".windsurfrules": {
    "present": false,

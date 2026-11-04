@@ -11,12 +11,16 @@
   "AGENTS.md": {
    "present": true,
    "size": 23079,
-   "url": "https://github.com/spacedriveapp/spacedrive/blob/main/AGENTS.md"
+   "url": "https://github.com/spacedriveapp/spacedrive/blob/main/AGENTS.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "CLAUDE.md": {
    "present": true,
    "size": 4089,
-   "url": "https://github.com/spacedriveapp/spacedrive/blob/main/CLAUDE.md"
+   "url": "https://github.com/spacedriveapp/spacedrive/blob/main/CLAUDE.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".cursorrules": {
    "present": false,

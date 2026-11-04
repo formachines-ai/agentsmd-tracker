@@ -16,7 +16,9 @@
   "CLAUDE.md": {
    "present": true,
    "size": 3152,
-   "url": "https://github.com/runcat-dev/RunCat365/blob/main/CLAUDE.md"
+   "url": "https://github.com/runcat-dev/RunCat365/blob/main/CLAUDE.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".cursorrules": {
    "present": false,

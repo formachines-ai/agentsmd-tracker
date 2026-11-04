@@ -16,7 +16,9 @@
   "CLAUDE.md": {
    "present": true,
    "size": 11827,
-   "url": "https://github.com/MISP/MISP/blob/2.5/CLAUDE.md"
+   "url": "https://github.com/MISP/MISP/blob/2.5/CLAUDE.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".cursorrules": {
    "present": false,

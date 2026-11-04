@@ -21,7 +21,9 @@
   ".cursorrules": {
    "present": true,
    "size": 1591,
-   "url": "https://github.com/lostisland/faraday/blob/main/.cursorrules"
+   "url": "https://github.com/lostisland/faraday/blob/main/.cursorrules",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".cursor/rules": {
    "present": false,
@@ -31,7 +33,9 @@
   ".github/copilot-instructions.md": {
    "present": true,
    "size": 2384,
-   "url": "https://github.com/lostisland/faraday/blob/main/.github/copilot-instructions.md"
+   "url": "https://github.com/lostisland/faraday/blob/main/.github/copilot-instructions.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "llms.txt": {
    "present": false,

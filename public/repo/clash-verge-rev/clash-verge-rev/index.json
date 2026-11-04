@@ -11,12 +11,16 @@
   "AGENTS.md": {
    "present": true,
    "size": 4104,
-   "url": "https://github.com/clash-verge-rev/clash-verge-rev/blob/dev/AGENTS.md"
+   "url": "https://github.com/clash-verge-rev/clash-verge-rev/blob/dev/AGENTS.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "CLAUDE.md": {
    "present": true,
    "size": 11,
-   "url": "https://github.com/clash-verge-rev/clash-verge-rev/blob/dev/CLAUDE.md"
+   "url": "https://github.com/clash-verge-rev/clash-verge-rev/blob/dev/CLAUDE.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".cursorrules": {
    "present": false,
@@ -41,7 +45,9 @@
   "GEMINI.md": {
    "present": true,
    "size": 61,
-   "url": "https://github.com/clash-verge-rev/clash-verge-rev/blob/dev/GEMINI.md"
+   "url": "https://github.com/clash-verge-rev/clash-verge-rev/blob/dev/GEMINI.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".windsurfrules": {
    "present": false,

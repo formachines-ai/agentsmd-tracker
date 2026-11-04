@@ -16,7 +16,9 @@
   "CLAUDE.md": {
    "present": true,
    "size": 7053,
-   "url": "https://github.com/RocketChat/Rocket.Chat/blob/develop/CLAUDE.md"
+   "url": "https://github.com/RocketChat/Rocket.Chat/blob/develop/CLAUDE.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".cursorrules": {
    "present": false,

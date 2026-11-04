@@ -11,22 +11,30 @@
   "AGENTS.md": {
    "present": true,
    "size": 21299,
-   "url": "https://github.com/abhigyanpatwari/GitNexus/blob/main/AGENTS.md"
+   "url": "https://github.com/abhigyanpatwari/GitNexus/blob/main/AGENTS.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "CLAUDE.md": {
    "present": true,
    "size": 10484,
-   "url": "https://github.com/abhigyanpatwari/GitNexus/blob/main/CLAUDE.md"
+   "url": "https://github.com/abhigyanpatwari/GitNexus/blob/main/CLAUDE.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".cursorrules": {
    "present": true,
    "size": 194,
-   "url": "https://github.com/abhigyanpatwari/GitNexus/blob/main/.cursorrules"
+   "url": "https://github.com/abhigyanpatwari/GitNexus/blob/main/.cursorrules",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".cursor/rules": {
    "present": true,
    "size": null,
-   "url": "https://github.com/abhigyanpatwari/GitNexus/tree/main/.cursor/rules"
+   "url": "https://github.com/abhigyanpatwari/GitNexus/tree/main/.cursor/rules",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".github/copilot-instructions.md": {
    "present": false,
@@ -36,7 +44,9 @@
   "llms.txt": {
    "present": true,
    "size": 834,
-   "url": "https://github.com/abhigyanpatwari/GitNexus/blob/main/llms.txt"
+   "url": "https://github.com/abhigyanpatwari/GitNexus/blob/main/llms.txt",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "GEMINI.md": {
    "present": false,
@@ -46,7 +56,9 @@
   ".windsurfrules": {
    "present": true,
    "size": 209,
-   "url": "https://github.com/abhigyanpatwari/GitNexus/blob/main/.windsurfrules"
+   "url": "https://github.com/abhigyanpatwari/GitNexus/blob/main/.windsurfrules",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   }
  },
  "page": "https://agentsmd.formachines.ai/repo/abhigyanpatwari/GitNexus/",

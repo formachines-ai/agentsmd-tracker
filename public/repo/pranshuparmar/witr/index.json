@@ -36,7 +36,9 @@
   "llms.txt": {
    "present": true,
    "size": 1307,
-   "url": "https://github.com/pranshuparmar/witr/blob/main/llms.txt"
+   "url": "https://github.com/pranshuparmar/witr/blob/main/llms.txt",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "GEMINI.md": {
    "present": false,

@@ -11,7 +11,9 @@
   "AGENTS.md": {
    "present": true,
    "size": 47434,
-   "url": "https://github.com/tw93/Pake/blob/main/AGENTS.md"
+   "url": "https://github.com/tw93/Pake/blob/main/AGENTS.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "CLAUDE.md": {
    "present": false,
@@ -31,12 +33,16 @@
   ".github/copilot-instructions.md": {
    "present": true,
    "size": 11,
-   "url": "https://github.com/tw93/Pake/blob/main/.github/copilot-instructions.md"
+   "url": "https://github.com/tw93/Pake/blob/main/.github/copilot-instructions.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "llms.txt": {
    "present": true,
    "size": 3226,
-   "url": "https://github.com/tw93/Pake/blob/main/llms.txt"
+   "url": "https://github.com/tw93/Pake/blob/main/llms.txt",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "GEMINI.md": {
    "present": false,
