@@ -369,10 +369,13 @@ def aggregate(repos: list[dict]) -> dict:
 
 
 def update_history(agg: dict, scan_stats: dict | None, write: bool = True) -> dict:
-    today = now_utc().strftime("%Y-%m-%d")
+    if not write:   # nothing was scanned: never create or move a dated row; report the last real scan as-is
+        last = load_history()
+        if last:
+            return last[-1]
+    scan_time = iso(now_utc())   # the one clock reading of a real scan; the date is derived from it
+    today = scan_time[:10]
     hfile = HISTORY_DIR / f"{today}.json"
-    if not write and hfile.exists():   # nothing was scanned: keep today's file (and its scan timestamp) untouched
-        return read_json(hfile, {"date": today, "added": [], "removed": []})
     doc = read_json(hfile, {"date": today, "added": [], "removed": []})
     if scan_stats:   # union with earlier runs of the same day
         for key in ("added", "removed"):
@@ -383,7 +386,7 @@ def update_history(agg: dict, scan_stats: dict | None, write: bool = True) -> di
                     seen.add((x["full_name"], x["path"]))
     doc.update({
         "date": today,
-        "generated": iso(now_utc()),
+        "generated": scan_time,
         "sample": len(agg["ok"]) + len(agg["pending"]) + len(agg["unreachable"]),
         "scanned": len(agg["ok"]),
         "pending": len(agg["pending"]),
@@ -937,7 +940,7 @@ def main() -> int:
     history = load_history()
 
     if not (scan_stats and scan_stats.get("ok")) and history and history[-1].get("generated"):
-        today = dict(today, generated=history[-1]["generated"])   # no real scan: keep the last real scan time, never the build clock
+        today = dict(today, generated=history[-1]["generated"], date=history[-1]["generated"][:10])   # no real scan: keep the last real scan time, never the build clock
     last = agg["last_checked"]
     if today.get("generated") and (not last or today["generated"] > last):
         last = today["generated"]   # the scan finishes (and stamps 'generated') after its last repo check
