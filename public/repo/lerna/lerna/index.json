@@ -11,12 +11,16 @@
   "AGENTS.md": {
    "present": true,
    "size": 3306,
-   "url": "https://github.com/lerna/lerna/blob/main/AGENTS.md"
+   "url": "https://github.com/lerna/lerna/blob/main/AGENTS.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "CLAUDE.md": {
    "present": true,
    "size": 6755,
-   "url": "https://github.com/lerna/lerna/blob/main/CLAUDE.md"
+   "url": "https://github.com/lerna/lerna/blob/main/CLAUDE.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".cursorrules": {
    "present": false,

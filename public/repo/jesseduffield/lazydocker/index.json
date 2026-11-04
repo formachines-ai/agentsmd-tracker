@@ -16,7 +16,9 @@
   "CLAUDE.md": {
    "present": true,
    "size": 206,
-   "url": "https://github.com/jesseduffield/lazydocker/blob/master/CLAUDE.md"
+   "url": "https://github.com/jesseduffield/lazydocker/blob/master/CLAUDE.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".cursorrules": {
    "present": false,

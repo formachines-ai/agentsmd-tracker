@@ -11,12 +11,16 @@
   "AGENTS.md": {
    "present": true,
    "size": 41395,
-   "url": "https://github.com/colbymchenry/codegraph/blob/main/AGENTS.md"
+   "url": "https://github.com/colbymchenry/codegraph/blob/main/AGENTS.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "CLAUDE.md": {
    "present": true,
    "size": 735,
-   "url": "https://github.com/colbymchenry/codegraph/blob/main/CLAUDE.md"
+   "url": "https://github.com/colbymchenry/codegraph/blob/main/CLAUDE.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".cursorrules": {
    "present": false,
@@ -26,7 +30,9 @@
   ".cursor/rules": {
    "present": true,
    "size": null,
-   "url": "https://github.com/colbymchenry/codegraph/tree/main/.cursor/rules"
+   "url": "https://github.com/colbymchenry/codegraph/tree/main/.cursor/rules",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".github/copilot-instructions.md": {
    "present": false,

@@ -11,12 +11,16 @@
   "AGENTS.md": {
    "present": true,
    "size": 6,
-   "url": "https://github.com/zed-industries/zed/blob/main/AGENTS.md"
+   "url": "https://github.com/zed-industries/zed/blob/main/AGENTS.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "CLAUDE.md": {
    "present": true,
    "size": 6,
-   "url": "https://github.com/zed-industries/zed/blob/main/CLAUDE.md"
+   "url": "https://github.com/zed-industries/zed/blob/main/CLAUDE.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".cursorrules": {
    "present": false,
@@ -41,7 +45,9 @@
   "GEMINI.md": {
    "present": true,
    "size": 6,
-   "url": "https://github.com/zed-industries/zed/blob/main/GEMINI.md"
+   "url": "https://github.com/zed-industries/zed/blob/main/GEMINI.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".windsurfrules": {
    "present": false,

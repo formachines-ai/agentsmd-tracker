@@ -11,7 +11,9 @@
   "AGENTS.md": {
    "present": true,
    "size": 37223,
-   "url": "https://github.com/Snapchat/Valdi/blob/main/AGENTS.md"
+   "url": "https://github.com/Snapchat/Valdi/blob/main/AGENTS.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "CLAUDE.md": {
    "present": false,
@@ -21,7 +23,9 @@
   ".cursorrules": {
    "present": true,
    "size": 1789,
-   "url": "https://github.com/Snapchat/Valdi/blob/main/.cursorrules"
+   "url": "https://github.com/Snapchat/Valdi/blob/main/.cursorrules",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".cursor/rules": {
    "present": false,

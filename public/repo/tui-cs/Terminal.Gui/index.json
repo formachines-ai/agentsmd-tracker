@@ -11,17 +11,23 @@
   "AGENTS.md": {
    "present": true,
    "size": 33319,
-   "url": "https://github.com/tui-cs/Terminal.Gui/blob/develop/AGENTS.md"
+   "url": "https://github.com/tui-cs/Terminal.Gui/blob/develop/AGENTS.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "CLAUDE.md": {
    "present": true,
    "size": 7877,
-   "url": "https://github.com/tui-cs/Terminal.Gui/blob/develop/CLAUDE.md"
+   "url": "https://github.com/tui-cs/Terminal.Gui/blob/develop/CLAUDE.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".cursorrules": {
    "present": true,
    "size": 4260,
-   "url": "https://github.com/tui-cs/Terminal.Gui/blob/develop/.cursorrules"
+   "url": "https://github.com/tui-cs/Terminal.Gui/blob/develop/.cursorrules",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".cursor/rules": {
    "present": false,
@@ -31,12 +37,16 @@
   ".github/copilot-instructions.md": {
    "present": true,
    "size": 7793,
-   "url": "https://github.com/tui-cs/Terminal.Gui/blob/develop/.github/copilot-instructions.md"
+   "url": "https://github.com/tui-cs/Terminal.Gui/blob/develop/.github/copilot-instructions.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "llms.txt": {
    "present": true,
    "size": 13344,
-   "url": "https://github.com/tui-cs/Terminal.Gui/blob/develop/llms.txt"
+   "url": "https://github.com/tui-cs/Terminal.Gui/blob/develop/llms.txt",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "GEMINI.md": {
    "present": false,
@@ -46,7 +56,9 @@
   ".windsurfrules": {
    "present": true,
    "size": 4262,
-   "url": "https://github.com/tui-cs/Terminal.Gui/blob/develop/.windsurfrules"
+   "url": "https://github.com/tui-cs/Terminal.Gui/blob/develop/.windsurfrules",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   }
  },
  "page": "https://agentsmd.formachines.ai/repo/tui-cs/Terminal.Gui/",

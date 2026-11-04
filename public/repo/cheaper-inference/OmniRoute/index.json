@@ -11,12 +11,16 @@
   "AGENTS.md": {
    "present": true,
    "size": 40075,
-   "url": "https://github.com/cheaper-inference/OmniRoute/blob/release/v3.8.53/AGENTS.md"
+   "url": "https://github.com/cheaper-inference/OmniRoute/blob/release/v3.8.53/AGENTS.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "CLAUDE.md": {
    "present": true,
    "size": 4443,
-   "url": "https://github.com/cheaper-inference/OmniRoute/blob/release/v3.8.53/CLAUDE.md"
+   "url": "https://github.com/cheaper-inference/OmniRoute/blob/release/v3.8.53/CLAUDE.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".cursorrules": {
    "present": false,
@@ -31,7 +35,9 @@
   ".github/copilot-instructions.md": {
    "present": true,
    "size": 981,
-   "url": "https://github.com/cheaper-inference/OmniRoute/blob/release/v3.8.53/.github/copilot-instructions.md"
+   "url": "https://github.com/cheaper-inference/OmniRoute/blob/release/v3.8.53/.github/copilot-instructions.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "llms.txt": {
    "present": false,
@@ -41,7 +47,9 @@
   "GEMINI.md": {
    "present": true,
    "size": 675,
-   "url": "https://github.com/cheaper-inference/OmniRoute/blob/release/v3.8.53/GEMINI.md"
+   "url": "https://github.com/cheaper-inference/OmniRoute/blob/release/v3.8.53/GEMINI.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".windsurfrules": {
    "present": false,

@@ -11,12 +11,16 @@
   "AGENTS.md": {
    "present": true,
    "size": 7212,
-   "url": "https://github.com/ansible/ansible/blob/devel/AGENTS.md"
+   "url": "https://github.com/ansible/ansible/blob/devel/AGENTS.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "CLAUDE.md": {
    "present": true,
    "size": 56,
-   "url": "https://github.com/ansible/ansible/blob/devel/CLAUDE.md"
+   "url": "https://github.com/ansible/ansible/blob/devel/CLAUDE.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".cursorrules": {
    "present": false,

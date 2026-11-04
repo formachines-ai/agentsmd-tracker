@@ -16,7 +16,9 @@
   "CLAUDE.md": {
    "present": true,
    "size": 4783,
-   "url": "https://github.com/plantuml/plantuml/blob/master/CLAUDE.md"
+   "url": "https://github.com/plantuml/plantuml/blob/master/CLAUDE.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".cursorrules": {
    "present": false,
@@ -31,7 +33,9 @@
   ".github/copilot-instructions.md": {
    "present": true,
    "size": 141,
-   "url": "https://github.com/plantuml/plantuml/blob/master/.github/copilot-instructions.md"
+   "url": "https://github.com/plantuml/plantuml/blob/master/.github/copilot-instructions.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "llms.txt": {
    "present": false,

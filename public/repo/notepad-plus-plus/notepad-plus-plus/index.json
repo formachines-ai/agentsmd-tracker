@@ -11,7 +11,8 @@
   "AGENTS.md": {
    "present": true,
    "size": 1156,
-   "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/blob/master/AGENTS.md"
+   "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/blob/master/AGENTS.md",
+   "first_seen": "2026-11-04"
   },
   "CLAUDE.md": {
    "present": false,

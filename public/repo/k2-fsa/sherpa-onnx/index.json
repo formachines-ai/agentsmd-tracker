@@ -16,7 +16,9 @@
   "CLAUDE.md": {
    "present": true,
    "size": 3856,
-   "url": "https://github.com/k2-fsa/sherpa-onnx/blob/master/CLAUDE.md"
+   "url": "https://github.com/k2-fsa/sherpa-onnx/blob/master/CLAUDE.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".cursorrules": {
    "present": false,

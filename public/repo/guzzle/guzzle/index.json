@@ -11,12 +11,16 @@
   "AGENTS.md": {
    "present": true,
    "size": 4578,
-   "url": "https://github.com/guzzle/guzzle/blob/8.3/AGENTS.md"
+   "url": "https://github.com/guzzle/guzzle/blob/8.3/AGENTS.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "CLAUDE.md": {
    "present": true,
    "size": 11,
-   "url": "https://github.com/guzzle/guzzle/blob/8.3/CLAUDE.md"
+   "url": "https://github.com/guzzle/guzzle/blob/8.3/CLAUDE.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".cursorrules": {
    "present": false,

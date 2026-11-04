@@ -11,7 +11,9 @@
   "AGENTS.md": {
    "present": true,
    "size": 1843,
-   "url": "https://github.com/FuelLabs/fuel-core/blob/master/AGENTS.md"
+   "url": "https://github.com/FuelLabs/fuel-core/blob/master/AGENTS.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "CLAUDE.md": {
    "present": false,

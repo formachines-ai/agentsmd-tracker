@@ -11,12 +11,16 @@
   "AGENTS.md": {
    "present": true,
    "size": 18782,
-   "url": "https://github.com/longbridge/gpui-kit/blob/main/AGENTS.md"
+   "url": "https://github.com/longbridge/gpui-kit/blob/main/AGENTS.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "CLAUDE.md": {
    "present": true,
    "size": 26,
-   "url": "https://github.com/longbridge/gpui-kit/blob/main/CLAUDE.md"
+   "url": "https://github.com/longbridge/gpui-kit/blob/main/CLAUDE.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".cursorrules": {
    "present": false,

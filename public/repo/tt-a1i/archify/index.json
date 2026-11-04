@@ -11,12 +11,16 @@
   "AGENTS.md": {
    "present": true,
    "size": 2241,
-   "url": "https://github.com/tt-a1i/archify/blob/main/AGENTS.md"
+   "url": "https://github.com/tt-a1i/archify/blob/main/AGENTS.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "CLAUDE.md": {
    "present": true,
    "size": 71,
-   "url": "https://github.com/tt-a1i/archify/blob/main/CLAUDE.md"
+   "url": "https://github.com/tt-a1i/archify/blob/main/CLAUDE.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".cursorrules": {
    "present": false,
@@ -36,7 +40,9 @@
   "llms.txt": {
    "present": true,
    "size": 2657,
-   "url": "https://github.com/tt-a1i/archify/blob/main/llms.txt"
+   "url": "https://github.com/tt-a1i/archify/blob/main/llms.txt",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "GEMINI.md": {
    "present": false,

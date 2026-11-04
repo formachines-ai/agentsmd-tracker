@@ -11,7 +11,9 @@
   "AGENTS.md": {
    "present": true,
    "size": 2431,
-   "url": "https://github.com/novuhq/novu/blob/next/AGENTS.md"
+   "url": "https://github.com/novuhq/novu/blob/next/AGENTS.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "CLAUDE.md": {
    "present": false,
@@ -26,7 +28,9 @@
   ".cursor/rules": {
    "present": true,
    "size": null,
-   "url": "https://github.com/novuhq/novu/tree/next/.cursor/rules"
+   "url": "https://github.com/novuhq/novu/tree/next/.cursor/rules",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".github/copilot-instructions.md": {
    "present": false,

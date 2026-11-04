@@ -11,7 +11,9 @@
   "AGENTS.md": {
    "present": true,
    "size": 3359,
-   "url": "https://github.com/avelino/awesome-go/blob/main/AGENTS.md"
+   "url": "https://github.com/avelino/awesome-go/blob/main/AGENTS.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "CLAUDE.md": {
    "present": false,
@@ -21,7 +23,9 @@
   ".cursorrules": {
    "present": true,
    "size": 9,
-   "url": "https://github.com/avelino/awesome-go/blob/main/.cursorrules"
+   "url": "https://github.com/avelino/awesome-go/blob/main/.cursorrules",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".cursor/rules": {
    "present": false,
@@ -31,7 +35,9 @@
   ".github/copilot-instructions.md": {
    "present": true,
    "size": 9,
-   "url": "https://github.com/avelino/awesome-go/blob/main/.github/copilot-instructions.md"
+   "url": "https://github.com/avelino/awesome-go/blob/main/.github/copilot-instructions.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "llms.txt": {
    "present": false,

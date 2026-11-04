@@ -16,7 +16,9 @@
   "CLAUDE.md": {
    "present": true,
    "size": 9664,
-   "url": "https://github.com/rtk-ai/rtk/blob/develop/CLAUDE.md"
+   "url": "https://github.com/rtk-ai/rtk/blob/develop/CLAUDE.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".cursorrules": {
    "present": false,
@@ -31,7 +33,9 @@
   ".github/copilot-instructions.md": {
    "present": true,
    "size": 3429,
-   "url": "https://github.com/rtk-ai/rtk/blob/develop/.github/copilot-instructions.md"
+   "url": "https://github.com/rtk-ai/rtk/blob/develop/.github/copilot-instructions.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "llms.txt": {
    "present": false,

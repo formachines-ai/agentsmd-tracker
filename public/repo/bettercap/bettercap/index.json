@@ -11,12 +11,16 @@
   "AGENTS.md": {
    "present": true,
    "size": 2941,
-   "url": "https://github.com/bettercap/bettercap/blob/master/AGENTS.md"
+   "url": "https://github.com/bettercap/bettercap/blob/master/AGENTS.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "CLAUDE.md": {
    "present": true,
    "size": 9,
-   "url": "https://github.com/bettercap/bettercap/blob/master/CLAUDE.md"
+   "url": "https://github.com/bettercap/bettercap/blob/master/CLAUDE.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".cursorrules": {
    "present": false,

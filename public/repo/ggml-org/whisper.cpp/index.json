@@ -11,7 +11,9 @@
   "AGENTS.md": {
    "present": true,
    "size": 6192,
-   "url": "https://github.com/ggml-org/whisper.cpp/blob/master/AGENTS.md"
+   "url": "https://github.com/ggml-org/whisper.cpp/blob/master/AGENTS.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "CLAUDE.md": {
    "present": false,

@@ -11,7 +11,9 @@
   "AGENTS.md": {
    "present": true,
    "size": 4274,
-   "url": "https://github.com/babalae/better-genshin-impact/blob/refactor/20260930/AGENTS.md"
+   "url": "https://github.com/babalae/better-genshin-impact/blob/refactor/20260930/AGENTS.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "CLAUDE.md": {
    "present": false,

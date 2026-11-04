@@ -31,12 +31,16 @@
   ".github/copilot-instructions.md": {
    "present": true,
    "size": 697,
-   "url": "https://github.com/headroomlabs-ai/headroom/blob/main/.github/copilot-instructions.md"
+   "url": "https://github.com/headroomlabs-ai/headroom/blob/main/.github/copilot-instructions.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "llms.txt": {
    "present": true,
    "size": 6219,
-   "url": "https://github.com/headroomlabs-ai/headroom/blob/main/llms.txt"
+   "url": "https://github.com/headroomlabs-ai/headroom/blob/main/llms.txt",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "GEMINI.md": {
    "present": false,

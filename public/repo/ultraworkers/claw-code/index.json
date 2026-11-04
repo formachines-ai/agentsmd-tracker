@@ -11,12 +11,16 @@
   "AGENTS.md": {
    "present": true,
    "size": 6316,
-   "url": "https://github.com/ultraworkers/claw-code/blob/main/AGENTS.md"
+   "url": "https://github.com/ultraworkers/claw-code/blob/main/AGENTS.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "CLAUDE.md": {
    "present": true,
    "size": 1181,
-   "url": "https://github.com/ultraworkers/claw-code/blob/main/CLAUDE.md"
+   "url": "https://github.com/ultraworkers/claw-code/blob/main/CLAUDE.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".cursorrules": {
    "present": false,

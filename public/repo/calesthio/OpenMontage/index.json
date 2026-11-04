@@ -11,12 +11,16 @@
   "AGENTS.md": {
    "present": true,
    "size": 384,
-   "url": "https://github.com/calesthio/OpenMontage/blob/main/AGENTS.md"
+   "url": "https://github.com/calesthio/OpenMontage/blob/main/AGENTS.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "CLAUDE.md": {
    "present": true,
    "size": 402,
-   "url": "https://github.com/calesthio/OpenMontage/blob/main/CLAUDE.md"
+   "url": "https://github.com/calesthio/OpenMontage/blob/main/CLAUDE.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".cursorrules": {
    "present": false,
@@ -26,12 +30,16 @@
   ".cursor/rules": {
    "present": true,
    "size": null,
-   "url": "https://github.com/calesthio/OpenMontage/tree/main/.cursor/rules"
+   "url": "https://github.com/calesthio/OpenMontage/tree/main/.cursor/rules",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".github/copilot-instructions.md": {
    "present": true,
    "size": 405,
-   "url": "https://github.com/calesthio/OpenMontage/blob/main/.github/copilot-instructions.md"
+   "url": "https://github.com/calesthio/OpenMontage/blob/main/.github/copilot-instructions.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "llms.txt": {
    "present": false,
@@ -46,7 +54,9 @@
   ".windsurfrules": {
    "present": true,
    "size": 380,
-   "url": "https://github.com/calesthio/OpenMontage/blob/main/.windsurfrules"
+   "url": "https://github.com/calesthio/OpenMontage/blob/main/.windsurfrules",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   }
  },
  "page": "https://agentsmd.formachines.ai/repo/calesthio/OpenMontage/",

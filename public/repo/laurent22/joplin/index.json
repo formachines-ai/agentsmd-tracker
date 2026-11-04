@@ -16,7 +16,9 @@
   "CLAUDE.md": {
    "present": true,
    "size": 2184,
-   "url": "https://github.com/laurent22/joplin/blob/dev/CLAUDE.md"
+   "url": "https://github.com/laurent22/joplin/blob/dev/CLAUDE.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".cursorrules": {
    "present": false,

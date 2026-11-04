@@ -11,12 +11,16 @@
   "AGENTS.md": {
    "present": true,
    "size": 31236,
-   "url": "https://github.com/jdx/mise/blob/main/AGENTS.md"
+   "url": "https://github.com/jdx/mise/blob/main/AGENTS.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "CLAUDE.md": {
    "present": true,
    "size": 9,
-   "url": "https://github.com/jdx/mise/blob/main/CLAUDE.md"
+   "url": "https://github.com/jdx/mise/blob/main/CLAUDE.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".cursorrules": {
    "present": false,
@@ -26,7 +30,9 @@
   ".cursor/rules": {
    "present": true,
    "size": null,
-   "url": "https://github.com/jdx/mise/tree/main/.cursor/rules"
+   "url": "https://github.com/jdx/mise/tree/main/.cursor/rules",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".github/copilot-instructions.md": {
    "present": false,
@@ -36,7 +42,9 @@
   "llms.txt": {
    "present": true,
    "size": 29029,
-   "url": "https://github.com/jdx/mise/blob/main/llms.txt"
+   "url": "https://github.com/jdx/mise/blob/main/llms.txt",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "GEMINI.md": {
    "present": false,

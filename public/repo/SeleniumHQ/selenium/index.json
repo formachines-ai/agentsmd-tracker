@@ -11,12 +11,16 @@
   "AGENTS.md": {
    "present": true,
    "size": 5490,
-   "url": "https://github.com/SeleniumHQ/selenium/blob/trunk/AGENTS.md"
+   "url": "https://github.com/SeleniumHQ/selenium/blob/trunk/AGENTS.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "CLAUDE.md": {
    "present": true,
    "size": 11,
-   "url": "https://github.com/SeleniumHQ/selenium/blob/trunk/CLAUDE.md"
+   "url": "https://github.com/SeleniumHQ/selenium/blob/trunk/CLAUDE.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".cursorrules": {
    "present": false,
@@ -31,7 +35,9 @@
   ".github/copilot-instructions.md": {
    "present": true,
    "size": 121,
-   "url": "https://github.com/SeleniumHQ/selenium/blob/trunk/.github/copilot-instructions.md"
+   "url": "https://github.com/SeleniumHQ/selenium/blob/trunk/.github/copilot-instructions.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "llms.txt": {
    "present": false,

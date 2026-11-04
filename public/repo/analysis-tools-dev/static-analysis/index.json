@@ -11,17 +11,23 @@
   "AGENTS.md": {
    "present": true,
    "size": 2540,
-   "url": "https://github.com/analysis-tools-dev/static-analysis/blob/master/AGENTS.md"
+   "url": "https://github.com/analysis-tools-dev/static-analysis/blob/master/AGENTS.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "CLAUDE.md": {
    "present": true,
    "size": 11,
-   "url": "https://github.com/analysis-tools-dev/static-analysis/blob/master/CLAUDE.md"
+   "url": "https://github.com/analysis-tools-dev/static-analysis/blob/master/CLAUDE.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".cursorrules": {
    "present": true,
    "size": 9,
-   "url": "https://github.com/analysis-tools-dev/static-analysis/blob/master/.cursorrules"
+   "url": "https://github.com/analysis-tools-dev/static-analysis/blob/master/.cursorrules",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".cursor/rules": {
    "present": false,
@@ -31,7 +37,9 @@
   ".github/copilot-instructions.md": {
    "present": true,
    "size": 12,
-   "url": "https://github.com/analysis-tools-dev/static-analysis/blob/master/.github/copilot-instructions.md"
+   "url": "https://github.com/analysis-tools-dev/static-analysis/blob/master/.github/copilot-instructions.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "llms.txt": {
    "present": false,
@@ -46,7 +54,9 @@
   ".windsurfrules": {
    "present": true,
    "size": 9,
-   "url": "https://github.com/analysis-tools-dev/static-analysis/blob/master/.windsurfrules"
+   "url": "https://github.com/analysis-tools-dev/static-analysis/blob/master/.windsurfrules",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   }
  },
  "page": "https://agentsmd.formachines.ai/repo/analysis-tools-dev/static-analysis/",

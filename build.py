@@ -701,6 +701,11 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
     # ---- repo pages
     urls = [SITE_BASE + "/", SITE_BASE + "/legal/", SITE_BASE + "/brand/"]
     scan_date = (today.get("generated") or (history[-1].get("generated") if history else None) or updated)[:10]   # date part of stats.json 'generated'
+    first_scan_day = history[0]["date"] if history else None
+    added_on: dict[tuple[str, str], str] = {}   # (repo, path) -> earliest scan day it was recorded as added
+    for d in history:
+        for x in d.get("added", []):
+            added_on.setdefault((x["full_name"], x["path"]), d["date"])
     for r in sorted(repos, key=lambda r: r["full_name"].lower()):
         sc = scans.get(r["full_name"])
         rdir = out / "repo" / r["owner"] / r["name"]
@@ -715,6 +720,17 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
             present = f.get("present")
             url = file_url(r, s["path"], (sc or {}).get("default_branch"))
             files_json[s["path"]] = {"present": present, "size": f.get("size"), "url": url if present else None}
+            seen_note = ""
+            if present:
+                fs_day = added_on.get((r["full_name"], s["path"]))
+                if fs_day:
+                    seen_note = f'<br><span class="muted">first seen in our scans: {esc(fs_day)}</span>'
+                    files_json[s["path"]]["first_seen"] = fs_day
+                elif first_scan_day:
+                    seen_note = f'<br><span class="muted">first seen in our scans: {esc(first_scan_day)} (present at first scan; earlier date unknown)</span>'
+                    files_json[s["path"]]["first_seen"] = first_scan_day
+                    files_json[s["path"]]["first_seen_at_first_scan"] = True
+                share += seen_note
             if present:
                 size = f"{f['size']:,} bytes" if f.get("size") else ("directory" if s["kind"] == "dir" else "—")
                 rows.append(f'<tr><td><code>{esc(shown)}</code>{share}</td><td class="yes">yes</td><td>{size}</td><td><a href="{go.href(r, s["path"], url)}" rel="nofollow">open on GitHub</a></td></tr>')

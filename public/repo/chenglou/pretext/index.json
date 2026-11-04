@@ -11,7 +11,9 @@
   "AGENTS.md": {
    "present": true,
    "size": 10212,
-   "url": "https://github.com/chenglou/pretext/blob/main/AGENTS.md"
+   "url": "https://github.com/chenglou/pretext/blob/main/AGENTS.md",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   "CLAUDE.md": {
    "present": false,
@@ -26,7 +28,9 @@
   ".cursor/rules": {
    "present": true,
    "size": null,
-   "url": "https://github.com/chenglou/pretext/tree/main/.cursor/rules"
+   "url": "https://github.com/chenglou/pretext/tree/main/.cursor/rules",
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true
   },
   ".github/copilot-instructions.md": {
    "present": false,
