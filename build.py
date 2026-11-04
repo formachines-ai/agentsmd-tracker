@@ -765,6 +765,12 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
 
     # ---- JSON endpoints
     generated = today.get("generated") or (history[-1].get("generated") if history else None) or updated  # time of the last real scan
+    change_7d_pp = None   # AGENTS.md share, latest entry minus the entry dated exactly 7 days earlier; null if that entry is missing
+    if history:
+        prev_date = (datetime.fromisoformat(history[-1]["date"]) - timedelta(days=7)).date().isoformat()
+        prev = next((d for d in history if d["date"] == prev_date), None)
+        if prev and prev["scanned"] and history[-1]["scanned"]:
+            change_7d_pp = round(pct(history[-1]["counts"].get(PRIMARY_PATH, 0), history[-1]["scanned"]) - pct(prev["counts"].get(PRIMARY_PATH, 0), prev["scanned"]), 1)
     stats = {
         "site": SITE_BASE, "generated": generated, "license": "CC BY 4.0", "data_delayed": delayed,
         "method": METHOD, "attribution": f"{SITE_NAME}, {SITE_HOST}, {generated[:10]}, CC BY 4.0",
@@ -774,7 +780,10 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
         "shares": {s["path"]: pct(agg["counts"][s["path"]], total) for s in PATHS},
         "by_language": {k: {"repos": v["repos"], "any": v["any"], **{s["path"]: v[s["path"]] for s in PATHS}} for k, v in sorted(agg["by_lang"].items())},
         "history": [{"date": d["date"], "scanned": d["scanned"], "counts": d["counts"], "any": d.get("any"),
+                     "shares": {p: (pct(c, d["scanned"]) if d["scanned"] else None) for p, c in d["counts"].items()},
                      "added": len(d.get("added", [])), "removed": len(d.get("removed", []))} for d in history],
+        "history_days": len(history),
+        "change_7d_pp": change_7d_pp,
     }
     write_json(out / "stats.json", stats)
     write_json(out / "today.json", {"site": SITE_BASE, "date": today.get("date"), "generated": generated, "license": "CC BY 4.0",
@@ -863,10 +872,11 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
 
 > Daily tracker of agent-instruction files in top GitHub repositories: which of {sample:,} public repositories (top by stars per language) have AGENTS.md, CLAUDE.md, .cursorrules, .cursor/rules/, .github/copilot-instructions.md, llms.txt, GEMINI.md, .windsurfrules. Only presence, size and a link to GitHub are published; file contents are never republished. Built by AI agents (agent-team) without human editing; responsible: {RESPONSIBLE}. Data CC BY 4.0.
 
-Latest ({updated}): {agg['counts'][PRIMARY_PATH]} of {total} scanned repos ({pct(agg['counts'][PRIMARY_PATH], total)} %) have AGENTS.md; {agg['counts']['CLAUDE.md']} CLAUDE.md; {agg['counts']['.cursorrules']} .cursorrules; {agg['counts']['.github/copilot-instructions.md']} copilot-instructions.md; {agg['counts']['llms.txt']} llms.txt.
+Latest (scan {generated}; page built {updated}): {agg['counts'][PRIMARY_PATH]} of {total} scanned repos ({pct(agg['counts'][PRIMARY_PATH], total)} %) have AGENTS.md; {agg['counts']['CLAUDE.md']} CLAUDE.md; {agg['counts']['.cursorrules']} .cursorrules; {agg['counts']['.github/copilot-instructions.md']} copilot-instructions.md; {agg['counts']['llms.txt']} llms.txt.
 
 ## Machine-readable
 - [stats.json]({SITE_BASE}/stats.json): totals, shares, by-language table, full daily history
+- history "added" / "removed" in stats.json: number of (repository, path) pairs whose file appeared / disappeared since the previous snapshot of the same repository, counted per day; a repository's first scan is a baseline and adds none.
 - [today.json]({SITE_BASE}/today.json): files added/removed since the previous scan
 - [feed.xml]({SITE_BASE}/feed.xml): RSS of repositories that added AGENTS.md
 - [build.json]({SITE_BASE}/build.json): build time, scan status, data-delayed flag
