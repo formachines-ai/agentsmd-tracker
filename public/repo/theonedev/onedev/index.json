@@ -6,11 +6,11 @@
  "stars": 15336,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-03T06:49:46Z",
+ "checked": "2026-11-04T04:57:12Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 1447,
+   "size": 2822,
    "url": "https://github.com/theonedev/onedev/blob/main/AGENTS.md"
   },
   "CLAUDE.md": {

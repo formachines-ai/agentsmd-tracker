@@ -6,7 +6,7 @@
  "stars": 33098,
  "default_branch": "master",
  "status": "ok",
- "checked": "2026-11-03T06:24:15Z",
+ "checked": "2026-11-04T04:31:19Z",
  "files": {
   "AGENTS.md": {
    "present": true,
@@ -15,7 +15,7 @@
   },
   "CLAUDE.md": {
    "present": true,
-   "size": 461,
+   "size": 431,
    "url": "https://github.com/zeroclaw-labs/zeroclaw/blob/master/CLAUDE.md"
   },
   ".cursorrules": {

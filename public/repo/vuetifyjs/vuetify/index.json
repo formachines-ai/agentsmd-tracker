@@ -6,11 +6,11 @@
  "stars": 41034,
  "default_branch": "master",
  "status": "ok",
- "checked": "2026-11-03T06:15:26Z",
+ "checked": "2026-11-04T04:22:16Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 4626,
+   "size": 4728,
    "url": "https://github.com/vuetifyjs/vuetify/blob/master/AGENTS.md"
   },
   "CLAUDE.md": {

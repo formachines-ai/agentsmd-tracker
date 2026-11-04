@@ -6,11 +6,11 @@
  "stars": 7102,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-03T07:06:22Z",
+ "checked": "2026-11-04T05:13:33Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 9068,
+   "size": 9130,
    "url": "https://github.com/quartznet/quartznet/blob/main/AGENTS.md"
   },
   "CLAUDE.md": {

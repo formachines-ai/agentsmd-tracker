@@ -6,11 +6,11 @@
  "stars": 14807,
  "default_branch": "master",
  "status": "ok",
- "checked": "2026-11-03T06:50:54Z",
+ "checked": "2026-11-04T04:58:18Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 26753,
+   "size": 27026,
    "url": "https://github.com/hrydgard/ppsspp/blob/master/AGENTS.md"
   },
   "CLAUDE.md": {

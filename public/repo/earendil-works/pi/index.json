@@ -6,11 +6,11 @@
  "stars": 119564,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-03T05:57:33Z",
+ "checked": "2026-11-04T04:03:48Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 12975,
+   "size": 13186,
    "url": "https://github.com/earendil-works/pi/blob/main/AGENTS.md"
   },
   "CLAUDE.md": {

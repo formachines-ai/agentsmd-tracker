@@ -6,11 +6,11 @@
  "stars": 24228,
  "default_branch": "dev-v2",
  "status": "ok",
- "checked": "2026-11-03T06:35:41Z",
+ "checked": "2026-11-04T04:43:02Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 14062,
+   "size": 14618,
    "url": "https://github.com/MaaAssistantArknights/MaaAssistantArknights/blob/dev-v2/AGENTS.md"
   },
   "CLAUDE.md": {

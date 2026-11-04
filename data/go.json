@@ -1,5 +1,5 @@
 {
- "next_id": 1124,
+ "next_id": 1126,
  "links": {
   "affaan-m/ECC/AGENTS.md": {
    "id": 1,
@@ -6738,6 +6738,18 @@
    "url": "https://github.com/Zie619/n8n-workflows/blob/main/CLAUDE.md",
    "repo": "Zie619/n8n-workflows",
    "path": "CLAUDE.md"
+  },
+  "notepad-plus-plus/notepad-plus-plus/AGENTS.md": {
+   "id": 1124,
+   "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/blob/master/AGENTS.md",
+   "repo": "notepad-plus-plus/notepad-plus-plus",
+   "path": "AGENTS.md"
+  },
+  "nats-io/nats-server/AGENTS.md": {
+   "id": 1125,
+   "url": "https://github.com/nats-io/nats-server/blob/main/AGENTS.md",
+   "repo": "nats-io/nats-server",
+   "path": "AGENTS.md"
   }
  }
 }

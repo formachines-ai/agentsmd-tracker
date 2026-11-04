@@ -6,11 +6,11 @@
  "stars": 91917,
  "default_branch": "dev",
  "status": "ok",
- "checked": "2026-11-03T05:59:37Z",
+ "checked": "2026-11-04T04:05:55Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 5708,
+   "size": 6097,
    "url": "https://github.com/home-assistant/core/blob/dev/AGENTS.md"
   },
   "CLAUDE.md": {
@@ -30,7 +30,7 @@
   },
   ".github/copilot-instructions.md": {
    "present": true,
-   "size": 12690,
+   "size": 13079,
    "url": "https://github.com/home-assistant/core/blob/dev/.github/copilot-instructions.md"
   },
   "llms.txt": {

@@ -6,11 +6,11 @@
  "stars": 76362,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-03T06:01:57Z",
+ "checked": "2026-11-04T04:08:18Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 16047,
+   "size": 17673,
    "url": "https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/AGENTS.md"
   },
   "CLAUDE.md": {

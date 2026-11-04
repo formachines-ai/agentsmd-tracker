@@ -6,7 +6,7 @@
  "stars": 9577,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-03T07:00:19Z",
+ "checked": "2026-11-04T05:07:34Z",
  "files": {
   "AGENTS.md": {
    "present": true,
@@ -15,7 +15,7 @@
   },
   "CLAUDE.md": {
    "present": true,
-   "size": 15120,
+   "size": 15377,
    "url": "https://github.com/reactiveui/refit/blob/main/CLAUDE.md"
   },
   ".cursorrules": {

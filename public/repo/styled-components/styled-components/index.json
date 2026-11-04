@@ -6,11 +6,11 @@
  "stars": 41057,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-03T06:15:24Z",
+ "checked": "2026-11-04T04:22:14Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 31817,
+   "size": 32531,
    "url": "https://github.com/styled-components/styled-components/blob/main/AGENTS.md"
   },
   "CLAUDE.md": {

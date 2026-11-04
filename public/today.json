@@ -1,27 +1,48 @@
 {
  "site": "https://agentsmd.formachines.ai",
- "date": "2026-11-03",
- "generated": "2026-11-03T07:13:27Z",
+ "date": "2026-11-04",
+ "generated": "2026-11-04T05:20:33Z",
  "license": "CC BY 4.0",
- "added": [],
+ "added": [
+  {
+   "full_name": "notepad-plus-plus/notepad-plus-plus",
+   "owner": "notepad-plus-plus",
+   "name": "notepad-plus-plus",
+   "language": "C++",
+   "stars": 29771,
+   "path": "AGENTS.md",
+   "size": 1156,
+   "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/blob/master/AGENTS.md"
+  },
+  {
+   "full_name": "nats-io/nats-server",
+   "owner": "nats-io",
+   "name": "nats-server",
+   "language": "Go",
+   "stars": 20986,
+   "path": "AGENTS.md",
+   "size": 2186,
+   "url": "https://github.com/nats-io/nats-server/blob/main/AGENTS.md"
+  }
+ ],
  "removed": [
   {
-   "full_name": "rustdesk/rustdesk",
-   "owner": "rustdesk",
-   "name": "rustdesk",
-   "language": "Rust",
-   "stars": 127914,
-   "path": "CLAUDE.md",
+   "full_name": "streamlit/streamlit",
+   "owner": "streamlit",
+   "name": "streamlit",
+   "language": "Python",
+   "stars": 46209,
+   "path": ".github/copilot-instructions.md",
    "size": null,
-   "url": "https://github.com/rustdesk/rustdesk/blob/master/CLAUDE.md"
+   "url": "https://github.com/streamlit/streamlit/blob/develop/.github/copilot-instructions.md"
   }
  ],
  "counts": {
-  "AGENTS.md": 540,
+  "AGENTS.md": 542,
   "CLAUDE.md": 324,
   ".cursorrules": 16,
   ".cursor/rules": 35,
-  ".github/copilot-instructions.md": 163,
+  ".github/copilot-instructions.md": 162,
   "llms.txt": 17,
   "GEMINI.md": 21,
   ".windsurfrules": 6

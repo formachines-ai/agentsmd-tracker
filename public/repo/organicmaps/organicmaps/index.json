@@ -6,7 +6,7 @@
  "stars": 15860,
  "default_branch": "master",
  "status": "ok",
- "checked": "2026-11-03T06:48:31Z",
+ "checked": "2026-11-04T04:55:58Z",
  "files": {
   "AGENTS.md": {
    "present": true,
@@ -15,7 +15,7 @@
   },
   "CLAUDE.md": {
    "present": true,
-   "size": 13010,
+   "size": 13149,
    "url": "https://github.com/organicmaps/organicmaps/blob/master/CLAUDE.md"
   },
   ".cursorrules": {

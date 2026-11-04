@@ -6,11 +6,11 @@
  "stars": 38567,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-03T06:18:38Z",
+ "checked": "2026-11-04T04:25:35Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 13031,
+   "size": 13299,
    "url": "https://github.com/AlexsJones/llmfit/blob/main/AGENTS.md"
   },
   "CLAUDE.md": {

@@ -6,12 +6,12 @@
  "stars": 20986,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-03T06:39:50Z",
+ "checked": "2026-11-04T04:47:19Z",
  "files": {
   "AGENTS.md": {
-   "present": false,
-   "size": null,
-   "url": null
+   "present": true,
+   "size": 2186,
+   "url": "https://github.com/nats-io/nats-server/blob/main/AGENTS.md"
   },
   "CLAUDE.md": {
    "present": false,

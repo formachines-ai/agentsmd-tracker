@@ -6,7 +6,7 @@
  "stars": 33261,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-03T06:24:03Z",
+ "checked": "2026-11-04T04:31:08Z",
  "files": {
   "AGENTS.md": {
    "present": false,
@@ -15,7 +15,7 @@
   },
   "CLAUDE.md": {
    "present": true,
-   "size": 4189,
+   "size": 6109,
    "url": "https://github.com/surrealdb/surrealdb/blob/main/CLAUDE.md"
   },
   ".cursorrules": {

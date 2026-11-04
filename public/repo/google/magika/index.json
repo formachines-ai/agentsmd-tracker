@@ -6,11 +6,11 @@
  "stars": 18758,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-03T06:43:28Z",
+ "checked": "2026-11-04T04:50:57Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 2605,
+   "size": 3370,
    "url": "https://github.com/google/magika/blob/main/AGENTS.md"
   },
   "CLAUDE.md": {

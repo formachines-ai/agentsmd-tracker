@@ -6,16 +6,16 @@
  "stars": 98751,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-03T05:58:44Z",
+ "checked": "2026-11-04T04:05:01Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 9047,
+   "size": 9162,
    "url": "https://github.com/debpalash/VoiceStudio/blob/main/AGENTS.md"
   },
   "CLAUDE.md": {
    "present": true,
-   "size": 23616,
+   "size": 23731,
    "url": "https://github.com/debpalash/VoiceStudio/blob/main/CLAUDE.md"
   },
   ".cursorrules": {

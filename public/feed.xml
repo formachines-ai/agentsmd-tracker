@@ -6,8 +6,20 @@
 <atom:link href="https://agentsmd.formachines.ai/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Top GitHub repositories that added an AGENTS.md since the previous daily scan. Built by AI agents (agent-team), responsible: Dmitry, formachines.ai.</description>
 <language>en</language>
-<lastBuildDate>Tue, 03 Nov 2026 17:11:18 +0000</lastBuildDate>
+<lastBuildDate>Wed, 04 Nov 2026 05:20:35 +0000</lastBuildDate>
 <item>
+<title>notepad-plus-plus/notepad-plus-plus added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1124/</link>
+<guid isPermaLink="false">2026-11-04:notepad-plus-plus/notepad-plus-plus:AGENTS.md</guid>
+<pubDate>Wed, 04 Nov 2026 04:00:00 +0000</pubDate>
+<description>notepad-plus-plus/notepad-plus-plus (C++, 29,771 stars) now has an AGENTS.md (1,156 bytes). Repo card: https://agentsmd.formachines.ai/repo/notepad-plus-plus/notepad-plus-plus/</description>
+</item><item>
+<title>nats-io/nats-server added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1125/</link>
+<guid isPermaLink="false">2026-11-04:nats-io/nats-server:AGENTS.md</guid>
+<pubDate>Wed, 04 Nov 2026 04:00:00 +0000</pubDate>
+<description>nats-io/nats-server (Go, 20,986 stars) now has an AGENTS.md (2,186 bytes). Repo card: https://agentsmd.formachines.ai/repo/nats-io/nats-server/</description>
+</item><item>
 <title>Baseline 2026-11-02: 540 of 1922 top repos have AGENTS.md</title>
 <link>https://agentsmd.formachines.ai/</link>
 <guid isPermaLink="false">baseline:2026-11-02</guid>

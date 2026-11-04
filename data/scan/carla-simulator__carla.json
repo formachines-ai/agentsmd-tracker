@@ -1,11 +1,11 @@
 {
- "checked": "2026-11-03T06:51:37Z",
+ "checked": "2026-11-04T04:59:00Z",
  "status": "ok",
  "default_branch": "ue58-dev",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 13583
+   "size": 13992
   },
   "CLAUDE.md": {
    "present": false,

@@ -6,11 +6,11 @@
  "stars": 24666,
  "default_branch": "dev-v3",
  "status": "ok",
- "checked": "2026-11-03T06:34:43Z",
+ "checked": "2026-11-04T04:42:04Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 24514,
+   "size": 25647,
    "url": "https://github.com/dataease/dataease/blob/dev-v3/AGENTS.md"
   },
   "CLAUDE.md": {

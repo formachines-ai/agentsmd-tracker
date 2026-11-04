@@ -6,11 +6,11 @@
  "stars": 48153,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-03T06:10:39Z",
+ "checked": "2026-11-04T04:17:20Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 6730,
+   "size": 6785,
    "url": "https://github.com/exo-explore/exo/blob/main/AGENTS.md"
   },
   "CLAUDE.md": {

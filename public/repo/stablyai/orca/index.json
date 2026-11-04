@@ -6,11 +6,11 @@
  "stars": 113383,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-03T05:57:46Z",
+ "checked": "2026-11-04T04:04:02Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 4093,
+   "size": 4526,
    "url": "https://github.com/stablyai/orca/blob/main/AGENTS.md"
   },
   "CLAUDE.md": {

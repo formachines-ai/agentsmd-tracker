@@ -6,11 +6,11 @@
  "stars": 18956,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-03T06:42:54Z",
+ "checked": "2026-11-04T04:50:22Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 26283,
+   "size": 26736,
    "url": "https://github.com/wled/WLED/blob/main/AGENTS.md"
   },
   "CLAUDE.md": {

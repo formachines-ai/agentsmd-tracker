@@ -6,16 +6,16 @@
  "stars": 138650,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-03T05:56:57Z",
+ "checked": "2026-11-04T04:03:11Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 25525,
+   "size": 25752,
    "url": "https://github.com/garrytan/gstack/blob/main/AGENTS.md"
   },
   "CLAUDE.md": {
    "present": true,
-   "size": 35088,
+   "size": 35214,
    "url": "https://github.com/garrytan/gstack/blob/main/CLAUDE.md"
   },
   ".cursorrules": {

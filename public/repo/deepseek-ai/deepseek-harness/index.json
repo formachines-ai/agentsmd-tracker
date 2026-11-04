@@ -6,11 +6,11 @@
  "stars": 269373,
  "default_branch": "master",
  "status": "ok",
- "checked": "2026-11-03T05:55:19Z",
+ "checked": "2026-11-04T04:00:31Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 19113,
+   "size": 19162,
    "url": "https://github.com/deepseek-ai/deepseek-harness/blob/master/AGENTS.md"
   },
   "CLAUDE.md": {

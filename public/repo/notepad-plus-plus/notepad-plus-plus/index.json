@@ -6,12 +6,12 @@
  "stars": 29771,
  "default_branch": "master",
  "status": "ok",
- "checked": "2026-11-03T06:27:48Z",
+ "checked": "2026-11-04T04:35:00Z",
  "files": {
   "AGENTS.md": {
-   "present": false,
-   "size": null,
-   "url": null
+   "present": true,
+   "size": 1156,
+   "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/blob/master/AGENTS.md"
   },
   "CLAUDE.md": {
    "present": false,

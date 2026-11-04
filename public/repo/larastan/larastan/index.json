@@ -6,11 +6,11 @@
  "stars": 6547,
  "default_branch": "3.x",
  "status": "ok",
- "checked": "2026-11-03T07:08:32Z",
+ "checked": "2026-11-04T05:15:41Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 16875,
+   "size": 17420,
    "url": "https://github.com/larastan/larastan/blob/3.x/AGENTS.md"
   },
   "CLAUDE.md": {

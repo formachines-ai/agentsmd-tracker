@@ -6,11 +6,11 @@
  "stars": 16930,
  "default_branch": "dev",
  "status": "ok",
- "checked": "2026-11-03T06:46:35Z",
+ "checked": "2026-11-04T04:54:02Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 5333,
+   "size": 5355,
    "url": "https://github.com/opf/openproject/blob/dev/AGENTS.md"
   },
   "CLAUDE.md": {

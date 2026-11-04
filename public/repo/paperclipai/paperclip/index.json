@@ -6,11 +6,11 @@
  "stars": 110220,
  "default_branch": "master",
  "status": "ok",
- "checked": "2026-11-03T05:58:02Z",
+ "checked": "2026-11-04T04:04:18Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 13366,
+   "size": 13690,
    "url": "https://github.com/paperclipai/paperclip/blob/master/AGENTS.md"
   },
   "CLAUDE.md": {

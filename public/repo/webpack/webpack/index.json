@@ -6,11 +6,11 @@
  "stars": 65977,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-03T06:04:02Z",
+ "checked": "2026-11-04T04:10:27Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 33869,
+   "size": 34086,
    "url": "https://github.com/webpack/webpack/blob/main/AGENTS.md"
   },
   "CLAUDE.md": {

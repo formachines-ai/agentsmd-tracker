@@ -6,11 +6,11 @@
  "stars": 65544,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-03T06:04:09Z",
+ "checked": "2026-11-04T04:10:34Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 42499,
+   "size": 42401,
    "url": "https://github.com/coollabsio/coolify/blob/main/AGENTS.md"
   },
   "CLAUDE.md": {

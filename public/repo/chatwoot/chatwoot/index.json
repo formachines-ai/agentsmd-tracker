@@ -6,11 +6,11 @@
  "stars": 38750,
  "default_branch": "develop",
  "status": "ok",
- "checked": "2026-11-03T06:18:26Z",
+ "checked": "2026-11-04T04:25:23Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 11469,
+   "size": 14625,
    "url": "https://github.com/chatwoot/chatwoot/blob/develop/AGENTS.md"
   },
   "CLAUDE.md": {

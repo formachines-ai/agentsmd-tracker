@@ -6,11 +6,11 @@
  "stars": 6847,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-03T07:07:15Z",
+ "checked": "2026-11-04T05:14:26Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 9554,
+   "size": 9614,
    "url": "https://github.com/fullstackhero/dotnet-starter-kit/blob/main/AGENTS.md"
   },
   "CLAUDE.md": {
