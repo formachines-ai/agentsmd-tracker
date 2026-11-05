@@ -53,6 +53,8 @@ TITLE_MAX = 70
 DESC_MAX = 160
 DEFAULT_DESCRIPTION = (f"{SITE_NAME}: daily count of AGENTS.md, CLAUDE.md, .cursorrules, copilot-instructions.md, "
                        "llms.txt and other agent-instruction files in top GitHub repos.")
+STABLE_DESCRIPTION = ("Daily count of AGENTS.md, CLAUDE.md, .cursorrules and other agent instruction files in ~2,000 top GitHub repos. "
+                      "Dated numbers on the page and in /stats.json.")
 METHOD = ("Top-by-stars sample of public repositories per language; one HEAD request per tracked path on the default branch; "
           "only presence and size are recorded, never file contents.")
 SITE_HOST = "agentsmd.formachines.ai"
@@ -465,6 +467,8 @@ def layout(title: str, body: str, updated: str, *, description: str = "", canoni
     canon = f'<link rel="canonical" href="{esc(canonical)}">' if canonical else ""
     og = (f'<meta property="og:title" content="{esc(title)}">\n<meta property="og:description" content="{esc(desc)}">\n'
           f'<meta property="og:type" content="website">\n<meta property="og:site_name" content="{esc(SITE_NAME)}">\n')
+    og += (f'<meta name="twitter:card" content="summary">\n<meta name="twitter:title" content="{esc(title)}">\n'
+           f'<meta name="twitter:description" content="{esc(desc)}">\n')
     og += f'<meta property="og:url" content="{esc(canonical or SITE_BASE + "/")}">\n'
     if jsonld:
         og += jsonld_block(jsonld) + "\n"
@@ -686,8 +690,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
         base_note = (f'<p class="muted baseline">baseline: {len(history)} days since {esc(history[0]["date"])}. '
                      f'Sparkline axes span at least {SPARK_MIN_SPAN_PP:g} percentage points, so small day-to-day changes look small.</p>')
 
-    home_desc = (f"{agg['counts'][PRIMARY_PATH]:,} of {total:,} top GitHub repos have AGENTS.md ({pct(agg['counts'][PRIMARY_PATH], total)} %). "
-                 "Daily tracker of CLAUDE.md, .cursorrules, llms.txt and more.")
+    home_desc = STABLE_DESCRIPTION
     home_ld = {"@context": "https://schema.org", "@type": "Dataset", "name": f"{SITE_NAME}: agent-instruction files in top GitHub repositories",
                "description": home_desc, "url": SITE_BASE + "/", "license": "https://creativecommons.org/licenses/by/4.0/",
                "dateModified": updated, "isAccessibleForFree": True, "inLanguage": "en",
@@ -862,7 +865,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
 {agents_sec}<div class="scroll"><table><thead><tr><th>Repository</th>{heads}</tr></thead><tbody>{''.join(trs)}</tbody></table></div>
 </section>"""
         write_text(out / "lang" / slug / "index.html", layout(f"{lang} repos — {SITE_NAME}", body, updated,
-                   description=f"Which of the {v['repos']} sampled {lang} repositories have AGENTS.md, CLAUDE.md, .cursorrules and other agent-instruction files.",
+                   description=f"Which sampled {lang} repositories have AGENTS.md, CLAUDE.md, .cursorrules and other agent instruction files. Dated numbers on the page and in /stats.json.",
                    canonical=f"{SITE_BASE}/lang/{slug}/",
                    jsonld=webpage_ld(f"{lang} repos — {SITE_NAME}", f"{SITE_BASE}/lang/{slug}/", updated)))
         urls.append(f"{SITE_BASE}/lang/{slug}/")
