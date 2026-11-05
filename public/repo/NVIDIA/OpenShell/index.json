@@ -6,11 +6,11 @@
  "stars": 20961,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-04T04:47:21Z",
+ "checked": "2026-11-05T04:46:21Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 18076,
+   "size": 17907,
    "url": "https://github.com/NVIDIA/OpenShell/blob/main/AGENTS.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true

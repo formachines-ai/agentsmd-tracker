@@ -6,11 +6,11 @@
  "stars": 50393,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-04T04:16:12Z",
+ "checked": "2026-11-05T04:15:16Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 20378,
+   "size": 20380,
    "url": "https://github.com/astral-sh/ruff/blob/main/AGENTS.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true

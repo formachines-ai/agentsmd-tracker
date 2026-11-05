@@ -6,11 +6,11 @@
  "stars": 16164,
  "default_branch": "master",
  "status": "ok",
- "checked": "2026-11-04T04:55:32Z",
+ "checked": "2026-11-05T04:54:31Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 15756,
+   "size": 15666,
    "url": "https://github.com/apache/doris/blob/master/AGENTS.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true

@@ -6,12 +6,13 @@
  "stars": 40761,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-04T04:22:35Z",
+ "checked": "2026-11-05T04:21:42Z",
  "files": {
   "AGENTS.md": {
-   "present": false,
-   "size": null,
-   "url": null
+   "present": true,
+   "size": 3531,
+   "url": "https://github.com/trpc/trpc/blob/main/AGENTS.md",
+   "first_seen": "2026-11-05"
   },
   "CLAUDE.md": {
    "present": false,
@@ -24,11 +25,9 @@
    "url": null
   },
   ".cursor/rules": {
-   "present": true,
+   "present": false,
    "size": null,
-   "url": "https://github.com/trpc/trpc/tree/main/.cursor/rules",
-   "first_seen": "2026-11-02",
-   "first_seen_at_first_scan": true
+   "url": null
   },
   ".github/copilot-instructions.md": {
    "present": false,

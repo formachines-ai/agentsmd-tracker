@@ -6,7 +6,7 @@
  "stars": 33250,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-04T04:31:10Z",
+ "checked": "2026-11-05T04:30:19Z",
  "files": {
   "AGENTS.md": {
    "present": false,
@@ -14,11 +14,9 @@
    "url": null
   },
   "CLAUDE.md": {
-   "present": true,
-   "size": 4647,
-   "url": "https://github.com/mksglu/context-mode/blob/main/CLAUDE.md",
-   "first_seen": "2026-11-02",
-   "first_seen_at_first_scan": true
+   "present": false,
+   "size": null,
+   "url": null
   },
   ".cursorrules": {
    "present": false,

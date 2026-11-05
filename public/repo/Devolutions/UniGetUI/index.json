@@ -6,11 +6,11 @@
  "stars": 26821,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-04T04:38:53Z",
+ "checked": "2026-11-05T04:38:05Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 25468,
+   "size": 28126,
    "url": "https://github.com/Devolutions/UniGetUI/blob/main/AGENTS.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true

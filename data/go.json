@@ -1,5 +1,5 @@
 {
- "next_id": 1126,
+ "next_id": 1128,
  "links": {
   "affaan-m/ECC/AGENTS.md": {
    "id": 1,
@@ -6749,6 +6749,18 @@
    "id": 1125,
    "url": "https://github.com/nats-io/nats-server/blob/main/AGENTS.md",
    "repo": "nats-io/nats-server",
+   "path": "AGENTS.md"
+  },
+  "headroomlabs-ai/headroom/AGENTS.md": {
+   "id": 1126,
+   "url": "https://github.com/headroomlabs-ai/headroom/blob/main/AGENTS.md",
+   "repo": "headroomlabs-ai/headroom",
+   "path": "AGENTS.md"
+  },
+  "trpc/trpc/AGENTS.md": {
+   "id": 1127,
+   "url": "https://github.com/trpc/trpc/blob/main/AGENTS.md",
+   "repo": "trpc/trpc",
    "path": "AGENTS.md"
   }
  }

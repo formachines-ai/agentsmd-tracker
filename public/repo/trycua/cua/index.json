@@ -6,11 +6,11 @@
  "stars": 31580,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-04T04:33:22Z",
+ "checked": "2026-11-05T04:32:31Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 9432,
+   "size": 10813,
    "url": "https://github.com/trycua/cua/blob/main/AGENTS.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true

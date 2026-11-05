@@ -1,11 +1,11 @@
 {
- "checked": "2026-11-04T04:07:44Z",
+ "checked": "2026-11-05T04:06:47Z",
  "status": "ok",
  "default_branch": "main",
  "files": {
   "AGENTS.md": {
-   "present": false,
-   "size": null
+   "present": true,
+   "size": 3494
   },
   "CLAUDE.md": {
    "present": false,
@@ -25,7 +25,7 @@
   },
   "llms.txt": {
    "present": true,
-   "size": 6219
+   "size": 8801
   },
   "GEMINI.md": {
    "present": false,

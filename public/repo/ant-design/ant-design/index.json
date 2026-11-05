@@ -6,11 +6,11 @@
  "stars": 100045,
  "default_branch": "master",
  "status": "ok",
- "checked": "2026-11-04T04:04:52Z",
+ "checked": "2026-11-05T04:03:55Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 14851,
+   "size": 14986,
    "url": "https://github.com/ant-design/ant-design/blob/master/AGENTS.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true

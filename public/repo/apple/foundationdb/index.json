@@ -6,11 +6,11 @@
  "stars": 16834,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-04T04:54:10Z",
+ "checked": "2026-11-05T04:53:08Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 11768,
+   "size": 12089,
    "url": "https://github.com/apple/foundationdb/blob/main/AGENTS.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true

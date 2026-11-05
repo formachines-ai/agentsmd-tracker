@@ -6,11 +6,11 @@
  "stars": 15817,
  "default_branch": "master",
  "status": "ok",
- "checked": "2026-11-04T04:56:02Z",
+ "checked": "2026-11-05T04:55:01Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 831,
+   "size": 876,
    "url": "https://github.com/scylladb/scylladb/blob/master/AGENTS.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true
@@ -32,7 +32,7 @@
   },
   ".github/copilot-instructions.md": {
    "present": true,
-   "size": 4729,
+   "size": 9074,
    "url": "https://github.com/scylladb/scylladb/blob/master/.github/copilot-instructions.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true

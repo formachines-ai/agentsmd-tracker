@@ -6,11 +6,11 @@
  "stars": 29110,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-04T04:35:50Z",
+ "checked": "2026-11-05T04:35:01Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 2563,
+   "size": 2385,
    "url": "https://github.com/grafana/loki/blob/main/AGENTS.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true

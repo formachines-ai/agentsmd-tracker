@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-04T04:11:13Z",
+ "checked": "2026-11-05T04:10:20Z",
  "status": "ok",
  "default_branch": "dev",
  "files": {
@@ -9,7 +9,7 @@
   },
   "CLAUDE.md": {
    "present": true,
-   "size": 23286
+   "size": 23826
   },
   ".cursorrules": {
    "present": false,

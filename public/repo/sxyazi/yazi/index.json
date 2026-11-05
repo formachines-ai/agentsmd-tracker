@@ -6,11 +6,11 @@
  "stars": 43186,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-04T04:20:32Z",
+ "checked": "2026-11-05T04:19:37Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 10411,
+   "size": 10683,
    "url": "https://github.com/sxyazi/yazi/blob/main/AGENTS.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true

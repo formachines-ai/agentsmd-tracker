@@ -6,11 +6,11 @@
  "stars": 34530,
  "default_branch": "master",
  "status": "ok",
- "checked": "2026-11-04T04:29:28Z",
+ "checked": "2026-11-05T04:28:36Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 5521,
+   "size": 5555,
    "url": "https://github.com/anywhere-labs/dsh-desktop/blob/master/AGENTS.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true

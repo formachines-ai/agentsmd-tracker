@@ -6,7 +6,7 @@
  "stars": 105083,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-04T04:04:35Z",
+ "checked": "2026-11-05T04:03:38Z",
  "files": {
   "AGENTS.md": {
    "present": true,
@@ -17,7 +17,7 @@
   },
   "CLAUDE.md": {
    "present": true,
-   "size": 16898,
+   "size": 17137,
    "url": "https://github.com/pytorch/pytorch/blob/main/CLAUDE.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true

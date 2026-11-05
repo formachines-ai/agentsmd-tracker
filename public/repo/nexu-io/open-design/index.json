@@ -6,11 +6,11 @@
  "stars": 105504,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-04T04:04:31Z",
+ "checked": "2026-11-05T04:03:33Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 58387,
+   "size": 59523,
    "url": "https://github.com/nexu-io/open-design/blob/main/AGENTS.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true

@@ -6,11 +6,11 @@
  "stars": 160243,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-04T04:02:26Z",
+ "checked": "2026-11-05T04:01:26Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 1205,
+   "size": 1670,
    "url": "https://github.com/langgenius/dify/blob/main/AGENTS.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true

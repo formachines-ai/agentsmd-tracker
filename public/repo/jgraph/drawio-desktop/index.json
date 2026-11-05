@@ -6,7 +6,7 @@
  "stars": 63773,
  "default_branch": "dev",
  "status": "ok",
- "checked": "2026-11-04T04:11:13Z",
+ "checked": "2026-11-05T04:10:20Z",
  "files": {
   "AGENTS.md": {
    "present": false,
@@ -15,7 +15,7 @@
   },
   "CLAUDE.md": {
    "present": true,
-   "size": 23286,
+   "size": 23826,
    "url": "https://github.com/jgraph/drawio-desktop/blob/dev/CLAUDE.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true

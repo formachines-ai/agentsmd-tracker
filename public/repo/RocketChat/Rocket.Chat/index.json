@@ -6,7 +6,7 @@
  "stars": 46361,
  "default_branch": "develop",
  "status": "ok",
- "checked": "2026-11-04T04:18:32Z",
+ "checked": "2026-11-05T04:17:38Z",
  "files": {
   "AGENTS.md": {
    "present": false,
@@ -15,7 +15,7 @@
   },
   "CLAUDE.md": {
    "present": true,
-   "size": 7053,
+   "size": 7180,
    "url": "https://github.com/RocketChat/Rocket.Chat/blob/develop/CLAUDE.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true

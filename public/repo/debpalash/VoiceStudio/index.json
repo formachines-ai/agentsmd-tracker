@@ -6,7 +6,7 @@
  "stars": 98751,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-04T04:05:01Z",
+ "checked": "2026-11-05T04:04:04Z",
  "files": {
   "AGENTS.md": {
    "present": true,
@@ -17,7 +17,7 @@
   },
   "CLAUDE.md": {
    "present": true,
-   "size": 23731,
+   "size": 23778,
    "url": "https://github.com/debpalash/VoiceStudio/blob/main/CLAUDE.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true

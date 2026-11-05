@@ -6,11 +6,11 @@
  "stars": 42503,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-04T04:21:07Z",
+ "checked": "2026-11-05T04:20:13Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 53065,
+   "size": 53760,
    "url": "https://github.com/tinyhumansai/openhuman/blob/main/AGENTS.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true

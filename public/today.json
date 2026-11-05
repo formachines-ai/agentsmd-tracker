@@ -1,47 +1,57 @@
 {
  "site": "https://agentsmd.formachines.ai",
- "date": "2026-11-04",
- "generated": "2026-11-04T05:20:33Z",
+ "date": "2026-11-05",
+ "generated": "2026-11-05T05:19:55Z",
  "license": "CC BY 4.0",
  "added": [
   {
-   "full_name": "notepad-plus-plus/notepad-plus-plus",
-   "owner": "notepad-plus-plus",
-   "name": "notepad-plus-plus",
-   "language": "C++",
-   "stars": 29771,
+   "full_name": "headroomlabs-ai/headroom",
+   "owner": "headroomlabs-ai",
+   "name": "headroom",
+   "language": "Python",
+   "stars": 78645,
    "path": "AGENTS.md",
-   "size": 1156,
-   "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/blob/master/AGENTS.md"
+   "size": 3494,
+   "url": "https://github.com/headroomlabs-ai/headroom/blob/main/AGENTS.md"
   },
   {
-   "full_name": "nats-io/nats-server",
-   "owner": "nats-io",
-   "name": "nats-server",
-   "language": "Go",
-   "stars": 20986,
+   "full_name": "trpc/trpc",
+   "owner": "trpc",
+   "name": "trpc",
+   "language": "TypeScript",
+   "stars": 40761,
    "path": "AGENTS.md",
-   "size": 2186,
-   "url": "https://github.com/nats-io/nats-server/blob/main/AGENTS.md"
+   "size": 3531,
+   "url": "https://github.com/trpc/trpc/blob/main/AGENTS.md"
   }
  ],
  "removed": [
   {
-   "full_name": "streamlit/streamlit",
-   "owner": "streamlit",
-   "name": "streamlit",
-   "language": "Python",
-   "stars": 46209,
-   "path": ".github/copilot-instructions.md",
+   "full_name": "trpc/trpc",
+   "owner": "trpc",
+   "name": "trpc",
+   "language": "TypeScript",
+   "stars": 40761,
+   "path": ".cursor/rules",
    "size": null,
-   "url": "https://github.com/streamlit/streamlit/blob/develop/.github/copilot-instructions.md"
+   "url": "https://github.com/trpc/trpc/tree/main/.cursor/rules"
+  },
+  {
+   "full_name": "mksglu/context-mode",
+   "owner": "mksglu",
+   "name": "context-mode",
+   "language": "TypeScript",
+   "stars": 33250,
+   "path": "CLAUDE.md",
+   "size": null,
+   "url": "https://github.com/mksglu/context-mode/blob/main/CLAUDE.md"
   }
  ],
  "counts": {
-  "AGENTS.md": 542,
-  "CLAUDE.md": 324,
+  "AGENTS.md": 544,
+  "CLAUDE.md": 323,
   ".cursorrules": 16,
-  ".cursor/rules": 35,
+  ".cursor/rules": 34,
   ".github/copilot-instructions.md": 162,
   "llms.txt": 17,
   "GEMINI.md": 21,

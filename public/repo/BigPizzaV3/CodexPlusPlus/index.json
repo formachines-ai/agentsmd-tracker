@@ -6,11 +6,11 @@
  "stars": 32838,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-04T04:31:34Z",
+ "checked": "2026-11-05T04:30:44Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 5822,
+   "size": 6654,
    "url": "https://github.com/BigPizzaV3/CodexPlusPlus/blob/main/AGENTS.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true

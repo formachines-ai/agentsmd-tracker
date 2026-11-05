@@ -6,11 +6,11 @@
  "stars": 40596,
  "default_branch": "master",
  "status": "ok",
- "checked": "2026-11-04T04:22:54Z",
+ "checked": "2026-11-05T04:22:01Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 47242,
+   "size": 26859,
    "url": "https://github.com/PostHog/posthog/blob/master/AGENTS.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true

@@ -6,11 +6,11 @@
  "stars": 45209,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-04T04:19:28Z",
+ "checked": "2026-11-05T04:18:34Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 33202,
+   "size": 13107,
    "url": "https://github.com/reactive-resume/reactive-resume/blob/main/AGENTS.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true

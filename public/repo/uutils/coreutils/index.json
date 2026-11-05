@@ -6,11 +6,11 @@
  "stars": 24323,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-04T04:42:50Z",
+ "checked": "2026-11-05T04:42:01Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 2324,
+   "size": 2603,
    "url": "https://github.com/uutils/coreutils/blob/main/AGENTS.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true
