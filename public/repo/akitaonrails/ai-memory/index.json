@@ -6,11 +6,11 @@
  "stars": 14916,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-05T04:57:00Z",
+ "checked": "2026-11-06T04:58:14Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 55418,
+   "size": 56547,
    "url": "https://github.com/akitaonrails/ai-memory/blob/main/AGENTS.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true

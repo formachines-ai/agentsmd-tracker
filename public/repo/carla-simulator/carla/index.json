@@ -6,11 +6,11 @@
  "stars": 14566,
  "default_branch": "ue58-dev",
  "status": "ok",
- "checked": "2026-11-05T04:58:01Z",
+ "checked": "2026-11-06T04:59:14Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 13992,
+   "size": 14178,
    "url": "https://github.com/carla-simulator/carla/blob/ue58-dev/AGENTS.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true

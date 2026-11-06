@@ -6,11 +6,11 @@
  "stars": 8223,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-05T05:09:23Z",
+ "checked": "2026-11-06T05:10:35Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 28733,
+   "size": 28903,
    "url": "https://github.com/OrchardCMS/OrchardCore/blob/main/AGENTS.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true

@@ -6,7 +6,7 @@
  "stars": 12074,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-05T05:02:44Z",
+ "checked": "2026-11-06T05:03:59Z",
  "files": {
   "AGENTS.md": {
    "present": false,
@@ -30,7 +30,7 @@
   },
   ".github/copilot-instructions.md": {
    "present": true,
-   "size": 32312,
+   "size": 32370,
    "url": "https://github.com/microsoft/garnet/blob/main/.github/copilot-instructions.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true

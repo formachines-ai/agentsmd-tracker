@@ -6,18 +6,18 @@
  "stars": 100217,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-05T04:03:53Z",
+ "checked": "2026-11-06T04:03:54Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 17745,
+   "size": 17867,
    "url": "https://github.com/pbakaus/impeccable/blob/main/AGENTS.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true
   },
   "CLAUDE.md": {
    "present": true,
-   "size": 59615,
+   "size": 59825,
    "url": "https://github.com/pbakaus/impeccable/blob/main/CLAUDE.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true

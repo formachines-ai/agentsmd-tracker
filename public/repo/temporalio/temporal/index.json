@@ -6,7 +6,7 @@
  "stars": 24137,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-05T04:42:20Z",
+ "checked": "2026-11-06T04:43:19Z",
  "files": {
   "AGENTS.md": {
    "present": true,
@@ -34,7 +34,7 @@
   },
   ".github/copilot-instructions.md": {
    "present": true,
-   "size": 13456,
+   "size": 14022,
    "url": "https://github.com/temporalio/temporal/blob/main/.github/copilot-instructions.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true

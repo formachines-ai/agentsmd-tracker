@@ -6,11 +6,11 @@
  "stars": 36679,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-05T04:26:28Z",
+ "checked": "2026-11-06T04:27:07Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 44575,
+   "size": 47709,
    "url": "https://github.com/block/buzz/blob/main/AGENTS.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true

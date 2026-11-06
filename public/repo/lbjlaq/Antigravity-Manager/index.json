@@ -6,11 +6,11 @@
  "stars": 32779,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-05T04:30:56Z",
+ "checked": "2026-11-06T04:31:38Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 10164,
+   "size": 10943,
    "url": "https://github.com/lbjlaq/Antigravity-Manager/blob/main/AGENTS.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true

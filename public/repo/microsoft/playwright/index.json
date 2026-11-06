@@ -6,11 +6,11 @@
  "stars": 99111,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-05T04:04:00Z",
+ "checked": "2026-11-06T04:04:02Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 9877,
+   "size": 9966,
    "url": "https://github.com/microsoft/playwright/blob/main/AGENTS.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true

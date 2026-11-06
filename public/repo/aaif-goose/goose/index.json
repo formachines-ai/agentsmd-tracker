@@ -6,11 +6,11 @@
  "stars": 56138,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-05T04:12:57Z",
+ "checked": "2026-11-06T04:13:22Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 6212,
+   "size": 6081,
    "url": "https://github.com/aaif-goose/goose/blob/main/AGENTS.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true

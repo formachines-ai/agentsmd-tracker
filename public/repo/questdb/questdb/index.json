@@ -6,7 +6,7 @@
  "stars": 17496,
  "default_branch": "master",
  "status": "ok",
- "checked": "2026-11-05T04:51:57Z",
+ "checked": "2026-11-06T04:53:11Z",
  "files": {
   "AGENTS.md": {
    "present": false,
@@ -15,7 +15,7 @@
   },
   "CLAUDE.md": {
    "present": true,
-   "size": 30849,
+   "size": 31415,
    "url": "https://github.com/questdb/questdb/blob/master/CLAUDE.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true

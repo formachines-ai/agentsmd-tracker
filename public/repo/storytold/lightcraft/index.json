@@ -6,18 +6,18 @@
  "stars": 15305,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-05T04:56:12Z",
+ "checked": "2026-11-06T04:57:24Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 17634,
+   "size": 19554,
    "url": "https://github.com/storytold/lightcraft/blob/main/AGENTS.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true
   },
   "CLAUDE.md": {
    "present": true,
-   "size": 18242,
+   "size": 19813,
    "url": "https://github.com/storytold/lightcraft/blob/main/CLAUDE.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true

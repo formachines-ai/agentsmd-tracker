@@ -6,11 +6,11 @@
  "stars": 18317,
  "default_branch": "master",
  "status": "ok",
- "checked": "2026-11-05T04:50:38Z",
+ "checked": "2026-11-06T04:51:49Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 17168,
+   "size": 19288,
    "url": "https://github.com/eythaann/Seelen-UI/blob/master/AGENTS.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true

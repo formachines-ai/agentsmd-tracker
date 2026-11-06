@@ -1,5 +1,5 @@
 {
- "next_id": 1128,
+ "next_id": 1130,
  "links": {
   "affaan-m/ECC/AGENTS.md": {
    "id": 1,
@@ -6761,6 +6761,18 @@
    "id": 1127,
    "url": "https://github.com/trpc/trpc/blob/main/AGENTS.md",
    "repo": "trpc/trpc",
+   "path": "AGENTS.md"
+  },
+  "doctrine/dbal/AGENTS.md": {
+   "id": 1128,
+   "url": "https://github.com/doctrine/dbal/blob/4.5.x/AGENTS.md",
+   "repo": "doctrine/dbal",
+   "path": "AGENTS.md"
+  },
+  "chef/chef/AGENTS.md": {
+   "id": 1129,
+   "url": "https://github.com/chef/chef/blob/main/AGENTS.md",
+   "repo": "chef/chef",
    "path": "AGENTS.md"
   }
  }

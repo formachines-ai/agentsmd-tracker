@@ -6,11 +6,11 @@
  "stars": 33440,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-05T04:30:00Z",
+ "checked": "2026-11-06T04:30:42Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 8490,
+   "size": 9552,
    "url": "https://github.com/remix-run/remix/blob/main/AGENTS.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true

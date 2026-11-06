@@ -6,11 +6,11 @@
  "stars": 33995,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-05T04:29:18Z",
+ "checked": "2026-11-06T04:29:58Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 7500,
+   "size": 7768,
    "url": "https://github.com/iOfficeAI/AionUi/blob/main/AGENTS.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true

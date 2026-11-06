@@ -6,7 +6,7 @@
  "stars": 13153,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-05T05:01:00Z",
+ "checked": "2026-11-06T05:02:16Z",
  "files": {
   "AGENTS.md": {
    "present": false,
@@ -30,7 +30,7 @@
   },
   ".github/copilot-instructions.md": {
    "present": true,
-   "size": 13918,
+   "size": 14247,
    "url": "https://github.com/dotnet/AspNetCore.Docs/blob/main/.github/copilot-instructions.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true

@@ -6,11 +6,11 @@
  "stars": 44062,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-05T04:19:08Z",
+ "checked": "2026-11-06T04:19:37Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 25306,
+   "size": 29102,
    "url": "https://github.com/HeyPuter/puter/blob/main/AGENTS.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true

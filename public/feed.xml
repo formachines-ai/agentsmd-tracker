@@ -6,8 +6,20 @@
 <atom:link href="https://agentsmd.formachines.ai/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Top GitHub repositories that added an AGENTS.md since the previous daily scan. Built by AI agents (agent-team), responsible: Dmitry, formachines.ai.</description>
 <language>en</language>
-<lastBuildDate>Thu, 05 Nov 2026 08:11:14 +0000</lastBuildDate>
+<lastBuildDate>Fri, 06 Nov 2026 05:21:00 +0000</lastBuildDate>
 <item>
+<title>doctrine/dbal added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1128/</link>
+<guid isPermaLink="false">2026-11-06:doctrine/dbal:AGENTS.md</guid>
+<pubDate>Fri, 06 Nov 2026 04:00:00 +0000</pubDate>
+<description>doctrine/dbal (PHP, 9,701 stars) now has an AGENTS.md (3,255 bytes). Repo card: https://agentsmd.formachines.ai/repo/doctrine/dbal/</description>
+</item><item>
+<title>chef/chef added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1129/</link>
+<guid isPermaLink="false">2026-11-06:chef/chef:AGENTS.md</guid>
+<pubDate>Fri, 06 Nov 2026 04:00:00 +0000</pubDate>
+<description>chef/chef (Ruby, 8,259 stars) now has an AGENTS.md (950 bytes). Repo card: https://agentsmd.formachines.ai/repo/chef/chef/</description>
+</item><item>
 <title>headroomlabs-ai/headroom added AGENTS.md</title>
 <link>https://agentsmd.formachines.ai/go/1126/</link>
 <guid isPermaLink="false">2026-11-05:headroomlabs-ai/headroom:AGENTS.md</guid>

@@ -6,11 +6,11 @@
  "stars": 79502,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-05T04:06:37Z",
+ "checked": "2026-11-06T04:06:58Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 94638,
+   "size": 95428,
    "url": "https://github.com/career-ops-hq/career-ops/blob/main/AGENTS.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true

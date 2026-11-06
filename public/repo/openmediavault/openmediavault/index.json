@@ -6,7 +6,7 @@
  "stars": 7061,
  "default_branch": "master",
  "status": "ok",
- "checked": "2026-11-05T05:12:58Z",
+ "checked": "2026-11-06T05:14:05Z",
  "files": {
   "AGENTS.md": {
    "present": true,
@@ -32,7 +32,7 @@
   },
   ".github/copilot-instructions.md": {
    "present": true,
-   "size": 1750,
+   "size": 1888,
    "url": "https://github.com/openmediavault/openmediavault/blob/master/.github/copilot-instructions.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true

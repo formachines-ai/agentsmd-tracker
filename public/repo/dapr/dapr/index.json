@@ -6,7 +6,7 @@
  "stars": 26173,
  "default_branch": "master",
  "status": "ok",
- "checked": "2026-11-05T04:38:48Z",
+ "checked": "2026-11-06T04:39:34Z",
  "files": {
   "AGENTS.md": {
    "present": false,
@@ -30,7 +30,7 @@
   },
   ".github/copilot-instructions.md": {
    "present": true,
-   "size": 9234,
+   "size": 9643,
    "url": "https://github.com/dapr/dapr/blob/master/.github/copilot-instructions.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true

@@ -1,11 +1,11 @@
 {
- "checked": "2026-11-05T04:43:54Z",
+ "checked": "2026-11-06T04:44:58Z",
  "status": "ok",
  "default_branch": "main",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 9957
+   "size": 12447
   },
   "CLAUDE.md": {
    "present": true,
@@ -13,7 +13,7 @@
   },
   ".cursorrules": {
    "present": true,
-   "size": 9957
+   "size": 12447
   },
   ".cursor/rules": {
    "present": false,
@@ -21,7 +21,7 @@
   },
   ".github/copilot-instructions.md": {
    "present": true,
-   "size": 9957
+   "size": 12447
   },
   "llms.txt": {
    "present": false,
@@ -33,7 +33,7 @@
   },
   ".windsurfrules": {
    "present": true,
-   "size": 9957
+   "size": 12447
   }
  }
 }

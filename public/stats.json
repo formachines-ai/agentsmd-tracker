@@ -1,10 +1,10 @@
 {
  "site": "https://agentsmd.formachines.ai",
- "generated": "2026-11-05T05:19:55Z",
+ "generated": "2026-11-06T05:20:58Z",
  "license": "CC BY 4.0",
  "data_delayed": false,
  "method": "Top-by-stars sample of public repositories per language; one HEAD request per tracked path on the default branch; only presence and size are recorded, never file contents.",
- "attribution": "AGENTS.md Tracker, agentsmd.formachines.ai, 2026-11-05, CC BY 4.0",
+ "attribution": "AGENTS.md Tracker, agentsmd.formachines.ai, 2026-11-06, CC BY 4.0",
  "sample": 1922,
  "scanned": 1922,
  "pending": 0,
@@ -20,7 +20,7 @@
   ".windsurfrules"
  ],
  "counts": {
-  "AGENTS.md": 544,
+  "AGENTS.md": 546,
   "CLAUDE.md": 323,
   ".cursorrules": 16,
   ".cursor/rules": 34,
@@ -29,9 +29,9 @@
   "GEMINI.md": 21,
   ".windsurfrules": 6
  },
- "any": 676,
+ "any": 677,
  "shares": {
-  "AGENTS.md": 28.3,
+  "AGENTS.md": 28.4,
   "CLAUDE.md": 16.8,
   ".cursorrules": 0.8,
   ".cursor/rules": 1.8,
@@ -103,8 +103,8 @@
   },
   "PHP": {
    "repos": 191,
-   "any": 36,
-   "AGENTS.md": 25,
+   "any": 37,
+   "AGENTS.md": 26,
    "CLAUDE.md": 20,
    ".cursorrules": 0,
    ".cursor/rules": 4,
@@ -128,7 +128,7 @@
   "Ruby": {
    "repos": 189,
    "any": 41,
-   "AGENTS.md": 34,
+   "AGENTS.md": 35,
    "CLAUDE.md": 20,
    ".cursorrules": 2,
    ".cursor/rules": 3,
@@ -270,8 +270,35 @@
    },
    "added": 2,
    "removed": 2
+  },
+  {
+   "date": "2026-11-06",
+   "scanned": 1922,
+   "counts": {
+    "AGENTS.md": 546,
+    "CLAUDE.md": 323,
+    ".cursorrules": 16,
+    ".cursor/rules": 34,
+    ".github/copilot-instructions.md": 162,
+    "llms.txt": 17,
+    "GEMINI.md": 21,
+    ".windsurfrules": 6
+   },
+   "any": 677,
+   "shares": {
+    "AGENTS.md": 28.4,
+    "CLAUDE.md": 16.8,
+    ".cursorrules": 0.8,
+    ".cursor/rules": 1.8,
+    ".github/copilot-instructions.md": 8.4,
+    "llms.txt": 0.9,
+    "GEMINI.md": 1.1,
+    ".windsurfrules": 0.3
+   },
+   "added": 2,
+   "removed": 0
   }
  ],
- "history_days": 4,
+ "history_days": 5,
  "change_7d_pp": null
 }

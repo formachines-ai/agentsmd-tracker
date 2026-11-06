@@ -6,11 +6,11 @@
  "stars": 28324,
  "default_branch": "2.5",
  "status": "ok",
- "checked": "2026-11-05T04:36:12Z",
+ "checked": "2026-11-06T04:36:57Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 15462,
+   "size": 15569,
    "url": "https://github.com/bagisto/bagisto/blob/2.5/AGENTS.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true

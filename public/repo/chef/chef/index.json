@@ -6,12 +6,13 @@
  "stars": 8259,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-05T05:09:18Z",
+ "checked": "2026-11-06T05:10:30Z",
  "files": {
   "AGENTS.md": {
-   "present": false,
-   "size": null,
-   "url": null
+   "present": true,
+   "size": 950,
+   "url": "https://github.com/chef/chef/blob/main/AGENTS.md",
+   "first_seen": "2026-11-06"
   },
   "CLAUDE.md": {
    "present": false,

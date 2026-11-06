@@ -1,0 +1,154 @@
+{
+ "date": "2026-11-06",
+ "added": [
+  {
+   "full_name": "doctrine/dbal",
+   "owner": "doctrine",
+   "name": "dbal",
+   "language": "PHP",
+   "stars": 9701,
+   "path": "AGENTS.md",
+   "size": 3255,
+   "url": "https://github.com/doctrine/dbal/blob/4.5.x/AGENTS.md"
+  },
+  {
+   "full_name": "chef/chef",
+   "owner": "chef",
+   "name": "chef",
+   "language": "Ruby",
+   "stars": 8259,
+   "path": "AGENTS.md",
+   "size": 950,
+   "url": "https://github.com/chef/chef/blob/main/AGENTS.md"
+  }
+ ],
+ "removed": [],
+ "generated": "2026-11-06T05:20:58Z",
+ "sample": 1922,
+ "scanned": 1922,
+ "pending": 0,
+ "unreachable": 0,
+ "counts": {
+  "AGENTS.md": 546,
+  "CLAUDE.md": 323,
+  ".cursorrules": 16,
+  ".cursor/rules": 34,
+  ".github/copilot-instructions.md": 162,
+  "llms.txt": 17,
+  "GEMINI.md": 21,
+  ".windsurfrules": 6
+ },
+ "any": 677,
+ "by_language": {
+  "C#": {
+   "repos": 184,
+   "AGENTS.md": 35,
+   "CLAUDE.md": 21,
+   ".cursorrules": 2,
+   ".cursor/rules": 0,
+   ".github/copilot-instructions.md": 29,
+   "llms.txt": 1,
+   "GEMINI.md": 2,
+   ".windsurfrules": 2
+  },
+  "C++": {
+   "repos": 191,
+   "AGENTS.md": 51,
+   "CLAUDE.md": 18,
+   ".cursorrules": 3,
+   ".cursor/rules": 1,
+   ".github/copilot-instructions.md": 22,
+   "llms.txt": 0,
+   "GEMINI.md": 2,
+   ".windsurfrules": 0
+  },
+  "Go": {
+   "repos": 193,
+   "AGENTS.md": 65,
+   "CLAUDE.md": 45,
+   ".cursorrules": 1,
+   ".cursor/rules": 2,
+   ".github/copilot-instructions.md": 17,
+   "llms.txt": 3,
+   "GEMINI.md": 2,
+   ".windsurfrules": 0
+  },
+  "Java": {
+   "repos": 193,
+   "AGENTS.md": 47,
+   "CLAUDE.md": 20,
+   ".cursorrules": 0,
+   ".cursor/rules": 1,
+   ".github/copilot-instructions.md": 12,
+   "llms.txt": 0,
+   "GEMINI.md": 0,
+   ".windsurfrules": 0
+  },
+  "JavaScript": {
+   "repos": 191,
+   "AGENTS.md": 33,
+   "CLAUDE.md": 22,
+   ".cursorrules": 0,
+   ".cursor/rules": 3,
+   ".github/copilot-instructions.md": 10,
+   "llms.txt": 3,
+   "GEMINI.md": 1,
+   ".windsurfrules": 0
+  },
+  "PHP": {
+   "repos": 191,
+   "AGENTS.md": 26,
+   "CLAUDE.md": 20,
+   ".cursorrules": 0,
+   ".cursor/rules": 4,
+   ".github/copilot-instructions.md": 11,
+   "llms.txt": 0,
+   "GEMINI.md": 2,
+   ".windsurfrules": 0
+  },
+  "Python": {
+   "repos": 197,
+   "AGENTS.md": 66,
+   "CLAUDE.md": 40,
+   ".cursorrules": 3,
+   ".cursor/rules": 6,
+   ".github/copilot-instructions.md": 17,
+   "llms.txt": 3,
+   "GEMINI.md": 4,
+   ".windsurfrules": 1
+  },
+  "Ruby": {
+   "repos": 189,
+   "AGENTS.md": 35,
+   "CLAUDE.md": 20,
+   ".cursorrules": 2,
+   ".cursor/rules": 3,
+   ".github/copilot-instructions.md": 12,
+   "llms.txt": 1,
+   "GEMINI.md": 1,
+   ".windsurfrules": 1
+  },
+  "Rust": {
+   "repos": 198,
+   "AGENTS.md": 88,
+   "CLAUDE.md": 55,
+   ".cursorrules": 1,
+   ".cursor/rules": 5,
+   ".github/copilot-instructions.md": 13,
+   "llms.txt": 3,
+   "GEMINI.md": 4,
+   ".windsurfrules": 1
+  },
+  "TypeScript": {
+   "repos": 195,
+   "AGENTS.md": 100,
+   "CLAUDE.md": 62,
+   ".cursorrules": 4,
+   ".cursor/rules": 9,
+   ".github/copilot-instructions.md": 19,
+   "llms.txt": 3,
+   "GEMINI.md": 3,
+   ".windsurfrules": 1
+  }
+ }
+}

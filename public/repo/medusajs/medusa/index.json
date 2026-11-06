@@ -6,11 +6,11 @@
  "stars": 37059,
  "default_branch": "develop",
  "status": "ok",
- "checked": "2026-11-05T04:26:14Z",
+ "checked": "2026-11-06T04:26:51Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 18717,
+   "size": 18718,
    "url": "https://github.com/medusajs/medusa/blob/develop/AGENTS.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true

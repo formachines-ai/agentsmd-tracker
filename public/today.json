@@ -1,54 +1,33 @@
 {
  "site": "https://agentsmd.formachines.ai",
- "date": "2026-11-05",
- "generated": "2026-11-05T05:19:55Z",
+ "date": "2026-11-06",
+ "generated": "2026-11-06T05:20:58Z",
  "license": "CC BY 4.0",
  "added": [
   {
-   "full_name": "headroomlabs-ai/headroom",
-   "owner": "headroomlabs-ai",
-   "name": "headroom",
-   "language": "Python",
-   "stars": 78645,
+   "full_name": "doctrine/dbal",
+   "owner": "doctrine",
+   "name": "dbal",
+   "language": "PHP",
+   "stars": 9701,
    "path": "AGENTS.md",
-   "size": 3494,
-   "url": "https://github.com/headroomlabs-ai/headroom/blob/main/AGENTS.md"
+   "size": 3255,
+   "url": "https://github.com/doctrine/dbal/blob/4.5.x/AGENTS.md"
   },
   {
-   "full_name": "trpc/trpc",
-   "owner": "trpc",
-   "name": "trpc",
-   "language": "TypeScript",
-   "stars": 40761,
+   "full_name": "chef/chef",
+   "owner": "chef",
+   "name": "chef",
+   "language": "Ruby",
+   "stars": 8259,
    "path": "AGENTS.md",
-   "size": 3531,
-   "url": "https://github.com/trpc/trpc/blob/main/AGENTS.md"
+   "size": 950,
+   "url": "https://github.com/chef/chef/blob/main/AGENTS.md"
   }
  ],
- "removed": [
-  {
-   "full_name": "trpc/trpc",
-   "owner": "trpc",
-   "name": "trpc",
-   "language": "TypeScript",
-   "stars": 40761,
-   "path": ".cursor/rules",
-   "size": null,
-   "url": "https://github.com/trpc/trpc/tree/main/.cursor/rules"
-  },
-  {
-   "full_name": "mksglu/context-mode",
-   "owner": "mksglu",
-   "name": "context-mode",
-   "language": "TypeScript",
-   "stars": 33250,
-   "path": "CLAUDE.md",
-   "size": null,
-   "url": "https://github.com/mksglu/context-mode/blob/main/CLAUDE.md"
-  }
- ],
+ "removed": [],
  "counts": {
-  "AGENTS.md": 544,
+  "AGENTS.md": 546,
   "CLAUDE.md": 323,
   ".cursorrules": 16,
   ".cursor/rules": 34,

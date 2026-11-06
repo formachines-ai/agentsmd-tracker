@@ -6,12 +6,13 @@
  "stars": 9701,
  "default_branch": "4.5.x",
  "status": "ok",
- "checked": "2026-11-05T05:06:30Z",
+ "checked": "2026-11-06T05:07:43Z",
  "files": {
   "AGENTS.md": {
-   "present": false,
-   "size": null,
-   "url": null
+   "present": true,
+   "size": 3255,
+   "url": "https://github.com/doctrine/dbal/blob/4.5.x/AGENTS.md",
+   "first_seen": "2026-11-06"
   },
   "CLAUDE.md": {
    "present": false,

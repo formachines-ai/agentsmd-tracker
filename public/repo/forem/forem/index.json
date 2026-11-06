@@ -6,11 +6,11 @@
  "stars": 22818,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-05T04:43:54Z",
+ "checked": "2026-11-06T04:44:58Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 9957,
+   "size": 12447,
    "url": "https://github.com/forem/forem/blob/main/AGENTS.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true
@@ -24,7 +24,7 @@
   },
   ".cursorrules": {
    "present": true,
-   "size": 9957,
+   "size": 12447,
    "url": "https://github.com/forem/forem/blob/main/.cursorrules",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true
@@ -36,7 +36,7 @@
   },
   ".github/copilot-instructions.md": {
    "present": true,
-   "size": 9957,
+   "size": 12447,
    "url": "https://github.com/forem/forem/blob/main/.github/copilot-instructions.md",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true
@@ -53,7 +53,7 @@
   },
   ".windsurfrules": {
    "present": true,
-   "size": 9957,
+   "size": 12447,
    "url": "https://github.com/forem/forem/blob/main/.windsurfrules",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true
