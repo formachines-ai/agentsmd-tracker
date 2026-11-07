@@ -89,6 +89,7 @@ SCHEMA_VERSION = 1               # top-level "schema_version" of stats.json / to
 STALE_HOURS = 36                 # no successful scan for this long => "data delayed" banner
 FEED_DAYS = 30                   # history window for feed.xml
 SPARK_MIN_SPAN_PP = 5.0          # sparkline y-axis never spans less than this many percentage points
+CHANGE_MIN_ROWS = 8              # change_7d_pp stays null below this many history rows
 BASELINE_DAYS = 14               # show the "baseline" label while history is shorter than this
 SPARK_DAYS = 60                  # history window for the sparklines
 MAX_TODAY_ITEMS = 200            # feed on the front page
@@ -687,9 +688,10 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
     cite = (f'<p class="cite muted">Cite as: {esc(SITE_NAME)}, {esc(SITE_HOST)}, scan of {esc(scan_day)}, CC BY 4.0. '
             f'Values for each date stay in <a href="/stats.json">{esc(SITE_BASE)}/stats.json</a> history[].</p>')
     base_note = ""
-    if history and len(history) < BASELINE_DAYS:
-        base_note = (f'<p class="muted baseline">baseline: {len(history)} days since {esc(history[0]["date"])}. '
-                     f'Sparkline axes span at least {SPARK_MIN_SPAN_PP:g} percentage points, so small day-to-day changes look small.</p>')
+    if history:
+        extra = (f' Sparkline axes span at least {SPARK_MIN_SPAN_PP:g} percentage points, so small day-to-day changes look small.'
+                 if len(history) < BASELINE_DAYS else '')
+        base_note = f'<p class="muted baseline">baseline: {len(history)} days since {esc(history[0]["date"])}.{extra}</p>'
 
     home_desc = STABLE_DESCRIPTION
     home_ld = {"@context": "https://schema.org", "@type": "Dataset", "name": f"{SITE_NAME}: agent-instruction files in top GitHub repositories",
@@ -780,12 +782,14 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
 
     # ---- JSON endpoints
     generated = today.get("generated") or (history[-1].get("generated") if history else None) or updated  # time of the last real scan
-    change_7d_pp = None   # AGENTS.md share, latest entry minus the entry dated exactly 7 days earlier; null if that entry is missing
-    if history:
+    change_7d_pp = {s_["path"]: None for s_ in PATHS}   # per path: latest pct minus pct of the row dated 7 days earlier; null until history has >= CHANGE_MIN_ROWS rows
+    if len(history) >= CHANGE_MIN_ROWS:
         prev_date = (datetime.fromisoformat(history[-1]["date"]) - timedelta(days=7)).date().isoformat()
         prev = next((d for d in history if d["date"] == prev_date), None)
         if prev and prev["scanned"] and history[-1]["scanned"]:
-            change_7d_pp = round(pct(history[-1]["counts"].get(PRIMARY_PATH, 0), history[-1]["scanned"]) - pct(prev["counts"].get(PRIMARY_PATH, 0), prev["scanned"]), 1)
+            for s_ in PATHS:
+                p_ = s_["path"]
+                change_7d_pp[p_] = round(pct(history[-1]["counts"].get(p_, 0), history[-1]["scanned"]) - pct(prev["counts"].get(p_, 0), prev["scanned"]), 1)
     stats = {
         "schema_version": SCHEMA_VERSION,
         "site": SITE_BASE, "generated": generated, "license": "CC BY 4.0", "data_delayed": delayed,
@@ -797,6 +801,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
         "by_language": {k: {"repos": v["repos"], "any": v["any"], **{s["path"]: v[s["path"]] for s in PATHS}} for k, v in sorted(agg["by_lang"].items())},
         "history": [{"date": d["date"], "scanned": d["scanned"], "counts": d["counts"], "any": d.get("any"),
                      "shares": {p: (pct(c, d["scanned"]) if d["scanned"] else None) for p, c in d["counts"].items()},
+                     "pct": {p: (pct(c, d["scanned"]) if d["scanned"] else None) for p, c in d["counts"].items()},
                      "added": len(d.get("added", [])), "removed": len(d.get("removed", []))} for d in history],
         "history_days": len(history),
         "change_7d_pp": change_7d_pp,
@@ -895,6 +900,7 @@ Latest (scan {generated}): {agg['counts'][PRIMARY_PATH]} of {total} scanned repo
 
 ## Machine-readable
 - [stats.json]({SITE_BASE}/stats.json): totals, shares, by-language table, full daily history
+- history[].pct and change_7d_pp in stats.json: pct = share of scanned repos with the path on that day, in % with 1 decimal (count / scanned x 100); change_7d_pp = per path, today's pct minus the pct 7 days earlier in percentage points, null until history has at least 8 dated rows.
 - history "added" / "removed" in stats.json: number of (repository, path) pairs whose file appeared / disappeared since the previous snapshot of the same repository, counted per day; a repository's first scan is a baseline and adds none.
 - [today.json]({SITE_BASE}/today.json): files added/removed since the previous scan
 - [feed.xml]({SITE_BASE}/feed.xml): RSS of repositories that added AGENTS.md
