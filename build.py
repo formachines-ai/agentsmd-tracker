@@ -85,7 +85,7 @@ TIMEOUT_S = 20
 MAX_429_IN_A_ROW = 5             # then the scan stops and the rest stays pending
 BACKOFF_429_S = 60
 RESCAN_HOURS = 20                # a repo checked less than this many hours ago is not rescanned
-SCHEMA_VERSION = 1               # top-level "schema_version" of stats.json / today.json
+SCHEMA_VERSION = 2               # top-level "schema_version" of stats.json / today.json
 STALE_HOURS = 36                 # no successful scan for this long => "data delayed" banner
 FEED_DAYS = 30                   # history window for feed.xml
 SPARK_MIN_SPAN_PP = 5.0          # sparkline y-axis never spans less than this many percentage points
@@ -900,6 +900,7 @@ Latest (scan {generated}): {agg['counts'][PRIMARY_PATH]} of {total} scanned repo
 
 ## Machine-readable
 - [stats.json]({SITE_BASE}/stats.json): totals, shares, by-language table, full daily history
+- schema_version 2 (2026-11-07): change_7d_pp is an object per path; null until 8 dated history rows (schema_version 1: change_7d_pp was a scalar).
 - history[].pct and change_7d_pp in stats.json: pct = share of scanned repos with the path on that day, in % with 1 decimal (count / scanned x 100); change_7d_pp = per path, today's pct minus the pct 7 days earlier in percentage points, null until history has at least 8 dated rows.
 - history "added" / "removed" in stats.json: number of (repository, path) pairs whose file appeared / disappeared since the previous snapshot of the same repository, counted per day; a repository's first scan is a baseline and adds none.
 - [today.json]({SITE_BASE}/today.json): files added/removed since the previous scan
