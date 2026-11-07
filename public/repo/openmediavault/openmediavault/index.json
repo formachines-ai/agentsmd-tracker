@@ -6,7 +6,7 @@
  "stars": 7061,
  "default_branch": "master",
  "status": "ok",
- "checked": "2026-11-06T05:14:05Z",
+ "checked": "2026-11-07T05:12:10Z",
  "files": {
   "AGENTS.md": {
    "present": true,
@@ -16,7 +16,7 @@
     "count": 26,
     "total": 191,
     "pct": 13.6,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/"
    },
@@ -31,7 +31,7 @@
     "count": 20,
     "total": 191,
     "pct": 10.5,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/"
    }
@@ -44,7 +44,7 @@
     "count": 0,
     "total": 191,
     "pct": 0.0,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/"
    }
@@ -57,20 +57,20 @@
     "count": 4,
     "total": 191,
     "pct": 2.1,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/"
    }
   },
   ".github/copilot-instructions.md": {
    "present": true,
-   "size": 1888,
+   "size": 2212,
    "url": "https://github.com/openmediavault/openmediavault/blob/master/.github/copilot-instructions.md",
    "lang_share": {
     "count": 11,
     "total": 191,
     "pct": 5.8,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/"
    },
@@ -85,7 +85,7 @@
     "count": 0,
     "total": 191,
     "pct": 0.0,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/"
    }
@@ -98,7 +98,7 @@
     "count": 2,
     "total": 191,
     "pct": 1.0,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/"
    }
@@ -111,7 +111,7 @@
     "count": 0,
     "total": 191,
     "pct": 0.0,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/"
    }

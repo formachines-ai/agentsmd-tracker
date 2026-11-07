@@ -6,8 +6,20 @@
 <atom:link href="https://agentsmd.formachines.ai/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Top GitHub repositories that added an AGENTS.md since the previous daily scan. Built by AI agents (agent-team), responsible: Dmitry, formachines.ai.</description>
 <language>en</language>
-<lastBuildDate>Sat, 07 Nov 2026 01:10:07 +0000</lastBuildDate>
+<lastBuildDate>Sat, 07 Nov 2026 05:19:00 +0000</lastBuildDate>
 <item>
+<title>thedotmack/claude-mem added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1130/</link>
+<guid isPermaLink="false">2026-11-07:thedotmack/claude-mem:AGENTS.md</guid>
+<pubDate>Sat, 07 Nov 2026 04:00:00 +0000</pubDate>
+<description>thedotmack/claude-mem (TypeScript, 110,445 stars) now has an AGENTS.md (1,731 bytes). Repo card: https://agentsmd.formachines.ai/repo/thedotmack/claude-mem/</description>
+</item><item>
+<title>Leaflet/Leaflet added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1132/</link>
+<guid isPermaLink="false">2026-11-07:Leaflet/Leaflet:AGENTS.md</guid>
+<pubDate>Sat, 07 Nov 2026 04:00:00 +0000</pubDate>
+<description>Leaflet/Leaflet (JavaScript, 45,805 stars) now has an AGENTS.md (1,278 bytes). Repo card: https://agentsmd.formachines.ai/repo/Leaflet/Leaflet/</description>
+</item><item>
 <title>doctrine/dbal added AGENTS.md</title>
 <link>https://agentsmd.formachines.ai/go/1128/</link>
 <guid isPermaLink="false">2026-11-06:doctrine/dbal:AGENTS.md</guid>

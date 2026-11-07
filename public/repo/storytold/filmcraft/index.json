@@ -6,17 +6,17 @@
  "stars": 17285,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-06T04:53:40Z",
+ "checked": "2026-11-07T04:52:05Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 13349,
+   "size": 20403,
    "url": "https://github.com/storytold/filmcraft/blob/main/AGENTS.md",
    "lang_share": {
     "count": 88,
     "total": 198,
     "pct": 44.4,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/"
    },
@@ -25,13 +25,13 @@
   },
   "CLAUDE.md": {
    "present": true,
-   "size": 7070,
+   "size": 11,
    "url": "https://github.com/storytold/filmcraft/blob/main/CLAUDE.md",
    "lang_share": {
     "count": 55,
     "total": 198,
     "pct": 27.8,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/"
    },
@@ -46,7 +46,7 @@
     "count": 1,
     "total": 198,
     "pct": 0.5,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/"
    }
@@ -59,7 +59,7 @@
     "count": 5,
     "total": 198,
     "pct": 2.5,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/"
    }
@@ -72,7 +72,7 @@
     "count": 13,
     "total": 198,
     "pct": 6.6,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/"
    }
@@ -85,7 +85,7 @@
     "count": 3,
     "total": 198,
     "pct": 1.5,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/"
    }
@@ -98,7 +98,7 @@
     "count": 4,
     "total": 198,
     "pct": 2.0,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/"
    }
@@ -111,7 +111,7 @@
     "count": 1,
     "total": 198,
     "pct": 0.5,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/"
    }

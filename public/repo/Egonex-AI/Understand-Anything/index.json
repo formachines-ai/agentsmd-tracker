@@ -6,17 +6,17 @@
  "stars": 89812,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-06T04:05:40Z",
+ "checked": "2026-11-07T04:05:22Z",
  "files": {
   "AGENTS.md": {
    "present": false,
    "size": null,
    "url": null,
    "lang_share": {
-    "count": 100,
+    "count": 101,
     "total": 195,
-    "pct": 51.3,
-    "date": "2026-11-06",
+    "pct": 51.8,
+    "date": "2026-11-07",
     "language": "TypeScript",
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    }
@@ -26,10 +26,10 @@
    "size": 6844,
    "url": "https://github.com/Egonex-AI/Understand-Anything/blob/main/CLAUDE.md",
    "lang_share": {
-    "count": 62,
+    "count": 63,
     "total": 195,
-    "pct": 31.8,
-    "date": "2026-11-06",
+    "pct": 32.3,
+    "date": "2026-11-07",
     "language": "TypeScript",
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    },
@@ -44,7 +44,7 @@
     "count": 4,
     "total": 195,
     "pct": 2.1,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "TypeScript",
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    }
@@ -57,7 +57,7 @@
     "count": 9,
     "total": 195,
     "pct": 4.6,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "TypeScript",
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    }
@@ -70,7 +70,7 @@
     "count": 19,
     "total": 195,
     "pct": 9.7,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "TypeScript",
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    }
@@ -83,7 +83,7 @@
     "count": 3,
     "total": 195,
     "pct": 1.5,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "TypeScript",
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    }
@@ -96,7 +96,7 @@
     "count": 3,
     "total": 195,
     "pct": 1.5,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "TypeScript",
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    }
@@ -109,7 +109,7 @@
     "count": 1,
     "total": 195,
     "pct": 0.5,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "TypeScript",
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    }

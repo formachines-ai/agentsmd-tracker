@@ -1,10 +1,10 @@
 {
  "site": "https://agentsmd.formachines.ai",
- "generated": "2026-11-06T05:20:58Z",
+ "generated": "2026-11-07T05:18:58Z",
  "license": "CC BY 4.0",
  "data_delayed": false,
  "method": "Top-by-stars sample of public repositories per language; one HEAD request per tracked path on the default branch; only presence and size are recorded, never file contents.",
- "attribution": "AGENTS.md Tracker, agentsmd.formachines.ai, 2026-11-06, CC BY 4.0",
+ "attribution": "AGENTS.md Tracker, agentsmd.formachines.ai, 2026-11-07, CC BY 4.0",
  "sample": 1922,
  "scanned": 1922,
  "pending": 0,
@@ -20,19 +20,19 @@
   ".windsurfrules"
  ],
  "counts": {
-  "AGENTS.md": 546,
-  "CLAUDE.md": 323,
+  "AGENTS.md": 548,
+  "CLAUDE.md": 324,
   ".cursorrules": 16,
   ".cursor/rules": 34,
-  ".github/copilot-instructions.md": 162,
+  ".github/copilot-instructions.md": 161,
   "llms.txt": 17,
   "GEMINI.md": 21,
   ".windsurfrules": 6
  },
- "any": 677,
+ "any": 679,
  "shares": {
-  "AGENTS.md": 28.4,
-  "CLAUDE.md": 16.8,
+  "AGENTS.md": 28.5,
+  "CLAUDE.md": 16.9,
   ".cursorrules": 0.8,
   ".cursor/rules": 1.8,
   ".github/copilot-instructions.md": 8.4,
@@ -72,7 +72,7 @@
    "CLAUDE.md": 45,
    ".cursorrules": 1,
    ".cursor/rules": 2,
-   ".github/copilot-instructions.md": 17,
+   ".github/copilot-instructions.md": 16,
    "llms.txt": 3,
    "GEMINI.md": 2,
    ".windsurfrules": 0
@@ -91,8 +91,8 @@
   },
   "JavaScript": {
    "repos": 191,
-   "any": 46,
-   "AGENTS.md": 33,
+   "any": 47,
+   "AGENTS.md": 34,
    "CLAUDE.md": 22,
    ".cursorrules": 0,
    ".cursor/rules": 3,
@@ -151,9 +151,9 @@
   },
   "TypeScript": {
    "repos": 195,
-   "any": 121,
-   "AGENTS.md": 100,
-   "CLAUDE.md": 62,
+   "any": 122,
+   "AGENTS.md": 101,
+   "CLAUDE.md": 63,
    ".cursorrules": 4,
    ".cursor/rules": 9,
    ".github/copilot-instructions.md": 19,
@@ -297,8 +297,35 @@
    },
    "added": 2,
    "removed": 0
+  },
+  {
+   "date": "2026-11-07",
+   "scanned": 1922,
+   "counts": {
+    "AGENTS.md": 548,
+    "CLAUDE.md": 324,
+    ".cursorrules": 16,
+    ".cursor/rules": 34,
+    ".github/copilot-instructions.md": 161,
+    "llms.txt": 17,
+    "GEMINI.md": 21,
+    ".windsurfrules": 6
+   },
+   "any": 679,
+   "shares": {
+    "AGENTS.md": 28.5,
+    "CLAUDE.md": 16.9,
+    ".cursorrules": 0.8,
+    ".cursor/rules": 1.8,
+    ".github/copilot-instructions.md": 8.4,
+    "llms.txt": 0.9,
+    "GEMINI.md": 1.1,
+    ".windsurfrules": 0.3
+   },
+   "added": 3,
+   "removed": 1
   }
  ],
- "history_days": 5,
+ "history_days": 6,
  "change_7d_pp": null
 }

@@ -6,7 +6,7 @@
  "stars": 20750,
  "default_branch": "master",
  "status": "ok",
- "checked": "2026-11-06T04:47:41Z",
+ "checked": "2026-11-07T04:46:19Z",
  "files": {
   "AGENTS.md": {
    "present": false,
@@ -16,7 +16,7 @@
     "count": 65,
     "total": 193,
     "pct": 33.7,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "Go",
     "page": "https://agentsmd.formachines.ai/lang/go/"
    }
@@ -29,7 +29,7 @@
     "count": 45,
     "total": 193,
     "pct": 23.3,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "Go",
     "page": "https://agentsmd.formachines.ai/lang/go/"
    }
@@ -42,7 +42,7 @@
     "count": 1,
     "total": 193,
     "pct": 0.5,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "Go",
     "page": "https://agentsmd.formachines.ai/lang/go/"
    }
@@ -55,7 +55,7 @@
     "count": 2,
     "total": 193,
     "pct": 1.0,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "Go",
     "page": "https://agentsmd.formachines.ai/lang/go/"
    }
@@ -65,10 +65,10 @@
    "size": null,
    "url": null,
    "lang_share": {
-    "count": 17,
+    "count": 16,
     "total": 193,
-    "pct": 8.8,
-    "date": "2026-11-06",
+    "pct": 8.3,
+    "date": "2026-11-07",
     "language": "Go",
     "page": "https://agentsmd.formachines.ai/lang/go/"
    }
@@ -81,7 +81,7 @@
     "count": 3,
     "total": 193,
     "pct": 1.6,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "Go",
     "page": "https://agentsmd.formachines.ai/lang/go/"
    }
@@ -94,7 +94,7 @@
     "count": 2,
     "total": 193,
     "pct": 1.0,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "Go",
     "page": "https://agentsmd.formachines.ai/lang/go/"
    }
@@ -107,7 +107,7 @@
     "count": 0,
     "total": 193,
     "pct": 0.0,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "Go",
     "page": "https://agentsmd.formachines.ai/lang/go/"
    }

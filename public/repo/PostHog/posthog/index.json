@@ -6,17 +6,17 @@
  "stars": 40596,
  "default_branch": "master",
  "status": "ok",
- "checked": "2026-11-06T04:22:34Z",
+ "checked": "2026-11-07T04:21:44Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 26803,
+   "size": 26959,
    "url": "https://github.com/PostHog/posthog/blob/master/AGENTS.md",
    "lang_share": {
     "count": 66,
     "total": 197,
     "pct": 33.5,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "Python",
     "page": "https://agentsmd.formachines.ai/lang/python/"
    },
@@ -31,7 +31,7 @@
     "count": 40,
     "total": 197,
     "pct": 20.3,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "Python",
     "page": "https://agentsmd.formachines.ai/lang/python/"
    },
@@ -46,7 +46,7 @@
     "count": 3,
     "total": 197,
     "pct": 1.5,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "Python",
     "page": "https://agentsmd.formachines.ai/lang/python/"
    },
@@ -61,7 +61,7 @@
     "count": 6,
     "total": 197,
     "pct": 3.0,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "Python",
     "page": "https://agentsmd.formachines.ai/lang/python/"
    },
@@ -76,7 +76,7 @@
     "count": 17,
     "total": 197,
     "pct": 8.6,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "Python",
     "page": "https://agentsmd.formachines.ai/lang/python/"
    }
@@ -89,7 +89,7 @@
     "count": 3,
     "total": 197,
     "pct": 1.5,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "Python",
     "page": "https://agentsmd.formachines.ai/lang/python/"
    }
@@ -102,7 +102,7 @@
     "count": 4,
     "total": 197,
     "pct": 2.0,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "Python",
     "page": "https://agentsmd.formachines.ai/lang/python/"
    }
@@ -115,7 +115,7 @@
     "count": 1,
     "total": 197,
     "pct": 0.5,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "Python",
     "page": "https://agentsmd.formachines.ai/lang/python/"
    }

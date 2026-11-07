@@ -6,17 +6,17 @@
  "stars": 17327,
  "default_branch": "master",
  "status": "ok",
- "checked": "2026-11-06T04:53:38Z",
+ "checked": "2026-11-07T04:52:03Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 36873,
+   "size": 37262,
    "url": "https://github.com/koel/koel/blob/master/AGENTS.md",
    "lang_share": {
     "count": 26,
     "total": 191,
     "pct": 13.6,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/"
    },
@@ -31,7 +31,7 @@
     "count": 20,
     "total": 191,
     "pct": 10.5,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/"
    },
@@ -46,7 +46,7 @@
     "count": 0,
     "total": 191,
     "pct": 0.0,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/"
    }
@@ -59,7 +59,7 @@
     "count": 4,
     "total": 191,
     "pct": 2.1,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/"
    },
@@ -74,7 +74,7 @@
     "count": 11,
     "total": 191,
     "pct": 5.8,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/"
    },
@@ -89,7 +89,7 @@
     "count": 0,
     "total": 191,
     "pct": 0.0,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/"
    }
@@ -102,7 +102,7 @@
     "count": 2,
     "total": 191,
     "pct": 1.0,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/"
    }
@@ -115,7 +115,7 @@
     "count": 0,
     "total": 191,
     "pct": 0.0,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/"
    }

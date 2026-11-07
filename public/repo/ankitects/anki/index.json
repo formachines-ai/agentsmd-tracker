@@ -6,7 +6,7 @@
  "stars": 32487,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-06T04:31:55Z",
+ "checked": "2026-11-07T04:30:48Z",
  "files": {
   "AGENTS.md": {
    "present": true,
@@ -16,7 +16,7 @@
     "count": 88,
     "total": 198,
     "pct": 44.4,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/"
    },
@@ -31,7 +31,7 @@
     "count": 55,
     "total": 198,
     "pct": 27.8,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/"
    },
@@ -46,7 +46,7 @@
     "count": 1,
     "total": 198,
     "pct": 0.5,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/"
    }
@@ -59,7 +59,7 @@
     "count": 5,
     "total": 198,
     "pct": 2.5,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/"
    },
@@ -74,7 +74,7 @@
     "count": 13,
     "total": 198,
     "pct": 6.6,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/"
    }
@@ -87,7 +87,7 @@
     "count": 3,
     "total": 198,
     "pct": 1.5,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/"
    }
@@ -100,7 +100,7 @@
     "count": 4,
     "total": 198,
     "pct": 2.0,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/"
    }
@@ -113,7 +113,7 @@
     "count": 1,
     "total": 198,
     "pct": 0.5,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/"
    }

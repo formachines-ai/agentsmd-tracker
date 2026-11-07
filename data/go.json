@@ -1,5 +1,5 @@
 {
- "next_id": 1130,
+ "next_id": 1133,
  "links": {
   "affaan-m/ECC/AGENTS.md": {
    "id": 1,
@@ -6773,6 +6773,24 @@
    "id": 1129,
    "url": "https://github.com/chef/chef/blob/main/AGENTS.md",
    "repo": "chef/chef",
+   "path": "AGENTS.md"
+  },
+  "thedotmack/claude-mem/AGENTS.md": {
+   "id": 1130,
+   "url": "https://github.com/thedotmack/claude-mem/blob/main/AGENTS.md",
+   "repo": "thedotmack/claude-mem",
+   "path": "AGENTS.md"
+  },
+  "thedotmack/claude-mem/CLAUDE.md": {
+   "id": 1131,
+   "url": "https://github.com/thedotmack/claude-mem/blob/main/CLAUDE.md",
+   "repo": "thedotmack/claude-mem",
+   "path": "CLAUDE.md"
+  },
+  "Leaflet/Leaflet/AGENTS.md": {
+   "id": 1132,
+   "url": "https://github.com/Leaflet/Leaflet/blob/main/AGENTS.md",
+   "repo": "Leaflet/Leaflet",
    "path": "AGENTS.md"
   }
  }

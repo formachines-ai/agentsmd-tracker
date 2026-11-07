@@ -6,7 +6,7 @@
  "stars": 9203,
  "default_branch": "master",
  "status": "ok",
- "checked": "2026-11-06T05:08:41Z",
+ "checked": "2026-11-07T05:06:42Z",
  "files": {
   "AGENTS.md": {
    "present": false,
@@ -16,7 +16,7 @@
     "count": 35,
     "total": 184,
     "pct": 19.0,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    }
@@ -29,7 +29,7 @@
     "count": 21,
     "total": 184,
     "pct": 11.4,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    }
@@ -42,7 +42,7 @@
     "count": 2,
     "total": 184,
     "pct": 1.1,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    }
@@ -55,7 +55,7 @@
     "count": 0,
     "total": 184,
     "pct": 0.0,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    }
@@ -68,7 +68,7 @@
     "count": 29,
     "total": 184,
     "pct": 15.8,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    }
@@ -81,7 +81,7 @@
     "count": 1,
     "total": 184,
     "pct": 0.5,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    }
@@ -94,7 +94,7 @@
     "count": 2,
     "total": 184,
     "pct": 1.1,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    }
@@ -107,7 +107,7 @@
     "count": 2,
     "total": 184,
     "pct": 1.1,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    }

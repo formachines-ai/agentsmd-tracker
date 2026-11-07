@@ -6,7 +6,7 @@
  "stars": 49035,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-06T04:16:27Z",
+ "checked": "2026-11-07T04:15:51Z",
  "files": {
   "AGENTS.md": {
    "present": true,
@@ -16,7 +16,7 @@
     "count": 66,
     "total": 197,
     "pct": 33.5,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "Python",
     "page": "https://agentsmd.formachines.ai/lang/python/"
    },
@@ -31,7 +31,7 @@
     "count": 40,
     "total": 197,
     "pct": 20.3,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "Python",
     "page": "https://agentsmd.formachines.ai/lang/python/"
    }
@@ -44,7 +44,7 @@
     "count": 3,
     "total": 197,
     "pct": 1.5,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "Python",
     "page": "https://agentsmd.formachines.ai/lang/python/"
    }
@@ -57,7 +57,7 @@
     "count": 6,
     "total": 197,
     "pct": 3.0,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "Python",
     "page": "https://agentsmd.formachines.ai/lang/python/"
    }
@@ -70,7 +70,7 @@
     "count": 17,
     "total": 197,
     "pct": 8.6,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "Python",
     "page": "https://agentsmd.formachines.ai/lang/python/"
    }
@@ -83,7 +83,7 @@
     "count": 3,
     "total": 197,
     "pct": 1.5,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "Python",
     "page": "https://agentsmd.formachines.ai/lang/python/"
    }
@@ -96,7 +96,7 @@
     "count": 4,
     "total": 197,
     "pct": 2.0,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "Python",
     "page": "https://agentsmd.formachines.ai/lang/python/"
    }
@@ -109,7 +109,7 @@
     "count": 1,
     "total": 197,
     "pct": 0.5,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "Python",
     "page": "https://agentsmd.formachines.ai/lang/python/"
    }

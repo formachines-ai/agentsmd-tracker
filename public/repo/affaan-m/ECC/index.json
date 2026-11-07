@@ -6,17 +6,17 @@
  "stars": 295365,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-06T04:00:28Z",
+ "checked": "2026-11-07T04:00:28Z",
  "files": {
   "AGENTS.md": {
    "present": true,
    "size": 13204,
    "url": "https://github.com/affaan-m/ECC/blob/main/AGENTS.md",
    "lang_share": {
-    "count": 33,
+    "count": 34,
     "total": 191,
-    "pct": 17.3,
-    "date": "2026-11-06",
+    "pct": 17.8,
+    "date": "2026-11-07",
     "language": "JavaScript",
     "page": "https://agentsmd.formachines.ai/lang/javascript/"
    },
@@ -31,7 +31,7 @@
     "count": 22,
     "total": 191,
     "pct": 11.5,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "JavaScript",
     "page": "https://agentsmd.formachines.ai/lang/javascript/"
    },
@@ -46,7 +46,7 @@
     "count": 0,
     "total": 191,
     "pct": 0.0,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "JavaScript",
     "page": "https://agentsmd.formachines.ai/lang/javascript/"
    }
@@ -59,7 +59,7 @@
     "count": 3,
     "total": 191,
     "pct": 1.6,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "JavaScript",
     "page": "https://agentsmd.formachines.ai/lang/javascript/"
    },
@@ -74,7 +74,7 @@
     "count": 10,
     "total": 191,
     "pct": 5.2,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "JavaScript",
     "page": "https://agentsmd.formachines.ai/lang/javascript/"
    },
@@ -89,7 +89,7 @@
     "count": 3,
     "total": 191,
     "pct": 1.6,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "JavaScript",
     "page": "https://agentsmd.formachines.ai/lang/javascript/"
    }
@@ -102,7 +102,7 @@
     "count": 1,
     "total": 191,
     "pct": 0.5,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "JavaScript",
     "page": "https://agentsmd.formachines.ai/lang/javascript/"
    }
@@ -115,7 +115,7 @@
     "count": 0,
     "total": 191,
     "pct": 0.0,
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "language": "JavaScript",
     "page": "https://agentsmd.formachines.ai/lang/javascript/"
    }
