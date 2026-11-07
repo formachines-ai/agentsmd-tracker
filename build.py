@@ -369,8 +369,21 @@ def aggregate(repos: list[dict]) -> dict:
         if has_any:
             any_count += 1
             bl["any"] += 1
+    combo = {"agents_and_claude": 0, "agents_only_of_pair": 0, "claude_only_of_pair": 0, "neither_of_pair": 0,
+             "same_size_agents_claude": 0, "repos_with_2plus_types": 0}
+    for r in ok:
+        files = scans[r["full_name"]]["files"]
+        a = files.get("AGENTS.md", {})
+        c = files.get("CLAUDE.md", {})
+        pa, pc_ = bool(a.get("present")), bool(c.get("present"))
+        key = "agents_and_claude" if pa and pc_ else "agents_only_of_pair" if pa else "claude_only_of_pair" if pc_ else "neither_of_pair"
+        combo[key] += 1
+        if pa and pc_ and a.get("size") and a.get("size") == c.get("size"):
+            combo["same_size_agents_claude"] += 1
+        if sum(1 for s in PATHS if files.get(s["path"], {}).get("present")) >= 2:
+            combo["repos_with_2plus_types"] += 1
     last_checked = max((scans[r["full_name"]]["checked"] for r in ok), default=None)
-    return {"scans": scans, "ok": ok, "pending": pending, "unreachable": unreachable, "counts": counts,
+    return {"combo": combo, "scans": scans, "ok": ok, "pending": pending, "unreachable": unreachable, "counts": counts,
             "any": any_count, "by_lang": by_lang, "last_checked": last_checked}
 
 
@@ -611,6 +624,17 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
     gen_raw = today.get("generated") or (history[-1].get("generated") if history else None) or updated  # same value as stats.json 'generated'
     gen_txt = gen_raw[:10] + " " + gen_raw[11:16]
     stale_txt = "" if gen_raw[:10] == updated[:10] else f" (not today's: scan dated {gen_raw[:10]})"
+    cb = agg["combo"]
+    cb_lines = "".join(f"<li>{esc(lbl)}: {cb[k]:,} of {total:,} ({pct(cb[k], total)} %)</li>" for k, lbl in (
+        ("agents_and_claude", "AGENTS.md and CLAUDE.md both"), ("agents_only_of_pair", "AGENTS.md, no CLAUDE.md"),
+        ("claude_only_of_pair", "CLAUDE.md, no AGENTS.md"), ("neither_of_pair", "neither of the two"),
+        ("same_size_agents_claude", "AGENTS.md and CLAUDE.md with the same byte size"),
+        ("repos_with_2plus_types", f"2 or more of the {len(PATHS)} tracked file kinds")))
+    combo_sec = f"""<section id="combinations">
+<h2>Files that co-exist on {esc(gen_raw[:10])}</h2>
+<ul>{cb_lines}</ul>
+<p class="muted">Presence and byte size only, from the scan dated {esc(gen_raw[:10])}; <a href="/stats.json">stats.json</a> field <code>combinations</code>.</p>
+</section>"""
     hero = f"""<section class="hero">
 <h1>{agg['counts'][PRIMARY_PATH]:,} of {total:,} top GitHub repositories ({pct(agg['counts'][PRIMARY_PATH], total)} %) have an <code>AGENTS.md</code></h1>
 <p class="lead">{any_n:,} ({pct(any_n, total)} %) have at least one agent-instruction file of the {len(PATHS)} kinds tracked here. Sample: {sample:,} public repositories, top by stars across {len(agg['by_lang']) or '—'} languages, rescanned daily. Only presence, size and a link are recorded — never the contents.</p>
@@ -701,7 +725,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
                "distribution": [{"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": SITE_BASE + "/stats.json"},
                                 {"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": SITE_BASE + "/today.json"}]}
     write_text(out / "index.html", layout(f"{SITE_NAME} — AGENTS.md adoption in top GitHub repos",
-                                           banner + hero + cite + base_note + '<div class="cards">' + "".join(cards) + '</div>' + today_sec + lang_table + hist_sec + method,
+                                           banner + hero + cite + base_note + '<div class="cards">' + "".join(cards) + '</div>' + combo_sec + today_sec + lang_table + hist_sec + method,
                                            updated, canonical=SITE_BASE + "/", description=home_desc, jsonld=home_ld))
 
     # ---- repo pages
@@ -805,6 +829,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
                      "added": len(d.get("added", [])), "removed": len(d.get("removed", []))} for d in history],
         "history_days": len(history),
         "change_7d_pp": change_7d_pp,
+        "combinations": {"date": generated[:10], "total": total, **agg["combo"]},
     }
     write_json(out / "stats.json", stats)
     write_json(out / "today.json", {"schema_version": SCHEMA_VERSION, "site": SITE_BASE, "date": today.get("date"), "generated": generated, "license": "CC BY 4.0",
@@ -900,6 +925,7 @@ Latest (scan {generated}): {agg['counts'][PRIMARY_PATH]} of {total} scanned repo
 
 ## Machine-readable
 - [stats.json]({SITE_BASE}/stats.json): totals, shares, by-language table, full daily history
+- combinations in stats.json: date, total and counts of scanned repos by co-existence of AGENTS.md and CLAUDE.md (agents_and_claude, agents_only_of_pair, claude_only_of_pair, neither_of_pair), same_size_agents_claude (both present with equal byte size) and repos_with_2plus_types (at least 2 of the 8 paths).
 - schema_version 2 (2026-11-07): change_7d_pp is an object per path; null until 8 dated history rows (schema_version 1: change_7d_pp was a scalar).
 - history[].pct and change_7d_pp in stats.json: pct = share of scanned repos with the path on that day, in % with 1 decimal (count / scanned x 100); change_7d_pp = per path, today's pct minus the pct 7 days earlier in percentage points, null until history has at least 8 dated rows.
 - history "added" / "removed" in stats.json: number of (repository, path) pairs whose file appeared / disappeared since the previous snapshot of the same repository, counted per day; a repository's first scan is a baseline and adds none.

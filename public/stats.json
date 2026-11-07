@@ -397,5 +397,15 @@
   "llms.txt": null,
   "GEMINI.md": null,
   ".windsurfrules": null
+ },
+ "combinations": {
+  "date": "2026-11-07",
+  "total": 1922,
+  "agents_and_claude": 259,
+  "agents_only_of_pair": 289,
+  "claude_only_of_pair": 65,
+  "neither_of_pair": 1309,
+  "same_size_agents_claude": 5,
+  "repos_with_2plus_types": 339
  }
 }
