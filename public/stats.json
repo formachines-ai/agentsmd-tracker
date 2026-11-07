@@ -407,5 +407,63 @@
   "neither_of_pair": 1309,
   "same_size_agents_claude": 5,
   "repos_with_2plus_types": 339
+ },
+ "sizes": {
+  "AGENTS.md": {
+   "count": 547,
+   "median_bytes": 6804,
+   "p25_bytes": 2736,
+   "p75_bytes": 13794,
+   "date": "2026-11-07"
+  },
+  "CLAUDE.md": {
+   "count": 324,
+   "median_bytes": 90,
+   "p25_bytes": 11,
+   "p75_bytes": 4426,
+   "date": "2026-11-07"
+  },
+  ".cursorrules": {
+   "count": 16,
+   "median_bytes": 1677,
+   "p25_bytes": 180,
+   "p75_bytes": 3410,
+   "date": "2026-11-07"
+  },
+  ".cursor/rules": {
+   "count": 0,
+   "median_bytes": 0,
+   "p25_bytes": 0,
+   "p75_bytes": 0,
+   "date": "2026-11-07"
+  },
+  ".github/copilot-instructions.md": {
+   "count": 161,
+   "median_bytes": 3788,
+   "p25_bytes": 558,
+   "p75_bytes": 8306,
+   "date": "2026-11-07"
+  },
+  "llms.txt": {
+   "count": 17,
+   "median_bytes": 3226,
+   "p25_bytes": 2657,
+   "p75_bytes": 5571,
+   "date": "2026-11-07"
+  },
+  "GEMINI.md": {
+   "count": 21,
+   "median_bytes": 116,
+   "p25_bytes": 11,
+   "p75_bytes": 298,
+   "date": "2026-11-07"
+  },
+  ".windsurfrules": {
+   "count": 6,
+   "median_bytes": 556,
+   "p25_bytes": 252,
+   "p75_bytes": 3380,
+   "date": "2026-11-07"
+  }
  }
 }
