@@ -11,42 +11,106 @@
   "AGENTS.md": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 88,
+    "total": 198,
+    "pct": 44.4,
+    "date": "2026-11-06",
+    "language": "Rust",
+    "page": "https://agentsmd.formachines.ai/lang/rust/"
+   }
   },
   "CLAUDE.md": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 55,
+    "total": 198,
+    "pct": 27.8,
+    "date": "2026-11-06",
+    "language": "Rust",
+    "page": "https://agentsmd.formachines.ai/lang/rust/"
+   }
   },
   ".cursorrules": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 1,
+    "total": 198,
+    "pct": 0.5,
+    "date": "2026-11-06",
+    "language": "Rust",
+    "page": "https://agentsmd.formachines.ai/lang/rust/"
+   }
   },
   ".cursor/rules": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 5,
+    "total": 198,
+    "pct": 2.5,
+    "date": "2026-11-06",
+    "language": "Rust",
+    "page": "https://agentsmd.formachines.ai/lang/rust/"
+   }
   },
   ".github/copilot-instructions.md": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 13,
+    "total": 198,
+    "pct": 6.6,
+    "date": "2026-11-06",
+    "language": "Rust",
+    "page": "https://agentsmd.formachines.ai/lang/rust/"
+   }
   },
   "llms.txt": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 3,
+    "total": 198,
+    "pct": 1.5,
+    "date": "2026-11-06",
+    "language": "Rust",
+    "page": "https://agentsmd.formachines.ai/lang/rust/"
+   }
   },
   "GEMINI.md": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 4,
+    "total": 198,
+    "pct": 2.0,
+    "date": "2026-11-06",
+    "language": "Rust",
+    "page": "https://agentsmd.formachines.ai/lang/rust/"
+   }
   },
   ".windsurfrules": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 1,
+    "total": 198,
+    "pct": 0.5,
+    "date": "2026-11-06",
+    "language": "Rust",
+    "page": "https://agentsmd.formachines.ai/lang/rust/"
+   }
   }
  },
  "page": "https://agentsmd.formachines.ai/repo/rust-lang/cargo/",

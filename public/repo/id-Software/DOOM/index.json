@@ -11,42 +11,106 @@
   "AGENTS.md": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 51,
+    "total": 191,
+    "pct": 26.7,
+    "date": "2026-11-06",
+    "language": "C++",
+    "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/"
+   }
   },
   "CLAUDE.md": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 18,
+    "total": 191,
+    "pct": 9.4,
+    "date": "2026-11-06",
+    "language": "C++",
+    "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/"
+   }
   },
   ".cursorrules": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 3,
+    "total": 191,
+    "pct": 1.6,
+    "date": "2026-11-06",
+    "language": "C++",
+    "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/"
+   }
   },
   ".cursor/rules": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 1,
+    "total": 191,
+    "pct": 0.5,
+    "date": "2026-11-06",
+    "language": "C++",
+    "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/"
+   }
   },
   ".github/copilot-instructions.md": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 22,
+    "total": 191,
+    "pct": 11.5,
+    "date": "2026-11-06",
+    "language": "C++",
+    "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/"
+   }
   },
   "llms.txt": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 0,
+    "total": 191,
+    "pct": 0.0,
+    "date": "2026-11-06",
+    "language": "C++",
+    "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/"
+   }
   },
   "GEMINI.md": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 2,
+    "total": 191,
+    "pct": 1.0,
+    "date": "2026-11-06",
+    "language": "C++",
+    "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/"
+   }
   },
   ".windsurfrules": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 0,
+    "total": 191,
+    "pct": 0.0,
+    "date": "2026-11-06",
+    "language": "C++",
+    "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/"
+   }
   }
  },
  "page": "https://agentsmd.formachines.ai/repo/id-Software/DOOM/",

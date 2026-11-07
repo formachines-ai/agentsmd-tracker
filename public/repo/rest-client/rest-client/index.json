@@ -11,42 +11,106 @@
   "AGENTS.md": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 35,
+    "total": 189,
+    "pct": 18.5,
+    "date": "2026-11-06",
+    "language": "Ruby",
+    "page": "https://agentsmd.formachines.ai/lang/ruby/"
+   }
   },
   "CLAUDE.md": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 20,
+    "total": 189,
+    "pct": 10.6,
+    "date": "2026-11-06",
+    "language": "Ruby",
+    "page": "https://agentsmd.formachines.ai/lang/ruby/"
+   }
   },
   ".cursorrules": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 2,
+    "total": 189,
+    "pct": 1.1,
+    "date": "2026-11-06",
+    "language": "Ruby",
+    "page": "https://agentsmd.formachines.ai/lang/ruby/"
+   }
   },
   ".cursor/rules": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 3,
+    "total": 189,
+    "pct": 1.6,
+    "date": "2026-11-06",
+    "language": "Ruby",
+    "page": "https://agentsmd.formachines.ai/lang/ruby/"
+   }
   },
   ".github/copilot-instructions.md": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 12,
+    "total": 189,
+    "pct": 6.3,
+    "date": "2026-11-06",
+    "language": "Ruby",
+    "page": "https://agentsmd.formachines.ai/lang/ruby/"
+   }
   },
   "llms.txt": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 1,
+    "total": 189,
+    "pct": 0.5,
+    "date": "2026-11-06",
+    "language": "Ruby",
+    "page": "https://agentsmd.formachines.ai/lang/ruby/"
+   }
   },
   "GEMINI.md": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 1,
+    "total": 189,
+    "pct": 0.5,
+    "date": "2026-11-06",
+    "language": "Ruby",
+    "page": "https://agentsmd.formachines.ai/lang/ruby/"
+   }
   },
   ".windsurfrules": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 1,
+    "total": 189,
+    "pct": 0.5,
+    "date": "2026-11-06",
+    "language": "Ruby",
+    "page": "https://agentsmd.formachines.ai/lang/ruby/"
+   }
   }
  },
  "page": "https://agentsmd.formachines.ai/repo/rest-client/rest-client/",

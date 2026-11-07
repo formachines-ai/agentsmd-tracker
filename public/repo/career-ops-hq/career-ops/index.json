@@ -12,6 +12,14 @@
    "present": true,
    "size": 95428,
    "url": "https://github.com/career-ops-hq/career-ops/blob/main/AGENTS.md",
+   "lang_share": {
+    "count": 33,
+    "total": 191,
+    "pct": 17.3,
+    "date": "2026-11-06",
+    "language": "JavaScript",
+    "page": "https://agentsmd.formachines.ai/lang/javascript/"
+   },
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true
   },
@@ -19,42 +27,98 @@
    "present": true,
    "size": 103,
    "url": "https://github.com/career-ops-hq/career-ops/blob/main/CLAUDE.md",
+   "lang_share": {
+    "count": 22,
+    "total": 191,
+    "pct": 11.5,
+    "date": "2026-11-06",
+    "language": "JavaScript",
+    "page": "https://agentsmd.formachines.ai/lang/javascript/"
+   },
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true
   },
   ".cursorrules": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 0,
+    "total": 191,
+    "pct": 0.0,
+    "date": "2026-11-06",
+    "language": "JavaScript",
+    "page": "https://agentsmd.formachines.ai/lang/javascript/"
+   }
   },
   ".cursor/rules": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 3,
+    "total": 191,
+    "pct": 1.6,
+    "date": "2026-11-06",
+    "language": "JavaScript",
+    "page": "https://agentsmd.formachines.ai/lang/javascript/"
+   }
   },
   ".github/copilot-instructions.md": {
    "present": true,
    "size": 4553,
    "url": "https://github.com/career-ops-hq/career-ops/blob/main/.github/copilot-instructions.md",
+   "lang_share": {
+    "count": 10,
+    "total": 191,
+    "pct": 5.2,
+    "date": "2026-11-06",
+    "language": "JavaScript",
+    "page": "https://agentsmd.formachines.ai/lang/javascript/"
+   },
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true
   },
   "llms.txt": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 3,
+    "total": 191,
+    "pct": 1.6,
+    "date": "2026-11-06",
+    "language": "JavaScript",
+    "page": "https://agentsmd.formachines.ai/lang/javascript/"
+   }
   },
   "GEMINI.md": {
    "present": true,
    "size": 298,
    "url": "https://github.com/career-ops-hq/career-ops/blob/main/GEMINI.md",
+   "lang_share": {
+    "count": 1,
+    "total": 191,
+    "pct": 0.5,
+    "date": "2026-11-06",
+    "language": "JavaScript",
+    "page": "https://agentsmd.formachines.ai/lang/javascript/"
+   },
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true
   },
   ".windsurfrules": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 0,
+    "total": 191,
+    "pct": 0.0,
+    "date": "2026-11-06",
+    "language": "JavaScript",
+    "page": "https://agentsmd.formachines.ai/lang/javascript/"
+   }
   }
  },
  "page": "https://agentsmd.formachines.ai/repo/career-ops-hq/career-ops/",

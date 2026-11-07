@@ -12,6 +12,14 @@
    "present": true,
    "size": 26803,
    "url": "https://github.com/PostHog/posthog/blob/master/AGENTS.md",
+   "lang_share": {
+    "count": 66,
+    "total": 197,
+    "pct": 33.5,
+    "date": "2026-11-06",
+    "language": "Python",
+    "page": "https://agentsmd.formachines.ai/lang/python/"
+   },
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true
   },
@@ -19,6 +27,14 @@
    "present": true,
    "size": 9,
    "url": "https://github.com/PostHog/posthog/blob/master/CLAUDE.md",
+   "lang_share": {
+    "count": 40,
+    "total": 197,
+    "pct": 20.3,
+    "date": "2026-11-06",
+    "language": "Python",
+    "page": "https://agentsmd.formachines.ai/lang/python/"
+   },
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true
   },
@@ -26,6 +42,14 @@
    "present": true,
    "size": 1781,
    "url": "https://github.com/PostHog/posthog/blob/master/.cursorrules",
+   "lang_share": {
+    "count": 3,
+    "total": 197,
+    "pct": 1.5,
+    "date": "2026-11-06",
+    "language": "Python",
+    "page": "https://agentsmd.formachines.ai/lang/python/"
+   },
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true
   },
@@ -33,28 +57,68 @@
    "present": true,
    "size": null,
    "url": "https://github.com/PostHog/posthog/tree/master/.cursor/rules",
+   "lang_share": {
+    "count": 6,
+    "total": 197,
+    "pct": 3.0,
+    "date": "2026-11-06",
+    "language": "Python",
+    "page": "https://agentsmd.formachines.ai/lang/python/"
+   },
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true
   },
   ".github/copilot-instructions.md": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 17,
+    "total": 197,
+    "pct": 8.6,
+    "date": "2026-11-06",
+    "language": "Python",
+    "page": "https://agentsmd.formachines.ai/lang/python/"
+   }
   },
   "llms.txt": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 3,
+    "total": 197,
+    "pct": 1.5,
+    "date": "2026-11-06",
+    "language": "Python",
+    "page": "https://agentsmd.formachines.ai/lang/python/"
+   }
   },
   "GEMINI.md": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 4,
+    "total": 197,
+    "pct": 2.0,
+    "date": "2026-11-06",
+    "language": "Python",
+    "page": "https://agentsmd.formachines.ai/lang/python/"
+   }
   },
   ".windsurfrules": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 1,
+    "total": 197,
+    "pct": 0.5,
+    "date": "2026-11-06",
+    "language": "Python",
+    "page": "https://agentsmd.formachines.ai/lang/python/"
+   }
   }
  },
  "page": "https://agentsmd.formachines.ai/repo/PostHog/posthog/",

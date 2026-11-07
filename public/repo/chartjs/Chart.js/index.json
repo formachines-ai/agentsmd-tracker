@@ -11,42 +11,106 @@
   "AGENTS.md": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 33,
+    "total": 191,
+    "pct": 17.3,
+    "date": "2026-11-06",
+    "language": "JavaScript",
+    "page": "https://agentsmd.formachines.ai/lang/javascript/"
+   }
   },
   "CLAUDE.md": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 22,
+    "total": 191,
+    "pct": 11.5,
+    "date": "2026-11-06",
+    "language": "JavaScript",
+    "page": "https://agentsmd.formachines.ai/lang/javascript/"
+   }
   },
   ".cursorrules": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 0,
+    "total": 191,
+    "pct": 0.0,
+    "date": "2026-11-06",
+    "language": "JavaScript",
+    "page": "https://agentsmd.formachines.ai/lang/javascript/"
+   }
   },
   ".cursor/rules": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 3,
+    "total": 191,
+    "pct": 1.6,
+    "date": "2026-11-06",
+    "language": "JavaScript",
+    "page": "https://agentsmd.formachines.ai/lang/javascript/"
+   }
   },
   ".github/copilot-instructions.md": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 10,
+    "total": 191,
+    "pct": 5.2,
+    "date": "2026-11-06",
+    "language": "JavaScript",
+    "page": "https://agentsmd.formachines.ai/lang/javascript/"
+   }
   },
   "llms.txt": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 3,
+    "total": 191,
+    "pct": 1.6,
+    "date": "2026-11-06",
+    "language": "JavaScript",
+    "page": "https://agentsmd.formachines.ai/lang/javascript/"
+   }
   },
   "GEMINI.md": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 1,
+    "total": 191,
+    "pct": 0.5,
+    "date": "2026-11-06",
+    "language": "JavaScript",
+    "page": "https://agentsmd.formachines.ai/lang/javascript/"
+   }
   },
   ".windsurfrules": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 0,
+    "total": 191,
+    "pct": 0.0,
+    "date": "2026-11-06",
+    "language": "JavaScript",
+    "page": "https://agentsmd.formachines.ai/lang/javascript/"
+   }
   }
  },
  "page": "https://agentsmd.formachines.ai/repo/chartjs/Chart.js/",
