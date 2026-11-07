@@ -85,6 +85,7 @@ TIMEOUT_S = 20
 MAX_429_IN_A_ROW = 5             # then the scan stops and the rest stays pending
 BACKOFF_429_S = 60
 RESCAN_HOURS = 20                # a repo checked less than this many hours ago is not rescanned
+SCHEMA_VERSION = 1               # top-level "schema_version" of stats.json / today.json
 STALE_HOURS = 36                 # no successful scan for this long => "data delayed" banner
 FEED_DAYS = 30                   # history window for feed.xml
 SPARK_MIN_SPAN_PP = 5.0          # sparkline y-axis never spans less than this many percentage points
@@ -786,6 +787,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
         if prev and prev["scanned"] and history[-1]["scanned"]:
             change_7d_pp = round(pct(history[-1]["counts"].get(PRIMARY_PATH, 0), history[-1]["scanned"]) - pct(prev["counts"].get(PRIMARY_PATH, 0), prev["scanned"]), 1)
     stats = {
+        "schema_version": SCHEMA_VERSION,
         "site": SITE_BASE, "generated": generated, "license": "CC BY 4.0", "data_delayed": delayed,
         "method": METHOD, "attribution": f"{SITE_NAME}, {SITE_HOST}, {generated[:10]}, CC BY 4.0",
         "sample": sample, "scanned": total, "pending": len(agg["pending"]), "unreachable": len(agg["unreachable"]),
@@ -800,7 +802,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
         "change_7d_pp": change_7d_pp,
     }
     write_json(out / "stats.json", stats)
-    write_json(out / "today.json", {"site": SITE_BASE, "date": today.get("date"), "generated": generated, "license": "CC BY 4.0",
+    write_json(out / "today.json", {"schema_version": SCHEMA_VERSION, "site": SITE_BASE, "date": today.get("date"), "generated": generated, "license": "CC BY 4.0",
                                     "added": added, "removed": removed, "counts": agg["counts"], "scanned": total, "pending": len(agg["pending"])})
     write_json(out / "build.json", build_info)
 
@@ -886,7 +888,10 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
 
 > Daily tracker of agent-instruction files in top GitHub repositories: which of {sample:,} public repositories (top by stars per language) have AGENTS.md, CLAUDE.md, .cursorrules, .cursor/rules/, .github/copilot-instructions.md, llms.txt, GEMINI.md, .windsurfrules. Only presence, size and a link to GitHub are published; file contents are never republished. Built by AI agents (agent-team) without human editing; responsible: {RESPONSIBLE}. Data CC BY 4.0.
 
-Latest (scan {generated}; page built {updated}): {agg['counts'][PRIMARY_PATH]} of {total} scanned repos ({pct(agg['counts'][PRIMARY_PATH], total)} %) have AGENTS.md; {agg['counts']['CLAUDE.md']} CLAUDE.md; {agg['counts']['.cursorrules']} .cursorrules; {agg['counts']['.github/copilot-instructions.md']} copilot-instructions.md; {agg['counts']['llms.txt']} llms.txt.
+Data scanned: {(build_info.get("scan") or {}).get("generated") or generated}
+Page built: {updated}
+
+Latest (scan {generated}): {agg['counts'][PRIMARY_PATH]} of {total} scanned repos ({pct(agg['counts'][PRIMARY_PATH], total)} %) have AGENTS.md; {agg['counts']['CLAUDE.md']} CLAUDE.md; {agg['counts']['.cursorrules']} .cursorrules; {agg['counts']['.github/copilot-instructions.md']} copilot-instructions.md; {agg['counts']['llms.txt']} llms.txt.
 
 ## Machine-readable
 - [stats.json]({SITE_BASE}/stats.json): totals, shares, by-language table, full daily history
@@ -1012,11 +1017,21 @@ def main() -> int:
             delayed, reason = True, f"The last successful check is {age_h:.0f} hours old (expected daily)."
         elif scan_stats and scan_stats["rate_limited"] and scan_stats["ok"] == 0:
             delayed, reason = True, "GitHub rate-limited today's scan before any repository could be checked."
+    scan_block = None
+    if scan_stats:
+        scan_block = {k: v for k, v in scan_stats.items() if k not in ("added", "removed")} | {"added": len(scan_stats["added"]), "removed": len(scan_stats["removed"])}
+        scan_block["generated"] = today.get("generated")
+    else:   # --no-scan / nothing scanned: carry over the previous scan block unchanged, never null and never the build time
+        prev_scan = (read_json(PUBLIC_DIR / "build.json", None) or {}).get("scan")
+        if isinstance(prev_scan, dict) and prev_scan.get("generated"):
+            scan_block = prev_scan
+        else:   # previous build.json had no scan block: seed it from the last real scan time
+            scan_block = (prev_scan if isinstance(prev_scan, dict) else {}) | {"generated": today.get("generated"), "carried_over": True}
     build_info = {
         "site": SITE_BASE, "built_at": iso(now_utc()), "build_seconds": round((now_utc() - t0).total_seconds(), 1),
         "sample": len(repos), "scanned_ok": len(agg["ok"]), "pending": len(agg["pending"]), "unreachable": len(agg["unreachable"]),
         "last_checked": last, "data_delayed": delayed, "delay_reason": reason,
-        "scan": ({k: v for k, v in scan_stats.items() if k not in ("added", "removed")} | {"added": len(scan_stats["added"]), "removed": len(scan_stats["removed"])}) if scan_stats else None,
+        "scan": scan_block,
         "paths": [s["path"] for s in PATHS], "github_token": bool(os.environ.get("GITHUB_TOKEN")),
     }
     render_site(repos, agg, history, today, build_info)
