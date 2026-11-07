@@ -90,3 +90,5 @@ ul.plain{list-style:none;padding:0;margin:0 0 1rem}
 ul.plain li{padding:.25rem 0;overflow-wrap:anywhere}
 .feedback a { display: inline-block; min-height: 24px; line-height: 24px; }
 .feedback { font-size: 0.9rem; }
+/* repo card: prominent file link */
+a.openfile { display: inline-block; font-size: 1rem; text-decoration: underline; min-height: 44px; line-height: 44px; overflow-wrap: anywhere; }

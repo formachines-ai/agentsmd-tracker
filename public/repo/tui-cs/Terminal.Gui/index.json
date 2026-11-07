@@ -21,7 +21,8 @@
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    },
    "first_seen": "2026-11-02",
-   "first_seen_at_first_scan": true
+   "first_seen_at_first_scan": true,
+   "go_url": "https://agentsmd.formachines.ai/go/1022/"
   },
   "CLAUDE.md": {
    "present": true,
@@ -36,7 +37,8 @@
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    },
    "first_seen": "2026-11-02",
-   "first_seen_at_first_scan": true
+   "first_seen_at_first_scan": true,
+   "go_url": "https://agentsmd.formachines.ai/go/1023/"
   },
   ".cursorrules": {
    "present": true,
@@ -51,7 +53,8 @@
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    },
    "first_seen": "2026-11-02",
-   "first_seen_at_first_scan": true
+   "first_seen_at_first_scan": true,
+   "go_url": "https://agentsmd.formachines.ai/go/1024/"
   },
   ".cursor/rules": {
    "present": false,
@@ -79,7 +82,8 @@
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    },
    "first_seen": "2026-11-02",
-   "first_seen_at_first_scan": true
+   "first_seen_at_first_scan": true,
+   "go_url": "https://agentsmd.formachines.ai/go/1025/"
   },
   "llms.txt": {
    "present": true,
@@ -94,7 +98,8 @@
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    },
    "first_seen": "2026-11-02",
-   "first_seen_at_first_scan": true
+   "first_seen_at_first_scan": true,
+   "go_url": "https://agentsmd.formachines.ai/go/1026/"
   },
   "GEMINI.md": {
    "present": false,
@@ -122,7 +127,8 @@
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    },
    "first_seen": "2026-11-02",
-   "first_seen_at_first_scan": true
+   "first_seen_at_first_scan": true,
+   "go_url": "https://agentsmd.formachines.ai/go/1027/"
   }
  },
  "page": "https://agentsmd.formachines.ai/repo/tui-cs/Terminal.Gui/",

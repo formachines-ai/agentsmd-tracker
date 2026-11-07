@@ -744,7 +744,10 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
                 share += seen_note
             if present:
                 size = f"{f['size']:,} bytes" if f.get("size") else ("directory" if s["kind"] == "dir" else "—")
-                rows.append(f'<tr><td><code>{esc(shown)}</code>{share}</td><td class="yes">yes</td><td>{size}</td><td><a href="{go.href(r, s["path"], url)}" rel="nofollow">open on GitHub</a></td></tr>')
+                golink = go.href(r, s["path"], url)
+                files_json[s["path"]]["go_url"] = SITE_BASE + golink if golink.startswith("/") else golink
+                openlink = f'<a class="openfile" href="{golink}" rel="nofollow">Open {esc(s["path"])} on GitHub</a>'
+                rows.append(f'<tr><td><code>{esc(shown)}</code><br>{openlink}{share}</td><td class="yes">yes</td><td>{size}</td><td><a href="{go.href(r, s["path"], url)}" rel="nofollow">open on GitHub</a></td></tr>')
             elif present is False:
                 rows.append(f'<tr><td><code>{esc(shown)}</code>{share}</td><td class="no">no</td><td>—</td><td></td></tr>')
             else:

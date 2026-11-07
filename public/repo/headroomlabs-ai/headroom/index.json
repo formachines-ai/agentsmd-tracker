@@ -20,7 +20,8 @@
     "language": "Python",
     "page": "https://agentsmd.formachines.ai/lang/python/"
    },
-   "first_seen": "2026-11-05"
+   "first_seen": "2026-11-05",
+   "go_url": "https://agentsmd.formachines.ai/go/1126/"
   },
   "CLAUDE.md": {
    "present": false,
@@ -74,7 +75,8 @@
     "page": "https://agentsmd.formachines.ai/lang/python/"
    },
    "first_seen": "2026-11-02",
-   "first_seen_at_first_scan": true
+   "first_seen_at_first_scan": true,
+   "go_url": "https://agentsmd.formachines.ai/go/459/"
   },
   "llms.txt": {
    "present": true,
@@ -89,7 +91,8 @@
     "page": "https://agentsmd.formachines.ai/lang/python/"
    },
    "first_seen": "2026-11-02",
-   "first_seen_at_first_scan": true
+   "first_seen_at_first_scan": true,
+   "go_url": "https://agentsmd.formachines.ai/go/460/"
   },
   "GEMINI.md": {
    "present": false,

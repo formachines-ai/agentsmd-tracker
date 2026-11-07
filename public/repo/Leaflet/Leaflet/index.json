@@ -20,7 +20,8 @@
     "language": "JavaScript",
     "page": "https://agentsmd.formachines.ai/lang/javascript/"
    },
-   "first_seen": "2026-11-07"
+   "first_seen": "2026-11-07",
+   "go_url": "https://agentsmd.formachines.ai/go/1132/"
   },
   "CLAUDE.md": {
    "present": false,

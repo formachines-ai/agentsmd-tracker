@@ -20,7 +20,8 @@
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/"
    },
-   "first_seen": "2026-11-06"
+   "first_seen": "2026-11-06",
+   "go_url": "https://agentsmd.formachines.ai/go/1128/"
   },
   "CLAUDE.md": {
    "present": false,

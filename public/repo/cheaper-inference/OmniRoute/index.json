@@ -21,7 +21,8 @@
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    },
    "first_seen": "2026-11-02",
-   "first_seen_at_first_scan": true
+   "first_seen_at_first_scan": true,
+   "go_url": "https://agentsmd.formachines.ai/go/211/"
   },
   "CLAUDE.md": {
    "present": true,
@@ -36,7 +37,8 @@
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    },
    "first_seen": "2026-11-02",
-   "first_seen_at_first_scan": true
+   "first_seen_at_first_scan": true,
+   "go_url": "https://agentsmd.formachines.ai/go/212/"
   },
   ".cursorrules": {
    "present": false,
@@ -77,7 +79,8 @@
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    },
    "first_seen": "2026-11-02",
-   "first_seen_at_first_scan": true
+   "first_seen_at_first_scan": true,
+   "go_url": "https://agentsmd.formachines.ai/go/213/"
   },
   "llms.txt": {
    "present": false,
@@ -105,7 +108,8 @@
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    },
    "first_seen": "2026-11-02",
-   "first_seen_at_first_scan": true
+   "first_seen_at_first_scan": true,
+   "go_url": "https://agentsmd.formachines.ai/go/214/"
   },
   ".windsurfrules": {
    "present": false,

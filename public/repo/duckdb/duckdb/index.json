@@ -21,7 +21,8 @@
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/"
    },
    "first_seen": "2026-11-02",
-   "first_seen_at_first_scan": true
+   "first_seen_at_first_scan": true,
+   "go_url": "https://agentsmd.formachines.ai/go/325/"
   },
   "CLAUDE.md": {
    "present": true,
@@ -36,7 +37,8 @@
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/"
    },
    "first_seen": "2026-11-02",
-   "first_seen_at_first_scan": true
+   "first_seen_at_first_scan": true,
+   "go_url": "https://agentsmd.formachines.ai/go/326/"
   },
   ".cursorrules": {
    "present": false,
