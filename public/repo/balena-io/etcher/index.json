@@ -11,42 +11,106 @@
   "AGENTS.md": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 100,
+    "total": 195,
+    "pct": 51.3,
+    "date": "2026-11-06",
+    "language": "TypeScript",
+    "page": "https://agentsmd.formachines.ai/lang/typescript/"
+   }
   },
   "CLAUDE.md": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 62,
+    "total": 195,
+    "pct": 31.8,
+    "date": "2026-11-06",
+    "language": "TypeScript",
+    "page": "https://agentsmd.formachines.ai/lang/typescript/"
+   }
   },
   ".cursorrules": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 4,
+    "total": 195,
+    "pct": 2.1,
+    "date": "2026-11-06",
+    "language": "TypeScript",
+    "page": "https://agentsmd.formachines.ai/lang/typescript/"
+   }
   },
   ".cursor/rules": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 9,
+    "total": 195,
+    "pct": 4.6,
+    "date": "2026-11-06",
+    "language": "TypeScript",
+    "page": "https://agentsmd.formachines.ai/lang/typescript/"
+   }
   },
   ".github/copilot-instructions.md": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 19,
+    "total": 195,
+    "pct": 9.7,
+    "date": "2026-11-06",
+    "language": "TypeScript",
+    "page": "https://agentsmd.formachines.ai/lang/typescript/"
+   }
   },
   "llms.txt": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 3,
+    "total": 195,
+    "pct": 1.5,
+    "date": "2026-11-06",
+    "language": "TypeScript",
+    "page": "https://agentsmd.formachines.ai/lang/typescript/"
+   }
   },
   "GEMINI.md": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 3,
+    "total": 195,
+    "pct": 1.5,
+    "date": "2026-11-06",
+    "language": "TypeScript",
+    "page": "https://agentsmd.formachines.ai/lang/typescript/"
+   }
   },
   ".windsurfrules": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 1,
+    "total": 195,
+    "pct": 0.5,
+    "date": "2026-11-06",
+    "language": "TypeScript",
+    "page": "https://agentsmd.formachines.ai/lang/typescript/"
+   }
   }
  },
  "page": "https://agentsmd.formachines.ai/repo/balena-io/etcher/",

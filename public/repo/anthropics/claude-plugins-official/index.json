@@ -11,42 +11,106 @@
   "AGENTS.md": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 66,
+    "total": 197,
+    "pct": 33.5,
+    "date": "2026-11-06",
+    "language": "Python",
+    "page": "https://agentsmd.formachines.ai/lang/python/"
+   }
   },
   "CLAUDE.md": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 40,
+    "total": 197,
+    "pct": 20.3,
+    "date": "2026-11-06",
+    "language": "Python",
+    "page": "https://agentsmd.formachines.ai/lang/python/"
+   }
   },
   ".cursorrules": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 3,
+    "total": 197,
+    "pct": 1.5,
+    "date": "2026-11-06",
+    "language": "Python",
+    "page": "https://agentsmd.formachines.ai/lang/python/"
+   }
   },
   ".cursor/rules": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 6,
+    "total": 197,
+    "pct": 3.0,
+    "date": "2026-11-06",
+    "language": "Python",
+    "page": "https://agentsmd.formachines.ai/lang/python/"
+   }
   },
   ".github/copilot-instructions.md": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 17,
+    "total": 197,
+    "pct": 8.6,
+    "date": "2026-11-06",
+    "language": "Python",
+    "page": "https://agentsmd.formachines.ai/lang/python/"
+   }
   },
   "llms.txt": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 3,
+    "total": 197,
+    "pct": 1.5,
+    "date": "2026-11-06",
+    "language": "Python",
+    "page": "https://agentsmd.formachines.ai/lang/python/"
+   }
   },
   "GEMINI.md": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 4,
+    "total": 197,
+    "pct": 2.0,
+    "date": "2026-11-06",
+    "language": "Python",
+    "page": "https://agentsmd.formachines.ai/lang/python/"
+   }
   },
   ".windsurfrules": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 1,
+    "total": 197,
+    "pct": 0.5,
+    "date": "2026-11-06",
+    "language": "Python",
+    "page": "https://agentsmd.formachines.ai/lang/python/"
+   }
   }
  },
  "page": "https://agentsmd.formachines.ai/repo/anthropics/claude-plugins-official/",

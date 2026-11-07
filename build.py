@@ -717,12 +717,20 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
         lv = agg["by_lang"].get(r.get("language") or "")
         for s in PATHS:
             shown = s["path"] + ("/" if s["kind"] == "dir" else "")
-            share = (f'<br><span class="muted">{lv[s["path"]]:,} of {lv["repos"]:,} sampled {esc(r["language"])} repos ({pct(lv[s["path"]], lv["repos"])} %) on {esc(scan_date)}</span>'
-                     if lv and lv["repos"] else "")
+            share = ""
+            lang_share = None
+            if lv and lv["repos"]:
+                lk, lt = lv[s["path"]], lv["repos"]
+                lang_share = {"count": lk, "total": lt, "pct": pct(lk, lt), "date": scan_date, "language": r["language"],
+                              "page": f"{SITE_BASE}/lang/{lang_slug(r['language'])}/"}
+                share = (f'<br><span class="muted"><a href="/lang/{lang_slug(r["language"])}/">{lk:,} of {lt:,} top {esc(r["language"])} repos '
+                         f'({pct(lk, lt)} %) on {esc(scan_date)}</a></span>')
             f = (sc or {}).get("files", {}).get(s["path"], {"present": None, "size": None})
             present = f.get("present")
             url = file_url(r, s["path"], (sc or {}).get("default_branch"))
             files_json[s["path"]] = {"present": present, "size": f.get("size"), "url": url if present else None}
+            if lang_share:
+                files_json[s["path"]]["lang_share"] = lang_share
             seen_note = ""
             if present:
                 fs_day = added_on.get((r["full_name"], s["path"]))

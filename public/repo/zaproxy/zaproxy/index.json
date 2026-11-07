@@ -11,42 +11,106 @@
   "AGENTS.md": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 47,
+    "total": 193,
+    "pct": 24.4,
+    "date": "2026-11-06",
+    "language": "Java",
+    "page": "https://agentsmd.formachines.ai/lang/java/"
+   }
   },
   "CLAUDE.md": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 20,
+    "total": 193,
+    "pct": 10.4,
+    "date": "2026-11-06",
+    "language": "Java",
+    "page": "https://agentsmd.formachines.ai/lang/java/"
+   }
   },
   ".cursorrules": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 0,
+    "total": 193,
+    "pct": 0.0,
+    "date": "2026-11-06",
+    "language": "Java",
+    "page": "https://agentsmd.formachines.ai/lang/java/"
+   }
   },
   ".cursor/rules": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 1,
+    "total": 193,
+    "pct": 0.5,
+    "date": "2026-11-06",
+    "language": "Java",
+    "page": "https://agentsmd.formachines.ai/lang/java/"
+   }
   },
   ".github/copilot-instructions.md": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 12,
+    "total": 193,
+    "pct": 6.2,
+    "date": "2026-11-06",
+    "language": "Java",
+    "page": "https://agentsmd.formachines.ai/lang/java/"
+   }
   },
   "llms.txt": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 0,
+    "total": 193,
+    "pct": 0.0,
+    "date": "2026-11-06",
+    "language": "Java",
+    "page": "https://agentsmd.formachines.ai/lang/java/"
+   }
   },
   "GEMINI.md": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 0,
+    "total": 193,
+    "pct": 0.0,
+    "date": "2026-11-06",
+    "language": "Java",
+    "page": "https://agentsmd.formachines.ai/lang/java/"
+   }
   },
   ".windsurfrules": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 0,
+    "total": 193,
+    "pct": 0.0,
+    "date": "2026-11-06",
+    "language": "Java",
+    "page": "https://agentsmd.formachines.ai/lang/java/"
+   }
   }
  },
  "page": "https://agentsmd.formachines.ai/repo/zaproxy/zaproxy/",

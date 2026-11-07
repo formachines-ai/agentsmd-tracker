@@ -11,42 +11,106 @@
   "AGENTS.md": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 35,
+    "total": 184,
+    "pct": 19.0,
+    "date": "2026-11-06",
+    "language": "C#",
+    "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
+   }
   },
   "CLAUDE.md": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 21,
+    "total": 184,
+    "pct": 11.4,
+    "date": "2026-11-06",
+    "language": "C#",
+    "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
+   }
   },
   ".cursorrules": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 2,
+    "total": 184,
+    "pct": 1.1,
+    "date": "2026-11-06",
+    "language": "C#",
+    "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
+   }
   },
   ".cursor/rules": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 0,
+    "total": 184,
+    "pct": 0.0,
+    "date": "2026-11-06",
+    "language": "C#",
+    "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
+   }
   },
   ".github/copilot-instructions.md": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 29,
+    "total": 184,
+    "pct": 15.8,
+    "date": "2026-11-06",
+    "language": "C#",
+    "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
+   }
   },
   "llms.txt": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 1,
+    "total": 184,
+    "pct": 0.5,
+    "date": "2026-11-06",
+    "language": "C#",
+    "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
+   }
   },
   "GEMINI.md": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 2,
+    "total": 184,
+    "pct": 1.1,
+    "date": "2026-11-06",
+    "language": "C#",
+    "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
+   }
   },
   ".windsurfrules": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 2,
+    "total": 184,
+    "pct": 1.1,
+    "date": "2026-11-06",
+    "language": "C#",
+    "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
+   }
   }
  },
  "page": "https://agentsmd.formachines.ai/repo/microsoft/semantic-kernel/",

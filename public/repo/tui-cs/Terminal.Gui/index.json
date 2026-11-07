@@ -12,6 +12,14 @@
    "present": true,
    "size": 33319,
    "url": "https://github.com/tui-cs/Terminal.Gui/blob/develop/AGENTS.md",
+   "lang_share": {
+    "count": 35,
+    "total": 184,
+    "pct": 19.0,
+    "date": "2026-11-06",
+    "language": "C#",
+    "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
+   },
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true
   },
@@ -19,6 +27,14 @@
    "present": true,
    "size": 7877,
    "url": "https://github.com/tui-cs/Terminal.Gui/blob/develop/CLAUDE.md",
+   "lang_share": {
+    "count": 21,
+    "total": 184,
+    "pct": 11.4,
+    "date": "2026-11-06",
+    "language": "C#",
+    "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
+   },
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true
   },
@@ -26,18 +42,42 @@
    "present": true,
    "size": 4260,
    "url": "https://github.com/tui-cs/Terminal.Gui/blob/develop/.cursorrules",
+   "lang_share": {
+    "count": 2,
+    "total": 184,
+    "pct": 1.1,
+    "date": "2026-11-06",
+    "language": "C#",
+    "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
+   },
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true
   },
   ".cursor/rules": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 0,
+    "total": 184,
+    "pct": 0.0,
+    "date": "2026-11-06",
+    "language": "C#",
+    "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
+   }
   },
   ".github/copilot-instructions.md": {
    "present": true,
    "size": 7793,
    "url": "https://github.com/tui-cs/Terminal.Gui/blob/develop/.github/copilot-instructions.md",
+   "lang_share": {
+    "count": 29,
+    "total": 184,
+    "pct": 15.8,
+    "date": "2026-11-06",
+    "language": "C#",
+    "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
+   },
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true
   },
@@ -45,18 +85,42 @@
    "present": true,
    "size": 13344,
    "url": "https://github.com/tui-cs/Terminal.Gui/blob/develop/llms.txt",
+   "lang_share": {
+    "count": 1,
+    "total": 184,
+    "pct": 0.5,
+    "date": "2026-11-06",
+    "language": "C#",
+    "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
+   },
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true
   },
   "GEMINI.md": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 2,
+    "total": 184,
+    "pct": 1.1,
+    "date": "2026-11-06",
+    "language": "C#",
+    "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
+   }
   },
   ".windsurfrules": {
    "present": true,
    "size": 4262,
    "url": "https://github.com/tui-cs/Terminal.Gui/blob/develop/.windsurfrules",
+   "lang_share": {
+    "count": 2,
+    "total": 184,
+    "pct": 1.1,
+    "date": "2026-11-06",
+    "language": "C#",
+    "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
+   },
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true
   }

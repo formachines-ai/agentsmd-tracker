@@ -12,6 +12,14 @@
    "present": true,
    "size": 21299,
    "url": "https://github.com/abhigyanpatwari/GitNexus/blob/main/AGENTS.md",
+   "lang_share": {
+    "count": 100,
+    "total": 195,
+    "pct": 51.3,
+    "date": "2026-11-06",
+    "language": "TypeScript",
+    "page": "https://agentsmd.formachines.ai/lang/typescript/"
+   },
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true
   },
@@ -19,6 +27,14 @@
    "present": true,
    "size": 10484,
    "url": "https://github.com/abhigyanpatwari/GitNexus/blob/main/CLAUDE.md",
+   "lang_share": {
+    "count": 62,
+    "total": 195,
+    "pct": 31.8,
+    "date": "2026-11-06",
+    "language": "TypeScript",
+    "page": "https://agentsmd.formachines.ai/lang/typescript/"
+   },
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true
   },
@@ -26,6 +42,14 @@
    "present": true,
    "size": 194,
    "url": "https://github.com/abhigyanpatwari/GitNexus/blob/main/.cursorrules",
+   "lang_share": {
+    "count": 4,
+    "total": 195,
+    "pct": 2.1,
+    "date": "2026-11-06",
+    "language": "TypeScript",
+    "page": "https://agentsmd.formachines.ai/lang/typescript/"
+   },
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true
   },
@@ -33,30 +57,70 @@
    "present": true,
    "size": null,
    "url": "https://github.com/abhigyanpatwari/GitNexus/tree/main/.cursor/rules",
+   "lang_share": {
+    "count": 9,
+    "total": 195,
+    "pct": 4.6,
+    "date": "2026-11-06",
+    "language": "TypeScript",
+    "page": "https://agentsmd.formachines.ai/lang/typescript/"
+   },
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true
   },
   ".github/copilot-instructions.md": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 19,
+    "total": 195,
+    "pct": 9.7,
+    "date": "2026-11-06",
+    "language": "TypeScript",
+    "page": "https://agentsmd.formachines.ai/lang/typescript/"
+   }
   },
   "llms.txt": {
    "present": true,
    "size": 834,
    "url": "https://github.com/abhigyanpatwari/GitNexus/blob/main/llms.txt",
+   "lang_share": {
+    "count": 3,
+    "total": 195,
+    "pct": 1.5,
+    "date": "2026-11-06",
+    "language": "TypeScript",
+    "page": "https://agentsmd.formachines.ai/lang/typescript/"
+   },
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true
   },
   "GEMINI.md": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 3,
+    "total": 195,
+    "pct": 1.5,
+    "date": "2026-11-06",
+    "language": "TypeScript",
+    "page": "https://agentsmd.formachines.ai/lang/typescript/"
+   }
   },
   ".windsurfrules": {
    "present": true,
    "size": 209,
    "url": "https://github.com/abhigyanpatwari/GitNexus/blob/main/.windsurfrules",
+   "lang_share": {
+    "count": 1,
+    "total": 195,
+    "pct": 0.5,
+    "date": "2026-11-06",
+    "language": "TypeScript",
+    "page": "https://agentsmd.formachines.ai/lang/typescript/"
+   },
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true
   }

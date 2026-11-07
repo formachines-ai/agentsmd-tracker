@@ -11,42 +11,106 @@
   "AGENTS.md": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 65,
+    "total": 193,
+    "pct": 33.7,
+    "date": "2026-11-06",
+    "language": "Go",
+    "page": "https://agentsmd.formachines.ai/lang/go/"
+   }
   },
   "CLAUDE.md": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 45,
+    "total": 193,
+    "pct": 23.3,
+    "date": "2026-11-06",
+    "language": "Go",
+    "page": "https://agentsmd.formachines.ai/lang/go/"
+   }
   },
   ".cursorrules": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 1,
+    "total": 193,
+    "pct": 0.5,
+    "date": "2026-11-06",
+    "language": "Go",
+    "page": "https://agentsmd.formachines.ai/lang/go/"
+   }
   },
   ".cursor/rules": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 2,
+    "total": 193,
+    "pct": 1.0,
+    "date": "2026-11-06",
+    "language": "Go",
+    "page": "https://agentsmd.formachines.ai/lang/go/"
+   }
   },
   ".github/copilot-instructions.md": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 17,
+    "total": 193,
+    "pct": 8.8,
+    "date": "2026-11-06",
+    "language": "Go",
+    "page": "https://agentsmd.formachines.ai/lang/go/"
+   }
   },
   "llms.txt": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 3,
+    "total": 193,
+    "pct": 1.6,
+    "date": "2026-11-06",
+    "language": "Go",
+    "page": "https://agentsmd.formachines.ai/lang/go/"
+   }
   },
   "GEMINI.md": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 2,
+    "total": 193,
+    "pct": 1.0,
+    "date": "2026-11-06",
+    "language": "Go",
+    "page": "https://agentsmd.formachines.ai/lang/go/"
+   }
   },
   ".windsurfrules": {
    "present": false,
    "size": null,
-   "url": null
+   "url": null,
+   "lang_share": {
+    "count": 0,
+    "total": 193,
+    "pct": 0.0,
+    "date": "2026-11-06",
+    "language": "Go",
+    "page": "https://agentsmd.formachines.ai/lang/go/"
+   }
   }
  },
  "page": "https://agentsmd.formachines.ai/repo/wagoodman/dive/",
