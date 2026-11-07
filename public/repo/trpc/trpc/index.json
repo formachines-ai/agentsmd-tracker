@@ -20,7 +20,8 @@
     "language": "TypeScript",
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    },
-   "first_seen": "2026-11-05"
+   "first_seen": "2026-11-05",
+   "go_url": "https://agentsmd.formachines.ai/go/1127/"
   },
   "CLAUDE.md": {
    "present": false,

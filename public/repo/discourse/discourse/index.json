@@ -21,7 +21,8 @@
     "page": "https://agentsmd.formachines.ai/lang/ruby/"
    },
    "first_seen": "2026-11-02",
-   "first_seen_at_first_scan": true
+   "first_seen_at_first_scan": true,
+   "go_url": "https://agentsmd.formachines.ai/go/294/"
   },
   "CLAUDE.md": {
    "present": true,
@@ -36,7 +37,8 @@
     "page": "https://agentsmd.formachines.ai/lang/ruby/"
    },
    "first_seen": "2026-11-02",
-   "first_seen_at_first_scan": true
+   "first_seen_at_first_scan": true,
+   "go_url": "https://agentsmd.formachines.ai/go/295/"
   },
   ".cursorrules": {
    "present": false,
@@ -64,7 +66,8 @@
     "page": "https://agentsmd.formachines.ai/lang/ruby/"
    },
    "first_seen": "2026-11-02",
-   "first_seen_at_first_scan": true
+   "first_seen_at_first_scan": true,
+   "go_url": "https://agentsmd.formachines.ai/go/296/"
   },
   ".github/copilot-instructions.md": {
    "present": false,
@@ -105,7 +108,8 @@
     "page": "https://agentsmd.formachines.ai/lang/ruby/"
    },
    "first_seen": "2026-11-02",
-   "first_seen_at_first_scan": true
+   "first_seen_at_first_scan": true,
+   "go_url": "https://agentsmd.formachines.ai/go/297/"
   },
   ".windsurfrules": {
    "present": false,
