@@ -1,6 +1,6 @@
 {
  "site": "https://agentsmd.formachines.ai",
- "built_at": "2026-11-07T07:08:57Z",
+ "built_at": "2026-11-07T08:09:20Z",
  "build_seconds": 0.1,
  "sample": 1922,
  "scanned_ok": 1922,
@@ -9,7 +9,10 @@
  "last_checked": "2026-11-07T05:18:58Z",
  "data_delayed": false,
  "delay_reason": "",
- "scan": null,
+ "scan": {
+  "generated": "2026-11-07T05:18:58Z",
+  "carried_over": true
+ },
  "paths": [
   "AGENTS.md",
   "CLAUDE.md",
