@@ -6,7 +6,7 @@
  "stars": 51466,
  "default_branch": "develop",
  "status": "ok",
- "checked": "2026-11-07T04:14:24Z",
+ "checked": "2026-11-08T04:14:11Z",
  "files": {
   "AGENTS.md": {
    "present": true,
@@ -16,7 +16,7 @@
     "count": 66,
     "total": 197,
     "pct": 33.5,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "Python",
     "page": "https://agentsmd.formachines.ai/lang/python/"
    },
@@ -29,10 +29,10 @@
    "size": 163,
    "url": "https://github.com/roboflow/supervision/blob/develop/CLAUDE.md",
    "lang_share": {
-    "count": 40,
+    "count": 39,
     "total": 197,
-    "pct": 20.3,
-    "date": "2026-11-07",
+    "pct": 19.8,
+    "date": "2026-11-08",
     "language": "Python",
     "page": "https://agentsmd.formachines.ai/lang/python/"
    },
@@ -48,7 +48,7 @@
     "count": 3,
     "total": 197,
     "pct": 1.5,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "Python",
     "page": "https://agentsmd.formachines.ai/lang/python/"
    }
@@ -61,7 +61,7 @@
     "count": 6,
     "total": 197,
     "pct": 3.0,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "Python",
     "page": "https://agentsmd.formachines.ai/lang/python/"
    }
@@ -71,10 +71,10 @@
    "size": 4533,
    "url": "https://github.com/roboflow/supervision/blob/develop/.github/copilot-instructions.md",
    "lang_share": {
-    "count": 17,
+    "count": 16,
     "total": 197,
-    "pct": 8.6,
-    "date": "2026-11-07",
+    "pct": 8.1,
+    "date": "2026-11-08",
     "language": "Python",
     "page": "https://agentsmd.formachines.ai/lang/python/"
    },
@@ -90,7 +90,7 @@
     "count": 3,
     "total": 197,
     "pct": 1.5,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "Python",
     "page": "https://agentsmd.formachines.ai/lang/python/"
    }
@@ -103,7 +103,7 @@
     "count": 4,
     "total": 197,
     "pct": 2.0,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "Python",
     "page": "https://agentsmd.formachines.ai/lang/python/"
    }
@@ -116,7 +116,7 @@
     "count": 1,
     "total": 197,
     "pct": 0.5,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "Python",
     "page": "https://agentsmd.formachines.ai/lang/python/"
    }

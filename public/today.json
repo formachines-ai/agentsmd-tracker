@@ -1,59 +1,49 @@
 {
  "schema_version": 2,
  "site": "https://agentsmd.formachines.ai",
- "date": "2026-11-07",
- "generated": "2026-11-07T05:18:58Z",
+ "date": "2026-11-08",
+ "generated": "2026-11-08T05:17:41Z",
  "license": "CC BY 4.0",
  "added": [
   {
-   "full_name": "thedotmack/claude-mem",
-   "owner": "thedotmack",
-   "name": "claude-mem",
-   "language": "TypeScript",
-   "stars": 110445,
+   "full_name": "FreeCAD/FreeCAD",
+   "owner": "FreeCAD",
+   "name": "FreeCAD",
+   "language": "C++",
+   "stars": 35058,
    "path": "AGENTS.md",
-   "size": 1731,
-   "url": "https://github.com/thedotmack/claude-mem/blob/main/AGENTS.md"
-  },
-  {
-   "full_name": "thedotmack/claude-mem",
-   "owner": "thedotmack",
-   "name": "claude-mem",
-   "language": "TypeScript",
-   "stars": 110445,
-   "path": "CLAUDE.md",
-   "size": 178,
-   "url": "https://github.com/thedotmack/claude-mem/blob/main/CLAUDE.md"
-  },
-  {
-   "full_name": "Leaflet/Leaflet",
-   "owner": "Leaflet",
-   "name": "Leaflet",
-   "language": "JavaScript",
-   "stars": 45805,
-   "path": "AGENTS.md",
-   "size": 1278,
-   "url": "https://github.com/Leaflet/Leaflet/blob/main/AGENTS.md"
+   "size": 4687,
+   "url": "https://github.com/FreeCAD/FreeCAD/blob/main/AGENTS.md"
   }
  ],
  "removed": [
   {
-   "full_name": "vitessio/vitess",
-   "owner": "vitessio",
-   "name": "vitess",
-   "language": "Go",
-   "stars": 21399,
+   "full_name": "home-assistant/core",
+   "owner": "home-assistant",
+   "name": "core",
+   "language": "Python",
+   "stars": 91917,
+   "path": "CLAUDE.md",
+   "size": null,
+   "url": "https://github.com/home-assistant/core/blob/dev/CLAUDE.md"
+  },
+  {
+   "full_name": "home-assistant/core",
+   "owner": "home-assistant",
+   "name": "core",
+   "language": "Python",
+   "stars": 91917,
    "path": ".github/copilot-instructions.md",
    "size": null,
-   "url": "https://github.com/vitessio/vitess/blob/main/.github/copilot-instructions.md"
+   "url": "https://github.com/home-assistant/core/blob/dev/.github/copilot-instructions.md"
   }
  ],
  "counts": {
-  "AGENTS.md": 548,
-  "CLAUDE.md": 324,
+  "AGENTS.md": 549,
+  "CLAUDE.md": 323,
   ".cursorrules": 16,
   ".cursor/rules": 34,
-  ".github/copilot-instructions.md": 161,
+  ".github/copilot-instructions.md": 160,
   "llms.txt": 17,
   "GEMINI.md": 21,
   ".windsurfrules": 6

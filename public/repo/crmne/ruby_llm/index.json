@@ -6,17 +6,17 @@
  "stars": 4490,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-07T05:17:23Z",
+ "checked": "2026-11-08T05:16:08Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 30486,
+   "size": 33271,
    "url": "https://github.com/crmne/ruby_llm/blob/main/AGENTS.md",
    "lang_share": {
     "count": 35,
     "total": 189,
     "pct": 18.5,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "Ruby",
     "page": "https://agentsmd.formachines.ai/lang/ruby/"
    },
@@ -32,7 +32,7 @@
     "count": 20,
     "total": 189,
     "pct": 10.6,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "Ruby",
     "page": "https://agentsmd.formachines.ai/lang/ruby/"
    },
@@ -48,7 +48,7 @@
     "count": 2,
     "total": 189,
     "pct": 1.1,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "Ruby",
     "page": "https://agentsmd.formachines.ai/lang/ruby/"
    }
@@ -61,20 +61,20 @@
     "count": 3,
     "total": 189,
     "pct": 1.6,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "Ruby",
     "page": "https://agentsmd.formachines.ai/lang/ruby/"
    }
   },
   ".github/copilot-instructions.md": {
    "present": true,
-   "size": 8132,
+   "size": 8569,
    "url": "https://github.com/crmne/ruby_llm/blob/main/.github/copilot-instructions.md",
    "lang_share": {
     "count": 12,
     "total": 189,
     "pct": 6.3,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "Ruby",
     "page": "https://agentsmd.formachines.ai/lang/ruby/"
    },
@@ -90,7 +90,7 @@
     "count": 1,
     "total": 189,
     "pct": 0.5,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "Ruby",
     "page": "https://agentsmd.formachines.ai/lang/ruby/"
    }
@@ -103,7 +103,7 @@
     "count": 1,
     "total": 189,
     "pct": 0.5,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "Ruby",
     "page": "https://agentsmd.formachines.ai/lang/ruby/"
    }
@@ -116,7 +116,7 @@
     "count": 1,
     "total": 189,
     "pct": 0.5,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "Ruby",
     "page": "https://agentsmd.formachines.ai/lang/ruby/"
    }

@@ -6,20 +6,22 @@
  "stars": 35058,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-07T04:27:35Z",
+ "checked": "2026-11-08T04:27:18Z",
  "files": {
   "AGENTS.md": {
-   "present": false,
-   "size": null,
-   "url": null,
+   "present": true,
+   "size": 4687,
+   "url": "https://github.com/FreeCAD/FreeCAD/blob/main/AGENTS.md",
    "lang_share": {
-    "count": 51,
+    "count": 52,
     "total": 191,
-    "pct": 26.7,
-    "date": "2026-11-07",
+    "pct": 27.2,
+    "date": "2026-11-08",
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/"
-   }
+   },
+   "first_seen": "2026-11-08",
+   "go_url": "https://agentsmd.formachines.ai/go/1133/"
   },
   "CLAUDE.md": {
    "present": false,
@@ -29,7 +31,7 @@
     "count": 18,
     "total": 191,
     "pct": 9.4,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/"
    }
@@ -42,7 +44,7 @@
     "count": 3,
     "total": 191,
     "pct": 1.6,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/"
    }
@@ -55,7 +57,7 @@
     "count": 1,
     "total": 191,
     "pct": 0.5,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/"
    }
@@ -68,7 +70,7 @@
     "count": 22,
     "total": 191,
     "pct": 11.5,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/"
    }
@@ -81,7 +83,7 @@
     "count": 0,
     "total": 191,
     "pct": 0.0,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/"
    }
@@ -94,7 +96,7 @@
     "count": 2,
     "total": 191,
     "pct": 1.0,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/"
    }
@@ -107,7 +109,7 @@
     "count": 0,
     "total": 191,
     "pct": 0.0,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/"
    }

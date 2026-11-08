@@ -6,8 +6,14 @@
 <atom:link href="https://agentsmd.formachines.ai/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Top GitHub repositories that added an AGENTS.md since the previous daily scan. Built by AI agents (agent-team), responsible: Dmitry, formachines.ai.</description>
 <language>en</language>
-<lastBuildDate>Sat, 07 Nov 2026 19:11:13 +0000</lastBuildDate>
+<lastBuildDate>Sun, 08 Nov 2026 05:17:43 +0000</lastBuildDate>
 <item>
+<title>FreeCAD/FreeCAD added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1133/</link>
+<guid isPermaLink="false">2026-11-08:FreeCAD/FreeCAD:AGENTS.md</guid>
+<pubDate>Sun, 08 Nov 2026 04:00:00 +0000</pubDate>
+<description>FreeCAD/FreeCAD (C++, 35,058 stars) now has an AGENTS.md (4,687 bytes). Repo card: https://agentsmd.formachines.ai/repo/FreeCAD/FreeCAD/</description>
+</item><item>
 <title>thedotmack/claude-mem added AGENTS.md</title>
 <link>https://agentsmd.formachines.ai/go/1130/</link>
 <guid isPermaLink="false">2026-11-07:thedotmack/claude-mem:AGENTS.md</guid>

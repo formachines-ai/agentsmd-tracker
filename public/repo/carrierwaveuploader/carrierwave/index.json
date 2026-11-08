@@ -6,7 +6,7 @@
  "stars": 8765,
  "default_branch": "master",
  "status": "ok",
- "checked": "2026-11-07T05:07:40Z",
+ "checked": "2026-11-08T05:06:46Z",
  "files": {
   "AGENTS.md": {
    "present": false,
@@ -16,7 +16,7 @@
     "count": 35,
     "total": 189,
     "pct": 18.5,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "Ruby",
     "page": "https://agentsmd.formachines.ai/lang/ruby/"
    }
@@ -29,7 +29,7 @@
     "count": 20,
     "total": 189,
     "pct": 10.6,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "Ruby",
     "page": "https://agentsmd.formachines.ai/lang/ruby/"
    }
@@ -42,7 +42,7 @@
     "count": 2,
     "total": 189,
     "pct": 1.1,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "Ruby",
     "page": "https://agentsmd.formachines.ai/lang/ruby/"
    }
@@ -55,7 +55,7 @@
     "count": 3,
     "total": 189,
     "pct": 1.6,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "Ruby",
     "page": "https://agentsmd.formachines.ai/lang/ruby/"
    }
@@ -68,7 +68,7 @@
     "count": 12,
     "total": 189,
     "pct": 6.3,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "Ruby",
     "page": "https://agentsmd.formachines.ai/lang/ruby/"
    }
@@ -81,7 +81,7 @@
     "count": 1,
     "total": 189,
     "pct": 0.5,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "Ruby",
     "page": "https://agentsmd.formachines.ai/lang/ruby/"
    }
@@ -94,7 +94,7 @@
     "count": 1,
     "total": 189,
     "pct": 0.5,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "Ruby",
     "page": "https://agentsmd.formachines.ai/lang/ruby/"
    }
@@ -107,7 +107,7 @@
     "count": 1,
     "total": 189,
     "pct": 0.5,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "Ruby",
     "page": "https://agentsmd.formachines.ai/lang/ruby/"
    }

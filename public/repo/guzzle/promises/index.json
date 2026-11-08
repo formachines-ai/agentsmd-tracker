@@ -6,7 +6,7 @@
  "stars": 7705,
  "default_branch": "3.1",
  "status": "ok",
- "checked": "2026-11-07T05:10:13Z",
+ "checked": "2026-11-08T05:09:15Z",
  "files": {
   "AGENTS.md": {
    "present": true,
@@ -16,7 +16,7 @@
     "count": 26,
     "total": 191,
     "pct": 13.6,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/"
    },
@@ -32,7 +32,7 @@
     "count": 20,
     "total": 191,
     "pct": 10.5,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/"
    },
@@ -48,7 +48,7 @@
     "count": 0,
     "total": 191,
     "pct": 0.0,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/"
    }
@@ -61,7 +61,7 @@
     "count": 4,
     "total": 191,
     "pct": 2.1,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/"
    }
@@ -74,7 +74,7 @@
     "count": 11,
     "total": 191,
     "pct": 5.8,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/"
    }
@@ -87,7 +87,7 @@
     "count": 0,
     "total": 191,
     "pct": 0.0,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/"
    }
@@ -100,7 +100,7 @@
     "count": 2,
     "total": 191,
     "pct": 1.0,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/"
    }
@@ -113,7 +113,7 @@
     "count": 0,
     "total": 191,
     "pct": 0.0,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/"
    }

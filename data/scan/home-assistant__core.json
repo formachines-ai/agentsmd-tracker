@@ -1,15 +1,15 @@
 {
- "checked": "2026-11-07T04:04:56Z",
+ "checked": "2026-11-08T04:04:50Z",
  "status": "ok",
  "default_branch": "dev",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 6787
+   "size": 8455
   },
   "CLAUDE.md": {
-   "present": true,
-   "size": 9
+   "present": false,
+   "size": null
   },
   ".cursorrules": {
    "present": false,
@@ -20,8 +20,8 @@
    "size": null
   },
   ".github/copilot-instructions.md": {
-   "present": true,
-   "size": 13769
+   "present": false,
+   "size": null
   },
   "llms.txt": {
    "present": false,

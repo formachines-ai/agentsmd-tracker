@@ -6,7 +6,7 @@
  "stars": 93185,
  "default_branch": "master",
  "status": "ok",
- "checked": "2026-11-07T04:04:42Z",
+ "checked": "2026-11-08T04:04:37Z",
  "files": {
   "AGENTS.md": {
    "present": true,
@@ -16,7 +16,7 @@
     "count": 34,
     "total": 191,
     "pct": 17.8,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "JavaScript",
     "page": "https://agentsmd.formachines.ai/lang/javascript/"
    },
@@ -32,7 +32,7 @@
     "count": 22,
     "total": 191,
     "pct": 11.5,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "JavaScript",
     "page": "https://agentsmd.formachines.ai/lang/javascript/"
    },
@@ -48,7 +48,7 @@
     "count": 0,
     "total": 191,
     "pct": 0.0,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "JavaScript",
     "page": "https://agentsmd.formachines.ai/lang/javascript/"
    }
@@ -61,20 +61,20 @@
     "count": 3,
     "total": 191,
     "pct": 1.6,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "JavaScript",
     "page": "https://agentsmd.formachines.ai/lang/javascript/"
    }
   },
   ".github/copilot-instructions.md": {
    "present": true,
-   "size": 13833,
+   "size": 14062,
    "url": "https://github.com/louislam/uptime-kuma/blob/master/.github/copilot-instructions.md",
    "lang_share": {
     "count": 10,
     "total": 191,
     "pct": 5.2,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "JavaScript",
     "page": "https://agentsmd.formachines.ai/lang/javascript/"
    },
@@ -90,7 +90,7 @@
     "count": 3,
     "total": 191,
     "pct": 1.6,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "JavaScript",
     "page": "https://agentsmd.formachines.ai/lang/javascript/"
    }
@@ -103,7 +103,7 @@
     "count": 1,
     "total": 191,
     "pct": 0.5,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "JavaScript",
     "page": "https://agentsmd.formachines.ai/lang/javascript/"
    }
@@ -116,7 +116,7 @@
     "count": 0,
     "total": 191,
     "pct": 0.0,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "JavaScript",
     "page": "https://agentsmd.formachines.ai/lang/javascript/"
    }

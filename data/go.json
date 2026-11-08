@@ -1,5 +1,5 @@
 {
- "next_id": 1133,
+ "next_id": 1134,
  "links": {
   "affaan-m/ECC/AGENTS.md": {
    "id": 1,
@@ -6791,6 +6791,12 @@
    "id": 1132,
    "url": "https://github.com/Leaflet/Leaflet/blob/main/AGENTS.md",
    "repo": "Leaflet/Leaflet",
+   "path": "AGENTS.md"
+  },
+  "FreeCAD/FreeCAD/AGENTS.md": {
+   "id": 1133,
+   "url": "https://github.com/FreeCAD/FreeCAD/blob/main/AGENTS.md",
+   "repo": "FreeCAD/FreeCAD",
    "path": "AGENTS.md"
   }
  }

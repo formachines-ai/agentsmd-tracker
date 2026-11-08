@@ -6,7 +6,7 @@
  "stars": 33491,
  "default_branch": "develop",
  "status": "ok",
- "checked": "2026-11-07T04:29:31Z",
+ "checked": "2026-11-08T04:29:15Z",
  "files": {
   "AGENTS.md": {
    "present": true,
@@ -16,7 +16,7 @@
     "count": 47,
     "total": 193,
     "pct": 24.4,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "Java",
     "page": "https://agentsmd.formachines.ai/lang/java/"
    },
@@ -32,7 +32,7 @@
     "count": 20,
     "total": 193,
     "pct": 10.4,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "Java",
     "page": "https://agentsmd.formachines.ai/lang/java/"
    },
@@ -48,7 +48,7 @@
     "count": 0,
     "total": 193,
     "pct": 0.0,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "Java",
     "page": "https://agentsmd.formachines.ai/lang/java/"
    }
@@ -61,7 +61,7 @@
     "count": 1,
     "total": 193,
     "pct": 0.5,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "Java",
     "page": "https://agentsmd.formachines.ai/lang/java/"
    }
@@ -74,7 +74,7 @@
     "count": 12,
     "total": 193,
     "pct": 6.2,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "Java",
     "page": "https://agentsmd.formachines.ai/lang/java/"
    }
@@ -87,7 +87,7 @@
     "count": 0,
     "total": 193,
     "pct": 0.0,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "Java",
     "page": "https://agentsmd.formachines.ai/lang/java/"
    }
@@ -100,7 +100,7 @@
     "count": 0,
     "total": 193,
     "pct": 0.0,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "Java",
     "page": "https://agentsmd.formachines.ai/lang/java/"
    }
@@ -113,7 +113,7 @@
     "count": 0,
     "total": 193,
     "pct": 0.0,
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "language": "Java",
     "page": "https://agentsmd.formachines.ai/lang/java/"
    }
