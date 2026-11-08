@@ -6,8 +6,7 @@
  "data_delayed": false,
  "method": "Top-by-stars sample of public repositories per language; one HEAD request per tracked path on the default branch; only presence and size are recorded, never file contents.",
  "attribution": "AGENTS.md Tracker, agentsmd.formachines.ai, 2026-11-08, CC BY 4.0",
- "sample": 1922,
- "sample_details": {
+ "sample": {
   "target_per_language": 200,
   "languages": [
    "Python",
@@ -42,6 +41,7 @@
    "TypeScript": 195
   }
  },
+ "sample_size": 1922,
  "scanned": 1922,
  "pending": 0,
  "unreachable": 0,
