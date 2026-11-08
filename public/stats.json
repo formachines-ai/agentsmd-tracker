@@ -7,6 +7,41 @@
  "method": "Top-by-stars sample of public repositories per language; one HEAD request per tracked path on the default branch; only presence and size are recorded, never file contents.",
  "attribution": "AGENTS.md Tracker, agentsmd.formachines.ai, 2026-11-08, CC BY 4.0",
  "sample": 1922,
+ "sample_details": {
+  "target_per_language": 200,
+  "languages": [
+   "Python",
+   "TypeScript",
+   "JavaScript",
+   "Go",
+   "Rust",
+   "Java",
+   "C++",
+   "C#",
+   "Ruby",
+   "PHP"
+  ],
+  "target_total": 2000,
+  "included": 1922,
+  "excluded_by_reason": {
+   "forks": 0,
+   "archived": 0,
+   "other": 78
+  },
+  "excluded_note": "other = targeted but not in data/repos.json (cross-language duplicates, repos not found or dropped at seeding); the reason was not recorded per repo",
+  "per_language": {
+   "C#": 184,
+   "C++": 191,
+   "Go": 193,
+   "Java": 193,
+   "JavaScript": 191,
+   "PHP": 191,
+   "Python": 197,
+   "Ruby": 189,
+   "Rust": 198,
+   "TypeScript": 195
+  }
+ },
  "scanned": 1922,
  "pending": 0,
  "unreachable": 0,
