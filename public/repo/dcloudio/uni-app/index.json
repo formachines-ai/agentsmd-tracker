@@ -113,6 +113,56 @@
    }
   }
  },
+ "language_share": {
+  "AGENTS.md": {
+   "count": 34,
+   "total": 191,
+   "pct": 17.8,
+   "date": "2026-11-08"
+  },
+  "CLAUDE.md": {
+   "count": 22,
+   "total": 191,
+   "pct": 11.5,
+   "date": "2026-11-08"
+  },
+  ".cursorrules": {
+   "count": 0,
+   "total": 191,
+   "pct": 0.0,
+   "date": "2026-11-08"
+  },
+  ".cursor/rules": {
+   "count": 3,
+   "total": 191,
+   "pct": 1.6,
+   "date": "2026-11-08"
+  },
+  ".github/copilot-instructions.md": {
+   "count": 10,
+   "total": 191,
+   "pct": 5.2,
+   "date": "2026-11-08"
+  },
+  "llms.txt": {
+   "count": 3,
+   "total": 191,
+   "pct": 1.6,
+   "date": "2026-11-08"
+  },
+  "GEMINI.md": {
+   "count": 1,
+   "total": 191,
+   "pct": 0.5,
+   "date": "2026-11-08"
+  },
+  ".windsurfrules": {
+   "count": 0,
+   "total": 191,
+   "pct": 0.0,
+   "date": "2026-11-08"
+  }
+ },
  "page": "https://agentsmd.formachines.ai/repo/dcloudio/uni-app/",
  "license": "CC BY 4.0"
 }

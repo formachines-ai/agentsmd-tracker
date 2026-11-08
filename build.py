@@ -785,6 +785,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
         sc = scans.get(r["full_name"])
         rdir = out / "repo" / r["owner"] / r["name"]
         files_json = {}
+        language_share = {}
         rows = []
         lv = agg["by_lang"].get(r.get("language") or "")
         for s in PATHS:
@@ -803,6 +804,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
             files_json[s["path"]] = {"present": present, "size": f.get("size"), "url": url if present else None}
             if lang_share:
                 files_json[s["path"]]["lang_share"] = lang_share
+                language_share[s["path"]] = {k: lang_share[k] for k in ("count", "total", "pct", "date")}
             seen_note = ""
             if present:
                 fs_day = added_on.get((r["full_name"], s["path"]))
@@ -846,6 +848,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
         write_json(rdir / "index.json", {"repo": r["full_name"], "owner": r["owner"], "name": r["name"], "language": r["language"],
                                           "stars": r["stars"], "default_branch": (sc or {}).get("default_branch") or r.get("default_branch"),
                                           "status": status, "checked": checked if sc else None, "files": files_json,
+                                          "language_share": language_share,
                                           "page": f"{SITE_BASE}/repo/{r['owner']}/{r['name']}/", "license": "CC BY 4.0"})
         urls.append(f"{SITE_BASE}/repo/{r['owner']}/{r['name']}/")
 

@@ -113,6 +113,56 @@
    }
   }
  },
+ "language_share": {
+  "AGENTS.md": {
+   "count": 101,
+   "total": 195,
+   "pct": 51.8,
+   "date": "2026-11-08"
+  },
+  "CLAUDE.md": {
+   "count": 63,
+   "total": 195,
+   "pct": 32.3,
+   "date": "2026-11-08"
+  },
+  ".cursorrules": {
+   "count": 4,
+   "total": 195,
+   "pct": 2.1,
+   "date": "2026-11-08"
+  },
+  ".cursor/rules": {
+   "count": 9,
+   "total": 195,
+   "pct": 4.6,
+   "date": "2026-11-08"
+  },
+  ".github/copilot-instructions.md": {
+   "count": 19,
+   "total": 195,
+   "pct": 9.7,
+   "date": "2026-11-08"
+  },
+  "llms.txt": {
+   "count": 3,
+   "total": 195,
+   "pct": 1.5,
+   "date": "2026-11-08"
+  },
+  "GEMINI.md": {
+   "count": 3,
+   "total": 195,
+   "pct": 1.5,
+   "date": "2026-11-08"
+  },
+  ".windsurfrules": {
+   "count": 1,
+   "total": 195,
+   "pct": 0.5,
+   "date": "2026-11-08"
+  }
+ },
  "page": "https://agentsmd.formachines.ai/repo/refinedev/refine/",
  "license": "CC BY 4.0"
 }

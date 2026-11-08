@@ -113,6 +113,56 @@
    }
   }
  },
+ "language_share": {
+  "AGENTS.md": {
+   "count": 47,
+   "total": 193,
+   "pct": 24.4,
+   "date": "2026-11-08"
+  },
+  "CLAUDE.md": {
+   "count": 20,
+   "total": 193,
+   "pct": 10.4,
+   "date": "2026-11-08"
+  },
+  ".cursorrules": {
+   "count": 0,
+   "total": 193,
+   "pct": 0.0,
+   "date": "2026-11-08"
+  },
+  ".cursor/rules": {
+   "count": 1,
+   "total": 193,
+   "pct": 0.5,
+   "date": "2026-11-08"
+  },
+  ".github/copilot-instructions.md": {
+   "count": 12,
+   "total": 193,
+   "pct": 6.2,
+   "date": "2026-11-08"
+  },
+  "llms.txt": {
+   "count": 0,
+   "total": 193,
+   "pct": 0.0,
+   "date": "2026-11-08"
+  },
+  "GEMINI.md": {
+   "count": 0,
+   "total": 193,
+   "pct": 0.0,
+   "date": "2026-11-08"
+  },
+  ".windsurfrules": {
+   "count": 0,
+   "total": 193,
+   "pct": 0.0,
+   "date": "2026-11-08"
+  }
+ },
  "page": "https://agentsmd.formachines.ai/repo/ashishps1/awesome-leetcode-resources/",
  "license": "CC BY 4.0"
 }
