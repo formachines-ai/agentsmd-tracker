@@ -563,7 +563,7 @@ def page_go(e: dict) -> str:
     return f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="refresh" content="0; url={esc(url)}">
-<meta name="robots" content="noindex">
+<meta name="robots" content="noindex,nofollow">
 <title>Redirecting to GitHub — {esc(e['repo'])}/{esc(e['path'])}</title>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/style.css"></head>
 <body><main><p>Redirecting to <a href="{esc(url)}">{esc(url)}</a> …</p>
