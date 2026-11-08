@@ -594,7 +594,25 @@ def feedback_links(r: dict) -> str:
             f'<a href="{FEEDBACK_ISSUES_URL}?title={title}" rel="nofollow">Report an error</a></p>')
 
 
-def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, build_info: dict) -> None:
+def sample_details(repos: list[dict], raw_repos: list[dict], query: dict, agg: dict) -> dict:
+    """Describe how the sample of M repos relates to the targeted per-language top lists (descriptive only)."""
+    langs = list(query.get("languages") or sorted({r["language"] for r in raw_repos}))
+    per_lang_target = int(query.get("per_language") or 0)
+    target = per_lang_target * len(langs)
+    included = len(repos)
+    forks = sum(1 for r in raw_repos if r.get("fork"))
+    archived = sum(1 for r in raw_repos if r.get("archived") and not r.get("fork"))
+    other = max(0, target - included - forks - archived)
+    per_language: dict[str, int] = {}
+    for r in repos:
+        per_language[r["language"]] = per_language.get(r["language"], 0) + 1
+    return {"target_per_language": per_lang_target, "languages": langs, "target_total": target, "included": included,
+            "excluded_by_reason": {"forks": forks, "archived": archived, "other": other},
+            "excluded_note": "other = targeted but not in data/repos.json (cross-language duplicates, repos not found or dropped at seeding); the reason was not recorded per repo",
+            "per_language": dict(sorted(per_language.items()))}
+
+
+def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, build_info: dict, sample_info: dict | None = None) -> None:
     updated = build_info["built_at"]
     go = GoLinks()
     out = PUBLIC_DIR
@@ -655,10 +673,16 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
 <ul>{size_lines}</ul>
 <p class="muted">Byte size of present files from the scan dated {esc(gen_raw[:10])}; only files with a known size are counted. <a href="/stats.json">stats.json</a> field <code>sizes</code>.</p>
 </section>"""
+    si = sample_info
+    reasons = ", ".join(f"{n:,} {k}" for k, n in si["excluded_by_reason"].items() if n) or "none"
+    sample_line = (f'<p class="asof" id="sample-line">Sample on {esc(gen_raw[:10])}: {si["included"]:,} of {si["target_total"]:,} targeted repos '
+                   f'(top {si["target_per_language"]:,} by stars in each of {len(si["languages"])} languages); '
+                   f'{si["target_total"] - si["included"]:,} not included: {esc(reasons)}. Details: <a href="/stats.json">stats.json</a> field <code>sample_details</code>.</p>')
     hero = f"""<section class="hero">
 <h1>{agg['counts'][PRIMARY_PATH]:,} of {total:,} top GitHub repositories ({pct(agg['counts'][PRIMARY_PATH], total)} %) have an <code>AGENTS.md</code></h1>
 <p class="lead">{any_n:,} ({pct(any_n, total)} %) have at least one agent-instruction file of the {len(PATHS)} kinds tracked here. Sample: {sample:,} public repositories, top by stars across {len(agg['by_lang']) or '—'} languages, rescanned daily. Only presence, size and a link are recorded — never the contents.</p>
 <p class="asof"><strong>Latest published scan: {esc(gen_txt)} UTC.</strong> A new scan starts daily at 04:00 UTC; results are published when it finishes. Numbers on this page are from the latest published scan{esc(stale_txt)}.</p>
+{sample_line}
 <p class="limit">What this share measures: whether a listed file path exists at one of its fixed conventional locations on the default branch (AGENTS.md, CLAUDE.md, GEMINI.md, llms.txt, .cursorrules and .windsurfrules at the repository root; .github/copilot-instructions.md; .cursor/rules/), in a sample of popular repositories per language. It is file presence only — not the quality or use of a file, and not all of GitHub.</p>
 <p class="paths"><a href="#languages">Explore your language</a> · <a href="#method">See the sampling method</a></p>
 </section>"""
@@ -838,7 +862,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
         "schema_version": SCHEMA_VERSION,
         "site": SITE_BASE, "generated": generated, "license": "CC BY 4.0", "data_delayed": delayed,
         "method": METHOD, "attribution": f"{SITE_NAME}, {SITE_HOST}, {generated[:10]}, CC BY 4.0",
-        "sample": sample, "scanned": total, "pending": len(agg["pending"]), "unreachable": len(agg["unreachable"]),
+        "sample": sample, "sample_details": sample_info, "scanned": total, "pending": len(agg["pending"]), "unreachable": len(agg["unreachable"]),
         "paths": [s["path"] for s in PATHS],
         "counts": agg["counts"], "any": agg["any"],
         "shares": {s["path"]: pct(agg["counts"][s["path"]], total) for s in PATHS},
@@ -948,6 +972,7 @@ Latest (scan {generated}): {agg['counts'][PRIMARY_PATH]} of {total} scanned repo
 - [stats.json]({SITE_BASE}/stats.json): totals, shares, by-language table, full daily history
 - combinations in stats.json: date, total and counts of scanned repos by co-existence of AGENTS.md and CLAUDE.md (agents_and_claude, agents_only_of_pair, claude_only_of_pair, neither_of_pair), same_size_agents_claude (both present with equal byte size) and repos_with_2plus_types (at least 2 of the 8 paths).
 - sizes in stats.json: per path, count, median_bytes, p25_bytes, p75_bytes and date of the scan, from the HEAD Content-Length of present files whose size is known (count = those files only); 0 when none is known (e.g. the .cursor/rules/ directory).
+- sample_details in stats.json (the integer field sample stays the headline total M): target_per_language, languages, target_total, included (= sample), excluded_by_reason (forks, archived, other; included + their sum = target_total) and per_language (adds up to included). other = targeted but absent from the stored sample (duplicates across languages, not found or dropped at seeding), reason not recorded per repo.
 - schema_version 2 (2026-11-07): change_7d_pp is an object per path; null until 8 dated history rows (schema_version 1: change_7d_pp was a scalar).
 - history[].pct and change_7d_pp in stats.json: pct = share of scanned repos with the path on that day, in % with 1 decimal (count / scanned x 100); change_7d_pp = per path, today's pct minus the pct 7 days earlier in percentage points, null until history has at least 8 dated rows.
 - history "added" / "removed" in stats.json: number of (repository, path) pairs whose file appeared / disappeared since the previous snapshot of the same repository, counted per day; a repository's first scan is a baseline and adds none.
@@ -1089,7 +1114,7 @@ def main() -> int:
         "scan": scan_block,
         "paths": [s["path"] for s in PATHS], "github_token": bool(os.environ.get("GITHUB_TOKEN")),
     }
-    render_site(repos, agg, history, today, build_info)
+    render_site(repos, agg, history, today, build_info, sample_details(repos, repos_doc["repos"], repos_doc.get("query") or {}, agg))
     log.info("build done in %.0fs: scanned_ok=%d pending=%d unreachable=%d data_delayed=%s", build_info["build_seconds"], len(agg["ok"]), len(agg["pending"]), len(agg["unreachable"]), delayed)
     return 0
 
