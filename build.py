@@ -677,7 +677,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
     reasons = ", ".join(f"{n:,} {k}" for k, n in si["excluded_by_reason"].items() if n) or "none"
     sample_line = (f'<p class="asof" id="sample-line">Sample on {esc(gen_raw[:10])}: {si["included"]:,} of {si["target_total"]:,} targeted repos '
                    f'(top {si["target_per_language"]:,} by stars in each of {len(si["languages"])} languages); '
-                   f'{si["target_total"] - si["included"]:,} not included: {esc(reasons)}. Details: <a href="/stats.json">stats.json</a> field <code>sample_details</code>.</p>')
+                   f'{si["target_total"] - si["included"]:,} not included: {esc(reasons)}. Details: <a href="/stats.json">stats.json</a> field <code>sample</code>.</p>')
     hero = f"""<section class="hero">
 <h1>{agg['counts'][PRIMARY_PATH]:,} of {total:,} top GitHub repositories ({pct(agg['counts'][PRIMARY_PATH], total)} %) have an <code>AGENTS.md</code></h1>
 <p class="lead">{any_n:,} ({pct(any_n, total)} %) have at least one agent-instruction file of the {len(PATHS)} kinds tracked here. Sample: {sample:,} public repositories, top by stars across {len(agg['by_lang']) or '—'} languages, rescanned daily. Only presence, size and a link are recorded — never the contents.</p>
@@ -862,7 +862,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
         "schema_version": SCHEMA_VERSION,
         "site": SITE_BASE, "generated": generated, "license": "CC BY 4.0", "data_delayed": delayed,
         "method": METHOD, "attribution": f"{SITE_NAME}, {SITE_HOST}, {generated[:10]}, CC BY 4.0",
-        "sample": sample, "sample_details": sample_info, "scanned": total, "pending": len(agg["pending"]), "unreachable": len(agg["unreachable"]),
+        "sample": sample_info, "sample_size": sample, "scanned": total, "pending": len(agg["pending"]), "unreachable": len(agg["unreachable"]),
         "paths": [s["path"] for s in PATHS],
         "counts": agg["counts"], "any": agg["any"],
         "shares": {s["path"]: pct(agg["counts"][s["path"]], total) for s in PATHS},
@@ -972,7 +972,7 @@ Latest (scan {generated}): {agg['counts'][PRIMARY_PATH]} of {total} scanned repo
 - [stats.json]({SITE_BASE}/stats.json): totals, shares, by-language table, full daily history
 - combinations in stats.json: date, total and counts of scanned repos by co-existence of AGENTS.md and CLAUDE.md (agents_and_claude, agents_only_of_pair, claude_only_of_pair, neither_of_pair), same_size_agents_claude (both present with equal byte size) and repos_with_2plus_types (at least 2 of the 8 paths).
 - sizes in stats.json: per path, count, median_bytes, p25_bytes, p75_bytes and date of the scan, from the HEAD Content-Length of present files whose size is known (count = those files only); 0 when none is known (e.g. the .cursor/rules/ directory).
-- sample_details in stats.json (the integer field sample stays the headline total M): target_per_language, languages, target_total, included (= sample), excluded_by_reason (forks, archived, other; included + their sum = target_total) and per_language (adds up to included). other = targeted but absent from the stored sample (duplicates across languages, not found or dropped at seeding), reason not recorded per repo.
+- sample in stats.json (an object; the former integer sample is now sample_size, the headline total M): target_per_language, languages, target_total, included (= sample_size), excluded_by_reason (forks, archived, other; included + their sum = target_total) and per_language (adds up to included). other = targeted but absent from the stored sample (duplicates across languages, not found or dropped at seeding), reason not recorded per repo.
 - schema_version 2 (2026-11-07): change_7d_pp is an object per path; null until 8 dated history rows (schema_version 1: change_7d_pp was a scalar).
 - history[].pct and change_7d_pp in stats.json: pct = share of scanned repos with the path on that day, in % with 1 decimal (count / scanned x 100); change_7d_pp = per path, today's pct minus the pct 7 days earlier in percentage points, null until history has at least 8 dated rows.
 - history "added" / "removed" in stats.json: number of (repository, path) pairs whose file appeared / disappeared since the previous snapshot of the same repository, counted per day; a repository's first scan is a baseline and adds none.
