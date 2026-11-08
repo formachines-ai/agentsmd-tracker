@@ -116,6 +116,56 @@
    }
   }
  },
+ "language_share": {
+  "AGENTS.md": {
+   "count": 66,
+   "total": 197,
+   "pct": 33.5,
+   "date": "2026-11-08"
+  },
+  "CLAUDE.md": {
+   "count": 39,
+   "total": 197,
+   "pct": 19.8,
+   "date": "2026-11-08"
+  },
+  ".cursorrules": {
+   "count": 3,
+   "total": 197,
+   "pct": 1.5,
+   "date": "2026-11-08"
+  },
+  ".cursor/rules": {
+   "count": 6,
+   "total": 197,
+   "pct": 3.0,
+   "date": "2026-11-08"
+  },
+  ".github/copilot-instructions.md": {
+   "count": 16,
+   "total": 197,
+   "pct": 8.1,
+   "date": "2026-11-08"
+  },
+  "llms.txt": {
+   "count": 3,
+   "total": 197,
+   "pct": 1.5,
+   "date": "2026-11-08"
+  },
+  "GEMINI.md": {
+   "count": 4,
+   "total": 197,
+   "pct": 2.0,
+   "date": "2026-11-08"
+  },
+  ".windsurfrules": {
+   "count": 1,
+   "total": 197,
+   "pct": 0.5,
+   "date": "2026-11-08"
+  }
+ },
  "page": "https://agentsmd.formachines.ai/repo/blader/humanizer/",
  "license": "CC BY 4.0"
 }

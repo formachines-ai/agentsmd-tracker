@@ -113,6 +113,56 @@
    }
   }
  },
+ "language_share": {
+  "AGENTS.md": {
+   "count": 35,
+   "total": 184,
+   "pct": 19.0,
+   "date": "2026-11-08"
+  },
+  "CLAUDE.md": {
+   "count": 21,
+   "total": 184,
+   "pct": 11.4,
+   "date": "2026-11-08"
+  },
+  ".cursorrules": {
+   "count": 2,
+   "total": 184,
+   "pct": 1.1,
+   "date": "2026-11-08"
+  },
+  ".cursor/rules": {
+   "count": 0,
+   "total": 184,
+   "pct": 0.0,
+   "date": "2026-11-08"
+  },
+  ".github/copilot-instructions.md": {
+   "count": 29,
+   "total": 184,
+   "pct": 15.8,
+   "date": "2026-11-08"
+  },
+  "llms.txt": {
+   "count": 1,
+   "total": 184,
+   "pct": 0.5,
+   "date": "2026-11-08"
+  },
+  "GEMINI.md": {
+   "count": 2,
+   "total": 184,
+   "pct": 1.1,
+   "date": "2026-11-08"
+  },
+  ".windsurfrules": {
+   "count": 2,
+   "total": 184,
+   "pct": 1.1,
+   "date": "2026-11-08"
+  }
+ },
  "page": "https://agentsmd.formachines.ai/repo/huiyadanli/RevokeMsgPatcher/",
  "license": "CC BY 4.0"
 }

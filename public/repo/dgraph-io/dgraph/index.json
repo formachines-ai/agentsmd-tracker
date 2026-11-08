@@ -113,6 +113,56 @@
    }
   }
  },
+ "language_share": {
+  "AGENTS.md": {
+   "count": 65,
+   "total": 193,
+   "pct": 33.7,
+   "date": "2026-11-08"
+  },
+  "CLAUDE.md": {
+   "count": 45,
+   "total": 193,
+   "pct": 23.3,
+   "date": "2026-11-08"
+  },
+  ".cursorrules": {
+   "count": 1,
+   "total": 193,
+   "pct": 0.5,
+   "date": "2026-11-08"
+  },
+  ".cursor/rules": {
+   "count": 2,
+   "total": 193,
+   "pct": 1.0,
+   "date": "2026-11-08"
+  },
+  ".github/copilot-instructions.md": {
+   "count": 16,
+   "total": 193,
+   "pct": 8.3,
+   "date": "2026-11-08"
+  },
+  "llms.txt": {
+   "count": 3,
+   "total": 193,
+   "pct": 1.6,
+   "date": "2026-11-08"
+  },
+  "GEMINI.md": {
+   "count": 2,
+   "total": 193,
+   "pct": 1.0,
+   "date": "2026-11-08"
+  },
+  ".windsurfrules": {
+   "count": 0,
+   "total": 193,
+   "pct": 0.0,
+   "date": "2026-11-08"
+  }
+ },
  "page": "https://agentsmd.formachines.ai/repo/dgraph-io/dgraph/",
  "license": "CC BY 4.0"
 }

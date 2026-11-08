@@ -116,6 +116,56 @@
    }
   }
  },
+ "language_share": {
+  "AGENTS.md": {
+   "count": 35,
+   "total": 189,
+   "pct": 18.5,
+   "date": "2026-11-08"
+  },
+  "CLAUDE.md": {
+   "count": 20,
+   "total": 189,
+   "pct": 10.6,
+   "date": "2026-11-08"
+  },
+  ".cursorrules": {
+   "count": 2,
+   "total": 189,
+   "pct": 1.1,
+   "date": "2026-11-08"
+  },
+  ".cursor/rules": {
+   "count": 3,
+   "total": 189,
+   "pct": 1.6,
+   "date": "2026-11-08"
+  },
+  ".github/copilot-instructions.md": {
+   "count": 12,
+   "total": 189,
+   "pct": 6.3,
+   "date": "2026-11-08"
+  },
+  "llms.txt": {
+   "count": 1,
+   "total": 189,
+   "pct": 0.5,
+   "date": "2026-11-08"
+  },
+  "GEMINI.md": {
+   "count": 1,
+   "total": 189,
+   "pct": 0.5,
+   "date": "2026-11-08"
+  },
+  ".windsurfrules": {
+   "count": 1,
+   "total": 189,
+   "pct": 0.5,
+   "date": "2026-11-08"
+  }
+ },
  "page": "https://agentsmd.formachines.ai/repo/github-linguist/linguist/",
  "license": "CC BY 4.0"
 }
