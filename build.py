@@ -93,6 +93,7 @@ FEED_DAYS = 30                   # history window for feed.xml
 SPARK_MIN_SPAN_PP = 5.0          # sparkline y-axis never spans less than this many percentage points
 CHANGE_MIN_ROWS = 8              # change_7d_pp stays null below this many history rows
 BASELINE_DAYS = 14               # show the "baseline" label while history is shorter than this
+TREND_PATH = "AGENTS.md"         # path shown in the home page trend line
 SPARK_DAYS = 60                  # history window for the sparklines
 MAX_TODAY_ITEMS = 200            # feed on the front page
 
@@ -762,6 +763,15 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
                  if len(history) < BASELINE_DAYS else '')
         base_note = f'<p class="muted baseline">baseline: {len(history)} days since {esc(history[0]["date"])}.{extra}</p>'
 
+    trend_note = ""
+    if len(history) >= 2 and history[0]["scanned"] and history[-1]["scanned"]:
+        h0, h1 = history[0], history[-1]
+        a, b = h0["counts"].get(TREND_PATH, 0), h1["counts"].get(TREND_PATH, 0)
+        pa, pb = pct(a, h0["scanned"]), pct(b, h1["scanned"])
+        days = (datetime.fromisoformat(h1["date"]) - datetime.fromisoformat(h0["date"])).days
+        trend_note = (f'<p class="trend"><strong>{esc(TREND_PATH)}:</strong> {a:,} of {h0["scanned"]:,} ({pa} %) on {esc(h0["date"])} → '
+                      f'{b:,} of {h1["scanned"]:,} ({pb} %) on {esc(h1["date"])}; {b - a:+d} repos, {round(pb - pa, 1):+.1f} pp over {days} days of history.</p>')
+
     home_desc = STABLE_DESCRIPTION
     home_ld = {"@context": "https://schema.org", "@type": "Dataset", "name": f"{SITE_NAME}: agent-instruction files in top GitHub repositories",
                "description": home_desc, "url": SITE_BASE + "/", "license": "https://creativecommons.org/licenses/by/4.0/",
@@ -770,7 +780,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
                "distribution": [{"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": SITE_BASE + "/stats.json"},
                                 {"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": SITE_BASE + "/today.json"}]}
     write_text(out / "index.html", layout(f"{SITE_NAME} — AGENTS.md adoption in top GitHub repos",
-                                           banner + hero + cite + base_note + '<div class="cards">' + "".join(cards) + '</div>' + combo_sec + size_sec + today_sec + lang_table + hist_sec + method,
+                                           banner + hero + trend_note + cite + base_note + '<div class="cards">' + "".join(cards) + '</div>' + combo_sec + size_sec + today_sec + lang_table + hist_sec + method,
                                            updated, canonical=SITE_BASE + "/", description=home_desc, jsonld=home_ld))
 
     # ---- repo pages
