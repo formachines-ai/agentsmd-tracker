@@ -1,45 +1,34 @@
 {
  "schema_version": 2,
  "site": "https://agentsmd.formachines.ai",
- "date": "2026-11-08",
- "generated": "2026-11-08T05:17:41Z",
+ "date": "2026-11-09",
+ "generated": "2026-11-09T05:30:07Z",
  "license": "CC BY 4.0",
  "added": [
   {
-   "full_name": "FreeCAD/FreeCAD",
-   "owner": "FreeCAD",
-   "name": "FreeCAD",
-   "language": "C++",
-   "stars": 35058,
+   "full_name": "gethomepage/homepage",
+   "owner": "gethomepage",
+   "name": "homepage",
+   "language": "JavaScript",
+   "stars": 33484,
    "path": "AGENTS.md",
-   "size": 4687,
-   "url": "https://github.com/FreeCAD/FreeCAD/blob/main/AGENTS.md"
-  }
- ],
- "removed": [
-  {
-   "full_name": "home-assistant/core",
-   "owner": "home-assistant",
-   "name": "core",
-   "language": "Python",
-   "stars": 91917,
-   "path": "CLAUDE.md",
-   "size": null,
-   "url": "https://github.com/home-assistant/core/blob/dev/CLAUDE.md"
+   "size": 4377,
+   "url": "https://github.com/gethomepage/homepage/blob/dev/AGENTS.md"
   },
   {
-   "full_name": "home-assistant/core",
-   "owner": "home-assistant",
-   "name": "core",
-   "language": "Python",
-   "stars": 91917,
-   "path": ".github/copilot-instructions.md",
-   "size": null,
-   "url": "https://github.com/home-assistant/core/blob/dev/.github/copilot-instructions.md"
+   "full_name": "dotnet/maui",
+   "owner": "dotnet",
+   "name": "maui",
+   "language": "C#",
+   "stars": 23330,
+   "path": "AGENTS.md",
+   "size": 1513,
+   "url": "https://github.com/dotnet/maui/blob/main/AGENTS.md"
   }
  ],
+ "removed": [],
  "counts": {
-  "AGENTS.md": 549,
+  "AGENTS.md": 551,
   "CLAUDE.md": 323,
   ".cursorrules": 16,
   ".cursor/rules": 34,

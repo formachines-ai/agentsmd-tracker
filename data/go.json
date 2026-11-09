@@ -1,5 +1,5 @@
 {
- "next_id": 1134,
+ "next_id": 1136,
  "links": {
   "affaan-m/ECC/AGENTS.md": {
    "id": 1,
@@ -6797,6 +6797,18 @@
    "id": 1133,
    "url": "https://github.com/FreeCAD/FreeCAD/blob/main/AGENTS.md",
    "repo": "FreeCAD/FreeCAD",
+   "path": "AGENTS.md"
+  },
+  "gethomepage/homepage/AGENTS.md": {
+   "id": 1134,
+   "url": "https://github.com/gethomepage/homepage/blob/dev/AGENTS.md",
+   "repo": "gethomepage/homepage",
+   "path": "AGENTS.md"
+  },
+  "dotnet/maui/AGENTS.md": {
+   "id": 1135,
+   "url": "https://github.com/dotnet/maui/blob/main/AGENTS.md",
+   "repo": "dotnet/maui",
    "path": "AGENTS.md"
   }
  }

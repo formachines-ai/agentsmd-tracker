@@ -6,17 +6,17 @@
  "stars": 65544,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-08T04:09:23Z",
+ "checked": "2026-11-09T04:09:29Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 43827,
+   "size": 45972,
    "url": "https://github.com/coollabsio/coolify/blob/main/AGENTS.md",
    "lang_share": {
     "count": 26,
     "total": 191,
     "pct": 13.6,
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/"
    },
@@ -32,7 +32,7 @@
     "count": 20,
     "total": 191,
     "pct": 10.5,
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/"
    }
@@ -45,7 +45,7 @@
     "count": 0,
     "total": 191,
     "pct": 0.0,
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/"
    }
@@ -58,7 +58,7 @@
     "count": 4,
     "total": 191,
     "pct": 2.1,
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/"
    }
@@ -71,7 +71,7 @@
     "count": 11,
     "total": 191,
     "pct": 5.8,
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/"
    }
@@ -84,7 +84,7 @@
     "count": 0,
     "total": 191,
     "pct": 0.0,
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/"
    }
@@ -97,7 +97,7 @@
     "count": 2,
     "total": 191,
     "pct": 1.0,
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/"
    }
@@ -110,7 +110,7 @@
     "count": 0,
     "total": 191,
     "pct": 0.0,
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/"
    }
@@ -121,49 +121,49 @@
    "count": 26,
    "total": 191,
    "pct": 13.6,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   },
   "CLAUDE.md": {
    "count": 20,
    "total": 191,
    "pct": 10.5,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   },
   ".cursorrules": {
    "count": 0,
    "total": 191,
    "pct": 0.0,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   },
   ".cursor/rules": {
    "count": 4,
    "total": 191,
    "pct": 2.1,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   },
   ".github/copilot-instructions.md": {
    "count": 11,
    "total": 191,
    "pct": 5.8,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   },
   "llms.txt": {
    "count": 0,
    "total": 191,
    "pct": 0.0,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   },
   "GEMINI.md": {
    "count": 2,
    "total": 191,
    "pct": 1.0,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   },
   ".windsurfrules": {
    "count": 0,
    "total": 191,
    "pct": 0.0,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   }
  },
  "page": "https://agentsmd.formachines.ai/repo/coollabsio/coolify/",

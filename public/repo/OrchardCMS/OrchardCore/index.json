@@ -6,17 +6,17 @@
  "stars": 8223,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-08T05:07:40Z",
+ "checked": "2026-11-09T05:08:02Z",
  "files": {
   "AGENTS.md": {
    "present": true,
    "size": 28903,
    "url": "https://github.com/OrchardCMS/OrchardCore/blob/main/AGENTS.md",
    "lang_share": {
-    "count": 35,
+    "count": 36,
     "total": 184,
-    "pct": 19.0,
-    "date": "2026-11-08",
+    "pct": 19.6,
+    "date": "2026-11-09",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    },
@@ -32,7 +32,7 @@
     "count": 21,
     "total": 184,
     "pct": 11.4,
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    }
@@ -45,7 +45,7 @@
     "count": 2,
     "total": 184,
     "pct": 1.1,
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    }
@@ -58,7 +58,7 @@
     "count": 0,
     "total": 184,
     "pct": 0.0,
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    }
@@ -71,7 +71,7 @@
     "count": 29,
     "total": 184,
     "pct": 15.8,
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    }
@@ -84,7 +84,7 @@
     "count": 1,
     "total": 184,
     "pct": 0.5,
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    }
@@ -97,7 +97,7 @@
     "count": 2,
     "total": 184,
     "pct": 1.1,
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    }
@@ -110,7 +110,7 @@
     "count": 2,
     "total": 184,
     "pct": 1.1,
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    }
@@ -118,52 +118,52 @@
  },
  "language_share": {
   "AGENTS.md": {
-   "count": 35,
+   "count": 36,
    "total": 184,
-   "pct": 19.0,
-   "date": "2026-11-08"
+   "pct": 19.6,
+   "date": "2026-11-09"
   },
   "CLAUDE.md": {
    "count": 21,
    "total": 184,
    "pct": 11.4,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   },
   ".cursorrules": {
    "count": 2,
    "total": 184,
    "pct": 1.1,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   },
   ".cursor/rules": {
    "count": 0,
    "total": 184,
    "pct": 0.0,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   },
   ".github/copilot-instructions.md": {
    "count": 29,
    "total": 184,
    "pct": 15.8,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   },
   "llms.txt": {
    "count": 1,
    "total": 184,
    "pct": 0.5,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   },
   "GEMINI.md": {
    "count": 2,
    "total": 184,
    "pct": 1.1,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   },
   ".windsurfrules": {
    "count": 2,
    "total": 184,
    "pct": 1.1,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   }
  },
  "page": "https://agentsmd.formachines.ai/repo/OrchardCMS/OrchardCore/",

@@ -6,7 +6,7 @@
  "stars": 29771,
  "default_branch": "master",
  "status": "ok",
- "checked": "2026-11-08T04:33:23Z",
+ "checked": "2026-11-09T04:33:32Z",
  "files": {
   "AGENTS.md": {
    "present": true,
@@ -16,7 +16,7 @@
     "count": 52,
     "total": 191,
     "pct": 27.2,
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/"
    },
@@ -31,7 +31,7 @@
     "count": 18,
     "total": 191,
     "pct": 9.4,
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/"
    }
@@ -44,7 +44,7 @@
     "count": 3,
     "total": 191,
     "pct": 1.6,
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/"
    }
@@ -57,7 +57,7 @@
     "count": 1,
     "total": 191,
     "pct": 0.5,
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/"
    }
@@ -70,7 +70,7 @@
     "count": 22,
     "total": 191,
     "pct": 11.5,
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/"
    }
@@ -83,7 +83,7 @@
     "count": 0,
     "total": 191,
     "pct": 0.0,
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/"
    }
@@ -96,7 +96,7 @@
     "count": 2,
     "total": 191,
     "pct": 1.0,
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/"
    }
@@ -109,7 +109,7 @@
     "count": 0,
     "total": 191,
     "pct": 0.0,
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/"
    }
@@ -120,49 +120,49 @@
    "count": 52,
    "total": 191,
    "pct": 27.2,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   },
   "CLAUDE.md": {
    "count": 18,
    "total": 191,
    "pct": 9.4,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   },
   ".cursorrules": {
    "count": 3,
    "total": 191,
    "pct": 1.6,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   },
   ".cursor/rules": {
    "count": 1,
    "total": 191,
    "pct": 0.5,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   },
   ".github/copilot-instructions.md": {
    "count": 22,
    "total": 191,
    "pct": 11.5,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   },
   "llms.txt": {
    "count": 0,
    "total": 191,
    "pct": 0.0,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   },
   "GEMINI.md": {
    "count": 2,
    "total": 191,
    "pct": 1.0,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   },
   ".windsurfrules": {
    "count": 0,
    "total": 191,
    "pct": 0.0,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   }
  },
  "page": "https://agentsmd.formachines.ai/repo/notepad-plus-plus/notepad-plus-plus/",

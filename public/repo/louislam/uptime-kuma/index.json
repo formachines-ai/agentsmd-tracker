@@ -6,17 +6,17 @@
  "stars": 93185,
  "default_branch": "master",
  "status": "ok",
- "checked": "2026-11-08T04:04:37Z",
+ "checked": "2026-11-09T04:04:41Z",
  "files": {
   "AGENTS.md": {
    "present": true,
    "size": 3044,
    "url": "https://github.com/louislam/uptime-kuma/blob/master/AGENTS.md",
    "lang_share": {
-    "count": 34,
+    "count": 35,
     "total": 191,
-    "pct": 17.8,
-    "date": "2026-11-08",
+    "pct": 18.3,
+    "date": "2026-11-09",
     "language": "JavaScript",
     "page": "https://agentsmd.formachines.ai/lang/javascript/"
    },
@@ -32,7 +32,7 @@
     "count": 22,
     "total": 191,
     "pct": 11.5,
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "language": "JavaScript",
     "page": "https://agentsmd.formachines.ai/lang/javascript/"
    },
@@ -48,7 +48,7 @@
     "count": 0,
     "total": 191,
     "pct": 0.0,
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "language": "JavaScript",
     "page": "https://agentsmd.formachines.ai/lang/javascript/"
    }
@@ -61,7 +61,7 @@
     "count": 3,
     "total": 191,
     "pct": 1.6,
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "language": "JavaScript",
     "page": "https://agentsmd.formachines.ai/lang/javascript/"
    }
@@ -74,7 +74,7 @@
     "count": 10,
     "total": 191,
     "pct": 5.2,
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "language": "JavaScript",
     "page": "https://agentsmd.formachines.ai/lang/javascript/"
    },
@@ -90,7 +90,7 @@
     "count": 3,
     "total": 191,
     "pct": 1.6,
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "language": "JavaScript",
     "page": "https://agentsmd.formachines.ai/lang/javascript/"
    }
@@ -103,7 +103,7 @@
     "count": 1,
     "total": 191,
     "pct": 0.5,
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "language": "JavaScript",
     "page": "https://agentsmd.formachines.ai/lang/javascript/"
    }
@@ -116,7 +116,7 @@
     "count": 0,
     "total": 191,
     "pct": 0.0,
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "language": "JavaScript",
     "page": "https://agentsmd.formachines.ai/lang/javascript/"
    }
@@ -124,52 +124,52 @@
  },
  "language_share": {
   "AGENTS.md": {
-   "count": 34,
+   "count": 35,
    "total": 191,
-   "pct": 17.8,
-   "date": "2026-11-08"
+   "pct": 18.3,
+   "date": "2026-11-09"
   },
   "CLAUDE.md": {
    "count": 22,
    "total": 191,
    "pct": 11.5,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   },
   ".cursorrules": {
    "count": 0,
    "total": 191,
    "pct": 0.0,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   },
   ".cursor/rules": {
    "count": 3,
    "total": 191,
    "pct": 1.6,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   },
   ".github/copilot-instructions.md": {
    "count": 10,
    "total": 191,
    "pct": 5.2,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   },
   "llms.txt": {
    "count": 3,
    "total": 191,
    "pct": 1.6,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   },
   "GEMINI.md": {
    "count": 1,
    "total": 191,
    "pct": 0.5,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   },
   ".windsurfrules": {
    "count": 0,
    "total": 191,
    "pct": 0.0,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   }
  },
  "page": "https://agentsmd.formachines.ai/repo/louislam/uptime-kuma/",

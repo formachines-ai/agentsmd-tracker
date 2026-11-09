@@ -6,7 +6,7 @@
  "stars": 57852,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-08T04:11:48Z",
+ "checked": "2026-11-09T04:11:55Z",
  "files": {
   "AGENTS.md": {
    "present": true,
@@ -16,7 +16,7 @@
     "count": 101,
     "total": 195,
     "pct": 51.8,
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "language": "TypeScript",
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    },
@@ -32,7 +32,7 @@
     "count": 63,
     "total": 195,
     "pct": 32.3,
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "language": "TypeScript",
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    },
@@ -48,7 +48,7 @@
     "count": 4,
     "total": 195,
     "pct": 2.1,
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "language": "TypeScript",
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    }
@@ -61,7 +61,7 @@
     "count": 9,
     "total": 195,
     "pct": 4.6,
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "language": "TypeScript",
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    }
@@ -74,7 +74,7 @@
     "count": 19,
     "total": 195,
     "pct": 9.7,
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "language": "TypeScript",
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    }
@@ -87,7 +87,7 @@
     "count": 3,
     "total": 195,
     "pct": 1.5,
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "language": "TypeScript",
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    }
@@ -100,7 +100,7 @@
     "count": 3,
     "total": 195,
     "pct": 1.5,
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "language": "TypeScript",
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    }
@@ -113,7 +113,7 @@
     "count": 1,
     "total": 195,
     "pct": 0.5,
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "language": "TypeScript",
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    }
@@ -124,49 +124,49 @@
    "count": 101,
    "total": 195,
    "pct": 51.8,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   },
   "CLAUDE.md": {
    "count": 63,
    "total": 195,
    "pct": 32.3,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   },
   ".cursorrules": {
    "count": 4,
    "total": 195,
    "pct": 2.1,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   },
   ".cursor/rules": {
    "count": 9,
    "total": 195,
    "pct": 4.6,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   },
   ".github/copilot-instructions.md": {
    "count": 19,
    "total": 195,
    "pct": 9.7,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   },
   "llms.txt": {
    "count": 3,
    "total": 195,
    "pct": 1.5,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   },
   "GEMINI.md": {
    "count": 3,
    "total": 195,
    "pct": 1.5,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   },
   ".windsurfrules": {
    "count": 1,
    "total": 195,
    "pct": 0.5,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   }
  },
  "page": "https://agentsmd.formachines.ai/repo/appwrite/appwrite/",

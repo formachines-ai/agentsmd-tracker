@@ -6,20 +6,22 @@
  "stars": 23330,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-08T04:42:11Z",
+ "checked": "2026-11-09T04:42:28Z",
  "files": {
   "AGENTS.md": {
-   "present": false,
-   "size": null,
-   "url": null,
+   "present": true,
+   "size": 1513,
+   "url": "https://github.com/dotnet/maui/blob/main/AGENTS.md",
    "lang_share": {
-    "count": 35,
+    "count": 36,
     "total": 184,
-    "pct": 19.0,
-    "date": "2026-11-08",
+    "pct": 19.6,
+    "date": "2026-11-09",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
-   }
+   },
+   "first_seen": "2026-11-09",
+   "go_url": "https://agentsmd.formachines.ai/go/1135/"
   },
   "CLAUDE.md": {
    "present": false,
@@ -29,7 +31,7 @@
     "count": 21,
     "total": 184,
     "pct": 11.4,
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    }
@@ -42,7 +44,7 @@
     "count": 2,
     "total": 184,
     "pct": 1.1,
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    }
@@ -55,20 +57,20 @@
     "count": 0,
     "total": 184,
     "pct": 0.0,
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    }
   },
   ".github/copilot-instructions.md": {
    "present": true,
-   "size": 25603,
+   "size": 27152,
    "url": "https://github.com/dotnet/maui/blob/main/.github/copilot-instructions.md",
    "lang_share": {
     "count": 29,
     "total": 184,
     "pct": 15.8,
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    },
@@ -84,7 +86,7 @@
     "count": 1,
     "total": 184,
     "pct": 0.5,
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    }
@@ -97,7 +99,7 @@
     "count": 2,
     "total": 184,
     "pct": 1.1,
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    }
@@ -110,7 +112,7 @@
     "count": 2,
     "total": 184,
     "pct": 1.1,
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    }
@@ -118,52 +120,52 @@
  },
  "language_share": {
   "AGENTS.md": {
-   "count": 35,
+   "count": 36,
    "total": 184,
-   "pct": 19.0,
-   "date": "2026-11-08"
+   "pct": 19.6,
+   "date": "2026-11-09"
   },
   "CLAUDE.md": {
    "count": 21,
    "total": 184,
    "pct": 11.4,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   },
   ".cursorrules": {
    "count": 2,
    "total": 184,
    "pct": 1.1,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   },
   ".cursor/rules": {
    "count": 0,
    "total": 184,
    "pct": 0.0,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   },
   ".github/copilot-instructions.md": {
    "count": 29,
    "total": 184,
    "pct": 15.8,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   },
   "llms.txt": {
    "count": 1,
    "total": 184,
    "pct": 0.5,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   },
   "GEMINI.md": {
    "count": 2,
    "total": 184,
    "pct": 1.1,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   },
   ".windsurfrules": {
    "count": 2,
    "total": 184,
    "pct": 1.1,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   }
  },
  "page": "https://agentsmd.formachines.ai/repo/dotnet/maui/",

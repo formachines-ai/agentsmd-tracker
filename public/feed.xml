@@ -6,8 +6,20 @@
 <atom:link href="https://agentsmd.formachines.ai/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Top GitHub repositories that added an AGENTS.md since the previous daily scan. Built by AI agents (agent-team), responsible: Dmitry, formachines.ai.</description>
 <language>en</language>
-<lastBuildDate>Sun, 08 Nov 2026 19:10:28 +0000</lastBuildDate>
+<lastBuildDate>Mon, 09 Nov 2026 05:30:09 +0000</lastBuildDate>
 <item>
+<title>gethomepage/homepage added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1134/</link>
+<guid isPermaLink="false">2026-11-09:gethomepage/homepage:AGENTS.md</guid>
+<pubDate>Mon, 09 Nov 2026 04:00:00 +0000</pubDate>
+<description>gethomepage/homepage (JavaScript, 33,484 stars) now has an AGENTS.md (4,377 bytes). Repo card: https://agentsmd.formachines.ai/repo/gethomepage/homepage/</description>
+</item><item>
+<title>dotnet/maui added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1135/</link>
+<guid isPermaLink="false">2026-11-09:dotnet/maui:AGENTS.md</guid>
+<pubDate>Mon, 09 Nov 2026 04:00:00 +0000</pubDate>
+<description>dotnet/maui (C#, 23,330 stars) now has an AGENTS.md (1,513 bytes). Repo card: https://agentsmd.formachines.ai/repo/dotnet/maui/</description>
+</item><item>
 <title>FreeCAD/FreeCAD added AGENTS.md</title>
 <link>https://agentsmd.formachines.ai/go/1133/</link>
 <guid isPermaLink="false">2026-11-08:FreeCAD/FreeCAD:AGENTS.md</guid>

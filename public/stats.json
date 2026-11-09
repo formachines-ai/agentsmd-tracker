@@ -1,11 +1,11 @@
 {
  "schema_version": 3,
  "site": "https://agentsmd.formachines.ai",
- "generated": "2026-11-08T05:17:41Z",
+ "generated": "2026-11-09T05:30:07Z",
  "license": "CC BY 4.0",
  "data_delayed": false,
  "method": "Top-by-stars sample of public repositories per language; one HEAD request per tracked path on the default branch; only presence and size are recorded, never file contents.",
- "attribution": "AGENTS.md Tracker, agentsmd.formachines.ai, 2026-11-08, CC BY 4.0",
+ "attribution": "AGENTS.md Tracker, agentsmd.formachines.ai, 2026-11-09, CC BY 4.0",
  "sample": {
   "target_per_language": 200,
   "languages": [
@@ -56,7 +56,7 @@
   ".windsurfrules"
  ],
  "counts": {
-  "AGENTS.md": 549,
+  "AGENTS.md": 551,
   "CLAUDE.md": 323,
   ".cursorrules": 16,
   ".cursor/rules": 34,
@@ -65,9 +65,9 @@
   "GEMINI.md": 21,
   ".windsurfrules": 6
  },
- "any": 680,
+ "any": 681,
  "shares": {
-  "AGENTS.md": 28.6,
+  "AGENTS.md": 28.7,
   "CLAUDE.md": 16.8,
   ".cursorrules": 0.8,
   ".cursor/rules": 1.8,
@@ -80,7 +80,7 @@
   "C#": {
    "repos": 184,
    "any": 61,
-   "AGENTS.md": 35,
+   "AGENTS.md": 36,
    "CLAUDE.md": 21,
    ".cursorrules": 2,
    ".cursor/rules": 0,
@@ -127,8 +127,8 @@
   },
   "JavaScript": {
    "repos": 191,
-   "any": 47,
-   "AGENTS.md": 34,
+   "any": 48,
+   "AGENTS.md": 35,
    "CLAUDE.md": 22,
    ".cursorrules": 0,
    ".cursor/rules": 3,
@@ -457,85 +457,122 @@
    },
    "added": 1,
    "removed": 2
+  },
+  {
+   "date": "2026-11-09",
+   "scanned": 1922,
+   "counts": {
+    "AGENTS.md": 551,
+    "CLAUDE.md": 323,
+    ".cursorrules": 16,
+    ".cursor/rules": 34,
+    ".github/copilot-instructions.md": 160,
+    "llms.txt": 17,
+    "GEMINI.md": 21,
+    ".windsurfrules": 6
+   },
+   "any": 681,
+   "shares": {
+    "AGENTS.md": 28.7,
+    "CLAUDE.md": 16.8,
+    ".cursorrules": 0.8,
+    ".cursor/rules": 1.8,
+    ".github/copilot-instructions.md": 8.3,
+    "llms.txt": 0.9,
+    "GEMINI.md": 1.1,
+    ".windsurfrules": 0.3
+   },
+   "pct": {
+    "AGENTS.md": 28.7,
+    "CLAUDE.md": 16.8,
+    ".cursorrules": 0.8,
+    ".cursor/rules": 1.8,
+    ".github/copilot-instructions.md": 8.3,
+    "llms.txt": 0.9,
+    "GEMINI.md": 1.1,
+    ".windsurfrules": 0.3
+   },
+   "added": 2,
+   "removed": 0
   }
  ],
- "history_days": 7,
+ "history_days": 8,
  "change_7d_pp": {
-  "AGENTS.md": null,
-  "CLAUDE.md": null,
-  ".cursorrules": null,
-  ".cursor/rules": null,
-  ".github/copilot-instructions.md": null,
-  "llms.txt": null,
-  "GEMINI.md": null,
-  ".windsurfrules": null
+  "AGENTS.md": 0.6,
+  "CLAUDE.md": -0.1,
+  ".cursorrules": 0.0,
+  ".cursor/rules": 0.0,
+  ".github/copilot-instructions.md": -0.2,
+  "llms.txt": 0.0,
+  "GEMINI.md": 0.0,
+  ".windsurfrules": 0.0
  },
  "combinations": {
-  "date": "2026-11-08",
+  "date": "2026-11-09",
   "total": 1922,
   "agents_and_claude": 258,
-  "agents_only_of_pair": 291,
+  "agents_only_of_pair": 293,
   "claude_only_of_pair": 65,
-  "neither_of_pair": 1308,
+  "neither_of_pair": 1306,
   "same_size_agents_claude": 5,
-  "repos_with_2plus_types": 338
+  "repos_with_2plus_types": 339
  },
  "sizes": {
   "AGENTS.md": {
-   "count": 548,
-   "median_bytes": 6806,
-   "p25_bytes": 2744,
-   "p75_bytes": 13822,
-   "date": "2026-11-08"
+   "count": 550,
+   "median_bytes": 6766,
+   "p25_bytes": 2762,
+   "p75_bytes": 13830,
+   "date": "2026-11-09"
   },
   "CLAUDE.md": {
    "count": 323,
    "median_bytes": 96,
    "p25_bytes": 11,
    "p75_bytes": 4432,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   },
   ".cursorrules": {
    "count": 16,
    "median_bytes": 1677,
    "p25_bytes": 180,
    "p75_bytes": 3410,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   },
   ".cursor/rules": {
    "count": 0,
    "median_bytes": 0,
    "p25_bytes": 0,
    "p75_bytes": 0,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   },
   ".github/copilot-instructions.md": {
    "count": 160,
    "median_bytes": 3658,
    "p25_bytes": 542,
    "p75_bytes": 8352,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   },
   "llms.txt": {
    "count": 17,
    "median_bytes": 3226,
    "p25_bytes": 2657,
    "p75_bytes": 5571,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   },
   "GEMINI.md": {
    "count": 21,
    "median_bytes": 116,
    "p25_bytes": 11,
    "p75_bytes": 298,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   },
   ".windsurfrules": {
    "count": 6,
    "median_bytes": 556,
    "p25_bytes": 252,
    "p75_bytes": 3380,
-   "date": "2026-11-08"
+   "date": "2026-11-09"
   }
  }
 }
