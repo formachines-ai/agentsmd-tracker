@@ -798,6 +798,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
         language_share = {}
         rows = []
         lv = agg["by_lang"].get(r.get("language") or "")
+        gh_links = []
         for s in PATHS:
             shown = s["path"] + ("/" if s["kind"] == "dir" else "")
             share = ""
@@ -830,6 +831,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
                 size = f"{f['size']:,} bytes" if f.get("size") else ("directory" if s["kind"] == "dir" else "—")
                 golink = go.href(r, s["path"], url)
                 files_json[s["path"]]["go_url"] = SITE_BASE + golink if golink.startswith("/") else golink
+                gh_links.append(f'<a href="{golink}" rel="nofollow">{esc(shown)}</a>')
                 openlink = f'<a class="openfile" href="{golink}" rel="nofollow">Open {esc(s["path"])} on GitHub</a>'
                 rows.append(f'<tr><td><code>{esc(shown)}</code><br>{openlink}{share}</td><td class="yes">yes</td><td>{size}</td><td><a href="{go.href(r, s["path"], url)}" rel="nofollow">open on GitHub</a></td></tr>')
             elif present is False:
@@ -840,9 +842,12 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
         checked = (sc or {}).get("checked", "—")
         lang_line = (f'<p><a href="/lang/{lang_slug(r["language"])}/">Other {esc(r["language"])} repos in the sample →</a></p>\n'
                      if r.get("language") else "")
+        files_line = (f'<p class="gh-files">Files on GitHub: {" · ".join(gh_links)}</p>' if gh_links
+                      else f'<p class="gh-files">No tracked files found on {esc(scan_date)}</p>')
         body = f"""<section>
 <p class="crumb"><a href="/">{esc(SITE_NAME)}</a> › repo</p>
 <h1>{esc(r['full_name'])}</h1>
+{files_line}
 <p class="lead">{esc(r['language'])} · {r['stars']:,} stars · default branch <code>{esc((sc or {}).get('default_branch') or r.get('default_branch') or 'main')}</code> · <a href="{esc(r.get('html_url') or GH_BASE + '/' + r['full_name'])}" rel="nofollow">repository on GitHub</a></p>
 <p class="muted">Scan status: {esc(status)} · last checked {esc(checked)} · <a href="/repo/{esc(r['owner'])}/{esc(r['name'])}/index.json">index.json</a></p>
 <div class="scroll"><table><thead><tr><th>Path</th><th>Present</th><th>Size</th><th>Link</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div>
