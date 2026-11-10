@@ -801,7 +801,8 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
         trend_note = (f'<p class="trend"><strong>{esc(TREND_PATH)}:</strong> {a:,} of {h0["scanned"]:,} ({pa} %) on {esc(h0["date"])} → '
                       f'{b:,} of {h1["scanned"]:,} ({pb} %) on {esc(h1["date"])}; {b - a:+d} repos, {round(pb - pa, 1):+.1f} pp over {days} days of history.</p>')
 
-    home_desc = STABLE_DESCRIPTION
+    home_desc = (f"{agg['counts'][PRIMARY_PATH]:,} of {total:,} sampled top GitHub repos have an AGENTS.md "
+                 f"(scan of {gen_raw[:10]}). Daily counts of AGENTS.md, CLAUDE.md, .cursorrules and more; facts only.")
     home_ld = {"@context": "https://schema.org", "@type": "Dataset", "name": f"{SITE_NAME}: agent-instruction files in top GitHub repositories",
                "description": home_desc, "url": SITE_BASE + "/", "license": "https://creativecommons.org/licenses/by/4.0/",
                "dateModified": updated, "isAccessibleForFree": True, "inLanguage": "en",
@@ -1065,7 +1066,7 @@ Latest (scan {generated}): {agg['counts'][PRIMARY_PATH]} of {total} scanned repo
 """)
     write_text(out / "robots.txt", f"User-agent: *\nAllow: /\nDisallow: /go/\n\nSitemap: {SITE_BASE}/sitemap.xml\n")
     write_text(out / "sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-               + "".join(f"<url><loc>{xml_escape(u)}</loc></url>\n" for u in urls) + "</urlset>\n")
+               + "".join(f"<url><loc>{xml_escape(u)}</loc><lastmod>{gen_raw[:10]}</lastmod></url>\n" for u in urls) + "</urlset>\n")
     write_text(out / "404.html", layout("Page not found — " + SITE_NAME, f"""<section>
 <h1>404 — page not found</h1>
 <p>This address does not exist on {esc(SITE_NAME)}. Addresses never change once published, so the link you followed was probably mistyped.</p>
