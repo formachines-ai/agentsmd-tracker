@@ -233,6 +233,16 @@
     "GEMINI.md": 1.1,
     ".windsurfrules": 0.3
    },
+   "share_pct": {
+    "AGENTS.md": 28.1,
+    "CLAUDE.md": 16.9,
+    ".cursorrules": 0.8,
+    ".cursor/rules": 1.8,
+    ".github/copilot-instructions.md": 8.5,
+    "llms.txt": 0.9,
+    "GEMINI.md": 1.1,
+    ".windsurfrules": 0.3
+   },
    "added": 0,
    "removed": 0
   },
@@ -261,6 +271,16 @@
     ".windsurfrules": 0.3
    },
    "pct": {
+    "AGENTS.md": 28.1,
+    "CLAUDE.md": 16.9,
+    ".cursorrules": 0.8,
+    ".cursor/rules": 1.8,
+    ".github/copilot-instructions.md": 8.5,
+    "llms.txt": 0.9,
+    "GEMINI.md": 1.1,
+    ".windsurfrules": 0.3
+   },
+   "share_pct": {
     "AGENTS.md": 28.1,
     "CLAUDE.md": 16.9,
     ".cursorrules": 0.8,
@@ -307,6 +327,16 @@
     "GEMINI.md": 1.1,
     ".windsurfrules": 0.3
    },
+   "share_pct": {
+    "AGENTS.md": 28.2,
+    "CLAUDE.md": 16.9,
+    ".cursorrules": 0.8,
+    ".cursor/rules": 1.8,
+    ".github/copilot-instructions.md": 8.4,
+    "llms.txt": 0.9,
+    "GEMINI.md": 1.1,
+    ".windsurfrules": 0.3
+   },
    "added": 2,
    "removed": 1
   },
@@ -335,6 +365,16 @@
     ".windsurfrules": 0.3
    },
    "pct": {
+    "AGENTS.md": 28.3,
+    "CLAUDE.md": 16.8,
+    ".cursorrules": 0.8,
+    ".cursor/rules": 1.8,
+    ".github/copilot-instructions.md": 8.4,
+    "llms.txt": 0.9,
+    "GEMINI.md": 1.1,
+    ".windsurfrules": 0.3
+   },
+   "share_pct": {
     "AGENTS.md": 28.3,
     "CLAUDE.md": 16.8,
     ".cursorrules": 0.8,
@@ -381,6 +421,16 @@
     "GEMINI.md": 1.1,
     ".windsurfrules": 0.3
    },
+   "share_pct": {
+    "AGENTS.md": 28.4,
+    "CLAUDE.md": 16.8,
+    ".cursorrules": 0.8,
+    ".cursor/rules": 1.8,
+    ".github/copilot-instructions.md": 8.4,
+    "llms.txt": 0.9,
+    "GEMINI.md": 1.1,
+    ".windsurfrules": 0.3
+   },
    "added": 2,
    "removed": 0
   },
@@ -409,6 +459,16 @@
     ".windsurfrules": 0.3
    },
    "pct": {
+    "AGENTS.md": 28.5,
+    "CLAUDE.md": 16.9,
+    ".cursorrules": 0.8,
+    ".cursor/rules": 1.8,
+    ".github/copilot-instructions.md": 8.4,
+    "llms.txt": 0.9,
+    "GEMINI.md": 1.1,
+    ".windsurfrules": 0.3
+   },
+   "share_pct": {
     "AGENTS.md": 28.5,
     "CLAUDE.md": 16.9,
     ".cursorrules": 0.8,
@@ -455,6 +515,16 @@
     "GEMINI.md": 1.1,
     ".windsurfrules": 0.3
    },
+   "share_pct": {
+    "AGENTS.md": 28.6,
+    "CLAUDE.md": 16.8,
+    ".cursorrules": 0.8,
+    ".cursor/rules": 1.8,
+    ".github/copilot-instructions.md": 8.3,
+    "llms.txt": 0.9,
+    "GEMINI.md": 1.1,
+    ".windsurfrules": 0.3
+   },
    "added": 1,
    "removed": 2
   },
@@ -483,6 +553,16 @@
     ".windsurfrules": 0.3
    },
    "pct": {
+    "AGENTS.md": 28.7,
+    "CLAUDE.md": 16.8,
+    ".cursorrules": 0.8,
+    ".cursor/rules": 1.8,
+    ".github/copilot-instructions.md": 8.3,
+    "llms.txt": 0.9,
+    "GEMINI.md": 1.1,
+    ".windsurfrules": 0.3
+   },
+   "share_pct": {
     "AGENTS.md": 28.7,
     "CLAUDE.md": 16.8,
     ".cursorrules": 0.8,
