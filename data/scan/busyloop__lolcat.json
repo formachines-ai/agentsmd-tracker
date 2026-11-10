@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-08T05:12:47Z",
+ "checked": "2026-11-10T04:02:01Z",
  "status": "ok",
  "default_branch": "master",
  "files": {
@@ -35,6 +35,5 @@
    "present": false,
    "size": null
   }
- },
- "last_error": "2026-11-09T05:28:52Z"
+ }
 }

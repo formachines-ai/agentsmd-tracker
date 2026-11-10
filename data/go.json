@@ -1,5 +1,5 @@
 {
- "next_id": 1136,
+ "next_id": 1138,
  "links": {
   "affaan-m/ECC/AGENTS.md": {
    "id": 1,
@@ -6809,6 +6809,18 @@
    "id": 1135,
    "url": "https://github.com/dotnet/maui/blob/main/AGENTS.md",
    "repo": "dotnet/maui",
+   "path": "AGENTS.md"
+  },
+  "protocolbuffers/protobuf/AGENTS.md": {
+   "id": 1136,
+   "url": "https://github.com/protocolbuffers/protobuf/blob/main/AGENTS.md",
+   "repo": "protocolbuffers/protobuf",
+   "path": "AGENTS.md"
+  },
+  "microsoft/playwright-mcp/AGENTS.md": {
+   "id": 1137,
+   "url": "https://github.com/microsoft/playwright-mcp/blob/main/AGENTS.md",
+   "repo": "microsoft/playwright-mcp",
    "path": "AGENTS.md"
   }
  }

@@ -6,7 +6,7 @@
  "stars": 32779,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-09T04:30:21Z",
+ "checked": "2026-11-10T04:37:36Z",
  "files": {
   "AGENTS.md": {
    "present": true,
@@ -16,7 +16,7 @@
     "count": 88,
     "total": 198,
     "pct": 44.4,
-    "date": "2026-11-09",
+    "date": "2026-11-10",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/"
    },
@@ -32,7 +32,7 @@
     "count": 55,
     "total": 198,
     "pct": 27.8,
-    "date": "2026-11-09",
+    "date": "2026-11-10",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/"
    }
@@ -45,7 +45,7 @@
     "count": 1,
     "total": 198,
     "pct": 0.5,
-    "date": "2026-11-09",
+    "date": "2026-11-10",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/"
    }
@@ -58,7 +58,7 @@
     "count": 5,
     "total": 198,
     "pct": 2.5,
-    "date": "2026-11-09",
+    "date": "2026-11-10",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/"
    }
@@ -71,7 +71,7 @@
     "count": 13,
     "total": 198,
     "pct": 6.6,
-    "date": "2026-11-09",
+    "date": "2026-11-10",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/"
    }
@@ -84,7 +84,7 @@
     "count": 3,
     "total": 198,
     "pct": 1.5,
-    "date": "2026-11-09",
+    "date": "2026-11-10",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/"
    }
@@ -97,7 +97,7 @@
     "count": 4,
     "total": 198,
     "pct": 2.0,
-    "date": "2026-11-09",
+    "date": "2026-11-10",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/"
    }
@@ -110,7 +110,7 @@
     "count": 1,
     "total": 198,
     "pct": 0.5,
-    "date": "2026-11-09",
+    "date": "2026-11-10",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/"
    }
@@ -121,49 +121,49 @@
    "count": 88,
    "total": 198,
    "pct": 44.4,
-   "date": "2026-11-09"
+   "date": "2026-11-10"
   },
   "CLAUDE.md": {
    "count": 55,
    "total": 198,
    "pct": 27.8,
-   "date": "2026-11-09"
+   "date": "2026-11-10"
   },
   ".cursorrules": {
    "count": 1,
    "total": 198,
    "pct": 0.5,
-   "date": "2026-11-09"
+   "date": "2026-11-10"
   },
   ".cursor/rules": {
    "count": 5,
    "total": 198,
    "pct": 2.5,
-   "date": "2026-11-09"
+   "date": "2026-11-10"
   },
   ".github/copilot-instructions.md": {
    "count": 13,
    "total": 198,
    "pct": 6.6,
-   "date": "2026-11-09"
+   "date": "2026-11-10"
   },
   "llms.txt": {
    "count": 3,
    "total": 198,
    "pct": 1.5,
-   "date": "2026-11-09"
+   "date": "2026-11-10"
   },
   "GEMINI.md": {
    "count": 4,
    "total": 198,
    "pct": 2.0,
-   "date": "2026-11-09"
+   "date": "2026-11-10"
   },
   ".windsurfrules": {
    "count": 1,
    "total": 198,
    "pct": 0.5,
-   "date": "2026-11-09"
+   "date": "2026-11-10"
   }
  },
  "page": "https://agentsmd.formachines.ai/repo/lbjlaq/Antigravity-Manager/",

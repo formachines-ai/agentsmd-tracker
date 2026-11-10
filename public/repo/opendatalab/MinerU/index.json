@@ -6,17 +6,17 @@
  "stars": 83005,
  "default_branch": "master",
  "status": "ok",
- "checked": "2026-11-09T04:06:03Z",
+ "checked": "2026-11-10T04:12:57Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 9,
+   "size": 8523,
    "url": "https://github.com/opendatalab/MinerU/blob/master/AGENTS.md",
    "lang_share": {
     "count": 66,
     "total": 197,
     "pct": 33.5,
-    "date": "2026-11-09",
+    "date": "2026-11-10",
     "language": "Python",
     "page": "https://agentsmd.formachines.ai/lang/python/"
    },
@@ -25,20 +25,17 @@
    "go_url": "https://agentsmd.formachines.ai/go/723/"
   },
   "CLAUDE.md": {
-   "present": true,
-   "size": 8523,
-   "url": "https://github.com/opendatalab/MinerU/blob/master/CLAUDE.md",
+   "present": false,
+   "size": null,
+   "url": null,
    "lang_share": {
-    "count": 39,
+    "count": 38,
     "total": 197,
-    "pct": 19.8,
-    "date": "2026-11-09",
+    "pct": 19.3,
+    "date": "2026-11-10",
     "language": "Python",
     "page": "https://agentsmd.formachines.ai/lang/python/"
-   },
-   "first_seen": "2026-11-02",
-   "first_seen_at_first_scan": true,
-   "go_url": "https://agentsmd.formachines.ai/go/724/"
+   }
   },
   ".cursorrules": {
    "present": false,
@@ -48,7 +45,7 @@
     "count": 3,
     "total": 197,
     "pct": 1.5,
-    "date": "2026-11-09",
+    "date": "2026-11-10",
     "language": "Python",
     "page": "https://agentsmd.formachines.ai/lang/python/"
    }
@@ -61,7 +58,7 @@
     "count": 6,
     "total": 197,
     "pct": 3.0,
-    "date": "2026-11-09",
+    "date": "2026-11-10",
     "language": "Python",
     "page": "https://agentsmd.formachines.ai/lang/python/"
    }
@@ -74,7 +71,7 @@
     "count": 16,
     "total": 197,
     "pct": 8.1,
-    "date": "2026-11-09",
+    "date": "2026-11-10",
     "language": "Python",
     "page": "https://agentsmd.formachines.ai/lang/python/"
    }
@@ -87,7 +84,7 @@
     "count": 3,
     "total": 197,
     "pct": 1.5,
-    "date": "2026-11-09",
+    "date": "2026-11-10",
     "language": "Python",
     "page": "https://agentsmd.formachines.ai/lang/python/"
    }
@@ -100,7 +97,7 @@
     "count": 4,
     "total": 197,
     "pct": 2.0,
-    "date": "2026-11-09",
+    "date": "2026-11-10",
     "language": "Python",
     "page": "https://agentsmd.formachines.ai/lang/python/"
    }
@@ -113,7 +110,7 @@
     "count": 1,
     "total": 197,
     "pct": 0.5,
-    "date": "2026-11-09",
+    "date": "2026-11-10",
     "language": "Python",
     "page": "https://agentsmd.formachines.ai/lang/python/"
    }
@@ -124,49 +121,49 @@
    "count": 66,
    "total": 197,
    "pct": 33.5,
-   "date": "2026-11-09"
+   "date": "2026-11-10"
   },
   "CLAUDE.md": {
-   "count": 39,
+   "count": 38,
    "total": 197,
-   "pct": 19.8,
-   "date": "2026-11-09"
+   "pct": 19.3,
+   "date": "2026-11-10"
   },
   ".cursorrules": {
    "count": 3,
    "total": 197,
    "pct": 1.5,
-   "date": "2026-11-09"
+   "date": "2026-11-10"
   },
   ".cursor/rules": {
    "count": 6,
    "total": 197,
    "pct": 3.0,
-   "date": "2026-11-09"
+   "date": "2026-11-10"
   },
   ".github/copilot-instructions.md": {
    "count": 16,
    "total": 197,
    "pct": 8.1,
-   "date": "2026-11-09"
+   "date": "2026-11-10"
   },
   "llms.txt": {
    "count": 3,
    "total": 197,
    "pct": 1.5,
-   "date": "2026-11-09"
+   "date": "2026-11-10"
   },
   "GEMINI.md": {
    "count": 4,
    "total": 197,
    "pct": 2.0,
-   "date": "2026-11-09"
+   "date": "2026-11-10"
   },
   ".windsurfrules": {
    "count": 1,
    "total": 197,
    "pct": 0.5,
-   "date": "2026-11-09"
+   "date": "2026-11-10"
   }
  },
  "page": "https://agentsmd.formachines.ai/repo/opendatalab/MinerU/",

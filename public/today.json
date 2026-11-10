@@ -1,35 +1,56 @@
 {
  "schema_version": 2,
  "site": "https://agentsmd.formachines.ai",
- "date": "2026-11-09",
- "generated": "2026-11-09T05:30:07Z",
+ "date": "2026-11-10",
+ "generated": "2026-11-10T05:19:42Z",
  "license": "CC BY 4.0",
  "added": [
   {
-   "full_name": "gethomepage/homepage",
-   "owner": "gethomepage",
-   "name": "homepage",
-   "language": "JavaScript",
-   "stars": 33484,
+   "full_name": "protocolbuffers/protobuf",
+   "owner": "protocolbuffers",
+   "name": "protobuf",
+   "language": "C++",
+   "stars": 72149,
    "path": "AGENTS.md",
-   "size": 4377,
-   "url": "https://github.com/gethomepage/homepage/blob/dev/AGENTS.md"
+   "size": 8108,
+   "url": "https://github.com/protocolbuffers/protobuf/blob/main/AGENTS.md"
   },
   {
-   "full_name": "dotnet/maui",
-   "owner": "dotnet",
-   "name": "maui",
-   "language": "C#",
-   "stars": 23330,
+   "full_name": "microsoft/playwright-mcp",
+   "owner": "microsoft",
+   "name": "playwright-mcp",
+   "language": "TypeScript",
+   "stars": 38996,
    "path": "AGENTS.md",
-   "size": 1513,
-   "url": "https://github.com/dotnet/maui/blob/main/AGENTS.md"
+   "size": 4023,
+   "url": "https://github.com/microsoft/playwright-mcp/blob/main/AGENTS.md"
   }
  ],
- "removed": [],
+ "removed": [
+  {
+   "full_name": "opendatalab/MinerU",
+   "owner": "opendatalab",
+   "name": "MinerU",
+   "language": "Python",
+   "stars": 83005,
+   "path": "CLAUDE.md",
+   "size": null,
+   "url": "https://github.com/opendatalab/MinerU/blob/master/CLAUDE.md"
+  },
+  {
+   "full_name": "microsoft/playwright-mcp",
+   "owner": "microsoft",
+   "name": "playwright-mcp",
+   "language": "TypeScript",
+   "stars": 38996,
+   "path": "CLAUDE.md",
+   "size": null,
+   "url": "https://github.com/microsoft/playwright-mcp/blob/main/CLAUDE.md"
+  }
+ ],
  "counts": {
-  "AGENTS.md": 551,
-  "CLAUDE.md": 323,
+  "AGENTS.md": 553,
+  "CLAUDE.md": 321,
   ".cursorrules": 16,
   ".cursor/rules": 34,
   ".github/copilot-instructions.md": 160,

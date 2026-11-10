@@ -1,0 +1,175 @@
+{
+ "date": "2026-11-10",
+ "added": [
+  {
+   "full_name": "protocolbuffers/protobuf",
+   "owner": "protocolbuffers",
+   "name": "protobuf",
+   "language": "C++",
+   "stars": 72149,
+   "path": "AGENTS.md",
+   "size": 8108,
+   "url": "https://github.com/protocolbuffers/protobuf/blob/main/AGENTS.md"
+  },
+  {
+   "full_name": "microsoft/playwright-mcp",
+   "owner": "microsoft",
+   "name": "playwright-mcp",
+   "language": "TypeScript",
+   "stars": 38996,
+   "path": "AGENTS.md",
+   "size": 4023,
+   "url": "https://github.com/microsoft/playwright-mcp/blob/main/AGENTS.md"
+  }
+ ],
+ "removed": [
+  {
+   "full_name": "opendatalab/MinerU",
+   "owner": "opendatalab",
+   "name": "MinerU",
+   "language": "Python",
+   "stars": 83005,
+   "path": "CLAUDE.md",
+   "size": null,
+   "url": "https://github.com/opendatalab/MinerU/blob/master/CLAUDE.md"
+  },
+  {
+   "full_name": "microsoft/playwright-mcp",
+   "owner": "microsoft",
+   "name": "playwright-mcp",
+   "language": "TypeScript",
+   "stars": 38996,
+   "path": "CLAUDE.md",
+   "size": null,
+   "url": "https://github.com/microsoft/playwright-mcp/blob/main/CLAUDE.md"
+  }
+ ],
+ "generated": "2026-11-10T05:19:42Z",
+ "sample": 1922,
+ "scanned": 1922,
+ "pending": 0,
+ "unreachable": 0,
+ "counts": {
+  "AGENTS.md": 553,
+  "CLAUDE.md": 321,
+  ".cursorrules": 16,
+  ".cursor/rules": 34,
+  ".github/copilot-instructions.md": 160,
+  "llms.txt": 17,
+  "GEMINI.md": 21,
+  ".windsurfrules": 6
+ },
+ "any": 682,
+ "by_language": {
+  "C#": {
+   "repos": 184,
+   "AGENTS.md": 36,
+   "CLAUDE.md": 21,
+   ".cursorrules": 2,
+   ".cursor/rules": 0,
+   ".github/copilot-instructions.md": 29,
+   "llms.txt": 1,
+   "GEMINI.md": 2,
+   ".windsurfrules": 2
+  },
+  "C++": {
+   "repos": 191,
+   "AGENTS.md": 53,
+   "CLAUDE.md": 18,
+   ".cursorrules": 3,
+   ".cursor/rules": 1,
+   ".github/copilot-instructions.md": 22,
+   "llms.txt": 0,
+   "GEMINI.md": 2,
+   ".windsurfrules": 0
+  },
+  "Go": {
+   "repos": 193,
+   "AGENTS.md": 65,
+   "CLAUDE.md": 45,
+   ".cursorrules": 1,
+   ".cursor/rules": 2,
+   ".github/copilot-instructions.md": 16,
+   "llms.txt": 3,
+   "GEMINI.md": 2,
+   ".windsurfrules": 0
+  },
+  "Java": {
+   "repos": 193,
+   "AGENTS.md": 47,
+   "CLAUDE.md": 20,
+   ".cursorrules": 0,
+   ".cursor/rules": 1,
+   ".github/copilot-instructions.md": 12,
+   "llms.txt": 0,
+   "GEMINI.md": 0,
+   ".windsurfrules": 0
+  },
+  "JavaScript": {
+   "repos": 191,
+   "AGENTS.md": 35,
+   "CLAUDE.md": 22,
+   ".cursorrules": 0,
+   ".cursor/rules": 3,
+   ".github/copilot-instructions.md": 10,
+   "llms.txt": 3,
+   "GEMINI.md": 1,
+   ".windsurfrules": 0
+  },
+  "PHP": {
+   "repos": 191,
+   "AGENTS.md": 26,
+   "CLAUDE.md": 20,
+   ".cursorrules": 0,
+   ".cursor/rules": 4,
+   ".github/copilot-instructions.md": 11,
+   "llms.txt": 0,
+   "GEMINI.md": 2,
+   ".windsurfrules": 0
+  },
+  "Python": {
+   "repos": 197,
+   "AGENTS.md": 66,
+   "CLAUDE.md": 38,
+   ".cursorrules": 3,
+   ".cursor/rules": 6,
+   ".github/copilot-instructions.md": 16,
+   "llms.txt": 3,
+   "GEMINI.md": 4,
+   ".windsurfrules": 1
+  },
+  "Ruby": {
+   "repos": 189,
+   "AGENTS.md": 35,
+   "CLAUDE.md": 20,
+   ".cursorrules": 2,
+   ".cursor/rules": 3,
+   ".github/copilot-instructions.md": 12,
+   "llms.txt": 1,
+   "GEMINI.md": 1,
+   ".windsurfrules": 1
+  },
+  "Rust": {
+   "repos": 198,
+   "AGENTS.md": 88,
+   "CLAUDE.md": 55,
+   ".cursorrules": 1,
+   ".cursor/rules": 5,
+   ".github/copilot-instructions.md": 13,
+   "llms.txt": 3,
+   "GEMINI.md": 4,
+   ".windsurfrules": 1
+  },
+  "TypeScript": {
+   "repos": 195,
+   "AGENTS.md": 102,
+   "CLAUDE.md": 62,
+   ".cursorrules": 4,
+   ".cursor/rules": 9,
+   ".github/copilot-instructions.md": 19,
+   "llms.txt": 3,
+   "GEMINI.md": 3,
+   ".windsurfrules": 1
+  }
+ }
+}

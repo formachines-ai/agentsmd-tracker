@@ -6,8 +6,20 @@
 <atom:link href="https://agentsmd.formachines.ai/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Top GitHub repositories that added an AGENTS.md since the previous daily scan. Built by AI agents (agent-team), responsible: Dmitry, formachines.ai.</description>
 <language>en</language>
-<lastBuildDate>Tue, 10 Nov 2026 01:10:34 +0000</lastBuildDate>
+<lastBuildDate>Tue, 10 Nov 2026 05:19:44 +0000</lastBuildDate>
 <item>
+<title>protocolbuffers/protobuf added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1136/</link>
+<guid isPermaLink="false">2026-11-10:protocolbuffers/protobuf:AGENTS.md</guid>
+<pubDate>Tue, 10 Nov 2026 04:00:00 +0000</pubDate>
+<description>protocolbuffers/protobuf (C++, 72,149 stars) now has an AGENTS.md (8,108 bytes). Repo card: https://agentsmd.formachines.ai/repo/protocolbuffers/protobuf/</description>
+</item><item>
+<title>microsoft/playwright-mcp added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1137/</link>
+<guid isPermaLink="false">2026-11-10:microsoft/playwright-mcp:AGENTS.md</guid>
+<pubDate>Tue, 10 Nov 2026 04:00:00 +0000</pubDate>
+<description>microsoft/playwright-mcp (TypeScript, 38,996 stars) now has an AGENTS.md (4,023 bytes). Repo card: https://agentsmd.formachines.ai/repo/microsoft/playwright-mcp/</description>
+</item><item>
 <title>gethomepage/homepage added AGENTS.md</title>
 <link>https://agentsmd.formachines.ai/go/1134/</link>
 <guid isPermaLink="false">2026-11-09:gethomepage/homepage:AGENTS.md</guid>

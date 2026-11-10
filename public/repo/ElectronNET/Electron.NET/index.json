@@ -6,7 +6,7 @@
  "stars": 7600,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-09T05:12:21Z",
+ "checked": "2026-11-10T05:18:04Z",
  "files": {
   "AGENTS.md": {
    "present": false,
@@ -16,7 +16,7 @@
     "count": 36,
     "total": 184,
     "pct": 19.6,
-    "date": "2026-11-09",
+    "date": "2026-11-10",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    }
@@ -29,7 +29,7 @@
     "count": 21,
     "total": 184,
     "pct": 11.4,
-    "date": "2026-11-09",
+    "date": "2026-11-10",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    }
@@ -42,7 +42,7 @@
     "count": 2,
     "total": 184,
     "pct": 1.1,
-    "date": "2026-11-09",
+    "date": "2026-11-10",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    }
@@ -55,7 +55,7 @@
     "count": 0,
     "total": 184,
     "pct": 0.0,
-    "date": "2026-11-09",
+    "date": "2026-11-10",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    }
@@ -68,7 +68,7 @@
     "count": 29,
     "total": 184,
     "pct": 15.8,
-    "date": "2026-11-09",
+    "date": "2026-11-10",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    }
@@ -81,7 +81,7 @@
     "count": 1,
     "total": 184,
     "pct": 0.5,
-    "date": "2026-11-09",
+    "date": "2026-11-10",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    }
@@ -94,7 +94,7 @@
     "count": 2,
     "total": 184,
     "pct": 1.1,
-    "date": "2026-11-09",
+    "date": "2026-11-10",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    }
@@ -107,7 +107,7 @@
     "count": 2,
     "total": 184,
     "pct": 1.1,
-    "date": "2026-11-09",
+    "date": "2026-11-10",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    }
@@ -118,49 +118,49 @@
    "count": 36,
    "total": 184,
    "pct": 19.6,
-   "date": "2026-11-09"
+   "date": "2026-11-10"
   },
   "CLAUDE.md": {
    "count": 21,
    "total": 184,
    "pct": 11.4,
-   "date": "2026-11-09"
+   "date": "2026-11-10"
   },
   ".cursorrules": {
    "count": 2,
    "total": 184,
    "pct": 1.1,
-   "date": "2026-11-09"
+   "date": "2026-11-10"
   },
   ".cursor/rules": {
    "count": 0,
    "total": 184,
    "pct": 0.0,
-   "date": "2026-11-09"
+   "date": "2026-11-10"
   },
   ".github/copilot-instructions.md": {
    "count": 29,
    "total": 184,
    "pct": 15.8,
-   "date": "2026-11-09"
+   "date": "2026-11-10"
   },
   "llms.txt": {
    "count": 1,
    "total": 184,
    "pct": 0.5,
-   "date": "2026-11-09"
+   "date": "2026-11-10"
   },
   "GEMINI.md": {
    "count": 2,
    "total": 184,
    "pct": 1.1,
-   "date": "2026-11-09"
+   "date": "2026-11-10"
   },
   ".windsurfrules": {
    "count": 2,
    "total": 184,
    "pct": 1.1,
-   "date": "2026-11-09"
+   "date": "2026-11-10"
   }
  },
  "page": "https://agentsmd.formachines.ai/repo/ElectronNET/Electron.NET/",

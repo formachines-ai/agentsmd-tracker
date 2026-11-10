@@ -6,17 +6,17 @@
  "stars": 37520,
  "default_branch": "master",
  "status": "ok",
- "checked": "2026-11-09T04:25:15Z",
+ "checked": "2026-11-10T04:32:29Z",
  "files": {
   "AGENTS.md": {
    "present": false,
    "size": null,
    "url": null,
    "lang_share": {
-    "count": 52,
+    "count": 53,
     "total": 191,
-    "pct": 27.2,
-    "date": "2026-11-09",
+    "pct": 27.7,
+    "date": "2026-11-10",
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/"
    }
@@ -29,7 +29,7 @@
     "count": 18,
     "total": 191,
     "pct": 9.4,
-    "date": "2026-11-09",
+    "date": "2026-11-10",
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/"
    }
@@ -42,7 +42,7 @@
     "count": 3,
     "total": 191,
     "pct": 1.6,
-    "date": "2026-11-09",
+    "date": "2026-11-10",
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/"
    }
@@ -55,7 +55,7 @@
     "count": 1,
     "total": 191,
     "pct": 0.5,
-    "date": "2026-11-09",
+    "date": "2026-11-10",
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/"
    }
@@ -68,7 +68,7 @@
     "count": 22,
     "total": 191,
     "pct": 11.5,
-    "date": "2026-11-09",
+    "date": "2026-11-10",
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/"
    }
@@ -81,7 +81,7 @@
     "count": 0,
     "total": 191,
     "pct": 0.0,
-    "date": "2026-11-09",
+    "date": "2026-11-10",
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/"
    }
@@ -94,7 +94,7 @@
     "count": 2,
     "total": 191,
     "pct": 1.0,
-    "date": "2026-11-09",
+    "date": "2026-11-10",
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/"
    }
@@ -107,7 +107,7 @@
     "count": 0,
     "total": 191,
     "pct": 0.0,
-    "date": "2026-11-09",
+    "date": "2026-11-10",
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/"
    }
@@ -115,52 +115,52 @@
  },
  "language_share": {
   "AGENTS.md": {
-   "count": 52,
+   "count": 53,
    "total": 191,
-   "pct": 27.2,
-   "date": "2026-11-09"
+   "pct": 27.7,
+   "date": "2026-11-10"
   },
   "CLAUDE.md": {
    "count": 18,
    "total": 191,
    "pct": 9.4,
-   "date": "2026-11-09"
+   "date": "2026-11-10"
   },
   ".cursorrules": {
    "count": 3,
    "total": 191,
    "pct": 1.6,
-   "date": "2026-11-09"
+   "date": "2026-11-10"
   },
   ".cursor/rules": {
    "count": 1,
    "total": 191,
    "pct": 0.5,
-   "date": "2026-11-09"
+   "date": "2026-11-10"
   },
   ".github/copilot-instructions.md": {
    "count": 22,
    "total": 191,
    "pct": 11.5,
-   "date": "2026-11-09"
+   "date": "2026-11-10"
   },
   "llms.txt": {
    "count": 0,
    "total": 191,
    "pct": 0.0,
-   "date": "2026-11-09"
+   "date": "2026-11-10"
   },
   "GEMINI.md": {
    "count": 2,
    "total": 191,
    "pct": 1.0,
-   "date": "2026-11-09"
+   "date": "2026-11-10"
   },
   ".windsurfrules": {
    "count": 0,
    "total": 191,
    "pct": 0.0,
-   "date": "2026-11-09"
+   "date": "2026-11-10"
   }
  },
  "page": "https://agentsmd.formachines.ai/repo/google-ai-edge/mediapipe/",
