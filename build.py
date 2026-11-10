@@ -137,6 +137,9 @@ def scan_file_for(repo: dict) -> Path:
     return SCAN_DIR / f"{repo['owner']}__{repo['name']}.json"
 
 
+LANG_NEIGHBOURS = 5   # same-language cards linked from each repo card
+
+
 def lang_slug(lang: str) -> str:
     s = lang.lower().replace("++", "-plus-plus").replace("#", "-sharp")
     return re.sub(r"[^a-z0-9]+", "-", s).strip("-") or "other"
@@ -817,6 +820,9 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
     for d in history:
         for x in d.get("added", []):
             added_on.setdefault((x["full_name"], x["path"]), d["date"])
+    ok_by_lang: dict[str, list] = {}
+    for r_ in sorted(agg["ok"], key=lambda r: r["full_name"].lower()):
+        ok_by_lang.setdefault(r_["language"], []).append(r_)
     for r in sorted(repos, key=lambda r: r["full_name"].lower()):
         sc = scans.get(r["full_name"])
         rdir = out / "repo" / r["owner"] / r["name"]
@@ -866,8 +872,20 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
                 rows.append(f'<tr><td><code>{esc(shown)}</code>{share}</td><td class="muted">not checked yet</td><td>—</td><td></td></tr>')
         status = (sc or {}).get("status", "pending")
         checked = (sc or {}).get("checked", "—")
-        lang_line = (f'<p><a href="/lang/{lang_slug(r["language"])}/">Other {esc(r["language"])} repos in the sample →</a></p>\n'
-                     if r.get("language") else "")
+        lang_line = ""
+        if r.get("language"):
+            peers = [x for x in ok_by_lang.get(r["language"], []) if x["full_name"] != r["full_name"]]
+            key = r["full_name"].lower()
+            after = [x for x in peers if x["full_name"].lower() > key]
+            near = (after + [x for x in peers if x["full_name"].lower() <= key])[:LANG_NEIGHBOURS]
+            lis = []
+            for x in near:
+                has = ((scans.get(x["full_name"]) or {}).get("files", {}).get(PRIMARY_PATH) or {}).get("present")
+                lis.append(f'<li><a href="/repo/{esc(x["owner"])}/{esc(x["name"])}/">{esc(x["full_name"])}</a> · AGENTS.md: {"yes" if has else "no"}</li>')
+            lang_line = (f'<section class="lang-peers"><h2>Other {esc(r["language"])} repos in the sample</h2>\n'
+                         f'<p><a href="/lang/{lang_slug(r["language"])}/">All {esc(r["language"])} repos in the sample →</a></p>\n'
+                         + (f'<p class="muted">Next {len(near)} by owner/name (alphabetical, wrapping around) — not a ranking.</p>\n<ul class="plain">{"".join(lis)}</ul>' if lis else "")
+                         + '</section>\n')
         files_line = (f'<p class="gh-files">Files on GitHub: {" · ".join(gh_links)}</p>' if gh_links
                       else f'<p class="gh-files">No tracked files found on {esc(scan_date)}</p>')
         body = f"""<section>
@@ -877,8 +895,9 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
 <p class="lead">{esc(r['language'])} · {r['stars']:,} stars · default branch <code>{esc((sc or {}).get('default_branch') or r.get('default_branch') or 'main')}</code> · <a href="{esc(r.get('html_url') or GH_BASE + '/' + r['full_name'])}" rel="nofollow">repository on GitHub</a></p>
 <p class="muted">Scan status: {esc(status)} · last checked {esc(checked)} · <a href="/repo/{esc(r['owner'])}/{esc(r['name'])}/index.json">index.json</a></p>
 <div class="scroll"><table><thead><tr><th>Path</th><th>Present</th><th>Size</th><th>Link</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div>
-{lang_line}{feedback_links(r)}
+{feedback_links(r)}
 <p class="muted">Only presence, size and a link are published; the file contents belong to the repository and are not reproduced here.</p>
+{lang_line}
 </section>"""
         card_title, card_desc = repo_meta(r, sc, language_share.get(PRIMARY_PATH))
         write_text(rdir / "index.html", layout(card_title, body, updated, title_max=CARD_TITLE_MAX,
