@@ -51,6 +51,7 @@ STATIC_DIR = ROOT / "static"                       # files copied verbatim into 
 
 SITE_NAME = "AGENTS.md Tracker"
 TITLE_MAX = 70
+CARD_TITLE_MAX = 120  # repo cards: full 'owner/name: AGENTS.md yes|no, CLAUDE.md yes|no (Lang), site' title
 DESC_MAX = 160
 DEFAULT_DESCRIPTION = (f"{SITE_NAME}: daily count of AGENTS.md, CLAUDE.md, .cursorrules, copilot-instructions.md, "
                        "llms.txt and other agent-instruction files in top GitHub repos.")
@@ -489,9 +490,34 @@ def jsonld_block(data: dict) -> str:
     return '<script type="application/ld+json">' + json.dumps(data, ensure_ascii=False).replace("<", "\\u003c") + "</script>"
 
 
+def repo_meta(r: dict, sc: dict | None, lang_agents: dict | None) -> tuple[str, str]:
+    """Unique <title> and meta description of a repo card, built from the card's own data."""
+    files = (sc or {}).get("files", {})
+    present = [p["path"] for p in PATHS if files.get(p["path"], {}).get("present")]
+    checked = bool(files) and all(files.get(p["path"], {}).get("present") is not None for p in PATHS)
+    lang = r.get("language") or ""
+    yn = lambda path: "yes" if path in present else ("no" if checked else "not checked")
+    title = f"{r['full_name']}: AGENTS.md {yn('AGENTS.md')}, CLAUDE.md {yn('CLAUDE.md')}"
+    title += (f" ({lang}), " if lang else ", ") + SITE_NAME
+    if not present:
+        has = f"{r['full_name']} has none of the 8 tracked files." if checked else f"{r['full_name']}: tracked files not checked yet."
+    elif len(present) == 1:
+        has = f"{r['full_name']} has {present[0]}."
+    else:
+        has = f"{r['full_name']} has {', '.join(present[:-1])} and {present[-1]}."
+    tail = " Scan data, links to GitHub."
+    share = ""
+    if lang_agents:
+        share = f" {lang_agents['pct']} % of top {lang} repos have AGENTS.md on {lang_agents['date']}."
+    desc = has + share + tail
+    if len(desc) > DESC_MAX:
+        desc = has + share
+    return title, desc
+
+
 def layout(title: str, body: str, updated: str, *, description: str = "", canonical: str = "", extra_head: str = "",
-           jsonld: dict | None = None) -> str:
-    title = clamp(title, TITLE_MAX)
+           jsonld: dict | None = None, title_max: int = TITLE_MAX) -> str:
+    title = clamp(title, title_max)
     desc = clamp(description or DEFAULT_DESCRIPTION, DESC_MAX)
     canon = f'<link rel="canonical" href="{esc(canonical)}">' if canonical else ""
     og = (f'<meta property="og:title" content="{esc(title)}">\n<meta property="og:description" content="{esc(desc)}">\n'
@@ -854,8 +880,9 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
 {lang_line}{feedback_links(r)}
 <p class="muted">Only presence, size and a link are published; the file contents belong to the repository and are not reproduced here.</p>
 </section>"""
-        write_text(rdir / "index.html", layout(f"{r['full_name']} — {SITE_NAME}", body, updated,
-                                              description=f"Does {r['full_name']} have AGENTS.md, CLAUDE.md, .cursorrules, copilot-instructions.md or llms.txt? Daily check by {SITE_NAME}.",
+        card_title, card_desc = repo_meta(r, sc, language_share.get(PRIMARY_PATH))
+        write_text(rdir / "index.html", layout(card_title, body, updated, title_max=CARD_TITLE_MAX,
+                                              description=card_desc,
                                               canonical=f"{SITE_BASE}/repo/{r['owner']}/{r['name']}/",
                                               jsonld=webpage_ld(f"{r['full_name']} — {SITE_NAME}", f"{SITE_BASE}/repo/{r['owner']}/{r['name']}/", updated)))
         for d in ("up", "down"):
