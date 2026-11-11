@@ -1040,8 +1040,13 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
 <p class="muted">Sorted alphabetically by owner/name — not a ranking.</p>
 {agents_sec}<div class="scroll"><table><thead><tr><th>Repository</th>{heads}</tr></thead><tbody>{''.join(trs)}</tbody></table></div>
 </section>"""
-        write_text(out / "lang" / slug / "index.html", layout(f"{lang} repos — {SITE_NAME}", body, updated,
-                   description=f"Which sampled {lang} repositories have AGENTS.md, CLAUDE.md, .cursorrules and other agent instruction files. Dated numbers on the page and in /stats.json.",
+        l_day = (today.get("generated") or (history[-1].get("generated") if history else None) or updated)[:10]
+        l_n, l_m, l_c = v[PRIMARY_PATH], v["repos"], v["CLAUDE.md"]
+        l_title = f"{lang}: AGENTS.md in {l_n} of {l_m} top repos ({pct(l_n, l_m)} %) on {l_day}, {SITE_NAME}"
+        l_desc = (f"{lang}: AGENTS.md in {l_n} of {l_m} top repos ({pct(l_n, l_m)} %), CLAUDE.md in {pct(l_c, l_m)} %, "
+                  f"scan of {l_day}. Scan data, links to GitHub.")
+        write_text(out / "lang" / slug / "index.html", layout(l_title, body, updated, title_max=CARD_TITLE_MAX,
+                   description=l_desc,
                    canonical=f"{SITE_BASE}/lang/{slug}/",
                    jsonld=webpage_ld(f"{lang} repos — {SITE_NAME}", f"{SITE_BASE}/lang/{slug}/", updated)))
         urls.append(f"{SITE_BASE}/lang/{slug}/")
