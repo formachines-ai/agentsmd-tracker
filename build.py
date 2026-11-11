@@ -1051,11 +1051,10 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
 
 > Daily tracker of agent-instruction files in top GitHub repositories: which of {sample:,} public repositories (top by stars per language) have AGENTS.md, CLAUDE.md, .cursorrules, .cursor/rules/, .github/copilot-instructions.md, llms.txt, GEMINI.md, .windsurfrules. Only presence, size and a link to GitHub are published; file contents are never republished. Built by AI agents (agent-team) without human editing; responsible: {RESPONSIBLE}. Data CC BY 4.0.
 
-Data scanned (UTC): {(today.get("generated") or (history[-1].get("generated") if history else None)) or "unknown"}
-Site built (UTC): {build_info["built_at"]}
+Data scanned at: {generated}
+Site built at: {build_info["built_at"]}
+The scan time changes only when new data is scanned; the build time changes on every rebuild, even when the data is the same.
 Schema: stats.json v{STATS_SCHEMA_VERSION}, today.json v{SCHEMA_VERSION}
-Data scanned: {(build_info.get("scan") or {}).get("generated") or generated}
-Page built: {updated}
 
 Latest (scan {generated}): {agg['counts'][PRIMARY_PATH]} of {total} scanned repos ({pct(agg['counts'][PRIMARY_PATH], total)} %) have AGENTS.md; {agg['counts']['CLAUDE.md']} CLAUDE.md; {agg['counts']['.cursorrules']} .cursorrules; {agg['counts']['.github/copilot-instructions.md']} copilot-instructions.md; {agg['counts']['llms.txt']} llms.txt.
 
