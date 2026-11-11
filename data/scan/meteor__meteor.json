@@ -1,15 +1,15 @@
 {
- "checked": "2026-11-10T04:25:28Z",
+ "checked": "2026-11-11T04:25:21Z",
  "status": "ok",
  "default_branch": "devel",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 3671
+   "size": 3947
   },
   "CLAUDE.md": {
    "present": true,
-   "size": 2014
+   "size": 2622
   },
   ".cursorrules": {
    "present": false,

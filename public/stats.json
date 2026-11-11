@@ -1,11 +1,11 @@
 {
  "schema_version": 3,
  "site": "https://agentsmd.formachines.ai",
- "generated": "2026-11-10T05:19:42Z",
+ "generated": "2026-11-11T05:19:13Z",
  "license": "CC BY 4.0",
  "data_delayed": false,
  "method": "Top-by-stars sample of public repositories per language; one HEAD request per tracked path on the default branch; only presence and size are recorded, never file contents.",
- "attribution": "AGENTS.md Tracker, agentsmd.formachines.ai, 2026-11-10, CC BY 4.0",
+ "attribution": "AGENTS.md Tracker, agentsmd.formachines.ai, 2026-11-11, CC BY 4.0",
  "sample": {
   "target_per_language": 200,
   "languages": [
@@ -56,22 +56,22 @@
   ".windsurfrules"
  ],
  "counts": {
-  "AGENTS.md": 553,
+  "AGENTS.md": 557,
   "CLAUDE.md": 321,
   ".cursorrules": 16,
-  ".cursor/rules": 34,
-  ".github/copilot-instructions.md": 160,
+  ".cursor/rules": 35,
+  ".github/copilot-instructions.md": 158,
   "llms.txt": 17,
   "GEMINI.md": 21,
-  ".windsurfrules": 6
+  ".windsurfrules": 5
  },
- "any": 682,
+ "any": 685,
  "shares": {
-  "AGENTS.md": 28.8,
+  "AGENTS.md": 29.0,
   "CLAUDE.md": 16.7,
   ".cursorrules": 0.8,
   ".cursor/rules": 1.8,
-  ".github/copilot-instructions.md": 8.3,
+  ".github/copilot-instructions.md": 8.2,
   "llms.txt": 0.9,
   "GEMINI.md": 1.1,
   ".windsurfrules": 0.3
@@ -87,15 +87,15 @@
    ".github/copilot-instructions.md": 29,
    "llms.txt": 1,
    "GEMINI.md": 2,
-   ".windsurfrules": 2
+   ".windsurfrules": 1
   },
   "C++": {
    "repos": 191,
-   "any": 67,
-   "AGENTS.md": 53,
+   "any": 69,
+   "AGENTS.md": 55,
    "CLAUDE.md": 18,
    ".cursorrules": 3,
-   ".cursor/rules": 1,
+   ".cursor/rules": 2,
    ".github/copilot-instructions.md": 22,
    "llms.txt": 0,
    "GEMINI.md": 2,
@@ -103,12 +103,12 @@
   },
   "Go": {
    "repos": 193,
-   "any": 82,
+   "any": 81,
    "AGENTS.md": 65,
    "CLAUDE.md": 45,
    ".cursorrules": 1,
    ".cursor/rules": 2,
-   ".github/copilot-instructions.md": 16,
+   ".github/copilot-instructions.md": 15,
    "llms.txt": 3,
    "GEMINI.md": 2,
    ".windsurfrules": 0
@@ -151,20 +151,20 @@
   },
   "Python": {
    "repos": 197,
-   "any": 75,
-   "AGENTS.md": 66,
+   "any": 76,
+   "AGENTS.md": 67,
    "CLAUDE.md": 38,
    ".cursorrules": 3,
    ".cursor/rules": 6,
-   ".github/copilot-instructions.md": 16,
+   ".github/copilot-instructions.md": 15,
    "llms.txt": 3,
    "GEMINI.md": 4,
    ".windsurfrules": 1
   },
   "Ruby": {
    "repos": 189,
-   "any": 41,
-   "AGENTS.md": 35,
+   "any": 42,
+   "AGENTS.md": 36,
    "CLAUDE.md": 20,
    ".cursorrules": 2,
    ".cursor/rules": 3,
@@ -621,11 +621,58 @@
    },
    "added": 2,
    "removed": 2
+  },
+  {
+   "date": "2026-11-11",
+   "scanned": 1922,
+   "counts": {
+    "AGENTS.md": 557,
+    "CLAUDE.md": 321,
+    ".cursorrules": 16,
+    ".cursor/rules": 35,
+    ".github/copilot-instructions.md": 158,
+    "llms.txt": 17,
+    "GEMINI.md": 21,
+    ".windsurfrules": 5
+   },
+   "any": 685,
+   "shares": {
+    "AGENTS.md": 29.0,
+    "CLAUDE.md": 16.7,
+    ".cursorrules": 0.8,
+    ".cursor/rules": 1.8,
+    ".github/copilot-instructions.md": 8.2,
+    "llms.txt": 0.9,
+    "GEMINI.md": 1.1,
+    ".windsurfrules": 0.3
+   },
+   "pct": {
+    "AGENTS.md": 29.0,
+    "CLAUDE.md": 16.7,
+    ".cursorrules": 0.8,
+    ".cursor/rules": 1.8,
+    ".github/copilot-instructions.md": 8.2,
+    "llms.txt": 0.9,
+    "GEMINI.md": 1.1,
+    ".windsurfrules": 0.3
+   },
+   "share_pct": {
+    "AGENTS.md": 29.0,
+    "CLAUDE.md": 16.7,
+    ".cursorrules": 0.8,
+    ".cursor/rules": 1.8,
+    ".github/copilot-instructions.md": 8.2,
+    "llms.txt": 0.9,
+    "GEMINI.md": 1.1,
+    ".windsurfrules": 0.3
+   },
+   "added": 5,
+   "removed": 3
   }
  ],
- "history_days": 9,
+ "history_days": 10,
  "change_7d_pp": {
-  "AGENTS.md": 0.7,
+  "AGENTS.md": 0.8,
   "CLAUDE.md": -0.2,
   ".cursorrules": 0.0,
   ".cursor/rules": 0.0,
@@ -635,71 +682,71 @@
   ".windsurfrules": 0.0
  },
  "combinations": {
-  "date": "2026-11-10",
+  "date": "2026-11-11",
   "total": 1922,
   "agents_and_claude": 257,
-  "agents_only_of_pair": 296,
+  "agents_only_of_pair": 300,
   "claude_only_of_pair": 64,
-  "neither_of_pair": 1305,
+  "neither_of_pair": 1301,
   "same_size_agents_claude": 6,
   "repos_with_2plus_types": 338
  },
  "sizes": {
   "AGENTS.md": {
-   "count": 552,
-   "median_bytes": 6766,
-   "p25_bytes": 2814,
-   "p75_bytes": 13792,
-   "date": "2026-11-10"
+   "count": 556,
+   "median_bytes": 6702,
+   "p25_bytes": 2782,
+   "p75_bytes": 13548,
+   "date": "2026-11-11"
   },
   "CLAUDE.md": {
    "count": 321,
    "median_bytes": 84,
    "p25_bytes": 11,
    "p75_bytes": 4419,
-   "date": "2026-11-10"
+   "date": "2026-11-11"
   },
   ".cursorrules": {
    "count": 16,
    "median_bytes": 1677,
    "p25_bytes": 180,
    "p75_bytes": 3410,
-   "date": "2026-11-10"
+   "date": "2026-11-11"
   },
   ".cursor/rules": {
    "count": 0,
    "median_bytes": 0,
    "p25_bytes": 0,
    "p75_bytes": 0,
-   "date": "2026-11-10"
+   "date": "2026-11-11"
   },
   ".github/copilot-instructions.md": {
-   "count": 160,
-   "median_bytes": 3658,
-   "p25_bytes": 542,
-   "p75_bytes": 8352,
-   "date": "2026-11-10"
+   "count": 158,
+   "median_bytes": 3796,
+   "p25_bytes": 508,
+   "p75_bytes": 8443,
+   "date": "2026-11-11"
   },
   "llms.txt": {
    "count": 17,
    "median_bytes": 3226,
    "p25_bytes": 2657,
    "p75_bytes": 5571,
-   "date": "2026-11-10"
+   "date": "2026-11-11"
   },
   "GEMINI.md": {
    "count": 21,
    "median_bytes": 116,
    "p25_bytes": 11,
    "p75_bytes": 298,
-   "date": "2026-11-10"
+   "date": "2026-11-11"
   },
   ".windsurfrules": {
-   "count": 6,
-   "median_bytes": 556,
-   "p25_bytes": 252,
-   "p75_bytes": 3380,
-   "date": "2026-11-10"
+   "count": 5,
+   "median_bytes": 380,
+   "p25_bytes": 209,
+   "p75_bytes": 4262,
+   "date": "2026-11-11"
   }
  }
 }

@@ -6,17 +6,17 @@
  "stars": 42916,
  "default_branch": "master",
  "status": "ok",
- "checked": "2026-11-10T04:26:39Z",
+ "checked": "2026-11-11T04:26:31Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 5508,
+   "size": 5512,
    "url": "https://github.com/LizardByte/Sunshine/blob/master/AGENTS.md",
    "lang_share": {
-    "count": 53,
+    "count": 55,
     "total": 191,
-    "pct": 27.7,
-    "date": "2026-11-10",
+    "pct": 28.8,
+    "date": "2026-11-11",
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/"
    },
@@ -32,7 +32,7 @@
     "count": 18,
     "total": 191,
     "pct": 9.4,
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/"
    }
@@ -45,23 +45,25 @@
     "count": 3,
     "total": 191,
     "pct": 1.6,
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/"
    }
   },
   ".cursor/rules": {
-   "present": false,
+   "present": true,
    "size": null,
-   "url": null,
+   "url": "https://github.com/LizardByte/Sunshine/tree/master/.cursor/rules",
    "lang_share": {
-    "count": 1,
+    "count": 2,
     "total": 191,
-    "pct": 0.5,
-    "date": "2026-11-10",
+    "pct": 1.0,
+    "date": "2026-11-11",
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/"
-   }
+   },
+   "first_seen": "2026-11-11",
+   "go_url": "https://agentsmd.formachines.ai/go/1139/"
   },
   ".github/copilot-instructions.md": {
    "present": false,
@@ -71,7 +73,7 @@
     "count": 22,
     "total": 191,
     "pct": 11.5,
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/"
    }
@@ -84,7 +86,7 @@
     "count": 0,
     "total": 191,
     "pct": 0.0,
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/"
    }
@@ -97,7 +99,7 @@
     "count": 2,
     "total": 191,
     "pct": 1.0,
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/"
    }
@@ -110,7 +112,7 @@
     "count": 0,
     "total": 191,
     "pct": 0.0,
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/"
    }
@@ -118,58 +120,61 @@
  },
  "language_share": {
   "AGENTS.md": {
-   "count": 53,
+   "count": 55,
    "total": 191,
-   "pct": 27.7,
-   "date": "2026-11-10"
+   "pct": 28.8,
+   "date": "2026-11-11"
   },
   "CLAUDE.md": {
    "count": 18,
    "total": 191,
    "pct": 9.4,
-   "date": "2026-11-10"
+   "date": "2026-11-11"
   },
   ".cursorrules": {
    "count": 3,
    "total": 191,
    "pct": 1.6,
-   "date": "2026-11-10"
+   "date": "2026-11-11"
   },
   ".cursor/rules": {
-   "count": 1,
+   "count": 2,
    "total": 191,
-   "pct": 0.5,
-   "date": "2026-11-10"
+   "pct": 1.0,
+   "date": "2026-11-11"
   },
   ".github/copilot-instructions.md": {
    "count": 22,
    "total": 191,
    "pct": 11.5,
-   "date": "2026-11-10"
+   "date": "2026-11-11"
   },
   "llms.txt": {
    "count": 0,
    "total": 191,
    "pct": 0.0,
-   "date": "2026-11-10"
+   "date": "2026-11-11"
   },
   "GEMINI.md": {
    "count": 2,
    "total": 191,
    "pct": 1.0,
-   "date": "2026-11-10"
+   "date": "2026-11-11"
   },
   ".windsurfrules": {
    "count": 0,
    "total": 191,
    "pct": 0.0,
-   "date": "2026-11-10"
+   "date": "2026-11-11"
   }
  },
  "first_seen": {
   "AGENTS.md": {
    "date": "2026-11-02",
    "baseline": true
+  },
+  ".cursor/rules": {
+   "date": "2026-11-11"
   }
  },
  "first_scanned": "2026-11-02",

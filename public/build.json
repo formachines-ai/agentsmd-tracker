@@ -1,12 +1,12 @@
 {
  "site": "https://agentsmd.formachines.ai",
- "built_at": "2026-11-11T04:09:53Z",
+ "built_at": "2026-11-11T05:19:22Z",
  "build_seconds": 0.1,
  "sample": 1922,
  "scanned_ok": 1922,
  "pending": 0,
  "unreachable": 0,
- "last_checked": "2026-11-10T05:19:42Z",
+ "last_checked": "2026-11-11T05:19:13Z",
  "data_delayed": false,
  "delay_reason": "",
  "scan": {

@@ -6,17 +6,17 @@
  "stars": 109315,
  "default_branch": "v1.x",
  "status": "ok",
- "checked": "2026-11-10T04:10:11Z",
+ "checked": "2026-11-11T04:10:11Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 15005,
+   "size": 15633,
    "url": "https://github.com/axios/axios/blob/v1.x/AGENTS.md",
    "lang_share": {
     "count": 35,
     "total": 191,
     "pct": 18.3,
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "language": "JavaScript",
     "page": "https://agentsmd.formachines.ai/lang/javascript/"
    },
@@ -32,7 +32,7 @@
     "count": 22,
     "total": 191,
     "pct": 11.5,
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "language": "JavaScript",
     "page": "https://agentsmd.formachines.ai/lang/javascript/"
    }
@@ -45,7 +45,7 @@
     "count": 0,
     "total": 191,
     "pct": 0.0,
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "language": "JavaScript",
     "page": "https://agentsmd.formachines.ai/lang/javascript/"
    }
@@ -58,20 +58,20 @@
     "count": 3,
     "total": 191,
     "pct": 1.6,
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "language": "JavaScript",
     "page": "https://agentsmd.formachines.ai/lang/javascript/"
    }
   },
   ".github/copilot-instructions.md": {
    "present": true,
-   "size": 6119,
+   "size": 6444,
    "url": "https://github.com/axios/axios/blob/v1.x/.github/copilot-instructions.md",
    "lang_share": {
     "count": 10,
     "total": 191,
     "pct": 5.2,
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "language": "JavaScript",
     "page": "https://agentsmd.formachines.ai/lang/javascript/"
    },
@@ -87,7 +87,7 @@
     "count": 3,
     "total": 191,
     "pct": 1.6,
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "language": "JavaScript",
     "page": "https://agentsmd.formachines.ai/lang/javascript/"
    }
@@ -100,7 +100,7 @@
     "count": 1,
     "total": 191,
     "pct": 0.5,
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "language": "JavaScript",
     "page": "https://agentsmd.formachines.ai/lang/javascript/"
    }
@@ -113,7 +113,7 @@
     "count": 0,
     "total": 191,
     "pct": 0.0,
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "language": "JavaScript",
     "page": "https://agentsmd.formachines.ai/lang/javascript/"
    }
@@ -124,49 +124,49 @@
    "count": 35,
    "total": 191,
    "pct": 18.3,
-   "date": "2026-11-10"
+   "date": "2026-11-11"
   },
   "CLAUDE.md": {
    "count": 22,
    "total": 191,
    "pct": 11.5,
-   "date": "2026-11-10"
+   "date": "2026-11-11"
   },
   ".cursorrules": {
    "count": 0,
    "total": 191,
    "pct": 0.0,
-   "date": "2026-11-10"
+   "date": "2026-11-11"
   },
   ".cursor/rules": {
    "count": 3,
    "total": 191,
    "pct": 1.6,
-   "date": "2026-11-10"
+   "date": "2026-11-11"
   },
   ".github/copilot-instructions.md": {
    "count": 10,
    "total": 191,
    "pct": 5.2,
-   "date": "2026-11-10"
+   "date": "2026-11-11"
   },
   "llms.txt": {
    "count": 3,
    "total": 191,
    "pct": 1.6,
-   "date": "2026-11-10"
+   "date": "2026-11-11"
   },
   "GEMINI.md": {
    "count": 1,
    "total": 191,
    "pct": 0.5,
-   "date": "2026-11-10"
+   "date": "2026-11-11"
   },
   ".windsurfrules": {
    "count": 0,
    "total": 191,
    "pct": 0.0,
-   "date": "2026-11-10"
+   "date": "2026-11-11"
   }
  },
  "first_seen": {

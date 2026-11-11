@@ -1,62 +1,102 @@
 {
  "schema_version": 2,
  "site": "https://agentsmd.formachines.ai",
- "date": "2026-11-10",
- "generated": "2026-11-10T05:19:42Z",
+ "date": "2026-11-11",
+ "generated": "2026-11-11T05:19:13Z",
  "license": "CC BY 4.0",
  "added": [
   {
-   "full_name": "protocolbuffers/protobuf",
-   "owner": "protocolbuffers",
-   "name": "protobuf",
-   "language": "C++",
-   "stars": 72149,
+   "full_name": "paperless-ngx/paperless-ngx",
+   "owner": "paperless-ngx",
+   "name": "paperless-ngx",
+   "language": "Python",
+   "stars": 47582,
    "path": "AGENTS.md",
-   "size": 8108,
-   "url": "https://github.com/protocolbuffers/protobuf/blob/main/AGENTS.md"
+   "size": 4369,
+   "url": "https://github.com/paperless-ngx/paperless-ngx/blob/dev/AGENTS.md"
   },
   {
-   "full_name": "microsoft/playwright-mcp",
-   "owner": "microsoft",
-   "name": "playwright-mcp",
-   "language": "TypeScript",
-   "stars": 38996,
+   "full_name": "LizardByte/Sunshine",
+   "owner": "LizardByte",
+   "name": "Sunshine",
+   "language": "C++",
+   "stars": 42916,
+   "path": ".cursor/rules",
+   "size": null,
+   "url": "https://github.com/LizardByte/Sunshine/tree/master/.cursor/rules"
+  },
+  {
+   "full_name": "deskflow/deskflow",
+   "owner": "deskflow",
+   "name": "deskflow",
+   "language": "C++",
+   "stars": 30483,
    "path": "AGENTS.md",
-   "size": 4023,
-   "url": "https://github.com/microsoft/playwright-mcp/blob/main/AGENTS.md"
+   "size": 109,
+   "url": "https://github.com/deskflow/deskflow/blob/master/AGENTS.md"
+  },
+  {
+   "full_name": "dolphin-emu/dolphin",
+   "owner": "dolphin-emu",
+   "name": "dolphin",
+   "language": "C++",
+   "stars": 15757,
+   "path": "AGENTS.md",
+   "size": 454,
+   "url": "https://github.com/dolphin-emu/dolphin/blob/master/AGENTS.md"
+  },
+  {
+   "full_name": "jruby/jruby",
+   "owner": "jruby",
+   "name": "jruby",
+   "language": "Ruby",
+   "stars": 3926,
+   "path": "AGENTS.md",
+   "size": 8400,
+   "url": "https://github.com/jruby/jruby/blob/master/AGENTS.md"
   }
  ],
  "removed": [
   {
-   "full_name": "opendatalab/MinerU",
-   "owner": "opendatalab",
-   "name": "MinerU",
+   "full_name": "huggingface/transformers",
+   "owner": "huggingface",
+   "name": "transformers",
    "language": "Python",
-   "stars": 83005,
-   "path": "CLAUDE.md",
+   "stars": 168449,
+   "path": ".github/copilot-instructions.md",
    "size": null,
-   "url": "https://github.com/opendatalab/MinerU/blob/master/CLAUDE.md"
+   "url": "https://github.com/huggingface/transformers/blob/main/.github/copilot-instructions.md"
   },
   {
-   "full_name": "microsoft/playwright-mcp",
-   "owner": "microsoft",
-   "name": "playwright-mcp",
-   "language": "TypeScript",
-   "stars": 38996,
-   "path": "CLAUDE.md",
+   "full_name": "hashicorp/vault",
+   "owner": "hashicorp",
+   "name": "vault",
+   "language": "Go",
+   "stars": 36458,
+   "path": ".github/copilot-instructions.md",
    "size": null,
-   "url": "https://github.com/microsoft/playwright-mcp/blob/main/CLAUDE.md"
+   "url": "https://github.com/hashicorp/vault/blob/main/.github/copilot-instructions.md"
+  },
+  {
+   "full_name": "itsfatduck/optimizerDuck",
+   "owner": "itsfatduck",
+   "name": "optimizerDuck",
+   "language": "C#",
+   "stars": 10769,
+   "path": ".windsurfrules",
+   "size": null,
+   "url": "https://github.com/itsfatduck/optimizerDuck/blob/master/.windsurfrules"
   }
  ],
  "counts": {
-  "AGENTS.md": 553,
+  "AGENTS.md": 557,
   "CLAUDE.md": 321,
   ".cursorrules": 16,
-  ".cursor/rules": 34,
-  ".github/copilot-instructions.md": 160,
+  ".cursor/rules": 35,
+  ".github/copilot-instructions.md": 158,
   "llms.txt": 17,
   "GEMINI.md": 21,
-  ".windsurfrules": 6
+  ".windsurfrules": 5
  },
  "scanned": 1922,
  "pending": 0

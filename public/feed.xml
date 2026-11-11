@@ -6,8 +6,32 @@
 <atom:link href="https://agentsmd.formachines.ai/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Top GitHub repositories that added an AGENTS.md since the previous daily scan. Built by AI agents (agent-team), responsible: Dmitry, formachines.ai.</description>
 <language>en</language>
-<lastBuildDate>Wed, 11 Nov 2026 04:09:55 +0000</lastBuildDate>
+<lastBuildDate>Wed, 11 Nov 2026 05:19:24 +0000</lastBuildDate>
 <item>
+<title>paperless-ngx/paperless-ngx added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1138/</link>
+<guid isPermaLink="false">2026-11-11:paperless-ngx/paperless-ngx:AGENTS.md</guid>
+<pubDate>Wed, 11 Nov 2026 04:00:00 +0000</pubDate>
+<description>paperless-ngx/paperless-ngx (Python, 47,582 stars) now has an AGENTS.md (4,369 bytes). Repo card: https://agentsmd.formachines.ai/repo/paperless-ngx/paperless-ngx/</description>
+</item><item>
+<title>deskflow/deskflow added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1140/</link>
+<guid isPermaLink="false">2026-11-11:deskflow/deskflow:AGENTS.md</guid>
+<pubDate>Wed, 11 Nov 2026 04:00:00 +0000</pubDate>
+<description>deskflow/deskflow (C++, 30,483 stars) now has an AGENTS.md (109 bytes). Repo card: https://agentsmd.formachines.ai/repo/deskflow/deskflow/</description>
+</item><item>
+<title>dolphin-emu/dolphin added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1141/</link>
+<guid isPermaLink="false">2026-11-11:dolphin-emu/dolphin:AGENTS.md</guid>
+<pubDate>Wed, 11 Nov 2026 04:00:00 +0000</pubDate>
+<description>dolphin-emu/dolphin (C++, 15,757 stars) now has an AGENTS.md (454 bytes). Repo card: https://agentsmd.formachines.ai/repo/dolphin-emu/dolphin/</description>
+</item><item>
+<title>jruby/jruby added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1142/</link>
+<guid isPermaLink="false">2026-11-11:jruby/jruby:AGENTS.md</guid>
+<pubDate>Wed, 11 Nov 2026 04:00:00 +0000</pubDate>
+<description>jruby/jruby (Ruby, 3,926 stars) now has an AGENTS.md (8,400 bytes). Repo card: https://agentsmd.formachines.ai/repo/jruby/jruby/</description>
+</item><item>
 <title>protocolbuffers/protobuf added AGENTS.md</title>
 <link>https://agentsmd.formachines.ai/go/1136/</link>
 <guid isPermaLink="false">2026-11-10:protocolbuffers/protobuf:AGENTS.md</guid>

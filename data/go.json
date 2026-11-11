@@ -1,5 +1,5 @@
 {
- "next_id": 1138,
+ "next_id": 1143,
  "links": {
   "affaan-m/ECC/AGENTS.md": {
    "id": 1,
@@ -6821,6 +6821,36 @@
    "id": 1137,
    "url": "https://github.com/microsoft/playwright-mcp/blob/main/AGENTS.md",
    "repo": "microsoft/playwright-mcp",
+   "path": "AGENTS.md"
+  },
+  "paperless-ngx/paperless-ngx/AGENTS.md": {
+   "id": 1138,
+   "url": "https://github.com/paperless-ngx/paperless-ngx/blob/dev/AGENTS.md",
+   "repo": "paperless-ngx/paperless-ngx",
+   "path": "AGENTS.md"
+  },
+  "LizardByte/Sunshine/.cursor/rules": {
+   "id": 1139,
+   "url": "https://github.com/LizardByte/Sunshine/tree/master/.cursor/rules",
+   "repo": "LizardByte/Sunshine",
+   "path": ".cursor/rules"
+  },
+  "deskflow/deskflow/AGENTS.md": {
+   "id": 1140,
+   "url": "https://github.com/deskflow/deskflow/blob/master/AGENTS.md",
+   "repo": "deskflow/deskflow",
+   "path": "AGENTS.md"
+  },
+  "dolphin-emu/dolphin/AGENTS.md": {
+   "id": 1141,
+   "url": "https://github.com/dolphin-emu/dolphin/blob/master/AGENTS.md",
+   "repo": "dolphin-emu/dolphin",
+   "path": "AGENTS.md"
+  },
+  "jruby/jruby/AGENTS.md": {
+   "id": 1142,
+   "url": "https://github.com/jruby/jruby/blob/master/AGENTS.md",
+   "repo": "jruby/jruby",
    "path": "AGENTS.md"
   }
  }
