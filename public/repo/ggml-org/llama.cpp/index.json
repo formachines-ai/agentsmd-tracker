@@ -169,6 +169,16 @@
    "date": "2026-11-10"
   }
  },
+ "first_seen": {
+  "AGENTS.md": {
+   "date": "2026-11-02",
+   "baseline": true
+  },
+  "CLAUDE.md": {
+   "date": "2026-11-02",
+   "baseline": true
+  }
+ },
  "page": "https://agentsmd.formachines.ai/repo/ggml-org/llama.cpp/",
  "license": "CC BY 4.0"
 }

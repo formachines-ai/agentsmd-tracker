@@ -166,6 +166,12 @@
    "date": "2026-11-10"
   }
  },
+ "first_seen": {
+  ".github/copilot-instructions.md": {
+   "date": "2026-11-02",
+   "baseline": true
+  }
+ },
  "page": "https://agentsmd.formachines.ai/repo/keepassxreboot/keepassxc/",
  "license": "CC BY 4.0"
 }

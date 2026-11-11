@@ -163,6 +163,7 @@
    "date": "2026-11-10"
   }
  },
+ "first_seen": {},
  "page": "https://agentsmd.formachines.ai/repo/octokit/octokit.rb/",
  "license": "CC BY 4.0"
 }
