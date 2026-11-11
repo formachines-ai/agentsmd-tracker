@@ -164,6 +164,7 @@
   }
  },
  "first_seen": {},
+ "first_scanned": "2026-11-02",
  "page": "https://agentsmd.formachines.ai/repo/rails-api/active_model_serializers/",
  "license": "CC BY 4.0"
 }
