@@ -689,7 +689,12 @@
   "claude_only_of_pair": 64,
   "neither_of_pair": 1301,
   "same_size_agents_claude": 6,
-  "repos_with_2plus_types": 338
+  "repos_with_2plus_types": 338,
+  "agents_only": 300,
+  "claude_only": 64,
+  "both": 257,
+  "neither": 1301,
+  "agents_and_copilot": 92
  },
  "sizes": {
   "AGENTS.md": {
