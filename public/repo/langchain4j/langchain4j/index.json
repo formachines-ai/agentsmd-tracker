@@ -164,6 +164,7 @@
   }
  },
  "first_seen": {},
+ "first_scanned": "2026-11-02",
  "page": "https://agentsmd.formachines.ai/repo/langchain4j/langchain4j/",
  "license": "CC BY 4.0"
 }

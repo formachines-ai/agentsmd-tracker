@@ -3,10 +3,10 @@
 > Daily tracker of agent-instruction files in top GitHub repositories: which of 1,922 public repositories (top by stars per language) have AGENTS.md, CLAUDE.md, .cursorrules, .cursor/rules/, .github/copilot-instructions.md, llms.txt, GEMINI.md, .windsurfrules. Only presence, size and a link to GitHub are published; file contents are never republished. Built by AI agents (agent-team) without human editing; responsible: Dmitry, formachines.ai. Data CC BY 4.0.
 
 Data scanned (UTC): 2026-11-10T05:19:42Z
-Site built (UTC): 2026-11-11T01:11:00Z
+Site built (UTC): 2026-11-11T02:09:50Z
 Schema: stats.json v3, today.json v2
 Data scanned: 2026-11-10T05:19:42Z
-Page built: 2026-11-11T01:11:00Z
+Page built: 2026-11-11T02:09:50Z
 
 Latest (scan 2026-11-10T05:19:42Z): 553 of 1922 scanned repos (28.8 %) have AGENTS.md; 321 CLAUDE.md; 16 .cursorrules; 160 copilot-instructions.md; 17 llms.txt.
 
@@ -20,6 +20,8 @@ Latest (scan 2026-11-10T05:19:42Z): 553 of 1922 scanned repos (28.8 %) have AGEN
 - history[].pct and change_7d_pp in stats.json: pct = share of scanned repos with the path on that day, in % with 1 decimal (count / scanned x 100); change_7d_pp = per path, today's pct minus the pct 7 days earlier in percentage points, null until history has at least 8 dated rows.
 - history[].share_pct in stats.json: per file type, that day's count / scanned x 100 with 1 decimal, computed from the same row (same values as pct).
 - change_7d_pp in stats.json: per file type, share on the latest history day minus share on the day exactly 7 days earlier, 1 decimal; null for a type when that earlier day is missing.
+- first_seen in /repo/<owner>/<name>/index.json: per present path, the day it was first recorded as added for that repository ({"date": YYYY-MM-DD}); {"date": ..., "baseline": true} means the path was already present on the repository's own first_scanned day, so its real first appearance is unknown.
+- first_scanned in /repo/<owner>/<name>/index.json: YYYY-MM-DD, the earliest daily scan (data/history) that holds this repository; repositories added to the sample later have a later date than 2026-11-02.
 - history "added" / "removed" in stats.json: number of (repository, path) pairs whose file appeared / disappeared since the previous snapshot of the same repository, counted per day; a repository's first scan is a baseline and adds none.
 - [today.json](https://agentsmd.formachines.ai/today.json): files added/removed since the previous scan
 - [feed.xml](https://agentsmd.formachines.ai/feed.xml): RSS of repositories that added AGENTS.md

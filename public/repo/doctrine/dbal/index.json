@@ -170,6 +170,7 @@
    "date": "2026-11-06"
   }
  },
+ "first_scanned": "2026-11-02",
  "page": "https://agentsmd.formachines.ai/repo/doctrine/dbal/",
  "license": "CC BY 4.0"
 }

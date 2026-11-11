@@ -447,6 +447,22 @@ def load_history() -> list[dict]:
     return days
 
 
+def repo_first_scanned(repos: list[dict], history: list[dict]) -> dict[str, str]:
+    """full_name -> earliest history day that holds the repo. History files keep per-language scanned counts only, and
+    data/repos.json is append-only, so the k-th repo of a language (file order) first appears on the first day whose
+    count for that language is >= k. Existing files are read, never changed."""
+    out: dict[str, str] = {}
+    seen: dict[str, int] = {}
+    for r in repos:
+        lang = r.get("language") or ""
+        seen[lang] = k = seen.get(lang, 0) + 1
+        for d in history:
+            if (d.get("by_language", {}).get(lang) or {}).get("repos", 0) >= k:
+                out[r["full_name"]] = d["date"]
+                break
+    return out
+
+
 # ----------------------------------------------------------------------------- go links
 class GoLinks:
     def __init__(self):
@@ -817,6 +833,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
     urls = [SITE_BASE + "/", SITE_BASE + "/legal/", SITE_BASE + "/brand/"]
     scan_date = (today.get("generated") or (history[-1].get("generated") if history else None) or updated)[:10]   # date part of stats.json 'generated'
     first_scan_day = history[0]["date"] if history else None
+    first_scanned_of = repo_first_scanned(repos, history)
     added_on: dict[tuple[str, str], str] = {}   # (repo, path) -> earliest scan day it was recorded as added
     for d in history:
         for x in d.get("added", []):
@@ -826,6 +843,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
         ok_by_lang.setdefault(r_["language"], []).append(r_)
     for r in sorted(repos, key=lambda r: r["full_name"].lower()):
         sc = scans.get(r["full_name"])
+        r_first = first_scanned_of.get(r["full_name"]) or first_scan_day   # this repo's own first scan day
         rdir = out / "repo" / r["owner"] / r["name"]
         files_json = {}
         first_seen = {}
@@ -857,11 +875,11 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
                     seen_note = f'<br><span class="muted">first seen {esc(fs_day)}</span>'
                     files_json[s["path"]]["first_seen"] = fs_day
                     first_seen[s["path"]] = {"date": fs_day}
-                elif first_scan_day:
-                    seen_note = f'<br><span class="muted">present since the first scan {esc(first_scan_day)}</span>'
-                    files_json[s["path"]]["first_seen"] = first_scan_day
+                elif r_first:
+                    seen_note = f'<br><span class="muted">present since the first scan {esc(r_first)}</span>'
+                    files_json[s["path"]]["first_seen"] = r_first
                     files_json[s["path"]]["first_seen_at_first_scan"] = True
-                    first_seen[s["path"]] = {"date": first_scan_day, "baseline": True}
+                    first_seen[s["path"]] = {"date": r_first, "baseline": True}
                 share += seen_note
             if present:
                 size = f"{f['size']:,} bytes" if f.get("size") else ("directory" if s["kind"] == "dir" else "—")
@@ -913,7 +931,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
         write_json(rdir / "index.json", {"repo": r["full_name"], "owner": r["owner"], "name": r["name"], "language": r["language"],
                                           "stars": r["stars"], "default_branch": (sc or {}).get("default_branch") or r.get("default_branch"),
                                           "status": status, "checked": checked if sc else None, "files": files_json,
-                                          "language_share": language_share, "first_seen": first_seen,
+                                          "language_share": language_share, "first_seen": first_seen, "first_scanned": r_first,
                                           "page": f"{SITE_BASE}/repo/{r['owner']}/{r['name']}/", "license": "CC BY 4.0"})
         urls.append(f"{SITE_BASE}/repo/{r['owner']}/{r['name']}/")
 
@@ -1051,6 +1069,8 @@ Latest (scan {generated}): {agg['counts'][PRIMARY_PATH]} of {total} scanned repo
 - history[].pct and change_7d_pp in stats.json: pct = share of scanned repos with the path on that day, in % with 1 decimal (count / scanned x 100); change_7d_pp = per path, today's pct minus the pct 7 days earlier in percentage points, null until history has at least 8 dated rows.
 - history[].share_pct in stats.json: per file type, that day's count / scanned x 100 with 1 decimal, computed from the same row (same values as pct).
 - change_7d_pp in stats.json: per file type, share on the latest history day minus share on the day exactly 7 days earlier, 1 decimal; null for a type when that earlier day is missing.
+- first_seen in /repo/<owner>/<name>/index.json: per present path, the day it was first recorded as added for that repository ({{"date": YYYY-MM-DD}}); {{"date": ..., "baseline": true}} means the path was already present on the repository's own first_scanned day, so its real first appearance is unknown.
+- first_scanned in /repo/<owner>/<name>/index.json: YYYY-MM-DD, the earliest daily scan (data/history) that holds this repository; repositories added to the sample later have a later date than 2026-11-02.
 - history "added" / "removed" in stats.json: number of (repository, path) pairs whose file appeared / disappeared since the previous snapshot of the same repository, counted per day; a repository's first scan is a baseline and adds none.
 - [today.json]({SITE_BASE}/today.json): files added/removed since the previous scan
 - [feed.xml]({SITE_BASE}/feed.xml): RSS of repositories that added AGENTS.md
