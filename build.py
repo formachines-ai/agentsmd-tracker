@@ -1200,7 +1200,7 @@ def main() -> int:
             delayed, reason = True, "GitHub rate-limited today's scan before any repository could be checked."
     scan_block = None
     if scan_stats:
-        scan_block = {k: v for k, v in scan_stats.items() if k not in ("added", "removed")} | {"added": len(scan_stats["added"]), "removed": len(scan_stats["removed"])}
+        scan_block = {k: v for k, v in scan_stats.items() if k not in ("added", "removed")} | {"added": 0, "removed": 0}
         scan_block["generated"] = today.get("generated")
     else:   # --no-scan / nothing scanned: carry over the previous scan block unchanged, never null and never the build time
         prev_scan = (read_json(PUBLIC_DIR / "build.json", None) or {}).get("scan")
@@ -1208,6 +1208,15 @@ def main() -> int:
             scan_block = prev_scan
         else:   # previous build.json had no scan block: seed it from the last real scan time
             scan_block = (prev_scan if isinstance(prev_scan, dict) else {}) | {"generated": today.get("generated"), "carried_over": True}
+    # added/removed: same definition and unit as today.json (merged over all runs of the day); generated = stats.json generated
+    scan_block = dict(scan_block)
+    for key in ("added", "removed"):
+        entries = today.get(key, [])
+        scan_block[key] = len(entries)
+        scan_block[key + "_repos"] = len({x["full_name"] for x in entries})
+    scan_block["unit"] = "paths"
+    if today.get("generated"):
+        scan_block["generated"] = today["generated"]
     build_info = {
         "site": SITE_BASE, "built_at": iso(now_utc()), "build_seconds": round((now_utc() - t0).total_seconds(), 1),
         "sample": len(repos), "scanned_ok": len(agg["ok"]), "pending": len(agg["pending"]), "unreachable": len(agg["unreachable"]),
