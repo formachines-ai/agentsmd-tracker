@@ -163,6 +163,7 @@
    "date": "2026-11-10"
   }
  },
+ "first_seen": {},
  "page": "https://agentsmd.formachines.ai/repo/PyO3/pyo3/",
  "license": "CC BY 4.0"
 }

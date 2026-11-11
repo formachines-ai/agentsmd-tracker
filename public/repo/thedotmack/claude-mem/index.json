@@ -167,6 +167,14 @@
    "date": "2026-11-10"
   }
  },
+ "first_seen": {
+  "AGENTS.md": {
+   "date": "2026-11-07"
+  },
+  "CLAUDE.md": {
+   "date": "2026-11-07"
+  }
+ },
  "page": "https://agentsmd.formachines.ai/repo/thedotmack/claude-mem/",
  "license": "CC BY 4.0"
 }

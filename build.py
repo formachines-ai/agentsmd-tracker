@@ -828,6 +828,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
         sc = scans.get(r["full_name"])
         rdir = out / "repo" / r["owner"] / r["name"]
         files_json = {}
+        first_seen = {}
         language_share = {}
         rows = []
         lv = agg["by_lang"].get(r.get("language") or "")
@@ -853,12 +854,14 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
             if present:
                 fs_day = added_on.get((r["full_name"], s["path"]))
                 if fs_day:
-                    seen_note = f'<br><span class="muted">first seen in our scans: {esc(fs_day)}</span>'
+                    seen_note = f'<br><span class="muted">first seen {esc(fs_day)}</span>'
                     files_json[s["path"]]["first_seen"] = fs_day
+                    first_seen[s["path"]] = {"date": fs_day}
                 elif first_scan_day:
-                    seen_note = f'<br><span class="muted">first seen in our scans: {esc(first_scan_day)} (present at first scan; earlier date unknown)</span>'
+                    seen_note = f'<br><span class="muted">present since the first scan {esc(first_scan_day)}</span>'
                     files_json[s["path"]]["first_seen"] = first_scan_day
                     files_json[s["path"]]["first_seen_at_first_scan"] = True
+                    first_seen[s["path"]] = {"date": first_scan_day, "baseline": True}
                 share += seen_note
             if present:
                 size = f"{f['size']:,} bytes" if f.get("size") else ("directory" if s["kind"] == "dir" else "—")
@@ -910,7 +913,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
         write_json(rdir / "index.json", {"repo": r["full_name"], "owner": r["owner"], "name": r["name"], "language": r["language"],
                                           "stars": r["stars"], "default_branch": (sc or {}).get("default_branch") or r.get("default_branch"),
                                           "status": status, "checked": checked if sc else None, "files": files_json,
-                                          "language_share": language_share,
+                                          "language_share": language_share, "first_seen": first_seen,
                                           "page": f"{SITE_BASE}/repo/{r['owner']}/{r['name']}/", "license": "CC BY 4.0"})
         urls.append(f"{SITE_BASE}/repo/{r['owner']}/{r['name']}/")
 

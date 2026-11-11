@@ -163,6 +163,7 @@
    "date": "2026-11-10"
   }
  },
+ "first_seen": {},
  "page": "https://agentsmd.formachines.ai/repo/AUTOMATIC1111/stable-diffusion-webui/",
  "license": "CC BY 4.0"
 }

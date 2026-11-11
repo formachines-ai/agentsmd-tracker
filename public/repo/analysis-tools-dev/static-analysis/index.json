@@ -178,6 +178,28 @@
    "date": "2026-11-10"
   }
  },
+ "first_seen": {
+  "AGENTS.md": {
+   "date": "2026-11-02",
+   "baseline": true
+  },
+  "CLAUDE.md": {
+   "date": "2026-11-02",
+   "baseline": true
+  },
+  ".cursorrules": {
+   "date": "2026-11-02",
+   "baseline": true
+  },
+  ".github/copilot-instructions.md": {
+   "date": "2026-11-02",
+   "baseline": true
+  },
+  ".windsurfrules": {
+   "date": "2026-11-02",
+   "baseline": true
+  }
+ },
  "page": "https://agentsmd.formachines.ai/repo/analysis-tools-dev/static-analysis/",
  "license": "CC BY 4.0"
 }
