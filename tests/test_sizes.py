@@ -4,6 +4,8 @@ All module paths of build.py are pointed to a temp directory; no network, no wri
 Run: python3 -m unittest discover -s tests
 """
 import json
+import os
+import shutil
 import sys
 import tempfile
 import unittest
@@ -27,13 +29,22 @@ def _setup(tmp: Path):
     build.DATA_DIR, build.SCAN_DIR, build.HISTORY_DIR = data, data / "scan", data / "history"
     build.REPOS_FILE, build.GO_FILE = data / "repos.json", data / "go.json"
     build.PUBLIC_DIR = tmp / "public"
+    # Writable temp copy of the static files: a read-only checkout must not make the copy read-only.
+    static = tmp / "static"
+    if build.STATIC_DIR.exists():
+        shutil.copytree(build.STATIC_DIR, static, copy_function=shutil.copyfile)
+        for root, dirs, files in os.walk(static):
+            for n in dirs + files:
+                os.chmod(Path(root, n), 0o755 if n in dirs else 0o644)
+        os.chmod(static, 0o755)
+    build.STATIC_DIR = static
     return repos
 
 
 class SizeFixtureTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls._saved = {k: getattr(build, k) for k in ("DATA_DIR", "SCAN_DIR", "HISTORY_DIR", "REPOS_FILE", "GO_FILE", "PUBLIC_DIR")}
+        cls._saved = {k: getattr(build, k) for k in ("DATA_DIR", "SCAN_DIR", "HISTORY_DIR", "REPOS_FILE", "GO_FILE", "PUBLIC_DIR", "STATIC_DIR")}
         cls._tmp = tempfile.TemporaryDirectory()
         tmp = Path(cls._tmp.name)
         repos = _setup(tmp)
