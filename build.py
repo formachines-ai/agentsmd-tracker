@@ -399,7 +399,7 @@ def aggregate(repos: list[dict]) -> dict:
     small = {}
     for s in PATHS:
         vals = sorted(int(f["size"]) for r in ok for f in [scans[r["full_name"]]["files"].get(s["path"], {})]
-                      if f.get("present") and isinstance(f.get("size"), int) and f["size"] > 0)
+                      if f.get("present") and isinstance(f.get("size"), int) and f["size"] >= 0)
         if len(vals) >= 2:
             q1, q2, q3 = statistics.quantiles(vals, n=4, method="inclusive")
         elif vals:
@@ -407,8 +407,9 @@ def aggregate(repos: list[dict]) -> dict:
         else:
             q1 = q2 = q3 = 0
         fl = [scans[r["full_name"]]["files"].get(s["path"], {}) for r in ok]
+        unknown = sum(1 for f in fl if f.get("present") and not isinstance(f.get("size"), int))
         small[s["path"]] = {"count": sum(1 for v in vals if v < SMALL_FILE_BYTES), "threshold_bytes": SMALL_FILE_BYTES,
-                            "size_unknown": sum(1 for f in fl if f.get("present") and not (isinstance(f.get("size"), int) and f["size"] > 0))}
+                            "size_unknown": unknown, "zero_bytes": sum(1 for v in vals if v == 0), "unknown_size": unknown}
         sizes[s["path"]] = {"count": len(vals), "median_bytes": round(q2), "p25_bytes": round(q1), "p75_bytes": round(q3)}
     return {"sizes": sizes, "small": small, "combo": combo, "scans": scans, "ok": ok, "pending": pending, "unreachable": unreachable, "counts": counts,
             "any": any_count, "by_lang": by_lang, "last_checked": last_checked}
@@ -737,8 +738,9 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
     sm = agg["small"]
     small_line = (f'<p class="asof" id="small-files">Files under {SMALL_FILE_BYTES} bytes on {esc(gen_raw[:10])}: '
                   f'AGENTS.md {sm["AGENTS.md"]["count"]:,}, CLAUDE.md {sm["CLAUDE.md"]["count"]:,} '
-                  f'(size only; files present with unknown size are not counted: AGENTS.md {sm["AGENTS.md"]["size_unknown"]:,}, '
-                  f'CLAUDE.md {sm["CLAUDE.md"]["size_unknown"]:,}). <a href="/stats.json">stats.json</a> field <code>small_files</code>.</p>')
+                  f'(size only; files with a Content-Length of 0 are counted: AGENTS.md {sm["AGENTS.md"]["zero_bytes"]:,}, CLAUDE.md {sm["CLAUDE.md"]["zero_bytes"]:,}; '
+                  f'present files with unknown size are not counted: AGENTS.md {sm["AGENTS.md"]["unknown_size"]:,}, '
+                  f'CLAUDE.md {sm["CLAUDE.md"]["unknown_size"]:,}). <a href="/stats.json">stats.json</a> field <code>small_files</code>.</p>')
     size_sec = size_sec.replace("</section>", small_line + "\n</section>")
     si = sample_info
     reasons = ", ".join(f"{n:,} {k}" for k, n in si["excluded_by_reason"].items() if n) or "none"
@@ -903,8 +905,8 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
                     first_seen[s["path"]] = {"date": r_first, "baseline": True}
                 share += seen_note
             if present:
-                size = f"{f['size']:,} bytes" if f.get("size") else ("directory" if s["kind"] == "dir" else "—")
-                if isinstance(f.get("size"), int) and 0 < f["size"] < SMALL_FILE_BYTES:
+                size = f"{f['size']:,} bytes" if isinstance(f.get("size"), int) else ("directory" if s["kind"] == "dir" else '<span title="size unknown">— (size unknown)</span>')
+                if isinstance(f.get("size"), int) and 0 <= f["size"] < SMALL_FILE_BYTES:
                     size += f" (under {SMALL_FILE_BYTES} bytes)"
                 golink = go.href(r, s["path"], url)
                 files_json[s["path"]]["go_url"] = SITE_BASE + golink if golink.startswith("/") else golink
@@ -1090,8 +1092,8 @@ Latest (scan {generated}): {agg['counts'][PRIMARY_PATH]} of {total} scanned repo
 ## Machine-readable
 - [stats.json]({SITE_BASE}/stats.json): totals, shares, by-language table, full daily history
 - combinations in stats.json: date, total and counts of scanned repos by co-existence of AGENTS.md and CLAUDE.md (agents_only, claude_only, both, neither, agents_and_copilot (AGENTS.md with .github/copilot-instructions.md), agents_and_claude, agents_only_of_pair, claude_only_of_pair, neither_of_pair), same_size_agents_claude (both present with equal byte size) and repos_with_2plus_types (at least 2 of the 8 paths).
-- sizes in stats.json: per path, count, median_bytes, p25_bytes, p75_bytes and date of the scan, from the HEAD Content-Length of present files whose size is known (count = those files only); 0 when none is known (e.g. the .cursor/rules/ directory).
-- small_files in stats.json: date, threshold_bytes (300) and per path count (present files with a known size under 300 bytes; size only), threshold_bytes and size_unknown (present files whose size is unknown, not counted).
+- sizes in stats.json: per path, count, median_bytes, p25_bytes, p75_bytes and date of the scan, from the HEAD Content-Length of present files whose size is known, 0 included (count = those files only); 0 when none is known (e.g. the .cursor/rules/ directory).
+- small_files in stats.json: date, threshold_bytes (300) and per path count (present files with a known size under 300 bytes, 0 bytes included; size only), threshold_bytes, zero_bytes (present files whose HEAD Content-Length is 0; counted in count, size 0 bytes) and unknown_size (present files with no Content-Length, size unknown, not counted; size_unknown is the same number, kept for compatibility).
 - sample in stats.json (an object; the former integer sample is now sample_size, the headline total M): target_per_language, languages, target_total, included (= sample_size), excluded_by_reason (forks, archived, other; included + their sum = target_total) and per_language (adds up to included). other = targeted but absent from the stored sample (duplicates across languages, not found or dropped at seeding), reason not recorded per repo.
 - schema_version 2 (2026-11-07): change_7d_pp is an object per path; null until 8 dated history rows (schema_version 1: change_7d_pp was a scalar).
 - schema_version 3 (2026-11-08, stats.json only; today.json stays at 2): "sample" is now an object; the former integer is "sample_size".
