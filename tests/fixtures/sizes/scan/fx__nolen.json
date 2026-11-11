@@ -1,0 +1,11 @@
+{
+ "checked": "2026-11-11T04:00:00Z",
+ "status": "ok",
+ "default_branch": "main",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": null
+  }
+ }
+}
