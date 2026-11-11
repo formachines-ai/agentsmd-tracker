@@ -377,7 +377,8 @@ def aggregate(repos: list[dict]) -> dict:
             any_count += 1
             bl["any"] += 1
     combo = {"agents_and_claude": 0, "agents_only_of_pair": 0, "claude_only_of_pair": 0, "neither_of_pair": 0,
-             "same_size_agents_claude": 0, "repos_with_2plus_types": 0}
+             "same_size_agents_claude": 0, "repos_with_2plus_types": 0,
+             "agents_only": 0, "claude_only": 0, "both": 0, "neither": 0, "agents_and_copilot": 0}
     for r in ok:
         files = scans[r["full_name"]]["files"]
         a = files.get("AGENTS.md", {})
@@ -385,6 +386,9 @@ def aggregate(repos: list[dict]) -> dict:
         pa, pc_ = bool(a.get("present")), bool(c.get("present"))
         key = "agents_and_claude" if pa and pc_ else "agents_only_of_pair" if pa else "claude_only_of_pair" if pc_ else "neither_of_pair"
         combo[key] += 1
+        combo["both" if pa and pc_ else "agents_only" if pa else "claude_only" if pc_ else "neither"] += 1
+        if pa and files.get(".github/copilot-instructions.md", {}).get("present"):
+            combo["agents_and_copilot"] += 1
         if pa and pc_ and a.get("size") and a.get("size") == c.get("size"):
             combo["same_size_agents_claude"] += 1
         if sum(1 for s in PATHS if files.get(s["path"], {}).get("present")) >= 2:
@@ -707,8 +711,13 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
         ("claude_only_of_pair", "CLAUDE.md, no AGENTS.md"), ("neither_of_pair", "neither of the two"),
         ("same_size_agents_claude", "AGENTS.md and CLAUDE.md with the same byte size"),
         ("repos_with_2plus_types", f"2 or more of the {len(PATHS)} tracked file kinds")))
+    fc_rows = "".join(f"<tr><th scope=\"row\">{esc(lbl)}</th><td>{cb[k]:,}</td><td>{pct(cb[k], total)} %</td></tr>" for k, lbl in (
+        ("agents_only", "AGENTS.md only"), ("claude_only", "CLAUDE.md only"), ("both", "Both AGENTS.md and CLAUDE.md"),
+        ("neither", "Neither of the two"), ("agents_and_copilot", "AGENTS.md and .github/copilot-instructions.md")))
     combo_sec = f"""<section id="combinations">
-<h2>Files that co-exist on {esc(gen_raw[:10])}</h2>
+<h2>File combinations on {esc(gen_raw[:10])}</h2>
+<table><thead><tr><th>Combination</th><th>Repos</th><th>% of {total:,}</th></tr></thead><tbody>{fc_rows}</tbody></table>
+<h3>Other co-existence counts</h3>
 <ul>{cb_lines}</ul>
 <p class="muted">Presence and byte size only, from the scan dated {esc(gen_raw[:10])}; <a href="/stats.json">stats.json</a> field <code>combinations</code>.</p>
 </section>"""
@@ -1066,7 +1075,7 @@ Latest (scan {generated}): {agg['counts'][PRIMARY_PATH]} of {total} scanned repo
 
 ## Machine-readable
 - [stats.json]({SITE_BASE}/stats.json): totals, shares, by-language table, full daily history
-- combinations in stats.json: date, total and counts of scanned repos by co-existence of AGENTS.md and CLAUDE.md (agents_and_claude, agents_only_of_pair, claude_only_of_pair, neither_of_pair), same_size_agents_claude (both present with equal byte size) and repos_with_2plus_types (at least 2 of the 8 paths).
+- combinations in stats.json: date, total and counts of scanned repos by co-existence of AGENTS.md and CLAUDE.md (agents_only, claude_only, both, neither, agents_and_copilot (AGENTS.md with .github/copilot-instructions.md), agents_and_claude, agents_only_of_pair, claude_only_of_pair, neither_of_pair), same_size_agents_claude (both present with equal byte size) and repos_with_2plus_types (at least 2 of the 8 paths).
 - sizes in stats.json: per path, count, median_bytes, p25_bytes, p75_bytes and date of the scan, from the HEAD Content-Length of present files whose size is known (count = those files only); 0 when none is known (e.g. the .cursor/rules/ directory).
 - sample in stats.json (an object; the former integer sample is now sample_size, the headline total M): target_per_language, languages, target_total, included (= sample_size), excluded_by_reason (forks, archived, other; included + their sum = target_total) and per_language (adds up to included). other = targeted but absent from the stored sample (duplicates across languages, not found or dropped at seeding), reason not recorded per repo.
 - schema_version 2 (2026-11-07): change_7d_pp is an object per path; null until 8 dated history rows (schema_version 1: change_7d_pp was a scalar).
