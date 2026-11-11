@@ -88,6 +88,7 @@ MAX_429_IN_A_ROW = 5             # then the scan stops and the rest stays pendin
 BACKOFF_429_S = 60
 RESCAN_HOURS = 20                # a repo checked less than this many hours ago is not rescanned
 SCHEMA_VERSION = 2               # top-level "schema_version" of stats.json / today.json
+SMALL_FILE_BYTES = 300         # cards and small_files: size-only fact, files smaller than this
 STATS_SCHEMA_VERSION = 3        # stats.json only: v3 = "sample" became an object (former integer is "sample_size")
 STALE_HOURS = 36                 # no successful scan for this long => "data delayed" banner
 FEED_DAYS = 30                   # history window for feed.xml
@@ -395,6 +396,7 @@ def aggregate(repos: list[dict]) -> dict:
             combo["repos_with_2plus_types"] += 1
     last_checked = max((scans[r["full_name"]]["checked"] for r in ok), default=None)
     sizes = {}
+    small = {}
     for s in PATHS:
         vals = sorted(int(f["size"]) for r in ok for f in [scans[r["full_name"]]["files"].get(s["path"], {})]
                       if f.get("present") and isinstance(f.get("size"), int) and f["size"] > 0)
@@ -404,8 +406,11 @@ def aggregate(repos: list[dict]) -> dict:
             q1 = q2 = q3 = vals[0]
         else:
             q1 = q2 = q3 = 0
+        fl = [scans[r["full_name"]]["files"].get(s["path"], {}) for r in ok]
+        small[s["path"]] = {"count": sum(1 for v in vals if v < SMALL_FILE_BYTES), "threshold_bytes": SMALL_FILE_BYTES,
+                            "size_unknown": sum(1 for f in fl if f.get("present") and not (isinstance(f.get("size"), int) and f["size"] > 0))}
         sizes[s["path"]] = {"count": len(vals), "median_bytes": round(q2), "p25_bytes": round(q1), "p75_bytes": round(q3)}
-    return {"sizes": sizes, "combo": combo, "scans": scans, "ok": ok, "pending": pending, "unreachable": unreachable, "counts": counts,
+    return {"sizes": sizes, "small": small, "combo": combo, "scans": scans, "ok": ok, "pending": pending, "unreachable": unreachable, "counts": counts,
             "any": any_count, "by_lang": by_lang, "last_checked": last_checked}
 
 
@@ -729,6 +734,12 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
 <ul>{size_lines}</ul>
 <p class="muted">Byte size of present files from the scan dated {esc(gen_raw[:10])}; only files with a known size are counted. <a href="/stats.json">stats.json</a> field <code>sizes</code>.</p>
 </section>"""
+    sm = agg["small"]
+    small_line = (f'<p class="asof" id="small-files">Files under {SMALL_FILE_BYTES} bytes on {esc(gen_raw[:10])}: '
+                  f'AGENTS.md {sm["AGENTS.md"]["count"]:,}, CLAUDE.md {sm["CLAUDE.md"]["count"]:,} '
+                  f'(size only; files present with unknown size are not counted: AGENTS.md {sm["AGENTS.md"]["size_unknown"]:,}, '
+                  f'CLAUDE.md {sm["CLAUDE.md"]["size_unknown"]:,}). <a href="/stats.json">stats.json</a> field <code>small_files</code>.</p>')
+    size_sec = size_sec.replace("</section>", small_line + "\n</section>")
     si = sample_info
     reasons = ", ".join(f"{n:,} {k}" for k, n in si["excluded_by_reason"].items() if n) or "none"
     sample_line = (f'<p class="asof" id="sample-line">Sample on {esc(gen_raw[:10])}: {si["included"]:,} of {si["target_total"]:,} targeted repos '
@@ -893,6 +904,8 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
                 share += seen_note
             if present:
                 size = f"{f['size']:,} bytes" if f.get("size") else ("directory" if s["kind"] == "dir" else "—")
+                if isinstance(f.get("size"), int) and 0 < f["size"] < SMALL_FILE_BYTES:
+                    size += f" (under {SMALL_FILE_BYTES} bytes)"
                 golink = go.href(r, s["path"], url)
                 files_json[s["path"]]["go_url"] = SITE_BASE + golink if golink.startswith("/") else golink
                 gh_links.append(f'<a href="{golink}" rel="nofollow">{esc(shown)}</a>')
@@ -973,6 +986,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
         "change_7d_pp": change_7d_pp,
         "combinations": {"date": generated[:10], "total": total, **agg["combo"]},
         "sizes": {p: {**v, "date": generated[:10]} for p, v in agg["sizes"].items()},
+        "small_files": {"date": generated[:10], "threshold_bytes": SMALL_FILE_BYTES, **agg["small"]},
     }
     write_json(out / "stats.json", stats)
     write_json(out / "today.json", {"schema_version": SCHEMA_VERSION, "site": SITE_BASE, "date": today.get("date"), "generated": generated, "license": "CC BY 4.0",
@@ -1077,6 +1091,7 @@ Latest (scan {generated}): {agg['counts'][PRIMARY_PATH]} of {total} scanned repo
 - [stats.json]({SITE_BASE}/stats.json): totals, shares, by-language table, full daily history
 - combinations in stats.json: date, total and counts of scanned repos by co-existence of AGENTS.md and CLAUDE.md (agents_only, claude_only, both, neither, agents_and_copilot (AGENTS.md with .github/copilot-instructions.md), agents_and_claude, agents_only_of_pair, claude_only_of_pair, neither_of_pair), same_size_agents_claude (both present with equal byte size) and repos_with_2plus_types (at least 2 of the 8 paths).
 - sizes in stats.json: per path, count, median_bytes, p25_bytes, p75_bytes and date of the scan, from the HEAD Content-Length of present files whose size is known (count = those files only); 0 when none is known (e.g. the .cursor/rules/ directory).
+- small_files in stats.json: date, threshold_bytes (300) and per path count (present files with a known size under 300 bytes; size only), threshold_bytes and size_unknown (present files whose size is unknown, not counted).
 - sample in stats.json (an object; the former integer sample is now sample_size, the headline total M): target_per_language, languages, target_total, included (= sample_size), excluded_by_reason (forks, archived, other; included + their sum = target_total) and per_language (adds up to included). other = targeted but absent from the stored sample (duplicates across languages, not found or dropped at seeding), reason not recorded per repo.
 - schema_version 2 (2026-11-07): change_7d_pp is an object per path; null until 8 dated history rows (schema_version 1: change_7d_pp was a scalar).
 - schema_version 3 (2026-11-08, stats.json only; today.json stays at 2): "sample" is now an object; the former integer is "sample_size".
