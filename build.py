@@ -748,7 +748,9 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
                    f'(top {si["target_per_language"]:,} by stars in each of {len(si["languages"])} languages); '
                    f'{si["target_total"] - si["included"]:,} not included: {esc(reasons)}. Details: <a href="/stats.json">stats.json</a> field <code>sample</code>.</p>')
     hero = f"""<section class="hero">
-<h1>{agg['counts'][PRIMARY_PATH]:,} of {total:,} top GitHub repositories ({pct(agg['counts'][PRIMARY_PATH], total)} %) have an <code>AGENTS.md</code></h1>
+<h1>AGENTS.md Tracker</h1>
+<p class="summary" id="summary">On {esc(gen_raw[:10])}, {agg['counts'][PRIMARY_PATH]:,} of {total:,} top public GitHub repositories ({pct(agg['counts'][PRIMARY_PATH], total)} %) have an AGENTS.md. The sample is the top repositories by stars in each of {len(si['languages'])} languages. The tracker checks {len(PATHS)} file paths: {esc(', '.join(s['path'] for s in PATHS))}. The method is a HEAD request to each public file URL, recording presence and size only, never file contents. The scan runs daily at about 04:00 UTC. Data: <a href="/stats.json">stats.json</a>, <a href="/llms.txt">llms.txt</a>, <a href="/feed.xml">feed.xml</a>.</p>
+<h2 class="headline">{agg['counts'][PRIMARY_PATH]:,} of {total:,} top GitHub repositories ({pct(agg['counts'][PRIMARY_PATH], total)} %) have an <code>AGENTS.md</code></h2>
 <p class="lead">{any_n:,} ({pct(any_n, total)} %) have at least one agent-instruction file of the {len(PATHS)} kinds tracked here. Sample: {sample:,} public repositories, top by stars across {len(agg['by_lang']) or '—'} languages, rescanned daily. Only presence, size and a link are recorded — never the contents.</p>
 <p class="asof"><strong>Latest published scan: {esc(gen_txt)} UTC.</strong> A new scan starts daily at 04:00 UTC; results are published when it finishes. Numbers on this page are from the latest published scan{esc(stale_txt)}.</p>
 {sample_line}
