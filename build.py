@@ -634,7 +634,7 @@ def page_vote(r: dict, direction: str) -> str:
     return f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="refresh" content="0; url={esc(back)}">
-<meta name="robots" content="noindex">
+<meta name="robots" content="noindex, nofollow">
 <title>Thanks — {esc(r['full_name'])}</title>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/style.css"></head>
 <body><main><p>Noted ({'useful' if direction == 'up' else 'not useful'}). Returning to <a href="{esc(back)}">{esc(r['full_name'])}</a> …</p>
