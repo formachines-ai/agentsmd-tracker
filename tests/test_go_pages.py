@@ -20,14 +20,15 @@ A_GO = re.compile(r'<a\s[^>]*href="(?:https://agentsmd\.formachines\.ai)?/go/[^"
 class GoPagesTest(unittest.TestCase):
     def test_go_pages_noindex(self):
         pages = sorted(PUBLIC.glob("go/*/index.html"))
-        self.assertTrue(pages)
+        votes = sorted(PUBLIC.glob("go/vote/*/*/index.html"))
+        self.assertTrue(pages and votes)
         bad = []
-        for p in pages:
+        for p in pages + votes:
             t = p.read_text(encoding="utf-8")
-            if META not in t or not re.search(r'<meta http-equiv="refresh" content="0; url=https://[^"]+">', t):
+            if META not in t or not re.search(r'<meta http-equiv="refresh" content="0; url=[^"]+">', t):
                 bad.append(str(p.relative_to(PUBLIC)))
         self.assertEqual(bad[:5], [])
-        print(f"/go/ pages checked: {len(pages)}")
+        print(f"/go/ pages checked: {len(pages)} redirect + {len(votes)} vote")
 
     def test_go_links_nofollow(self):
         n, bad = 0, []
