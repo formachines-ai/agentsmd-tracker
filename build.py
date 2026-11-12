@@ -1079,12 +1079,17 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
         agents_sec = (f'<h2>AGENTS.md in {esc(lang)} ({len(agents_items)})</h2>\n'
                       + (f'<ul class="plain">{"".join(agents_items)}</ul>' if agents_items else '<p class="muted">None of the sampled repositories has AGENTS.md yet.</p>')
                       + '\n<h2>All sampled repositories</h2>\n')
+        l_day = (today.get("generated") or (history[-1].get("generated") if history else None) or updated)[:10]
+        others = ", ".join(f"{sp['path']} in {v[sp['path']]:,}" for sp in PATHS if sp["path"] != PRIMARY_PATH)
+        l_sentence = (f"On {l_day}, {v[PRIMARY_PATH]:,} of {v['repos']:,} top {lang} repositories by stars ({pct(v[PRIMARY_PATH], v['repos'])} %) have AGENTS.md. "
+                      f"Of the same {v['repos']:,} repositories: {others}. The tracker checks {len(PATHS)} file paths, presence and size only, "
+                      f"from HEAD requests to public GitHub URLs, updated daily at about 04:00 UTC.")
         heads = "".join(f'<th><code>{esc(sp["label"])}</code></th>' for sp in PATHS)
         body = f"""<section>
 <p class="crumb"><a href="/">{esc(SITE_NAME)}</a> › <a href="/#languages">languages</a> › {esc(lang)}</p>
-<h1>{esc(lang)} repositories</h1>
-<p class="lead">{v['repos']:,} of {total:,} scanned repositories ({pct(v['repos'], total)} %) are {esc(lang)}; {v[PRIMARY_PATH]} ({pct(v[PRIMARY_PATH], v['repos'])} %) have AGENTS.md. Data as of {esc(updated)}. Source: public GitHub, presence checks only; stats CC BY 4.0, cite as "{esc(SITE_NAME)}, {esc(SITE_HOST)}".</p>
-<p class="muted">Sorted alphabetically by owner/name — not a ranking.</p>
+<h1>AGENTS.md in {esc(lang)} repositories</h1>
+<p class="lead">{esc(l_sentence)} Data: <a href="/">home page</a>, <a href="/stats.json">stats.json</a>.</p>
+<p class="muted">Stats CC BY 4.0, cite as "{esc(SITE_NAME)}, {esc(SITE_HOST)}". Sorted alphabetically by owner/name — not a ranking.</p>
 {agents_sec}<div class="scroll"><table><thead><tr><th>Repository</th>{heads}</tr></thead><tbody>{''.join(trs)}</tbody></table></div>
 </section>"""
         l_day = (today.get("generated") or (history[-1].get("generated") if history else None) or updated)[:10]
