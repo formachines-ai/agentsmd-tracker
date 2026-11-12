@@ -736,11 +736,9 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
 <p class="muted">Byte size of present files from the scan dated {esc(gen_raw[:10])}; only files with a known size are counted. <a href="/stats.json">stats.json</a> field <code>sizes</code>.</p>
 </section>"""
     sm = agg["small"]
-    small_line = (f'<p class="asof" id="small-files">Files under {SMALL_FILE_BYTES} bytes on {esc(gen_raw[:10])}: '
-                  f'AGENTS.md {sm["AGENTS.md"]["count"]:,} of {agg["counts"]["AGENTS.md"]:,}, CLAUDE.md {sm["CLAUDE.md"]["count"]:,} of {agg["counts"]["CLAUDE.md"]:,} '
-                  f'(size only; files with a Content-Length of 0 are counted: AGENTS.md {sm["AGENTS.md"]["zero_bytes"]:,}, CLAUDE.md {sm["CLAUDE.md"]["zero_bytes"]:,}; '
-                  f'present files with unknown size are not counted: AGENTS.md {sm["AGENTS.md"]["unknown_size"]:,}, '
-                  f'CLAUDE.md {sm["CLAUDE.md"]["unknown_size"]:,}). <a href="/stats.json">stats.json</a> field <code>small_files</code>.</p>')
+    small_line = (f'<p class="asof" id="small-files">On {esc(gen_raw[:10])}, {sm["AGENTS.md"]["count"]:,} of {agg["counts"]["AGENTS.md"]:,} AGENTS.md files '
+                  f'and {sm["CLAUDE.md"]["count"]:,} of {agg["counts"]["CLAUDE.md"]:,} CLAUDE.md files are under {SMALL_FILE_BYTES} bytes; see '
+                  f'<a href="/stats.json">/stats.json</a>.</p>')
     combo_sec = combo_sec.replace("</section>", small_line + "\n</section>")
     si = sample_info
     reasons = ", ".join(f"{n:,} {k}" for k, n in si["excluded_by_reason"].items() if n) or "none"

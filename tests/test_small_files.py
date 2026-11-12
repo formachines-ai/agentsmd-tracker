@@ -46,9 +46,10 @@ class SmallFilesTest(unittest.TestCase):
         self.assertIsNotNone(m)
         t = m.group(1)
         sf = self.sf
-        self.assertIn(f"under {LIMIT} bytes on {sf['date']}", t)
-        self.assertIn(f"AGENTS.md {sf['agents_md_under_300']:,} of {sf['agents_md_total']:,}", t)
-        self.assertIn(f"CLAUDE.md {sf['claude_md_under_300']:,} of {sf['claude_md_total']:,}", t)
+        self.assertIn(f"On {sf['date']}, {sf['agents_md_under_300']:,} of {sf['agents_md_total']:,} AGENTS.md files", t)
+        self.assertIn(f"{sf['claude_md_under_300']:,} of {sf['claude_md_total']:,} CLAUDE.md files are under {LIMIT} bytes", t)
+        self.assertLessEqual(len(re.sub(r"<[^>]+>", "", t).split()), 40)
+        self.assertNotRegex(t.lower(), r"zero|unknown|content-length|parenthes|\(")
         self.assertIn('href="/stats.json"', t)
         self.assertGreater(html.index('id="small-files"'), html.index('id="combinations"'))
 
