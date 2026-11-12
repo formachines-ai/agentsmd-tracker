@@ -737,11 +737,11 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
 </section>"""
     sm = agg["small"]
     small_line = (f'<p class="asof" id="small-files">Files under {SMALL_FILE_BYTES} bytes on {esc(gen_raw[:10])}: '
-                  f'AGENTS.md {sm["AGENTS.md"]["count"]:,}, CLAUDE.md {sm["CLAUDE.md"]["count"]:,} '
+                  f'AGENTS.md {sm["AGENTS.md"]["count"]:,} of {agg["counts"]["AGENTS.md"]:,}, CLAUDE.md {sm["CLAUDE.md"]["count"]:,} of {agg["counts"]["CLAUDE.md"]:,} '
                   f'(size only; files with a Content-Length of 0 are counted: AGENTS.md {sm["AGENTS.md"]["zero_bytes"]:,}, CLAUDE.md {sm["CLAUDE.md"]["zero_bytes"]:,}; '
                   f'present files with unknown size are not counted: AGENTS.md {sm["AGENTS.md"]["unknown_size"]:,}, '
                   f'CLAUDE.md {sm["CLAUDE.md"]["unknown_size"]:,}). <a href="/stats.json">stats.json</a> field <code>small_files</code>.</p>')
-    size_sec = size_sec.replace("</section>", small_line + "\n</section>")
+    combo_sec = combo_sec.replace("</section>", small_line + "\n</section>")
     si = sample_info
     reasons = ", ".join(f"{n:,} {k}" for k, n in si["excluded_by_reason"].items() if n) or "none"
     sample_line = (f'<p class="asof" id="sample-line">Sample on {esc(gen_raw[:10])}: {si["included"]:,} of {si["target_total"]:,} targeted repos '
@@ -1009,7 +1009,9 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
         "change_7d_pp": change_7d_pp,
         "combinations": {"date": generated[:10], "total": total, **agg["combo"]},
         "sizes": {p: {**v, "date": generated[:10]} for p, v in agg["sizes"].items()},
-        "small_files": {"date": generated[:10], "threshold_bytes": SMALL_FILE_BYTES, **agg["small"]},
+        "small_files": {"date": generated[:10], "threshold_bytes": SMALL_FILE_BYTES,
+                        "agents_md_under_300": agg["small"]["AGENTS.md"]["count"], "claude_md_under_300": agg["small"]["CLAUDE.md"]["count"],
+                        "agents_md_total": agg["counts"]["AGENTS.md"], "claude_md_total": agg["counts"]["CLAUDE.md"], **agg["small"]},
     }
     write_json(out / "stats.json", stats)
     write_json(out / "today.json", {"schema_version": SCHEMA_VERSION, "site": SITE_BASE, "date": today.get("date"), "generated": generated, "license": "CC BY 4.0",
