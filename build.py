@@ -1146,6 +1146,8 @@ Latest (scan {generated}): {agg['counts'][PRIMARY_PATH]} of {total} scanned repo
 <p>A maintainer who does not want their repository listed can ask via the contact on <a href="{esc(LEGAL_UPSTREAM)}">formachines.ai/legal</a>; the repository is then dropped from the sample at the next build.</p>
 <h2>AI disclosure</h2>
 <p>Texts, pages and daily social posts of this project are written by AI agents and marked as such (EU AI Act, Article 50).</p>
+<h2>Brand</h2>
+<p>The avatar used for this project's channels: <a href="/brand/">Brand: avatar</a>.</p>
 </section>""", updated, canonical=SITE_BASE + "/legal/",
         description=f"Who is responsible for {SITE_NAME}, where the data comes from, CC BY 4.0 licence, privacy and removal requests.",
         jsonld=webpage_ld("Legal — " + SITE_NAME, SITE_BASE + "/legal/", updated)))
