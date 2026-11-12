@@ -856,6 +856,12 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
 
     # ---- repo pages
     urls = [SITE_BASE + "/", SITE_BASE + "/legal/", SITE_BASE + "/brand/"]
+    url_lastmod: dict[str, str] = {}   # /repo/ url -> own lastmod; every other url gets the stats.json generated date
+    changed_on: dict[str, str] = {}    # repo -> latest scan day with a path added or removed (history is read-only)
+    for d_ in history:
+        for x_ in list(d_.get("added", [])) + list(d_.get("removed", [])):
+            if x_["full_name"] not in changed_on or d_["date"] > changed_on[x_["full_name"]]:
+                changed_on[x_["full_name"]] = d_["date"]
     scan_date = (today.get("generated") or (history[-1].get("generated") if history else None) or updated)[:10]   # date part of stats.json 'generated'
     first_scan_day = history[0]["date"] if history else None
     first_scanned_of = repo_first_scanned(repos, history)
@@ -973,6 +979,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
                                           "language_share": language_share, "first_seen": first_seen, "first_scanned": r_first,
                                           "page": f"{SITE_BASE}/repo/{r['owner']}/{r['name']}/", "license": "CC BY 4.0"})
         urls.append(f"{SITE_BASE}/repo/{r['owner']}/{r['name']}/")
+        url_lastmod[urls[-1]] = changed_on.get(r["full_name"]) or r_first or scan_date
 
     # ---- JSON endpoints
     generated = today.get("generated") or (history[-1].get("generated") if history else None) or updated  # time of the last real scan
@@ -1134,7 +1141,7 @@ Latest (scan {generated}): {agg['counts'][PRIMARY_PATH]} of {total} scanned repo
 """)
     write_text(out / "robots.txt", f"User-agent: *\nAllow: /\nDisallow: /go/\n\nSitemap: {SITE_BASE}/sitemap.xml\n")
     write_text(out / "sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-               + "".join(f"<url><loc>{xml_escape(u)}</loc><lastmod>{gen_raw[:10]}</lastmod></url>\n" for u in urls) + "</urlset>\n")
+               + "".join(f"<url><loc>{xml_escape(u)}</loc><lastmod>{url_lastmod.get(u, gen_raw[:10])}</lastmod></url>\n" for u in urls) + "</urlset>\n")
     write_text(out / "404.html", layout("Page not found — " + SITE_NAME, f"""<section>
 <h1>404 — page not found</h1>
 <p>This address does not exist on {esc(SITE_NAME)}. Addresses never change once published, so the link you followed was probably mistyped.</p>
