@@ -1150,7 +1150,7 @@ Latest (scan {generated}): {agg['counts'][PRIMARY_PATH]} of {total} scanned repo
 <li>Repository cards live at <code>/repo/&lt;owner&gt;/&lt;name&gt;/</code> — the repository must be in the sample ({sample:,} repos).</li>
 <li><a href="/stats.json">stats.json</a> · <a href="/today.json">today.json</a> · <a href="/feed.xml">RSS</a> · <a href="/llms.txt">llms.txt</a> · <a href="/legal/">Legal</a></li>
 </ul>
-</section>""", updated))
+</section>""", updated, canonical=SITE_BASE + "/404.html"))
     write_text(out / "legal" / "index.html", layout("Legal — " + SITE_NAME, f"""<section>
 <h1>Legal</h1>
 <h2>Who is responsible</h2>
