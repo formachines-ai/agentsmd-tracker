@@ -937,10 +937,22 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
                          + '</section>\n')
         files_line = (f'<p class="gh-files">Files on GitHub: {" · ".join(gh_links)}</p>' if gh_links
                       else f'<p class="gh-files">No tracked files found on {esc(scan_date)}</p>')
+        present_paths = [t["path"] + ("/" if t["kind"] == "dir" else "") for t in PATHS if files_json[t["path"]]["present"]]
+        lang_txt = f"{esc(r['language'])}, " if r.get("language") else ""
+        if not sc or any(files_json[t["path"]]["present"] is None for t in PATHS):
+            facts = f"On {esc(scan_date)}, {esc(r['full_name'])} ({lang_txt}in the top-by-stars sample) was not fully checked yet."
+        elif present_paths:
+            facts = (f"On {esc(scan_date)}, {esc(r['full_name'])} ({lang_txt}in the top-by-stars sample) has {len(present_paths)} of {len(PATHS)} tracked file paths: "
+                     + ", ".join(f"<code>{esc(p)}</code>" for p in present_paths) + ".")
+        else:
+            facts = f"On {esc(scan_date)}, {esc(r['full_name'])} ({lang_txt}in the top-by-stars sample) has none of the {len(PATHS)} tracked file paths."
+        lang_a = f' · <a href="/lang/{lang_slug(r["language"])}/">All {esc(r["language"])} repos in the sample</a>' if r.get("language") else ""
+        facts_line = (f'<p class="facts">{facts} Presence and size only, from HEAD requests to public GitHub URLs.</p>\n'
+                      f'<p class="muted"><a href="/">Home: {esc(SITE_NAME)}</a>{lang_a}</p>\n')
         body = f"""<section>
 <p class="crumb"><a href="/">{esc(SITE_NAME)}</a> › repo</p>
 <h1>{esc(r['full_name'])}</h1>
-{files_line}
+{facts_line}{files_line}
 <p class="lead">{esc(r['language'])} · {r['stars']:,} stars · default branch <code>{esc((sc or {}).get('default_branch') or r.get('default_branch') or 'main')}</code> · <a href="{esc(r.get('html_url') or GH_BASE + '/' + r['full_name'])}" rel="nofollow">repository on GitHub</a></p>
 <p class="muted">Scan status: {esc(status)} · last checked {esc(checked)} · <a href="/repo/{esc(r['owner'])}/{esc(r['name'])}/index.json">index.json</a></p>
 <div class="scroll"><table><thead><tr><th>Path</th><th>Present</th><th>Size</th><th>Link</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div>
