@@ -6,17 +6,17 @@
  "stars": 10769,
  "default_branch": "master",
  "status": "ok",
- "checked": "2026-11-11T05:11:07Z",
+ "checked": "2026-11-12T05:11:23Z",
  "files": {
   "AGENTS.md": {
    "present": true,
    "size": 5357,
    "url": "https://github.com/itsfatduck/optimizerDuck/blob/master/AGENTS.md",
    "lang_share": {
-    "count": 36,
+    "count": 37,
     "total": 184,
-    "pct": 19.6,
-    "date": "2026-11-11",
+    "pct": 20.1,
+    "date": "2026-11-12",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    },
@@ -32,7 +32,7 @@
     "count": 21,
     "total": 184,
     "pct": 11.4,
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    }
@@ -45,7 +45,7 @@
     "count": 2,
     "total": 184,
     "pct": 1.1,
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    }
@@ -58,7 +58,7 @@
     "count": 0,
     "total": 184,
     "pct": 0.0,
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    }
@@ -71,7 +71,7 @@
     "count": 29,
     "total": 184,
     "pct": 15.8,
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    }
@@ -84,7 +84,7 @@
     "count": 1,
     "total": 184,
     "pct": 0.5,
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    }
@@ -97,7 +97,7 @@
     "count": 2,
     "total": 184,
     "pct": 1.1,
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    }
@@ -110,7 +110,7 @@
     "count": 1,
     "total": 184,
     "pct": 0.5,
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    }
@@ -118,52 +118,52 @@
  },
  "language_share": {
   "AGENTS.md": {
-   "count": 36,
+   "count": 37,
    "total": 184,
-   "pct": 19.6,
-   "date": "2026-11-11"
+   "pct": 20.1,
+   "date": "2026-11-12"
   },
   "CLAUDE.md": {
    "count": 21,
    "total": 184,
    "pct": 11.4,
-   "date": "2026-11-11"
+   "date": "2026-11-12"
   },
   ".cursorrules": {
    "count": 2,
    "total": 184,
    "pct": 1.1,
-   "date": "2026-11-11"
+   "date": "2026-11-12"
   },
   ".cursor/rules": {
    "count": 0,
    "total": 184,
    "pct": 0.0,
-   "date": "2026-11-11"
+   "date": "2026-11-12"
   },
   ".github/copilot-instructions.md": {
    "count": 29,
    "total": 184,
    "pct": 15.8,
-   "date": "2026-11-11"
+   "date": "2026-11-12"
   },
   "llms.txt": {
    "count": 1,
    "total": 184,
    "pct": 0.5,
-   "date": "2026-11-11"
+   "date": "2026-11-12"
   },
   "GEMINI.md": {
    "count": 2,
    "total": 184,
    "pct": 1.1,
-   "date": "2026-11-11"
+   "date": "2026-11-12"
   },
   ".windsurfrules": {
    "count": 1,
    "total": 184,
    "pct": 0.5,
-   "date": "2026-11-11"
+   "date": "2026-11-12"
   }
  },
  "first_seen": {

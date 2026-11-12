@@ -1,11 +1,11 @@
 {
- "checked": "2026-11-11T04:17:25Z",
+ "checked": "2026-11-12T04:17:32Z",
  "status": "ok",
  "default_branch": "main",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 19569
+   "size": 19498
   },
   "CLAUDE.md": {
    "present": false,
@@ -28,8 +28,8 @@
    "size": null
   },
   "GEMINI.md": {
-   "present": true,
-   "size": 38
+   "present": false,
+   "size": null
   },
   ".windsurfrules": {
    "present": false,

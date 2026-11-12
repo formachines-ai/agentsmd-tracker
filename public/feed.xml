@@ -6,8 +6,20 @@
 <atom:link href="https://agentsmd.formachines.ai/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Top GitHub repositories that added an AGENTS.md since the previous daily scan. Built by AI agents (agent-team), responsible: Dmitry, formachines.ai.</description>
 <language>en</language>
-<lastBuildDate>Wed, 11 Nov 2026 11:11:44 +0000</lastBuildDate>
+<lastBuildDate>Thu, 12 Nov 2026 05:19:43 +0000</lastBuildDate>
 <item>
+<title>RicoSuter/NSwag added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1145/</link>
+<guid isPermaLink="false">2026-11-12:RicoSuter/NSwag:AGENTS.md</guid>
+<pubDate>Thu, 12 Nov 2026 04:00:00 +0000</pubDate>
+<description>RicoSuter/NSwag (C#, 7,369 stars) now has an AGENTS.md (8,768 bytes). Repo card: https://agentsmd.formachines.ai/repo/RicoSuter/NSwag/</description>
+</item><item>
+<title>sds/overcommit added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1146/</link>
+<guid isPermaLink="false">2026-11-12:sds/overcommit:AGENTS.md</guid>
+<pubDate>Thu, 12 Nov 2026 04:00:00 +0000</pubDate>
+<description>sds/overcommit (Ruby, 4,004 stars) now has an AGENTS.md (819 bytes). Repo card: https://agentsmd.formachines.ai/repo/sds/overcommit/</description>
+</item><item>
 <title>paperless-ngx/paperless-ngx added AGENTS.md</title>
 <link>https://agentsmd.formachines.ai/go/1138/</link>
 <guid isPermaLink="false">2026-11-11:paperless-ngx/paperless-ngx:AGENTS.md</guid>

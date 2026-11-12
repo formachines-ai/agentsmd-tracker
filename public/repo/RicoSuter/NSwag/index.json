@@ -6,20 +6,22 @@
  "stars": 7369,
  "default_branch": "master",
  "status": "ok",
- "checked": "2026-11-11T04:00:15Z",
+ "checked": "2026-11-12T04:00:14Z",
  "files": {
   "AGENTS.md": {
-   "present": false,
-   "size": null,
-   "url": null,
+   "present": true,
+   "size": 8768,
+   "url": "https://github.com/RicoSuter/NSwag/blob/master/AGENTS.md",
    "lang_share": {
-    "count": 36,
+    "count": 37,
     "total": 184,
-    "pct": 19.6,
-    "date": "2026-11-11",
+    "pct": 20.1,
+    "date": "2026-11-12",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
-   }
+   },
+   "first_seen": "2026-11-12",
+   "go_url": "https://agentsmd.formachines.ai/go/1145/"
   },
   "CLAUDE.md": {
    "present": false,
@@ -29,7 +31,7 @@
     "count": 21,
     "total": 184,
     "pct": 11.4,
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    }
@@ -42,7 +44,7 @@
     "count": 2,
     "total": 184,
     "pct": 1.1,
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    }
@@ -55,7 +57,7 @@
     "count": 0,
     "total": 184,
     "pct": 0.0,
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    }
@@ -68,7 +70,7 @@
     "count": 29,
     "total": 184,
     "pct": 15.8,
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    }
@@ -81,7 +83,7 @@
     "count": 1,
     "total": 184,
     "pct": 0.5,
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    }
@@ -94,7 +96,7 @@
     "count": 2,
     "total": 184,
     "pct": 1.1,
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    }
@@ -107,7 +109,7 @@
     "count": 1,
     "total": 184,
     "pct": 0.5,
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    }
@@ -115,55 +117,59 @@
  },
  "language_share": {
   "AGENTS.md": {
-   "count": 36,
+   "count": 37,
    "total": 184,
-   "pct": 19.6,
-   "date": "2026-11-11"
+   "pct": 20.1,
+   "date": "2026-11-12"
   },
   "CLAUDE.md": {
    "count": 21,
    "total": 184,
    "pct": 11.4,
-   "date": "2026-11-11"
+   "date": "2026-11-12"
   },
   ".cursorrules": {
    "count": 2,
    "total": 184,
    "pct": 1.1,
-   "date": "2026-11-11"
+   "date": "2026-11-12"
   },
   ".cursor/rules": {
    "count": 0,
    "total": 184,
    "pct": 0.0,
-   "date": "2026-11-11"
+   "date": "2026-11-12"
   },
   ".github/copilot-instructions.md": {
    "count": 29,
    "total": 184,
    "pct": 15.8,
-   "date": "2026-11-11"
+   "date": "2026-11-12"
   },
   "llms.txt": {
    "count": 1,
    "total": 184,
    "pct": 0.5,
-   "date": "2026-11-11"
+   "date": "2026-11-12"
   },
   "GEMINI.md": {
    "count": 2,
    "total": 184,
    "pct": 1.1,
-   "date": "2026-11-11"
+   "date": "2026-11-12"
   },
   ".windsurfrules": {
    "count": 1,
    "total": 184,
    "pct": 0.5,
-   "date": "2026-11-11"
+   "date": "2026-11-12"
   }
  },
- "first_seen": {},
+ "first_seen": {
+  "AGENTS.md": {
+   "date": "2026-11-12"
+  }
+ },
  "first_scanned": "2026-11-02",
  "page": "https://agentsmd.formachines.ai/repo/RicoSuter/NSwag/",
  "license": "CC BY 4.0"

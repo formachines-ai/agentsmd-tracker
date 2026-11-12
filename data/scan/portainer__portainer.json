@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-11T04:30:58Z",
+ "checked": "2026-11-12T04:31:13Z",
  "status": "ok",
  "default_branch": "develop",
  "files": {
@@ -16,7 +16,7 @@
    "size": null
   },
   ".cursor/rules": {
-   "present": false,
+   "present": true,
    "size": null
   },
   ".github/copilot-instructions.md": {

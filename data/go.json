@@ -1,5 +1,5 @@
 {
- "next_id": 1143,
+ "next_id": 1147,
  "links": {
   "affaan-m/ECC/AGENTS.md": {
    "id": 1,
@@ -6851,6 +6851,30 @@
    "id": 1142,
    "url": "https://github.com/jruby/jruby/blob/master/AGENTS.md",
    "repo": "jruby/jruby",
+   "path": "AGENTS.md"
+  },
+  "Graphify-Labs/graphify/GEMINI.md": {
+   "id": 1143,
+   "url": "https://github.com/Graphify-Labs/graphify/blob/v8/GEMINI.md",
+   "repo": "Graphify-Labs/graphify",
+   "path": "GEMINI.md"
+  },
+  "portainer/portainer/.cursor/rules": {
+   "id": 1144,
+   "url": "https://github.com/portainer/portainer/tree/develop/.cursor/rules",
+   "repo": "portainer/portainer",
+   "path": ".cursor/rules"
+  },
+  "RicoSuter/NSwag/AGENTS.md": {
+   "id": 1145,
+   "url": "https://github.com/RicoSuter/NSwag/blob/master/AGENTS.md",
+   "repo": "RicoSuter/NSwag",
+   "path": "AGENTS.md"
+  },
+  "sds/overcommit/AGENTS.md": {
+   "id": 1146,
+   "url": "https://github.com/sds/overcommit/blob/main/AGENTS.md",
+   "repo": "sds/overcommit",
    "path": "AGENTS.md"
   }
  }

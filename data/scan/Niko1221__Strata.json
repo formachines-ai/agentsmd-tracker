@@ -1,11 +1,11 @@
 {
- "checked": "2026-11-11T04:31:36Z",
+ "checked": "2026-11-12T04:31:51Z",
  "status": "ok",
  "default_branch": "main",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 7251
+   "size": 7303
   },
   "CLAUDE.md": {
    "present": false,

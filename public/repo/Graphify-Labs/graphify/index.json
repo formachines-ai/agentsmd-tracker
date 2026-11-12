@@ -6,7 +6,7 @@
  "stars": 140968,
  "default_branch": "v8",
  "status": "ok",
- "checked": "2026-11-11T04:08:57Z",
+ "checked": "2026-11-12T04:09:00Z",
  "files": {
   "AGENTS.md": {
    "present": true,
@@ -16,7 +16,7 @@
     "count": 67,
     "total": 197,
     "pct": 34.0,
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "language": "Python",
     "page": "https://agentsmd.formachines.ai/lang/python/"
    },
@@ -32,7 +32,7 @@
     "count": 38,
     "total": 197,
     "pct": 19.3,
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "language": "Python",
     "page": "https://agentsmd.formachines.ai/lang/python/"
    }
@@ -45,7 +45,7 @@
     "count": 3,
     "total": 197,
     "pct": 1.5,
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "language": "Python",
     "page": "https://agentsmd.formachines.ai/lang/python/"
    }
@@ -58,7 +58,7 @@
     "count": 6,
     "total": 197,
     "pct": 3.0,
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "language": "Python",
     "page": "https://agentsmd.formachines.ai/lang/python/"
    }
@@ -71,7 +71,7 @@
     "count": 15,
     "total": 197,
     "pct": 7.6,
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "language": "Python",
     "page": "https://agentsmd.formachines.ai/lang/python/"
    }
@@ -84,23 +84,25 @@
     "count": 3,
     "total": 197,
     "pct": 1.5,
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "language": "Python",
     "page": "https://agentsmd.formachines.ai/lang/python/"
    }
   },
   "GEMINI.md": {
-   "present": false,
-   "size": null,
-   "url": null,
+   "present": true,
+   "size": 1587,
+   "url": "https://github.com/Graphify-Labs/graphify/blob/v8/GEMINI.md",
    "lang_share": {
     "count": 4,
     "total": 197,
     "pct": 2.0,
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "language": "Python",
     "page": "https://agentsmd.formachines.ai/lang/python/"
-   }
+   },
+   "first_seen": "2026-11-12",
+   "go_url": "https://agentsmd.formachines.ai/go/1143/"
   },
   ".windsurfrules": {
    "present": false,
@@ -110,7 +112,7 @@
     "count": 1,
     "total": 197,
     "pct": 0.5,
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "language": "Python",
     "page": "https://agentsmd.formachines.ai/lang/python/"
    }
@@ -121,55 +123,58 @@
    "count": 67,
    "total": 197,
    "pct": 34.0,
-   "date": "2026-11-11"
+   "date": "2026-11-12"
   },
   "CLAUDE.md": {
    "count": 38,
    "total": 197,
    "pct": 19.3,
-   "date": "2026-11-11"
+   "date": "2026-11-12"
   },
   ".cursorrules": {
    "count": 3,
    "total": 197,
    "pct": 1.5,
-   "date": "2026-11-11"
+   "date": "2026-11-12"
   },
   ".cursor/rules": {
    "count": 6,
    "total": 197,
    "pct": 3.0,
-   "date": "2026-11-11"
+   "date": "2026-11-12"
   },
   ".github/copilot-instructions.md": {
    "count": 15,
    "total": 197,
    "pct": 7.6,
-   "date": "2026-11-11"
+   "date": "2026-11-12"
   },
   "llms.txt": {
    "count": 3,
    "total": 197,
    "pct": 1.5,
-   "date": "2026-11-11"
+   "date": "2026-11-12"
   },
   "GEMINI.md": {
    "count": 4,
    "total": 197,
    "pct": 2.0,
-   "date": "2026-11-11"
+   "date": "2026-11-12"
   },
   ".windsurfrules": {
    "count": 1,
    "total": 197,
    "pct": 0.5,
-   "date": "2026-11-11"
+   "date": "2026-11-12"
   }
  },
  "first_seen": {
   "AGENTS.md": {
    "date": "2026-11-02",
    "baseline": true
+  },
+  "GEMINI.md": {
+   "date": "2026-11-12"
   }
  },
  "first_scanned": "2026-11-02",

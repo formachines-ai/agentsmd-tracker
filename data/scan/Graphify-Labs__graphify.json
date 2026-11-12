@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-11T04:08:57Z",
+ "checked": "2026-11-12T04:09:00Z",
  "status": "ok",
  "default_branch": "v8",
  "files": {
@@ -28,8 +28,8 @@
    "size": null
   },
   "GEMINI.md": {
-   "present": false,
-   "size": null
+   "present": true,
+   "size": 1587
   },
   ".windsurfrules": {
    "present": false,
