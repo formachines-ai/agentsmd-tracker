@@ -319,6 +319,7 @@ def run_scan(repos: list[dict], limit: int | None, max_seconds: float | None, fo
             time.sleep(BACKOFF_429_S)
             continue
         prev = read_json(scan_file_for(repo), None)
+        attempt_status = new["status"]   # what this attempt returned; a kept good snapshot must not count as a successful check today
         if prev and prev.get("status") == "ok" and new["status"] == "ok":
             for spec in PATHS:
                 p = spec["path"]
@@ -334,7 +335,7 @@ def run_scan(repos: list[dict], limit: int | None, max_seconds: float | None, fo
             new = prev
         write_json(scan_file_for(repo), new)
         stats["scanned"] += 1
-        stats[new["status"]] = stats.get(new["status"], 0) + 1
+        stats[attempt_status] = stats.get(attempt_status, 0) + 1
         present = [p for p, f in new["files"].items() if f["present"]]
         log.info("[%d/%d] %s (%s, %d★) %s %s", i, len(todo), repo["full_name"], repo["language"], repo["stars"], new["status"], present or "-")
     log.info("scan done: %s in %.0fs", {k: v for k, v in stats.items() if k not in ("added", "removed")}, time.time() - t0)
