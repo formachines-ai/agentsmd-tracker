@@ -23,8 +23,11 @@ class Combinations(unittest.TestCase):
     def test_sum_equals_sample(self):
         for k in KEYS:
             self.assertIsInstance(self.cb[k], int)
-        self.assertEqual(sum(self.cb[k] for k in KEYS[:4]), self.stats["sample_size"])
-        self.assertEqual(self.cb["total"], self.stats["sample_size"])
+        # unreachable repos are excluded from all denominators: scanned = sample_size - unreachable
+        unreachable = json.loads((PUB / "build.json").read_text(encoding="utf-8"))["unreachable"]
+        self.assertEqual(self.stats["scanned"] + unreachable, self.stats["sample_size"])
+        self.assertEqual(sum(self.cb[k] for k in KEYS[:4]), self.stats["scanned"])
+        self.assertEqual(self.cb["total"], self.stats["scanned"])
 
     def test_date_is_generated_date(self):
         self.assertEqual(self.cb["date"], self.stats["generated"][:10])
