@@ -723,7 +723,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
         ("neither", "Neither of the two"), ("agents_and_copilot", "AGENTS.md and .github/copilot-instructions.md")))
     combo_sec = f"""<section id="combinations">
 <h2>File combinations on {esc(gen_raw[:10])}</h2>
-<table><thead><tr><th>Combination</th><th>Repos</th><th>% of {total:,}</th></tr></thead><tbody>{fc_rows}</tbody></table>
+<div class="scroll"><table><thead><tr><th>Combination</th><th>Repos</th><th>% of {total:,}</th></tr></thead><tbody>{fc_rows}</tbody></table></div>
 <h3>Other co-existence counts</h3>
 <ul>{cb_lines}</ul>
 <p class="muted">Presence and byte size only, from the scan dated {esc(gen_raw[:10])}; <a href="/stats.json">stats.json</a> field <code>combinations</code>.</p>
