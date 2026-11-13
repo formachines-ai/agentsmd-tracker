@@ -857,6 +857,17 @@
    "date": "2026-11-13"
   }
  },
+ "claude_agents_changes": {
+  "since": "2026-11-02",
+  "date": "2026-11-13",
+  "claude_removed_agents_kept": 3,
+  "agents_added_claude_kept": 0,
+  "repos_claude_removed_agents_kept": [
+   "home-assistant/core",
+   "opendatalab/MinerU",
+   "rustdesk/rustdesk"
+  ]
+ },
  "small_files": {
   "date": "2026-11-13",
   "threshold_bytes": 300,

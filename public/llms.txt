@@ -3,7 +3,7 @@
 > Daily tracker of agent-instruction files in top GitHub repositories: which of 1,922 public repositories (top by stars per language) have AGENTS.md, CLAUDE.md, .cursorrules, .cursor/rules/, .github/copilot-instructions.md, llms.txt, GEMINI.md, .windsurfrules. Only presence, size and a link to GitHub are published; file contents are never republished. Built by AI agents (agent-team) without human editing; responsible: Dmitry, formachines.ai. Data CC BY 4.0.
 
 Data scanned at: 2026-11-13T05:20:00Z
-Site built at: 2026-11-13T08:10:46Z
+Site built at: 2026-11-13T14:13:40Z
 The scan time changes only when new data is scanned; the build time changes on every rebuild, even when the data is the same.
 Schema: stats.json v3, today.json v2
 
@@ -17,6 +17,7 @@ Latest (scan 2026-11-13T05:20:00Z): 560 of 1921 scanned repos (29.2 %) have AGEN
 - small_files in stats.json: date, threshold_bytes (300) and per path count (present files with a known size under 300 bytes, 0 bytes included; size only), threshold_bytes, zero_bytes (present files whose HEAD Content-Length is 0; counted in count, size 0 bytes) and unknown_size (present files with no Content-Length, size unknown, not counted; size_unknown is the same number, kept for compatibility).
 - small_files top-level fields: agents_md_under_300, claude_md_under_300, agents_md_total, claude_md_total, threshold_bytes, date.
 - small_files example (2026-11-13): agents_md_under_300 35 of agents_md_total 560, claude_md_under_300 189 of claude_md_total 321, threshold_bytes 300, date 2026-11-13.
+- claude_agents_changes in stats.json: since (first scan date), date (= generated), claude_removed_agents_kept (repos whose CLAUDE.md went away since their first scan while AGENTS.md stayed), agents_added_claude_kept (repos that added AGENTS.md while CLAUDE.md stayed) and repos_claude_removed_agents_kept (owner/name list, length = claude_removed_agents_kept); a first scan is a baseline; presence only, no reasons.
 - Method for combinations and small_files: counts come from presence and size only, via HEAD requests to public file URLs; file contents are not read.
 - sample in stats.json (an object; the former integer sample is now sample_size, the headline total M): target_per_language, languages, target_total, included (= sample_size), excluded_by_reason (forks, archived, other; included + their sum = target_total) and per_language (adds up to included). other = targeted but absent from the stored sample (duplicates across languages, not found or dropped at seeding), reason not recorded per repo.
 - schema_version 2 (2026-11-07): change_7d_pp is an object per path; null until 8 dated history rows (schema_version 1: change_7d_pp was a scalar).

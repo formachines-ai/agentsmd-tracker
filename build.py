@@ -429,8 +429,36 @@ def aggregate(repos: list[dict]) -> dict:
         small[s["path"]] = {"count": sum(1 for v in vals if v < SMALL_FILE_BYTES), "threshold_bytes": SMALL_FILE_BYTES,
                             "size_unknown": unknown, "zero_bytes": sum(1 for v in vals if v == 0), "unknown_size": unknown}
         sizes[s["path"]] = {"count": len(vals), "median_bytes": round(q2), "p25_bytes": round(q1), "p75_bytes": round(q3)}
-    return {"sizes": sizes, "small": small, "combo": combo, "scans": scans, "ok": ok, "pending": pending, "unreachable": unreachable, "counts": counts,
+    present = {r["full_name"]: {p for p in ("AGENTS.md", "CLAUDE.md") if scans[r["full_name"]]["files"].get(p, {}).get("present")} for r in ok}
+    return {"present": present, "sizes": sizes, "small": small, "combo": combo, "scans": scans, "ok": ok, "pending": pending, "unreachable": unreachable, "counts": counts,
             "any": any_count, "by_lang": by_lang, "last_checked": last_checked}
+
+
+def claude_agents_changes(history: list[dict], present_now: dict[str, set], generated: str) -> dict:
+    """Repos whose CLAUDE.md was removed while AGENTS.md stayed (and AGENTS.md added while CLAUDE.md stayed) since the
+    repo's first scan. A first scan is a baseline and records no events, so the baseline state of a path is
+    reconstructed from the dated added/removed events: no events = unchanged; first event 'removed' = present at
+    baseline; first event 'added' = absent at baseline. present_now: full_name -> set of present paths (status ok)."""
+    events: dict[tuple[str, str], list[str]] = {}
+    for d in sorted(history, key=lambda x: x["date"]):
+        for kind in ("added", "removed"):
+            for e in d.get(kind, []):
+                if e.get("path") in ("AGENTS.md", "CLAUDE.md"):
+                    events.setdefault((e["full_name"], e["path"]), []).append(kind)
+
+    def baseline(name: str, path: str) -> bool:
+        ev = events.get((name, path))
+        return (path in present_now[name]) if not ev else ev[0] == "removed"
+
+    removed, added = [], 0
+    for name, now in sorted(present_now.items()):
+        if "AGENTS.md" in now and "CLAUDE.md" not in now and baseline(name, "CLAUDE.md") and baseline(name, "AGENTS.md"):
+            removed.append(name)
+        if "AGENTS.md" in now and "CLAUDE.md" in now and baseline(name, "CLAUDE.md") and not baseline(name, "AGENTS.md"):
+            added += 1
+    return {"since": history[0]["date"] if history else generated[:10], "date": generated[:10],
+            "claude_removed_agents_kept": len(removed), "agents_added_claude_kept": added,
+            "repos_claude_removed_agents_kept": removed}
 
 
 def update_history(agg: dict, scan_stats: dict | None, write: bool = True) -> dict:
@@ -763,6 +791,10 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
     small_line = (f'<p class="asof" id="small-files">On {esc(gen_raw[:10])}, {sm["AGENTS.md"]["count"]:,} of {agg["counts"]["AGENTS.md"]:,} AGENTS.md files '
                   f'and {sm["CLAUDE.md"]["count"]:,} of {agg["counts"]["CLAUDE.md"]:,} CLAUDE.md files are under {SMALL_FILE_BYTES} bytes; see '
                   f'<a href="/stats.json">/stats.json</a>.</p>')
+    cac = claude_agents_changes(history, agg["present"], gen_raw)
+    small_line += (f'\n<p class="asof" id="claude-agents-changes">Since {esc(cac["since"])}, up to {esc(cac["date"])}: {cac["claude_removed_agents_kept"]:,} repos '
+                   f'no longer have CLAUDE.md and still have AGENTS.md; {cac["agents_added_claude_kept"]:,} added AGENTS.md and still have CLAUDE.md; see '
+                   f'<a href="/stats.json">/stats.json</a>.</p>')
     combo_sec = combo_sec.replace("</section>", small_line + "\n</section>")
     si = sample_info
     reasons = ", ".join(f"{n:,} {k}" for k, n in si["excluded_by_reason"].items() if n) or "none"
@@ -1035,6 +1067,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
         "change_7d_pp": change_7d_pp,
         "combinations": {"date": generated[:10], "total": total, **agg["combo"]},
         "sizes": {p: {**v, "date": generated[:10]} for p, v in agg["sizes"].items()},
+        "claude_agents_changes": claude_agents_changes(history, agg["present"], generated),
         "small_files": {"date": generated[:10], "threshold_bytes": SMALL_FILE_BYTES,
                         "agents_md_under_300": agg["small"]["AGENTS.md"]["count"], "claude_md_under_300": agg["small"]["CLAUDE.md"]["count"],
                         "agents_md_total": agg["counts"]["AGENTS.md"], "claude_md_total": agg["counts"]["CLAUDE.md"], **agg["small"]},
@@ -1151,6 +1184,7 @@ Latest (scan {generated}): {agg['counts'][PRIMARY_PATH]} of {total} scanned repo
 - small_files in stats.json: date, threshold_bytes (300) and per path count (present files with a known size under 300 bytes, 0 bytes included; size only), threshold_bytes, zero_bytes (present files whose HEAD Content-Length is 0; counted in count, size 0 bytes) and unknown_size (present files with no Content-Length, size unknown, not counted; size_unknown is the same number, kept for compatibility).
 - small_files top-level fields: agents_md_under_300, claude_md_under_300, agents_md_total, claude_md_total, threshold_bytes, date.
 - small_files example ({generated[:10]}): agents_md_under_300 {agg['small']['AGENTS.md']['count']} of agents_md_total {agg['counts']['AGENTS.md']}, claude_md_under_300 {agg['small']['CLAUDE.md']['count']} of claude_md_total {agg['counts']['CLAUDE.md']}, threshold_bytes {SMALL_FILE_BYTES}, date {generated[:10]}.
+- claude_agents_changes in stats.json: since (first scan date), date (= generated), claude_removed_agents_kept (repos whose CLAUDE.md went away since their first scan while AGENTS.md stayed), agents_added_claude_kept (repos that added AGENTS.md while CLAUDE.md stayed) and repos_claude_removed_agents_kept (owner/name list, length = claude_removed_agents_kept); a first scan is a baseline; presence only, no reasons.
 - Method for combinations and small_files: counts come from presence and size only, via HEAD requests to public file URLs; file contents are not read.
 - sample in stats.json (an object; the former integer sample is now sample_size, the headline total M): target_per_language, languages, target_total, included (= sample_size), excluded_by_reason (forks, archived, other; included + their sum = target_total) and per_language (adds up to included). other = targeted but absent from the stored sample (duplicates across languages, not found or dropped at seeding), reason not recorded per repo.
 - schema_version 2 (2026-11-07): change_7d_pp is an object per path; null until 8 dated history rows (schema_version 1: change_7d_pp was a scalar).
