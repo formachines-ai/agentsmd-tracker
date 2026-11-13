@@ -39,6 +39,16 @@ Daily schedule on the server: `04:00 UTC` — `python3 build.py && git add -A &&
 The droplet pulls `main` every 5 minutes and publishes `public/` as-is (see agent-team `deploy/droplet/`). It never
 runs `build.py`.
 
+## Tests
+
+```bash
+python3 -B -m unittest discover -s tests -t .
+```
+
+Runs every `tests/test_*.py` (14 files) from the repository root. Offline and read-only: no network, nothing is
+written to the checkout (tests that build use a temp copy), so it also passes after `chmod -R a-w .`. Python 3.12
+standard library only.
+
 ## What to commit
 
 Everything: code, `data/` and `public/`. The site is the committed `public/` directory; the caches in `data/` are the

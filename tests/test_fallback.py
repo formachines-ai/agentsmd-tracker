@@ -125,7 +125,8 @@ class GoneRepo(unittest.TestCase):
             self.assertEqual(j["status"], "unreachable")
             self.assertIn("Scan status: unreachable", (card / "index.html").read_text())
             b = json.loads((tmp / "public" / "build.json").read_text())
-            self.assertEqual(b["unreachable"], 1)
+            before = json.loads((REPO / "public" / "build.json").read_text())["unreachable"]
+            self.assertEqual(b["unreachable"], before + 1)      # the committed snapshot may already hold unreachable repos
             print(f"HTTP {mode} for {self.TARGET}: card + index.json kept, status={j['status']}, build.json unreachable={b['unreachable']}")
         finally:
             shutil.rmtree(tmp, ignore_errors=True)

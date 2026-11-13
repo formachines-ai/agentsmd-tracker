@@ -1,5 +1,6 @@
 """Offline, read-only: every public/repo/<owner>/<name>/ card must be reachable
 from / by plain <a href> links within 2 hops (home -> /lang/<slug>/ -> card)."""
+import json
 import re
 import sys
 import unittest
@@ -60,8 +61,11 @@ def crawl():
 
 class Reachability(unittest.TestCase):
     def test_every_card_reached_within_two_links(self):
+        # Unreachable repos (moved/deleted) keep their card but are excluded from language lists by design,
+        # so they are legitimately not linked from / within 2 hops; every other card must be.
         cards = sorted("/" + str(p.parent.relative_to(PUBLIC)) + "/"
-                       for p in PUBLIC.glob("repo/*/*/index.html"))
+                       for p in PUBLIC.glob("repo/*/*/index.html")
+                       if json.loads((p.parent / "index.json").read_text(encoding="utf-8")).get("status") != "unreachable")
         seen = crawl()
         reached = [c for c in cards if c in seen]
         missing = [c for c in cards if c not in seen]
