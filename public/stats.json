@@ -764,6 +764,15 @@
    "removed": 4
   }
  ],
+ "method_changes": [
+  {
+   "date": "2026-11-13",
+   "path": ".cursor/rules",
+   "summary": "redirect check tightened",
+   "commit": "6887ed8",
+   "url": "https://github.com/formachines-ai/agentsmd-tracker/commit/6887ed8"
+  }
+ ],
  "history_days": 12,
  "change_7d_pp": {
   "AGENTS.md": 0.8,
