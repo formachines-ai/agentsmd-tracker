@@ -27,6 +27,16 @@ class MethodChangesTest(unittest.TestCase):
         self.assertIn("Method change 2026-11-13", html)
         self.assertIn('href="https://github.com/formachines-ai/agentsmd-tracker/commit/6887ed8"', html)
 
+    def test_llms_txt(self):
+        txt = (ROOT / "public" / "llms.txt").read_text()
+        self.assertIn("method_changes", txt)
+        for m in build.METHOD_CHANGES:
+            for k in m:
+                self.assertIn(k, txt)
+            self.assertIn(m["url"], txt)
+        self.assertIn('reason "method_change"', txt)
+        self.assertIn("not a removal by the repository", txt)
+
     def test_matching_removal_gets_reason(self):
         rem = [{"path": ".cursor/rules", "full_name": "a/b"}, {"path": "AGENTS.md", "full_name": "a/c"}]
         out = build.annotate_removed(rem, "2026-11-13")
