@@ -6,17 +6,17 @@
  "stars": 127914,
  "default_branch": "master",
  "status": "ok",
- "checked": "2026-11-12T04:09:21Z",
+ "checked": "2026-11-13T04:09:17Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 17465,
+   "size": 18233,
    "url": "https://github.com/rustdesk/rustdesk/blob/master/AGENTS.md",
    "lang_share": {
     "count": 88,
     "total": 198,
     "pct": 44.4,
-    "date": "2026-11-12",
+    "date": "2026-11-13",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/"
    },
@@ -32,7 +32,7 @@
     "count": 55,
     "total": 198,
     "pct": 27.8,
-    "date": "2026-11-12",
+    "date": "2026-11-13",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/"
    }
@@ -45,7 +45,7 @@
     "count": 1,
     "total": 198,
     "pct": 0.5,
-    "date": "2026-11-12",
+    "date": "2026-11-13",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/"
    }
@@ -58,7 +58,7 @@
     "count": 5,
     "total": 198,
     "pct": 2.5,
-    "date": "2026-11-12",
+    "date": "2026-11-13",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/"
    }
@@ -71,7 +71,7 @@
     "count": 13,
     "total": 198,
     "pct": 6.6,
-    "date": "2026-11-12",
+    "date": "2026-11-13",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/"
    }
@@ -84,7 +84,7 @@
     "count": 3,
     "total": 198,
     "pct": 1.5,
-    "date": "2026-11-12",
+    "date": "2026-11-13",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/"
    }
@@ -97,7 +97,7 @@
     "count": 4,
     "total": 198,
     "pct": 2.0,
-    "date": "2026-11-12",
+    "date": "2026-11-13",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/"
    },
@@ -113,7 +113,7 @@
     "count": 1,
     "total": 198,
     "pct": 0.5,
-    "date": "2026-11-12",
+    "date": "2026-11-13",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/"
    }
@@ -124,49 +124,49 @@
    "count": 88,
    "total": 198,
    "pct": 44.4,
-   "date": "2026-11-12"
+   "date": "2026-11-13"
   },
   "CLAUDE.md": {
    "count": 55,
    "total": 198,
    "pct": 27.8,
-   "date": "2026-11-12"
+   "date": "2026-11-13"
   },
   ".cursorrules": {
    "count": 1,
    "total": 198,
    "pct": 0.5,
-   "date": "2026-11-12"
+   "date": "2026-11-13"
   },
   ".cursor/rules": {
    "count": 5,
    "total": 198,
    "pct": 2.5,
-   "date": "2026-11-12"
+   "date": "2026-11-13"
   },
   ".github/copilot-instructions.md": {
    "count": 13,
    "total": 198,
    "pct": 6.6,
-   "date": "2026-11-12"
+   "date": "2026-11-13"
   },
   "llms.txt": {
    "count": 3,
    "total": 198,
    "pct": 1.5,
-   "date": "2026-11-12"
+   "date": "2026-11-13"
   },
   "GEMINI.md": {
    "count": 4,
    "total": 198,
    "pct": 2.0,
-   "date": "2026-11-12"
+   "date": "2026-11-13"
   },
   ".windsurfrules": {
    "count": 1,
    "total": 198,
    "pct": 0.5,
-   "date": "2026-11-12"
+   "date": "2026-11-13"
   }
  },
  "first_seen": {

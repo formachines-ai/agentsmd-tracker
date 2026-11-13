@@ -1,19 +1,51 @@
 {
  "schema_version": 2,
  "site": "https://agentsmd.formachines.ai",
- "date": "2026-11-12",
- "generated": "2026-11-12T05:19:33Z",
+ "date": "2026-11-13",
+ "generated": "2026-11-13T05:20:00Z",
  "license": "CC BY 4.0",
  "added": [
   {
-   "full_name": "Graphify-Labs/graphify",
-   "owner": "Graphify-Labs",
-   "name": "graphify",
-   "language": "Python",
-   "stars": 140968,
-   "path": "GEMINI.md",
-   "size": 1587,
-   "url": "https://github.com/Graphify-Labs/graphify/blob/v8/GEMINI.md"
+   "full_name": "baomidou/mybatis-plus",
+   "owner": "baomidou",
+   "name": "mybatis-plus",
+   "language": "Java",
+   "stars": 17480,
+   "path": "AGENTS.md",
+   "size": 2652,
+   "url": "https://github.com/baomidou/mybatis-plus/blob/3.0/AGENTS.md"
+  }
+ ],
+ "removed": [
+  {
+   "full_name": "doorkeeper-gem/doorkeeper",
+   "owner": "doorkeeper-gem",
+   "name": "doorkeeper",
+   "language": "Ruby",
+   "stars": 5532,
+   "path": ".cursor/rules",
+   "size": null,
+   "url": "https://github.com/doorkeeper-gem/doorkeeper/tree/main/.cursor/rules"
+  },
+  {
+   "full_name": "calcom/cal.diy",
+   "owner": "calcom",
+   "name": "cal.diy",
+   "language": "TypeScript",
+   "stars": 49646,
+   "path": ".cursor/rules",
+   "size": null,
+   "url": "https://github.com/calcom/cal.diy/tree/main/.cursor/rules"
+  },
+  {
+   "full_name": "LizardByte/Sunshine",
+   "owner": "LizardByte",
+   "name": "Sunshine",
+   "language": "C++",
+   "stars": 42916,
+   "path": ".cursor/rules",
+   "size": null,
+   "url": "https://github.com/LizardByte/Sunshine/tree/master/.cursor/rules"
   },
   {
    "full_name": "portainer/portainer",
@@ -24,50 +56,18 @@
    "path": ".cursor/rules",
    "size": null,
    "url": "https://github.com/portainer/portainer/tree/develop/.cursor/rules"
-  },
-  {
-   "full_name": "RicoSuter/NSwag",
-   "owner": "RicoSuter",
-   "name": "NSwag",
-   "language": "C#",
-   "stars": 7369,
-   "path": "AGENTS.md",
-   "size": 8768,
-   "url": "https://github.com/RicoSuter/NSwag/blob/master/AGENTS.md"
-  },
-  {
-   "full_name": "sds/overcommit",
-   "owner": "sds",
-   "name": "overcommit",
-   "language": "Ruby",
-   "stars": 4004,
-   "path": "AGENTS.md",
-   "size": 819,
-   "url": "https://github.com/sds/overcommit/blob/main/AGENTS.md"
-  }
- ],
- "removed": [
-  {
-   "full_name": "BerriAI/litellm",
-   "owner": "BerriAI",
-   "name": "litellm",
-   "language": "Python",
-   "stars": 62557,
-   "path": "GEMINI.md",
-   "size": null,
-   "url": "https://github.com/BerriAI/litellm/blob/main/GEMINI.md"
   }
  ],
  "counts": {
-  "AGENTS.md": 559,
+  "AGENTS.md": 560,
   "CLAUDE.md": 321,
   ".cursorrules": 16,
-  ".cursor/rules": 36,
+  ".cursor/rules": 32,
   ".github/copilot-instructions.md": 158,
   "llms.txt": 17,
   "GEMINI.md": 21,
   ".windsurfrules": 5
  },
- "scanned": 1922,
+ "scanned": 1921,
  "pending": 0
 }

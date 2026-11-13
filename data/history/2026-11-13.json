@@ -1,0 +1,185 @@
+{
+ "date": "2026-11-13",
+ "added": [
+  {
+   "full_name": "baomidou/mybatis-plus",
+   "owner": "baomidou",
+   "name": "mybatis-plus",
+   "language": "Java",
+   "stars": 17480,
+   "path": "AGENTS.md",
+   "size": 2652,
+   "url": "https://github.com/baomidou/mybatis-plus/blob/3.0/AGENTS.md"
+  }
+ ],
+ "removed": [
+  {
+   "full_name": "doorkeeper-gem/doorkeeper",
+   "owner": "doorkeeper-gem",
+   "name": "doorkeeper",
+   "language": "Ruby",
+   "stars": 5532,
+   "path": ".cursor/rules",
+   "size": null,
+   "url": "https://github.com/doorkeeper-gem/doorkeeper/tree/main/.cursor/rules"
+  },
+  {
+   "full_name": "calcom/cal.diy",
+   "owner": "calcom",
+   "name": "cal.diy",
+   "language": "TypeScript",
+   "stars": 49646,
+   "path": ".cursor/rules",
+   "size": null,
+   "url": "https://github.com/calcom/cal.diy/tree/main/.cursor/rules"
+  },
+  {
+   "full_name": "LizardByte/Sunshine",
+   "owner": "LizardByte",
+   "name": "Sunshine",
+   "language": "C++",
+   "stars": 42916,
+   "path": ".cursor/rules",
+   "size": null,
+   "url": "https://github.com/LizardByte/Sunshine/tree/master/.cursor/rules"
+  },
+  {
+   "full_name": "portainer/portainer",
+   "owner": "portainer",
+   "name": "portainer",
+   "language": "TypeScript",
+   "stars": 38766,
+   "path": ".cursor/rules",
+   "size": null,
+   "url": "https://github.com/portainer/portainer/tree/develop/.cursor/rules"
+  }
+ ],
+ "generated": "2026-11-13T05:20:00Z",
+ "sample": 1922,
+ "scanned": 1921,
+ "pending": 0,
+ "unreachable": 1,
+ "counts": {
+  "AGENTS.md": 560,
+  "CLAUDE.md": 321,
+  ".cursorrules": 16,
+  ".cursor/rules": 32,
+  ".github/copilot-instructions.md": 158,
+  "llms.txt": 17,
+  "GEMINI.md": 21,
+  ".windsurfrules": 5
+ },
+ "any": 688,
+ "by_language": {
+  "C#": {
+   "repos": 184,
+   "AGENTS.md": 37,
+   "CLAUDE.md": 21,
+   ".cursorrules": 2,
+   ".cursor/rules": 0,
+   ".github/copilot-instructions.md": 29,
+   "llms.txt": 1,
+   "GEMINI.md": 2,
+   ".windsurfrules": 1
+  },
+  "C++": {
+   "repos": 191,
+   "AGENTS.md": 55,
+   "CLAUDE.md": 18,
+   ".cursorrules": 3,
+   ".cursor/rules": 1,
+   ".github/copilot-instructions.md": 22,
+   "llms.txt": 0,
+   "GEMINI.md": 2,
+   ".windsurfrules": 0
+  },
+  "Go": {
+   "repos": 193,
+   "AGENTS.md": 65,
+   "CLAUDE.md": 45,
+   ".cursorrules": 1,
+   ".cursor/rules": 2,
+   ".github/copilot-instructions.md": 15,
+   "llms.txt": 3,
+   "GEMINI.md": 2,
+   ".windsurfrules": 0
+  },
+  "Java": {
+   "repos": 193,
+   "AGENTS.md": 48,
+   "CLAUDE.md": 20,
+   ".cursorrules": 0,
+   ".cursor/rules": 1,
+   ".github/copilot-instructions.md": 12,
+   "llms.txt": 0,
+   "GEMINI.md": 0,
+   ".windsurfrules": 0
+  },
+  "JavaScript": {
+   "repos": 191,
+   "AGENTS.md": 35,
+   "CLAUDE.md": 22,
+   ".cursorrules": 0,
+   ".cursor/rules": 3,
+   ".github/copilot-instructions.md": 10,
+   "llms.txt": 3,
+   "GEMINI.md": 1,
+   ".windsurfrules": 0
+  },
+  "PHP": {
+   "repos": 191,
+   "AGENTS.md": 26,
+   "CLAUDE.md": 20,
+   ".cursorrules": 0,
+   ".cursor/rules": 4,
+   ".github/copilot-instructions.md": 11,
+   "llms.txt": 0,
+   "GEMINI.md": 2,
+   ".windsurfrules": 0
+  },
+  "Python": {
+   "repos": 197,
+   "AGENTS.md": 67,
+   "CLAUDE.md": 38,
+   ".cursorrules": 3,
+   ".cursor/rules": 6,
+   ".github/copilot-instructions.md": 15,
+   "llms.txt": 3,
+   "GEMINI.md": 4,
+   ".windsurfrules": 1
+  },
+  "Ruby": {
+   "repos": 189,
+   "AGENTS.md": 37,
+   "CLAUDE.md": 20,
+   ".cursorrules": 2,
+   ".cursor/rules": 2,
+   ".github/copilot-instructions.md": 12,
+   "llms.txt": 1,
+   "GEMINI.md": 1,
+   ".windsurfrules": 1
+  },
+  "Rust": {
+   "repos": 198,
+   "AGENTS.md": 88,
+   "CLAUDE.md": 55,
+   ".cursorrules": 1,
+   ".cursor/rules": 5,
+   ".github/copilot-instructions.md": 13,
+   "llms.txt": 3,
+   "GEMINI.md": 4,
+   ".windsurfrules": 1
+  },
+  "TypeScript": {
+   "repos": 194,
+   "AGENTS.md": 102,
+   "CLAUDE.md": 62,
+   ".cursorrules": 4,
+   ".cursor/rules": 8,
+   ".github/copilot-instructions.md": 19,
+   "llms.txt": 3,
+   "GEMINI.md": 3,
+   ".windsurfrules": 1
+  }
+ }
+}

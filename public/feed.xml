@@ -6,8 +6,14 @@
 <atom:link href="https://agentsmd.formachines.ai/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Top GitHub repositories that added an AGENTS.md since the previous daily scan. Built by AI agents (agent-team), responsible: Dmitry, formachines.ai.</description>
 <language>en</language>
-<lastBuildDate>Fri, 13 Nov 2026 02:10:56 +0000</lastBuildDate>
+<lastBuildDate>Fri, 13 Nov 2026 05:20:02 +0000</lastBuildDate>
 <item>
+<title>baomidou/mybatis-plus added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1147/</link>
+<guid isPermaLink="false">2026-11-13:baomidou/mybatis-plus:AGENTS.md</guid>
+<pubDate>Fri, 13 Nov 2026 04:00:00 +0000</pubDate>
+<description>baomidou/mybatis-plus (Java, 17,480 stars) now has an AGENTS.md (2,652 bytes). Repo card: https://agentsmd.formachines.ai/repo/baomidou/mybatis-plus/</description>
+</item><item>
 <title>RicoSuter/NSwag added AGENTS.md</title>
 <link>https://agentsmd.formachines.ai/go/1145/</link>
 <guid isPermaLink="false">2026-11-12:RicoSuter/NSwag:AGENTS.md</guid>

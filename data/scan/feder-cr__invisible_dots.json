@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-12T04:38:12Z",
- "status": "ok",
+ "checked": "2026-11-13T04:38:16Z",
+ "status": "unreachable",
  "default_branch": "main",
  "files": {
   "AGENTS.md": {

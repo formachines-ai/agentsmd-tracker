@@ -6,7 +6,7 @@
  "stars": 40683,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-12T04:28:41Z",
+ "checked": "2026-11-13T04:28:41Z",
  "files": {
   "AGENTS.md": {
    "present": false,
@@ -14,9 +14,9 @@
    "url": null,
    "lang_share": {
     "count": 102,
-    "total": 195,
-    "pct": 52.3,
-    "date": "2026-11-12",
+    "total": 194,
+    "pct": 52.6,
+    "date": "2026-11-13",
     "language": "TypeScript",
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    }
@@ -27,9 +27,9 @@
    "url": "https://github.com/gitroomhq/postiz-app/blob/main/CLAUDE.md",
    "lang_share": {
     "count": 62,
-    "total": 195,
-    "pct": 31.8,
-    "date": "2026-11-12",
+    "total": 194,
+    "pct": 32.0,
+    "date": "2026-11-13",
     "language": "TypeScript",
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    },
@@ -43,9 +43,9 @@
    "url": null,
    "lang_share": {
     "count": 4,
-    "total": 195,
+    "total": 194,
     "pct": 2.1,
-    "date": "2026-11-12",
+    "date": "2026-11-13",
     "language": "TypeScript",
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    }
@@ -55,10 +55,10 @@
    "size": null,
    "url": null,
    "lang_share": {
-    "count": 10,
-    "total": 195,
-    "pct": 5.1,
-    "date": "2026-11-12",
+    "count": 8,
+    "total": 194,
+    "pct": 4.1,
+    "date": "2026-11-13",
     "language": "TypeScript",
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    }
@@ -69,9 +69,9 @@
    "url": "https://github.com/gitroomhq/postiz-app/blob/main/.github/copilot-instructions.md",
    "lang_share": {
     "count": 19,
-    "total": 195,
-    "pct": 9.7,
-    "date": "2026-11-12",
+    "total": 194,
+    "pct": 9.8,
+    "date": "2026-11-13",
     "language": "TypeScript",
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    },
@@ -85,9 +85,9 @@
    "url": null,
    "lang_share": {
     "count": 3,
-    "total": 195,
+    "total": 194,
     "pct": 1.5,
-    "date": "2026-11-12",
+    "date": "2026-11-13",
     "language": "TypeScript",
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    }
@@ -98,9 +98,9 @@
    "url": null,
    "lang_share": {
     "count": 3,
-    "total": 195,
+    "total": 194,
     "pct": 1.5,
-    "date": "2026-11-12",
+    "date": "2026-11-13",
     "language": "TypeScript",
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    }
@@ -111,9 +111,9 @@
    "url": null,
    "lang_share": {
     "count": 1,
-    "total": 195,
+    "total": 194,
     "pct": 0.5,
-    "date": "2026-11-12",
+    "date": "2026-11-13",
     "language": "TypeScript",
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    }
@@ -122,51 +122,51 @@
  "language_share": {
   "AGENTS.md": {
    "count": 102,
-   "total": 195,
-   "pct": 52.3,
-   "date": "2026-11-12"
+   "total": 194,
+   "pct": 52.6,
+   "date": "2026-11-13"
   },
   "CLAUDE.md": {
    "count": 62,
-   "total": 195,
-   "pct": 31.8,
-   "date": "2026-11-12"
+   "total": 194,
+   "pct": 32.0,
+   "date": "2026-11-13"
   },
   ".cursorrules": {
    "count": 4,
-   "total": 195,
+   "total": 194,
    "pct": 2.1,
-   "date": "2026-11-12"
+   "date": "2026-11-13"
   },
   ".cursor/rules": {
-   "count": 10,
-   "total": 195,
-   "pct": 5.1,
-   "date": "2026-11-12"
+   "count": 8,
+   "total": 194,
+   "pct": 4.1,
+   "date": "2026-11-13"
   },
   ".github/copilot-instructions.md": {
    "count": 19,
-   "total": 195,
-   "pct": 9.7,
-   "date": "2026-11-12"
+   "total": 194,
+   "pct": 9.8,
+   "date": "2026-11-13"
   },
   "llms.txt": {
    "count": 3,
-   "total": 195,
+   "total": 194,
    "pct": 1.5,
-   "date": "2026-11-12"
+   "date": "2026-11-13"
   },
   "GEMINI.md": {
    "count": 3,
-   "total": 195,
+   "total": 194,
    "pct": 1.5,
-   "date": "2026-11-12"
+   "date": "2026-11-13"
   },
   ".windsurfrules": {
    "count": 1,
-   "total": 195,
+   "total": 194,
    "pct": 0.5,
-   "date": "2026-11-12"
+   "date": "2026-11-13"
   }
  },
  "first_seen": {

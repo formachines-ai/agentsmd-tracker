@@ -1,5 +1,5 @@
 {
- "next_id": 1147,
+ "next_id": 1148,
  "links": {
   "affaan-m/ECC/AGENTS.md": {
    "id": 1,
@@ -6875,6 +6875,12 @@
    "id": 1146,
    "url": "https://github.com/sds/overcommit/blob/main/AGENTS.md",
    "repo": "sds/overcommit",
+   "path": "AGENTS.md"
+  },
+  "baomidou/mybatis-plus/AGENTS.md": {
+   "id": 1147,
+   "url": "https://github.com/baomidou/mybatis-plus/blob/3.0/AGENTS.md",
+   "repo": "baomidou/mybatis-plus",
    "path": "AGENTS.md"
   }
  }
