@@ -88,6 +88,10 @@ TIMEOUT_S = 20
 MAX_429_IN_A_ROW = 5             # then the scan stops and the rest stays pending
 BACKOFF_429_S = 60
 RESCAN_HOURS = 20                # a repo checked less than this many hours ago is not rescanned
+METHOD_CHANGES: list[dict] = [   # detection changes: a removal of this path on this date is not evidence that the file was deleted
+    {"date": "2026-11-13", "path": ".cursor/rules", "summary": "redirect check tightened",
+     "commit": "6887ed8", "url": "https://github.com/formachines-ai/agentsmd-tracker/commit/6887ed8"},
+]
 SCHEMA_VERSION = 2               # top-level "schema_version" of stats.json / today.json
 SMALL_FILE_BYTES = 300         # cards and small_files: size-only fact, files smaller than this
 STATS_SCHEMA_VERSION = 3        # stats.json only: v3 = "sample" became an object (former integer is "sample_size")
@@ -683,6 +687,12 @@ def sample_details(repos: list[dict], raw_repos: list[dict], query: dict, agg: d
             "per_language": dict(sorted(per_language.items()))}
 
 
+def annotate_removed(removed: list[dict], day: str | None) -> list[dict]:
+    """Removals matching a METHOD_CHANGES path and date get reason "method_change"; others are returned unchanged."""
+    keys = {(m["date"], m["path"]) for m in METHOD_CHANGES}
+    return [({**x, "reason": "method_change"} if (day, x.get("path")) in keys else x) for x in removed]
+
+
 def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, build_info: dict, sample_info: dict | None = None) -> None:
     updated = build_info["built_at"]
     go = GoLinks()
@@ -787,7 +797,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
 
     # today feed
     added = sorted(today.get("added", []), key=lambda x: (-x["stars"], x["full_name"]))
-    removed = today.get("removed", [])
+    removed = annotate_removed(today.get("removed", []), today.get("date"))
     if added:
         items = []
         for x in added[:MAX_TODAY_ITEMS]:
@@ -804,7 +814,10 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
     removed_html = ""
     if removed:
         removed_html = "<h3>Removed today</h3><ul class=\"feed\">" + "".join(
-            f'<li><a href="/repo/{esc(x["owner"])}/{esc(x["name"])}/">{esc(x["full_name"])}</a> removed <code>{esc(x["path"])}</code></li>' for x in removed) + "</ul>"
+            f'<li><a href="/repo/{esc(x["owner"])}/{esc(x["name"])}/">{esc(x["full_name"])}</a> <code>{esc(x["path"])}</code> '
+            + (f'no longer detected after the {esc(next(m["date"] for m in METHOD_CHANGES if m["path"] == x["path"]))} method change' if x.get("reason") == "method_change" else "removed")
+            + '</li>' for x in removed) + "</ul>"
+    removed_html += "".join(f'<p class="muted">Method change {esc(m["date"])}: <code>{esc(m["path"])}</code> detection, {esc(m["summary"])} (a change in how the scan reads the site, not in the repositories); <a href="{esc(m["url"])}">commit {esc(m["commit"])}</a>.</p>' for m in METHOD_CHANGES)
     today_sec = f"""<section id="today">
 <h2>Added today <span class="muted">(scan of {esc(today.get('date', ''))} UTC)</span></h2>
 {today_html}
@@ -1017,6 +1030,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
                      "pct": {p: (pct(c, d["scanned"]) if d["scanned"] else None) for p, c in d["counts"].items()},
                      "share_pct": {p: (pct(c, d["scanned"]) if d["scanned"] else None) for p, c in d["counts"].items()},
                      "added": len(d.get("added", [])), "removed": len(d.get("removed", []))} for d in history],
+        "method_changes": METHOD_CHANGES,
         "history_days": len(history),
         "change_7d_pp": change_7d_pp,
         "combinations": {"date": generated[:10], "total": total, **agg["combo"]},
