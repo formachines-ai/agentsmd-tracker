@@ -81,6 +81,7 @@ PRIMARY_PATH = "AGENTS.md"
 
 RAW_BASE = "https://raw.githubusercontent.com"
 GH_BASE = "https://github.com"
+MAX_REDIRECTS = 3          # hops followed for a tree URL (HEAD only)
 API_BASE = "https://api.github.com"
 PAUSE_S = 0.08                   # between HTTP requests (single thread)
 TIMEOUT_S = 20
@@ -219,11 +220,23 @@ def check_path(repo: dict, spec: dict) -> dict | None:
             return {"present": False, "size": None}
         return None
     url = f"{GH_BASE}/{full}/tree/{urllib.parse.quote(branch)}/{spec['path']}"
-    status, _ = head(url)
-    if 200 <= status < 400:
-        return {"present": True, "size": None}
-    if status == 404:
-        return {"present": False, "size": None}
+    want_tail = f"/tree/{urllib.parse.quote(branch)}/{spec['path']}"
+    for _ in range(MAX_REDIRECTS + 1):
+        status, hdrs = head(url)
+        if status == 200:
+            # present only if we are still on the same tree path (a moved repo may keep it, a renamed branch does not)
+            return {"present": urllib.parse.urlsplit(url).path.endswith(want_tail), "size": None}
+        if status in (301, 302, 303, 307, 308):
+            loc = next((v for k, v in hdrs.items() if k.lower() == "location"), "")
+            nxt = urllib.parse.urljoin(url, loc)
+            u = urllib.parse.urlsplit(nxt)
+            if not loc or u.netloc != urllib.parse.urlsplit(GH_BASE).netloc or not u.path.endswith(want_tail):
+                return {"present": False, "size": None}   # redirected elsewhere: the path is not there
+            url = nxt
+            continue
+        if status == 404:
+            return {"present": False, "size": None}
+        return None
     return None
 
 
