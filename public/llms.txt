@@ -3,7 +3,7 @@
 > Daily tracker of agent-instruction files in top GitHub repositories: which of 1,922 public repositories (top by stars per language) have AGENTS.md, CLAUDE.md, .cursorrules, .cursor/rules/, .github/copilot-instructions.md, llms.txt, GEMINI.md, .windsurfrules. Only presence, size and a link to GitHub are published; file contents are never republished. Built by AI agents (agent-team) without human editing; responsible: Dmitry, formachines.ai. Data CC BY 4.0.
 
 Data scanned at: 2026-11-12T05:19:33Z
-Site built at: 2026-11-12T23:11:55Z
+Site built at: 2026-11-13T00:12:15Z
 The scan time changes only when new data is scanned; the build time changes on every rebuild, even when the data is the same.
 Schema: stats.json v3, today.json v2
 
@@ -12,8 +12,12 @@ Latest (scan 2026-11-12T05:19:33Z): 559 of 1922 scanned repos (29.1 %) have AGEN
 ## Machine-readable
 - [stats.json](https://agentsmd.formachines.ai/stats.json): totals, shares, by-language table, full daily history
 - combinations in stats.json: date, total and counts of scanned repos by co-existence of AGENTS.md and CLAUDE.md (agents_only, claude_only, both, neither, agents_and_copilot (AGENTS.md with .github/copilot-instructions.md), agents_and_claude, agents_only_of_pair, claude_only_of_pair, neither_of_pair), same_size_agents_claude (both present with equal byte size) and repos_with_2plus_types (at least 2 of the 8 paths).
+- combinations example (2026-11-12): agents_only 302, claude_only 64, both 257, neither 1299, agents_and_copilot 92 of 1922 scanned repos, date 2026-11-12.
 - sizes in stats.json: per path, count, median_bytes, p25_bytes, p75_bytes and date of the scan, from the HEAD Content-Length of present files whose size is known, 0 included (count = those files only); 0 when none is known (e.g. the .cursor/rules/ directory).
 - small_files in stats.json: date, threshold_bytes (300) and per path count (present files with a known size under 300 bytes, 0 bytes included; size only), threshold_bytes, zero_bytes (present files whose HEAD Content-Length is 0; counted in count, size 0 bytes) and unknown_size (present files with no Content-Length, size unknown, not counted; size_unknown is the same number, kept for compatibility).
+- small_files top-level fields: agents_md_under_300, claude_md_under_300, agents_md_total, claude_md_total, threshold_bytes, date.
+- small_files example (2026-11-12): agents_md_under_300 35 of agents_md_total 559, claude_md_under_300 189 of claude_md_total 321, threshold_bytes 300, date 2026-11-12.
+- Method for combinations and small_files: counts come from presence and size only, via HEAD requests to public file URLs; file contents are not read.
 - sample in stats.json (an object; the former integer sample is now sample_size, the headline total M): target_per_language, languages, target_total, included (= sample_size), excluded_by_reason (forks, archived, other; included + their sum = target_total) and per_language (adds up to included). other = targeted but absent from the stored sample (duplicates across languages, not found or dropped at seeding), reason not recorded per repo.
 - schema_version 2 (2026-11-07): change_7d_pp is an object per path; null until 8 dated history rows (schema_version 1: change_7d_pp was a scalar).
 - schema_version 3 (2026-11-08, stats.json only; today.json stays at 2): "sample" is now an object; the former integer is "sample_size".

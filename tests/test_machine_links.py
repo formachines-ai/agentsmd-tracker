@@ -82,5 +82,26 @@ class MachineLinkTest(unittest.TestCase):
         self.assertEqual(broken[:20], [], f"{len(broken)} broken URLs in machine outputs")
 
 
+class LlmsTxtStatsFields(unittest.TestCase):
+    def test_combinations_and_small_files_described_with_dated_numbers(self):
+        txt = (PUBLIC / "llms.txt").read_text(encoding="utf-8")
+        st = json.loads((PUBLIC / "stats.json").read_text(encoding="utf-8"))
+        c, sf = st["combinations"], st["small_files"]
+        for f in ("combinations", "small_files", "agents_only", "claude_only", "both", "neither",
+                  "agents_and_copilot", "agents_md_under_300", "claude_md_under_300", "agents_md_total",
+                  "claude_md_total", "threshold_bytes", "date"):
+            self.assertIn(f, txt)
+        ex = [l for l in txt.splitlines() if "combinations example" in l][0]
+        for k in ("agents_only", "claude_only", "both", "neither", "agents_and_copilot"):
+            self.assertIn(f"{k} {c[k]}", ex)
+        self.assertIn(c["date"], ex)
+        ex = [l for l in txt.splitlines() if "small_files example" in l][0]
+        for k in ("agents_md_under_300", "claude_md_under_300", "agents_md_total", "claude_md_total", "threshold_bytes"):
+            self.assertIn(f"{k} {sf[k]}", ex)
+        self.assertIn(sf["date"], ex)
+        self.assertIn("HEAD requests", txt)
+        self.assertIn("file contents are not read", txt)
+
+
 if __name__ == "__main__":
     unittest.main()
