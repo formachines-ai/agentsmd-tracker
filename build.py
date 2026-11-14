@@ -810,8 +810,12 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
     fc_rows = "".join(f"<tr><th scope=\"row\">{esc(lbl)}</th><td>{cb[k]:,}</td><td>{pct(cb[k], total)} %</td></tr>" for k, lbl in (
         ("agents_only", "AGENTS.md only"), ("claude_only", "CLAUDE.md only"), ("both", "Both AGENTS.md and CLAUDE.md"),
         ("neither", "Neither of the two"), ("agents_and_copilot", "AGENTS.md and .github/copilot-instructions.md")))
+    combos_line = (f'<p id="combos-line">On {esc(gen_raw[:10])}, of {total:,} scanned repos: {cb["both"]:,} have both AGENTS.md and CLAUDE.md '
+                   f'({pct(cb["both"], total)} %), {cb["agents_only"]:,} AGENTS.md only, {cb["claude_only"]:,} CLAUDE.md only, {cb["neither"]:,} neither. '
+                   f'Presence only; <a href="/stats.json">stats.json</a> field <code>combos</code>.</p>')
     combo_sec = f"""<section id="combinations">
 <h2>File combinations on {esc(gen_raw[:10])}</h2>
+{combos_line}
 <div class="scroll"><table><thead><tr><th>Combination</th><th>Repos</th><th>% of {total:,}</th></tr></thead><tbody>{fc_rows}</tbody></table></div>
 <h3>Other co-existence counts</h3>
 <ul>{cb_lines}</ul>
@@ -1107,6 +1111,8 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
         "history_days": len(history),
         "change_7d_pp": change_7d_pp,
         "combinations": {"date": generated[:10], "total": total, **agg["combo"]},
+        "combos": {"date": generated[:10], "total": total, "both_agents_claude": agg["combo"]["both"], "agents_only": agg["combo"]["agents_only"],
+                   "claude_only": agg["combo"]["claude_only"], "neither": agg["combo"]["neither"]},
         "sizes": {p: {**v, "date": generated[:10]} for p, v in agg["sizes"].items()},
         "claude_agents_changes": claude_agents_changes(history, agg["present"], generated),
         "small_files": {"date": generated[:10], "threshold_bytes": SMALL_FILE_BYTES,
@@ -1227,6 +1233,7 @@ Latest (scan {generated}): {agg['counts'][PRIMARY_PATH]} of {total} scanned repo
 ## Machine-readable
 - [stats.json]({SITE_BASE}/stats.json): totals, shares, by-language table, full daily history
 - combinations in stats.json: date, total and counts of scanned repos by co-existence of AGENTS.md and CLAUDE.md (agents_only, claude_only, both, neither, agents_and_copilot (AGENTS.md with .github/copilot-instructions.md), agents_and_claude, agents_only_of_pair, claude_only_of_pair, neither_of_pair), same_size_agents_claude (both present with equal byte size) and repos_with_2plus_types (at least 2 of the 8 paths).
+- combos in stats.json: date, total and four integer counts of scanned repos (sum = total): both_agents_claude, agents_only, claude_only, neither (presence of AGENTS.md and CLAUDE.md only).
 - combinations example ({generated[:10]}): agents_only {agg['combo']['agents_only']}, claude_only {agg['combo']['claude_only']}, both {agg['combo']['both']}, neither {agg['combo']['neither']}, agents_and_copilot {agg['combo']['agents_and_copilot']} of {total} scanned repos, date {generated[:10]}.
 - sizes in stats.json: per path, count, median_bytes, p25_bytes, p75_bytes and date of the scan, from the HEAD Content-Length of present files whose size is known, 0 included (count = those files only); 0 when none is known (e.g. the .cursor/rules/ directory).
 - small_files in stats.json: date, threshold_bytes (300) and per path count (present files with a known size under 300 bytes, 0 bytes included; size only), threshold_bytes, zero_bytes (present files whose HEAD Content-Length is 0; counted in count, size 0 bytes) and unknown_size (present files with no Content-Length, size unknown, not counted; size_unknown is the same number, kept for compatibility).
