@@ -165,6 +165,8 @@
  },
  "first_seen": {},
  "first_scanned": "2026-11-02",
+ "moved_to": null,
+ "moved_detected": null,
  "page": "https://agentsmd.formachines.ai/repo/fanmingming/live/",
  "license": "CC BY 4.0"
 }
