@@ -220,7 +220,9 @@ def check_path(repo: dict, spec: dict) -> dict | None:
         if status == 200:
             size = hdrs.get("Content-Length")
             return {"present": True, "size": int(size) if size and size.isdigit() else None}
-        if status in (404, 400):
+        if status == 404:
+            return {"present": False, "size": None, "definite": True}
+        if status == 400:
             return {"present": False, "size": None}
         return None
     url = f"{GH_BASE}/{full}/tree/{urllib.parse.quote(branch)}/{spec['path']}"
@@ -239,7 +241,7 @@ def check_path(repo: dict, spec: dict) -> dict | None:
             url = nxt
             continue
         if status == 404:
-            return {"present": False, "size": None}
+            return {"present": False, "size": None, "definite": True}
         return None
     return None
 
@@ -377,14 +379,9 @@ def run_scan(repos: list[dict], limit: int | None, max_seconds: float | None, fo
         merge_moved(prev, new)
         attempt_status = new["status"]   # what this attempt returned; a kept good snapshot must not count as a successful check today
         if prev and prev.get("status") == "ok" and new["status"] == "ok":
-            for spec in PATHS:
-                p = spec["path"]
-                was = (prev.get("files") or {}).get(p, {}).get("present")
-                is_ = new["files"][p]["present"]
-                if is_ and was is False:
-                    stats["added"].append(_change(repo, p, new))
-                elif was and is_ is False:
-                    stats["removed"].append(_change(repo, p, new))
+            add_, rem_ = diff_snapshots(repo, prev, new)
+            stats["added"].extend(add_)
+            stats["removed"].extend(rem_)
         elif prev and prev.get("status") == "ok" and new["status"] in ("error", "partial"):
             # keep the good snapshot, only note the failed attempt
             prev["last_error"] = new["checked"]
@@ -398,6 +395,23 @@ def run_scan(repos: list[dict], limit: int | None, max_seconds: float | None, fo
     log.info("scan done: %s in %.0fs", {k: v for k, v in stats.items() if k not in ("added", "removed")}, time.time() - t0)
     log.info("added since previous scan: %d, removed: %d", len(stats["added"]), len(stats["removed"]))
     return stats
+
+
+def diff_snapshots(repo: dict, prev: dict | None, new: dict) -> tuple[list[dict], list[dict]]:
+    """(added, removed) between two snapshots of one repo. No previous snapshot = baseline, nothing. Removed needs
+    present before and a definite 404 now; a network error / timeout / 403 / 429 / 5xx (present None) is unknown."""
+    added, removed = [], []
+    if not prev or prev.get("status") != "ok" or new.get("status") != "ok":
+        return added, removed
+    for spec in PATHS:
+        p = spec["path"]
+        was = (prev.get("files") or {}).get(p, {}).get("present")
+        cur = new["files"].get(p) or {}
+        if cur.get("present") and was is False:
+            added.append(_change(repo, p, new))
+        elif was and cur.get("present") is False and cur.get("definite"):
+            removed.append(_change(repo, p, new))
+    return added, removed
 
 
 def _change(repo: dict, path: str, sc: dict) -> dict:
@@ -896,6 +910,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
 <h2>Added today <span class="muted">(scan of {esc(today.get('date', ''))} UTC)</span></h2>
 {today_html}
 {removed_html}
+<p class="asof" id="removed-24h">Removed in 24 h ({esc(gen_raw[:10])}): {len(removed)}</p>
 <p class="muted">Machine-readable: <a href="/today.json">today.json</a> · <a href="/stats.json">stats.json</a> · <a href="/feed.xml">RSS of new AGENTS.md files</a>.</p>
 </section>"""
 
@@ -1121,7 +1136,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
     }
     write_json(out / "stats.json", stats)
     write_json(out / "today.json", {"schema_version": SCHEMA_VERSION, "site": SITE_BASE, "date": today.get("date"), "generated": generated, "license": "CC BY 4.0",
-                                    "added": added, "removed": removed, "counts": agg["counts"], "scanned": total, "pending": len(agg["pending"])})
+                                    "added": added, "removed": removed, "removed_count": len(removed), "counts": agg["counts"], "scanned": total, "pending": len(agg["pending"])})
     write_json(out / "build.json", build_info)
 
     # ---- feed.xml (new AGENTS.md)
@@ -1252,6 +1267,7 @@ Latest (scan {generated}): {agg['counts'][PRIMARY_PATH]} of {total} scanned repo
 - first_seen in /repo/<owner>/<name>/index.json: per present path, the day it was first recorded as added for that repository ({{"date": YYYY-MM-DD}}); {{"date": ..., "baseline": true}} means the path was already present on the repository's own first_scanned day, so its real first appearance is unknown.
 - first_scanned in /repo/<owner>/<name>/index.json: YYYY-MM-DD, the earliest daily scan (data/history) that holds this repository; repositories added to the sample later have a later date than 2026-11-02.
 - history "added" / "removed" in stats.json: number of (repository, path) pairs whose file appeared / disappeared since the previous snapshot of the same repository, counted per day; a repository's first scan is a baseline and adds none.
+- removed / removed_count in today.json: files whose path was present in the previous snapshot of the same repository and returned a definite 404 today (network errors, timeouts, 403/429 and 5xx are unknown, never removals; a first scan is a baseline); removed_count = length of removed.
 - [today.json]({SITE_BASE}/today.json): files added/removed since the previous scan
 - [feed.xml]({SITE_BASE}/feed.xml): RSS of repositories that added AGENTS.md
 - [build.json]({SITE_BASE}/build.json): build time, scan status, data-delayed flag
