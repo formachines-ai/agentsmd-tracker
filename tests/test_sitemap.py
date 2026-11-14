@@ -53,6 +53,19 @@ class SitemapTest(unittest.TestCase):
         stamped = sum(1 for lm in repos.values() if lm == gen)
         self.assertLess(stamped * 2, len(repos))
         by = Counter(repos.values())
+        for loc, lm in ent:
+            self.assertLessEqual(lm, gen, loc)
+        self.assertEqual(len(ent), len({l for l, _ in ent}))
+        xml = (PUBLIC / "sitemap.xml").read_text(encoding="utf-8")
+        self.assertEqual(xml.count("<url>"), xml.count("<lastmod>"))
+        for u in ("/", "/lang/python/"):
+            self.assertEqual(dict(ent)[BASE + u], gen, u)
+        mp = repos.get(f"{BASE}/repo/baomidou/mybatis-plus/")
+        if mp is not None:
+            self.assertGreaterEqual(mp, "2026-11-13")
+        older = sorted((lm, l) for l, lm in repos.items() if lm < gen)
+        self.assertTrue(older)
+        print(f"urls checked={len(ent)} older_than_generated={len(older)} e.g. {older[0][1]} {older[0][0]}")
         print(f"urls={len(ent)} repo_urls={len(repos)} stats_generated={gen} repo_lastmod_equal_generated={stamped}")
         print("repo lastmod counts:", dict(sorted(by.items())))
 
