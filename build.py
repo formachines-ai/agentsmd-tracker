@@ -901,9 +901,11 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
     home_desc = (f"{agg['counts'][PRIMARY_PATH]:,} of {total:,} sampled top GitHub repos have an AGENTS.md "
                  f"(scan of {gen_raw[:10]}). Daily counts of AGENTS.md, CLAUDE.md, .cursorrules and more; facts only.")
     home_ld = {"@context": "https://schema.org", "@type": "Dataset", "name": f"{SITE_NAME}: agent-instruction files in top GitHub repositories",
-               "description": home_desc, "url": SITE_BASE + "/", "license": "https://creativecommons.org/licenses/by/4.0/",
+               "description": (f"{home_desc} Presence and size of {len(PATHS)} instruction-file types in the top ~2,000 GitHub repositories, "
+                               "collected with HEAD requests; file contents are not read."), "url": SITE_BASE + "/", "license": "https://creativecommons.org/licenses/by/4.0/",
                "dateModified": gen_raw, "temporalCoverage": f"{history[0]['date'] if history else gen_raw[:10]}/{gen_raw[:10]}", "isAccessibleForFree": True, "inLanguage": "en",
                "creator": {"@type": "Organization", "name": "formachines.ai", "url": "https://formachines.ai/"},
+               "publisher": {"@type": "Organization", "name": "formachines.ai", "url": "https://formachines.ai/"},
                "distribution": [{"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": SITE_BASE + "/stats.json"},
                                 {"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": SITE_BASE + "/today.json"},
                                 {"@type": "DataDownload", "encodingFormat": "application/rss+xml", "contentUrl": SITE_BASE + "/feed.xml"}]}
