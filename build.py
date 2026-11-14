@@ -1146,13 +1146,20 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
                       f"Of the same {v['repos']:,} repositories: {others}. The tracker checks {len(PATHS)} file paths, presence and size only, "
                       f"from HEAD requests to public GitHub URLs, updated daily at about 04:00 UTC.")
         heads = "".join(f'<th><code>{esc(sp["label"])}</code></th>' for sp in PATHS)
+        # cards exist for every sampled repo: link the ones outside the table (unreachable / not yet scanned) too
+        rest = sorted((r for r in agg["unreachable"] + agg["pending"] if r["language"] == lang), key=lambda r: r["full_name"].lower())
+        other_sec = ""
+        if rest:
+            lis = "".join(f'<li><a href="/repo/{esc(r["owner"])}/{esc(r["name"])}/">{esc(r["full_name"])}</a></li>' for r in rest)
+            other_sec = (f'<h2>Not counted ({len(rest)})</h2>\n<p class="muted">Unreachable (moved or removed) or not scanned yet; '
+                         f'excluded from the numbers above, the card is kept.</p>\n<ul class="plain">{lis}</ul>\n')
         body = f"""<section>
 <p class="crumb"><a href="/">{esc(SITE_NAME)}</a> › <a href="/#languages">languages</a> › {esc(lang)}</p>
 <h1>AGENTS.md in {esc(lang)} repositories</h1>
 <p class="lead">{esc(l_sentence)} Data: <a href="/">home page</a>, <a href="/stats.json">stats.json</a>.</p>
 <p class="muted">Stats CC BY 4.0, cite as "{esc(SITE_NAME)}, {esc(SITE_HOST)}". Sorted alphabetically by owner/name — not a ranking.</p>
 {agents_sec}<div class="scroll"><table><thead><tr><th>Repository</th>{heads}</tr></thead><tbody>{''.join(trs)}</tbody></table></div>
-</section>"""
+{other_sec}</section>"""
         l_day = (today.get("generated") or (history[-1].get("generated") if history else None) or updated)[:10]
         l_n, l_m, l_c = v[PRIMARY_PATH], v["repos"], v["CLAUDE.md"]
         l_title = f"{lang}: AGENTS.md in {l_n} of {l_m} top repos ({pct(l_n, l_m)} %) on {l_day}, {SITE_NAME}"
