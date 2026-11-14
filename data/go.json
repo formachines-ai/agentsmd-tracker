@@ -1,5 +1,5 @@
 {
- "next_id": 1148,
+ "next_id": 1149,
  "links": {
   "affaan-m/ECC/AGENTS.md": {
    "id": 1,
@@ -6881,6 +6881,12 @@
    "id": 1147,
    "url": "https://github.com/baomidou/mybatis-plus/blob/3.0/AGENTS.md",
    "repo": "baomidou/mybatis-plus",
+   "path": "AGENTS.md"
+  },
+  "Zackriya-Solutions/meetily/AGENTS.md": {
+   "id": 1148,
+   "url": "https://github.com/Zackriya-Solutions/meetily/blob/main/AGENTS.md",
+   "repo": "Zackriya-Solutions/meetily",
    "path": "AGENTS.md"
   }
  }

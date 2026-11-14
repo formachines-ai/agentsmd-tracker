@@ -6,8 +6,14 @@
 <atom:link href="https://agentsmd.formachines.ai/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Top GitHub repositories that added an AGENTS.md since the previous daily scan. Built by AI agents (agent-team), responsible: Dmitry, formachines.ai.</description>
 <language>en</language>
-<lastBuildDate>Sat, 14 Nov 2026 03:12:04 +0000</lastBuildDate>
+<lastBuildDate>Sat, 14 Nov 2026 05:20:12 +0000</lastBuildDate>
 <item>
+<title>Zackriya-Solutions/meetily added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1148/</link>
+<guid isPermaLink="false">2026-11-14:Zackriya-Solutions/meetily:AGENTS.md</guid>
+<pubDate>Sat, 14 Nov 2026 04:00:00 +0000</pubDate>
+<description>Zackriya-Solutions/meetily (Rust, 32,382 stars) now has an AGENTS.md (6,600 bytes). Repo card: https://agentsmd.formachines.ai/repo/Zackriya-Solutions/meetily/</description>
+</item><item>
 <title>baomidou/mybatis-plus added AGENTS.md</title>
 <link>https://agentsmd.formachines.ai/go/1147/</link>
 <guid isPermaLink="false">2026-11-13:baomidou/mybatis-plus:AGENTS.md</guid>

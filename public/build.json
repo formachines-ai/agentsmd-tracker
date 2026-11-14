@@ -1,12 +1,12 @@
 {
  "site": "https://agentsmd.formachines.ai",
- "built_at": "2026-11-14T03:12:02Z",
- "build_seconds": 0.1,
+ "built_at": "2026-11-14T05:20:10Z",
+ "build_seconds": 4806.1,
  "sample": 1922,
  "scanned_ok": 1921,
  "pending": 0,
  "unreachable": 1,
- "last_checked": "2026-11-13T05:20:00Z",
+ "last_checked": "2026-11-14T05:20:10Z",
  "data_delayed": false,
  "delay_reason": "",
  "scan": {
@@ -18,10 +18,10 @@
   "rate_limited": false,
   "stopped": false,
   "added": 1,
-  "removed": 4,
-  "generated": "2026-11-13T05:20:00Z",
+  "removed": 0,
+  "generated": "2026-11-14T05:20:10Z",
   "added_repos": 1,
-  "removed_repos": 4,
+  "removed_repos": 0,
   "unit": "paths"
  },
  "paths": [

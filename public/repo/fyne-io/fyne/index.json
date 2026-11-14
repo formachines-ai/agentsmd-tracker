@@ -6,7 +6,7 @@
  "stars": 28805,
  "default_branch": "develop",
  "status": "ok",
- "checked": "2026-11-13T04:42:25Z",
+ "checked": "2026-11-14T04:42:29Z",
  "files": {
   "AGENTS.md": {
    "present": false,
@@ -16,7 +16,7 @@
     "count": 65,
     "total": 193,
     "pct": 33.7,
-    "date": "2026-11-13",
+    "date": "2026-11-14",
     "language": "Go",
     "page": "https://agentsmd.formachines.ai/lang/go/"
    }
@@ -29,7 +29,7 @@
     "count": 45,
     "total": 193,
     "pct": 23.3,
-    "date": "2026-11-13",
+    "date": "2026-11-14",
     "language": "Go",
     "page": "https://agentsmd.formachines.ai/lang/go/"
    }
@@ -42,7 +42,7 @@
     "count": 1,
     "total": 193,
     "pct": 0.5,
-    "date": "2026-11-13",
+    "date": "2026-11-14",
     "language": "Go",
     "page": "https://agentsmd.formachines.ai/lang/go/"
    }
@@ -55,7 +55,7 @@
     "count": 2,
     "total": 193,
     "pct": 1.0,
-    "date": "2026-11-13",
+    "date": "2026-11-14",
     "language": "Go",
     "page": "https://agentsmd.formachines.ai/lang/go/"
    }
@@ -68,7 +68,7 @@
     "count": 15,
     "total": 193,
     "pct": 7.8,
-    "date": "2026-11-13",
+    "date": "2026-11-14",
     "language": "Go",
     "page": "https://agentsmd.formachines.ai/lang/go/"
    }
@@ -81,7 +81,7 @@
     "count": 3,
     "total": 193,
     "pct": 1.6,
-    "date": "2026-11-13",
+    "date": "2026-11-14",
     "language": "Go",
     "page": "https://agentsmd.formachines.ai/lang/go/"
    }
@@ -94,7 +94,7 @@
     "count": 2,
     "total": 193,
     "pct": 1.0,
-    "date": "2026-11-13",
+    "date": "2026-11-14",
     "language": "Go",
     "page": "https://agentsmd.formachines.ai/lang/go/"
    }
@@ -107,7 +107,7 @@
     "count": 0,
     "total": 193,
     "pct": 0.0,
-    "date": "2026-11-13",
+    "date": "2026-11-14",
     "language": "Go",
     "page": "https://agentsmd.formachines.ai/lang/go/"
    }
@@ -118,49 +118,49 @@
    "count": 65,
    "total": 193,
    "pct": 33.7,
-   "date": "2026-11-13"
+   "date": "2026-11-14"
   },
   "CLAUDE.md": {
    "count": 45,
    "total": 193,
    "pct": 23.3,
-   "date": "2026-11-13"
+   "date": "2026-11-14"
   },
   ".cursorrules": {
    "count": 1,
    "total": 193,
    "pct": 0.5,
-   "date": "2026-11-13"
+   "date": "2026-11-14"
   },
   ".cursor/rules": {
    "count": 2,
    "total": 193,
    "pct": 1.0,
-   "date": "2026-11-13"
+   "date": "2026-11-14"
   },
   ".github/copilot-instructions.md": {
    "count": 15,
    "total": 193,
    "pct": 7.8,
-   "date": "2026-11-13"
+   "date": "2026-11-14"
   },
   "llms.txt": {
    "count": 3,
    "total": 193,
    "pct": 1.6,
-   "date": "2026-11-13"
+   "date": "2026-11-14"
   },
   "GEMINI.md": {
    "count": 2,
    "total": 193,
    "pct": 1.0,
-   "date": "2026-11-13"
+   "date": "2026-11-14"
   },
   ".windsurfrules": {
    "count": 0,
    "total": 193,
    "pct": 0.0,
-   "date": "2026-11-13"
+   "date": "2026-11-14"
   }
  },
  "first_seen": {},

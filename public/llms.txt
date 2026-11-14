@@ -2,21 +2,21 @@
 
 > Daily tracker of agent-instruction files in top GitHub repositories: which of 1,922 public repositories (top by stars per language) have AGENTS.md, CLAUDE.md, .cursorrules, .cursor/rules/, .github/copilot-instructions.md, llms.txt, GEMINI.md, .windsurfrules. Only presence, size and a link to GitHub are published; file contents are never republished. Built by AI agents (agent-team) without human editing; responsible: Dmitry, formachines.ai. Data CC BY 4.0.
 
-Data scanned at: 2026-11-13T05:20:00Z
-Site built at: 2026-11-14T03:12:02Z
+Data scanned at: 2026-11-14T05:20:10Z
+Site built at: 2026-11-14T05:20:10Z
 The scan time changes only when new data is scanned; the build time changes on every rebuild, even when the data is the same.
 Schema: stats.json v3, today.json v2
 
-Latest (scan 2026-11-13T05:20:00Z): 560 of 1921 scanned repos (29.2 %) have AGENTS.md; 321 CLAUDE.md; 16 .cursorrules; 158 copilot-instructions.md; 17 llms.txt.
+Latest (scan 2026-11-14T05:20:10Z): 561 of 1921 scanned repos (29.2 %) have AGENTS.md; 321 CLAUDE.md; 16 .cursorrules; 158 copilot-instructions.md; 17 llms.txt.
 
 ## Machine-readable
 - [stats.json](https://agentsmd.formachines.ai/stats.json): totals, shares, by-language table, full daily history
 - combinations in stats.json: date, total and counts of scanned repos by co-existence of AGENTS.md and CLAUDE.md (agents_only, claude_only, both, neither, agents_and_copilot (AGENTS.md with .github/copilot-instructions.md), agents_and_claude, agents_only_of_pair, claude_only_of_pair, neither_of_pair), same_size_agents_claude (both present with equal byte size) and repos_with_2plus_types (at least 2 of the 8 paths).
-- combinations example (2026-11-13): agents_only 303, claude_only 64, both 257, neither 1297, agents_and_copilot 92 of 1921 scanned repos, date 2026-11-13.
+- combinations example (2026-11-14): agents_only 303, claude_only 63, both 258, neither 1297, agents_and_copilot 92 of 1921 scanned repos, date 2026-11-14.
 - sizes in stats.json: per path, count, median_bytes, p25_bytes, p75_bytes and date of the scan, from the HEAD Content-Length of present files whose size is known, 0 included (count = those files only); 0 when none is known (e.g. the .cursor/rules/ directory).
 - small_files in stats.json: date, threshold_bytes (300) and per path count (present files with a known size under 300 bytes, 0 bytes included; size only), threshold_bytes, zero_bytes (present files whose HEAD Content-Length is 0; counted in count, size 0 bytes) and unknown_size (present files with no Content-Length, size unknown, not counted; size_unknown is the same number, kept for compatibility).
 - small_files top-level fields: agents_md_under_300, claude_md_under_300, agents_md_total, claude_md_total, threshold_bytes, date.
-- small_files example (2026-11-13): agents_md_under_300 35 of agents_md_total 560, claude_md_under_300 189 of claude_md_total 321, threshold_bytes 300, date 2026-11-13.
+- small_files example (2026-11-14): agents_md_under_300 35 of agents_md_total 561, claude_md_under_300 190 of claude_md_total 321, threshold_bytes 300, date 2026-11-14.
 - claude_agents_changes in stats.json: since (first scan date), date (= generated), claude_removed_agents_kept (repos whose CLAUDE.md went away since their first scan while AGENTS.md stayed), agents_added_claude_kept (repos that added AGENTS.md while CLAUDE.md stayed) and repos_claude_removed_agents_kept (owner/name list, length = claude_removed_agents_kept); a first scan is a baseline; presence only, no reasons.
 - method_changes in stats.json: an array of detection changes, each entry with the fields date, path, summary, commit and url. Entry: date 2026-11-13, path .cursor/rules, summary "redirect check tightened", commit 6887ed8, url https://github.com/formachines-ai/agentsmd-tracker/commit/6887ed8. A count change on that date for that path comes from how the scan reads the site, not from the repositories.
 - today.json removed entries with reason "method_change": the path is no longer detected after a method change (see method_changes); this is a detection change, not a removal by the repository, and it says nothing about whether a file was deleted.
