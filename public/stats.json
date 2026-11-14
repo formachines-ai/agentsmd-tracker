@@ -846,6 +846,14 @@
   "neither": 1297,
   "agents_and_copilot": 92
  },
+ "combos": {
+  "date": "2026-11-14",
+  "total": 1921,
+  "both_agents_claude": 258,
+  "agents_only": 303,
+  "claude_only": 63,
+  "neither": 1297
+ },
  "sizes": {
   "AGENTS.md": {
    "count": 561,
