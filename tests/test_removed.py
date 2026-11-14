@@ -1,0 +1,55 @@
+"""Offline test: removals = present before + definite 404 now. Run: python3 -m unittest tests.test_removed"""
+import importlib.util
+import json
+import re
+import unittest
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+spec = importlib.util.spec_from_file_location("build", ROOT / "build.py")
+build = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(build)
+
+REPO = {"full_name": "o/n", "owner": "o", "name": "n", "language": "Python", "stars": 5, "default_branch": "main"}
+
+
+def snap(**files):
+    base = {s["path"]: {"present": False, "size": None, "definite": True} for s in build.PATHS}
+    base.update(files)
+    return {"status": "ok", "default_branch": "main", "files": base}
+
+
+PRESENT = {"present": True, "size": 10}
+
+
+class RemovedTest(unittest.TestCase):
+    def test_present_to_404(self):
+        a, r = build.diff_snapshots(REPO, snap(**{"AGENTS.md": PRESENT}), snap())
+        self.assertEqual([x["path"] for x in r], ["AGENTS.md"])
+        self.assertEqual((r[0]["owner"], r[0]["name"]), ("o", "n"))
+        self.assertEqual(a, [])
+
+    def test_present_to_network_error(self):
+        new = snap(**{"AGENTS.md": {"present": None, "size": None}})
+        self.assertEqual(build.diff_snapshots(REPO, snap(**{"AGENTS.md": PRESENT}), new), ([], []))
+
+    def test_first_scan(self):
+        self.assertEqual(build.diff_snapshots(REPO, None, snap()), ([], []))
+
+    def test_absent_to_absent(self):
+        self.assertEqual(build.diff_snapshots(REPO, snap(), snap()), ([], []))
+
+    def test_published(self):
+        d = json.loads((ROOT / "public" / "today.json").read_text())
+        self.assertIsInstance(d["removed"], list)
+        self.assertEqual(d["removed_count"], len(d["removed"]))
+        page = (ROOT / "public" / "index.html").read_text()
+        m = re.search(r'id="removed-24h">Removed in 24 h \((\d{4}-\d\d-\d\d)\): (\d+)</p>', page)
+        self.assertTrue(m)
+        self.assertEqual(m.group(1), d["generated"][:10])
+        self.assertEqual(int(m.group(2)), d["removed_count"])
+        self.assertIn("removed_count", (ROOT / "public" / "llms.txt").read_text())
+
+
+if __name__ == "__main__":
+    unittest.main()
