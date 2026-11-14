@@ -165,6 +165,8 @@
  },
  "first_seen": {},
  "first_scanned": "2026-11-02",
+ "moved_to": null,
+ "moved_detected": null,
  "page": "https://agentsmd.formachines.ai/repo/octokit/octokit.rb/",
  "license": "CC BY 4.0"
 }

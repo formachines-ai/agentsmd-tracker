@@ -257,6 +257,25 @@ def repo_exists(repo: dict, token: str | None) -> bool | None:
     return None
 
 
+def check_moved(repo: dict) -> tuple[str | None, bool]:
+    """One tokenless HEAD to github.com/<owner>/<name>, redirects not followed.
+    Returns (moved_to 'owner/name' or None, known). 200 / case-only redirect = known, not moved;
+    404, other statuses and network errors = unknown (the previous value is kept)."""
+    status, hdrs = head(f"{GH_BASE}/{repo['full_name']}")
+    if status == 200:
+        return None, True
+    if status in (301, 302):
+        loc = next((v for k, v in hdrs.items() if k.lower() == "location"), "")
+        u = urllib.parse.urlsplit(urllib.parse.urljoin(f"{GH_BASE}/{repo['full_name']}", loc))
+        parts = [p for p in u.path.split("/") if p]
+        if u.netloc.lower() == urllib.parse.urlsplit(GH_BASE).netloc and len(parts) == 2:
+            new = f"{parts[0]}/{parts[1]}"
+            if new.lower() != repo["full_name"].lower():
+                return new, True
+        return None, True            # case-only or unrelated redirect: not moved
+    return None, False
+
+
 def scan_repo(repo: dict, token: str | None) -> dict:
     files: dict[str, dict] = {}
     unknown = 0
@@ -278,8 +297,27 @@ def scan_repo(repo: dict, token: str | None) -> dict:
             status = "unreachable"       # moved / deleted / taken down: excluded from the denominators
         elif ex is None:
             status = "error"
-    return {"checked": iso(now_utc()), "status": status, "default_branch": repo.get("default_branch") or "main",
-            "files": files}
+    moved_to, known = check_moved(repo)
+    time.sleep(PAUSE_S)
+    res = {"checked": iso(now_utc()), "status": status, "default_branch": repo.get("default_branch") or "main",
+           "files": files}
+    if known:
+        res["moved_to"] = moved_to
+    return res
+
+
+def merge_moved(prev: dict | None, new: dict) -> None:
+    """Carry moved_to / moved_detected from the previous snapshot; the first detection date is kept while moved_to is unchanged."""
+    p = prev or {}
+    if "moved_to" not in new:                       # unknown answer: keep what we knew
+        new["moved_to"] = p.get("moved_to")
+        new["moved_detected"] = p.get("moved_detected")
+    elif new["moved_to"] is None:
+        new["moved_detected"] = None
+    elif p.get("moved_to") == new["moved_to"] and p.get("moved_detected"):
+        new["moved_detected"] = p["moved_detected"]
+    else:
+        new["moved_detected"] = new["checked"][:10]
 
 
 # ----------------------------------------------------------------------------- scan orchestration
@@ -336,6 +374,7 @@ def run_scan(repos: list[dict], limit: int | None, max_seconds: float | None, fo
             time.sleep(BACKOFF_429_S)
             continue
         prev = read_json(scan_file_for(repo), None)
+        merge_moved(prev, new)
         attempt_status = new["status"]   # what this attempt returned; a kept good snapshot must not count as a successful check today
         if prev and prev.get("status") == "ok" and new["status"] == "ok":
             for spec in PATHS:
@@ -349,6 +388,7 @@ def run_scan(repos: list[dict], limit: int | None, max_seconds: float | None, fo
         elif prev and prev.get("status") == "ok" and new["status"] in ("error", "partial"):
             # keep the good snapshot, only note the failed attempt
             prev["last_error"] = new["checked"]
+            prev["moved_to"], prev["moved_detected"] = new.get("moved_to", prev.get("moved_to")), new.get("moved_detected", prev.get("moved_detected"))
             new = prev
         write_json(scan_file_for(repo), new)
         stats["scanned"] += 1
@@ -1034,6 +1074,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
                                           "stars": r["stars"], "default_branch": (sc or {}).get("default_branch") or r.get("default_branch"),
                                           "status": status, "checked": checked if sc else None, "files": files_json,
                                           "language_share": language_share, "first_seen": first_seen, "first_scanned": r_first,
+                                          "moved_to": (sc or {}).get("moved_to"), "moved_detected": (sc or {}).get("moved_detected"),
                                           "page": f"{SITE_BASE}/repo/{r['owner']}/{r['name']}/", "license": "CC BY 4.0"})
         urls.append(f"{SITE_BASE}/repo/{r['owner']}/{r['name']}/")
         url_lastmod[urls[-1]] = changed_on.get(r["full_name"]) or r_first or scan_date
@@ -1207,6 +1248,7 @@ Latest (scan {generated}): {agg['counts'][PRIMARY_PATH]} of {total} scanned repo
 - [today.json]({SITE_BASE}/today.json): files added/removed since the previous scan
 - [feed.xml]({SITE_BASE}/feed.xml): RSS of repositories that added AGENTS.md
 - [build.json]({SITE_BASE}/build.json): build time, scan status, data-delayed flag
+- moved_to / moved_detected in /repo/<owner>/<name>/index.json: new owner/name if github.com/<owner>/<name> answered a 301/302 to a different repository (case-only changes ignored), and the first UTC date it was seen; both null when not moved. Data only, the card stays.
 - Repo card JSON: {SITE_BASE}/repo/<owner>/<name>/index.json (same fields as the HTML card)
 
 ## Pages
