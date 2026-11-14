@@ -574,19 +574,17 @@ def repo_meta(r: dict, sc: dict | None, lang_agents: dict | None) -> tuple[str, 
     yn = lambda path: "yes" if path in present else ("no" if checked else "not checked")
     title = f"{r['full_name']}: AGENTS.md {yn('AGENTS.md')}, CLAUDE.md {yn('CLAUDE.md')}"
     title += (f" ({lang}), " if lang else ", ") + SITE_NAME
+    where = f" ({lang})" if lang else ""
     if not present:
-        has = f"{r['full_name']} has none of the 8 tracked files." if checked else f"{r['full_name']}: tracked files not checked yet."
+        has = f"{r['full_name']}{where} has none of the 8 tracked files." if checked else f"{r['full_name']}{where}: tracked files not checked yet."
     elif len(present) == 1:
-        has = f"{r['full_name']} has {present[0]}."
+        has = f"{r['full_name']}{where} has {present[0]}."
     else:
-        has = f"{r['full_name']} has {', '.join(present[:-1])} and {present[-1]}."
-    tail = " Scan data, links to GitHub."
-    share = ""
-    if lang_agents:
-        share = f" {lang_agents['pct']} % of top {lang} repos have AGENTS.md on {lang_agents['date']}."
-    desc = has + share + tail
+        has = f"{r['full_name']}{where} has {', '.join(present[:-1])} and {present[-1]}."
+    # no daily-changing date or share here: keeps the card's lastmod truthful
+    desc = has + " Presence and size only, with links to GitHub."
     if len(desc) > DESC_MAX:
-        desc = has + share
+        desc = has
     return title, desc
 
 
@@ -899,7 +897,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
                       f'{b:,} of {h1["scanned"]:,} ({pb} %) on {esc(h1["date"])}; {b - a:+d} repos, {round(pb - pa, 1):+.1f} pp over {days} days of history.</p>')
 
     home_desc = (f"{agg['counts'][PRIMARY_PATH]:,} of {total:,} sampled top GitHub repos have an AGENTS.md "
-                 f"(scan of {gen_raw[:10]}). Daily counts of AGENTS.md, CLAUDE.md, .cursorrules and more; facts only.")
+                 f"({pct(agg['counts'][PRIMARY_PATH], total)} %) on {gen_raw[:10]}. Daily counts of AGENTS.md, CLAUDE.md and more.")
     home_ld = {"@context": "https://schema.org", "@type": "Dataset", "name": f"{SITE_NAME}: agent-instruction files in top GitHub repositories",
                "description": (f"{home_desc} Presence and size of {len(PATHS)} instruction-file types in the top ~2,000 GitHub repositories, "
                                "collected with HEAD requests; file contents are not read."), "url": SITE_BASE + "/", "license": "https://creativecommons.org/licenses/by/4.0/",
