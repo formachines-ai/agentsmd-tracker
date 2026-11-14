@@ -80,8 +80,20 @@ do not add dependencies outside the Python 3.12 standard library, no JavaScript 
     2xx/3xx = present, `404` = absent.
   - when all paths are absent, one `HEAD https://github.com/<owner>/<name>` confirms the repo still exists;
     301/404/451 → status `unreachable` (excluded from all denominators, card kept).
-- Neither host counts against the REST API quota, so **the daily scan needs no token**. Throughput is ~2–3 s per repo
-  (9 requests), i.e. about 1.5 h for 2 000 repos; `--max-seconds` keeps a cron run bounded.
+- Neither host counts against the REST API quota, so **the daily scan needs no token**.
+- Requests per repo: **10** (`scan_repo()` in `build.py`): 8 path HEADs (one per entry of `PATHS`: `AGENTS.md`,
+  `CLAUDE.md`, `.cursorrules`, `.cursor/rules`, `.github/copilot-instructions.md`, `llms.txt`, `GEMINI.md`,
+  `.windsurfrules`) + 1 existence HEAD to `github.com/<owner>/<name>` (only when all 8 paths are absent; otherwise the
+  repo makes 9) + 1 moved-detection HEAD to `github.com/<owner>/<name>` (below).
+- Scan-time estimate (an estimate, not a promise): `PAUSE_S` = 0.08 s after every request, so the pacing alone is
+  10 requests × 1 922 repos × 0.08 s = 1 537.6 s ≈ 26 min. Network latency of the requests comes on top and
+  dominates in practice (earlier runs: ~2–3 s per repo, i.e. up to about 1.5 h for 2 000 repos);
+  `--max-seconds` keeps a cron run bounded.
+- **Moved repos** (`moved_to` / `moved_detected` in `data/scan/<owner>__<name>.json`): the moved-detection HEAD does
+  not follow redirects. A `301`/`302` to a different `owner/name` sets `moved_to` and `moved_detected` (the date of the
+  first detection, kept while `moved_to` stays the same). A case-only redirect (same name in another letter case)
+  sets nothing. `200` clears both. `404`, other statuses and network errors are "unknown": the last known values are
+  kept.
 - `429` / `403 + Retry-After` → sleep 60 s; after 5 in a row the scan stops, remaining repos stay `pending`, the site
   is rendered with a "partial scan" banner. `data_delayed` in `build.json` (and a yellow banner) is set when no repo
   has a successful check within 36 h.
