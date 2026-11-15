@@ -814,7 +814,10 @@ def annotate_removed(removed: list[dict], day: str | None) -> list[dict]:
 
 
 def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, build_info: dict, sample_info: dict | None = None) -> None:
-    updated = build_info["built_at"]
+    built = build_info["built_at"]   # real build time: only for build.json / llms.txt and "is the scan from today" checks
+    # T-0171: the footer 'updated' and the JSON-LD dates are the finish time of the latest published scan (build.json scan.generated);
+    # no scan record -> the build time. A same-data rebuild therefore writes identical HTML.
+    updated = today.get("generated") or (history[-1].get("generated") if history else None) or built
     go = GoLinks()
     out = PUBLIC_DIR
     # fresh public/: keep nothing stale, but write into place (publish.sh rsyncs the committed directory)
@@ -854,7 +857,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
     any_n = agg["any"]
     gen_raw = today.get("generated") or (history[-1].get("generated") if history else None) or updated  # same value as stats.json 'generated'
     gen_txt = gen_raw[:10] + " " + gen_raw[11:16]
-    stale_txt = "" if gen_raw[:10] == updated[:10] else f" (not today's: scan dated {gen_raw[:10]})"
+    stale_txt = "" if gen_raw[:10] == built[:10] else f" (not today's: scan dated {gen_raw[:10]})"
     cb = agg["combo"]
     cb_lines = "".join(f"<li>{esc(lbl)}: {cb[k]:,} of {total:,} ({pct(cb[k], total)} %)</li>" for k, lbl in (
         ("agents_and_claude", "AGENTS.md and CLAUDE.md both"), ("agents_only_of_pair", "AGENTS.md, no CLAUDE.md"),
@@ -989,7 +992,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
 <li><strong>Not done.</strong> No file contents are stored or shown. No accounts, no cookies, no JavaScript, no tracking of visitors.</li>
 </ul>
 </section>"""
-    day = updated[:10]
+    day = built[:10]
     scan_day = gen_raw[:10]
     cite = (f'<p class="cite muted">Cite as: {esc(SITE_NAME)}, {esc(SITE_HOST)}, scan of {esc(scan_day)}, CC BY 4.0. '
             f'Values for each date stay in <a href="/stats.json">{esc(SITE_BASE)}/stats.json</a> history[].</p>')

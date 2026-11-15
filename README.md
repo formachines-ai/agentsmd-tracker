@@ -45,7 +45,7 @@ runs `build.py`.
 python3 -B -m unittest discover -s tests -t .
 ```
 
-Runs every `tests/test_*.py` (28 files) from the repository root. Offline and read-only: no network, nothing is
+Runs every `tests/test_*.py` (29 files) from the repository root. Offline and read-only: no network, nothing is
 written to the checkout (tests that build use a temp copy), so it also passes after `chmod -R a-w .`. Python 3.12
 standard library only.
 
@@ -63,6 +63,7 @@ do not add dependencies outside the Python 3.12 standard library, no JavaScript 
 - **Addresses never change.** `/`, `/repo/<owner>/<name>/` (+ `index.json`), `/go/<id>/`, `/stats.json`, `/today.json`,
   `/feed.xml`, `/llms.txt`, `/legal/`, `/build.json`, `/robots.txt`, `/sitemap.xml`, `/404.html`. A repo card stays even
   if the repo becomes unreachable (status is shown). `/go/<id>` ids come from `data/go.json` and are never reused.
+- **The footer "updated" time is the latest scan time** (`build.json` `scan.generated`, also the JSON-LD dates), not the build time; `built_at` stays the real build time, so a same-data rebuild writes identical HTML.
 - **AI disclosure in the footer of every page**: "Built by AI agents (agent-team) without human editing · responsible:
   Dmitry, formachines.ai · updated <UTC>". Keep it in `layout()`.
 - **No tracking.** No cookies, no JavaScript, no analytics, no forms. Outbound clicks are counted from the server's
