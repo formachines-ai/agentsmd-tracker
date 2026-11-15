@@ -25,7 +25,8 @@ class ScanCoverage(unittest.TestCase):
         t = cls.tmp
         shutil.copy(REPO / "build.py", t / "build.py")
         shutil.copytree(REPO / "static", t / "static")
-        (t / "data" / "scan").mkdir(parents=True)
+        subprocess.run(["chmod", "-R", "u+w", str(t)], check=True)   # the checkout may be read-only
+        (t / "data" / "scan").mkdir(parents=True, exist_ok=True)
         (t / "data" / "history").mkdir()
         (t / "public").mkdir()
         repos = []

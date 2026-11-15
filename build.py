@@ -871,8 +871,8 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
     sample_line = (f'<p class="asof" id="sample-line">Sample on {esc(gen_raw[:10])}: {si["included"]:,} of {si["target_total"]:,} targeted repos '
                    f'(top {si["target_per_language"]:,} by stars in each of {len(si["languages"])} languages); '
                    f'{si["target_total"] - si["included"]:,} not included: {esc(reasons)}. Details: <a href="/stats.json">stats.json</a> field <code>sample</code>.</p>')
-    sc_ = build_info["scan"]
-    coverage_line = (f'<p class="asof" id="scan-coverage">{sc_["fresh"]:,} repos checked on {esc(str(sc_["fresh_date"]))}, '
+    sc_ = build_info.get("scan") or {}
+    coverage_line = "" if "fresh" not in sc_ else (f'<p class="asof" id="scan-coverage">{sc_["fresh"]:,} repos checked on {esc(str(sc_["fresh_date"]))}, '
                      f'{sc_["carried_over"]:,} carried over from earlier scans'
                      + (f' (oldest {esc(sc_["carried_over_oldest"])})' if sc_["carried_over"] else '')
                      + (f'; the latest run was stopped early' if sc_.get("stopped") else '')
@@ -1254,6 +1254,9 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
                    jsonld=webpage_ld(f"{lang} repos — {SITE_NAME}", f"{SITE_BASE}/lang/{slug}/", updated)))
         urls.append(f"{SITE_BASE}/lang/{slug}/")
 
+    sc2 = build_info.get("scan") or {}
+    coverage_llms = (f'Scan coverage (build.json scan): {sc2["fresh"]} fresh on {sc2["fresh_date"]}, {sc2["carried_over"]} carried over, '
+                     f'{sc2.get("partial", 0)} partial, stopped {str(bool(sc2.get("stopped"))).lower()}. {COVERAGE_LINE}\n') if "fresh" in sc2 else ""
     # ---- llms.txt, robots.txt, sitemap.xml, 404, legal, go pages
     write_text(out / "llms.txt", f"""# {SITE_NAME}
 
@@ -1262,8 +1265,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
 Data scanned at: {generated}
 Site built at: {build_info["built_at"]}
 The scan time changes only when new data is scanned; the build time changes on every rebuild, even when the data is the same.
-Scan coverage (build.json scan): {build_info["scan"]["fresh"]} fresh on {build_info["scan"]["fresh_date"]}, {build_info["scan"]["carried_over"]} carried over, {build_info["scan"]["partial"]} partial, stopped {str(bool(build_info["scan"].get("stopped"))).lower()}. {COVERAGE_LINE}
-Schema: stats.json v{STATS_SCHEMA_VERSION}, today.json v{SCHEMA_VERSION}
+{coverage_llms}Schema: stats.json v{STATS_SCHEMA_VERSION}, today.json v{SCHEMA_VERSION}
 
 Latest (scan {generated}): {agg['counts'][PRIMARY_PATH]} of {total} scanned repos ({pct(agg['counts'][PRIMARY_PATH], total)} %) have AGENTS.md; {agg['counts']['CLAUDE.md']} CLAUDE.md; {agg['counts']['.cursorrules']} .cursorrules; {agg['counts']['.github/copilot-instructions.md']} copilot-instructions.md; {agg['counts']['llms.txt']} llms.txt.
 
