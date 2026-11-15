@@ -659,15 +659,27 @@ def jsonld_block(data: dict) -> str:
     return '<script type="application/ld+json">' + json.dumps(data, ensure_ascii=False).replace("<", "\\u003c") + "</script>"
 
 
+def card_title(full_name: str, a: str, c: str, limit: int = TITLE_MAX) -> str:
+    """Card <title> of at most `limit` chars: shorten the label first, then truncate the name with an ellipsis."""
+    for status, tail in ((f"AGENTS.md {a}, CLAUDE.md {c}", f" · {SITE_NAME}"), (f"AGENTS.md {a}, CLAUDE.md {c}", " · Tracker"),
+                         (f"AGENTS {a}, CLAUDE {c}", " · Tracker")):
+        t = f"{full_name}: {status}{tail}"
+        if len(t) <= limit:
+            return t
+    rest = f": {status}{tail}"
+    keep = max(limit - len(rest) - 1, 1)
+    return full_name[:keep] + "…" + rest
+
+
 def repo_meta(r: dict, sc: dict | None, lang_agents: dict | None) -> tuple[str, str]:
     """Unique <title> and meta description of a repo card, built from the card's own data."""
     files = (sc or {}).get("files", {})
     present = [p["path"] for p in PATHS if files.get(p["path"], {}).get("present")]
     checked = bool(files) and all(files.get(p["path"], {}).get("present") is not None for p in PATHS)
     lang = r.get("language") or ""
-    yn = lambda path: "yes" if path in present else ("no" if checked else "not checked")
-    title = f"{r['full_name']}: AGENTS.md {yn('AGENTS.md')}, CLAUDE.md {yn('CLAUDE.md')}"
-    title += (f" ({lang}), " if lang else ", ") + SITE_NAME
+    # per-path status: a path the scan recorded is yes/no even if a newer PATHS entry is missing from an old scan
+    yn = lambda path: "yes" if path in present else ("no" if files.get(path, {}).get("present") is False else "not checked")
+    title = card_title(r["full_name"], yn("AGENTS.md"), yn("CLAUDE.md"))
     where = f" ({lang})" if lang else ""
     if not present:
         has = f"{r['full_name']}{where} has none of the {len(PATHS)} tracked files." if checked else f"{r['full_name']}{where}: tracked files not checked yet."
@@ -1139,7 +1151,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
 {lang_line}
 </section>"""
         card_title, card_desc = repo_meta(r, sc, language_share.get(PRIMARY_PATH))
-        write_text(rdir / "index.html", layout(card_title, body, updated, title_max=CARD_TITLE_MAX,
+        write_text(rdir / "index.html", layout(card_title, body, updated, title_max=TITLE_MAX,
                                               description=card_desc,
                                               canonical=f"{SITE_BASE}/repo/{r['owner']}/{r['name']}/",
                                               jsonld=webpage_ld(f"{r['full_name']} — {SITE_NAME}", f"{SITE_BASE}/repo/{r['owner']}/{r['name']}/", updated)))
