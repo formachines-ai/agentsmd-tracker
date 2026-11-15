@@ -76,8 +76,11 @@ PATHS: list[dict] = [
     {"path": "llms.txt", "kind": "file", "label": "llms.txt", "note": "llms.txt proposal"},
     {"path": "GEMINI.md", "kind": "file", "label": "GEMINI.md", "note": "Gemini CLI"},
     {"path": ".windsurfrules", "kind": "file", "label": ".windsurfrules", "note": "Windsurf"},
+    {"path": "AI_POLICY.md", "kind": "file", "label": "AI_POLICY.md", "note": "AI contribution policy (presence and size only)"},
+    {"path": ".github/AI_POLICY.md", "kind": "file", "label": ".github/AI_POLICY.md", "note": "AI contribution policy in .github (presence and size only)"},
 ]
 PRIMARY_PATH = "AGENTS.md"
+REQ_PER_REPO = len(PATHS) + 2   # path HEADs + existence HEAD (all absent) + moved-detection HEAD; one fewer when any path is present
 
 RAW_BASE = "https://raw.githubusercontent.com"
 GH_BASE = "https://github.com"
@@ -898,7 +901,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
 <p class="asof"><strong>Latest published scan: {esc(gen_txt)} UTC.</strong> A new scan starts daily at 04:00 UTC; results are published when it finishes. Numbers on this page are from the latest published scan{esc(stale_txt)}.</p>
 {sample_line}
 {coverage_line}
-<p class="limit">What this share measures: whether a listed file path exists at one of its fixed conventional locations on the default branch (AGENTS.md, CLAUDE.md, GEMINI.md, llms.txt, .cursorrules and .windsurfrules at the repository root; .github/copilot-instructions.md; .cursor/rules/), in a sample of popular repositories per language. It is file presence only — not the quality or use of a file, and not all of GitHub.</p>
+<p class="limit">What this share measures: whether a listed file path exists at one of its fixed conventional locations on the default branch (AGENTS.md, CLAUDE.md, GEMINI.md, llms.txt, AI_POLICY.md, .cursorrules and .windsurfrules at the repository root; .github/copilot-instructions.md; .github/AI_POLICY.md; .cursor/rules/), in a sample of popular repositories per language. It is file presence only — not the quality or use of a file, and not all of GitHub.</p>
 <p class="paths"><a href="#languages">Explore your language</a> · <a href="#method">See the sampling method</a></p>
 </section>"""
 
@@ -963,7 +966,8 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
 <ul>
 <li><strong>Sample.</strong> {sample:,} public, non-fork, non-archived repositories with the most stars per language (GitHub Search API, collected once and extended over time). {len(agg['unreachable'])} are currently unreachable (moved or removed) and excluded.</li>
 <li><strong>Check.</strong> Once a day a HEAD request per path against the default branch: a <code>200</code> means the file exists, <code>Content-Length</code> is its size. <code>.cursor/rules/</code> is checked as a directory. Names are matched case-sensitively, exactly as the conventions spell them.</li>
-<li><strong>Paths checked.</strong> Only these fixed locations on the default branch: AGENTS.md, CLAUDE.md, GEMINI.md, llms.txt, .cursorrules and .windsurfrules at the repository root, plus .github/copilot-instructions.md and .cursor/rules/ ({', '.join(esc(x['label']) for x in PATHS)}). Nested files, for example in subdirectories or packages, are not checked.</li>
+<li><strong>Paths checked.</strong> Only these fixed locations on the default branch: AGENTS.md, CLAUDE.md, GEMINI.md, llms.txt, AI_POLICY.md, .cursorrules and .windsurfrules at the repository root, plus .github/copilot-instructions.md, .github/AI_POLICY.md and .cursor/rules/ ({', '.join(esc(x['label']) for x in PATHS)}). Nested files, for example in subdirectories or packages, are not checked.</li>
+<li><strong>Requests per repository.</strong> {len(PATHS)} path HEAD requests, plus 1 existence HEAD (only when every path is absent) and 1 moved-detection HEAD: {REQ_PER_REPO} requests at most (one thread, no token). AI_POLICY.md and .github/AI_POLICY.md: presence and size only, contents are never read. They count as 0 on days before their first scan; a path's first scan is a baseline, not an added entry.</li>
 <li><strong>Added today.</strong> A path present in today's scan and absent in the previous snapshot of the same repository. Links go to the file on GitHub via <code>/go/&lt;id&gt;/</code>, a plain redirect page.</li>
 <li><strong>Languages.</strong> Each language in the table above has a full list of its sampled repositories (every sampled repository is listed) at <code>/lang/&lt;slug&gt;/</code>, for example <a href="/lang/python/">/lang/python/</a>.</li>
 <li><strong>Baseline.</strong> A repository seen for the first time is baseline: files it already has are counted, but not shown as added.</li>
@@ -1273,7 +1277,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
     # ---- llms.txt, robots.txt, sitemap.xml, 404, legal, go pages
     write_text(out / "llms.txt", f"""# {SITE_NAME}
 
-> Daily tracker of agent-instruction files in top GitHub repositories: which of {sample:,} public repositories (top by stars per language) have AGENTS.md, CLAUDE.md, .cursorrules, .cursor/rules/, .github/copilot-instructions.md, llms.txt, GEMINI.md, .windsurfrules. Only presence, size and a link to GitHub are published; file contents are never republished. Built by AI agents (agent-team) without human editing; responsible: {RESPONSIBLE}. Data CC BY 4.0.
+> Daily tracker of agent-instruction files in top GitHub repositories: which of {sample:,} public repositories (top by stars per language) have AGENTS.md, CLAUDE.md, .cursorrules, .cursor/rules/, .github/copilot-instructions.md, llms.txt, GEMINI.md, .windsurfrules, AI_POLICY.md, .github/AI_POLICY.md. Only presence, size and a link to GitHub are published; file contents are never republished. Built by AI agents (agent-team) without human editing; responsible: {RESPONSIBLE}. Data CC BY 4.0.
 
 Data scanned at: {generated}
 Site built at: {build_info["built_at"]}
@@ -1284,7 +1288,7 @@ Latest (scan {generated}): {agg['counts'][PRIMARY_PATH]} of {total} scanned repo
 
 ## Machine-readable
 - [stats.json]({SITE_BASE}/stats.json): totals, shares, by-language table, full daily history
-- combinations in stats.json: date, total and counts of scanned repos by co-existence of AGENTS.md and CLAUDE.md (agents_only, claude_only, both, neither, agents_and_copilot (AGENTS.md with .github/copilot-instructions.md), agents_and_claude, agents_only_of_pair, claude_only_of_pair, neither_of_pair), same_size_agents_claude (both present with equal byte size) and repos_with_2plus_types (at least 2 of the 8 paths).
+- combinations in stats.json: date, total and counts of scanned repos by co-existence of AGENTS.md and CLAUDE.md (agents_only, claude_only, both, neither, agents_and_copilot (AGENTS.md with .github/copilot-instructions.md), agents_and_claude, agents_only_of_pair, claude_only_of_pair, neither_of_pair), same_size_agents_claude (both present with equal byte size) and repos_with_2plus_types (at least 2 of the 10 paths).
 - combos in stats.json: date, total and four integer counts of scanned repos (sum = total): both_agents_claude, agents_only, claude_only, neither (presence of AGENTS.md and CLAUDE.md only).
 - combinations example ({generated[:10]}): agents_only {agg['combo']['agents_only']}, claude_only {agg['combo']['claude_only']}, both {agg['combo']['both']}, neither {agg['combo']['neither']}, agents_and_copilot {agg['combo']['agents_and_copilot']} of {total} scanned repos, date {generated[:10]}.
 - sizes in stats.json, AGENTS.md and CLAUDE.md entries also: n (known sizes), median, p25, p75 in bytes, buckets lt_2k (<2048), 2k_8k, 8k_32k (up to 32768 inclusive) and gt_32k (>32768) as counts summing to n, and unknown (present, size not known); n + unknown = repos with the file.
@@ -1295,6 +1299,7 @@ Latest (scan {generated}): {agg['counts'][PRIMARY_PATH]} of {total} scanned repo
 - claude_agents_changes in stats.json: since (first scan date), date (= generated), claude_removed_agents_kept (repos whose CLAUDE.md went away since their first scan while AGENTS.md stayed), agents_added_claude_kept (repos that added AGENTS.md while CLAUDE.md stayed) and repos_claude_removed_agents_kept (owner/name list, length = claude_removed_agents_kept); a first scan is a baseline; presence only, no reasons.
 - method_changes in stats.json: an array of detection changes, each entry with the fields date, path, summary, commit and url. Entry: date 2026-11-13, path .cursor/rules, summary "redirect check tightened", commit 6887ed8, url https://github.com/formachines-ai/agentsmd-tracker/commit/6887ed8. A count change on that date for that path comes from how the scan reads the site, not from the repositories.
 - today.json removed entries with reason "method_change": the path is no longer detected after a method change (see method_changes); this is a detection change, not a removal by the repository, and it says nothing about whether a file was deleted.
+- Requests per repository: {REQ_PER_REPO} at most ({len(PATHS)} path HEADs + 1 existence HEAD when every path is absent + 1 moved-detection HEAD). AI_POLICY.md and .github/AI_POLICY.md are presence and size only; days before their first scan count as 0; the first scan of a path is a baseline, not an added entry.
 - Method for combinations and small_files: counts come from presence and size only, via HEAD requests to public file URLs; file contents are not read.
 - sample in stats.json (an object; the former integer sample is now sample_size, the headline total M): target_per_language, languages, target_total, included (= sample_size), excluded_by_reason (forks, archived, other; included + their sum = target_total) and per_language (adds up to included). other = targeted but absent from the stored sample (duplicates across languages, not found or dropped at seeding), reason not recorded per repo.
 - schema_version 2 (2026-11-07): change_7d_pp is an object per path; null until 8 dated history rows (schema_version 1: change_7d_pp was a scalar).

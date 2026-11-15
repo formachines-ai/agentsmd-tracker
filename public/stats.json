@@ -53,7 +53,9 @@
   ".github/copilot-instructions.md",
   "llms.txt",
   "GEMINI.md",
-  ".windsurfrules"
+  ".windsurfrules",
+  "AI_POLICY.md",
+  ".github/AI_POLICY.md"
  ],
  "counts": {
   "AGENTS.md": 560,
@@ -63,7 +65,9 @@
   ".github/copilot-instructions.md": 158,
   "llms.txt": 17,
   "GEMINI.md": 21,
-  ".windsurfrules": 5
+  ".windsurfrules": 5,
+  "AI_POLICY.md": 0,
+  ".github/AI_POLICY.md": 0
  },
  "any": 687,
  "shares": {
@@ -74,7 +78,9 @@
   ".github/copilot-instructions.md": 8.2,
   "llms.txt": 0.9,
   "GEMINI.md": 1.1,
-  ".windsurfrules": 0.3
+  ".windsurfrules": 0.3,
+  "AI_POLICY.md": 0.0,
+  ".github/AI_POLICY.md": 0.0
  },
  "by_language": {
   "C#": {
@@ -87,7 +93,9 @@
    ".github/copilot-instructions.md": 29,
    "llms.txt": 1,
    "GEMINI.md": 2,
-   ".windsurfrules": 1
+   ".windsurfrules": 1,
+   "AI_POLICY.md": 0,
+   ".github/AI_POLICY.md": 0
   },
   "C++": {
    "repos": 191,
@@ -99,7 +107,9 @@
    ".github/copilot-instructions.md": 22,
    "llms.txt": 0,
    "GEMINI.md": 2,
-   ".windsurfrules": 0
+   ".windsurfrules": 0,
+   "AI_POLICY.md": 0,
+   ".github/AI_POLICY.md": 0
   },
   "Go": {
    "repos": 193,
@@ -111,7 +121,9 @@
    ".github/copilot-instructions.md": 15,
    "llms.txt": 3,
    "GEMINI.md": 2,
-   ".windsurfrules": 0
+   ".windsurfrules": 0,
+   "AI_POLICY.md": 0,
+   ".github/AI_POLICY.md": 0
   },
   "Java": {
    "repos": 193,
@@ -123,7 +135,9 @@
    ".github/copilot-instructions.md": 12,
    "llms.txt": 0,
    "GEMINI.md": 0,
-   ".windsurfrules": 0
+   ".windsurfrules": 0,
+   "AI_POLICY.md": 0,
+   ".github/AI_POLICY.md": 0
   },
   "JavaScript": {
    "repos": 191,
@@ -135,7 +149,9 @@
    ".github/copilot-instructions.md": 10,
    "llms.txt": 3,
    "GEMINI.md": 1,
-   ".windsurfrules": 0
+   ".windsurfrules": 0,
+   "AI_POLICY.md": 0,
+   ".github/AI_POLICY.md": 0
   },
   "PHP": {
    "repos": 191,
@@ -147,7 +163,9 @@
    ".github/copilot-instructions.md": 11,
    "llms.txt": 0,
    "GEMINI.md": 2,
-   ".windsurfrules": 0
+   ".windsurfrules": 0,
+   "AI_POLICY.md": 0,
+   ".github/AI_POLICY.md": 0
   },
   "Python": {
    "repos": 197,
@@ -159,7 +177,9 @@
    ".github/copilot-instructions.md": 15,
    "llms.txt": 3,
    "GEMINI.md": 4,
-   ".windsurfrules": 1
+   ".windsurfrules": 1,
+   "AI_POLICY.md": 0,
+   ".github/AI_POLICY.md": 0
   },
   "Ruby": {
    "repos": 189,
@@ -171,7 +191,9 @@
    ".github/copilot-instructions.md": 12,
    "llms.txt": 1,
    "GEMINI.md": 1,
-   ".windsurfrules": 1
+   ".windsurfrules": 1,
+   "AI_POLICY.md": 0,
+   ".github/AI_POLICY.md": 0
   },
   "Rust": {
    "repos": 198,
@@ -183,7 +205,9 @@
    ".github/copilot-instructions.md": 13,
    "llms.txt": 3,
    "GEMINI.md": 4,
-   ".windsurfrules": 1
+   ".windsurfrules": 1,
+   "AI_POLICY.md": 0,
+   ".github/AI_POLICY.md": 0
   },
   "TypeScript": {
    "repos": 194,
@@ -195,7 +219,9 @@
    ".github/copilot-instructions.md": 19,
    "llms.txt": 3,
    "GEMINI.md": 3,
-   ".windsurfrules": 1
+   ".windsurfrules": 1,
+   "AI_POLICY.md": 0,
+   ".github/AI_POLICY.md": 0
   }
  },
  "history": [
@@ -876,7 +902,9 @@
   ".github/copilot-instructions.md": -0.1,
   "llms.txt": 0.0,
   "GEMINI.md": 0.0,
-  ".windsurfrules": 0.0
+  ".windsurfrules": 0.0,
+  "AI_POLICY.md": 0.0,
+  ".github/AI_POLICY.md": 0.0
  },
  "combinations": {
   "date": "2026-11-15",
@@ -979,6 +1007,20 @@
    "p25_bytes": 209,
    "p75_bytes": 4262,
    "date": "2026-11-15"
+  },
+  "AI_POLICY.md": {
+   "count": 0,
+   "median_bytes": 0,
+   "p25_bytes": 0,
+   "p75_bytes": 0,
+   "date": "2026-11-15"
+  },
+  ".github/AI_POLICY.md": {
+   "count": 0,
+   "median_bytes": 0,
+   "p25_bytes": 0,
+   "p75_bytes": 0,
+   "date": "2026-11-15"
   }
  },
  "claude_agents_changes": {
@@ -1050,6 +1092,20 @@
   },
   ".windsurfrules": {
    "count": 2,
+   "threshold_bytes": 300,
+   "size_unknown": 0,
+   "zero_bytes": 0,
+   "unknown_size": 0
+  },
+  "AI_POLICY.md": {
+   "count": 0,
+   "threshold_bytes": 300,
+   "size_unknown": 0,
+   "zero_bytes": 0,
+   "unknown_size": 0
+  },
+  ".github/AI_POLICY.md": {
+   "count": 0,
    "threshold_bytes": 300,
    "size_unknown": 0,
    "zero_bytes": 0,

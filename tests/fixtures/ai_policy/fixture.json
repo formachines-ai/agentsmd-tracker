@@ -1,0 +1,344 @@
+{
+ "repos": [
+  {
+   "id": 1,
+   "owner": "freeCodeCamp",
+   "name": "freeCodeCamp",
+   "full_name": "freeCodeCamp/freeCodeCamp",
+   "language": "Python",
+   "stars": 1000,
+   "default_branch": "main"
+  },
+  {
+   "id": 2,
+   "owner": "fx1",
+   "name": "repo1",
+   "full_name": "fx1/repo1",
+   "language": "TypeScript",
+   "stars": 999,
+   "default_branch": "main"
+  },
+  {
+   "id": 3,
+   "owner": "fx2",
+   "name": "repo2",
+   "full_name": "fx2/repo2",
+   "language": "JavaScript",
+   "stars": 998,
+   "default_branch": "main"
+  },
+  {
+   "id": 4,
+   "owner": "fx3",
+   "name": "repo3",
+   "full_name": "fx3/repo3",
+   "language": "Go",
+   "stars": 997,
+   "default_branch": "main"
+  },
+  {
+   "id": 5,
+   "owner": "fx4",
+   "name": "repo4",
+   "full_name": "fx4/repo4",
+   "language": "Rust",
+   "stars": 996,
+   "default_branch": "main"
+  },
+  {
+   "id": 6,
+   "owner": "fx5",
+   "name": "repo5",
+   "full_name": "fx5/repo5",
+   "language": "Python",
+   "stars": 995,
+   "default_branch": "main"
+  },
+  {
+   "id": 7,
+   "owner": "fx6",
+   "name": "repo6",
+   "full_name": "fx6/repo6",
+   "language": "TypeScript",
+   "stars": 994,
+   "default_branch": "main"
+  },
+  {
+   "id": 8,
+   "owner": "fx7",
+   "name": "repo7",
+   "full_name": "fx7/repo7",
+   "language": "JavaScript",
+   "stars": 993,
+   "default_branch": "main"
+  },
+  {
+   "id": 9,
+   "owner": "fx8",
+   "name": "repo8",
+   "full_name": "fx8/repo8",
+   "language": "Go",
+   "stars": 992,
+   "default_branch": "main"
+  },
+  {
+   "id": 10,
+   "owner": "fx9",
+   "name": "repo9",
+   "full_name": "fx9/repo9",
+   "language": "Rust",
+   "stars": 991,
+   "default_branch": "main"
+  },
+  {
+   "id": 11,
+   "owner": "fx10",
+   "name": "repo10",
+   "full_name": "fx10/repo10",
+   "language": "Python",
+   "stars": 990,
+   "default_branch": "main"
+  },
+  {
+   "id": 12,
+   "owner": "fx11",
+   "name": "repo11",
+   "full_name": "fx11/repo11",
+   "language": "TypeScript",
+   "stars": 989,
+   "default_branch": "main"
+  },
+  {
+   "id": 13,
+   "owner": "fx12",
+   "name": "repo12",
+   "full_name": "fx12/repo12",
+   "language": "JavaScript",
+   "stars": 988,
+   "default_branch": "main"
+  },
+  {
+   "id": 14,
+   "owner": "fx13",
+   "name": "repo13",
+   "full_name": "fx13/repo13",
+   "language": "Go",
+   "stars": 987,
+   "default_branch": "main"
+  },
+  {
+   "id": 15,
+   "owner": "fx14",
+   "name": "repo14",
+   "full_name": "fx14/repo14",
+   "language": "Rust",
+   "stars": 986,
+   "default_branch": "main"
+  },
+  {
+   "id": 16,
+   "owner": "fx15",
+   "name": "repo15",
+   "full_name": "fx15/repo15",
+   "language": "Python",
+   "stars": 985,
+   "default_branch": "main"
+  },
+  {
+   "id": 17,
+   "owner": "fx16",
+   "name": "repo16",
+   "full_name": "fx16/repo16",
+   "language": "TypeScript",
+   "stars": 984,
+   "default_branch": "main"
+  },
+  {
+   "id": 18,
+   "owner": "fx17",
+   "name": "repo17",
+   "full_name": "fx17/repo17",
+   "language": "JavaScript",
+   "stars": 983,
+   "default_branch": "main"
+  },
+  {
+   "id": 19,
+   "owner": "fx18",
+   "name": "repo18",
+   "full_name": "fx18/repo18",
+   "language": "Go",
+   "stars": 982,
+   "default_branch": "main"
+  },
+  {
+   "id": 20,
+   "owner": "fx19",
+   "name": "repo19",
+   "full_name": "fx19/repo19",
+   "language": "Rust",
+   "stars": 981,
+   "default_branch": "main"
+  }
+ ],
+ "heads": {
+  "https://raw.githubusercontent.com/freeCodeCamp/freeCodeCamp/main/AI_POLICY.md": [
+   200,
+   {
+    "Content-Length": "2310"
+   }
+  ],
+  "https://raw.githubusercontent.com/freeCodeCamp/freeCodeCamp/main/.github/AI_POLICY.md": [
+   200,
+   {
+    "Content-Length": "1800"
+   }
+  ],
+  "https://raw.githubusercontent.com/freeCodeCamp/freeCodeCamp/main/AGENTS.md": [
+   200,
+   {
+    "Content-Length": "1000"
+   }
+  ],
+  "https://github.com/freeCodeCamp/freeCodeCamp": [
+   200,
+   {}
+  ],
+  "https://raw.githubusercontent.com/fx1/repo1/main/AI_POLICY.md": [
+   200,
+   {
+    "Content-Length": "900"
+   }
+  ],
+  "https://github.com/fx1/repo1": [
+   200,
+   {}
+  ],
+  "https://raw.githubusercontent.com/fx2/repo2/main/.github/AI_POLICY.md": [
+   200,
+   {
+    "Content-Length": "700"
+   }
+  ],
+  "https://github.com/fx2/repo2": [
+   200,
+   {}
+  ],
+  "https://raw.githubusercontent.com/fx3/repo3/main/AGENTS.md": [
+   200,
+   {
+    "Content-Length": "1000"
+   }
+  ],
+  "https://github.com/fx3/repo3": [
+   200,
+   {}
+  ],
+  "https://raw.githubusercontent.com/fx4/repo4/main/AI_POLICY.md": [
+   200,
+   {
+    "Content-Length": "1500"
+   }
+  ],
+  "https://raw.githubusercontent.com/fx4/repo4/main/AGENTS.md": [
+   200,
+   {
+    "Content-Length": "1000"
+   }
+  ],
+  "https://github.com/fx4/repo4": [
+   200,
+   {}
+  ],
+  "https://github.com/fx5/repo5": [
+   200,
+   {}
+  ],
+  "https://github.com/fx6/repo6": [
+   200,
+   {}
+  ],
+  "https://raw.githubusercontent.com/fx7/repo7/main/AI_POLICY.md": [
+   200,
+   {
+    "Content-Length": "300"
+   }
+  ],
+  "https://raw.githubusercontent.com/fx7/repo7/main/.github/AI_POLICY.md": [
+   200,
+   {
+    "Content-Length": "640"
+   }
+  ],
+  "https://github.com/fx7/repo7": [
+   200,
+   {}
+  ],
+  "https://github.com/fx8/repo8": [
+   200,
+   {}
+  ],
+  "https://raw.githubusercontent.com/fx9/repo9/main/AGENTS.md": [
+   200,
+   {
+    "Content-Length": "1000"
+   }
+  ],
+  "https://github.com/fx9/repo9": [
+   200,
+   {}
+  ],
+  "https://github.com/fx10/repo10": [
+   200,
+   {}
+  ],
+  "https://github.com/fx11/repo11": [
+   200,
+   {}
+  ],
+  "https://raw.githubusercontent.com/fx12/repo12/main/AI_POLICY.md": [
+   200,
+   {
+    "Content-Length": "5000"
+   }
+  ],
+  "https://github.com/fx12/repo12": [
+   200,
+   {}
+  ],
+  "https://github.com/fx13/repo13": [
+   200,
+   {}
+  ],
+  "https://github.com/fx14/repo14": [
+   200,
+   {}
+  ],
+  "https://raw.githubusercontent.com/fx15/repo15/main/.github/AI_POLICY.md": [
+   200,
+   {
+    "Content-Length": "2048"
+   }
+  ],
+  "https://github.com/fx15/repo15": [
+   200,
+   {}
+  ],
+  "https://github.com/fx16/repo16": [
+   200,
+   {}
+  ],
+  "https://github.com/fx17/repo17": [
+   200,
+   {}
+  ],
+  "https://github.com/fx18/repo18": [
+   200,
+   {}
+  ],
+  "https://github.com/fx19/repo19": [
+   200,
+   {}
+  ]
+ }
+}
