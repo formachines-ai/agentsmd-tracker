@@ -45,7 +45,7 @@ runs `build.py`.
 python3 -B -m unittest discover -s tests -t .
 ```
 
-Runs every `tests/test_*.py` (20 files) from the repository root. Offline and read-only: no network, nothing is
+Runs every `tests/test_*.py` (21 files) from the repository root. Offline and read-only: no network, nothing is
 written to the checkout (tests that build use a temp copy), so it also passes after `chmod -R a-w .`. Python 3.12
 standard library only.
 
@@ -99,6 +99,7 @@ do not add dependencies outside the Python 3.12 standard library, no JavaScript 
   has a successful check within 36 h.
 - A repo checked `ok` less than 20 h ago is skipped (`RESCAN_HOURS`); `error`/`partial` results are retried first
   and never overwrite an older good snapshot.
+- **Scan coverage** (`build.json` → `scan`, shown on `/` and in `llms.txt`): `fresh` = repos with status ok checked on the scan date; `carried_over` = repos whose last good value from an earlier scan is kept (oldest date in `carried_over_oldest`), `fresh + carried_over = scanned_ok`; `partial` = repos whose attempt in the run returned only some paths (earlier good value kept); `stopped` = the run ended early (time budget or SIGTERM) and the rest keep their last good value. Example 2026-11-15: `scanned_ok` 1921 = 1788 fresh + 133 carried over, while `scan.scanned` 1790 counts the attempts of the run (1788 ok + 1 unreachable + 1 partial).
 - **Added today** = path present in this scan and `present: false` in the previous snapshot of the same repo
   (`data/history/<date>.json` → `added`; several runs on one day are merged). The very first scan of a repo is a
   baseline and produces no "added" entries. "Removed" is recorded symmetrically.

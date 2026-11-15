@@ -1,7 +1,7 @@
 {
  "site": "https://agentsmd.formachines.ai",
- "built_at": "2026-11-15T05:30:07Z",
- "build_seconds": 5403.0,
+ "built_at": "2026-11-15T08:12:19Z",
+ "build_seconds": 0.1,
  "sample": 1922,
  "scanned_ok": 1921,
  "pending": 0,
@@ -22,7 +22,13 @@
   "generated": "2026-11-15T05:30:07Z",
   "added_repos": 0,
   "removed_repos": 1,
-  "unit": "paths"
+  "unit": "paths",
+  "fresh": 1788,
+  "carried_over": 133,
+  "carried_over_oldest": "2026-11-14",
+  "fresh_date": "2026-11-15",
+  "stopped_meaning": "stopped=true: the run ended early (time budget or SIGTERM) before every due repo was tried; the rest keep their last good value.",
+  "coverage_note": "fresh = repos with status ok checked on the scan date; carried_over = repos whose last good value from an earlier scan is kept (fresh + carried_over = scanned_ok); partial = repos whose attempt in the run returned only some paths (their earlier good value is kept); stopped = the run ended early."
  },
  "paths": [
   "AGENTS.md",
