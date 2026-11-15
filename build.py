@@ -397,6 +397,20 @@ def run_scan(repos: list[dict], limit: int | None, max_seconds: float | None, fo
     return stats
 
 
+STOPPED_MEANING = "stopped=true: the run ended early (time budget or SIGTERM) before every due repo was tried; the rest keep their last good value."
+COVERAGE_LINE = ("fresh = repos with status ok checked on the scan date; carried_over = repos whose last good value from an earlier "
+                 "scan is kept (fresh + carried_over = scanned_ok); partial = repos whose attempt in the run returned only some paths "
+                 "(their earlier good value is kept); stopped = the run ended early.")
+
+
+def scan_coverage(agg: dict, scan_day: str | None) -> dict:
+    """fresh / carried_over / oldest date, from the per-repo caches (status ok only) against the scan date."""
+    days = [str((agg["scans"][r["full_name"]] or {}).get("checked") or "")[:10] for r in agg["ok"]]
+    fresh = sum(1 for d in days if scan_day and d >= scan_day)
+    old = [d for d in days if not scan_day or d < scan_day]
+    return {"fresh": fresh, "carried_over": len(old), "carried_over_oldest": min(old) if old else None, "fresh_date": scan_day}
+
+
 def diff_snapshots(repo: dict, prev: dict | None, new: dict) -> tuple[list[dict], list[dict]]:
     """(added, removed) between two snapshots of one repo. No previous snapshot = baseline, nothing. Removed needs
     present before and a definite 404 now; a network error / timeout / 403 / 429 / 5xx (present None) is unknown."""
@@ -857,6 +871,12 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
     sample_line = (f'<p class="asof" id="sample-line">Sample on {esc(gen_raw[:10])}: {si["included"]:,} of {si["target_total"]:,} targeted repos '
                    f'(top {si["target_per_language"]:,} by stars in each of {len(si["languages"])} languages); '
                    f'{si["target_total"] - si["included"]:,} not included: {esc(reasons)}. Details: <a href="/stats.json">stats.json</a> field <code>sample</code>.</p>')
+    sc_ = build_info.get("scan") or {}
+    coverage_line = "" if "fresh" not in sc_ else (f'<p class="asof" id="scan-coverage">{sc_["fresh"]:,} repos checked on {esc(str(sc_["fresh_date"]))}, '
+                     f'{sc_["carried_over"]:,} carried over from earlier scans'
+                     + (f' (oldest {esc(sc_["carried_over_oldest"])})' if sc_["carried_over"] else '')
+                     + (f'; the latest run was stopped early' if sc_.get("stopped") else '')
+                     + '. Carried-over repos keep their last good value. Details: <a href="/build.json">build.json</a> field <code>scan</code>.</p>')
     hero = f"""<section class="hero">
 <h1>AGENTS.md Tracker</h1>
 <p class="summary" id="summary">On {esc(gen_raw[:10])}, {agg['counts'][PRIMARY_PATH]:,} of {total:,} top public GitHub repositories ({pct(agg['counts'][PRIMARY_PATH], total)} %) have an AGENTS.md. The sample is the top repositories by stars in each of {len(si['languages'])} languages. The tracker checks {len(PATHS)} file paths: {esc(', '.join(s['path'] for s in PATHS))}. The method is a HEAD request to each public file URL, recording presence and size only, never file contents. The scan runs daily at about 04:00 UTC. Data: <a href="/stats.json">stats.json</a>, <a href="/llms.txt">llms.txt</a>, <a href="/feed.xml">feed.xml</a>.</p>
@@ -864,6 +884,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
 <p class="lead">{any_n:,} ({pct(any_n, total)} %) have at least one agent-instruction file of the {len(PATHS)} kinds tracked here. Sample: {sample:,} public repositories, top by stars across {len(agg['by_lang']) or '—'} languages, rescanned daily. Only presence, size and a link are recorded — never the contents.</p>
 <p class="asof"><strong>Latest published scan: {esc(gen_txt)} UTC.</strong> A new scan starts daily at 04:00 UTC; results are published when it finishes. Numbers on this page are from the latest published scan{esc(stale_txt)}.</p>
 {sample_line}
+{coverage_line}
 <p class="limit">What this share measures: whether a listed file path exists at one of its fixed conventional locations on the default branch (AGENTS.md, CLAUDE.md, GEMINI.md, llms.txt, .cursorrules and .windsurfrules at the repository root; .github/copilot-instructions.md; .cursor/rules/), in a sample of popular repositories per language. It is file presence only — not the quality or use of a file, and not all of GitHub.</p>
 <p class="paths"><a href="#languages">Explore your language</a> · <a href="#method">See the sampling method</a></p>
 </section>"""
@@ -1233,6 +1254,9 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
                    jsonld=webpage_ld(f"{lang} repos — {SITE_NAME}", f"{SITE_BASE}/lang/{slug}/", updated)))
         urls.append(f"{SITE_BASE}/lang/{slug}/")
 
+    sc2 = build_info.get("scan") or {}
+    coverage_llms = (f'Scan coverage (build.json scan): {sc2["fresh"]} fresh on {sc2["fresh_date"]}, {sc2["carried_over"]} carried over, '
+                     f'{sc2.get("partial", 0)} partial, stopped {str(bool(sc2.get("stopped"))).lower()}. {COVERAGE_LINE}\n') if "fresh" in sc2 else ""
     # ---- llms.txt, robots.txt, sitemap.xml, 404, legal, go pages
     write_text(out / "llms.txt", f"""# {SITE_NAME}
 
@@ -1241,7 +1265,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
 Data scanned at: {generated}
 Site built at: {build_info["built_at"]}
 The scan time changes only when new data is scanned; the build time changes on every rebuild, even when the data is the same.
-Schema: stats.json v{STATS_SCHEMA_VERSION}, today.json v{SCHEMA_VERSION}
+{coverage_llms}Schema: stats.json v{STATS_SCHEMA_VERSION}, today.json v{SCHEMA_VERSION}
 
 Latest (scan {generated}): {agg['counts'][PRIMARY_PATH]} of {total} scanned repos ({pct(agg['counts'][PRIMARY_PATH], total)} %) have AGENTS.md; {agg['counts']['CLAUDE.md']} CLAUDE.md; {agg['counts']['.cursorrules']} .cursorrules; {agg['counts']['.github/copilot-instructions.md']} copilot-instructions.md; {agg['counts']['llms.txt']} llms.txt.
 
@@ -1401,7 +1425,7 @@ def main() -> int:
         if isinstance(prev_scan, dict) and prev_scan.get("generated"):
             scan_block = prev_scan
         else:   # previous build.json had no scan block: seed it from the last real scan time
-            scan_block = (prev_scan if isinstance(prev_scan, dict) else {}) | {"generated": today.get("generated"), "carried_over": True}
+            scan_block = (prev_scan if isinstance(prev_scan, dict) else {}) | {"generated": today.get("generated")}
     # added/removed: same definition and unit as today.json (merged over all runs of the day); generated = stats.json generated
     scan_block = dict(scan_block)
     for key in ("added", "removed"):
@@ -1409,6 +1433,11 @@ def main() -> int:
         scan_block[key] = len(entries)
         scan_block[key + "_repos"] = len({x["full_name"] for x in entries})
     scan_block["unit"] = "paths"
+    cov = scan_coverage(agg, (today.get("generated") or "")[:10] or None)
+    scan_block["partial"] = int(scan_block.get("partial") or 0)
+    scan_block |= cov
+    scan_block["stopped_meaning"] = STOPPED_MEANING
+    scan_block["coverage_note"] = COVERAGE_LINE
     if today.get("generated"):
         scan_block["generated"] = today["generated"]
     build_info = {
