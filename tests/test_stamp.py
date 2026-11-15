@@ -91,6 +91,14 @@ class Stamp(unittest.TestCase):
         self.assertEqual(ba["scan"]["generated"], SCAN)
         self.assertFalse(ba["data_delayed"])
 
+    def test_same_dir_rebuild_rewrites_nothing(self):
+        t = self.a
+        snap = {str(p.relative_to(t)): p.read_bytes() for p in sorted((t / "public").rglob("*")) if p.is_file()}
+        r = subprocess.run([sys.executable, "-B", "wrap.py", DAY + "T23:00:00+00:00", "--no-scan"], cwd=t, capture_output=True, text=True)
+        self.assertEqual(r.returncode, 0, r.stderr)
+        after = {str(p.relative_to(t)): p.read_bytes() for p in sorted((t / "public").rglob("*")) if p.is_file()}
+        self.assertEqual(snap, after)
+
     def test_no_record_falls_back_to_build_time(self):
         html = (self.n / "public" / "index.html").read_text()
         self.assertIn("updated " + DAY + "T12:00:00Z</p>", html)

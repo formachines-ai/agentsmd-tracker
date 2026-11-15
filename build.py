@@ -1225,7 +1225,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
 <atom:link href="{xml_escape(SITE_BASE + '/feed.xml')}" rel="self" type="application/rss+xml"/>
 <description>Top GitHub repositories that added an AGENTS.md since the previous daily scan. Built by AI agents (agent-team), responsible: {xml_escape(RESPONSIBLE)}.</description>
 <language>en</language>
-<lastBuildDate>{_rfc822_dt(now_utc())}</lastBuildDate>
+<lastBuildDate>{_rfc822_dt(datetime.fromisoformat(updated.replace('Z', '+00:00')))}</lastBuildDate>
 {''.join(items)}
 </channel>
 </rss>
@@ -1490,6 +1490,13 @@ def main() -> int:
         "paths": [s["path"] for s in PATHS], "github_token": token_flag,
         "github_token_source": token_source,
     }
+    # T-0171: same data -> same bytes. If the previous build.json differs only in the build clock, keep its built_at/build_seconds
+    # (built_at then means: the last build that changed anything), so a --no-scan rebuild rewrites nothing.
+    old_bi = read_json(PUBLIC_DIR / "build.json", None)
+    if isinstance(old_bi, dict) and old_bi.get("built_at"):
+        clock = ("built_at", "build_seconds")
+        if {k: v for k, v in old_bi.items() if k not in clock} == {k: v for k, v in build_info.items() if k not in clock}:
+            build_info["built_at"], build_info["build_seconds"] = old_bi["built_at"], old_bi.get("build_seconds", build_info["build_seconds"])
     render_site(repos, agg, history, today, build_info, sample_details(repos, repos_doc["repos"], repos_doc.get("query") or {}, agg))
     log.info("build done in %.0fs: scanned_ok=%d pending=%d unreachable=%d data_delayed=%s", build_info["build_seconds"], len(agg["ok"]), len(agg["pending"]), len(agg["unreachable"]), delayed)
     return 0
