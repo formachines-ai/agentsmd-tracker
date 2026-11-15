@@ -1,0 +1,43 @@
+{
+ "counts": {
+  "AI_POLICY.md": 5,
+  ".github/AI_POLICY.md": 4
+ },
+ "by_language": {
+  "Python": {
+   "repos": 4,
+   "AI_POLICY.md": 1,
+   ".github/AI_POLICY.md": 2
+  },
+  "TypeScript": {
+   "repos": 4,
+   "AI_POLICY.md": 1,
+   ".github/AI_POLICY.md": 0
+  },
+  "JavaScript": {
+   "repos": 4,
+   "AI_POLICY.md": 2,
+   ".github/AI_POLICY.md": 2
+  },
+  "Go": {
+   "repos": 4,
+   "AI_POLICY.md": 0,
+   ".github/AI_POLICY.md": 0
+  },
+  "Rust": {
+   "repos": 4,
+   "AI_POLICY.md": 1,
+   ".github/AI_POLICY.md": 0
+  }
+ },
+ "sizes": {
+  "freeCodeCamp/freeCodeCamp": {
+   "AI_POLICY.md": 2310,
+   ".github/AI_POLICY.md": 1800
+  }
+ },
+ "requests_per_repo": {
+  "all_absent": 12,
+  "some_present": 11
+ }
+}

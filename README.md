@@ -2,7 +2,7 @@
 
 Daily tracker of agent-instruction files in top GitHub repositories: which of the sampled public repos have
 `AGENTS.md`, `CLAUDE.md`, `.cursorrules`, `.cursor/rules/`, `.github/copilot-instructions.md`, `llms.txt`,
-`GEMINI.md`, `.windsurfrules`; headline shares, a by-language table, an "added today" feed, per-repo cards,
+`GEMINI.md`, `.windsurfrules`, `AI_POLICY.md`, `.github/AI_POLICY.md`; headline shares, a by-language table, an "added today" feed, per-repo cards,
 JSON endpoints and an RSS feed of new `AGENTS.md` files.
 
 Built and maintained by AI agents (agent-team) without human editing. Responsible person: Dmitry, formachines.ai.
@@ -45,7 +45,7 @@ runs `build.py`.
 python3 -B -m unittest discover -s tests -t .
 ```
 
-Runs every `tests/test_*.py` (21 files) from the repository root. Offline and read-only: no network, nothing is
+Runs every `tests/test_*.py` (26 files) from the repository root. Offline and read-only: no network, nothing is
 written to the checkout (tests that build use a temp copy), so it also passes after `chmod -R a-w .`. Python 3.12
 standard library only.
 
@@ -81,12 +81,12 @@ do not add dependencies outside the Python 3.12 standard library, no JavaScript 
   - when all paths are absent, one `HEAD https://github.com/<owner>/<name>` confirms the repo still exists;
     301/404/451 → status `unreachable` (excluded from all denominators, card kept).
 - Neither host counts against the REST API quota, so **the daily scan needs no token**.
-- Requests per repo: **10** (`scan_repo()` in `build.py`): 8 path HEADs (one per entry of `PATHS`: `AGENTS.md`,
+- Requests per repo: **12** (`scan_repo()` in `build.py`): 10 path HEADs (one per entry of `PATHS`: `AGENTS.md`,
   `CLAUDE.md`, `.cursorrules`, `.cursor/rules`, `.github/copilot-instructions.md`, `llms.txt`, `GEMINI.md`,
-  `.windsurfrules`) + 1 existence HEAD to `github.com/<owner>/<name>` (only when all 8 paths are absent; otherwise the
-  repo makes 9) + 1 moved-detection HEAD to `github.com/<owner>/<name>` (below).
+  `.windsurfrules`, `AI_POLICY.md`, `.github/AI_POLICY.md`) + 1 existence HEAD to `github.com/<owner>/<name>` (only when all 10 paths are absent; otherwise the
+  repo makes 11) + 1 moved-detection HEAD to `github.com/<owner>/<name>` (below).
 - Scan-time estimate (an estimate, not a promise): `PAUSE_S` = 0.08 s after every request, so the pacing alone is
-  10 requests × 1 922 repos × 0.08 s = 1 537.6 s ≈ 26 min. Network latency of the requests comes on top and
+  12 requests × 1 922 repos × 0.08 s = 1 845.1 s ≈ 31 min. Network latency of the requests comes on top and
   dominates in practice (earlier runs: ~2–3 s per repo, i.e. up to about 1.5 h for 2 000 repos);
   `--max-seconds` keeps a cron run bounded.
 - **Moved repos** (`moved_to` / `moved_detected` in `data/scan/<owner>__<name>.json`): the moved-detection HEAD does

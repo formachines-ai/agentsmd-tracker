@@ -1,9 +1,9 @@
 # AGENTS.md Tracker
 
-> Daily tracker of agent-instruction files in top GitHub repositories: which of 1,922 public repositories (top by stars per language) have AGENTS.md, CLAUDE.md, .cursorrules, .cursor/rules/, .github/copilot-instructions.md, llms.txt, GEMINI.md, .windsurfrules. Only presence, size and a link to GitHub are published; file contents are never republished. Built by AI agents (agent-team) without human editing; responsible: Dmitry, formachines.ai. Data CC BY 4.0.
+> Daily tracker of agent-instruction files in top GitHub repositories: which of 1,922 public repositories (top by stars per language) have AGENTS.md, CLAUDE.md, .cursorrules, .cursor/rules/, .github/copilot-instructions.md, llms.txt, GEMINI.md, .windsurfrules, AI_POLICY.md, .github/AI_POLICY.md. Only presence, size and a link to GitHub are published; file contents are never republished. Built by AI agents (agent-team) without human editing; responsible: Dmitry, formachines.ai. Data CC BY 4.0.
 
 Data scanned at: 2026-11-15T05:30:07Z
-Site built at: 2026-11-15T09:13:43Z
+Site built at: 2026-11-15T10:13:17Z
 The scan time changes only when new data is scanned; the build time changes on every rebuild, even when the data is the same.
 Scan coverage (build.json scan): 1788 fresh on 2026-11-15, 133 carried over, 1 partial, stopped true. fresh = repos with status ok checked on the scan date; carried_over = repos whose last good value from an earlier scan is kept (fresh + carried_over = scanned_ok); partial = repos whose attempt in the run returned only some paths (their earlier good value is kept); stopped = the run ended early.
 Schema: stats.json v3, today.json v2
@@ -12,7 +12,7 @@ Latest (scan 2026-11-15T05:30:07Z): 560 of 1921 scanned repos (29.2 %) have AGEN
 
 ## Machine-readable
 - [stats.json](https://agentsmd.formachines.ai/stats.json): totals, shares, by-language table, full daily history
-- combinations in stats.json: date, total and counts of scanned repos by co-existence of AGENTS.md and CLAUDE.md (agents_only, claude_only, both, neither, agents_and_copilot (AGENTS.md with .github/copilot-instructions.md), agents_and_claude, agents_only_of_pair, claude_only_of_pair, neither_of_pair), same_size_agents_claude (both present with equal byte size) and repos_with_2plus_types (at least 2 of the 8 paths).
+- combinations in stats.json: date, total and counts of scanned repos by co-existence of AGENTS.md and CLAUDE.md (agents_only, claude_only, both, neither, agents_and_copilot (AGENTS.md with .github/copilot-instructions.md), agents_and_claude, agents_only_of_pair, claude_only_of_pair, neither_of_pair), same_size_agents_claude (both present with equal byte size) and repos_with_2plus_types (at least 2 of the 10 paths).
 - combos in stats.json: date, total and four integer counts of scanned repos (sum = total): both_agents_claude, agents_only, claude_only, neither (presence of AGENTS.md and CLAUDE.md only).
 - combinations example (2026-11-15): agents_only 302, claude_only 63, both 258, neither 1298, agents_and_copilot 92 of 1921 scanned repos, date 2026-11-15.
 - sizes in stats.json, AGENTS.md and CLAUDE.md entries also: n (known sizes), median, p25, p75 in bytes, buckets lt_2k (<2048), 2k_8k, 8k_32k (up to 32768 inclusive) and gt_32k (>32768) as counts summing to n, and unknown (present, size not known); n + unknown = repos with the file.
@@ -23,6 +23,7 @@ Latest (scan 2026-11-15T05:30:07Z): 560 of 1921 scanned repos (29.2 %) have AGEN
 - claude_agents_changes in stats.json: since (first scan date), date (= generated), claude_removed_agents_kept (repos whose CLAUDE.md went away since their first scan while AGENTS.md stayed), agents_added_claude_kept (repos that added AGENTS.md while CLAUDE.md stayed) and repos_claude_removed_agents_kept (owner/name list, length = claude_removed_agents_kept); a first scan is a baseline; presence only, no reasons.
 - method_changes in stats.json: an array of detection changes, each entry with the fields date, path, summary, commit and url. Entry: date 2026-11-13, path .cursor/rules, summary "redirect check tightened", commit 6887ed8, url https://github.com/formachines-ai/agentsmd-tracker/commit/6887ed8. A count change on that date for that path comes from how the scan reads the site, not from the repositories.
 - today.json removed entries with reason "method_change": the path is no longer detected after a method change (see method_changes); this is a detection change, not a removal by the repository, and it says nothing about whether a file was deleted.
+- Requests per repository: 12 at most (10 path HEADs + 1 existence HEAD when every path is absent + 1 moved-detection HEAD). AI_POLICY.md and .github/AI_POLICY.md are presence and size only; days before their first scan count as 0; the first scan of a path is a baseline, not an added entry.
 - Method for combinations and small_files: counts come from presence and size only, via HEAD requests to public file URLs; file contents are not read.
 - sample in stats.json (an object; the former integer sample is now sample_size, the headline total M): target_per_language, languages, target_total, included (= sample_size), excluded_by_reason (forks, archived, other; included + their sum = target_total) and per_language (adds up to included). other = targeted but absent from the stored sample (duplicates across languages, not found or dropped at seeding), reason not recorded per repo.
 - schema_version 2 (2026-11-07): change_7d_pp is an object per path; null until 8 dated history rows (schema_version 1: change_7d_pp was a scalar).

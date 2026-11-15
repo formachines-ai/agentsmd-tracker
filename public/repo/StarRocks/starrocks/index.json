@@ -120,6 +120,32 @@
     "language": "Java",
     "page": "https://agentsmd.formachines.ai/lang/java/"
    }
+  },
+  "AI_POLICY.md": {
+   "present": null,
+   "size": null,
+   "url": null,
+   "lang_share": {
+    "count": 0,
+    "total": 193,
+    "pct": 0.0,
+    "date": "2026-11-15",
+    "language": "Java",
+    "page": "https://agentsmd.formachines.ai/lang/java/"
+   }
+  },
+  ".github/AI_POLICY.md": {
+   "present": null,
+   "size": null,
+   "url": null,
+   "lang_share": {
+    "count": 0,
+    "total": 193,
+    "pct": 0.0,
+    "date": "2026-11-15",
+    "language": "Java",
+    "page": "https://agentsmd.formachines.ai/lang/java/"
+   }
   }
  },
  "language_share": {
@@ -166,6 +192,18 @@
    "date": "2026-11-15"
   },
   ".windsurfrules": {
+   "count": 0,
+   "total": 193,
+   "pct": 0.0,
+   "date": "2026-11-15"
+  },
+  "AI_POLICY.md": {
+   "count": 0,
+   "total": 193,
+   "pct": 0.0,
+   "date": "2026-11-15"
+  },
+  ".github/AI_POLICY.md": {
    "count": 0,
    "total": 193,
    "pct": 0.0,

@@ -126,6 +126,32 @@
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true,
    "go_url": "https://agentsmd.formachines.ai/go/72/"
+  },
+  "AI_POLICY.md": {
+   "present": null,
+   "size": null,
+   "url": null,
+   "lang_share": {
+    "count": 0,
+    "total": 198,
+    "pct": 0.0,
+    "date": "2026-11-15",
+    "language": "Rust",
+    "page": "https://agentsmd.formachines.ai/lang/rust/"
+   }
+  },
+  ".github/AI_POLICY.md": {
+   "present": null,
+   "size": null,
+   "url": null,
+   "lang_share": {
+    "count": 0,
+    "total": 198,
+    "pct": 0.0,
+    "date": "2026-11-15",
+    "language": "Rust",
+    "page": "https://agentsmd.formachines.ai/lang/rust/"
+   }
   }
  },
  "language_share": {
@@ -175,6 +201,18 @@
    "count": 1,
    "total": 198,
    "pct": 0.5,
+   "date": "2026-11-15"
+  },
+  "AI_POLICY.md": {
+   "count": 0,
+   "total": 198,
+   "pct": 0.0,
+   "date": "2026-11-15"
+  },
+  ".github/AI_POLICY.md": {
+   "count": 0,
+   "total": 198,
+   "pct": 0.0,
    "date": "2026-11-15"
   }
  },
