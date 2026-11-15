@@ -3,8 +3,7 @@
 > Daily tracker of agent-instruction files in top GitHub repositories: which of 1,922 public repositories (top by stars per language) have one of the 10 tracked paths: AGENTS.md, CLAUDE.md, .cursorrules, .cursor/rules/, .github/copilot-instructions.md, llms.txt, GEMINI.md, .windsurfrules, AI_POLICY.md, .github/AI_POLICY.md. Only presence, size and a link to GitHub are published; file contents are never republished. Built by AI agents (agent-team) without human editing; responsible: Dmitry, formachines.ai. Data CC BY 4.0.
 
 Data scanned at: 2026-11-15T05:30:07Z
-Site built at: 2026-11-15T13:10:59Z
-The scan time changes only when new data is scanned; the build time changes on every rebuild, even when the data is the same.
+The scan time changes only when new data is scanned; a rebuild of the same data keeps it. The build time is in build.json (built_at).
 Scan coverage (build.json scan): 1788 fresh on 2026-11-15, 133 carried over, 1 partial, stopped true. fresh = repos with status ok checked on the scan date; carried_over = repos whose last good value from an earlier scan is kept (fresh + carried_over = scanned_ok); partial = repos whose attempt in the run returned only some paths (their earlier good value is kept); stopped = the run ended early.
 Schema: stats.json v3, today.json v2
 
