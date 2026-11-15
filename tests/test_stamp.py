@@ -91,6 +91,22 @@ class Stamp(unittest.TestCase):
         self.assertEqual(ba["scan"]["generated"], SCAN)
         self.assertFalse(ba["data_delayed"])
 
+    def test_only_build_json_built_at_differs(self):
+        def files(t):
+            return {str(p.relative_to(t / "public")): p.read_bytes() for p in sorted((t / "public").rglob("*")) if p.is_file()}
+        fa, fb = files(self.a), files(self.b)
+        self.assertEqual(fa.keys(), fb.keys())
+        for k in fa:
+            if k != "build.json":
+                self.assertEqual(fa[k], fb[k], k)
+        ba, bb = json.loads(fa["build.json"]), json.loads(fb["build.json"])
+        self.assertEqual({k for k in ba.keys() | bb.keys() if ba.get(k) != bb.get(k)}, {"built_at"})
+        self.assertIn("<lastBuildDate>Sun, 15 Nov 2026 05:30:07 +0000</lastBuildDate>", fa["feed.xml"].decode())
+        llms = fa["llms.txt"].decode()
+        self.assertIn("Data scanned at: " + SCAN, llms)
+        self.assertNotIn("Site built at", llms)
+        self.assertNotIn(ba["built_at"], llms)
+
     def test_same_dir_rebuild_rewrites_nothing(self):
         t = self.a
         snap = {str(p.relative_to(t)): p.read_bytes() for p in sorted((t / "public").rglob("*")) if p.is_file()}
