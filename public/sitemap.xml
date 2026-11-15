@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://agentsmd.formachines.ai/</loc><lastmod>2026-11-14</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/legal/</loc><lastmod>2026-11-14</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/brand/</loc><lastmod>2026-11-14</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/</loc><lastmod>2026-11-15</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/legal/</loc><lastmod>2026-11-15</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/brand/</loc><lastmod>2026-11-15</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/0x192/universal-android-debloater/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/0x7c13/Notepads/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/1jehuang/jcode/</loc><lastmod>2026-11-02</lastmod></url>
@@ -436,7 +436,7 @@
 <url><loc>https://agentsmd.formachines.ai/repo/docsifyjs/docsify/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/doctrine/annotations/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/doctrine/cache/</loc><lastmod>2026-11-02</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/repo/doctrine/dbal/</loc><lastmod>2026-11-06</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/repo/doctrine/dbal/</loc><lastmod>2026-11-15</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/doctrine/inflector/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/doctrine/instantiator/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/doctrine/lexer/</loc><lastmod>2026-11-02</lastmod></url>
@@ -1925,14 +1925,14 @@
 <url><loc>https://agentsmd.formachines.ai/repo/zxing/zxing/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/zylon-ai/private-gpt/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/ZyperWave/ZyperWinOptimize/</loc><lastmod>2026-11-02</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/lang/c-sharp/</loc><lastmod>2026-11-14</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/lang/c-plus-plus/</loc><lastmod>2026-11-14</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/lang/go/</loc><lastmod>2026-11-14</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/lang/java/</loc><lastmod>2026-11-14</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/lang/javascript/</loc><lastmod>2026-11-14</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/lang/php/</loc><lastmod>2026-11-14</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/lang/python/</loc><lastmod>2026-11-14</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/lang/ruby/</loc><lastmod>2026-11-14</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/lang/rust/</loc><lastmod>2026-11-14</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/lang/typescript/</loc><lastmod>2026-11-14</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/lang/c-sharp/</loc><lastmod>2026-11-15</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/lang/c-plus-plus/</loc><lastmod>2026-11-15</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/lang/go/</loc><lastmod>2026-11-15</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/lang/java/</loc><lastmod>2026-11-15</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/lang/javascript/</loc><lastmod>2026-11-15</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/lang/php/</loc><lastmod>2026-11-15</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/lang/python/</loc><lastmod>2026-11-15</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/lang/ruby/</loc><lastmod>2026-11-15</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/lang/rust/</loc><lastmod>2026-11-15</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/lang/typescript/</loc><lastmod>2026-11-15</lastmod></url>
 </urlset>

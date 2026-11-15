@@ -6,17 +6,17 @@
  "stars": 14456,
  "default_branch": "develop",
  "status": "ok",
- "checked": "2026-11-14T05:05:32Z",
+ "checked": "2026-11-15T05:19:07Z",
  "files": {
   "AGENTS.md": {
    "present": true,
    "size": 7360,
    "url": "https://github.com/Qloapps/QloApps/blob/develop/AGENTS.md",
    "lang_share": {
-    "count": 26,
+    "count": 25,
     "total": 191,
-    "pct": 13.6,
-    "date": "2026-11-14",
+    "pct": 13.1,
+    "date": "2026-11-15",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/"
    },
@@ -32,7 +32,7 @@
     "count": 20,
     "total": 191,
     "pct": 10.5,
-    "date": "2026-11-14",
+    "date": "2026-11-15",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/"
    }
@@ -45,7 +45,7 @@
     "count": 0,
     "total": 191,
     "pct": 0.0,
-    "date": "2026-11-14",
+    "date": "2026-11-15",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/"
    }
@@ -58,7 +58,7 @@
     "count": 4,
     "total": 191,
     "pct": 2.1,
-    "date": "2026-11-14",
+    "date": "2026-11-15",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/"
    }
@@ -71,7 +71,7 @@
     "count": 11,
     "total": 191,
     "pct": 5.8,
-    "date": "2026-11-14",
+    "date": "2026-11-15",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/"
    }
@@ -84,7 +84,7 @@
     "count": 0,
     "total": 191,
     "pct": 0.0,
-    "date": "2026-11-14",
+    "date": "2026-11-15",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/"
    }
@@ -97,7 +97,7 @@
     "count": 2,
     "total": 191,
     "pct": 1.0,
-    "date": "2026-11-14",
+    "date": "2026-11-15",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/"
    }
@@ -110,7 +110,7 @@
     "count": 0,
     "total": 191,
     "pct": 0.0,
-    "date": "2026-11-14",
+    "date": "2026-11-15",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/"
    }
@@ -118,52 +118,52 @@
  },
  "language_share": {
   "AGENTS.md": {
-   "count": 26,
+   "count": 25,
    "total": 191,
-   "pct": 13.6,
-   "date": "2026-11-14"
+   "pct": 13.1,
+   "date": "2026-11-15"
   },
   "CLAUDE.md": {
    "count": 20,
    "total": 191,
    "pct": 10.5,
-   "date": "2026-11-14"
+   "date": "2026-11-15"
   },
   ".cursorrules": {
    "count": 0,
    "total": 191,
    "pct": 0.0,
-   "date": "2026-11-14"
+   "date": "2026-11-15"
   },
   ".cursor/rules": {
    "count": 4,
    "total": 191,
    "pct": 2.1,
-   "date": "2026-11-14"
+   "date": "2026-11-15"
   },
   ".github/copilot-instructions.md": {
    "count": 11,
    "total": 191,
    "pct": 5.8,
-   "date": "2026-11-14"
+   "date": "2026-11-15"
   },
   "llms.txt": {
    "count": 0,
    "total": 191,
    "pct": 0.0,
-   "date": "2026-11-14"
+   "date": "2026-11-15"
   },
   "GEMINI.md": {
    "count": 2,
    "total": 191,
    "pct": 1.0,
-   "date": "2026-11-14"
+   "date": "2026-11-15"
   },
   ".windsurfrules": {
    "count": 0,
    "total": 191,
    "pct": 0.0,
-   "date": "2026-11-14"
+   "date": "2026-11-15"
   }
  },
  "first_seen": {

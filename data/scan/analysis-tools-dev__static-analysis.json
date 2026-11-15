@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-14T05:04:19Z",
+ "checked": "2026-11-15T05:17:38Z",
  "status": "ok",
  "default_branch": "master",
  "files": {
@@ -17,7 +17,8 @@
   },
   ".cursor/rules": {
    "present": false,
-   "size": null
+   "size": null,
+   "definite": true
   },
   ".github/copilot-instructions.md": {
    "present": true,
@@ -25,15 +26,19 @@
   },
   "llms.txt": {
    "present": false,
-   "size": null
+   "size": null,
+   "definite": true
   },
   "GEMINI.md": {
    "present": false,
-   "size": null
+   "size": null,
+   "definite": true
   },
   ".windsurfrules": {
    "present": true,
    "size": 9
   }
- }
+ },
+ "moved_to": null,
+ "moved_detected": null
 }

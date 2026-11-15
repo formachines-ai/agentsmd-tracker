@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-14T04:14:33Z",
+ "checked": "2026-11-15T04:17:32Z",
  "status": "ok",
  "default_branch": "master",
  "files": {
@@ -13,7 +13,8 @@
   },
   ".cursorrules": {
    "present": false,
-   "size": null
+   "size": null,
+   "definite": true
   },
   ".cursor/rules": {
    "present": true,
@@ -25,7 +26,8 @@
   },
   "llms.txt": {
    "present": false,
-   "size": null
+   "size": null,
+   "definite": true
   },
   "GEMINI.md": {
    "present": true,
@@ -33,7 +35,10 @@
   },
   ".windsurfrules": {
    "present": false,
-   "size": null
+   "size": null,
+   "definite": true
   }
- }
+ },
+ "moved_to": null,
+ "moved_detected": null
 }
