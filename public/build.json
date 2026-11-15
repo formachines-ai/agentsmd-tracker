@@ -1,6 +1,6 @@
 {
  "site": "https://agentsmd.formachines.ai",
- "built_at": "2026-11-15T11:17:10Z",
+ "built_at": "2026-11-15T12:12:20Z",
  "build_seconds": 0.1,
  "sample": 1922,
  "scanned_ok": 1921,
@@ -42,5 +42,6 @@
   "AI_POLICY.md",
   ".github/AI_POLICY.md"
  ],
- "github_token": true
+ "github_token": true,
+ "github_token_source": "env"
 }

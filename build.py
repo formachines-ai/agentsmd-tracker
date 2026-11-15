@@ -367,7 +367,7 @@ def run_scan(repos: list[dict], limit: int | None, max_seconds: float | None, fo
     todo = due_repos(repos, force)
     log.info("scan: %d repos in sample, %d due (limit=%s, max_seconds=%s, token=%s)", len(repos), len(todo), limit, max_seconds, "yes" if token else "no")
     t0 = time.time()
-    stats = {"scanned": 0, "ok": 0, "unreachable": 0, "error": 0, "partial": 0, "rate_limited": False, "stopped": False,
+    stats = {"github_token": bool(token), "scanned": 0, "ok": 0, "unreachable": 0, "error": 0, "partial": 0, "rate_limited": False, "stopped": False,
              "added": [], "removed": []}
     consecutive_429 = 0
     for i, repo in enumerate(todo, 1):
@@ -569,6 +569,8 @@ def update_history(agg: dict, scan_stats: dict | None, write: bool = True) -> di
                 if (x["full_name"], x["path"]) not in seen:
                     doc.setdefault(key, []).append(x)
                     seen.add((x["full_name"], x["path"]))
+    if scan_stats and isinstance(scan_stats.get("github_token"), bool):
+        doc["github_token"] = scan_stats["github_token"]   # T-0170: whether this scan ran with a token (boolean only)
     doc.update({
         "date": today,
         "generated": scan_time,
@@ -1450,7 +1452,7 @@ def main() -> int:
             delayed, reason = True, "GitHub rate-limited today's scan before any repository could be checked."
     scan_block = None
     if scan_stats:
-        scan_block = {k: v for k, v in scan_stats.items() if k not in ("added", "removed")} | {"added": 0, "removed": 0}
+        scan_block = {k: v for k, v in scan_stats.items() if k not in ("added", "removed", "github_token")} | {"added": 0, "removed": 0}
         scan_block["generated"] = today.get("generated")
     else:   # --no-scan / nothing scanned: carry over the previous scan block unchanged, never null and never the build time
         prev_scan = (read_json(PUBLIC_DIR / "build.json", None) or {}).get("scan")
@@ -1472,12 +1474,18 @@ def main() -> int:
     scan_block["coverage_note"] = COVERAGE_LINE
     if today.get("generated"):
         scan_block["generated"] = today["generated"]
+    rec = today.get("github_token")   # T-0170: the latest scan's own record wins over the build environment
+    if isinstance(rec, bool):
+        token_flag, token_source = rec, "scan"
+    else:
+        token_flag, token_source = bool(os.environ.get("GITHUB_TOKEN")), "env"
     build_info = {
         "site": SITE_BASE, "built_at": iso(now_utc()), "build_seconds": round((now_utc() - t0).total_seconds(), 1),
         "sample": len(repos), "scanned_ok": len(agg["ok"]), "pending": len(agg["pending"]), "unreachable": len(agg["unreachable"]),
         "last_checked": last, "data_delayed": delayed, "delay_reason": reason,
         "scan": scan_block,
-        "paths": [s["path"] for s in PATHS], "github_token": bool(os.environ.get("GITHUB_TOKEN")),
+        "paths": [s["path"] for s in PATHS], "github_token": token_flag,
+        "github_token_source": token_source,
     }
     render_site(repos, agg, history, today, build_info, sample_details(repos, repos_doc["repos"], repos_doc.get("query") or {}, agg))
     log.info("build done in %.0fs: scanned_ok=%d pending=%d unreachable=%d data_delayed=%s", build_info["build_seconds"], len(agg["ok"]), len(agg["pending"]), len(agg["unreachable"]), delayed)
