@@ -681,8 +681,18 @@ def repo_meta(r: dict, sc: dict | None, lang_agents: dict | None) -> tuple[str, 
     yn = lambda path: "yes" if path in present else ("no" if files.get(path, {}).get("present") is False else "not checked")
     title = card_title(r["full_name"], yn("AGENTS.md"), yn("CLAUDE.md"))
     where = f" ({lang})" if lang else ""
-    if not present:
-        has = f"{r['full_name']}{where} has none of the {len(PATHS)} tracked files." if checked else f"{r['full_name']}{where}: tracked files not checked yet."
+    unchecked = [p["path"] for p in PATHS if files.get(p["path"], {}).get("present") is None]
+    if len(unchecked) == len(PATHS):
+        has = f"{r['full_name']}{where}: tracked files not checked yet."
+    elif unchecked:
+        others = [x for x in present if x not in ("AGENTS.md", "CLAUDE.md")]
+        miss = f" {', '.join(unchecked)} not checked yet."
+        has = f"{r['full_name']}{where}: AGENTS.md {yn('AGENTS.md')}, CLAUDE.md {yn('CLAUDE.md')}."
+        if others and len(has + f" Also has {', '.join(others)}." + miss) <= DESC_MAX:
+            has += f" Also has {', '.join(others)}."
+        has += miss
+    elif not present:
+        has = f"{r['full_name']}{where} has none of the {len(PATHS)} tracked files."
     elif len(present) == 1:
         has = f"{r['full_name']}{where} has {present[0]}."
     else:
@@ -1129,8 +1139,13 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
                       else f'<p class="gh-files">No tracked files found on {esc(scan_date)}</p>')
         present_paths = [t["path"] + ("/" if t["kind"] == "dir" else "") for t in PATHS if files_json[t["path"]]["present"]]
         lang_txt = f"{esc(r['language'])}, " if r.get("language") else ""
-        if not sc or any(files_json[t["path"]]["present"] is None for t in PATHS):
+        unchecked_paths = [t["path"] for t in PATHS if files_json[t["path"]]["present"] is None]
+        miss_txt = " " + ", ".join(f"<code>{esc(p)}</code>" for p in unchecked_paths) + " not checked yet."
+        if not sc or len(unchecked_paths) == len(PATHS):
             facts = f"On {esc(scan_date)}, {esc(r['full_name'])} ({lang_txt}in the top-by-stars sample) was not fully checked yet."
+        elif unchecked_paths:
+            facts = (f"On {esc(scan_date)}, {esc(r['full_name'])} ({lang_txt}in the top-by-stars sample) has {len(present_paths)} of {len(PATHS)} tracked file paths"
+                     + (": " + ", ".join(f"<code>{esc(p)}</code>" for p in present_paths) if present_paths else "") + "." + miss_txt)
         elif present_paths:
             facts = (f"On {esc(scan_date)}, {esc(r['full_name'])} ({lang_txt}in the top-by-stars sample) has {len(present_paths)} of {len(PATHS)} tracked file paths: "
                      + ", ".join(f"<code>{esc(p)}</code>" for p in present_paths) + ".")
