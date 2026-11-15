@@ -94,6 +94,7 @@ METHOD_CHANGES: list[dict] = [   # detection changes: a removal of this path on 
 ]
 SCHEMA_VERSION = 2               # top-level "schema_version" of stats.json / today.json
 SMALL_FILE_BYTES = 300         # cards and small_files: size-only fact, files smaller than this
+SIZE_BUCKET_PATHS = ("AGENTS.md", "CLAUDE.md")   # T-0166: size buckets in stats.json sizes (2k = 2048, 8k = 8192, 32k = 32768 bytes)
 STATS_SCHEMA_VERSION = 3        # stats.json only: v3 = "sample" became an object (former integer is "sample_size")
 STALE_HOURS = 36                 # no successful scan for this long => "data delayed" banner
 FEED_DAYS = 30                   # history window for feed.xml
@@ -497,6 +498,13 @@ def aggregate(repos: list[dict]) -> dict:
         small[s["path"]] = {"count": sum(1 for v in vals if v < SMALL_FILE_BYTES), "threshold_bytes": SMALL_FILE_BYTES,
                             "size_unknown": unknown, "zero_bytes": sum(1 for v in vals if v == 0), "unknown_size": unknown}
         sizes[s["path"]] = {"count": len(vals), "median_bytes": round(q2), "p25_bytes": round(q1), "p75_bytes": round(q3)}
+        if s["path"] in SIZE_BUCKET_PATHS:   # T-0166: same values under the n/median/p25/p75/buckets names; existing keys unchanged
+            sizes[s["path"]].update({"n": len(vals), "median": round(q2), "p25": round(q1), "p75": round(q3),
+                                     "buckets": {"lt_2k": sum(1 for v in vals if v < 2048),
+                                                 "2k_8k": sum(1 for v in vals if 2048 <= v < 8192),
+                                                 "8k_32k": sum(1 for v in vals if 8192 <= v <= 32768),
+                                                 "gt_32k": sum(1 for v in vals if v > 32768)},
+                                     "unknown": unknown})
     present = {r["full_name"]: {p for p in ("AGENTS.md", "CLAUDE.md") if scans[r["full_name"]]["files"].get(p, {}).get("present")} for r in ok}
     return {"present": present, "sizes": sizes, "small": small, "combo": combo, "scans": scans, "ok": ok, "pending": pending, "unreachable": unreachable, "counts": counts,
             "any": any_count, "by_lang": by_lang, "last_checked": last_checked}
@@ -852,8 +860,13 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
     size_lines = "".join(
         f"<li><code>{esc(p)}</code>: median {v['median_bytes']:,} bytes (middle half {v['p25_bytes']:,}–{v['p75_bytes']:,}), n={v['count']:,}</li>"
         if v["count"] else f"<li><code>{esc(p)}</code>: no size known, n=0</li>" for p, v in agg["sizes"].items())
+    bucket_lines = "".join(
+        f"<li><code>{esc(p)}</code> on {esc(gen_raw[:10])}: median {agg['sizes'][p]['median']:,} bytes, "
+        f"{agg['sizes'][p]['buckets']['gt_32k']:,} files over 32768 bytes (n={agg['sizes'][p]['n']:,}, size unknown {agg['sizes'][p]['unknown']:,}).</li>"
+        for p in SIZE_BUCKET_PATHS)
     size_sec = f"""<section id="sizes">
 <h2>File size on {esc(gen_raw[:10])}</h2>
+<ul>{bucket_lines}</ul>
 <ul>{size_lines}</ul>
 <p class="muted">Byte size of present files from the scan dated {esc(gen_raw[:10])}; only files with a known size are counted. <a href="/stats.json">stats.json</a> field <code>sizes</code>.</p>
 </section>"""
@@ -1274,6 +1287,7 @@ Latest (scan {generated}): {agg['counts'][PRIMARY_PATH]} of {total} scanned repo
 - combinations in stats.json: date, total and counts of scanned repos by co-existence of AGENTS.md and CLAUDE.md (agents_only, claude_only, both, neither, agents_and_copilot (AGENTS.md with .github/copilot-instructions.md), agents_and_claude, agents_only_of_pair, claude_only_of_pair, neither_of_pair), same_size_agents_claude (both present with equal byte size) and repos_with_2plus_types (at least 2 of the 8 paths).
 - combos in stats.json: date, total and four integer counts of scanned repos (sum = total): both_agents_claude, agents_only, claude_only, neither (presence of AGENTS.md and CLAUDE.md only).
 - combinations example ({generated[:10]}): agents_only {agg['combo']['agents_only']}, claude_only {agg['combo']['claude_only']}, both {agg['combo']['both']}, neither {agg['combo']['neither']}, agents_and_copilot {agg['combo']['agents_and_copilot']} of {total} scanned repos, date {generated[:10]}.
+- sizes in stats.json, AGENTS.md and CLAUDE.md entries also: n (known sizes), median, p25, p75 in bytes, buckets lt_2k (<2048), 2k_8k, 8k_32k (up to 32768 inclusive) and gt_32k (>32768) as counts summing to n, and unknown (present, size not known); n + unknown = repos with the file.
 - sizes in stats.json: per path, count, median_bytes, p25_bytes, p75_bytes and date of the scan, from the HEAD Content-Length of present files whose size is known, 0 included (count = those files only); 0 when none is known (e.g. the .cursor/rules/ directory).
 - small_files in stats.json: date, threshold_bytes (300) and per path count (present files with a known size under 300 bytes, 0 bytes included; size only), threshold_bytes, zero_bytes (present files whose HEAD Content-Length is 0; counted in count, size 0 bytes) and unknown_size (present files with no Content-Length, size unknown, not counted; size_unknown is the same number, kept for compatibility).
 - small_files top-level fields: agents_md_under_300, claude_md_under_300, agents_md_total, claude_md_total, threshold_bytes, date.

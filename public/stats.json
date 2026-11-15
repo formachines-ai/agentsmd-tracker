@@ -907,6 +907,17 @@
    "median_bytes": 6702,
    "p25_bytes": 2814,
    "p75_bytes": 13611,
+   "n": 560,
+   "median": 6702,
+   "p25": 2814,
+   "p75": 13611,
+   "buckets": {
+    "lt_2k": 105,
+    "2k_8k": 224,
+    "8k_32k": 203,
+    "gt_32k": 28
+   },
+   "unknown": 0,
    "date": "2026-11-15"
   },
   "CLAUDE.md": {
@@ -914,6 +925,17 @@
    "median_bytes": 71,
    "p25_bytes": 11,
    "p75_bytes": 4224,
+   "n": 321,
+   "median": 71,
+   "p25": 11,
+   "p75": 4224,
+   "buckets": {
+    "lt_2k": 213,
+    "2k_8k": 63,
+    "8k_32k": 36,
+    "gt_32k": 9
+   },
+   "unknown": 0,
    "date": "2026-11-15"
   },
   ".cursorrules": {
