@@ -1220,8 +1220,9 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
         "history_days": len(history),
         "change_7d_pp": change_7d_pp,
         "combinations": {"date": generated[:10], "total": total, **agg["combo"]},
-        "combos": {"date": generated[:10], "total": total, "both_agents_claude": agg["combo"]["both"], "agents_only": agg["combo"]["agents_only"],
-                   "claude_only": agg["combo"]["claude_only"], "neither": agg["combo"]["neither"]},
+        "combos": {"date": generated[:10], "total": total, "both": agg["combo"]["both"], "both_agents_claude": agg["combo"]["both"], "agents_only": agg["combo"]["agents_only"],
+                   "claude_only": agg["combo"]["claude_only"], "neither": agg["combo"]["neither"],
+                   "unknown": sample - total},
         "sizes": {p: {**v, "date": generated[:10]} for p, v in agg["sizes"].items()},
         "claude_agents_changes": claude_agents_changes(history, agg["present"], generated),
         "small_files": {"date": generated[:10], "threshold_bytes": SMALL_FILE_BYTES,
@@ -1344,7 +1345,7 @@ Latest (scan {generated}): {agg['counts'][PRIMARY_PATH]} of {total} scanned repo
 ## Machine-readable
 - [stats.json]({SITE_BASE}/stats.json): totals, shares, by-language table, full daily history
 - combinations in stats.json: date, total and counts of scanned repos by co-existence of AGENTS.md and CLAUDE.md (agents_only, claude_only, both, neither, agents_and_copilot (AGENTS.md with .github/copilot-instructions.md), agents_and_claude, agents_only_of_pair, claude_only_of_pair, neither_of_pair), same_size_agents_claude (both present with equal byte size) and repos_with_2plus_types (at least 2 of the {len(PATHS)} paths).
-- combos in stats.json: date, total and four integer counts of scanned repos (sum = total): both_agents_claude, agents_only, claude_only, neither (presence of AGENTS.md and CLAUDE.md only).
+- combos in stats.json: date, total (scanned repos) and integer counts both (= both_agents_claude), agents_only, claude_only, neither and unknown (sample repos without a result for both types: unreachable or pending); the five sum to sample_size (presence of AGENTS.md and CLAUDE.md only).
 - combinations example ({generated[:10]}): agents_only {agg['combo']['agents_only']}, claude_only {agg['combo']['claude_only']}, both {agg['combo']['both']}, neither {agg['combo']['neither']}, agents_and_copilot {agg['combo']['agents_and_copilot']} of {total} scanned repos, date {generated[:10]}.
 - sizes in stats.json, AGENTS.md and CLAUDE.md entries also: n (known sizes), median, p25, p75 in bytes, buckets lt_2k (<2048), 2k_8k, 8k_32k (up to 32768 inclusive) and gt_32k (>32768) as counts summing to n, and unknown (present, size not known); n + unknown = repos with the file.
 - sizes in stats.json: per path, count, median_bytes, p25_bytes, p75_bytes and date of the scan, from the HEAD Content-Length of present files whose size is known, 0 included (count = those files only); 0 when none is known (e.g. the .cursor/rules/ directory).

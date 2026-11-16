@@ -979,10 +979,12 @@
  "combos": {
   "date": "2026-11-16",
   "total": 1921,
+  "both": 258,
   "both_agents_claude": 258,
   "agents_only": 303,
   "claude_only": 63,
-  "neither": 1297
+  "neither": 1297,
+  "unknown": 1
  },
  "sizes": {
   "AGENTS.md": {

@@ -34,6 +34,13 @@ class Combos(unittest.TestCase):
             self.assertIsInstance(self.cb[k], int)
         self.assertEqual(sum(self.cb[k] for k in KEYS), self.stats["scanned"])
 
+    def test_five_counts_sum_to_sample(self):
+        five = ("both", "agents_only", "claude_only", "neither", "unknown")
+        for k in five:
+            self.assertIsInstance(self.cb[k], int)
+        self.assertEqual(sum(self.cb[k] for k in five), self.stats["sample_size"])
+        self.assertEqual(self.cb["both"], self.cb["both_agents_claude"])
+
     def test_recount_from_repo_index(self):
         self.assertEqual({k: self.cb[k] for k in KEYS}, recount())
 
