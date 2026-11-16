@@ -29,7 +29,7 @@ def render(record, env_token: bool) -> dict:
         {"id": 1, "full_name": "o/a", "owner": "o", "name": "a", "language": "Python", "stars": 9, "default_branch": "main"}]}))
     (t / "data" / "scan" / "o__a.json").write_text(json.dumps({"checked": DAY + "T05:00:00Z", "status": "ok", "default_branch": "main",
                                                                "files": {"AGENTS.md": {"present": True, "size": 10}}}))
-    hist = {"date": DAY, "generated": DAY + "T05:30:00Z", "total": 1, "counts": {}, "any": 1, "by_language": {}, "added": [], "removed": []}
+    hist = {"date": DAY, "generated": DAY + "T05:30:00Z", "total": 1, "scanned": 1, "counts": {}, "any": 1, "by_language": {}, "added": [], "removed": []}
     if record is not None:
         hist["github_token"] = record
     (t / "data" / "history" / f"{DAY}.json").write_text(json.dumps(hist))
