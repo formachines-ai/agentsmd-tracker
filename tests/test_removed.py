@@ -39,12 +39,35 @@ class RemovedTest(unittest.TestCase):
     def test_absent_to_absent(self):
         self.assertEqual(build.diff_snapshots(REPO, snap(), snap()), ([], []))
 
+    def test_carried_over(self):
+        """run_scan with a failed attempt keeps the old snapshot: no removal. Uses a temp scan dir, no network."""
+        import tempfile
+        old = (build.SCAN_DIR, build.scan_repo)
+        with tempfile.TemporaryDirectory() as t:
+            build.SCAN_DIR = Path(t)
+            try:
+                build.write_json(build.scan_file_for(REPO), snap(**{"AGENTS.md": PRESENT}) | {"checked": "2026-11-14T04:00:00Z"})
+                build.scan_repo = lambda repo, token: {"status": "error", "checked": "2026-11-15T04:00:00Z", "files": {}}
+                st = build.run_scan([REPO], None, None, True)
+                self.assertEqual(st["removed"], [])
+                kept = build.read_json(build.scan_file_for(REPO), None)
+                self.assertTrue(kept["files"]["AGENTS.md"]["present"])
+            finally:
+                build.SCAN_DIR, build.scan_repo = old
+
+    def test_fixture_two_days(self):
+        fx = ROOT / "tests" / "fixtures" / "removed"
+        prev = json.loads((fx / "prev.json").read_text())
+        new = json.loads((fx / "new.json").read_text())
+        a, r = build.diff_snapshots(REPO, prev, new)
+        self.assertEqual([(x["full_name"], x["path"]) for x in r], [("o/n", "AGENTS.md")])
+
     def test_published(self):
         d = json.loads((ROOT / "public" / "today.json").read_text())
         self.assertIsInstance(d["removed"], list)
         self.assertEqual(d["removed_count"], len(d["removed"]))
         page = (ROOT / "public" / "index.html").read_text()
-        m = re.search(r'id="removed-24h">Removed in 24 h \((\d{4}-\d\d-\d\d)\): (\d+)</p>', page)
+        m = re.search(r'id="removed-24h">Removed in 24 h on (\d{4}-\d\d-\d\d): (\d+)', page)
         self.assertTrue(m)
         self.assertEqual(m.group(1), d["generated"][:10])
         self.assertEqual(int(m.group(2)), d["removed_count"])
