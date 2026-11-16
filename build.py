@@ -597,6 +597,14 @@ def update_history(agg: dict, scan_stats: dict | None, write: bool = True) -> di
     return doc
 
 
+def tracked_since(history: list[dict]) -> dict[str, str | None]:
+    """T-0182: path -> date of the first history day whose counts hold the path (its first scan); None if never scanned."""
+    out: dict[str, str | None] = {}
+    for s in PATHS:
+        out[s["path"]] = next((d["date"] for d in sorted(history, key=lambda x: x["date"]) if s["path"] in d.get("counts", {})), None)
+    return out
+
+
 def load_history() -> list[dict]:
     days = []
     for p in sorted(HISTORY_DIR.glob("*.json")):
@@ -1003,13 +1011,17 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
 </section>"""
 
     # history table (last 14 days)
+    ts_ = tracked_since(history)
+    late_ = [(s["path"], ts_[s["path"]]) for s in PATHS if ts_.get(s["path"]) and ts_[s["path"]] > history[0]["date"]]
+    base_line = "".join(f'<p class="muted" id="tracked-since-{i}">As of {esc(gen_raw[:10])}: tracking of <code>{esc(p)}</code> starts with the {esc(d)} scan. Its counts are a baseline from that first scan, not files added; earlier dates were not measured and show "not tracked".</p>' for i, (p, d) in enumerate(late_))
     hist_rows = "".join(
-        f"<tr><td>{esc(d['date'])}</td><td>{d['scanned']}</td>" + "".join(f"<td>{d['counts'].get(s['path'], 0)}</td>" for s in PATHS) + "</tr>"
+        f"<tr><td>{esc(d['date'])}</td><td>{d['scanned']}</td>" + "".join((f"<td>{d['counts'].get(s['path'], 0)}</td>" if ts_.get(s["path"]) and d["date"] >= ts_[s["path"]] else '<td class="muted">not tracked</td>') for s in PATHS) + "</tr>"
         for d in reversed(history[-14:]))
     hist_sec = f"""<section id="history">
 <h2>By day</h2>
 <div class="scroll"><table><thead><tr><th>Date (UTC)</th><th>Scanned</th>{heads}</tr></thead><tbody>{hist_rows}</tbody></table></div>
 <p class="muted">Counts are absolute; the sample can grow, so compare shares (see the sparklines above) rather than raw counts across days. Full history: <a href="/stats.json">stats.json</a>.</p>
+{base_line}
 </section>"""
 
     method = f"""<section id="method">
@@ -1208,6 +1220,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
         "method": METHOD, "attribution": f"{SITE_NAME}, {SITE_HOST}, {generated[:10]}, CC BY 4.0",
         "sample": sample_info, "sample_size": sample, "scanned": total, "pending": len(agg["pending"]), "unreachable": len(agg["unreachable"]),
         "paths": [s["path"] for s in PATHS],
+        "tracked_since": tracked_since(history),
         "counts": agg["counts"], "any": agg["any"],
         "shares": {s["path"]: pct(agg["counts"][s["path"]], total) for s in PATHS},
         "by_language": {k: {"repos": v["repos"], "any": v["any"], **{s["path"]: v[s["path"]] for s in PATHS}} for k, v in sorted(agg["by_lang"].items())},
@@ -1347,6 +1360,7 @@ Latest (scan {generated}): {agg['counts'][PRIMARY_PATH]} of {total} scanned repo
 - combinations in stats.json: date, total and counts of scanned repos by co-existence of AGENTS.md and CLAUDE.md (agents_only, claude_only, both, neither, agents_and_copilot (AGENTS.md with .github/copilot-instructions.md), agents_and_claude, agents_only_of_pair, claude_only_of_pair, neither_of_pair), same_size_agents_claude (both present with equal byte size) and repos_with_2plus_types (at least 2 of the {len(PATHS)} paths).
 - combos in stats.json: date, total (scanned repos) and integer counts both (= both_agents_claude), agents_only, claude_only, neither and unknown (sample repos without a result for both types: unreachable or pending); the five sum to sample_size (presence of AGENTS.md and CLAUDE.md only).
 - combinations example ({generated[:10]}): agents_only {agg['combo']['agents_only']}, claude_only {agg['combo']['claude_only']}, both {agg['combo']['both']}, neither {agg['combo']['neither']}, agents_and_copilot {agg['combo']['agents_and_copilot']} of {total} scanned repos, date {generated[:10]}.
+- tracked_since in stats.json: path -> date of that path's first scan; history[] counts of 0 before that date were not measured, and the first-scan counts are a baseline, not added files.
 - sizes in stats.json, AGENTS.md and CLAUDE.md entries also: n (known sizes), median, p25, p75 in bytes, buckets lt_2k (<2048), 2k_8k, 8k_32k (up to 32768 inclusive) and gt_32k (>32768) as counts summing to n, and unknown (present, size not known); n + unknown = repos with the file.
 - sizes in stats.json: per path, count, median_bytes, p25_bytes, p75_bytes and date of the scan, from the HEAD Content-Length of present files whose size is known, 0 included (count = those files only); 0 when none is known (e.g. the .cursor/rules/ directory).
 - small_files in stats.json: date, threshold_bytes (300) and per path count (present files with a known size under 300 bytes, 0 bytes included; size only), threshold_bytes, zero_bytes (present files whose HEAD Content-Length is 0; counted in count, size 0 bytes) and unknown_size (present files with no Content-Length, size unknown, not counted; size_unknown is the same number, kept for compatibility).

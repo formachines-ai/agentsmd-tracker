@@ -46,9 +46,11 @@ runs `build.py`.
 python3 -B -m unittest discover -s tests -t .
 ```
 
-Runs every `tests/test_*.py` (30 files) from the repository root. Offline and read-only: no network, nothing is
+Runs every `tests/test_*.py` (31 files) from the repository root. Offline and read-only: no network, nothing is
 written to the checkout (tests that build use a temp copy), so it also passes after `chmod -R a-w .`. Python 3.12
 standard library only.
+
+`stats.json` `tracked_since` maps each tracked path to the date of its first scan (from `data/history`); history[] zeros before that date were not measured, and first-scan counts are a baseline, not added files.
 
 ## What to commit
 
