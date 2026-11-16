@@ -74,6 +74,41 @@ class Reachability(unittest.TestCase):
         self.assertTrue(cards)
         self.assertEqual(missing, [], f"{len(missing)} unreachable, e.g. {missing[:5]}")
 
+    def test_sitemap_lang_and_robots(self):
+        base = "https://agentsmd.formachines.ai"
+        locs = re.findall(r"<loc>([^<]+)</loc>", (PUBLIC / "sitemap.xml").read_text(encoding="utf-8"))
+        paths = [urlparse(u).path for u in locs]
+        no_file = [p for p in paths if not (PUBLIC / p.lstrip("/")).exists()
+                   or ((PUBLIC / p.lstrip("/")).is_dir() and not (PUBLIC / p.lstrip("/") / "index.html").is_file())]
+        # every page reachable from / or a /lang/ page: collect hrefs of / and all /lang/ pages
+        linked = set()
+        home_links = set()
+        pages = [("/", PUBLIC / "index.html")] + [("/lang/%s/" % d.name, d / "index.html")
+                                                  for d in sorted((PUBLIC / "lang").glob("*")) if d.is_dir()]
+        for url, f in pages:
+            parser = _Links()
+            parser.feed(f.read_text(encoding="utf-8"))
+            for h in parser.hrefs:
+                path = urlparse(urldefrag(urljoin(base + url, h))[0]).path
+                linked.add(path)
+                if url == "/":
+                    home_links.add(path)
+        langs = sorted("/lang/%s/" % d.name for d in (PUBLIC / "lang").glob("*") if d.is_dir())
+        lang_missing = [l for l in langs if l not in home_links]
+        repo_paths = [p for p in paths if re.fullmatch(r"/repo/[^/]+/[^/]+/", p)]
+        repo_missing = [p for p in repo_paths if p not in linked]
+        robots = (PUBLIC / "robots.txt").read_text(encoding="utf-8")
+        has_sitemap = ("Sitemap: " + base + "/sitemap.xml") in robots.splitlines()
+        blocked = [l for l in robots.splitlines() if re.match(r"\s*Disallow:\s*/(repo|lang)/?\s*$", l)]
+        print(f"sitemap URLs: {len(paths)}; /repo/ in sitemap: {len(repo_paths)}; not linked from / or /lang/: "
+              f"{len(repo_missing)}; /lang/ pages: {len(langs)}, not linked from /: {len(lang_missing)}; "
+              f"sitemap URLs without file: {len(no_file)}; robots Sitemap line: {has_sitemap}", file=sys.stderr)
+        self.assertEqual(no_file, [], f"sitemap URLs without file: {no_file[:5]}")
+        self.assertEqual(lang_missing, [])
+        self.assertEqual(repo_missing, [], f"{len(repo_missing)} not linked, e.g. {repo_missing[:5]}")
+        self.assertTrue(has_sitemap)
+        self.assertEqual(blocked, [])
+
 
 if __name__ == "__main__":
     unittest.main()
