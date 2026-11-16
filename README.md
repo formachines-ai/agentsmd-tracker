@@ -64,7 +64,7 @@ do not add dependencies outside the Python 3.12 standard library, no JavaScript 
 - **Addresses never change.** `/`, `/repo/<owner>/<name>/` (+ `index.json`), `/go/<id>/`, `/stats.json`, `/today.json`,
   `/feed.xml`, `/llms.txt`, `/legal/`, `/build.json`, `/robots.txt`, `/sitemap.xml`, `/404.html`. A repo card stays even
   if the repo becomes unreachable (status is shown). `/go/<id>` ids come from `data/go.json` and are never reused.
-- **The footer "updated" time is the latest scan time** (`build.json` `scan.generated`, also the JSON-LD dates), not the build time; `built_at` stays the real build time, so a same-data rebuild writes identical HTML; if only the build clock would differ, `build.json` keeps its previous `built_at` (the last build that changed anything), so a `--no-scan` rebuild of unchanged data changes 0 files; `feed.xml` `lastBuildDate` is the scan time too.
+- **The footer "updated" time is the latest scan time** (`build.json` `scan.generated`, also the JSON-LD dates), not the build time; `built_at` stays the real build time, so a same-data rebuild (also `--no-scan`) writes identical HTML and changes only `build.json` `built_at`; `feed.xml` `lastBuildDate` is the scan time too.
 - **AI disclosure in the footer of every page**: "Built by AI agents (agent-team) without human editing · responsible:
   Dmitry, formachines.ai · updated <UTC>". Keep it in `layout()`.
 - **No tracking.** No cookies, no JavaScript, no analytics, no forms. Outbound clicks are counted from the server's
