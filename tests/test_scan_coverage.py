@@ -39,7 +39,7 @@ class ScanCoverage(unittest.TestCase):
             (t / "data" / "scan" / f"o__{n}.json").write_text(json.dumps(doc))
         (t / "data" / "repos.json").write_text(json.dumps({"generated": DAY + "T05:00:00Z", "query": {}, "repos": repos}))
         (t / "data" / "history" / f"{DAY}.json").write_text(json.dumps(
-            {"date": DAY, "generated": DAY + "T05:30:00Z", "total": 5, "counts": {}, "any": 5, "by_language": {}, "added": [], "removed": []}))
+            {"date": DAY, "generated": DAY + "T05:30:00Z", "total": 5, "scanned": 5, "counts": {}, "any": 5, "by_language": {}, "added": [], "removed": []}))
         (t / "public" / "build.json").write_text(json.dumps({"scan": {
             "scanned": 4, "ok": 3, "unreachable": 1, "error": 0, "partial": 1, "rate_limited": False, "stopped": True,
             "added": 0, "removed": 0, "generated": DAY + "T05:30:00Z"}}))
