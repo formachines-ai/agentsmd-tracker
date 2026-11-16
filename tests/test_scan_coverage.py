@@ -43,7 +43,7 @@ class ScanCoverage(unittest.TestCase):
         (t / "public" / "build.json").write_text(json.dumps({"scan": {
             "scanned": 4, "ok": 3, "unreachable": 1, "error": 0, "partial": 1, "rate_limited": False, "stopped": True,
             "added": 0, "removed": 0, "generated": DAY + "T05:30:00Z"}}))
-        r = subprocess.run([sys.executable, "-B", "build.py", "--no-scan"], cwd=t, capture_output=True, text=True)
+        r = subprocess.run([sys.executable, "-B", "build.py", "--no-scan", "--now", DAY + "T06:00:00Z"], cwd=t, capture_output=True, text=True)
         cls.rc, cls.log = r.returncode, r.stderr + r.stdout
         pub = t / "public"
         cls.build = json.loads((pub / "build.json").read_text()) if (pub / "build.json").exists() else {}

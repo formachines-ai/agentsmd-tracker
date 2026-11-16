@@ -38,7 +38,7 @@ def render(token: bool) -> dict:
     env = {k: v for k, v in os.environ.items() if k != "GITHUB_TOKEN"}
     if token:
         env["GITHUB_TOKEN"] = "dummy-not-used"
-    r = subprocess.run([sys.executable, "-B", "build.py", "--no-scan"], cwd=t, capture_output=True, text=True, env=env)
+    r = subprocess.run([sys.executable, "-B", "build.py", "--no-scan", "--now", DAY + "T06:00:00Z"], cwd=t, capture_output=True, text=True, env=env)
     pub = t / "public"
     out = {"rc": r.returncode, "log": r.stderr + r.stdout, "tmp": t}
     for k, f in (("index", "index.html"), ("llms", "llms.txt"), ("build", "build.json")):

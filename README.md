@@ -29,6 +29,7 @@ python3 build.py --no-scan            # re-render from data/ without touching th
 python3 build.py --limit 200          # scan at most 200 repos this run; the rest stays "pending"
 python3 build.py --max-seconds 1500   # stop scanning after 25 min, render whatever is there
 python3 build.py --force              # rescan even repos checked in the last 20 h
+python3 build.py --no-scan --now 2026-11-15T06:00:00Z   # fixed clock for every date/time derived from now (also env BUILD_NOW); default = real UTC now
 ```
 
 `build.py` is idempotent and resumable: every repo result is written to `data/scan/` immediately, so an
@@ -45,7 +46,7 @@ runs `build.py`.
 python3 -B -m unittest discover -s tests -t .
 ```
 
-Runs every `tests/test_*.py` (29 files) from the repository root. Offline and read-only: no network, nothing is
+Runs every `tests/test_*.py` (30 files) from the repository root. Offline and read-only: no network, nothing is
 written to the checkout (tests that build use a temp copy), so it also passes after `chmod -R a-w .`. Python 3.12
 standard library only.
 

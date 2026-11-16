@@ -126,8 +126,17 @@ _stop = {"flag": False}
 
 
 # ----------------------------------------------------------------------------- small helpers
+_FIXED_NOW: datetime | None = None   # set by --now / BUILD_NOW; None = the real clock
+
+
+def parse_clock(value: str) -> datetime:
+    """ISO-8601 instant (UTC if no offset) -> aware datetime; used for --now / BUILD_NOW."""
+    dt = datetime.fromisoformat(value.strip().replace("Z", "+00:00"))
+    return dt.replace(tzinfo=timezone.utc) if dt.tzinfo is None else dt.astimezone(timezone.utc)
+
+
 def now_utc() -> datetime:
-    return datetime.now(timezone.utc)
+    return _FIXED_NOW if _FIXED_NOW is not None else datetime.now(timezone.utc)
 
 
 def iso(dt: datetime) -> str:
@@ -1434,19 +1443,23 @@ def _rfc822_dt(dt: datetime) -> str:
 
 # ----------------------------------------------------------------------------- main
 def main() -> int:
-    global PAUSE_S
+    global PAUSE_S, _FIXED_NOW
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--no-scan", action="store_true", help="render only, from data/ caches")
     ap.add_argument("--limit", type=int, default=None, help="max repos to scan this run")
     ap.add_argument("--max-seconds", type=float, default=None, help="stop scanning after this many seconds, then render")
     ap.add_argument("--force", action="store_true", help="rescan even repos checked within the last %d h" % RESCAN_HOURS)
     ap.add_argument("--pause", type=float, default=None, help="seconds between HTTP requests (default %.2f)" % PAUSE_S)
+    ap.add_argument("--now", default=None, metavar="ISO", help="fixed clock for every date/time build.py derives from now (default: env BUILD_NOW, else the real UTC now)")
     ap.add_argument("-v", "--verbose", action="store_true")
     a = ap.parse_args()
     logging.basicConfig(level=logging.DEBUG if a.verbose else logging.INFO,
                         format="%(asctime)s %(levelname)s %(message)s", datefmt="%Y-%m-%dT%H:%M:%S")
     if a.pause is not None:
         PAUSE_S = a.pause
+    clock = a.now or os.environ.get("BUILD_NOW")
+    if clock:
+        _FIXED_NOW = parse_clock(clock)
     signal.signal(signal.SIGTERM, _handle_sigterm)
     signal.signal(signal.SIGINT, _handle_sigterm)
 

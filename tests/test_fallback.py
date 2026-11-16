@@ -38,6 +38,9 @@ def iso(dt):
     return dt.strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
+FIXED_NOW = datetime(2026, 11, 15, 12, 0, 0, tzinfo=timezone.utc)   # explicit clock: the test never reads the system date
+
+
 def build(mode, age_hours, target=None):
     """Copy build.py + static + data into a temp dir, age the snapshot, run the real build there. Returns (tmp, log)."""
     tmp = Path(tempfile.mkdtemp(prefix="fallback-"))
@@ -49,7 +52,7 @@ def build(mode, age_hours, target=None):
         q.chmod(q.stat().st_mode | 0o200)
     (tmp / "net").mkdir()
     (tmp / "net" / "sitecustomize.py").write_text(FAKE_NET)
-    now = datetime.now(timezone.utc)
+    now = FIXED_NOW
     for f in (tmp / "data" / "scan").glob("*.json"):
         d = json.loads(f.read_text())
         if target and f.name == target.replace("/", "__") + ".json":
@@ -63,7 +66,7 @@ def build(mode, age_hours, target=None):
     last.write_text(json.dumps(h))
     env = dict(os.environ, PYTHONPATH=str(tmp / "net"), FAKE_NET_MODE=mode)
     env.pop("GITHUB_TOKEN", None)
-    args = [sys.executable, str(tmp / "build.py"), "--pause", "0"] + (["--limit", "1"] if target else [])
+    args = [sys.executable, str(tmp / "build.py"), "--pause", "0", "--now", iso(FIXED_NOW)] + (["--limit", "1"] if target else [])
     p = subprocess.run(args, cwd=tmp, env=env, capture_output=True, text=True, timeout=300)
     assert p.returncode == 0, p.stderr[-2000:]
     return tmp, p.stderr
