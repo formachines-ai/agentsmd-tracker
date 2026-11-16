@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-15T04:14:07Z",
+ "checked": "2026-11-16T04:24:51Z",
  "status": "ok",
  "default_branch": "main",
  "files": {
@@ -28,7 +28,7 @@
   },
   "llms.txt": {
    "present": true,
-   "size": 2657
+   "size": 3664
   },
   "GEMINI.md": {
    "present": false,
@@ -36,6 +36,16 @@
    "definite": true
   },
   ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "definite": true
+  },
+  "AI_POLICY.md": {
+   "present": false,
+   "size": null,
+   "definite": true
+  },
+  ".github/AI_POLICY.md": {
    "present": false,
    "size": null,
    "definite": true

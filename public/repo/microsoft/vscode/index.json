@@ -6,7 +6,7 @@
  "stars": 194484,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-15T04:09:30Z",
+ "checked": "2026-11-16T04:19:19Z",
  "files": {
   "AGENTS.md": {
    "present": true,
@@ -16,7 +16,7 @@
     "count": 102,
     "total": 194,
     "pct": 52.6,
-    "date": "2026-11-15",
+    "date": "2026-11-16",
     "language": "TypeScript",
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    },
@@ -32,7 +32,7 @@
     "count": 62,
     "total": 194,
     "pct": 32.0,
-    "date": "2026-11-15",
+    "date": "2026-11-16",
     "language": "TypeScript",
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    }
@@ -45,7 +45,7 @@
     "count": 4,
     "total": 194,
     "pct": 2.1,
-    "date": "2026-11-15",
+    "date": "2026-11-16",
     "language": "TypeScript",
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    }
@@ -58,7 +58,7 @@
     "count": 8,
     "total": 194,
     "pct": 4.1,
-    "date": "2026-11-15",
+    "date": "2026-11-16",
     "language": "TypeScript",
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    }
@@ -71,7 +71,7 @@
     "count": 19,
     "total": 194,
     "pct": 9.8,
-    "date": "2026-11-15",
+    "date": "2026-11-16",
     "language": "TypeScript",
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    },
@@ -87,7 +87,7 @@
     "count": 3,
     "total": 194,
     "pct": 1.5,
-    "date": "2026-11-15",
+    "date": "2026-11-16",
     "language": "TypeScript",
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    }
@@ -100,7 +100,7 @@
     "count": 3,
     "total": 194,
     "pct": 1.5,
-    "date": "2026-11-15",
+    "date": "2026-11-16",
     "language": "TypeScript",
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    }
@@ -113,33 +113,33 @@
     "count": 1,
     "total": 194,
     "pct": 0.5,
-    "date": "2026-11-15",
+    "date": "2026-11-16",
     "language": "TypeScript",
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    }
   },
   "AI_POLICY.md": {
-   "present": null,
+   "present": false,
    "size": null,
    "url": null,
    "lang_share": {
-    "count": 0,
+    "count": 3,
     "total": 194,
-    "pct": 0.0,
-    "date": "2026-11-15",
+    "pct": 1.5,
+    "date": "2026-11-16",
     "language": "TypeScript",
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    }
   },
   ".github/AI_POLICY.md": {
-   "present": null,
+   "present": false,
    "size": null,
    "url": null,
    "lang_share": {
     "count": 0,
     "total": 194,
     "pct": 0.0,
-    "date": "2026-11-15",
+    "date": "2026-11-16",
     "language": "TypeScript",
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    }
@@ -150,61 +150,61 @@
    "count": 102,
    "total": 194,
    "pct": 52.6,
-   "date": "2026-11-15"
+   "date": "2026-11-16"
   },
   "CLAUDE.md": {
    "count": 62,
    "total": 194,
    "pct": 32.0,
-   "date": "2026-11-15"
+   "date": "2026-11-16"
   },
   ".cursorrules": {
    "count": 4,
    "total": 194,
    "pct": 2.1,
-   "date": "2026-11-15"
+   "date": "2026-11-16"
   },
   ".cursor/rules": {
    "count": 8,
    "total": 194,
    "pct": 4.1,
-   "date": "2026-11-15"
+   "date": "2026-11-16"
   },
   ".github/copilot-instructions.md": {
    "count": 19,
    "total": 194,
    "pct": 9.8,
-   "date": "2026-11-15"
+   "date": "2026-11-16"
   },
   "llms.txt": {
    "count": 3,
    "total": 194,
    "pct": 1.5,
-   "date": "2026-11-15"
+   "date": "2026-11-16"
   },
   "GEMINI.md": {
    "count": 3,
    "total": 194,
    "pct": 1.5,
-   "date": "2026-11-15"
+   "date": "2026-11-16"
   },
   ".windsurfrules": {
    "count": 1,
    "total": 194,
    "pct": 0.5,
-   "date": "2026-11-15"
+   "date": "2026-11-16"
   },
   "AI_POLICY.md": {
-   "count": 0,
+   "count": 3,
    "total": 194,
-   "pct": 0.0,
-   "date": "2026-11-15"
+   "pct": 1.5,
+   "date": "2026-11-16"
   },
   ".github/AI_POLICY.md": {
    "count": 0,
    "total": 194,
    "pct": 0.0,
-   "date": "2026-11-15"
+   "date": "2026-11-16"
   }
  },
  "first_seen": {

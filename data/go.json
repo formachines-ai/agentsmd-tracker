@@ -1,5 +1,5 @@
 {
- "next_id": 1149,
+ "next_id": 1176,
  "links": {
   "affaan-m/ECC/AGENTS.md": {
    "id": 1,
@@ -6888,6 +6888,168 @@
    "url": "https://github.com/Zackriya-Solutions/meetily/blob/main/AGENTS.md",
    "repo": "Zackriya-Solutions/meetily",
    "path": "AGENTS.md"
+  },
+  "stride3d/stride/AGENTS.md": {
+   "id": 1149,
+   "url": "https://github.com/stride3d/stride/blob/master/AGENTS.md",
+   "repo": "stride3d/stride",
+   "path": "AGENTS.md"
+  },
+  "apache/shardingsphere/AI_POLICY.md": {
+   "id": 1150,
+   "url": "https://github.com/apache/shardingsphere/blob/master/AI_POLICY.md",
+   "repo": "apache/shardingsphere",
+   "path": "AI_POLICY.md"
+  },
+  "audacity/audacity/AI_POLICY.md": {
+   "id": 1151,
+   "url": "https://github.com/audacity/audacity/blob/master/AI_POLICY.md",
+   "repo": "audacity/audacity",
+   "path": "AI_POLICY.md"
+  },
+  "babel/babel/AI_POLICY.md": {
+   "id": 1152,
+   "url": "https://github.com/babel/babel/blob/main/AI_POLICY.md",
+   "repo": "babel/babel",
+   "path": "AI_POLICY.md"
+  },
+  "BurntSushi/ripgrep/AI_POLICY.md": {
+   "id": 1153,
+   "url": "https://github.com/BurntSushi/ripgrep/blob/master/AI_POLICY.md",
+   "repo": "BurntSushi/ripgrep",
+   "path": "AI_POLICY.md"
+  },
+  "ClickHouse/ClickHouse/AI_POLICY.md": {
+   "id": 1154,
+   "url": "https://github.com/ClickHouse/ClickHouse/blob/master/AI_POLICY.md",
+   "repo": "ClickHouse/ClickHouse",
+   "path": "AI_POLICY.md"
+  },
+  "D4Vinci/Scrapling/AI_POLICY.md": {
+   "id": 1155,
+   "url": "https://github.com/D4Vinci/Scrapling/blob/main/AI_POLICY.md",
+   "repo": "D4Vinci/Scrapling",
+   "path": "AI_POLICY.md"
+  },
+  "docker/compose/AI_POLICY.md": {
+   "id": 1156,
+   "url": "https://github.com/docker/compose/blob/main/AI_POLICY.md",
+   "repo": "docker/compose",
+   "path": "AI_POLICY.md"
+  },
+  "duckdb/duckdb/AI_POLICY.md": {
+   "id": 1157,
+   "url": "https://github.com/duckdb/duckdb/blob/main/AI_POLICY.md",
+   "repo": "duckdb/duckdb",
+   "path": "AI_POLICY.md"
+  },
+  "FreeCAD/FreeCAD/AI_POLICY.md": {
+   "id": 1158,
+   "url": "https://github.com/FreeCAD/FreeCAD/blob/main/AI_POLICY.md",
+   "repo": "FreeCAD/FreeCAD",
+   "path": "AI_POLICY.md"
+  },
+  "grafana/grafana/AI_POLICY.md": {
+   "id": 1159,
+   "url": "https://github.com/grafana/grafana/blob/main/AI_POLICY.md",
+   "repo": "grafana/grafana",
+   "path": "AI_POLICY.md"
+  },
+  "home-assistant/core/AI_POLICY.md": {
+   "id": 1160,
+   "url": "https://github.com/home-assistant/core/blob/dev/AI_POLICY.md",
+   "repo": "home-assistant/core",
+   "path": "AI_POLICY.md"
+  },
+  "jaegertracing/jaeger/AI_POLICY.md": {
+   "id": 1161,
+   "url": "https://github.com/jaegertracing/jaeger/blob/main/AI_POLICY.md",
+   "repo": "jaegertracing/jaeger",
+   "path": "AI_POLICY.md"
+  },
+  "jj-vcs/jj/AI_POLICY.md": {
+   "id": 1162,
+   "url": "https://github.com/jj-vcs/jj/blob/main/AI_POLICY.md",
+   "repo": "jj-vcs/jj",
+   "path": "AI_POLICY.md"
+  },
+  "juanfont/headscale/AI_POLICY.md": {
+   "id": 1163,
+   "url": "https://github.com/juanfont/headscale/blob/main/AI_POLICY.md",
+   "repo": "juanfont/headscale",
+   "path": "AI_POLICY.md"
+  },
+  "leptos-rs/leptos/AI_POLICY.md": {
+   "id": 1164,
+   "url": "https://github.com/leptos-rs/leptos/blob/main/AI_POLICY.md",
+   "repo": "leptos-rs/leptos",
+   "path": "AI_POLICY.md"
+  },
+  "nautechsystems/nautilus_trader/AI_POLICY.md": {
+   "id": 1165,
+   "url": "https://github.com/nautechsystems/nautilus_trader/blob/develop/AI_POLICY.md",
+   "repo": "nautechsystems/nautilus_trader",
+   "path": "AI_POLICY.md"
+  },
+  "pola-rs/polars/AI_POLICY.md": {
+   "id": 1166,
+   "url": "https://github.com/pola-rs/polars/blob/main/AI_POLICY.md",
+   "repo": "pola-rs/polars",
+   "path": "AI_POLICY.md"
+  },
+  "PostHog/posthog/AI_POLICY.md": {
+   "id": 1167,
+   "url": "https://github.com/PostHog/posthog/blob/master/AI_POLICY.md",
+   "repo": "PostHog/posthog",
+   "path": "AI_POLICY.md"
+  },
+  "psf/requests/.github/AI_POLICY.md": {
+   "id": 1168,
+   "url": "https://github.com/psf/requests/blob/main/.github/AI_POLICY.md",
+   "repo": "psf/requests",
+   "path": ".github/AI_POLICY.md"
+  },
+  "pytorch/pytorch/AI_POLICY.md": {
+   "id": 1169,
+   "url": "https://github.com/pytorch/pytorch/blob/main/AI_POLICY.md",
+   "repo": "pytorch/pytorch",
+   "path": "AI_POLICY.md"
+  },
+  "starship/starship/AI_POLICY.md": {
+   "id": 1170,
+   "url": "https://github.com/starship/starship/blob/main/AI_POLICY.md",
+   "repo": "starship/starship",
+   "path": "AI_POLICY.md"
+  },
+  "TanStack/query/AI_POLICY.md": {
+   "id": 1171,
+   "url": "https://github.com/TanStack/query/blob/main/AI_POLICY.md",
+   "repo": "TanStack/query",
+   "path": "AI_POLICY.md"
+  },
+  "Textualize/rich/AI_POLICY.md": {
+   "id": 1172,
+   "url": "https://github.com/Textualize/rich/blob/main/AI_POLICY.md",
+   "repo": "Textualize/rich",
+   "path": "AI_POLICY.md"
+  },
+  "tj/commander.js/AI_POLICY.md": {
+   "id": 1173,
+   "url": "https://github.com/tj/commander.js/blob/master/AI_POLICY.md",
+   "repo": "tj/commander.js",
+   "path": "AI_POLICY.md"
+  },
+  "vectordotdev/vector/AI_POLICY.md": {
+   "id": 1174,
+   "url": "https://github.com/vectordotdev/vector/blob/master/AI_POLICY.md",
+   "repo": "vectordotdev/vector",
+   "path": "AI_POLICY.md"
+  },
+  "Wilfred/difftastic/AI_POLICY.md": {
+   "id": 1175,
+   "url": "https://github.com/Wilfred/difftastic/blob/master/AI_POLICY.md",
+   "repo": "Wilfred/difftastic",
+   "path": "AI_POLICY.md"
   }
  }
 }

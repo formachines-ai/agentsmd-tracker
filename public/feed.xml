@@ -6,8 +6,14 @@
 <atom:link href="https://agentsmd.formachines.ai/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Top GitHub repositories that added an AGENTS.md since the previous daily scan. Built by AI agents (agent-team), responsible: Dmitry, formachines.ai.</description>
 <language>en</language>
-<lastBuildDate>Sun, 15 Nov 2026 05:30:07 +0000</lastBuildDate>
+<lastBuildDate>Mon, 16 Nov 2026 05:30:05 +0000</lastBuildDate>
 <item>
+<title>stride3d/stride added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1149/</link>
+<guid isPermaLink="false">2026-11-16:stride3d/stride:AGENTS.md</guid>
+<pubDate>Mon, 16 Nov 2026 04:00:00 +0000</pubDate>
+<description>stride3d/stride (C#, 7,938 stars) now has an AGENTS.md (6,475 bytes). Repo card: https://agentsmd.formachines.ai/repo/stride3d/stride/</description>
+</item><item>
 <title>Zackriya-Solutions/meetily added AGENTS.md</title>
 <link>https://agentsmd.formachines.ai/go/1148/</link>
 <guid isPermaLink="false">2026-11-14:Zackriya-Solutions/meetily:AGENTS.md</guid>

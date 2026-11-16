@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-15T04:05:39Z",
+ "checked": "2026-11-16T04:14:45Z",
  "status": "ok",
  "default_branch": "main",
  "files": {
@@ -39,6 +39,16 @@
    "definite": true
   },
   ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "definite": true
+  },
+  "AI_POLICY.md": {
+   "present": false,
+   "size": null,
+   "definite": true
+  },
+  ".github/AI_POLICY.md": {
    "present": false,
    "size": null,
    "definite": true

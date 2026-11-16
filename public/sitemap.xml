@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://agentsmd.formachines.ai/</loc><lastmod>2026-11-15</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/legal/</loc><lastmod>2026-11-15</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/brand/</loc><lastmod>2026-11-15</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/</loc><lastmod>2026-11-16</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/legal/</loc><lastmod>2026-11-16</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/brand/</loc><lastmod>2026-11-16</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/0x192/universal-android-debloater/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/0x7c13/Notepads/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/1jehuang/jcode/</loc><lastmod>2026-11-02</lastmod></url>
@@ -1610,7 +1610,7 @@
 <url><loc>https://agentsmd.formachines.ai/repo/streamich/react-use/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/streamlit/streamlit/</loc><lastmod>2026-11-04</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/stretchr/testify/</loc><lastmod>2026-11-02</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/repo/stride3d/stride/</loc><lastmod>2026-11-02</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/repo/stride3d/stride/</loc><lastmod>2026-11-16</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/stringer-rss/stringer/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/studyzy/imewlconverter/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/styled-components/styled-components/</loc><lastmod>2026-11-02</lastmod></url>
@@ -1925,14 +1925,14 @@
 <url><loc>https://agentsmd.formachines.ai/repo/zxing/zxing/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/zylon-ai/private-gpt/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/ZyperWave/ZyperWinOptimize/</loc><lastmod>2026-11-02</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/lang/c-sharp/</loc><lastmod>2026-11-15</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/lang/c-plus-plus/</loc><lastmod>2026-11-15</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/lang/go/</loc><lastmod>2026-11-15</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/lang/java/</loc><lastmod>2026-11-15</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/lang/javascript/</loc><lastmod>2026-11-15</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/lang/php/</loc><lastmod>2026-11-15</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/lang/python/</loc><lastmod>2026-11-15</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/lang/ruby/</loc><lastmod>2026-11-15</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/lang/rust/</loc><lastmod>2026-11-15</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/lang/typescript/</loc><lastmod>2026-11-15</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/lang/c-sharp/</loc><lastmod>2026-11-16</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/lang/c-plus-plus/</loc><lastmod>2026-11-16</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/lang/go/</loc><lastmod>2026-11-16</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/lang/java/</loc><lastmod>2026-11-16</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/lang/javascript/</loc><lastmod>2026-11-16</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/lang/php/</loc><lastmod>2026-11-16</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/lang/python/</loc><lastmod>2026-11-16</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/lang/ruby/</loc><lastmod>2026-11-16</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/lang/rust/</loc><lastmod>2026-11-16</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/lang/typescript/</loc><lastmod>2026-11-16</lastmod></url>
 </urlset>

@@ -1,25 +1,25 @@
 {
  "schema_version": 2,
  "site": "https://agentsmd.formachines.ai",
- "date": "2026-11-15",
- "generated": "2026-11-15T05:30:07Z",
+ "date": "2026-11-16",
+ "generated": "2026-11-16T05:30:05Z",
  "license": "CC BY 4.0",
- "added": [],
- "removed": [
+ "added": [
   {
-   "full_name": "doctrine/dbal",
-   "owner": "doctrine",
-   "name": "dbal",
-   "language": "PHP",
-   "stars": 9701,
+   "full_name": "stride3d/stride",
+   "owner": "stride3d",
+   "name": "stride",
+   "language": "C#",
+   "stars": 7938,
    "path": "AGENTS.md",
-   "size": null,
-   "url": "https://github.com/doctrine/dbal/blob/4.5.x/AGENTS.md"
+   "size": 6475,
+   "url": "https://github.com/stride3d/stride/blob/master/AGENTS.md"
   }
  ],
- "removed_count": 1,
+ "removed": [],
+ "removed_count": 0,
  "counts": {
-  "AGENTS.md": 560,
+  "AGENTS.md": 561,
   "CLAUDE.md": 321,
   ".cursorrules": 16,
   ".cursor/rules": 32,
@@ -27,8 +27,8 @@
   "llms.txt": 17,
   "GEMINI.md": 21,
   ".windsurfrules": 5,
-  "AI_POLICY.md": 0,
-  ".github/AI_POLICY.md": 0
+  "AI_POLICY.md": 25,
+  ".github/AI_POLICY.md": 1
  },
  "scanned": 1921,
  "pending": 0
