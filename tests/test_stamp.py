@@ -1,7 +1,6 @@
 """Offline, read-only (T-0171): footer 'updated' and JSON-LD dates are the latest scan time, not the build clock.
 
-Two temp-copy builds (--no-scan) from the same scan data with different build clocks (build.py's now_utc is patched
-via a wrapper script) must give byte-identical HTML; the footer equals the scan time. No scan record -> build time.
+Two temp-copy builds (--no-scan) from the same scan data with different build clocks (build.py --now) must give byte-identical HTML; the footer equals the scan time. No scan record -> build time.
 """
 import json
 import re
@@ -16,24 +15,12 @@ sys.dont_write_bytecode = True
 REPO = Path(__file__).resolve().parent.parent
 DAY = "2026-11-15"
 SCAN = DAY + "T05:30:07Z"
-WRAP = """import sys, datetime as d, runpy
-clock = d.datetime.fromisoformat(sys.argv.pop(1))
-class D(d.datetime):
-    @classmethod
-    def now(cls, tz=None):
-        return clock
-d.datetime = D
-sys.argv[0] = "build.py"
-runpy.run_path("build.py", run_name="__main__")
-"""
-
 
 def build(clock: str, record: bool = True) -> Path:
     t = Path(tempfile.mkdtemp(prefix="stamp-"))
     shutil.copy(REPO / "build.py", t / "build.py")
     shutil.copytree(REPO / "static", t / "static")
     subprocess.run(["chmod", "-R", "u+w", str(t)], check=True)
-    (t / "wrap.py").write_text(WRAP)
     (t / "data" / "scan").mkdir(parents=True)
     (t / "data" / "history").mkdir()
     (t / "public").mkdir()
@@ -44,7 +31,7 @@ def build(clock: str, record: bool = True) -> Path:
     if record:
         (t / "data" / "history" / f"{DAY}.json").write_text(json.dumps({
             "date": DAY, "generated": SCAN, "sample": 1, "scanned": 1, "total": 1, "counts": {}, "any": 1, "by_language": {}, "added": [], "removed": []}))
-    r = subprocess.run([sys.executable, "-B", "wrap.py", clock, "--no-scan"], cwd=t, capture_output=True, text=True)
+    r = subprocess.run([sys.executable, "-B", "build.py", "--no-scan", "--now", clock], cwd=t, capture_output=True, text=True)
     assert r.returncode == 0, r.stderr + r.stdout
     return t
 
@@ -107,13 +94,17 @@ class Stamp(unittest.TestCase):
         self.assertNotIn("Site built at", llms)
         self.assertNotIn(ba["built_at"], llms)
 
-    def test_same_dir_rebuild_rewrites_nothing(self):
+    def test_same_dir_rebuild_changes_only_built_at(self):
         t = self.a
         snap = {str(p.relative_to(t)): p.read_bytes() for p in sorted((t / "public").rglob("*")) if p.is_file()}
-        r = subprocess.run([sys.executable, "-B", "wrap.py", DAY + "T23:00:00+00:00", "--no-scan"], cwd=t, capture_output=True, text=True)
+        r = subprocess.run([sys.executable, "-B", "build.py", "--no-scan", "--now", DAY + "T23:00:00+00:00"], cwd=t, capture_output=True, text=True)
         self.assertEqual(r.returncode, 0, r.stderr)
         after = {str(p.relative_to(t)): p.read_bytes() for p in sorted((t / "public").rglob("*")) if p.is_file()}
-        self.assertEqual(snap, after)
+        self.assertEqual(snap.keys(), after.keys())
+        self.assertEqual([k for k in snap if snap[k] != after[k]], ["public/build.json"])
+        old, new = json.loads(snap["public/build.json"]), json.loads(after["public/build.json"])
+        self.assertEqual(new["built_at"], DAY + "T23:00:00Z")
+        self.assertEqual({k for k in old.keys() | new.keys() if old.get(k) != new.get(k)}, {"built_at"})
 
     def test_no_record_falls_back_to_build_time(self):
         html = (self.n / "public" / "index.html").read_text()

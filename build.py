@@ -1531,13 +1531,7 @@ def main() -> int:
         "paths": [s["path"] for s in PATHS], "github_token": token_flag,
         "github_token_source": token_source,
     }
-    # T-0171: same data -> same bytes. If the previous build.json differs only in the build clock, keep its built_at/build_seconds
-    # (built_at then means: the last build that changed anything), so a --no-scan rebuild rewrites nothing.
-    old_bi = read_json(PUBLIC_DIR / "build.json", None)
-    if isinstance(old_bi, dict) and old_bi.get("built_at"):
-        clock = ("built_at", "build_seconds")
-        if {k: v for k, v in old_bi.items() if k not in clock} == {k: v for k, v in build_info.items() if k not in clock}:
-            build_info["built_at"], build_info["build_seconds"] = old_bi["built_at"], old_bi.get("build_seconds", build_info["build_seconds"])
+    # T-0179: built_at is the build clock on every build (--no-scan included); HTML/feed/llms stamps stay scan-timed.
     render_site(repos, agg, history, today, build_info, sample_details(repos, repos_doc["repos"], repos_doc.get("query") or {}, agg))
     log.info("build done in %.0fs: scanned_ok=%d pending=%d unreachable=%d data_delayed=%s", build_info["build_seconds"], len(agg["ok"]), len(agg["pending"]), len(agg["unreachable"]), delayed)
     return 0
