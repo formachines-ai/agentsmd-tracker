@@ -68,6 +68,7 @@ do not add dependencies outside the Python 3.12 standard library, no JavaScript 
   Dmitry, formachines.ai · updated <UTC>". Keep it in `layout()`.
 - **No tracking.** No cookies, no JavaScript, no analytics, no forms. Outbound clicks are counted from the server's
   standard access log through the `/go/<id>/` redirect pages (meta refresh) — that is the whole mechanism.
+- **Removed in 24 h**: `today.json` `removed` / `removed_count` and the dated line on `/` list a path only if it was a definite 200 in the repo's previous snapshot and is a definite 404 in today's fresh check; errors, partial or carried-over values and first scans never count. No reasons are given.
 - **Every number is dated and sourced**: `generated` / `built_at` in every JSON, the method section on the home page.
 - **Stats are CC BY 4.0**; linked files keep their repositories' licences. `/legal/` names the responsible person and
   links to https://formachines.ai/legal/.

@@ -983,11 +983,13 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
             + (f'no longer detected after the {esc(next(m["date"] for m in METHOD_CHANGES if m["path"] == x["path"]))} method change' if x.get("reason") == "method_change" else "removed")
             + '</li>' for x in removed) + "</ul>"
     removed_html += "".join(f'<p class="muted">Method change {esc(m["date"])}: <code>{esc(m["path"])}</code> detection, {esc(m["summary"])} (a change in how the scan reads the site, not in the repositories); <a href="{esc(m["url"])}">commit {esc(m["commit"])}</a>.</p>' for m in METHOD_CHANGES)
+    rl = sorted({(x["owner"], x["name"]) for x in removed})
+    removed_links = (" · " + ", ".join(f'<a href="/repo/{esc(o)}/{esc(n)}/">{esc(o)}/{esc(n)}</a>' for o, n in rl)) if rl else ""
     today_sec = f"""<section id="today">
 <h2>Added today <span class="muted">(scan of {esc(today.get('date', ''))} UTC)</span></h2>
 {today_html}
 {removed_html}
-<p class="asof" id="removed-24h">Removed in 24 h ({esc(gen_raw[:10])}): {len(removed)}</p>
+<p class="asof" id="removed-24h">Removed in 24 h on {esc(gen_raw[:10])}: {len(removed)}{removed_links}</p>
 <p class="muted">Machine-readable: <a href="/today.json">today.json</a> · <a href="/stats.json">stats.json</a> · <a href="/feed.xml">RSS of new AGENTS.md files</a>.</p>
 </section>"""
 
@@ -1354,7 +1356,7 @@ Latest (scan {generated}): {agg['counts'][PRIMARY_PATH]} of {total} scanned repo
 - first_seen in /repo/<owner>/<name>/index.json: per present path, the day it was first recorded as added for that repository ({{"date": YYYY-MM-DD}}); {{"date": ..., "baseline": true}} means the path was already present on the repository's own first_scanned day, so its real first appearance is unknown.
 - first_scanned in /repo/<owner>/<name>/index.json: YYYY-MM-DD, the earliest daily scan (data/history) that holds this repository; repositories added to the sample later have a later date than 2026-11-02.
 - history "added" / "removed" in stats.json: number of (repository, path) pairs whose file appeared / disappeared since the previous snapshot of the same repository, counted per day; a repository's first scan is a baseline and adds none.
-- removed / removed_count in today.json: files whose path was present in the previous snapshot of the same repository and returned a definite 404 today (network errors, timeouts, 403/429 and 5xx are unknown, never removals; a first scan is a baseline); removed_count = length of removed.
+- removed / removed_count in today.json: files whose path was a definite 200 in the previous snapshot of the same repository and a definite 404 in today's fresh check (errors, partial or carried-over values and first scans never count); removed_count = length of removed; the home page shows the same count as "Removed in 24 h on <date>: K".
 - [today.json]({SITE_BASE}/today.json): files added/removed since the previous scan
 - [feed.xml]({SITE_BASE}/feed.xml): RSS of repositories that added AGENTS.md
 - [build.json]({SITE_BASE}/build.json): build time, scan status, data-delayed flag
