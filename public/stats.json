@@ -57,6 +57,18 @@
   "AI_POLICY.md",
   ".github/AI_POLICY.md"
  ],
+ "tracked_since": {
+  "AGENTS.md": "2026-11-02",
+  "CLAUDE.md": "2026-11-02",
+  ".cursorrules": "2026-11-02",
+  ".cursor/rules": "2026-11-02",
+  ".github/copilot-instructions.md": "2026-11-02",
+  "llms.txt": "2026-11-02",
+  "GEMINI.md": "2026-11-02",
+  ".windsurfrules": "2026-11-02",
+  "AI_POLICY.md": "2026-11-16",
+  ".github/AI_POLICY.md": "2026-11-16"
+ },
  "counts": {
   "AGENTS.md": 561,
   "CLAUDE.md": 321,
