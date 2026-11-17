@@ -6,17 +6,17 @@
  "stars": 92559,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-16T04:24:55Z",
+ "checked": "2026-11-17T04:49:43Z",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 6,
+   "size": 12476,
    "url": "https://github.com/zed-industries/zed/blob/main/AGENTS.md",
    "lang_share": {
     "count": 89,
     "total": 198,
     "pct": 44.9,
-    "date": "2026-11-16",
+    "date": "2026-11-17",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/"
    },
@@ -25,20 +25,17 @@
    "go_url": "https://agentsmd.formachines.ai/go/1114/"
   },
   "CLAUDE.md": {
-   "present": true,
-   "size": 6,
-   "url": "https://github.com/zed-industries/zed/blob/main/CLAUDE.md",
+   "present": false,
+   "size": null,
+   "url": null,
    "lang_share": {
-    "count": 55,
+    "count": 54,
     "total": 198,
-    "pct": 27.8,
-    "date": "2026-11-16",
+    "pct": 27.3,
+    "date": "2026-11-17",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/"
-   },
-   "first_seen": "2026-11-02",
-   "first_seen_at_first_scan": true,
-   "go_url": "https://agentsmd.formachines.ai/go/1115/"
+   }
   },
   ".cursorrules": {
    "present": false,
@@ -48,7 +45,7 @@
     "count": 1,
     "total": 198,
     "pct": 0.5,
-    "date": "2026-11-16",
+    "date": "2026-11-17",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/"
    }
@@ -61,7 +58,7 @@
     "count": 5,
     "total": 198,
     "pct": 2.5,
-    "date": "2026-11-16",
+    "date": "2026-11-17",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/"
    }
@@ -74,7 +71,7 @@
     "count": 13,
     "total": 198,
     "pct": 6.6,
-    "date": "2026-11-16",
+    "date": "2026-11-17",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/"
    }
@@ -87,26 +84,23 @@
     "count": 3,
     "total": 198,
     "pct": 1.5,
-    "date": "2026-11-16",
+    "date": "2026-11-17",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/"
    }
   },
   "GEMINI.md": {
-   "present": true,
-   "size": 6,
-   "url": "https://github.com/zed-industries/zed/blob/main/GEMINI.md",
+   "present": false,
+   "size": null,
+   "url": null,
    "lang_share": {
-    "count": 4,
+    "count": 3,
     "total": 198,
-    "pct": 2.0,
-    "date": "2026-11-16",
+    "pct": 1.5,
+    "date": "2026-11-17",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/"
-   },
-   "first_seen": "2026-11-02",
-   "first_seen_at_first_scan": true,
-   "go_url": "https://agentsmd.formachines.ai/go/1116/"
+   }
   },
   ".windsurfrules": {
    "present": false,
@@ -116,7 +110,7 @@
     "count": 1,
     "total": 198,
     "pct": 0.5,
-    "date": "2026-11-16",
+    "date": "2026-11-17",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/"
    }
@@ -126,10 +120,10 @@
    "size": null,
    "url": null,
    "lang_share": {
-    "count": 8,
+    "count": 11,
     "total": 198,
-    "pct": 4.0,
-    "date": "2026-11-16",
+    "pct": 5.6,
+    "date": "2026-11-17",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/"
    }
@@ -142,7 +136,7 @@
     "count": 0,
     "total": 198,
     "pct": 0.0,
-    "date": "2026-11-16",
+    "date": "2026-11-17",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/"
    }
@@ -153,73 +147,65 @@
    "count": 89,
    "total": 198,
    "pct": 44.9,
-   "date": "2026-11-16"
+   "date": "2026-11-17"
   },
   "CLAUDE.md": {
-   "count": 55,
+   "count": 54,
    "total": 198,
-   "pct": 27.8,
-   "date": "2026-11-16"
+   "pct": 27.3,
+   "date": "2026-11-17"
   },
   ".cursorrules": {
    "count": 1,
    "total": 198,
    "pct": 0.5,
-   "date": "2026-11-16"
+   "date": "2026-11-17"
   },
   ".cursor/rules": {
    "count": 5,
    "total": 198,
    "pct": 2.5,
-   "date": "2026-11-16"
+   "date": "2026-11-17"
   },
   ".github/copilot-instructions.md": {
    "count": 13,
    "total": 198,
    "pct": 6.6,
-   "date": "2026-11-16"
+   "date": "2026-11-17"
   },
   "llms.txt": {
    "count": 3,
    "total": 198,
    "pct": 1.5,
-   "date": "2026-11-16"
+   "date": "2026-11-17"
   },
   "GEMINI.md": {
-   "count": 4,
+   "count": 3,
    "total": 198,
-   "pct": 2.0,
-   "date": "2026-11-16"
+   "pct": 1.5,
+   "date": "2026-11-17"
   },
   ".windsurfrules": {
    "count": 1,
    "total": 198,
    "pct": 0.5,
-   "date": "2026-11-16"
+   "date": "2026-11-17"
   },
   "AI_POLICY.md": {
-   "count": 8,
+   "count": 11,
    "total": 198,
-   "pct": 4.0,
-   "date": "2026-11-16"
+   "pct": 5.6,
+   "date": "2026-11-17"
   },
   ".github/AI_POLICY.md": {
    "count": 0,
    "total": 198,
    "pct": 0.0,
-   "date": "2026-11-16"
+   "date": "2026-11-17"
   }
  },
  "first_seen": {
   "AGENTS.md": {
-   "date": "2026-11-02",
-   "baseline": true
-  },
-  "CLAUDE.md": {
-   "date": "2026-11-02",
-   "baseline": true
-  },
-  "GEMINI.md": {
    "date": "2026-11-02",
    "baseline": true
   }

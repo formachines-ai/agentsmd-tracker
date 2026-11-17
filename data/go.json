@@ -1,5 +1,5 @@
 {
- "next_id": 1176,
+ "next_id": 1188,
  "links": {
   "affaan-m/ECC/AGENTS.md": {
    "id": 1,
@@ -7049,6 +7049,78 @@
    "id": 1175,
    "url": "https://github.com/Wilfred/difftastic/blob/master/AI_POLICY.md",
    "repo": "Wilfred/difftastic",
+   "path": "AI_POLICY.md"
+  },
+  "solidjs/solid/.cursor/rules": {
+   "id": 1176,
+   "url": "https://github.com/solidjs/solid/tree/main/.cursor/rules",
+   "repo": "solidjs/solid",
+   "path": ".cursor/rules"
+  },
+  "NginxProxyManager/nginx-proxy-manager/AGENTS.md": {
+   "id": 1177,
+   "url": "https://github.com/NginxProxyManager/nginx-proxy-manager/blob/develop/AGENTS.md",
+   "repo": "NginxProxyManager/nginx-proxy-manager",
+   "path": "AGENTS.md"
+  },
+  "NginxProxyManager/nginx-proxy-manager/CLAUDE.md": {
+   "id": 1178,
+   "url": "https://github.com/NginxProxyManager/nginx-proxy-manager/blob/develop/CLAUDE.md",
+   "repo": "NginxProxyManager/nginx-proxy-manager",
+   "path": "CLAUDE.md"
+  },
+  "glpi-project/glpi/AGENTS.md": {
+   "id": 1179,
+   "url": "https://github.com/glpi-project/glpi/blob/12.0/bugfixes/AGENTS.md",
+   "repo": "glpi-project/glpi",
+   "path": "AGENTS.md"
+  },
+  "clap-rs/clap/AI_POLICY.md": {
+   "id": 1180,
+   "url": "https://github.com/clap-rs/clap/blob/main/AI_POLICY.md",
+   "repo": "clap-rs/clap",
+   "path": "AI_POLICY.md"
+  },
+  "Kareadita/Kavita/.github/AI_POLICY.md": {
+   "id": 1181,
+   "url": "https://github.com/Kareadita/Kavita/blob/develop/.github/AI_POLICY.md",
+   "repo": "Kareadita/Kavita",
+   "path": ".github/AI_POLICY.md"
+  },
+  "musescore/MuseScore/AI_POLICY.md": {
+   "id": 1182,
+   "url": "https://github.com/musescore/MuseScore/blob/main/AI_POLICY.md",
+   "repo": "musescore/MuseScore",
+   "path": "AI_POLICY.md"
+  },
+  "nextcloud/all-in-one/AI_POLICY.md": {
+   "id": 1183,
+   "url": "https://github.com/nextcloud/all-in-one/blob/main/AI_POLICY.md",
+   "repo": "nextcloud/all-in-one",
+   "path": "AI_POLICY.md"
+  },
+  "pybind/pybind11/AI_POLICY.md": {
+   "id": 1184,
+   "url": "https://github.com/pybind/pybind11/blob/master/AI_POLICY.md",
+   "repo": "pybind/pybind11",
+   "path": "AI_POLICY.md"
+  },
+  "quarkusio/quarkus/AI_POLICY.md": {
+   "id": 1185,
+   "url": "https://github.com/quarkusio/quarkus/blob/main/AI_POLICY.md",
+   "repo": "quarkusio/quarkus",
+   "path": "AI_POLICY.md"
+  },
+  "rust-lang/rust-analyzer/AI_POLICY.md": {
+   "id": 1186,
+   "url": "https://github.com/rust-lang/rust-analyzer/blob/master/AI_POLICY.md",
+   "repo": "rust-lang/rust-analyzer",
+   "path": "AI_POLICY.md"
+  },
+  "transact-rs/sqlx/AI_POLICY.md": {
+   "id": 1187,
+   "url": "https://github.com/transact-rs/sqlx/blob/main/AI_POLICY.md",
+   "repo": "transact-rs/sqlx",
    "path": "AI_POLICY.md"
   }
  }

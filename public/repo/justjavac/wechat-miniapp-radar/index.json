@@ -6,17 +6,17 @@
  "stars": 51179,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-16T04:39:15Z",
+ "checked": "2026-11-17T05:04:19Z",
  "files": {
   "AGENTS.md": {
    "present": true,
    "size": 5604,
    "url": "https://github.com/justjavac/wechat-miniapp-radar/blob/main/AGENTS.md",
    "lang_share": {
-    "count": 102,
+    "count": 103,
     "total": 194,
-    "pct": 52.6,
-    "date": "2026-11-16",
+    "pct": 53.1,
+    "date": "2026-11-17",
     "language": "TypeScript",
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    },
@@ -29,10 +29,10 @@
    "size": null,
    "url": null,
    "lang_share": {
-    "count": 62,
+    "count": 63,
     "total": 194,
-    "pct": 32.0,
-    "date": "2026-11-16",
+    "pct": 32.5,
+    "date": "2026-11-17",
     "language": "TypeScript",
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    }
@@ -45,7 +45,7 @@
     "count": 4,
     "total": 194,
     "pct": 2.1,
-    "date": "2026-11-16",
+    "date": "2026-11-17",
     "language": "TypeScript",
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    }
@@ -55,10 +55,10 @@
    "size": null,
    "url": null,
    "lang_share": {
-    "count": 8,
+    "count": 9,
     "total": 194,
-    "pct": 4.1,
-    "date": "2026-11-16",
+    "pct": 4.6,
+    "date": "2026-11-17",
     "language": "TypeScript",
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    }
@@ -71,7 +71,7 @@
     "count": 19,
     "total": 194,
     "pct": 9.8,
-    "date": "2026-11-16",
+    "date": "2026-11-17",
     "language": "TypeScript",
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    }
@@ -84,7 +84,7 @@
     "count": 3,
     "total": 194,
     "pct": 1.5,
-    "date": "2026-11-16",
+    "date": "2026-11-17",
     "language": "TypeScript",
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    }
@@ -97,7 +97,7 @@
     "count": 3,
     "total": 194,
     "pct": 1.5,
-    "date": "2026-11-16",
+    "date": "2026-11-17",
     "language": "TypeScript",
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    }
@@ -110,7 +110,7 @@
     "count": 1,
     "total": 194,
     "pct": 0.5,
-    "date": "2026-11-16",
+    "date": "2026-11-17",
     "language": "TypeScript",
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    }
@@ -123,7 +123,7 @@
     "count": 3,
     "total": 194,
     "pct": 1.5,
-    "date": "2026-11-16",
+    "date": "2026-11-17",
     "language": "TypeScript",
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    }
@@ -136,7 +136,7 @@
     "count": 0,
     "total": 194,
     "pct": 0.0,
-    "date": "2026-11-16",
+    "date": "2026-11-17",
     "language": "TypeScript",
     "page": "https://agentsmd.formachines.ai/lang/typescript/"
    }
@@ -144,64 +144,64 @@
  },
  "language_share": {
   "AGENTS.md": {
-   "count": 102,
+   "count": 103,
    "total": 194,
-   "pct": 52.6,
-   "date": "2026-11-16"
+   "pct": 53.1,
+   "date": "2026-11-17"
   },
   "CLAUDE.md": {
-   "count": 62,
+   "count": 63,
    "total": 194,
-   "pct": 32.0,
-   "date": "2026-11-16"
+   "pct": 32.5,
+   "date": "2026-11-17"
   },
   ".cursorrules": {
    "count": 4,
    "total": 194,
    "pct": 2.1,
-   "date": "2026-11-16"
+   "date": "2026-11-17"
   },
   ".cursor/rules": {
-   "count": 8,
+   "count": 9,
    "total": 194,
-   "pct": 4.1,
-   "date": "2026-11-16"
+   "pct": 4.6,
+   "date": "2026-11-17"
   },
   ".github/copilot-instructions.md": {
    "count": 19,
    "total": 194,
    "pct": 9.8,
-   "date": "2026-11-16"
+   "date": "2026-11-17"
   },
   "llms.txt": {
    "count": 3,
    "total": 194,
    "pct": 1.5,
-   "date": "2026-11-16"
+   "date": "2026-11-17"
   },
   "GEMINI.md": {
    "count": 3,
    "total": 194,
    "pct": 1.5,
-   "date": "2026-11-16"
+   "date": "2026-11-17"
   },
   ".windsurfrules": {
    "count": 1,
    "total": 194,
    "pct": 0.5,
-   "date": "2026-11-16"
+   "date": "2026-11-17"
   },
   "AI_POLICY.md": {
    "count": 3,
    "total": 194,
    "pct": 1.5,
-   "date": "2026-11-16"
+   "date": "2026-11-17"
   },
   ".github/AI_POLICY.md": {
    "count": 0,
    "total": 194,
    "pct": 0.0,
-   "date": "2026-11-16"
+   "date": "2026-11-17"
   }
  },
  "first_seen": {

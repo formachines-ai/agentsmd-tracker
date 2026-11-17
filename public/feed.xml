@@ -6,8 +6,20 @@
 <atom:link href="https://agentsmd.formachines.ai/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Top GitHub repositories that added an AGENTS.md since the previous daily scan. Built by AI agents (agent-team), responsible: Dmitry, formachines.ai.</description>
 <language>en</language>
-<lastBuildDate>Mon, 16 Nov 2026 05:30:05 +0000</lastBuildDate>
+<lastBuildDate>Tue, 17 Nov 2026 05:30:03 +0000</lastBuildDate>
 <item>
+<title>NginxProxyManager/nginx-proxy-manager added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1177/</link>
+<guid isPermaLink="false">2026-11-17:NginxProxyManager/nginx-proxy-manager:AGENTS.md</guid>
+<pubDate>Tue, 17 Nov 2026 04:00:00 +0000</pubDate>
+<description>NginxProxyManager/nginx-proxy-manager (TypeScript, 34,615 stars) now has an AGENTS.md (6,955 bytes). Repo card: https://agentsmd.formachines.ai/repo/NginxProxyManager/nginx-proxy-manager/</description>
+</item><item>
+<title>glpi-project/glpi added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1179/</link>
+<guid isPermaLink="false">2026-11-17:glpi-project/glpi:AGENTS.md</guid>
+<pubDate>Tue, 17 Nov 2026 04:00:00 +0000</pubDate>
+<description>glpi-project/glpi (PHP, 6,548 stars) now has an AGENTS.md (729 bytes). Repo card: https://agentsmd.formachines.ai/repo/glpi-project/glpi/</description>
+</item><item>
 <title>stride3d/stride added AGENTS.md</title>
 <link>https://agentsmd.formachines.ai/go/1149/</link>
 <guid isPermaLink="false">2026-11-16:stride3d/stride:AGENTS.md</guid>

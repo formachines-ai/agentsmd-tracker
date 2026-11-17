@@ -1,15 +1,16 @@
 {
- "checked": "2026-11-16T04:24:55Z",
+ "checked": "2026-11-17T04:49:43Z",
  "status": "ok",
  "default_branch": "main",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 6
+   "size": 12476
   },
   "CLAUDE.md": {
-   "present": true,
-   "size": 6
+   "present": false,
+   "size": null,
+   "definite": true
   },
   ".cursorrules": {
    "present": false,
@@ -32,8 +33,9 @@
    "definite": true
   },
   "GEMINI.md": {
-   "present": true,
-   "size": 6
+   "present": false,
+   "size": null,
+   "definite": true
   },
   ".windsurfrules": {
    "present": false,
