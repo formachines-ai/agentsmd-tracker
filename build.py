@@ -78,6 +78,8 @@ PATHS: list[dict] = [
     {"path": ".windsurfrules", "kind": "file", "label": ".windsurfrules", "note": "Windsurf"},
     {"path": "AI_POLICY.md", "kind": "file", "label": "AI_POLICY.md", "note": "AI contribution policy (presence and size only)"},
     {"path": ".github/AI_POLICY.md", "kind": "file", "label": ".github/AI_POLICY.md", "note": "AI contribution policy in .github (presence and size only)"},
+    {"path": ".github/instructions", "kind": "dir", "label": ".github/instructions/", "note": "path-specific instruction files in .github (directory presence only)"},
+    {"path": ".claude/rules", "kind": "dir", "label": ".claude/rules/", "note": "rule files in .claude (directory presence only)"},
 ]
 PRIMARY_PATH = "AGENTS.md"
 
@@ -969,7 +971,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
 <p class="asof"><strong>Latest published scan: {esc(gen_txt)} UTC.</strong> A new scan starts daily at 04:00 UTC; results are published when it finishes. Numbers on this page are from the latest published scan{esc(stale_txt)}.</p>
 {sample_line}
 {coverage_line}
-<p class="limit">What this share measures: whether a listed file path exists at one of its fixed conventional locations on the default branch (AGENTS.md, CLAUDE.md, GEMINI.md, llms.txt, AI_POLICY.md, .cursorrules and .windsurfrules at the repository root; .github/copilot-instructions.md; .github/AI_POLICY.md; .cursor/rules/), in a sample of popular repositories per language. It is file presence only — not the quality or use of a file, and not all of GitHub.</p>
+<p class="limit">What this share measures: whether a listed file path exists at one of its fixed conventional locations on the default branch (AGENTS.md, CLAUDE.md, GEMINI.md, llms.txt, AI_POLICY.md, .cursorrules and .windsurfrules at the repository root; .github/copilot-instructions.md; .github/AI_POLICY.md; .cursor/rules/, .github/instructions/ and .claude/rules/ as directories), in a sample of popular repositories per language. It is file presence only — not the quality or use of a file, and not all of GitHub.</p>
 <p class="paths"><a href="#languages">Explore your language</a> · <a href="#method">See the sampling method</a></p>
 </section>"""
 
@@ -1039,7 +1041,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
 <h2>How it works</h2>
 <ul>
 <li><strong>Sample.</strong> {sample:,} public, non-fork, non-archived repositories with the most stars per language (GitHub Search API, collected once and extended over time). {len(agg['unreachable'])} are currently unreachable (moved or removed) and excluded.</li>
-<li><strong>Check.</strong> Once a day a HEAD request per path against the default branch: a <code>200</code> means the file exists, <code>Content-Length</code> is its size. <code>.cursor/rules/</code> is checked as a directory. Names are matched case-sensitively, exactly as the conventions spell them.</li>
+<li><strong>Check.</strong> Once a day a HEAD request per path against the default branch: a <code>200</code> means the file exists, <code>Content-Length</code> is its size. <code>.cursor/rules/</code>, <code>.github/instructions/</code> and <code>.claude/rules/</code> are checked as directories (presence only). A path's first scan is a baseline; days before it show \"not tracked\". Names are matched case-sensitively, exactly as the conventions spell them.</li>
 <li><strong>Paths checked.</strong> Only these {len(PATHS)} fixed locations on the default branch: {esc(paths_text())}. Nested files, for example in subdirectories or packages, are not checked.</li>
 <li><strong>Requests per repository.</strong> {len(PATHS)} path HEAD requests, plus 1 existence HEAD (only when every path is absent) and 1 moved-detection HEAD: {REQ_PER_REPO} requests at most ({token_text(bool(build_info.get('github_token')))}). AI_POLICY.md and .github/AI_POLICY.md: presence and size only, contents are never read. They count as 0 on days before their first scan; a path's first scan is a baseline, not an added entry.</li>
 <li><strong>Added today.</strong> A path present in today's scan and absent in the previous snapshot of the same repository. Links go to the file on GitHub via <code>/go/&lt;id&gt;/</code>, a plain redirect page.</li>

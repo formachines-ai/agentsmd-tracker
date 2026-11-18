@@ -145,6 +145,32 @@
     "language": "Python",
     "page": "https://agentsmd.formachines.ai/lang/python/"
    }
+  },
+  ".github/instructions": {
+   "present": null,
+   "size": null,
+   "url": null,
+   "lang_share": {
+    "count": 0,
+    "total": 197,
+    "pct": 0.0,
+    "date": "2026-11-18",
+    "language": "Python",
+    "page": "https://agentsmd.formachines.ai/lang/python/"
+   }
+  },
+  ".claude/rules": {
+   "present": null,
+   "size": null,
+   "url": null,
+   "lang_share": {
+    "count": 0,
+    "total": 197,
+    "pct": 0.0,
+    "date": "2026-11-18",
+    "language": "Python",
+    "page": "https://agentsmd.formachines.ai/lang/python/"
+   }
   }
  },
  "language_share": {
@@ -206,6 +232,18 @@
    "count": 1,
    "total": 197,
    "pct": 0.5,
+   "date": "2026-11-18"
+  },
+  ".github/instructions": {
+   "count": 0,
+   "total": 197,
+   "pct": 0.0,
+   "date": "2026-11-18"
+  },
+  ".claude/rules": {
+   "count": 0,
+   "total": 197,
+   "pct": 0.0,
    "date": "2026-11-18"
   }
  },
