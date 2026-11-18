@@ -1128,16 +1128,23 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
             shown = s["path"] + ("/" if s["kind"] == "dir" else "")
             share = ""
             lang_share = None
-            if lv and lv["repos"]:
+            meas = bool(ts0.get(s["path"]))   # T-0204: tracked_since null = not measured yet
+            if lv and lv["repos"] and not meas:
+                lang_share = {"count": None, "share": None, "pct": None, "total": None, "measured": False, "date": scan_date, "language": r["language"],
+                              "page": f"{SITE_BASE}/lang/{lang_slug(r['language'])}/"}
+                share = '<br><span class="muted">Not measured yet</span>'
+            elif lv and lv["repos"]:
                 lk, lt = lv[s["path"]], lv["repos"]
                 lang_share = {"count": lk, "total": lt, "pct": pct(lk, lt), "date": scan_date, "language": r["language"],
-                              "page": f"{SITE_BASE}/lang/{lang_slug(r['language'])}/"}
+                              "page": f"{SITE_BASE}/lang/{lang_slug(r['language'])}/", "measured": True}
                 share = (f'<br><span class="muted"><a href="/lang/{lang_slug(r["language"])}/">{lk:,} of {lt:,} top {esc(r["language"])} repos '
                          f'({pct(lk, lt)} %) on {esc(scan_date)}</a></span>')
             f = (sc or {}).get("files", {}).get(s["path"], {"present": None, "size": None})
-            present = f.get("present")
+            present = f.get("present") if meas else None
             url = file_url(r, s["path"], (sc or {}).get("default_branch"))
             files_json[s["path"]] = {"present": present, "size": f.get("size"), "url": url if present else None}
+            if not meas:
+                files_json[s["path"]]["measured"] = False
             if lang_share:
                 files_json[s["path"]]["lang_share"] = lang_share
                 language_share[s["path"]] = {k: lang_share[k] for k in ("count", "total", "pct", "date")}
@@ -1165,6 +1172,8 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
                 rows.append(f'<tr><td><code>{esc(shown)}</code><br>{openlink}{share}</td><td class="yes">yes</td><td>{size}</td><td><a href="{go.href(r, s["path"], url)}" rel="nofollow">open on GitHub</a></td></tr>')
             elif present is False:
                 rows.append(f'<tr><td><code>{esc(shown)}</code>{share}</td><td class="no">no</td><td>—</td><td></td></tr>')
+            elif not meas:
+                rows.append(f'<tr><td><code>{esc(shown)}</code>{share}</td><td class="muted">not measured yet</td><td>—</td><td></td></tr>')
             else:
                 rows.append(f'<tr><td><code>{esc(shown)}</code>{share}</td><td class="muted">not checked yet</td><td>—</td><td></td></tr>')
         status = (sc or {}).get("status", "pending")
@@ -1322,7 +1331,9 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
             cells = ""
             for sp in PATHS:
                 f = fl.get(sp["path"], {})
-                if f.get("present"):
+                if not ts0.get(sp["path"]):
+                    cells += '<td class="muted">not measured</td>'
+                elif f.get("present"):
                     href = go.href(r, sp["path"], file_url(r, sp["path"], sc.get("default_branch")))
                     cells += f'<td class="yes"><a href="{href}" rel="nofollow">yes</a></td>'
                 else:
@@ -1391,6 +1402,7 @@ Latest (scan {generated}): {agg['counts'][PRIMARY_PATH]} of {total} scanned repo
 - combos in stats.json: date, total (scanned repos) and integer counts both (= both_agents_claude), agents_only, claude_only, neither and unknown (sample repos without a result for both types: unreachable or pending); the five sum to sample_size (presence of AGENTS.md and CLAUDE.md only).
 - combinations example ({generated[:10]}): agents_only {agg['combo']['agents_only']}, claude_only {agg['combo']['claude_only']}, both {agg['combo']['both']}, neither {agg['combo']['neither']}, agents_and_copilot {agg['combo']['agents_and_copilot']} of {total} scanned repos, date {generated[:10]}.
 - null and measured:false in stats.json: a path with tracked_since null has not been measured yet (no first scan recorded). Its counts, shares and by_language values are null and measured is false; this is not "checked, found nowhere" and must not be read as 0 or 0.0 %. Measured paths have measured:true.
+- null presence on repo cards: in /repo/<owner>/<name>/index.json a null present, or lang_share with measured:false (count and share null), means that path is not measured yet (no first scan recorded), not "checked, absent". Measured paths keep their values.
 - tracked_since in stats.json: path -> date of that path's first scan; history[] counts of 0 before that date were not measured, and the first-scan counts are a baseline, not added files.
 - sizes in stats.json holds two size schemes for AGENTS.md and CLAUDE.md: buckets (lt_2k <2048, 2k_8k, 8k_32k up to 32768 inclusive, gt_32k >32768 bytes) and bands (lt_1k <1024, 1k_4k, 4k_16k, 16k_32k up to 32768 inclusive, gt_32k >32768 bytes, unknown); the gt_32k counts of both are the same threshold (32 KiB = 32768 bytes).
 - sizes in stats.json, AGENTS.md and CLAUDE.md entries also bands: lt_1k, 1k_4k, 4k_16k, 16k_32k (up to 32768 inclusive), gt_32k (>32 KiB) and unknown (present, no size), counts summing to the number of repos with the file (KiB = 1024 bytes).

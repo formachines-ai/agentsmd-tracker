@@ -33,7 +33,7 @@ def run_build(with_new):
         {"id": 1, "full_name": "o/a", "owner": "o", "name": "a", "language": "Python", "stars": 9, "default_branch": "main"}]}))
     (t / "data" / "scan" / "o__a.json").write_text(json.dumps({"checked": SCAN, "status": "ok", "default_branch": "main",
                                                                "files": {"AGENTS.md": {"present": True, "size": 10},
-                                                                         **({NEW[1]: {"present": True, "size": None}} if with_new else {})}}))
+                                                                         **({NEW[0]: {"present": False, "size": None}, NEW[1]: {"present": True, "size": None}} if with_new else {})}}))
     base = {s["path"]: 0 for s in build.PATHS if s["path"] not in NEW}
     base["AGENTS.md"] = 1
     counts = {**base, **({NEW[0]: 0, NEW[1]: 1} if with_new else {})}
@@ -71,6 +71,25 @@ class UnmeasuredPaths(unittest.TestCase):
             self.assertIn("Not measured yet", m.group(1))
             self.assertNotIn(" of ", m.group(1))
             self.assertNotIn("%", m.group(1))
+        card = (pub / "repo" / "o" / "a" / "index.html").read_text()
+        cj = json.loads((pub / "repo" / "o" / "a" / "index.json").read_text())
+        lang = (pub / "lang" / "python" / "index.html").read_text()
+        for p in NEW:
+            self.assertIsNone(cj["files"][p]["present"])
+            ls = cj["files"][p]["lang_share"]
+            self.assertIs(ls["measured"], False)
+            self.assertIsNone(ls["count"])
+            self.assertIsNone(ls["share"])
+            m = re.search(r'<tr><td><code>' + re.escape(p) + r'/</code>(.*?)</tr>', card, re.S)
+            self.assertIn("Not measured yet", m.group(1))
+            self.assertIn("not measured yet", m.group(1))
+            for bad in (" of ", "0.0", "%", ">no<"):
+                self.assertNotIn(bad, m.group(1))
+        self.assertEqual(lang.count('<td class="muted">not measured</td>'), 2)
+        self.assertEqual(cj["files"]["AGENTS.md"]["present"], True)
+        self.assertEqual(cj["files"]["AGENTS.md"]["lang_share"]["count"], 1)
+        self.assertIs(cj["files"]["AGENTS.md"]["lang_share"]["measured"], True)
+        self.assertIn("null presence on repo cards", (pub / "llms.txt").read_text())
         self.assertIn("null", (pub / "llms.txt").read_text())
         self.assertIn("measured:false", (pub / "llms.txt").read_text())
 
@@ -90,6 +109,14 @@ class UnmeasuredPaths(unittest.TestCase):
         self.assertIn("Measured since 2026-11-18", m.group(1))
         self.assertIn("1 repos checked", m.group(1))
         self.assertNotIn("Not measured yet", (pub / "lang" / "python" / "index.html").read_text())
+        self.assertNotIn("not measured", (pub / "lang" / "python" / "index.html").read_text())
+        card = (pub / "repo" / "o" / "a" / "index.html").read_text()
+        self.assertNotIn("ot measured yet", card)
+        cj = json.loads((pub / "repo" / "o" / "a" / "index.json").read_text())
+        self.assertIs(cj["files"][NEW[0]]["present"], False)
+        self.assertIs(cj["files"][NEW[1]]["present"], True)
+        self.assertEqual(cj["files"][NEW[1]]["lang_share"]["count"], 1)
+        self.assertIs(cj["files"][NEW[1]]["lang_share"]["measured"], True)
 
 
 if __name__ == "__main__":

@@ -18,7 +18,8 @@
     "pct": 25.0,
     "date": "2026-11-18",
     "language": "Java",
-    "page": "https://agentsmd.formachines.ai/lang/java/"
+    "page": "https://agentsmd.formachines.ai/lang/java/",
+    "measured": true
    }
   },
   "CLAUDE.md": {
@@ -31,7 +32,8 @@
     "pct": 10.4,
     "date": "2026-11-18",
     "language": "Java",
-    "page": "https://agentsmd.formachines.ai/lang/java/"
+    "page": "https://agentsmd.formachines.ai/lang/java/",
+    "measured": true
    }
   },
   ".cursorrules": {
@@ -44,7 +46,8 @@
     "pct": 0.0,
     "date": "2026-11-18",
     "language": "Java",
-    "page": "https://agentsmd.formachines.ai/lang/java/"
+    "page": "https://agentsmd.formachines.ai/lang/java/",
+    "measured": true
    }
   },
   ".cursor/rules": {
@@ -57,7 +60,8 @@
     "pct": 0.5,
     "date": "2026-11-18",
     "language": "Java",
-    "page": "https://agentsmd.formachines.ai/lang/java/"
+    "page": "https://agentsmd.formachines.ai/lang/java/",
+    "measured": true
    }
   },
   ".github/copilot-instructions.md": {
@@ -70,7 +74,8 @@
     "pct": 6.2,
     "date": "2026-11-18",
     "language": "Java",
-    "page": "https://agentsmd.formachines.ai/lang/java/"
+    "page": "https://agentsmd.formachines.ai/lang/java/",
+    "measured": true
    },
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true,
@@ -86,7 +91,8 @@
     "pct": 0.0,
     "date": "2026-11-18",
     "language": "Java",
-    "page": "https://agentsmd.formachines.ai/lang/java/"
+    "page": "https://agentsmd.formachines.ai/lang/java/",
+    "measured": true
    }
   },
   "GEMINI.md": {
@@ -99,7 +105,8 @@
     "pct": 0.0,
     "date": "2026-11-18",
     "language": "Java",
-    "page": "https://agentsmd.formachines.ai/lang/java/"
+    "page": "https://agentsmd.formachines.ai/lang/java/",
+    "measured": true
    }
   },
   ".windsurfrules": {
@@ -112,7 +119,8 @@
     "pct": 0.0,
     "date": "2026-11-18",
     "language": "Java",
-    "page": "https://agentsmd.formachines.ai/lang/java/"
+    "page": "https://agentsmd.formachines.ai/lang/java/",
+    "measured": true
    }
   },
   "AI_POLICY.md": {
@@ -125,7 +133,8 @@
     "pct": 1.0,
     "date": "2026-11-18",
     "language": "Java",
-    "page": "https://agentsmd.formachines.ai/lang/java/"
+    "page": "https://agentsmd.formachines.ai/lang/java/",
+    "measured": true
    }
   },
   ".github/AI_POLICY.md": {
@@ -138,17 +147,21 @@
     "pct": 0.0,
     "date": "2026-11-18",
     "language": "Java",
-    "page": "https://agentsmd.formachines.ai/lang/java/"
+    "page": "https://agentsmd.formachines.ai/lang/java/",
+    "measured": true
    }
   },
   ".github/instructions": {
    "present": null,
    "size": null,
    "url": null,
+   "measured": false,
    "lang_share": {
-    "count": 0,
-    "total": 192,
-    "pct": 0.0,
+    "count": null,
+    "share": null,
+    "pct": null,
+    "total": null,
+    "measured": false,
     "date": "2026-11-18",
     "language": "Java",
     "page": "https://agentsmd.formachines.ai/lang/java/"
@@ -158,10 +171,13 @@
    "present": null,
    "size": null,
    "url": null,
+   "measured": false,
    "lang_share": {
-    "count": 0,
-    "total": 192,
-    "pct": 0.0,
+    "count": null,
+    "share": null,
+    "pct": null,
+    "total": null,
+    "measured": false,
     "date": "2026-11-18",
     "language": "Java",
     "page": "https://agentsmd.formachines.ai/lang/java/"
@@ -230,15 +246,15 @@
    "date": "2026-11-18"
   },
   ".github/instructions": {
-   "count": 0,
-   "total": 192,
-   "pct": 0.0,
+   "count": null,
+   "total": null,
+   "pct": null,
    "date": "2026-11-18"
   },
   ".claude/rules": {
-   "count": 0,
-   "total": 192,
-   "pct": 0.0,
+   "count": null,
+   "total": null,
+   "pct": null,
    "date": "2026-11-18"
   }
  },

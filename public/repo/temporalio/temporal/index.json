@@ -18,7 +18,8 @@
     "pct": 34.2,
     "date": "2026-11-18",
     "language": "Go",
-    "page": "https://agentsmd.formachines.ai/lang/go/"
+    "page": "https://agentsmd.formachines.ai/lang/go/",
+    "measured": true
    },
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true,
@@ -34,7 +35,8 @@
     "pct": 23.3,
     "date": "2026-11-18",
     "language": "Go",
-    "page": "https://agentsmd.formachines.ai/lang/go/"
+    "page": "https://agentsmd.formachines.ai/lang/go/",
+    "measured": true
    }
   },
   ".cursorrules": {
@@ -47,7 +49,8 @@
     "pct": 0.5,
     "date": "2026-11-18",
     "language": "Go",
-    "page": "https://agentsmd.formachines.ai/lang/go/"
+    "page": "https://agentsmd.formachines.ai/lang/go/",
+    "measured": true
    }
   },
   ".cursor/rules": {
@@ -60,7 +63,8 @@
     "pct": 1.0,
     "date": "2026-11-18",
     "language": "Go",
-    "page": "https://agentsmd.formachines.ai/lang/go/"
+    "page": "https://agentsmd.formachines.ai/lang/go/",
+    "measured": true
    },
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true,
@@ -76,7 +80,8 @@
     "pct": 7.3,
     "date": "2026-11-18",
     "language": "Go",
-    "page": "https://agentsmd.formachines.ai/lang/go/"
+    "page": "https://agentsmd.formachines.ai/lang/go/",
+    "measured": true
    },
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true,
@@ -92,7 +97,8 @@
     "pct": 1.6,
     "date": "2026-11-18",
     "language": "Go",
-    "page": "https://agentsmd.formachines.ai/lang/go/"
+    "page": "https://agentsmd.formachines.ai/lang/go/",
+    "measured": true
    }
   },
   "GEMINI.md": {
@@ -105,7 +111,8 @@
     "pct": 1.0,
     "date": "2026-11-18",
     "language": "Go",
-    "page": "https://agentsmd.formachines.ai/lang/go/"
+    "page": "https://agentsmd.formachines.ai/lang/go/",
+    "measured": true
    }
   },
   ".windsurfrules": {
@@ -118,7 +125,8 @@
     "pct": 0.0,
     "date": "2026-11-18",
     "language": "Go",
-    "page": "https://agentsmd.formachines.ai/lang/go/"
+    "page": "https://agentsmd.formachines.ai/lang/go/",
+    "measured": true
    }
   },
   "AI_POLICY.md": {
@@ -131,7 +139,8 @@
     "pct": 1.6,
     "date": "2026-11-18",
     "language": "Go",
-    "page": "https://agentsmd.formachines.ai/lang/go/"
+    "page": "https://agentsmd.formachines.ai/lang/go/",
+    "measured": true
    }
   },
   ".github/AI_POLICY.md": {
@@ -144,17 +153,21 @@
     "pct": 0.0,
     "date": "2026-11-18",
     "language": "Go",
-    "page": "https://agentsmd.formachines.ai/lang/go/"
+    "page": "https://agentsmd.formachines.ai/lang/go/",
+    "measured": true
    }
   },
   ".github/instructions": {
    "present": null,
    "size": null,
    "url": null,
+   "measured": false,
    "lang_share": {
-    "count": 0,
-    "total": 193,
-    "pct": 0.0,
+    "count": null,
+    "share": null,
+    "pct": null,
+    "total": null,
+    "measured": false,
     "date": "2026-11-18",
     "language": "Go",
     "page": "https://agentsmd.formachines.ai/lang/go/"
@@ -164,10 +177,13 @@
    "present": null,
    "size": null,
    "url": null,
+   "measured": false,
    "lang_share": {
-    "count": 0,
-    "total": 193,
-    "pct": 0.0,
+    "count": null,
+    "share": null,
+    "pct": null,
+    "total": null,
+    "measured": false,
     "date": "2026-11-18",
     "language": "Go",
     "page": "https://agentsmd.formachines.ai/lang/go/"
@@ -236,15 +252,15 @@
    "date": "2026-11-18"
   },
   ".github/instructions": {
-   "count": 0,
-   "total": 193,
-   "pct": 0.0,
+   "count": null,
+   "total": null,
+   "pct": null,
    "date": "2026-11-18"
   },
   ".claude/rules": {
-   "count": 0,
-   "total": 193,
-   "pct": 0.0,
+   "count": null,
+   "total": null,
+   "pct": null,
    "date": "2026-11-18"
   }
  },
