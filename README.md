@@ -46,7 +46,7 @@ runs `build.py`.
 python3 -B -m unittest discover -s tests -t .
 ```
 
-Runs every `tests/test_*.py` (32 files) from the repository root. Offline and read-only: no network, nothing is
+Runs every `tests/test_*.py` (42 files) from the repository root. Offline and read-only: no network, nothing is
 written to the checkout (tests that build use a temp copy), so it also passes after `chmod -R a-w .`. Python 3.12
 standard library only.
 
@@ -90,7 +90,7 @@ do not add dependencies outside the Python 3.12 standard library, no JavaScript 
   `CLAUDE.md`, `.cursorrules`, `.cursor/rules`, `.github/copilot-instructions.md`, `llms.txt`, `GEMINI.md`,
   `.windsurfrules`, `AI_POLICY.md`, `.github/AI_POLICY.md`, `.github/instructions`, `.claude/rules`) + 1 existence HEAD to `github.com/<owner>/<name>` (only when all 12 paths are absent; otherwise the
   repo makes 13) + 1 moved-detection HEAD to `github.com/<owner>/<name>` (below).
-- Scan-time estimate (an estimate, not a promise): `PAUSE_S` = 0.08 s after every request, so the pacing alone is
+- Scan-time estimate (an estimate, not a promise; formula = `REQ_PER_REPO` × repos × `PAUSE_S`, `REQ_PER_REPO` = `len(PATHS)` + 2, checked by `tests/test_readme_facts.py`): `PAUSE_S` = 0.08 s after every request, so the pacing alone is
   14 requests × 1 922 repos × 0.08 s = 2 152.6 s ≈ 36 min. Network latency of the requests comes on top and
   dominates in practice (earlier runs: ~2–3 s per repo, i.e. up to about 1.5 h for 2 000 repos);
   `--max-seconds` keeps a cron run bounded.

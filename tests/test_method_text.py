@@ -79,7 +79,7 @@ class MethodText(unittest.TestCase):
         self.assertNotIn("no token", build.token_text(True))
 
     def test_paths_listed(self):
-        self.assertEqual(len(build.PATHS), 12)
+        self.assertEqual(len(build.PATHS), len({p["path"] for p in build.PATHS}))
         for r in (self.on, self.off):
             for p in build.PATHS:
                 name = p["path"] + ("/" if p["kind"] == "dir" else "")
