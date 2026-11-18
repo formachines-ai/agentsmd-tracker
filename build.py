@@ -933,7 +933,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
     combo_sec = f"""<section id="combinations">
 <h2>File combinations on {esc(gen_raw[:10])}</h2>
 {combos_line}
-<div class="scroll"><table><thead><tr><th>Combination</th><th>Repos</th><th>% of {total:,}</th></tr></thead><tbody>{fc_rows}</tbody></table></div>
+<div class="scroll table-wrap"><table><thead><tr><th>Combination</th><th>Repos</th><th>% of {total:,}</th></tr></thead><tbody>{fc_rows}</tbody></table></div>
 <h3>Other co-existence counts</h3>
 <ul>{cb_lines}</ul>
 <p class="muted">Presence and byte size only, from the scan dated {esc(gen_raw[:10])}; <a href="/stats.json">stats.json</a> field <code>combinations</code>.</p>
@@ -995,7 +995,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
     heads = "".join(f'<th><code>{esc(s["label"])}</code></th>' for s in PATHS)
     lang_table = f"""<section id="languages">
 <h2>By language</h2>
-<div class="scroll"><table>
+<div class="scroll table-wrap"><table>
 <thead><tr><th>Language</th><th>Repos</th><th>Any file</th>{heads}</tr></thead>
 <tbody>{''.join(rows)}</tbody>
 <tfoot><tr><th scope="row">All</th><td>{total}</td><td>{any_n}<span class="pc"> ({pct(any_n, total)} %)</span></td>{''.join((f'<td>{agg["counts"][s["path"]]}<span class="pc"> ({pct(agg["counts"][s["path"]], total)} %)</span></td>' if ts0.get(s["path"]) else '<td class="muted">Not measured yet</td>') for s in PATHS)}</tr></tfoot>
@@ -1044,7 +1044,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
         for d in reversed(history[-14:]))
     hist_sec = f"""<section id="history">
 <h2>By day</h2>
-<div class="scroll"><table><thead><tr><th>Date (UTC)</th><th>Scanned</th>{heads}</tr></thead><tbody>{hist_rows}</tbody></table></div>
+<div class="scroll table-wrap"><table><thead><tr><th>Date (UTC)</th><th>Scanned</th>{heads}</tr></thead><tbody>{hist_rows}</tbody></table></div>
 <p class="muted">Counts are absolute; the sample can grow, so compare shares (see the sparklines above) rather than raw counts across days. Full history: <a href="/stats.json">stats.json</a>.</p>
 {base_line}
 </section>"""
@@ -1222,7 +1222,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
 {facts_line}{files_line}
 <p class="lead">{esc(r['language'])} · {r['stars']:,} stars · default branch <code>{esc((sc or {}).get('default_branch') or r.get('default_branch') or 'main')}</code> · <a href="{esc(r.get('html_url') or GH_BASE + '/' + r['full_name'])}" rel="nofollow">repository on GitHub</a></p>
 <p class="muted">Scan status: {esc(status)} · last checked {esc(checked)} · <a href="/repo/{esc(r['owner'])}/{esc(r['name'])}/index.json">index.json</a></p>
-<div class="scroll"><table><thead><tr><th>Path</th><th>Present</th><th>Size</th><th>Link</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div>
+<div class="scroll table-wrap"><table><thead><tr><th>Path</th><th>Present</th><th>Size</th><th>Link</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div>
 {feedback_links(r)}
 <p class="muted">Only presence, size and a link are published; the file contents belong to the repository and are not reproduced here.</p>
 {lang_line}
@@ -1374,7 +1374,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
 <h1>AGENTS.md in {esc(lang)} repositories</h1>
 <p class="lead">{esc(l_sentence)} Data: <a href="/">home page</a>, <a href="/stats.json">stats.json</a>.</p>
 <p class="muted">Stats CC BY 4.0, cite as "{esc(SITE_NAME)}, {esc(SITE_HOST)}". Sorted alphabetically by owner/name — not a ranking.</p>
-{agents_sec}<div class="scroll"><table><thead><tr><th>Repository</th>{heads}</tr></thead><tbody>{''.join(trs)}</tbody></table></div>
+{agents_sec}<div class="scroll table-wrap"><table><thead><tr><th>Repository</th>{heads}</tr></thead><tbody>{''.join(trs)}</tbody></table></div>
 {other_sec}</section>"""
         l_day = (today.get("generated") or (history[-1].get("generated") if history else None) or updated)[:10]
         l_n, l_m, l_c = v[PRIMARY_PATH], v["repos"], v["CLAUDE.md"]
