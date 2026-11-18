@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-17T04:49:39Z",
+ "checked": "2026-11-18T05:14:19Z",
  "status": "ok",
  "default_branch": "main",
  "files": {
@@ -28,7 +28,7 @@
   },
   "llms.txt": {
    "present": true,
-   "size": 3664
+   "size": 3565
   },
   "GEMINI.md": {
    "present": false,

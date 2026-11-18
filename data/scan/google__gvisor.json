@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-16T05:27:32Z",
+ "checked": "2026-11-18T04:21:43Z",
  "status": "ok",
  "default_branch": "master",
  "files": {
@@ -53,6 +53,6 @@
    "definite": true
   }
  },
- "moved_to": null,
- "moved_detected": null
+ "moved_to": "gvisor/gvisor",
+ "moved_detected": "2026-11-18"
 }

@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-16T05:06:22Z",
- "status": "ok",
+ "checked": "2026-11-18T04:01:14Z",
+ "status": "unreachable",
  "default_branch": "master",
  "files": {
   "AGENTS.md": {
@@ -54,6 +54,6 @@
    "definite": true
   }
  },
- "moved_to": null,
- "moved_detected": null
+ "moved_to": "TelegramMessenger/Telegram-Android",
+ "moved_detected": "2026-11-18"
 }

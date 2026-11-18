@@ -1,5 +1,5 @@
 {
- "next_id": 1188,
+ "next_id": 1191,
  "links": {
   "affaan-m/ECC/AGENTS.md": {
    "id": 1,
@@ -7122,6 +7122,24 @@
    "url": "https://github.com/transact-rs/sqlx/blob/main/AI_POLICY.md",
    "repo": "transact-rs/sqlx",
    "path": "AI_POLICY.md"
+  },
+  "microsoft/TypeScript/AGENTS.md": {
+   "id": 1188,
+   "url": "https://github.com/microsoft/TypeScript/blob/main/AGENTS.md",
+   "repo": "microsoft/TypeScript",
+   "path": "AGENTS.md"
+  },
+  "jasontaylordev/CleanArchitecture/AGENTS.md": {
+   "id": 1189,
+   "url": "https://github.com/jasontaylordev/CleanArchitecture/blob/main/AGENTS.md",
+   "repo": "jasontaylordev/CleanArchitecture",
+   "path": "AGENTS.md"
+  },
+  "JustArchiNET/ArchiSteamFarm/AGENTS.md": {
+   "id": 1190,
+   "url": "https://github.com/JustArchiNET/ArchiSteamFarm/blob/main/AGENTS.md",
+   "repo": "JustArchiNET/ArchiSteamFarm",
+   "path": "AGENTS.md"
   }
  }
 }

@@ -1,11 +1,11 @@
 {
- "checked": "2026-11-16T05:23:26Z",
+ "checked": "2026-11-18T04:17:46Z",
  "status": "ok",
  "default_branch": "master",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 1846
+   "size": 2250
   },
   "CLAUDE.md": {
    "present": false,
@@ -24,7 +24,7 @@
   },
   ".github/copilot-instructions.md": {
    "present": true,
-   "size": 10098
+   "size": 10082
   },
   "llms.txt": {
    "present": false,

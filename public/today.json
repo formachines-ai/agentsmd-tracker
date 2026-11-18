@@ -1,86 +1,76 @@
 {
  "schema_version": 2,
  "site": "https://agentsmd.formachines.ai",
- "date": "2026-11-17",
- "generated": "2026-11-17T05:30:03Z",
+ "date": "2026-11-18",
+ "generated": "2026-11-18T05:30:03Z",
  "license": "CC BY 4.0",
  "added": [
   {
-   "full_name": "solidjs/solid",
-   "owner": "solidjs",
-   "name": "solid",
-   "language": "TypeScript",
-   "stars": 36207,
-   "path": ".cursor/rules",
-   "size": null,
-   "url": "https://github.com/solidjs/solid/tree/main/.cursor/rules"
-  },
-  {
-   "full_name": "NginxProxyManager/nginx-proxy-manager",
-   "owner": "NginxProxyManager",
-   "name": "nginx-proxy-manager",
-   "language": "TypeScript",
-   "stars": 34615,
+   "full_name": "microsoft/TypeScript",
+   "owner": "microsoft",
+   "name": "TypeScript",
+   "language": "Go",
+   "stars": 111721,
    "path": "AGENTS.md",
-   "size": 6955,
-   "url": "https://github.com/NginxProxyManager/nginx-proxy-manager/blob/develop/AGENTS.md"
+   "size": 6521,
+   "url": "https://github.com/microsoft/TypeScript/blob/main/AGENTS.md"
   },
   {
-   "full_name": "NginxProxyManager/nginx-proxy-manager",
-   "owner": "NginxProxyManager",
-   "name": "nginx-proxy-manager",
-   "language": "TypeScript",
-   "stars": 34615,
-   "path": "CLAUDE.md",
-   "size": 11,
-   "url": "https://github.com/NginxProxyManager/nginx-proxy-manager/blob/develop/CLAUDE.md"
-  },
-  {
-   "full_name": "glpi-project/glpi",
-   "owner": "glpi-project",
-   "name": "glpi",
-   "language": "PHP",
-   "stars": 6548,
+   "full_name": "jasontaylordev/CleanArchitecture",
+   "owner": "jasontaylordev",
+   "name": "CleanArchitecture",
+   "language": "C#",
+   "stars": 20701,
    "path": "AGENTS.md",
-   "size": 729,
-   "url": "https://github.com/glpi-project/glpi/blob/12.0/bugfixes/AGENTS.md"
+   "size": 7144,
+   "url": "https://github.com/jasontaylordev/CleanArchitecture/blob/main/AGENTS.md"
+  },
+  {
+   "full_name": "JustArchiNET/ArchiSteamFarm",
+   "owner": "JustArchiNET",
+   "name": "ArchiSteamFarm",
+   "language": "C#",
+   "stars": 13784,
+   "path": "AGENTS.md",
+   "size": 6659,
+   "url": "https://github.com/JustArchiNET/ArchiSteamFarm/blob/main/AGENTS.md"
   }
  ],
  "removed": [
   {
-   "full_name": "zed-industries/zed",
-   "owner": "zed-industries",
-   "name": "zed",
-   "language": "Rust",
-   "stars": 92559,
-   "path": "CLAUDE.md",
+   "full_name": "microsoft/TypeScript",
+   "owner": "microsoft",
+   "name": "TypeScript",
+   "language": "Go",
+   "stars": 111721,
+   "path": ".github/copilot-instructions.md",
    "size": null,
-   "url": "https://github.com/zed-industries/zed/blob/main/CLAUDE.md"
+   "url": "https://github.com/microsoft/TypeScript/blob/main/.github/copilot-instructions.md"
   },
   {
-   "full_name": "zed-industries/zed",
-   "owner": "zed-industries",
-   "name": "zed",
-   "language": "Rust",
-   "stars": 92559,
-   "path": "GEMINI.md",
+   "full_name": "jgraph/drawio-desktop",
+   "owner": "jgraph",
+   "name": "drawio-desktop",
+   "language": "JavaScript",
+   "stars": 63773,
+   "path": "CLAUDE.md",
    "size": null,
-   "url": "https://github.com/zed-industries/zed/blob/main/GEMINI.md"
+   "url": "https://github.com/jgraph/drawio-desktop/blob/dev/CLAUDE.md"
   }
  ],
  "removed_count": 2,
  "counts": {
-  "AGENTS.md": 563,
-  "CLAUDE.md": 321,
+  "AGENTS.md": 565,
+  "CLAUDE.md": 320,
   ".cursorrules": 16,
   ".cursor/rules": 33,
-  ".github/copilot-instructions.md": 158,
+  ".github/copilot-instructions.md": 156,
   "llms.txt": 17,
   "GEMINI.md": 20,
   ".windsurfrules": 5,
   "AI_POLICY.md": 32,
   ".github/AI_POLICY.md": 2
  },
- "scanned": 1921,
+ "scanned": 1919,
  "pending": 0
 }

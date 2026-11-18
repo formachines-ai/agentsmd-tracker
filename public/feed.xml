@@ -6,8 +6,26 @@
 <atom:link href="https://agentsmd.formachines.ai/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Top GitHub repositories that added an AGENTS.md since the previous daily scan. Built by AI agents (agent-team), responsible: Dmitry, formachines.ai.</description>
 <language>en</language>
-<lastBuildDate>Tue, 17 Nov 2026 05:30:03 +0000</lastBuildDate>
+<lastBuildDate>Wed, 18 Nov 2026 05:30:03 +0000</lastBuildDate>
 <item>
+<title>microsoft/TypeScript added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1188/</link>
+<guid isPermaLink="false">2026-11-18:microsoft/TypeScript:AGENTS.md</guid>
+<pubDate>Wed, 18 Nov 2026 04:00:00 +0000</pubDate>
+<description>microsoft/TypeScript (Go, 111,721 stars) now has an AGENTS.md (6,521 bytes). Repo card: https://agentsmd.formachines.ai/repo/microsoft/TypeScript/</description>
+</item><item>
+<title>jasontaylordev/CleanArchitecture added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1189/</link>
+<guid isPermaLink="false">2026-11-18:jasontaylordev/CleanArchitecture:AGENTS.md</guid>
+<pubDate>Wed, 18 Nov 2026 04:00:00 +0000</pubDate>
+<description>jasontaylordev/CleanArchitecture (C#, 20,701 stars) now has an AGENTS.md (7,144 bytes). Repo card: https://agentsmd.formachines.ai/repo/jasontaylordev/CleanArchitecture/</description>
+</item><item>
+<title>JustArchiNET/ArchiSteamFarm added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1190/</link>
+<guid isPermaLink="false">2026-11-18:JustArchiNET/ArchiSteamFarm:AGENTS.md</guid>
+<pubDate>Wed, 18 Nov 2026 04:00:00 +0000</pubDate>
+<description>JustArchiNET/ArchiSteamFarm (C#, 13,784 stars) now has an AGENTS.md (6,659 bytes). Repo card: https://agentsmd.formachines.ai/repo/JustArchiNET/ArchiSteamFarm/</description>
+</item><item>
 <title>NginxProxyManager/nginx-proxy-manager added AGENTS.md</title>
 <link>https://agentsmd.formachines.ai/go/1177/</link>
 <guid isPermaLink="false">2026-11-17:NginxProxyManager/nginx-proxy-manager:AGENTS.md</guid>
