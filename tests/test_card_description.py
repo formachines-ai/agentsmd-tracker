@@ -43,7 +43,8 @@ class CardDescription(unittest.TestCase):
             for src, label in ((desc, "desc"), (facts, "facts")):
                 m = re.search(r"((?:[\w.\-/]+, )*[\w.\-/]+) not checked yet\.", src)
                 said = set(m.group(1).split(", ")) if m else set()
-                if len(none_) < len(files) and said != set(none_):
+                want = set(none_) if label == "desc" else {q for q in none_ if files[q].get("measured") is not False}   # T-0205: unmeasured are listed as "Not measured yet" in facts
+                if len(none_) < len(files) and said != want:
                     bad.append((name, label, "unchecked mismatch", sorted(said), none_))
         print(f"cards checked: {len(pages)}, offenders: {len(bad)}")
         self.assertEqual(bad[:5], [])

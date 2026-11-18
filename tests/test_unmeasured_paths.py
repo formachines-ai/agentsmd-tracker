@@ -118,6 +118,24 @@ class UnmeasuredPaths(unittest.TestCase):
         self.assertEqual(cj["files"][NEW[1]]["lang_share"]["count"], 1)
         self.assertIs(cj["files"][NEW[1]]["lang_share"]["measured"], True)
 
+    def _facts(self, with_new):
+        pub = run_build(with_new)
+        card = (pub / "repo" / "o" / "a" / "index.html").read_text()
+        return re.search(r'<p class="facts">(.*?)</p>', card, re.S).group(1)
+
+    def test_card_summary_unmeasured(self):
+        f = self._facts(False)
+        n = len(build.PATHS) - 2
+        self.assertIn(f"has 1 of {n} checked file paths", f)
+        self.assertNotIn("tracked file paths", f)
+        self.assertIn("Not measured yet: <code>.github/instructions/</code>, <code>.claude/rules/</code>.", f)
+
+    def test_card_summary_all_measured(self):
+        f = self._facts(True)
+        n = len(build.PATHS)
+        self.assertIn(f"has 2 of {n} checked file paths", f)
+        self.assertNotIn("Not measured yet", f)
+
 
 if __name__ == "__main__":
     unittest.main()
