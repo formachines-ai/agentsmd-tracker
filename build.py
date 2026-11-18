@@ -529,7 +529,14 @@ def aggregate(repos: list[dict]) -> dict:
                                                  "2k_8k": sum(1 for v in vals if 2048 <= v < 8192),
                                                  "8k_32k": sum(1 for v in vals if 8192 <= v <= 32768),
                                                  "gt_32k": sum(1 for v in vals if v > 32768)},
-                                     "unknown": unknown})
+                                     "unknown": unknown,
+                                     # T-0196: finer KiB bands; bands sum to the type's present count (unknown = no HEAD length)
+                                     "bands": {"lt_1k": sum(1 for v in vals if v < 1024),
+                                               "1k_4k": sum(1 for v in vals if 1024 <= v < 4096),
+                                               "4k_16k": sum(1 for v in vals if 4096 <= v < 16384),
+                                               "16k_32k": sum(1 for v in vals if 16384 <= v <= 32768),
+                                               "gt_32k": sum(1 for v in vals if v > 32768),
+                                               "unknown": unknown}})
     present = {r["full_name"]: {p for p in ("AGENTS.md", "CLAUDE.md") if scans[r["full_name"]]["files"].get(p, {}).get("present")} for r in ok}
     return {"present": present, "sizes": sizes, "small": small, "combo": combo, "scans": scans, "ok": ok, "pending": pending, "unreachable": unreachable, "counts": counts,
             "any": any_count, "by_lang": by_lang, "last_checked": last_checked}
@@ -924,8 +931,11 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
         f"<li><code>{esc(p)}</code> on {esc(gen_raw[:10])}: median {agg['sizes'][p]['median']:,} bytes, "
         f"{agg['sizes'][p]['buckets']['gt_32k']:,} files over 32768 bytes (n={agg['sizes'][p]['n']:,}, size unknown {agg['sizes'][p]['unknown']:,}).</li>"
         for p in SIZE_BUCKET_PATHS)
+    _b = agg["sizes"]["AGENTS.md"]["bands"]
+    _n = sum(_b.values())
     size_sec = f"""<section id="sizes">
 <h2>File size on {esc(gen_raw[:10])}</h2>
+<p class="asof" id="size-bands">On {esc(gen_raw[:10])}, {_b['gt_32k']:,} of {_n:,} AGENTS.md files in the sample are larger than 32 KiB (32768 bytes); size bands per type in <a href="/stats.json">stats.json</a> field <code>sizes</code>.</p>
 <ul>{bucket_lines}</ul>
 <ul>{size_lines}</ul>
 <p class="muted">Byte size of present files from the scan dated {esc(gen_raw[:10])}; only files with a known size are counted. <a href="/stats.json">stats.json</a> field <code>sizes</code>.</p>
@@ -1361,6 +1371,7 @@ Latest (scan {generated}): {agg['counts'][PRIMARY_PATH]} of {total} scanned repo
 - combos in stats.json: date, total (scanned repos) and integer counts both (= both_agents_claude), agents_only, claude_only, neither and unknown (sample repos without a result for both types: unreachable or pending); the five sum to sample_size (presence of AGENTS.md and CLAUDE.md only).
 - combinations example ({generated[:10]}): agents_only {agg['combo']['agents_only']}, claude_only {agg['combo']['claude_only']}, both {agg['combo']['both']}, neither {agg['combo']['neither']}, agents_and_copilot {agg['combo']['agents_and_copilot']} of {total} scanned repos, date {generated[:10]}.
 - tracked_since in stats.json: path -> date of that path's first scan; history[] counts of 0 before that date were not measured, and the first-scan counts are a baseline, not added files.
+- sizes in stats.json, AGENTS.md and CLAUDE.md entries also bands: lt_1k, 1k_4k, 4k_16k, 16k_32k (up to 32768 inclusive), gt_32k (>32 KiB) and unknown (present, no size), counts summing to the number of repos with the file (KiB = 1024 bytes).
 - sizes in stats.json, AGENTS.md and CLAUDE.md entries also: n (known sizes), median, p25, p75 in bytes, buckets lt_2k (<2048), 2k_8k, 8k_32k (up to 32768 inclusive) and gt_32k (>32768) as counts summing to n, and unknown (present, size not known); n + unknown = repos with the file.
 - sizes in stats.json: per path, count, median_bytes, p25_bytes, p75_bytes and date of the scan, from the HEAD Content-Length of present files whose size is known, 0 included (count = those files only); 0 when none is known (e.g. the .cursor/rules/ directory).
 - small_files in stats.json: date, threshold_bytes (300) and per path count (present files with a known size under 300 bytes, 0 bytes included; size only), threshold_bytes, zero_bytes (present files whose HEAD Content-Length is 0; counted in count, size 0 bytes) and unknown_size (present files with no Content-Length, size unknown, not counted; size_unknown is the same number, kept for compatibility).
