@@ -46,7 +46,7 @@ runs `build.py`.
 python3 -B -m unittest discover -s tests -t .
 ```
 
-Runs every `tests/test_*.py` (42 files) from the repository root. Offline and read-only: no network, nothing is
+Runs every `tests/test_*.py` from the repository root. Offline and read-only: no network, nothing is
 written to the checkout (tests that build use a temp copy), so it also passes after `chmod -R a-w .`. Python 3.12
 standard library only.
 

@@ -43,6 +43,13 @@ class ReadmeFacts(unittest.TestCase):
         self.assertAlmostEqual(float(total.replace(" ", "")), secs, places=1)
         self.assertEqual(int(minutes), round(secs / 60))
 
+    def test_test_file_count_not_stale(self):
+        n = len(list((REPO / "tests").glob("test_*.py")))
+        for m in re.finditer(r"\b(\d+)\s+(?:test\s+)?files?\b", README):
+            self.assertEqual(int(m.group(1)), n, m.group(0))
+        for m in re.finditer(r"tests/test_\*\.py[^\n]{0,40}?\((\d+)", README):
+            self.assertEqual(int(m.group(1)), n, m.group(0))
+
 
 if __name__ == "__main__":
     unittest.main()
