@@ -1196,18 +1196,23 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
                       else f'<p class="gh-files">No tracked files found on {esc(scan_date)}</p>')
         present_paths = [t["path"] + ("/" if t["kind"] == "dir" else "") for t in PATHS if files_json[t["path"]]["present"]]
         lang_txt = f"{esc(r['language'])}, " if r.get("language") else ""
-        unchecked_paths = [t["path"] for t in PATHS if files_json[t["path"]]["present"] is None]
+        meas_paths = [t["path"] for t in PATHS if ts0.get(t["path"])]   # T-0205: denominator = measured types only
+        unmeas_paths = [t["path"] for t in PATHS if not ts0.get(t["path"])]
+        n_meas = len(meas_paths)
+        unchecked_paths = [p for p in meas_paths if files_json[p]["present"] is None]
         miss_txt = " " + ", ".join(f"<code>{esc(p)}</code>" for p in unchecked_paths) + " not checked yet."
-        if not sc or len(unchecked_paths) == len(PATHS):
-            facts = f"On {esc(scan_date)}, {esc(r['full_name'])} ({lang_txt}in the top-by-stars sample) was not fully checked yet."
+        unmeas_txt = (" Not measured yet: " + ", ".join(f"<code>{esc(p)}/</code>" if next(t for t in PATHS if t["path"] == p)["kind"] == "dir" else f"<code>{esc(p)}</code>" for p in unmeas_paths) + ".") if unmeas_paths else ""
+        head = f"On {esc(scan_date)}, {esc(r['full_name'])} ({lang_txt}in the top-by-stars sample)"
+        if not sc or len(unchecked_paths) == n_meas:
+            facts = f"{head} was not fully checked yet." + unmeas_txt
         elif unchecked_paths:
-            facts = (f"On {esc(scan_date)}, {esc(r['full_name'])} ({lang_txt}in the top-by-stars sample) has {len(present_paths)} of {len(PATHS)} tracked file paths"
-                     + (": " + ", ".join(f"<code>{esc(p)}</code>" for p in present_paths) if present_paths else "") + "." + miss_txt)
+            facts = (f"{head} has {len(present_paths)} of {n_meas} checked file paths"
+                     + (": " + ", ".join(f"<code>{esc(p)}</code>" for p in present_paths) if present_paths else "") + "." + miss_txt + unmeas_txt)
         elif present_paths:
-            facts = (f"On {esc(scan_date)}, {esc(r['full_name'])} ({lang_txt}in the top-by-stars sample) has {len(present_paths)} of {len(PATHS)} tracked file paths: "
-                     + ", ".join(f"<code>{esc(p)}</code>" for p in present_paths) + ".")
+            facts = (f"{head} has {len(present_paths)} of {n_meas} checked file paths: "
+                     + ", ".join(f"<code>{esc(p)}</code>" for p in present_paths) + "." + unmeas_txt)
         else:
-            facts = f"On {esc(scan_date)}, {esc(r['full_name'])} ({lang_txt}in the top-by-stars sample) has none of the {len(PATHS)} tracked file paths."
+            facts = f"{head} has none of the {n_meas} checked file paths." + unmeas_txt
         lang_a = f' · <a href="/lang/{lang_slug(r["language"])}/">All {esc(r["language"])} repos in the sample</a>' if r.get("language") else ""
         facts_line = (f'<p class="facts">{facts} Presence and size only, from HEAD requests to public GitHub URLs.</p>\n'
                       f'<p class="muted"><a href="/">Home: {esc(SITE_NAME)}</a>{lang_a}</p>\n')
