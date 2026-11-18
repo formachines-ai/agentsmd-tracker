@@ -614,6 +614,9 @@ def tracked_since(history: list[dict]) -> dict[str, str | None]:
     return out
 
 
+NOT_MEASURED = "Not measured yet: no first scan recorded"
+
+
 def load_history() -> list[dict]:
     days = []
     for p in sorted(HISTORY_DIR.glob("*.json")):
@@ -891,15 +894,24 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
     elif agg["pending"]:
         banner = f'<div class="banner"><strong>Partial scan:</strong> {len(agg["pending"])} of {sample} repositories are still pending; percentages use the {total} scanned so far.</div>'
 
+    ts0 = tracked_since(history)   # T-0203: None = never scanned = not measured (not 0)
     cards = []
     for s in PATHS:
         p = s["path"]
         n = agg["counts"][p]
+        if ts0.get(p) is None:
+            cards.append(f"""<section class="card">
+<h2><code>{esc(s['label'])}</code></h2>
+<p class="big">{esc(NOT_MEASURED)}</p>
+<p class="share">{esc(s['note'])}</p>
+</section>""")
+            continue
         series = [pct(d["counts"].get(p, 0), d["scanned"]) for d in history[-SPARK_DAYS:]]
         cards.append(f"""<section class="card">
 <h2><code>{esc(s['label'])}</code></h2>
 <p class="big">{n:,} <span class="of">of {total:,}</span></p>
 <p class="share">{pct(n, total)} % of scanned repos · {esc(s['note'])}</p>
+<p class="muted">Measured since {esc(ts0[p])} · {total:,} repos checked</p>
 {sparkline(series, label=f"{s['label']} share by day")}
 </section>""")
     any_n = agg["any"]
@@ -978,7 +990,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
     # language table
     rows = []
     for lang, v in sorted(agg["by_lang"].items(), key=lambda kv: -kv[1]["repos"]):
-        cells = "".join(f'<td>{v[s["path"]]}<span class="pc"> ({pct(v[s["path"]], v["repos"])} %)</span></td>' for s in PATHS)
+        cells = "".join((f'<td>{v[s["path"]]}<span class="pc"> ({pct(v[s["path"]], v["repos"])} %)</span></td>' if tracked_since(history)[s["path"]] else '<td class="muted">Not measured yet</td>') for s in PATHS)
         rows.append(f"<tr><th scope=\"row\"><a href=\"/lang/{lang_slug(lang)}/\">{esc(lang)}</a></th><td>{v['repos']}</td><td>{v['any']}<span class=\"pc\"> ({pct(v['any'], v['repos'])} %)</span></td>{cells}</tr>")
     heads = "".join(f'<th><code>{esc(s["label"])}</code></th>' for s in PATHS)
     lang_table = f"""<section id="languages">
@@ -986,7 +998,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
 <div class="scroll"><table>
 <thead><tr><th>Language</th><th>Repos</th><th>Any file</th>{heads}</tr></thead>
 <tbody>{''.join(rows)}</tbody>
-<tfoot><tr><th scope="row">All</th><td>{total}</td><td>{any_n}<span class="pc"> ({pct(any_n, total)} %)</span></td>{''.join(f'<td>{agg["counts"][s["path"]]}<span class="pc"> ({pct(agg["counts"][s["path"]], total)} %)</span></td>' for s in PATHS)}</tr></tfoot>
+<tfoot><tr><th scope="row">All</th><td>{total}</td><td>{any_n}<span class="pc"> ({pct(any_n, total)} %)</span></td>{''.join((f'<td>{agg["counts"][s["path"]]}<span class="pc"> ({pct(agg["counts"][s["path"]], total)} %)</span></td>' if ts0.get(s["path"]) else '<td class="muted">Not measured yet</td>') for s in PATHS)}</tr></tfoot>
 </table></div>
 </section>"""
 
@@ -1234,9 +1246,10 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
         "sample": sample_info, "sample_size": sample, "scanned": total, "pending": len(agg["pending"]), "unreachable": len(agg["unreachable"]),
         "paths": [s["path"] for s in PATHS],
         "tracked_since": tracked_since(history),
-        "counts": agg["counts"], "any": agg["any"],
-        "shares": {s["path"]: pct(agg["counts"][s["path"]], total) for s in PATHS},
-        "by_language": {k: {"repos": v["repos"], "any": v["any"], **{s["path"]: v[s["path"]] for s in PATHS}} for k, v in sorted(agg["by_lang"].items())},
+        "measured": {s["path"]: bool(tracked_since(history)[s["path"]]) for s in PATHS},
+        "counts": {s["path"]: (agg["counts"][s["path"]] if tracked_since(history)[s["path"]] else None) for s in PATHS}, "any": agg["any"],
+        "shares": {s["path"]: (pct(agg["counts"][s["path"]], total) if tracked_since(history)[s["path"]] else None) for s in PATHS},
+        "by_language": {k: {"repos": v["repos"], "any": v["any"], **{s["path"]: (v[s["path"]] if tracked_since(history)[s["path"]] else None) for s in PATHS}} for k, v in sorted(agg["by_lang"].items())},
         "history": [{"date": d["date"], "scanned": d["scanned"], "counts": d["counts"], "any": d.get("any"),
                      "shares": {p: (pct(c, d["scanned"]) if d["scanned"] else None) for p, c in d["counts"].items()},
                      "pct": {p: (pct(c, d["scanned"]) if d["scanned"] else None) for p, c in d["counts"].items()},
@@ -1324,7 +1337,11 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
                       + (f'<ul class="plain">{"".join(agents_items)}</ul>' if agents_items else '<p class="muted">None of the sampled repositories has AGENTS.md yet.</p>')
                       + '\n<h2>All sampled repositories</h2>\n')
         l_day = (today.get("generated") or (history[-1].get("generated") if history else None) or updated)[:10]
-        others = ", ".join(f"{sp['path']} in {v[sp['path']]:,}" for sp in PATHS if sp["path"] != PRIMARY_PATH)
+        ts_l = tracked_since(history)
+        others = ", ".join(f"{sp['path']} in {v[sp['path']]:,}" for sp in PATHS if sp["path"] != PRIMARY_PATH and ts_l.get(sp["path"]))
+        unmeasured = [sp["path"] for sp in PATHS if not ts_l.get(sp["path"])]
+        if unmeasured:
+            others += f". Not measured yet (no first scan recorded): {', '.join(unmeasured)}"
         l_sentence = (f"On {l_day}, {v[PRIMARY_PATH]:,} of {v['repos']:,} top {lang} repositories by stars ({pct(v[PRIMARY_PATH], v['repos'])} %) have AGENTS.md. "
                       f"Of the same {v['repos']:,} repositories: {others}. The tracker checks {len(PATHS)} file paths, presence and size only, "
                       f"from HEAD requests to public GitHub URLs, updated daily at about 04:00 UTC.")
@@ -1373,6 +1390,7 @@ Latest (scan {generated}): {agg['counts'][PRIMARY_PATH]} of {total} scanned repo
 - combinations in stats.json: date, total and counts of scanned repos by co-existence of AGENTS.md and CLAUDE.md (agents_only, claude_only, both, neither, agents_and_copilot (AGENTS.md with .github/copilot-instructions.md), agents_and_claude, agents_only_of_pair, claude_only_of_pair, neither_of_pair), same_size_agents_claude (both present with equal byte size) and repos_with_2plus_types (at least 2 of the {len(PATHS)} paths).
 - combos in stats.json: date, total (scanned repos) and integer counts both (= both_agents_claude), agents_only, claude_only, neither and unknown (sample repos without a result for both types: unreachable or pending); the five sum to sample_size (presence of AGENTS.md and CLAUDE.md only).
 - combinations example ({generated[:10]}): agents_only {agg['combo']['agents_only']}, claude_only {agg['combo']['claude_only']}, both {agg['combo']['both']}, neither {agg['combo']['neither']}, agents_and_copilot {agg['combo']['agents_and_copilot']} of {total} scanned repos, date {generated[:10]}.
+- null and measured:false in stats.json: a path with tracked_since null has not been measured yet (no first scan recorded). Its counts, shares and by_language values are null and measured is false; this is not "checked, found nowhere" and must not be read as 0 or 0.0 %. Measured paths have measured:true.
 - tracked_since in stats.json: path -> date of that path's first scan; history[] counts of 0 before that date were not measured, and the first-scan counts are a baseline, not added files.
 - sizes in stats.json holds two size schemes for AGENTS.md and CLAUDE.md: buckets (lt_2k <2048, 2k_8k, 8k_32k up to 32768 inclusive, gt_32k >32768 bytes) and bands (lt_1k <1024, 1k_4k, 4k_16k, 16k_32k up to 32768 inclusive, gt_32k >32768 bytes, unknown); the gt_32k counts of both are the same threshold (32 KiB = 32768 bytes).
 - sizes in stats.json, AGENTS.md and CLAUDE.md entries also bands: lt_1k, 1k_4k, 4k_16k, 16k_32k (up to 32768 inclusive), gt_32k (>32 KiB) and unknown (present, no size), counts summing to the number of repos with the file (KiB = 1024 bytes).
