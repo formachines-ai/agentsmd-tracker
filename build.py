@@ -929,7 +929,8 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
         if v["count"] else f"<li><code>{esc(p)}</code>: no size known, n=0</li>" for p, v in agg["sizes"].items())
     bucket_lines = "".join(
         f"<li><code>{esc(p)}</code> on {esc(gen_raw[:10])}: median {agg['sizes'][p]['median']:,} bytes, "
-        f"{agg['sizes'][p]['buckets']['gt_32k']:,} files over 32768 bytes (n={agg['sizes'][p]['n']:,}, size unknown {agg['sizes'][p]['unknown']:,}).</li>"
+        + (f"{agg['sizes'][p]['buckets']['gt_32k']:,} files over 32768 bytes (n=" if p != "AGENTS.md" else "(n=")
+        + f"{agg['sizes'][p]['n']:,}, size unknown {agg['sizes'][p]['unknown']:,}).</li>"
         for p in SIZE_BUCKET_PATHS)
     _b = agg["sizes"]["AGENTS.md"]["bands"]
     _n = sum(_b.values())
@@ -1371,6 +1372,7 @@ Latest (scan {generated}): {agg['counts'][PRIMARY_PATH]} of {total} scanned repo
 - combos in stats.json: date, total (scanned repos) and integer counts both (= both_agents_claude), agents_only, claude_only, neither and unknown (sample repos without a result for both types: unreachable or pending); the five sum to sample_size (presence of AGENTS.md and CLAUDE.md only).
 - combinations example ({generated[:10]}): agents_only {agg['combo']['agents_only']}, claude_only {agg['combo']['claude_only']}, both {agg['combo']['both']}, neither {agg['combo']['neither']}, agents_and_copilot {agg['combo']['agents_and_copilot']} of {total} scanned repos, date {generated[:10]}.
 - tracked_since in stats.json: path -> date of that path's first scan; history[] counts of 0 before that date were not measured, and the first-scan counts are a baseline, not added files.
+- sizes in stats.json holds two size schemes for AGENTS.md and CLAUDE.md: buckets (lt_2k <2048, 2k_8k, 8k_32k up to 32768 inclusive, gt_32k >32768 bytes) and bands (lt_1k <1024, 1k_4k, 4k_16k, 16k_32k up to 32768 inclusive, gt_32k >32768 bytes, unknown); the gt_32k counts of both are the same threshold (32 KiB = 32768 bytes).
 - sizes in stats.json, AGENTS.md and CLAUDE.md entries also bands: lt_1k, 1k_4k, 4k_16k, 16k_32k (up to 32768 inclusive), gt_32k (>32 KiB) and unknown (present, no size), counts summing to the number of repos with the file (KiB = 1024 bytes).
 - sizes in stats.json, AGENTS.md and CLAUDE.md entries also: n (known sizes), median, p25, p75 in bytes, buckets lt_2k (<2048), 2k_8k, 8k_32k (up to 32768 inclusive) and gt_32k (>32768) as counts summing to n, and unknown (present, size not known); n + unknown = repos with the file.
 - sizes in stats.json: per path, count, median_bytes, p25_bytes, p75_bytes and date of the scan, from the HEAD Content-Length of present files whose size is known, 0 included (count = those files only); 0 when none is known (e.g. the .cursor/rules/ directory).
