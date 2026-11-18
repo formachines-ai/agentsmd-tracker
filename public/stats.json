@@ -55,7 +55,9 @@
   "GEMINI.md",
   ".windsurfrules",
   "AI_POLICY.md",
-  ".github/AI_POLICY.md"
+  ".github/AI_POLICY.md",
+  ".github/instructions",
+  ".claude/rules"
  ],
  "tracked_since": {
   "AGENTS.md": "2026-11-02",
@@ -67,7 +69,9 @@
   "GEMINI.md": "2026-11-02",
   ".windsurfrules": "2026-11-02",
   "AI_POLICY.md": "2026-11-16",
-  ".github/AI_POLICY.md": "2026-11-16"
+  ".github/AI_POLICY.md": "2026-11-16",
+  ".github/instructions": null,
+  ".claude/rules": null
  },
  "counts": {
   "AGENTS.md": 565,
@@ -79,7 +83,9 @@
   "GEMINI.md": 20,
   ".windsurfrules": 5,
   "AI_POLICY.md": 32,
-  ".github/AI_POLICY.md": 2
+  ".github/AI_POLICY.md": 2,
+  ".github/instructions": 0,
+  ".claude/rules": 0
  },
  "any": 702,
  "shares": {
@@ -92,7 +98,9 @@
   "GEMINI.md": 1.0,
   ".windsurfrules": 0.3,
   "AI_POLICY.md": 1.7,
-  ".github/AI_POLICY.md": 0.1
+  ".github/AI_POLICY.md": 0.1,
+  ".github/instructions": 0.0,
+  ".claude/rules": 0.0
  },
  "by_language": {
   "C#": {
@@ -107,7 +115,9 @@
    "GEMINI.md": 2,
    ".windsurfrules": 1,
    "AI_POLICY.md": 0,
-   ".github/AI_POLICY.md": 1
+   ".github/AI_POLICY.md": 1,
+   ".github/instructions": 0,
+   ".claude/rules": 0
   },
   "C++": {
    "repos": 190,
@@ -121,7 +131,9 @@
    "GEMINI.md": 2,
    ".windsurfrules": 0,
    "AI_POLICY.md": 6,
-   ".github/AI_POLICY.md": 0
+   ".github/AI_POLICY.md": 0,
+   ".github/instructions": 0,
+   ".claude/rules": 0
   },
   "Go": {
    "repos": 193,
@@ -135,7 +147,9 @@
    "GEMINI.md": 2,
    ".windsurfrules": 0,
    "AI_POLICY.md": 3,
-   ".github/AI_POLICY.md": 0
+   ".github/AI_POLICY.md": 0,
+   ".github/instructions": 0,
+   ".claude/rules": 0
   },
   "Java": {
    "repos": 192,
@@ -149,7 +163,9 @@
    "GEMINI.md": 0,
    ".windsurfrules": 0,
    "AI_POLICY.md": 2,
-   ".github/AI_POLICY.md": 0
+   ".github/AI_POLICY.md": 0,
+   ".github/instructions": 0,
+   ".claude/rules": 0
   },
   "JavaScript": {
    "repos": 191,
@@ -163,7 +179,9 @@
    "GEMINI.md": 1,
    ".windsurfrules": 0,
    "AI_POLICY.md": 1,
-   ".github/AI_POLICY.md": 0
+   ".github/AI_POLICY.md": 0,
+   ".github/instructions": 0,
+   ".claude/rules": 0
   },
   "PHP": {
    "repos": 191,
@@ -177,7 +195,9 @@
    "GEMINI.md": 2,
    ".windsurfrules": 0,
    "AI_POLICY.md": 1,
-   ".github/AI_POLICY.md": 0
+   ".github/AI_POLICY.md": 0,
+   ".github/instructions": 0,
+   ".claude/rules": 0
   },
   "Python": {
    "repos": 197,
@@ -191,7 +211,9 @@
    "GEMINI.md": 4,
    ".windsurfrules": 1,
    "AI_POLICY.md": 5,
-   ".github/AI_POLICY.md": 1
+   ".github/AI_POLICY.md": 1,
+   ".github/instructions": 0,
+   ".claude/rules": 0
   },
   "Ruby": {
    "repos": 189,
@@ -205,7 +227,9 @@
    "GEMINI.md": 1,
    ".windsurfrules": 1,
    "AI_POLICY.md": 0,
-   ".github/AI_POLICY.md": 0
+   ".github/AI_POLICY.md": 0,
+   ".github/instructions": 0,
+   ".claude/rules": 0
   },
   "Rust": {
    "repos": 198,
@@ -219,7 +243,9 @@
    "GEMINI.md": 3,
    ".windsurfrules": 1,
    "AI_POLICY.md": 11,
-   ".github/AI_POLICY.md": 0
+   ".github/AI_POLICY.md": 0,
+   ".github/instructions": 0,
+   ".claude/rules": 0
   },
   "TypeScript": {
    "repos": 194,
@@ -233,7 +259,9 @@
    "GEMINI.md": 3,
    ".windsurfrules": 1,
    "AI_POLICY.md": 3,
-   ".github/AI_POLICY.md": 0
+   ".github/AI_POLICY.md": 0,
+   ".github/instructions": 0,
+   ".claude/rules": 0
   }
  },
  "history": [
@@ -1081,7 +1109,9 @@
   "GEMINI.md": -0.1,
   ".windsurfrules": 0.0,
   "AI_POLICY.md": 1.7,
-  ".github/AI_POLICY.md": 0.1
+  ".github/AI_POLICY.md": 0.1,
+  ".github/instructions": 0.0,
+  ".claude/rules": 0.0
  },
  "combinations": {
   "date": "2026-11-18",
@@ -1216,6 +1246,20 @@
    "p25_bytes": 2460,
    "p75_bytes": 3796,
    "date": "2026-11-18"
+  },
+  ".github/instructions": {
+   "count": 0,
+   "median_bytes": 0,
+   "p25_bytes": 0,
+   "p75_bytes": 0,
+   "date": "2026-11-18"
+  },
+  ".claude/rules": {
+   "count": 0,
+   "median_bytes": 0,
+   "p25_bytes": 0,
+   "p75_bytes": 0,
+   "date": "2026-11-18"
   }
  },
  "claude_agents_changes": {
@@ -1301,6 +1345,20 @@
    "unknown_size": 0
   },
   ".github/AI_POLICY.md": {
+   "count": 0,
+   "threshold_bytes": 300,
+   "size_unknown": 0,
+   "zero_bytes": 0,
+   "unknown_size": 0
+  },
+  ".github/instructions": {
+   "count": 0,
+   "threshold_bytes": 300,
+   "size_unknown": 0,
+   "zero_bytes": 0,
+   "unknown_size": 0
+  },
+  ".claude/rules": {
    "count": 0,
    "threshold_bytes": 300,
    "size_unknown": 0,

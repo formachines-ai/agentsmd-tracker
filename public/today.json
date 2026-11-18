@@ -69,7 +69,9 @@
   "GEMINI.md": 20,
   ".windsurfrules": 5,
   "AI_POLICY.md": 32,
-  ".github/AI_POLICY.md": 2
+  ".github/AI_POLICY.md": 2,
+  ".github/instructions": 0,
+  ".claude/rules": 0
  },
  "scanned": 1919,
  "pending": 0

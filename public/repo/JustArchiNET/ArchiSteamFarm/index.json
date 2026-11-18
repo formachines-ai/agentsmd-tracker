@@ -139,6 +139,32 @@
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
    }
+  },
+  ".github/instructions": {
+   "present": null,
+   "size": null,
+   "url": null,
+   "lang_share": {
+    "count": 0,
+    "total": 184,
+    "pct": 0.0,
+    "date": "2026-11-18",
+    "language": "C#",
+    "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
+   }
+  },
+  ".claude/rules": {
+   "present": null,
+   "size": null,
+   "url": null,
+   "lang_share": {
+    "count": 0,
+    "total": 184,
+    "pct": 0.0,
+    "date": "2026-11-18",
+    "language": "C#",
+    "page": "https://agentsmd.formachines.ai/lang/c-sharp/"
+   }
   }
  },
  "language_share": {
@@ -200,6 +226,18 @@
    "count": 1,
    "total": 184,
    "pct": 0.5,
+   "date": "2026-11-18"
+  },
+  ".github/instructions": {
+   "count": 0,
+   "total": 184,
+   "pct": 0.0,
+   "date": "2026-11-18"
+  },
+  ".claude/rules": {
+   "count": 0,
+   "total": 184,
+   "pct": 0.0,
    "date": "2026-11-18"
   }
  },
