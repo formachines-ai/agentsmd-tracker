@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-17T05:10:09Z",
+ "checked": "2026-11-19T04:05:57Z",
  "status": "ok",
  "default_branch": "master",
  "files": {
@@ -9,7 +9,7 @@
   },
   "CLAUDE.md": {
    "present": true,
-   "size": 41360
+   "size": 41342
   },
   ".cursorrules": {
    "present": false,
@@ -49,6 +49,15 @@
    "present": false,
    "size": null,
    "definite": true
+  },
+  ".github/instructions": {
+   "present": false,
+   "size": null,
+   "definite": true
+  },
+  ".claude/rules": {
+   "present": true,
+   "size": null
   }
  },
  "moved_to": null,

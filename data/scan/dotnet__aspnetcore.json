@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-17T05:18:33Z",
+ "checked": "2026-11-19T04:16:32Z",
  "status": "ok",
  "default_branch": "main",
  "files": {
@@ -25,7 +25,7 @@
   },
   ".github/copilot-instructions.md": {
    "present": true,
-   "size": 10387
+   "size": 10834
   },
   "llms.txt": {
    "present": false,
@@ -48,6 +48,15 @@
    "definite": true
   },
   ".github/AI_POLICY.md": {
+   "present": false,
+   "size": null,
+   "definite": true
+  },
+  ".github/instructions": {
+   "present": true,
+   "size": null
+  },
+  ".claude/rules": {
    "present": false,
    "size": null,
    "definite": true

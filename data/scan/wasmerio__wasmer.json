@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-18T04:19:07Z",
+ "checked": "2026-11-19T04:54:39Z",
  "status": "ok",
  "default_branch": "main",
  "files": {
@@ -46,6 +46,16 @@
    "definite": true
   },
   ".github/AI_POLICY.md": {
+   "present": false,
+   "size": null,
+   "definite": true
+  },
+  ".github/instructions": {
+   "present": false,
+   "size": null,
+   "definite": true
+  },
+  ".claude/rules": {
    "present": false,
    "size": null,
    "definite": true

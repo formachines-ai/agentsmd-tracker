@@ -1,5 +1,5 @@
 {
- "next_id": 1191,
+ "next_id": 1238,
  "links": {
   "affaan-m/ECC/AGENTS.md": {
    "id": 1,
@@ -7140,6 +7140,288 @@
    "url": "https://github.com/JustArchiNET/ArchiSteamFarm/blob/main/AGENTS.md",
    "repo": "JustArchiNET/ArchiSteamFarm",
    "path": "AGENTS.md"
+  },
+  "solidjs/solid/AGENTS.md": {
+   "id": 1191,
+   "url": "https://github.com/solidjs/solid/blob/main/AGENTS.md",
+   "repo": "solidjs/solid",
+   "path": "AGENTS.md"
+  },
+  "apache/airflow/.github/instructions": {
+   "id": 1192,
+   "url": "https://github.com/apache/airflow/tree/main/.github/instructions",
+   "repo": "apache/airflow",
+   "path": ".github/instructions"
+  },
+  "apache/pulsar/.github/instructions": {
+   "id": 1193,
+   "url": "https://github.com/apache/pulsar/tree/master/.github/instructions",
+   "repo": "apache/pulsar",
+   "path": ".github/instructions"
+  },
+  "App-vNext/Polly/.github/instructions": {
+   "id": 1194,
+   "url": "https://github.com/App-vNext/Polly/tree/main/.github/instructions",
+   "repo": "App-vNext/Polly",
+   "path": ".github/instructions"
+  },
+  "Automattic/mongoose/.github/instructions": {
+   "id": 1195,
+   "url": "https://github.com/Automattic/mongoose/tree/master/.github/instructions",
+   "repo": "Automattic/mongoose",
+   "path": ".github/instructions"
+  },
+  "ben-manes/caffeine/.claude/rules": {
+   "id": 1196,
+   "url": "https://github.com/ben-manes/caffeine/tree/master/.claude/rules",
+   "repo": "ben-manes/caffeine",
+   "path": ".claude/rules"
+  },
+  "bitwarden/server/.claude/rules": {
+   "id": 1197,
+   "url": "https://github.com/bitwarden/server/tree/main/.claude/rules",
+   "repo": "bitwarden/server",
+   "path": ".claude/rules"
+  },
+  "ccxt/ccxt/.claude/rules": {
+   "id": 1198,
+   "url": "https://github.com/ccxt/ccxt/tree/master/.claude/rules",
+   "repo": "ccxt/ccxt",
+   "path": ".claude/rules"
+  },
+  "cockroachdb/cockroach/.claude/rules": {
+   "id": 1199,
+   "url": "https://github.com/cockroachdb/cockroach/tree/master/.claude/rules",
+   "repo": "cockroachdb/cockroach",
+   "path": ".claude/rules"
+  },
+  "discourse/discourse/.github/instructions": {
+   "id": 1200,
+   "url": "https://github.com/discourse/discourse/tree/main/.github/instructions",
+   "repo": "discourse/discourse",
+   "path": ".github/instructions"
+  },
+  "dotnet/aspnetcore/.github/instructions": {
+   "id": 1201,
+   "url": "https://github.com/dotnet/aspnetcore/tree/main/.github/instructions",
+   "repo": "dotnet/aspnetcore",
+   "path": ".github/instructions"
+  },
+  "dotnet/maui/.github/instructions": {
+   "id": 1202,
+   "url": "https://github.com/dotnet/maui/tree/main/.github/instructions",
+   "repo": "dotnet/maui",
+   "path": ".github/instructions"
+  },
+  "dotnet/roslyn/.github/instructions": {
+   "id": 1203,
+   "url": "https://github.com/dotnet/roslyn/tree/main/.github/instructions",
+   "repo": "dotnet/roslyn",
+   "path": ".github/instructions"
+  },
+  "dotnet/runtime/.github/instructions": {
+   "id": 1204,
+   "url": "https://github.com/dotnet/runtime/tree/main/.github/instructions",
+   "repo": "dotnet/runtime",
+   "path": ".github/instructions"
+  },
+  "dragonflydb/dragonfly/.github/instructions": {
+   "id": 1205,
+   "url": "https://github.com/dragonflydb/dragonfly/tree/main/.github/instructions",
+   "repo": "dragonflydb/dragonfly",
+   "path": ".github/instructions"
+  },
+  "fastlane/fastlane/.github/instructions": {
+   "id": 1206,
+   "url": "https://github.com/fastlane/fastlane/tree/master/.github/instructions",
+   "repo": "fastlane/fastlane",
+   "path": ".github/instructions"
+  },
+  "flipped-aurora/gin-vue-admin/.claude/rules": {
+   "id": 1207,
+   "url": "https://github.com/flipped-aurora/gin-vue-admin/tree/main/.claude/rules",
+   "repo": "flipped-aurora/gin-vue-admin",
+   "path": ".claude/rules"
+  },
+  "FreshRSS/FreshRSS/.github/instructions": {
+   "id": 1208,
+   "url": "https://github.com/FreshRSS/FreshRSS/tree/edge/.github/instructions",
+   "repo": "FreshRSS/FreshRSS",
+   "path": ".github/instructions"
+  },
+  "JanDeDobbeleer/oh-my-posh/.github/instructions": {
+   "id": 1209,
+   "url": "https://github.com/JanDeDobbeleer/oh-my-posh/tree/main/.github/instructions",
+   "repo": "JanDeDobbeleer/oh-my-posh",
+   "path": ".github/instructions"
+  },
+  "k1tbyte/Wand-Enhancer/.claude/rules": {
+   "id": 1210,
+   "url": "https://github.com/k1tbyte/Wand-Enhancer/tree/master/.claude/rules",
+   "repo": "k1tbyte/Wand-Enhancer",
+   "path": ".claude/rules"
+  },
+  "Kareadita/Kavita/.github/instructions": {
+   "id": 1211,
+   "url": "https://github.com/Kareadita/Kavita/tree/develop/.github/instructions",
+   "repo": "Kareadita/Kavita",
+   "path": ".github/instructions"
+  },
+  "koodo-reader/koodo-reader/.github/instructions": {
+   "id": 1212,
+   "url": "https://github.com/koodo-reader/koodo-reader/tree/dev/.github/instructions",
+   "repo": "koodo-reader/koodo-reader",
+   "path": ".github/instructions"
+  },
+  "livewire/livewire/.claude/rules": {
+   "id": 1213,
+   "url": "https://github.com/livewire/livewire/tree/4.x/.claude/rules",
+   "repo": "livewire/livewire",
+   "path": ".claude/rules"
+  },
+  "matteocrippa/awesome-swift/.github/instructions": {
+   "id": 1214,
+   "url": "https://github.com/matteocrippa/awesome-swift/tree/master/.github/instructions",
+   "repo": "matteocrippa/awesome-swift",
+   "path": ".github/instructions"
+  },
+  "microsoft/winget-cli/.github/instructions": {
+   "id": 1215,
+   "url": "https://github.com/microsoft/winget-cli/tree/master/.github/instructions",
+   "repo": "microsoft/winget-cli",
+   "path": ".github/instructions"
+  },
+  "mltframework/shotcut/.github/instructions": {
+   "id": 1216,
+   "url": "https://github.com/mltframework/shotcut/tree/master/.github/instructions",
+   "repo": "mltframework/shotcut",
+   "path": ".github/instructions"
+  },
+  "organicmaps/organicmaps/.github/instructions": {
+   "id": 1217,
+   "url": "https://github.com/organicmaps/organicmaps/tree/master/.github/instructions",
+   "repo": "organicmaps/organicmaps",
+   "path": ".github/instructions"
+  },
+  "OWASP/CheatSheetSeries/.github/instructions": {
+   "id": 1218,
+   "url": "https://github.com/OWASP/CheatSheetSeries/tree/master/.github/instructions",
+   "repo": "OWASP/CheatSheetSeries",
+   "path": ".github/instructions"
+  },
+  "photoprism/photoprism/.github/instructions": {
+   "id": 1219,
+   "url": "https://github.com/photoprism/photoprism/tree/develop/.github/instructions",
+   "repo": "photoprism/photoprism",
+   "path": ".github/instructions"
+  },
+  "photoprism/photoprism/.claude/rules": {
+   "id": 1220,
+   "url": "https://github.com/photoprism/photoprism/tree/develop/.claude/rules",
+   "repo": "photoprism/photoprism",
+   "path": ".claude/rules"
+  },
+  "pinpoint-apm/pinpoint/.claude/rules": {
+   "id": 1221,
+   "url": "https://github.com/pinpoint-apm/pinpoint/tree/master/.claude/rules",
+   "repo": "pinpoint-apm/pinpoint",
+   "path": ".claude/rules"
+  },
+  "PostHog/posthog/.claude/rules": {
+   "id": 1222,
+   "url": "https://github.com/PostHog/posthog/tree/master/.claude/rules",
+   "repo": "PostHog/posthog",
+   "path": ".claude/rules"
+  },
+  "ray-project/ray/.claude/rules": {
+   "id": 1223,
+   "url": "https://github.com/ray-project/ray/tree/master/.claude/rules",
+   "repo": "ray-project/ray",
+   "path": ".claude/rules"
+  },
+  "saadeghi/daisyui/.github/instructions": {
+   "id": 1224,
+   "url": "https://github.com/saadeghi/daisyui/tree/master/.github/instructions",
+   "repo": "saadeghi/daisyui",
+   "path": ".github/instructions"
+  },
+  "scylladb/scylladb/.github/instructions": {
+   "id": 1225,
+   "url": "https://github.com/scylladb/scylladb/tree/master/.github/instructions",
+   "repo": "scylladb/scylladb",
+   "path": ".github/instructions"
+  },
+  "sgl-project/sglang/.claude/rules": {
+   "id": 1226,
+   "url": "https://github.com/sgl-project/sglang/tree/main/.claude/rules",
+   "repo": "sgl-project/sglang",
+   "path": ".claude/rules"
+  },
+  "SigNoz/signoz/.claude/rules": {
+   "id": 1227,
+   "url": "https://github.com/SigNoz/signoz/tree/main/.claude/rules",
+   "repo": "SigNoz/signoz",
+   "path": ".claude/rules"
+  },
+  "storytold/artcraft/.claude/rules": {
+   "id": 1228,
+   "url": "https://github.com/storytold/artcraft/tree/main/.claude/rules",
+   "repo": "storytold/artcraft",
+   "path": ".claude/rules"
+  },
+  "tinyhumansai/openhuman/.claude/rules": {
+   "id": 1229,
+   "url": "https://github.com/tinyhumansai/openhuman/tree/main/.claude/rules",
+   "repo": "tinyhumansai/openhuman",
+   "path": ".claude/rules"
+  },
+  "tracel-ai/burn/.github/instructions": {
+   "id": 1230,
+   "url": "https://github.com/tracel-ai/burn/tree/main/.github/instructions",
+   "repo": "tracel-ai/burn",
+   "path": ".github/instructions"
+  },
+  "trinodb/trino/.claude/rules": {
+   "id": 1231,
+   "url": "https://github.com/trinodb/trino/tree/master/.claude/rules",
+   "repo": "trinodb/trino",
+   "path": ".claude/rules"
+  },
+  "tui-cs/Terminal.Gui/.claude/rules": {
+   "id": 1232,
+   "url": "https://github.com/tui-cs/Terminal.Gui/tree/develop/.claude/rules",
+   "repo": "tui-cs/Terminal.Gui",
+   "path": ".claude/rules"
+  },
+  "ueberdosis/tiptap/.github/instructions": {
+   "id": 1233,
+   "url": "https://github.com/ueberdosis/tiptap/tree/main/.github/instructions",
+   "repo": "ueberdosis/tiptap",
+   "path": ".github/instructions"
+  },
+  "unoplatform/uno/.claude/rules": {
+   "id": 1234,
+   "url": "https://github.com/unoplatform/uno/tree/master/.claude/rules",
+   "repo": "unoplatform/uno",
+   "path": ".claude/rules"
+  },
+  "usebruno/bruno/.claude/rules": {
+   "id": 1235,
+   "url": "https://github.com/usebruno/bruno/tree/main/.claude/rules",
+   "repo": "usebruno/bruno",
+   "path": ".claude/rules"
+  },
+  "vuetifyjs/vuetify/.claude/rules": {
+   "id": 1236,
+   "url": "https://github.com/vuetifyjs/vuetify/tree/master/.claude/rules",
+   "repo": "vuetifyjs/vuetify",
+   "path": ".claude/rules"
+  },
+  "webadderallorg/Recordly/.github/instructions": {
+   "id": 1237,
+   "url": "https://github.com/webadderallorg/Recordly/tree/main/.github/instructions",
+   "repo": "webadderallorg/Recordly",
+   "path": ".github/instructions"
   }
  }
 }

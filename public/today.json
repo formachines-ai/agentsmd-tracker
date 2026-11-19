@@ -1,67 +1,47 @@
 {
  "schema_version": 2,
  "site": "https://agentsmd.formachines.ai",
- "date": "2026-11-18",
- "generated": "2026-11-18T05:30:03Z",
+ "date": "2026-11-19",
+ "generated": "2026-11-19T05:30:05Z",
  "license": "CC BY 4.0",
  "added": [
   {
-   "full_name": "microsoft/TypeScript",
-   "owner": "microsoft",
-   "name": "TypeScript",
-   "language": "Go",
-   "stars": 111721,
+   "full_name": "solidjs/solid",
+   "owner": "solidjs",
+   "name": "solid",
+   "language": "TypeScript",
+   "stars": 36207,
    "path": "AGENTS.md",
-   "size": 6521,
-   "url": "https://github.com/microsoft/TypeScript/blob/main/AGENTS.md"
-  },
-  {
-   "full_name": "jasontaylordev/CleanArchitecture",
-   "owner": "jasontaylordev",
-   "name": "CleanArchitecture",
-   "language": "C#",
-   "stars": 20701,
-   "path": "AGENTS.md",
-   "size": 7144,
-   "url": "https://github.com/jasontaylordev/CleanArchitecture/blob/main/AGENTS.md"
-  },
-  {
-   "full_name": "JustArchiNET/ArchiSteamFarm",
-   "owner": "JustArchiNET",
-   "name": "ArchiSteamFarm",
-   "language": "C#",
-   "stars": 13784,
-   "path": "AGENTS.md",
-   "size": 6659,
-   "url": "https://github.com/JustArchiNET/ArchiSteamFarm/blob/main/AGENTS.md"
+   "size": 14462,
+   "url": "https://github.com/solidjs/solid/blob/main/AGENTS.md"
   }
  ],
  "removed": [
   {
-   "full_name": "microsoft/TypeScript",
-   "owner": "microsoft",
-   "name": "TypeScript",
-   "language": "Go",
-   "stars": 111721,
-   "path": ".github/copilot-instructions.md",
-   "size": null,
-   "url": "https://github.com/microsoft/TypeScript/blob/main/.github/copilot-instructions.md"
-  },
-  {
-   "full_name": "jgraph/drawio-desktop",
-   "owner": "jgraph",
-   "name": "drawio-desktop",
+   "full_name": "quasarframework/quasar",
+   "owner": "quasarframework",
+   "name": "quasar",
    "language": "JavaScript",
-   "stars": 63773,
+   "stars": 27211,
    "path": "CLAUDE.md",
    "size": null,
-   "url": "https://github.com/jgraph/drawio-desktop/blob/dev/CLAUDE.md"
+   "url": "https://github.com/quasarframework/quasar/blob/dev/CLAUDE.md"
+  },
+  {
+   "full_name": "vectordotdev/vector",
+   "owner": "vectordotdev",
+   "name": "vector",
+   "language": "Rust",
+   "stars": 22785,
+   "path": "CLAUDE.md",
+   "size": null,
+   "url": "https://github.com/vectordotdev/vector/blob/master/CLAUDE.md"
   }
  ],
  "removed_count": 2,
  "counts": {
-  "AGENTS.md": 565,
-  "CLAUDE.md": 320,
+  "AGENTS.md": 566,
+  "CLAUDE.md": 318,
   ".cursorrules": 16,
   ".cursor/rules": 33,
   ".github/copilot-instructions.md": 156,
@@ -70,8 +50,8 @@
   ".windsurfrules": 5,
   "AI_POLICY.md": 32,
   ".github/AI_POLICY.md": 2,
-  ".github/instructions": 0,
-  ".claude/rules": 0
+  ".github/instructions": 26,
+  ".claude/rules": 20
  },
  "scanned": 1919,
  "pending": 0

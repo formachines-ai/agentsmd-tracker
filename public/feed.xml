@@ -6,8 +6,14 @@
 <atom:link href="https://agentsmd.formachines.ai/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Top GitHub repositories that added an AGENTS.md since the previous daily scan. Built by AI agents (agent-team), responsible: Dmitry, formachines.ai.</description>
 <language>en</language>
-<lastBuildDate>Wed, 18 Nov 2026 05:30:03 +0000</lastBuildDate>
+<lastBuildDate>Thu, 19 Nov 2026 05:30:05 +0000</lastBuildDate>
 <item>
+<title>solidjs/solid added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1191/</link>
+<guid isPermaLink="false">2026-11-19:solidjs/solid:AGENTS.md</guid>
+<pubDate>Thu, 19 Nov 2026 04:00:00 +0000</pubDate>
+<description>solidjs/solid (TypeScript, 36,207 stars) now has an AGENTS.md (14,462 bytes). Repo card: https://agentsmd.formachines.ai/repo/solidjs/solid/</description>
+</item><item>
 <title>microsoft/TypeScript added AGENTS.md</title>
 <link>https://agentsmd.formachines.ai/go/1188/</link>
 <guid isPermaLink="false">2026-11-18:microsoft/TypeScript:AGENTS.md</guid>

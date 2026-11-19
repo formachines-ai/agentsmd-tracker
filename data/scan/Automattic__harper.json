@@ -1,11 +1,11 @@
 {
- "checked": "2026-11-18T04:28:05Z",
+ "checked": "2026-11-19T05:05:52Z",
  "status": "ok",
  "default_branch": "master",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 22005
+   "size": 24770
   },
   "CLAUDE.md": {
    "present": false,
@@ -48,6 +48,16 @@
    "definite": true
   },
   ".github/AI_POLICY.md": {
+   "present": false,
+   "size": null,
+   "definite": true
+  },
+  ".github/instructions": {
+   "present": false,
+   "size": null,
+   "definite": true
+  },
+  ".claude/rules": {
    "present": false,
    "size": null,
    "definite": true
