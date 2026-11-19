@@ -469,6 +469,38 @@ def file_url(repo: dict, path: str, branch: str | None = None) -> str:
 
 
 # ----------------------------------------------------------------------------- aggregation
+DENOMINATOR_DEFINITION = ("M = repositories in the sample whose latest scan has status ok. excluded = sample repositories outside M, each with one "
+                          "status: moved (redirects to another owner/name), deleted (unreachable, no redirect found), unreachable (last check "
+                          "failed or partial, not confirmed moved or deleted), archived, fork. Excluded repositories keep their card. "
+                          "M + excluded = sample_size.")
+
+
+def exclusion_reason(sc: dict | None) -> str | None:
+    """None = inside M. Otherwise the status only (moved / deleted / unreachable); no explanation of the maintainer's choice."""
+    st = (sc or {}).get("status")
+    if st == "ok":
+        return None
+    if st == "unreachable":
+        return "moved" if sc.get("moved_to") else "deleted"
+    return "unreachable"
+
+
+def denominator_info(repos: list[dict], agg: dict, date: str, first_scanned_of: dict) -> dict:
+    reasons = {"moved": 0, "deleted": 0, "archived": 0, "fork": 0, "unreachable": 0}   # archived/fork: filtered at seeding, never in the sample
+    items = []
+    for r in repos:
+        sc = agg["scans"].get(r["full_name"])
+        why = exclusion_reason(sc)
+        if why:
+            reasons[why] += 1
+            items.append({"repo": r["full_name"], "status": why, "moved_to": (sc or {}).get("moved_to"),
+                          "last_checked": (sc or {}).get("checked"), "first_seen": first_scanned_of.get(r["full_name"]),
+                          "page": f"{SITE_BASE}/repo/{r['owner']}/{r['name']}/"})
+    items.sort(key=lambda x: x["repo"].lower())
+    return {"date": date, "M": len(agg["ok"]), "sample_size": len(repos), "excluded": sum(reasons.values()), "excluded_by_reason": reasons,
+            "definition": DENOMINATOR_DEFINITION, "excluded_repos": items}
+
+
 def aggregate(repos: list[dict]) -> dict:
     scans = {r["full_name"]: read_json(scan_file_for(r), None) for r in repos}
     ok = [r for r in repos if (scans[r["full_name"]] or {}).get("status") == "ok"]
@@ -1266,12 +1298,16 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
         lang_a = f' · <a href="/lang/{lang_slug(r["language"])}/">All {esc(r["language"])} repos in the sample</a>' if r.get("language") else ""
         facts_line = (f'<p class="facts">{facts} Presence and size only, from HEAD requests to public GitHub URLs.</p>\n'
                       f'<p class="muted"><a href="/">Home: {esc(SITE_NAME)}</a>{lang_a}</p>\n')
+        why_ex = exclusion_reason(sc)
+        excl_line = (f'<p class="asof" id="excluded">Status: {esc(why_ex)}'
+                     + (f' (now at <a href="{GH_BASE}/{esc(sc["moved_to"])}" rel="nofollow">{esc(sc["moved_to"])}</a>)' if why_ex == "moved" else "")
+                     + f'. Not counted in the denominator M on {esc(scan_date)}. First seen in the sample on {esc(r_first)}; last checked {esc(checked)}.</p>\n') if why_ex else ""
         body = f"""<section>
 <p class="crumb"><a href="/">{esc(SITE_NAME)}</a> › repo</p>
 <h1>{esc(r['full_name'])}</h1>
 {facts_line}{files_line}
 <p class="lead">{esc(r['language'])} · {r['stars']:,} stars · default branch <code>{esc((sc or {}).get('default_branch') or r.get('default_branch') or 'main')}</code> · <a href="{esc(r.get('html_url') or GH_BASE + '/' + r['full_name'])}" rel="nofollow">repository on GitHub</a></p>
-<p class="muted">Scan status: {esc(status)} · last checked {esc(checked)} · <a href="/repo/{esc(r['owner'])}/{esc(r['name'])}/index.json">index.json</a></p>
+{excl_line}<p class="muted">Scan status: {esc(status)} · last checked {esc(checked)} · <a href="/repo/{esc(r['owner'])}/{esc(r['name'])}/index.json">index.json</a></p>
 <div class="scroll table-wrap"><table><thead><tr><th>Path</th><th>Present</th><th>Size</th><th>Link</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div>
 {feedback_links(r)}
 <p class="muted">Only presence, size and a link are published; the file contents belong to the repository and are not reproduced here.</p>
@@ -1307,7 +1343,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
         "schema_version": STATS_SCHEMA_VERSION,
         "site": SITE_BASE, "generated": generated, "license": "CC BY 4.0", "data_delayed": delayed,
         "method": METHOD, "attribution": f"{SITE_NAME}, {SITE_HOST}, {generated[:10]}, CC BY 4.0",
-        "sample": sample_info, "sample_size": sample, "scanned": total, "pending": len(agg["pending"]), "unreachable": len(agg["unreachable"]),
+        "sample": sample_info, "denominator": denominator_info(repos, agg, generated[:10], first_scanned_of), "sample_size": sample, "scanned": total, "pending": len(agg["pending"]), "unreachable": len(agg["unreachable"]),
         "paths": [s["path"] for s in PATHS],
         "tracked_since": tracked_since(history),
         "measured": {s["path"]: bool(tracked_since(history)[s["path"]]) for s in PATHS},
@@ -1466,6 +1502,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
 Data scanned at: {generated}
 The scan time changes only when new data is scanned; a rebuild of the same data keeps it. The build time is in build.json (built_at).
 {coverage_llms}Schema: stats.json v{STATS_SCHEMA_VERSION}, today.json v{SCHEMA_VERSION}
+Denominator: M = {total} (sample repos whose latest scan is ok); excluded = {sample - total} sample repos outside M with a status (moved, deleted, unreachable, archived, fork), cards kept; M + excluded = sample_size {sample}. Breakdown and list: stats.json field denominator.
 
 Latest (scan {generated}): {agg['counts'][PRIMARY_PATH]} of {total} scanned repos ({pct(agg['counts'][PRIMARY_PATH], total)} %) have AGENTS.md; {agg['counts']['CLAUDE.md']} CLAUDE.md; {agg['counts']['.cursorrules']} .cursorrules; {agg['counts']['.github/copilot-instructions.md']} copilot-instructions.md; {agg['counts']['llms.txt']} llms.txt.
 

@@ -6,6 +6,7 @@ Data scanned at: 2026-11-19T05:30:05Z
 The scan time changes only when new data is scanned; a rebuild of the same data keeps it. The build time is in build.json (built_at).
 Scan coverage (build.json scan): 1217 fresh on 2026-11-19, 702 carried over, 0 partial, stopped true. fresh = repos with status ok checked on the scan date; carried_over = repos whose last good value from an earlier scan is kept (fresh + carried_over = scanned_ok); partial = repos whose attempt in the run returned only some paths (their earlier good value is kept); stopped = the run ended early.
 Schema: stats.json v3, today.json v2
+Denominator: M = 1919 (sample repos whose latest scan is ok); excluded = 3 sample repos outside M with a status (moved, deleted, unreachable, archived, fork), cards kept; M + excluded = sample_size 1922. Breakdown and list: stats.json field denominator.
 
 Latest (scan 2026-11-19T05:30:05Z): 566 of 1919 scanned repos (29.5 %) have AGENTS.md; 318 CLAUDE.md; 16 .cursorrules; 156 copilot-instructions.md; 17 llms.txt.
 
