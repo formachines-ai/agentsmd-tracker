@@ -380,6 +380,26 @@ def infer_excluded_dates(history: list[dict], n_excluded: int, dated: list[str],
     return [next(iter(x)) if len(x) == 1 else None for x in seen]
 
 
+def observed_from_history(history: list[dict]) -> dict[str, str]:
+    """T-0214: full_name -> date of the first history file whose 'excluded' list holds the repo. The first file that carries the
+    key is a baseline (the repo may have left M earlier), so repos listed there get no date here; files without the key are
+    never read as 'nobody was excluded'."""
+    keyed = [h for h in sorted(history, key=lambda x: x["date"]) if isinstance(h.get("excluded"), list)]
+    out: dict[str, str] = {}
+    for h in keyed[1:]:
+        for e in h["excluded"]:
+            out.setdefault(e["repo"], h["date"])
+    base = {e["repo"] for e in keyed[0]["excluded"]} if keyed else set()
+    return {k: v for k, v in out.items() if k not in base}
+
+
+def excluded_history_line(history: list[dict]) -> str:
+    d = next((h["date"] for h in sorted(history, key=lambda x: x["date"]) if isinstance(h.get("excluded"), list)), None)
+    if d:
+        return f"History files data/history/<date>.json list the excluded repositories (repo, reason) from {d}.\n"
+    return "History files data/history/<date>.json list the excluded repositories (repo, reason) from the first scan after 2026-11-19 (none carry the list yet).\n"
+
+
 def backfill_excluded(repos: list[dict], history: list[dict]) -> int:
     """Give every repo outside M without a recorded excluded_since a date from history ('inferred_from_history') or
     null / 'unknown'. Written into the scan cache once; an existing value is never touched."""
@@ -388,15 +408,23 @@ def backfill_excluded(repos: list[dict], history: list[dict]) -> int:
         sc = read_json(scan_file_for(r), None)
         if sc and sc.get("status") not in (None, "ok"):
             cur.append((r, sc))
+    first = observed_from_history(history)
+    n_obs = 0
+    for r, sc in cur:   # T-0214: the first history file that lists the repo beats the cache and the counts, unless the cache already observed it
+        d = first.get(r["full_name"])
+        if d and sc.get("excluded_since_source") != "observed":
+            sc["excluded_since"], sc["excluded_since_source"] = d, "observed"
+            write_json(scan_file_for(r), sc)
+            n_obs += 1
     todo = [(r, sc) for r, sc in cur if not sc.get("excluded_since_source")]
     if not todo:
-        return 0
+        return n_obs
     dated = [sc["excluded_since"] for _, sc in cur if sc.get("excluded_since")]
     dates = infer_excluded_dates(history, len(cur), dated, [sc.get("moved_detected") for _, sc in todo])
     for (r, sc), d in zip(todo, dates):
         sc["excluded_since"], sc["excluded_since_source"] = (d, "inferred_from_history") if d else (None, "unknown")
         write_json(scan_file_for(r), sc)
-    return len(todo)
+    return len(todo) + n_obs
 
 
 def merge_moved(prev: dict | None, new: dict) -> None:
@@ -704,6 +732,8 @@ def update_history(agg: dict, scan_stats: dict | None, write: bool = True) -> di
         "scanned": len(agg["ok"]),
         "pending": len(agg["pending"]),
         "unreachable": len(agg["unreachable"]),
+        "excluded": sorted(({"repo": r["full_name"], "reason": exclusion_reason(agg["scans"].get(r["full_name"]))} for r in agg["unreachable"]),
+                           key=lambda e: e["repo"].lower()),   # T-0214: repos outside M that day; reason = status only
         "counts": agg["counts"],
         "any": agg["any"],
         "by_language": {k: {"repos": v["repos"], **{s["path"]: v[s["path"]] for s in PATHS}} for k, v in sorted(agg["by_lang"].items())},
@@ -1581,7 +1611,7 @@ Data scanned at: {generated}
 The scan time changes only when new data is scanned; a rebuild of the same data keeps it. The build time is in build.json (built_at).
 {coverage_llms}Schema: stats.json v{STATS_SCHEMA_VERSION}, today.json v{SCHEMA_VERSION}
 Denominator: M = {total} (sample repos whose latest scan is ok); excluded = {sample - total} sample repos outside M with a status (moved, deleted, unreachable, archived, fork), cards kept; M + excluded = sample_size {sample}. Breakdown and list: stats.json field denominator.
-
+{excluded_history_line(history)}
 Latest (scan {generated}): {agg['counts'][PRIMARY_PATH]} of {total} scanned repos ({pct(agg['counts'][PRIMARY_PATH], total)} %) have AGENTS.md; {agg['counts']['CLAUDE.md']} CLAUDE.md; {agg['counts']['.cursorrules']} .cursorrules; {agg['counts']['.github/copilot-instructions.md']} copilot-instructions.md; {agg['counts']['llms.txt']} llms.txt.
 
 ## Machine-readable
