@@ -61,6 +61,8 @@
     "moved_to": "TelegramMessenger/Telegram-Android",
     "last_checked": "2026-11-19T04:32:17Z",
     "first_seen": "2026-11-02",
+    "excluded_since": "2026-11-18",
+    "excluded_since_source": "inferred_from_history",
     "page": "https://agentsmd.formachines.ai/repo/DrKLO/Telegram/"
    },
    {
@@ -69,6 +71,8 @@
     "moved_to": "oss-invisible/dots",
     "last_checked": "2026-11-19T04:28:27Z",
     "first_seen": "2026-11-02",
+    "excluded_since": "2026-11-18",
+    "excluded_since_source": "inferred_from_history",
     "page": "https://agentsmd.formachines.ai/repo/feder-cr/invisible_dots/"
    },
    {
@@ -77,6 +81,8 @@
     "moved_to": null,
     "last_checked": "2026-11-19T04:52:27Z",
     "first_seen": "2026-11-02",
+    "excluded_since": "2026-11-13",
+    "excluded_since_source": "inferred_from_history",
     "page": "https://agentsmd.formachines.ai/repo/microsoft/onnxruntime/"
    }
   ]

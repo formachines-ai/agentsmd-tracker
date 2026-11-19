@@ -255,6 +255,8 @@
  "first_scanned": "2026-11-02",
  "moved_to": "oss-invisible/dots",
  "moved_detected": "2026-11-15",
+ "excluded_since": "2026-11-18",
+ "excluded_since_source": "inferred_from_history",
  "page": "https://agentsmd.formachines.ai/repo/feder-cr/invisible_dots/",
  "license": "CC BY 4.0"
 }
