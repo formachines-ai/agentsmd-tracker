@@ -83,12 +83,23 @@ class PerPathCoverage(unittest.TestCase):
         llms = (pub / "llms.txt").read_text()
         self.assertIn("checked", llms)
         self.assertIn("unknown", llms)
+        self.assertIn("by_language in stats.json", llms)
+        bl = st["by_language"]["Python"]   # T-0210
+        self.assertEqual((bl["checked"][NEW], bl["unknown"][NEW]), (2, 1))
+        self.assertEqual(bl["checked"][NEW] + bl["unknown"][NEW], bl["repos"])
+        self.assertEqual(bl[NEW], 1)
+        self.assertEqual(bl["shares"][NEW], 50.0)   # 1 / 2 checked, not 1 / 3
+        self.assertEqual((bl["checked"]["AGENTS.md"], bl["unknown"]["AGENTS.md"], bl["shares"]["AGENTS.md"]), (3, 0, 100.0))
+        self.assertEqual(bl["AGENTS.md"], 3)
 
     def test_full_coverage(self):
         pub = run_build(False)
         st = json.loads((pub / "stats.json").read_text())
         self.assertEqual((st["checked"][NEW], st["unknown"][NEW]), (3, 0))
         self.assertEqual(st["shares"][NEW], round(100 / 3, 1))
+        bl = st["by_language"]["Python"]   # T-0210
+        self.assertEqual((bl["checked"][NEW], bl["unknown"][NEW], bl["repos"]), (3, 0, 3))
+        self.assertEqual(bl["shares"][NEW], round(100 / 3, 1))
         html = (pub / "index.html").read_text()
         self.assertNotIn("not yet checked ·", html.replace("not yet checked</td>", ""))
         self.assertNotIn("Partly checked paths", (pub / "lang/python/index.html").read_text())
