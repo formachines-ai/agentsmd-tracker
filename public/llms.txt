@@ -46,6 +46,7 @@ Latest (scan 2026-11-19T05:30:05Z): 566 of 1919 scanned repos (29.5 %) have AGEN
 - [feed.xml](https://agentsmd.formachines.ai/feed.xml): RSS of repositories that added AGENTS.md
 - [build.json](https://agentsmd.formachines.ai/build.json): build time, scan status, data-delayed flag
 - moved_to / moved_detected in /repo/<owner>/<name>/index.json: new owner/name if github.com/<owner>/<name> answered a 301/302 to a different repository (case-only changes ignored), and the first UTC date it was seen; both null when not moved. Data only, the card stays.
+- excluded_since / excluded_since_source on each stats.json denominator.excluded_repos entry and in /repo/<owner>/<name>/index.json: the date the repository left M. excluded_since_source is observed (the scan saw it leave M on that date), inferred_from_history (the date comes from the daily history counts, and for a moved repository from its moved_detected date, not from a scan of this repository leaving M) or unknown (history cannot bound it; excluded_since is null). Dates are never invented.
 - Repo card JSON: https://agentsmd.formachines.ai/repo/<owner>/<name>/index.json (same fields as the HTML card)
 
 ## Pages

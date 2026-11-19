@@ -336,6 +336,69 @@ def scan_repo(repo: dict, token: str | None) -> dict:
     return res
 
 
+def merge_excluded(prev: dict | None, new: dict) -> None:
+    """excluded_since / excluded_since_source on a scan snapshot. Set once, when a repo that was inside M (status ok) first
+    shows a status other than ok: the scan date, source 'observed'. Never overwritten while the repo stays outside M; cleared
+    when it is back in M. A first scan outside M, or an earlier snapshot without a date, is left for backfill_excluded()."""
+    p = prev or {}
+    if new.get("status") == "ok":
+        new.pop("excluded_since", None)
+        new.pop("excluded_since_source", None)
+    elif p.get("excluded_since_source"):
+        new["excluded_since"], new["excluded_since_source"] = p.get("excluded_since"), p["excluded_since_source"]
+    elif p.get("status") == "ok":
+        new["excluded_since"], new["excluded_since_source"] = new["checked"][:10], "observed"
+
+
+def infer_excluded_dates(history: list[dict], n_excluded: int, dated: list[str], undated: list[str | None]) -> list[str | None]:
+    """Dates for the repos still without one (undated = per repo its moved_detected or None), same order; None = history cannot
+    bound it. history[].unreachable is the number of sample repos outside M on that day; the k-th exit is dated by the first day
+    that count reaches k (the first history day is a baseline, not an exit). Slots taken by dated repos are removed. A moved repo
+    left M through the redirect, so its slot is not before its moved_detected. A repo gets a date only if every way of pairing
+    slots with repos under these rules gives it the same one."""
+    from itertools import permutations
+    none = [None] * len(undated)
+    days = sorted(history, key=lambda h: h["date"])
+    if not days or n_excluded < 1 or len(undated) > 7:
+        return none
+    slots = []
+    for k in range(1, n_excluded + 1):
+        d = next((h["date"] for h in days if (h.get("unreachable") or 0) >= k), None)
+        if d is None or d == days[0]["date"]:
+            return none
+        slots.append(d)
+    for d in dated:
+        if d in slots:
+            slots.remove(d)
+    if len(slots) != len(undated):
+        return none
+    seen: list[set] = [set() for _ in undated]
+    for perm in set(permutations(slots)):
+        if all(not lb or perm[i] >= lb for i, lb in enumerate(undated)):
+            for i, d in enumerate(perm):
+                seen[i].add(d)
+    return [next(iter(x)) if len(x) == 1 else None for x in seen]
+
+
+def backfill_excluded(repos: list[dict], history: list[dict]) -> int:
+    """Give every repo outside M without a recorded excluded_since a date from history ('inferred_from_history') or
+    null / 'unknown'. Written into the scan cache once; an existing value is never touched."""
+    cur = []
+    for r in repos:
+        sc = read_json(scan_file_for(r), None)
+        if sc and sc.get("status") not in (None, "ok"):
+            cur.append((r, sc))
+    todo = [(r, sc) for r, sc in cur if not sc.get("excluded_since_source")]
+    if not todo:
+        return 0
+    dated = [sc["excluded_since"] for _, sc in cur if sc.get("excluded_since")]
+    dates = infer_excluded_dates(history, len(cur), dated, [sc.get("moved_detected") for _, sc in todo])
+    for (r, sc), d in zip(todo, dates):
+        sc["excluded_since"], sc["excluded_since_source"] = (d, "inferred_from_history") if d else (None, "unknown")
+        write_json(scan_file_for(r), sc)
+    return len(todo)
+
+
 def merge_moved(prev: dict | None, new: dict) -> None:
     """Carry moved_to / moved_detected from the previous snapshot; the first detection date is kept while moved_to is unchanged."""
     p = prev or {}
@@ -405,6 +468,7 @@ def run_scan(repos: list[dict], limit: int | None, max_seconds: float | None, fo
             continue
         prev = read_json(scan_file_for(repo), None)
         merge_moved(prev, new)
+        merge_excluded(prev, new)
         attempt_status = new["status"]   # what this attempt returned; a kept good snapshot must not count as a successful check today
         if prev and prev.get("status") == "ok" and new["status"] == "ok":
             add_, rem_ = diff_snapshots(repo, prev, new)
@@ -415,6 +479,7 @@ def run_scan(repos: list[dict], limit: int | None, max_seconds: float | None, fo
             prev["last_error"] = new["checked"]
             prev["moved_to"], prev["moved_detected"] = new.get("moved_to", prev.get("moved_to")), new.get("moved_detected", prev.get("moved_detected"))
             new = prev
+            merge_excluded(prev, new)
         write_json(scan_file_for(repo), new)
         stats["scanned"] += 1
         stats[attempt_status] = stats.get(attempt_status, 0) + 1
@@ -485,6 +550,15 @@ def exclusion_reason(sc: dict | None) -> str | None:
     return "unreachable"
 
 
+def excluded_since_text(sc: dict | None) -> str:
+    d, src = (sc or {}).get("excluded_since"), (sc or {}).get("excluded_since_source") or "unknown"
+    if not d:
+        return "Denominator: excluded since date unknown (history cannot bound it)."
+    if src == "observed":
+        return f"Denominator: excluded since {d} (observed in the scan)."
+    return f"Denominator: excluded since {d} (inferred from history counts, not observed for this repository)."
+
+
 def denominator_info(repos: list[dict], agg: dict, date: str, first_scanned_of: dict) -> dict:
     reasons = {"moved": 0, "deleted": 0, "archived": 0, "fork": 0, "unreachable": 0}   # archived/fork: filtered at seeding, never in the sample
     items = []
@@ -495,6 +569,8 @@ def denominator_info(repos: list[dict], agg: dict, date: str, first_scanned_of: 
             reasons[why] += 1
             items.append({"repo": r["full_name"], "status": why, "moved_to": (sc or {}).get("moved_to"),
                           "last_checked": (sc or {}).get("checked"), "first_seen": first_scanned_of.get(r["full_name"]),
+                          "excluded_since": (sc or {}).get("excluded_since"),
+                          "excluded_since_source": (sc or {}).get("excluded_since_source") or "unknown",
                           "page": f"{SITE_BASE}/repo/{r['owner']}/{r['name']}/"})
     items.sort(key=lambda x: x["repo"].lower())
     return {"date": date, "M": len(agg["ok"]), "sample_size": len(repos), "excluded": sum(reasons.values()), "excluded_by_reason": reasons,
@@ -1301,7 +1377,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
         why_ex = exclusion_reason(sc)
         excl_line = (f'<p class="asof" id="excluded">Status: {esc(why_ex)}'
                      + (f' (now at <a href="{GH_BASE}/{esc(sc["moved_to"])}" rel="nofollow">{esc(sc["moved_to"])}</a>)' if why_ex == "moved" else "")
-                     + f'. Not counted in the denominator M on {esc(scan_date)}. First seen in the sample on {esc(r_first)}; last checked {esc(checked)}.</p>\n') if why_ex else ""
+                     + f'. {excluded_since_text(sc)} Not counted in the denominator M on {esc(scan_date)}. First seen in the sample on {esc(r_first)}; last checked {esc(checked)}.</p>\n') if why_ex else ""
         body = f"""<section>
 <p class="crumb"><a href="/">{esc(SITE_NAME)}</a> › repo</p>
 <h1>{esc(r['full_name'])}</h1>
@@ -1325,6 +1401,8 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
                                           "status": status, "checked": checked if sc else None, "files": files_json,
                                           "language_share": language_share, "first_seen": first_seen, "first_scanned": r_first,
                                           "moved_to": (sc or {}).get("moved_to"), "moved_detected": (sc or {}).get("moved_detected"),
+                                          "excluded_since": (sc or {}).get("excluded_since") if why_ex else None,
+                                          "excluded_since_source": ((sc or {}).get("excluded_since_source") or "unknown") if why_ex else None,
                                           "page": f"{SITE_BASE}/repo/{r['owner']}/{r['name']}/", "license": "CC BY 4.0"})
         urls.append(f"{SITE_BASE}/repo/{r['owner']}/{r['name']}/")
         url_lastmod[urls[-1]] = changed_on.get(r["full_name"]) or r_first or scan_date
@@ -1542,6 +1620,7 @@ Latest (scan {generated}): {agg['counts'][PRIMARY_PATH]} of {total} scanned repo
 - [feed.xml]({SITE_BASE}/feed.xml): RSS of repositories that added AGENTS.md
 - [build.json]({SITE_BASE}/build.json): build time, scan status, data-delayed flag
 - moved_to / moved_detected in /repo/<owner>/<name>/index.json: new owner/name if github.com/<owner>/<name> answered a 301/302 to a different repository (case-only changes ignored), and the first UTC date it was seen; both null when not moved. Data only, the card stays.
+- excluded_since / excluded_since_source on each stats.json denominator.excluded_repos entry and in /repo/<owner>/<name>/index.json: the date the repository left M. excluded_since_source is observed (the scan saw it leave M on that date), inferred_from_history (the date comes from the daily history counts, and for a moved repository from its moved_detected date, not from a scan of this repository leaving M) or unknown (history cannot bound it; excluded_since is null). Dates are never invented.
 - Repo card JSON: {SITE_BASE}/repo/<owner>/<name>/index.json (same fields as the HTML card)
 
 ## Pages
@@ -1647,6 +1726,7 @@ def main() -> int:
     if not a.no_scan:
         scan_stats = run_scan(repos, a.limit, a.max_seconds, a.force)
 
+    backfill_excluded(repos, load_history())
     agg = aggregate(repos)
     # write history only if a scan actually checked something; a run that scanned nothing (--no-scan, or all repos fresh) keeps the scan timestamp
     today = update_history(agg, scan_stats, write=bool(scan_stats and scan_stats.get("ok")))

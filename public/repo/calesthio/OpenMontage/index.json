@@ -293,6 +293,8 @@
  "first_scanned": "2026-11-02",
  "moved_to": "OpenMontageInc/OpenMontage",
  "moved_detected": "2026-11-15",
+ "excluded_since": null,
+ "excluded_since_source": null,
  "page": "https://agentsmd.formachines.ai/repo/calesthio/OpenMontage/",
  "license": "CC BY 4.0"
 }

@@ -255,6 +255,8 @@
  "first_scanned": "2026-11-02",
  "moved_to": null,
  "moved_detected": null,
+ "excluded_since": null,
+ "excluded_since_source": null,
  "page": "https://agentsmd.formachines.ai/repo/Konloch/bytecode-viewer/",
  "license": "CC BY 4.0"
 }

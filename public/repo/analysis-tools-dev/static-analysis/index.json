@@ -291,6 +291,8 @@
  "first_scanned": "2026-11-02",
  "moved_to": null,
  "moved_detected": null,
+ "excluded_since": null,
+ "excluded_since_source": null,
  "page": "https://agentsmd.formachines.ai/repo/analysis-tools-dev/static-analysis/",
  "license": "CC BY 4.0"
 }

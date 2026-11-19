@@ -65,5 +65,7 @@
   }
  },
  "moved_to": "oss-invisible/dots",
- "moved_detected": "2026-11-15"
+ "moved_detected": "2026-11-15",
+ "excluded_since": "2026-11-18",
+ "excluded_since_source": "inferred_from_history"
 }
