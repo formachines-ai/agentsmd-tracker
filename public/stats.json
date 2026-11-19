@@ -41,6 +41,46 @@
    "TypeScript": 195
   }
  },
+ "denominator": {
+  "date": "2026-11-19",
+  "M": 1919,
+  "sample_size": 1922,
+  "excluded": 3,
+  "excluded_by_reason": {
+   "moved": 2,
+   "deleted": 1,
+   "archived": 0,
+   "fork": 0,
+   "unreachable": 0
+  },
+  "definition": "M = repositories in the sample whose latest scan has status ok. excluded = sample repositories outside M, each with one status: moved (redirects to another owner/name), deleted (unreachable, no redirect found), unreachable (last check failed or partial, not confirmed moved or deleted), archived, fork. Excluded repositories keep their card. M + excluded = sample_size.",
+  "excluded_repos": [
+   {
+    "repo": "DrKLO/Telegram",
+    "status": "moved",
+    "moved_to": "TelegramMessenger/Telegram-Android",
+    "last_checked": "2026-11-19T04:32:17Z",
+    "first_seen": "2026-11-02",
+    "page": "https://agentsmd.formachines.ai/repo/DrKLO/Telegram/"
+   },
+   {
+    "repo": "feder-cr/invisible_dots",
+    "status": "moved",
+    "moved_to": "oss-invisible/dots",
+    "last_checked": "2026-11-19T04:28:27Z",
+    "first_seen": "2026-11-02",
+    "page": "https://agentsmd.formachines.ai/repo/feder-cr/invisible_dots/"
+   },
+   {
+    "repo": "microsoft/onnxruntime",
+    "status": "deleted",
+    "moved_to": null,
+    "last_checked": "2026-11-19T04:52:27Z",
+    "first_seen": "2026-11-02",
+    "page": "https://agentsmd.formachines.ai/repo/microsoft/onnxruntime/"
+   }
+  ]
+ },
  "sample_size": 1922,
  "scanned": 1919,
  "pending": 0,
