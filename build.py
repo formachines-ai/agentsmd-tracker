@@ -1318,7 +1318,12 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
         "coverage": {s["path"]: {"count": agg["counts"][s["path"]], "checked": cov["total"][s["path"]], "unknown": total - cov["total"][s["path"]],
                                  "total": total, "share": pct(agg["counts"][s["path"]], cov["total"][s["path"]]), "since": tracked_since(history)[s["path"]]}
                      for s in PATHS if tracked_since(history)[s["path"]]},
-        "by_language": {k: {"repos": v["repos"], "any": v["any"], **{s["path"]: (v[s["path"]] if tracked_since(history)[s["path"]] else None) for s in PATHS}} for k, v in sorted(agg["by_lang"].items())},
+        "by_language": {k: {"repos": v["repos"], "any": v["any"], **{s["path"]: (v[s["path"]] if tracked_since(history)[s["path"]] else None) for s in PATHS},
+                            # T-0210: per-language coverage, same rule as the top-level checked/unknown/shares
+                            "checked": {s["path"]: (cov["lang"].get(k, {}).get(s["path"], 0) if tracked_since(history)[s["path"]] else None) for s in PATHS},
+                            "unknown": {s["path"]: (v["repos"] - cov["lang"].get(k, {}).get(s["path"], 0) if tracked_since(history)[s["path"]] else None) for s in PATHS},
+                            "shares": {s["path"]: (pct(v[s["path"]], cov["lang"].get(k, {}).get(s["path"], 0)) if tracked_since(history)[s["path"]] and cov["lang"].get(k, {}).get(s["path"], 0) else None) for s in PATHS}}
+                        for k, v in sorted(agg["by_lang"].items())},
         "history": [{"date": d["date"], "scanned": d["scanned"], "counts": d["counts"], "any": d.get("any"),
                      "shares": {p: (pct(c, d["scanned"]) if d["scanned"] else None) for p, c in d["counts"].items()},
                      "pct": {p: (pct(c, d["scanned"]) if d["scanned"] else None) for p, c in d["counts"].items()},
@@ -1472,6 +1477,7 @@ Latest (scan {generated}): {agg['counts'][PRIMARY_PATH]} of {total} scanned repo
 - null and measured:false in stats.json: a path with tracked_since null has not been measured yet (no first scan recorded). Its counts, shares and by_language values are null and measured is false; this is not "checked, found nowhere" and must not be read as 0 or 0.0 %. Measured paths have measured:true.
 - null presence on repo cards: in /repo/<owner>/<name>/index.json a null present, or lang_share with measured:false (count and share null), means that path is not measured yet (no first scan recorded), not "checked, absent". Measured paths keep their values.
 - checked and unknown in stats.json (also coverage per path): a repository is checked for a path only if its latest snapshot is dated on or after that path's tracked_since and holds a result for the path; otherwise it is unknown (not yet checked), never counted as absent. checked + unknown = total repos scanned; shares[path] = counts[path] / checked. On repo cards (index.json) present is null where the repo is unknown for that path. Old paths are fully checked (unknown 0).
+- by_language in stats.json: each language also has checked, unknown and shares per path, worked like the top-level ones: checked + unknown = that language's repos, shares[path] = count / checked (null when checked is 0 or the path is not measured yet); unchecked repos are never counted as absent.
 - tracked_since in stats.json: path -> date of that path's first scan; history[] counts of 0 before that date were not measured, and the first-scan counts are a baseline, not added files.
 - sizes in stats.json holds two size schemes for AGENTS.md and CLAUDE.md: buckets (lt_2k <2048, 2k_8k, 8k_32k up to 32768 inclusive, gt_32k >32768 bytes) and bands (lt_1k <1024, 1k_4k, 4k_16k, 16k_32k up to 32768 inclusive, gt_32k >32768 bytes, unknown); the gt_32k counts of both are the same threshold (32 KiB = 32768 bytes).
 - sizes in stats.json, AGENTS.md and CLAUDE.md entries also bands: lt_1k, 1k_4k, 4k_16k, 16k_32k (up to 32768 inclusive), gt_32k (>32 KiB) and unknown (present, no size), counts summing to the number of repos with the file (KiB = 1024 bytes).
