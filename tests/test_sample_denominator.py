@@ -147,3 +147,40 @@ class ExcludedSince(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class ExcludedInHistory(unittest.TestCase):
+    """T-0214: history 'excluded' key and observed dates from it; offline, pure functions on a temp copy."""
+
+    def test_observed_from_first_listing_and_old_files_untouched(self):
+        tmp = Path(tempfile.mkdtemp(prefix="exhist-"))
+        try:
+            shutil.copy(REPO / "build.py", tmp / "build.py")
+            sys.path.insert(0, str(tmp))
+            try:
+                import importlib
+                b = importlib.import_module("build")
+            finally:
+                sys.path.remove(str(tmp))
+            old = {"date": "2026-11-17", "unreachable": 1}                       # no 'excluded' key
+            base = {"date": "2026-11-18", "unreachable": 1, "excluded": [{"repo": "a/old", "reason": "deleted"}]}
+            nxt = {"date": "2026-11-19", "unreachable": 2, "excluded": [{"repo": "a/old", "reason": "deleted"}, {"repo": "b/new", "reason": "moved"}]}
+            hist = [old, base, nxt]
+            before = json.dumps(hist, sort_keys=True)
+            self.assertEqual(b.observed_from_history(hist), {"b/new": "2026-11-19"})   # a/old left before the first keyed file: no date
+            self.assertEqual(b.observed_from_history([old]), {})                       # no key anywhere: nothing observed
+            self.assertEqual(b.observed_from_history([old, base]), {})                 # the first keyed file is a baseline
+            self.assertEqual(json.dumps(hist, sort_keys=True), before)                 # inputs untouched
+            self.assertIn("from 2026-11-18", b.excluded_history_line(hist))
+            self.assertNotIn("from 2026-1", b.excluded_history_line([old]))
+        finally:
+            shutil.rmtree(tmp, ignore_errors=True)
+
+    def test_live_history_old_files_have_no_key_and_llms_line(self):
+        files = sorted((REPO / "data" / "history").glob("*.json"))
+        with_key = [p.stem for p in files if "excluded" in json.loads(p.read_text())]
+        for p in files:
+            if p.stem not in with_key:
+                self.assertNotIn("excluded", json.loads(p.read_text()))
+        self.assertEqual(with_key, sorted(with_key))
+        self.assertIn("History files data/history/<date>.json list the excluded repositories", (REPO / "public" / "llms.txt").read_text())

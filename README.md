@@ -15,7 +15,7 @@ scripts/seed_repos.py    one-off: collect the repository sample through the GitH
 static/style.css         the only stylesheet; copied into public/ by build.py
 data/repos.json          the sample: id, owner, name, language, stars, default_branch   (committed)
 data/scan/<owner>__<name>.json   per-repo cache: {checked, status, default_branch, files: {path: {present, size}}}   (committed)
-data/history/<YYYY-MM-DD>.json   per-day counts by type and language, "added" / "removed" since the previous scan   (committed)
+data/history/<YYYY-MM-DD>.json   per-day counts by type and language, "added" / "removed" since the previous scan; from the first scan after T-0214 also "excluded": [{repo, reason}] = repos outside M that day (reason = status only; older files are never rewritten)   (committed)
 data/go.json             stable ids for outbound links /go/<id>/ (append-only)   (committed)
 public/                  the whole site, prebuilt   (committed — the server only publishes it)
 ```
