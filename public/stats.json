@@ -113,8 +113,134 @@
   ".windsurfrules": 0.3,
   "AI_POLICY.md": 1.7,
   ".github/AI_POLICY.md": 0.1,
-  ".github/instructions": 1.4,
-  ".claude/rules": 1.0
+  ".github/instructions": 2.1,
+  ".claude/rules": 1.6
+ },
+ "checked": {
+  "AGENTS.md": 1919,
+  "CLAUDE.md": 1919,
+  ".cursorrules": 1919,
+  ".cursor/rules": 1919,
+  ".github/copilot-instructions.md": 1919,
+  "llms.txt": 1919,
+  "GEMINI.md": 1919,
+  ".windsurfrules": 1919,
+  "AI_POLICY.md": 1919,
+  ".github/AI_POLICY.md": 1919,
+  ".github/instructions": 1217,
+  ".claude/rules": 1217
+ },
+ "unknown": {
+  "AGENTS.md": 0,
+  "CLAUDE.md": 0,
+  ".cursorrules": 0,
+  ".cursor/rules": 0,
+  ".github/copilot-instructions.md": 0,
+  "llms.txt": 0,
+  "GEMINI.md": 0,
+  ".windsurfrules": 0,
+  "AI_POLICY.md": 0,
+  ".github/AI_POLICY.md": 0,
+  ".github/instructions": 702,
+  ".claude/rules": 702
+ },
+ "coverage": {
+  "AGENTS.md": {
+   "count": 566,
+   "checked": 1919,
+   "unknown": 0,
+   "total": 1919,
+   "share": 29.5,
+   "since": "2026-11-02"
+  },
+  "CLAUDE.md": {
+   "count": 318,
+   "checked": 1919,
+   "unknown": 0,
+   "total": 1919,
+   "share": 16.6,
+   "since": "2026-11-02"
+  },
+  ".cursorrules": {
+   "count": 16,
+   "checked": 1919,
+   "unknown": 0,
+   "total": 1919,
+   "share": 0.8,
+   "since": "2026-11-02"
+  },
+  ".cursor/rules": {
+   "count": 33,
+   "checked": 1919,
+   "unknown": 0,
+   "total": 1919,
+   "share": 1.7,
+   "since": "2026-11-02"
+  },
+  ".github/copilot-instructions.md": {
+   "count": 156,
+   "checked": 1919,
+   "unknown": 0,
+   "total": 1919,
+   "share": 8.1,
+   "since": "2026-11-02"
+  },
+  "llms.txt": {
+   "count": 17,
+   "checked": 1919,
+   "unknown": 0,
+   "total": 1919,
+   "share": 0.9,
+   "since": "2026-11-02"
+  },
+  "GEMINI.md": {
+   "count": 20,
+   "checked": 1919,
+   "unknown": 0,
+   "total": 1919,
+   "share": 1.0,
+   "since": "2026-11-02"
+  },
+  ".windsurfrules": {
+   "count": 5,
+   "checked": 1919,
+   "unknown": 0,
+   "total": 1919,
+   "share": 0.3,
+   "since": "2026-11-02"
+  },
+  "AI_POLICY.md": {
+   "count": 32,
+   "checked": 1919,
+   "unknown": 0,
+   "total": 1919,
+   "share": 1.7,
+   "since": "2026-11-16"
+  },
+  ".github/AI_POLICY.md": {
+   "count": 2,
+   "checked": 1919,
+   "unknown": 0,
+   "total": 1919,
+   "share": 0.1,
+   "since": "2026-11-16"
+  },
+  ".github/instructions": {
+   "count": 26,
+   "checked": 1217,
+   "unknown": 702,
+   "total": 1919,
+   "share": 2.1,
+   "since": "2026-11-19"
+  },
+  ".claude/rules": {
+   "count": 20,
+   "checked": 1217,
+   "unknown": 702,
+   "total": 1919,
+   "share": 1.6,
+   "since": "2026-11-19"
+  }
  },
  "by_language": {
   "C#": {
