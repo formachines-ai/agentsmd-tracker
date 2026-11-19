@@ -617,6 +617,33 @@ def tracked_since(history: list[dict]) -> dict[str, str | None]:
 NOT_MEASURED = "Not measured yet: no first scan recorded"
 
 
+def path_coverage(agg: dict, ts: dict) -> dict:
+    """T-0209: per path, a repo is 'checked' only if its latest snapshot date is on or after the path's tracked_since and
+    that snapshot holds a result for the path; otherwise 'unknown'. Returns {"repo": {full_name: {path: bool}},
+    "total": {path: checked}, "lang": {lang: {path: checked}}}. Nothing is backfilled."""
+    repo_cov: dict[str, dict] = {}
+    total = {s["path"]: 0 for s in PATHS}
+    lang: dict[str, dict] = {}
+    for r in agg["ok"]:
+        sc = agg["scans"][r["full_name"]] or {}
+        day = str(sc.get("checked") or "")[:10]
+        files = sc.get("files") or {}
+        cov = {}
+        for s in PATHS:
+            p = s["path"]
+            since = ts.get(p)
+            cov[p] = bool(since) and day >= since and p in files
+            if cov[p]:
+                total[p] += 1
+                lang.setdefault(r["language"], {q["path"]: 0 for q in PATHS})[p] += 1
+        repo_cov[r["full_name"]] = cov
+    return {"repo": repo_cov, "total": total, "lang": lang}
+
+
+def coverage_text(count: int, checked: int, total: int, since: str) -> str:
+    return (f"{count:,} of {checked:,} checked ({pct(count, checked)} %) · {total - checked:,} not yet checked · since {since}")
+
+
 def load_history() -> list[dict]:
     days = []
     for p in sorted(HISTORY_DIR.glob("*.json")):
@@ -895,6 +922,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
         banner = f'<div class="banner"><strong>Partial scan:</strong> {len(agg["pending"])} of {sample} repositories are still pending; percentages use the {total} scanned so far.</div>'
 
     ts0 = tracked_since(history)   # T-0203: None = never scanned = not measured (not 0)
+    cov = path_coverage(agg, ts0)   # T-0209
     cards = []
     for s in PATHS:
         p = s["path"]
@@ -907,6 +935,23 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
 </section>""")
             continue
         series = [pct(d["counts"].get(p, 0), d["scanned"]) for d in history[-SPARK_DAYS:]]
+        c_ = cov["total"][p]
+        if c_ == 0 and total:
+            cards.append(f"""<section class="card">
+<h2><code>{esc(s['label'])}</code></h2>
+<p class="big">Not yet checked</p>
+<p class="share">{total:,} repos not yet checked · since {esc(ts0[p])} · {esc(s['note'])}</p>
+</section>""")
+            continue
+        if c_ < total:
+            cards.append(f"""<section class="card">
+<h2><code>{esc(s['label'])}</code></h2>
+<p class="big">{n:,} <span class="of">of {c_:,} checked</span></p>
+<p class="share">{pct(n, c_)} % of checked repos · {esc(s['note'])}</p>
+<p class="muted">{esc(coverage_text(n, c_, total, ts0[p]))}</p>
+{sparkline(series, label=f"{s['label']} share by day")}
+</section>""")
+            continue
         cards.append(f"""<section class="card">
 <h2><code>{esc(s['label'])}</code></h2>
 <p class="big">{n:,} <span class="of">of {total:,}</span></p>
@@ -990,7 +1035,8 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
     # language table
     rows = []
     for lang, v in sorted(agg["by_lang"].items(), key=lambda kv: -kv[1]["repos"]):
-        cells = "".join((f'<td>{v[s["path"]]}<span class="pc"> ({pct(v[s["path"]], v["repos"])} %)</span></td>' if tracked_since(history)[s["path"]] else '<td class="muted">Not measured yet</td>') for s in PATHS)
+        lc_ = cov["lang"].get(lang, {})
+        cells = "".join((f'<td>{v[s["path"]]}<span class="pc"> ({pct(v[s["path"]], lc_.get(s["path"], 0) if lc_.get(s["path"], 0) < v["repos"] else v["repos"])} %)</span>' + (f'<span class="muted"><br>{lc_.get(s["path"], 0)} of {v["repos"]} checked</span>' if lc_.get(s["path"], 0) < v["repos"] else '') + '</td>' if tracked_since(history)[s["path"]] else '<td class="muted">Not measured yet</td>') for s in PATHS)
         rows.append(f"<tr><th scope=\"row\"><a href=\"/lang/{lang_slug(lang)}/\">{esc(lang)}</a></th><td>{v['repos']}</td><td>{v['any']}<span class=\"pc\"> ({pct(v['any'], v['repos'])} %)</span></td>{cells}</tr>")
     heads = "".join(f'<th><code>{esc(s["label"])}</code></th>' for s in PATHS)
     lang_table = f"""<section id="languages">
@@ -1141,10 +1187,14 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
                          f'({pct(lk, lt)} %) on {esc(scan_date)}</a></span>')
             f = (sc or {}).get("files", {}).get(s["path"], {"present": None, "size": None})
             present = f.get("present") if meas else None
+            if meas and r["full_name"] in cov["repo"] and not cov["repo"][r["full_name"]][s["path"]]:
+                present = None   # T-0209: unknown for this repo (snapshot predates tracked_since or holds no result)
             url = file_url(r, s["path"], (sc or {}).get("default_branch"))
             files_json[s["path"]] = {"present": present, "size": f.get("size"), "url": url if present else None}
             if not meas:
                 files_json[s["path"]]["measured"] = False
+            elif present is None and sc and r["full_name"] in cov["repo"]:
+                files_json[s["path"]]["checked"] = False
             if lang_share:
                 files_json[s["path"]]["lang_share"] = lang_share
                 language_share[s["path"]] = {k: lang_share[k] for k in ("count", "total", "pct", "date")}
@@ -1262,7 +1312,12 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
         "tracked_since": tracked_since(history),
         "measured": {s["path"]: bool(tracked_since(history)[s["path"]]) for s in PATHS},
         "counts": {s["path"]: (agg["counts"][s["path"]] if tracked_since(history)[s["path"]] else None) for s in PATHS}, "any": agg["any"],
-        "shares": {s["path"]: (pct(agg["counts"][s["path"]], total) if tracked_since(history)[s["path"]] else None) for s in PATHS},
+        "shares": {s["path"]: (pct(agg["counts"][s["path"]], cov["total"][s["path"]]) if tracked_since(history)[s["path"]] else None) for s in PATHS},
+        "checked": {s["path"]: (cov["total"][s["path"]] if tracked_since(history)[s["path"]] else None) for s in PATHS},
+        "unknown": {s["path"]: (total - cov["total"][s["path"]] if tracked_since(history)[s["path"]] else None) for s in PATHS},
+        "coverage": {s["path"]: {"count": agg["counts"][s["path"]], "checked": cov["total"][s["path"]], "unknown": total - cov["total"][s["path"]],
+                                 "total": total, "share": pct(agg["counts"][s["path"]], cov["total"][s["path"]]), "since": tracked_since(history)[s["path"]]}
+                     for s in PATHS if tracked_since(history)[s["path"]]},
         "by_language": {k: {"repos": v["repos"], "any": v["any"], **{s["path"]: (v[s["path"]] if tracked_since(history)[s["path"]] else None) for s in PATHS}} for k, v in sorted(agg["by_lang"].items())},
         "history": [{"date": d["date"], "scanned": d["scanned"], "counts": d["counts"], "any": d.get("any"),
                      "shares": {p: (pct(c, d["scanned"]) if d["scanned"] else None) for p, c in d["counts"].items()},
@@ -1338,6 +1393,8 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
                 f = fl.get(sp["path"], {})
                 if not ts0.get(sp["path"]):
                     cells += '<td class="muted">not measured</td>'
+                elif not cov["repo"][r["full_name"]][sp["path"]]:
+                    cells += '<td class="muted">not yet checked</td>'
                 elif f.get("present"):
                     href = go.href(r, sp["path"], file_url(r, sp["path"], sc.get("default_branch")))
                     cells += f'<td class="yes"><a href="{href}" rel="nofollow">yes</a></td>'
@@ -1358,6 +1415,11 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
         unmeasured = [sp["path"] for sp in PATHS if not ts_l.get(sp["path"])]
         if unmeasured:
             others += f". Not measured yet (no first scan recorded): {', '.join(unmeasured)}"
+        lc = cov["lang"].get(lang, {})
+        partial_l = [f"{sp['path']}: {coverage_text(v[sp['path']], lc.get(sp['path'], 0), v['repos'], ts_l[sp['path']])}"
+                     for sp in PATHS if ts_l.get(sp["path"]) and lc.get(sp["path"], 0) < v["repos"]]
+        cov_note = ("" if not partial_l else '<p class="muted" id="path-coverage">Partly checked paths: '
+                    + "; ".join(esc(x) for x in partial_l) + ". Repositories not yet checked for a path are not counted as absent.</p>")
         l_sentence = (f"On {l_day}, {v[PRIMARY_PATH]:,} of {v['repos']:,} top {lang} repositories by stars ({pct(v[PRIMARY_PATH], v['repos'])} %) have AGENTS.md. "
                       f"Of the same {v['repos']:,} repositories: {others}. The tracker checks {len(PATHS)} file paths, presence and size only, "
                       f"from HEAD requests to public GitHub URLs, updated daily at about 04:00 UTC.")
@@ -1373,6 +1435,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
 <p class="crumb"><a href="/">{esc(SITE_NAME)}</a> › <a href="/#languages">languages</a> › {esc(lang)}</p>
 <h1>AGENTS.md in {esc(lang)} repositories</h1>
 <p class="lead">{esc(l_sentence)} Data: <a href="/">home page</a>, <a href="/stats.json">stats.json</a>.</p>
+{cov_note}
 <p class="muted">Stats CC BY 4.0, cite as "{esc(SITE_NAME)}, {esc(SITE_HOST)}". Sorted alphabetically by owner/name — not a ranking.</p>
 {agents_sec}<div class="scroll table-wrap"><table><thead><tr><th>Repository</th>{heads}</tr></thead><tbody>{''.join(trs)}</tbody></table></div>
 {other_sec}</section>"""
@@ -1408,6 +1471,7 @@ Latest (scan {generated}): {agg['counts'][PRIMARY_PATH]} of {total} scanned repo
 - combinations example ({generated[:10]}): agents_only {agg['combo']['agents_only']}, claude_only {agg['combo']['claude_only']}, both {agg['combo']['both']}, neither {agg['combo']['neither']}, agents_and_copilot {agg['combo']['agents_and_copilot']} of {total} scanned repos, date {generated[:10]}.
 - null and measured:false in stats.json: a path with tracked_since null has not been measured yet (no first scan recorded). Its counts, shares and by_language values are null and measured is false; this is not "checked, found nowhere" and must not be read as 0 or 0.0 %. Measured paths have measured:true.
 - null presence on repo cards: in /repo/<owner>/<name>/index.json a null present, or lang_share with measured:false (count and share null), means that path is not measured yet (no first scan recorded), not "checked, absent". Measured paths keep their values.
+- checked and unknown in stats.json (also coverage per path): a repository is checked for a path only if its latest snapshot is dated on or after that path's tracked_since and holds a result for the path; otherwise it is unknown (not yet checked), never counted as absent. checked + unknown = total repos scanned; shares[path] = counts[path] / checked. On repo cards (index.json) present is null where the repo is unknown for that path. Old paths are fully checked (unknown 0).
 - tracked_since in stats.json: path -> date of that path's first scan; history[] counts of 0 before that date were not measured, and the first-scan counts are a baseline, not added files.
 - sizes in stats.json holds two size schemes for AGENTS.md and CLAUDE.md: buckets (lt_2k <2048, 2k_8k, 8k_32k up to 32768 inclusive, gt_32k >32768 bytes) and bands (lt_1k <1024, 1k_4k, 4k_16k, 16k_32k up to 32768 inclusive, gt_32k >32768 bytes, unknown); the gt_32k counts of both are the same threshold (32 KiB = 32768 bytes).
 - sizes in stats.json, AGENTS.md and CLAUDE.md entries also bands: lt_1k, 1k_4k, 4k_16k, 16k_32k (up to 32768 inclusive), gt_32k (>32 KiB) and unknown (present, no size), counts summing to the number of repos with the file (KiB = 1024 bytes).

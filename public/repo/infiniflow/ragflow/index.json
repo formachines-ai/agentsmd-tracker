@@ -158,6 +158,7 @@
    "present": null,
    "size": null,
    "url": null,
+   "checked": false,
    "lang_share": {
     "count": 2,
     "total": 193,
@@ -172,6 +173,7 @@
    "present": null,
    "size": null,
    "url": null,
+   "checked": false,
    "lang_share": {
     "count": 3,
     "total": 193,
