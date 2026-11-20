@@ -1577,7 +1577,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
         rest = sorted((r for r in agg["unreachable"] + agg["pending"] if r["language"] == lang), key=lambda r: r["full_name"].lower())
         other_sec = ""
         if rest:
-            lis = "".join(f'<li><a href="/repo/{esc(r["owner"])}/{esc(r["name"])}/">{esc(r["full_name"])}</a></li>' for r in rest)
+            lis = "".join(f'<li><a href="/repo/{esc(r["owner"])}/{esc(r["name"])}/">{esc(r["full_name"])}</a> <span class="muted">({"unreachable" if r in agg["unreachable"] else "not scanned yet"})</span></li>' for r in rest)
             other_sec = (f'<h2>Not counted ({len(rest)})</h2>\n<p class="muted">Unreachable (moved or removed) or not scanned yet; '
                          f'excluded from the numbers above, the card is kept.</p>\n<ul class="plain">{lis}</ul>\n')
         body = f"""<section>
