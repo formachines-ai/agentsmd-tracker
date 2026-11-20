@@ -6,7 +6,7 @@
  "stars": 7061,
  "default_branch": "master",
  "status": "ok",
- "checked": "2026-11-18T04:56:32Z",
+ "checked": "2026-11-20T04:10:29Z",
  "files": {
   "AGENTS.md": {
    "present": true,
@@ -16,7 +16,7 @@
     "count": 26,
     "total": 191,
     "pct": 13.6,
-    "date": "2026-11-19",
+    "date": "2026-11-20",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/",
     "measured": true
@@ -33,7 +33,7 @@
     "count": 20,
     "total": 191,
     "pct": 10.5,
-    "date": "2026-11-19",
+    "date": "2026-11-20",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/",
     "measured": true
@@ -47,7 +47,7 @@
     "count": 0,
     "total": 191,
     "pct": 0.0,
-    "date": "2026-11-19",
+    "date": "2026-11-20",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/",
     "measured": true
@@ -61,7 +61,7 @@
     "count": 4,
     "total": 191,
     "pct": 2.1,
-    "date": "2026-11-19",
+    "date": "2026-11-20",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/",
     "measured": true
@@ -75,7 +75,7 @@
     "count": 11,
     "total": 191,
     "pct": 5.8,
-    "date": "2026-11-19",
+    "date": "2026-11-20",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/",
     "measured": true
@@ -92,7 +92,7 @@
     "count": 0,
     "total": 191,
     "pct": 0.0,
-    "date": "2026-11-19",
+    "date": "2026-11-20",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/",
     "measured": true
@@ -106,7 +106,7 @@
     "count": 2,
     "total": 191,
     "pct": 1.0,
-    "date": "2026-11-19",
+    "date": "2026-11-20",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/",
     "measured": true
@@ -120,7 +120,7 @@
     "count": 0,
     "total": 191,
     "pct": 0.0,
-    "date": "2026-11-19",
+    "date": "2026-11-20",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/",
     "measured": true
@@ -134,7 +134,7 @@
     "count": 1,
     "total": 191,
     "pct": 0.5,
-    "date": "2026-11-19",
+    "date": "2026-11-20",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/",
     "measured": true
@@ -148,37 +148,38 @@
     "count": 0,
     "total": 191,
     "pct": 0.0,
-    "date": "2026-11-19",
+    "date": "2026-11-20",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/",
     "measured": true
    }
   },
   ".github/instructions": {
-   "present": null,
+   "present": true,
    "size": null,
-   "url": null,
-   "checked": false,
+   "url": "https://github.com/openmediavault/openmediavault/tree/master/.github/instructions",
    "lang_share": {
-    "count": 1,
+    "count": 4,
     "total": 191,
-    "pct": 0.5,
-    "date": "2026-11-19",
+    "pct": 2.1,
+    "date": "2026-11-20",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/",
     "measured": true
-   }
+   },
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true,
+   "go_url": "https://agentsmd.formachines.ai/go/1254/"
   },
   ".claude/rules": {
-   "present": null,
+   "present": false,
    "size": null,
    "url": null,
-   "checked": false,
    "lang_share": {
-    "count": 1,
+    "count": 2,
     "total": 191,
-    "pct": 0.5,
-    "date": "2026-11-19",
+    "pct": 1.0,
+    "date": "2026-11-20",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/",
     "measured": true
@@ -190,73 +191,73 @@
    "count": 26,
    "total": 191,
    "pct": 13.6,
-   "date": "2026-11-19"
+   "date": "2026-11-20"
   },
   "CLAUDE.md": {
    "count": 20,
    "total": 191,
    "pct": 10.5,
-   "date": "2026-11-19"
+   "date": "2026-11-20"
   },
   ".cursorrules": {
    "count": 0,
    "total": 191,
    "pct": 0.0,
-   "date": "2026-11-19"
+   "date": "2026-11-20"
   },
   ".cursor/rules": {
    "count": 4,
    "total": 191,
    "pct": 2.1,
-   "date": "2026-11-19"
+   "date": "2026-11-20"
   },
   ".github/copilot-instructions.md": {
    "count": 11,
    "total": 191,
    "pct": 5.8,
-   "date": "2026-11-19"
+   "date": "2026-11-20"
   },
   "llms.txt": {
    "count": 0,
    "total": 191,
    "pct": 0.0,
-   "date": "2026-11-19"
+   "date": "2026-11-20"
   },
   "GEMINI.md": {
    "count": 2,
    "total": 191,
    "pct": 1.0,
-   "date": "2026-11-19"
+   "date": "2026-11-20"
   },
   ".windsurfrules": {
    "count": 0,
    "total": 191,
    "pct": 0.0,
-   "date": "2026-11-19"
+   "date": "2026-11-20"
   },
   "AI_POLICY.md": {
    "count": 1,
    "total": 191,
    "pct": 0.5,
-   "date": "2026-11-19"
+   "date": "2026-11-20"
   },
   ".github/AI_POLICY.md": {
    "count": 0,
    "total": 191,
    "pct": 0.0,
-   "date": "2026-11-19"
+   "date": "2026-11-20"
   },
   ".github/instructions": {
-   "count": 1,
+   "count": 4,
    "total": 191,
-   "pct": 0.5,
-   "date": "2026-11-19"
+   "pct": 2.1,
+   "date": "2026-11-20"
   },
   ".claude/rules": {
-   "count": 1,
+   "count": 2,
    "total": 191,
-   "pct": 0.5,
-   "date": "2026-11-19"
+   "pct": 1.0,
+   "date": "2026-11-20"
   }
  },
  "first_seen": {
@@ -265,6 +266,10 @@
    "baseline": true
   },
   ".github/copilot-instructions.md": {
+   "date": "2026-11-02",
+   "baseline": true
+  },
+  ".github/instructions": {
    "date": "2026-11-02",
    "baseline": true
   }

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://agentsmd.formachines.ai/</loc><lastmod>2026-11-19</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/legal/</loc><lastmod>2026-11-19</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/brand/</loc><lastmod>2026-11-19</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/</loc><lastmod>2026-11-20</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/legal/</loc><lastmod>2026-11-20</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/brand/</loc><lastmod>2026-11-20</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/0x192/universal-android-debloater/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/0x7c13/Notepads/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/1jehuang/jcode/</loc><lastmod>2026-11-02</lastmod></url>
@@ -510,7 +510,7 @@
 <url><loc>https://agentsmd.formachines.ai/repo/emilk/egui/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/emscripten-core/emscripten/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/EnterpriseQualityCoding/FizzBuzzEnterpriseEdition/</loc><lastmod>2026-11-02</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/repo/envoyproxy/envoy/</loc><lastmod>2026-11-02</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/repo/envoyproxy/envoy/</loc><lastmod>2026-11-20</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/errbit/errbit/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/erusev/parsedown/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/esengine/DeepSeek-Reasonix/</loc><lastmod>2026-11-02</lastmod></url>
@@ -887,7 +887,7 @@
 <url><loc>https://agentsmd.formachines.ai/repo/keploy/keploy/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/keras-team/keras/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/kestra-io/kestra/</loc><lastmod>2026-11-02</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/repo/keycloak/keycloak/</loc><lastmod>2026-11-02</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/repo/keycloak/keycloak/</loc><lastmod>2026-11-20</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/KeygraphHQ/shannon/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/kgrzybek/modular-monolith-with-ddd/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/kilimchoi/engineering-blogs/</loc><lastmod>2026-11-02</lastmod></url>
@@ -1202,7 +1202,7 @@
 <url><loc>https://agentsmd.formachines.ai/repo/opencart/opencart/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/openclaw/openclaw/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/OpenCut-app/OpenCut/</loc><lastmod>2026-11-02</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/repo/opencv/opencv/</loc><lastmod>2026-11-02</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/repo/opencv/opencv/</loc><lastmod>2026-11-20</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/opendatalab/MinerU/</loc><lastmod>2026-11-10</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/opendataloader-project/opendataloader-pdf/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/openfaas/faas/</loc><lastmod>2026-11-02</lastmod></url>
@@ -1294,7 +1294,7 @@
 <url><loc>https://agentsmd.formachines.ai/repo/plantuml/plantuml/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/pmndrs/react-three-fiber/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/pmndrs/zustand/</loc><lastmod>2026-11-02</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/repo/pnpm/pnpm/</loc><lastmod>2026-11-02</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/repo/pnpm/pnpm/</loc><lastmod>2026-11-20</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/podman-container-tools/podman/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/pola-rs/polars/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/polybar/polybar/</loc><lastmod>2026-11-02</lastmod></url>
@@ -1925,14 +1925,14 @@
 <url><loc>https://agentsmd.formachines.ai/repo/zxing/zxing/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/zylon-ai/private-gpt/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/ZyperWave/ZyperWinOptimize/</loc><lastmod>2026-11-02</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/lang/c-sharp/</loc><lastmod>2026-11-19</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/lang/c-plus-plus/</loc><lastmod>2026-11-19</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/lang/go/</loc><lastmod>2026-11-19</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/lang/java/</loc><lastmod>2026-11-19</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/lang/javascript/</loc><lastmod>2026-11-19</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/lang/php/</loc><lastmod>2026-11-19</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/lang/python/</loc><lastmod>2026-11-19</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/lang/ruby/</loc><lastmod>2026-11-19</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/lang/rust/</loc><lastmod>2026-11-19</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/lang/typescript/</loc><lastmod>2026-11-19</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/lang/c-sharp/</loc><lastmod>2026-11-20</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/lang/c-plus-plus/</loc><lastmod>2026-11-20</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/lang/go/</loc><lastmod>2026-11-20</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/lang/java/</loc><lastmod>2026-11-20</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/lang/javascript/</loc><lastmod>2026-11-20</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/lang/php/</loc><lastmod>2026-11-20</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/lang/python/</loc><lastmod>2026-11-20</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/lang/ruby/</loc><lastmod>2026-11-20</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/lang/rust/</loc><lastmod>2026-11-20</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/lang/typescript/</loc><lastmod>2026-11-20</lastmod></url>
 </urlset>

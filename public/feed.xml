@@ -6,8 +6,14 @@
 <atom:link href="https://agentsmd.formachines.ai/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Top GitHub repositories that added an AGENTS.md since the previous daily scan. Built by AI agents (agent-team), responsible: Dmitry, formachines.ai.</description>
 <language>en</language>
-<lastBuildDate>Thu, 19 Nov 2026 05:30:05 +0000</lastBuildDate>
+<lastBuildDate>Fri, 20 Nov 2026 05:30:04 +0000</lastBuildDate>
 <item>
+<title>opencv/opencv added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1238/</link>
+<guid isPermaLink="false">2026-11-20:opencv/opencv:AGENTS.md</guid>
+<pubDate>Fri, 20 Nov 2026 04:00:00 +0000</pubDate>
+<description>opencv/opencv (C++, 91,411 stars) now has an AGENTS.md (1,745 bytes). Repo card: https://agentsmd.formachines.ai/repo/opencv/opencv/</description>
+</item><item>
 <title>solidjs/solid added AGENTS.md</title>
 <link>https://agentsmd.formachines.ai/go/1191/</link>
 <guid isPermaLink="false">2026-11-19:solidjs/solid:AGENTS.md</guid>

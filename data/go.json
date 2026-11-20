@@ -1,5 +1,5 @@
 {
- "next_id": 1238,
+ "next_id": 1261,
  "links": {
   "affaan-m/ECC/AGENTS.md": {
    "id": 1,
@@ -7421,6 +7421,144 @@
    "id": 1237,
    "url": "https://github.com/webadderallorg/Recordly/tree/main/.github/instructions",
    "repo": "webadderallorg/Recordly",
+   "path": ".github/instructions"
+  },
+  "opencv/opencv/AGENTS.md": {
+   "id": 1238,
+   "url": "https://github.com/opencv/opencv/blob/5.x/AGENTS.md",
+   "repo": "opencv/opencv",
+   "path": "AGENTS.md"
+  },
+  "opencv/opencv/AI_POLICY.md": {
+   "id": 1239,
+   "url": "https://github.com/opencv/opencv/blob/5.x/AI_POLICY.md",
+   "repo": "opencv/opencv",
+   "path": "AI_POLICY.md"
+  },
+  "keycloak/keycloak/CLAUDE.md": {
+   "id": 1240,
+   "url": "https://github.com/keycloak/keycloak/blob/main/CLAUDE.md",
+   "repo": "keycloak/keycloak",
+   "path": "CLAUDE.md"
+  },
+  "envoyproxy/envoy/.github/instructions": {
+   "id": 1241,
+   "url": "https://github.com/envoyproxy/envoy/tree/main/.github/instructions",
+   "repo": "envoyproxy/envoy",
+   "path": ".github/instructions"
+  },
+  "addyosmani/agent-skills/.claude/rules": {
+   "id": 1242,
+   "url": "https://github.com/addyosmani/agent-skills/tree/main/.claude/rules",
+   "repo": "addyosmani/agent-skills",
+   "path": ".claude/rules"
+  },
+  "affaan-m/ECC/.claude/rules": {
+   "id": 1243,
+   "url": "https://github.com/affaan-m/ECC/tree/main/.claude/rules",
+   "repo": "affaan-m/ECC",
+   "path": ".claude/rules"
+  },
+  "agalwood/Motrix/.claude/rules": {
+   "id": 1244,
+   "url": "https://github.com/agalwood/Motrix/tree/main/.claude/rules",
+   "repo": "agalwood/Motrix",
+   "path": ".claude/rules"
+  },
+  "cypress-io/cypress/.claude/rules": {
+   "id": 1245,
+   "url": "https://github.com/cypress-io/cypress/tree/develop/.claude/rules",
+   "repo": "cypress-io/cypress",
+   "path": ".claude/rules"
+  },
+  "dependabot/dependabot-core/.github/instructions": {
+   "id": 1246,
+   "url": "https://github.com/dependabot/dependabot-core/tree/main/.github/instructions",
+   "repo": "dependabot/dependabot-core",
+   "path": ".github/instructions"
+  },
+  "freeCodeCamp/freeCodeCamp/.github/instructions": {
+   "id": 1247,
+   "url": "https://github.com/freeCodeCamp/freeCodeCamp/tree/main/.github/instructions",
+   "repo": "freeCodeCamp/freeCodeCamp",
+   "path": ".github/instructions"
+  },
+  "glpi-project/glpi/.github/instructions": {
+   "id": 1248,
+   "url": "https://github.com/glpi-project/glpi/tree/12.0/bugfixes/.github/instructions",
+   "repo": "glpi-project/glpi",
+   "path": ".github/instructions"
+  },
+  "langgenius/dify/.github/instructions": {
+   "id": 1249,
+   "url": "https://github.com/langgenius/dify/tree/main/.github/instructions",
+   "repo": "langgenius/dify",
+   "path": ".github/instructions"
+  },
+  "makeplane/plane/.github/instructions": {
+   "id": 1250,
+   "url": "https://github.com/makeplane/plane/tree/preview/.github/instructions",
+   "repo": "makeplane/plane",
+   "path": ".github/instructions"
+  },
+  "microsoft/vscode/.github/instructions": {
+   "id": 1251,
+   "url": "https://github.com/microsoft/vscode/tree/main/.github/instructions",
+   "repo": "microsoft/vscode",
+   "path": ".github/instructions"
+  },
+  "moby/moby/.github/instructions": {
+   "id": 1252,
+   "url": "https://github.com/moby/moby/tree/master/.github/instructions",
+   "repo": "moby/moby",
+   "path": ".github/instructions"
+  },
+  "openclaw/openclaw/.github/instructions": {
+   "id": 1253,
+   "url": "https://github.com/openclaw/openclaw/tree/main/.github/instructions",
+   "repo": "openclaw/openclaw",
+   "path": ".github/instructions"
+  },
+  "openmediavault/openmediavault/.github/instructions": {
+   "id": 1254,
+   "url": "https://github.com/openmediavault/openmediavault/tree/master/.github/instructions",
+   "repo": "openmediavault/openmediavault",
+   "path": ".github/instructions"
+  },
+  "PowerShell/PowerShell/.github/instructions": {
+   "id": 1255,
+   "url": "https://github.com/PowerShell/PowerShell/tree/master/.github/instructions",
+   "repo": "PowerShell/PowerShell",
+   "path": ".github/instructions"
+  },
+  "PrestaShop/PrestaShop/.github/instructions": {
+   "id": 1256,
+   "url": "https://github.com/PrestaShop/PrestaShop/tree/develop/.github/instructions",
+   "repo": "PrestaShop/PrestaShop",
+   "path": ".github/instructions"
+  },
+  "PrestaShop/PrestaShop/.claude/rules": {
+   "id": 1257,
+   "url": "https://github.com/PrestaShop/PrestaShop/tree/develop/.claude/rules",
+   "repo": "PrestaShop/PrestaShop",
+   "path": ".claude/rules"
+  },
+  "rtk-ai/rtk/.claude/rules": {
+   "id": 1258,
+   "url": "https://github.com/rtk-ai/rtk/tree/develop/.claude/rules",
+   "repo": "rtk-ai/rtk",
+   "path": ".claude/rules"
+  },
+  "tw93/Pake/.claude/rules": {
+   "id": 1259,
+   "url": "https://github.com/tw93/Pake/tree/main/.claude/rules",
+   "repo": "tw93/Pake",
+   "path": ".claude/rules"
+  },
+  "ZhuLinsen/daily_stock_analysis/.github/instructions": {
+   "id": 1260,
+   "url": "https://github.com/ZhuLinsen/daily_stock_analysis/tree/main/.github/instructions",
+   "repo": "ZhuLinsen/daily_stock_analysis",
    "path": ".github/instructions"
   }
  }

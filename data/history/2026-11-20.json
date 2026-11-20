@@ -1,0 +1,254 @@
+{
+ "date": "2026-11-20",
+ "added": [
+  {
+   "full_name": "opencv/opencv",
+   "owner": "opencv",
+   "name": "opencv",
+   "language": "C++",
+   "stars": 91411,
+   "path": "AGENTS.md",
+   "size": 1745,
+   "url": "https://github.com/opencv/opencv/blob/5.x/AGENTS.md"
+  },
+  {
+   "full_name": "opencv/opencv",
+   "owner": "opencv",
+   "name": "opencv",
+   "language": "C++",
+   "stars": 91411,
+   "path": "AI_POLICY.md",
+   "size": 1901,
+   "url": "https://github.com/opencv/opencv/blob/5.x/AI_POLICY.md"
+  },
+  {
+   "full_name": "keycloak/keycloak",
+   "owner": "keycloak",
+   "name": "keycloak",
+   "language": "Java",
+   "stars": 37655,
+   "path": "CLAUDE.md",
+   "size": 11,
+   "url": "https://github.com/keycloak/keycloak/blob/main/CLAUDE.md"
+  },
+  {
+   "full_name": "envoyproxy/envoy",
+   "owner": "envoyproxy",
+   "name": "envoy",
+   "language": "C++",
+   "stars": 29166,
+   "path": ".github/instructions",
+   "size": null,
+   "url": "https://github.com/envoyproxy/envoy/tree/main/.github/instructions"
+  }
+ ],
+ "removed": [
+  {
+   "full_name": "pnpm/pnpm",
+   "owner": "pnpm",
+   "name": "pnpm",
+   "language": "Rust",
+   "stars": 36997,
+   "path": "CLAUDE.md",
+   "size": null,
+   "url": "https://github.com/pnpm/pnpm/blob/main/CLAUDE.md"
+  },
+  {
+   "full_name": "envoyproxy/envoy",
+   "owner": "envoyproxy",
+   "name": "envoy",
+   "language": "C++",
+   "stars": 29166,
+   "path": ".github/copilot-instructions.md",
+   "size": null,
+   "url": "https://github.com/envoyproxy/envoy/blob/main/.github/copilot-instructions.md"
+  }
+ ],
+ "github_token": true,
+ "generated": "2026-11-20T05:30:04Z",
+ "sample": 1922,
+ "scanned": 1919,
+ "pending": 0,
+ "unreachable": 3,
+ "excluded": [
+  {
+   "repo": "DrKLO/Telegram",
+   "reason": "moved"
+  },
+  {
+   "repo": "feder-cr/invisible_dots",
+   "reason": "moved"
+  },
+  {
+   "repo": "microsoft/onnxruntime",
+   "reason": "deleted"
+  }
+ ],
+ "counts": {
+  "AGENTS.md": 567,
+  "CLAUDE.md": 318,
+  ".cursorrules": 16,
+  ".cursor/rules": 33,
+  ".github/copilot-instructions.md": 155,
+  "llms.txt": 17,
+  "GEMINI.md": 20,
+  ".windsurfrules": 5,
+  "AI_POLICY.md": 33,
+  ".github/AI_POLICY.md": 2,
+  ".github/instructions": 39,
+  ".claude/rules": 27
+ },
+ "any": 711,
+ "by_language": {
+  "C#": {
+   "repos": 184,
+   "AGENTS.md": 40,
+   "CLAUDE.md": 21,
+   ".cursorrules": 2,
+   ".cursor/rules": 0,
+   ".github/copilot-instructions.md": 29,
+   "llms.txt": 1,
+   "GEMINI.md": 2,
+   ".windsurfrules": 1,
+   "AI_POLICY.md": 0,
+   ".github/AI_POLICY.md": 1,
+   ".github/instructions": 7,
+   ".claude/rules": 4
+  },
+  "C++": {
+   "repos": 190,
+   "AGENTS.md": 55,
+   "CLAUDE.md": 18,
+   ".cursorrules": 3,
+   ".cursor/rules": 1,
+   ".github/copilot-instructions.md": 20,
+   "llms.txt": 0,
+   "GEMINI.md": 2,
+   ".windsurfrules": 0,
+   "AI_POLICY.md": 7,
+   ".github/AI_POLICY.md": 0,
+   ".github/instructions": 6,
+   ".claude/rules": 0
+  },
+  "Go": {
+   "repos": 193,
+   "AGENTS.md": 66,
+   "CLAUDE.md": 45,
+   ".cursorrules": 1,
+   ".cursor/rules": 2,
+   ".github/copilot-instructions.md": 14,
+   "llms.txt": 3,
+   "GEMINI.md": 2,
+   ".windsurfrules": 0,
+   "AI_POLICY.md": 3,
+   ".github/AI_POLICY.md": 0,
+   ".github/instructions": 3,
+   ".claude/rules": 3
+  },
+  "Java": {
+   "repos": 192,
+   "AGENTS.md": 48,
+   "CLAUDE.md": 21,
+   ".cursorrules": 0,
+   ".cursor/rules": 1,
+   ".github/copilot-instructions.md": 12,
+   "llms.txt": 0,
+   "GEMINI.md": 0,
+   ".windsurfrules": 0,
+   "AI_POLICY.md": 2,
+   ".github/AI_POLICY.md": 0,
+   ".github/instructions": 1,
+   ".claude/rules": 3
+  },
+  "JavaScript": {
+   "repos": 191,
+   "AGENTS.md": 35,
+   "CLAUDE.md": 20,
+   ".cursorrules": 0,
+   ".cursor/rules": 3,
+   ".github/copilot-instructions.md": 10,
+   "llms.txt": 3,
+   "GEMINI.md": 1,
+   ".windsurfrules": 0,
+   "AI_POLICY.md": 1,
+   ".github/AI_POLICY.md": 0,
+   ".github/instructions": 4,
+   ".claude/rules": 3
+  },
+  "PHP": {
+   "repos": 191,
+   "AGENTS.md": 26,
+   "CLAUDE.md": 20,
+   ".cursorrules": 0,
+   ".cursor/rules": 4,
+   ".github/copilot-instructions.md": 11,
+   "llms.txt": 0,
+   "GEMINI.md": 2,
+   ".windsurfrules": 0,
+   "AI_POLICY.md": 1,
+   ".github/AI_POLICY.md": 0,
+   ".github/instructions": 4,
+   ".claude/rules": 2
+  },
+  "Python": {
+   "repos": 197,
+   "AGENTS.md": 67,
+   "CLAUDE.md": 38,
+   ".cursorrules": 3,
+   ".cursor/rules": 6,
+   ".github/copilot-instructions.md": 15,
+   "llms.txt": 3,
+   "GEMINI.md": 4,
+   ".windsurfrules": 1,
+   "AI_POLICY.md": 5,
+   ".github/AI_POLICY.md": 1,
+   ".github/instructions": 3,
+   ".claude/rules": 4
+  },
+  "Ruby": {
+   "repos": 189,
+   "AGENTS.md": 37,
+   "CLAUDE.md": 20,
+   ".cursorrules": 2,
+   ".cursor/rules": 2,
+   ".github/copilot-instructions.md": 12,
+   "llms.txt": 1,
+   "GEMINI.md": 1,
+   ".windsurfrules": 1,
+   "AI_POLICY.md": 0,
+   ".github/AI_POLICY.md": 0,
+   ".github/instructions": 4,
+   ".claude/rules": 0
+  },
+  "Rust": {
+   "repos": 198,
+   "AGENTS.md": 89,
+   "CLAUDE.md": 52,
+   ".cursorrules": 1,
+   ".cursor/rules": 5,
+   ".github/copilot-instructions.md": 13,
+   "llms.txt": 3,
+   "GEMINI.md": 3,
+   ".windsurfrules": 1,
+   "AI_POLICY.md": 11,
+   ".github/AI_POLICY.md": 0,
+   ".github/instructions": 1,
+   ".claude/rules": 4
+  },
+  "TypeScript": {
+   "repos": 194,
+   "AGENTS.md": 104,
+   "CLAUDE.md": 63,
+   ".cursorrules": 4,
+   ".cursor/rules": 9,
+   ".github/copilot-instructions.md": 19,
+   "llms.txt": 3,
+   "GEMINI.md": 3,
+   ".windsurfrules": 1,
+   "AI_POLICY.md": 3,
+   ".github/AI_POLICY.md": 0,
+   ".github/instructions": 6,
+   ".claude/rules": 4
+  }
+ }
+}
