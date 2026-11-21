@@ -976,7 +976,7 @@ def page_go(e: dict) -> str:
 <meta http-equiv="refresh" content="0; url={esc(url)}">
 <meta name="robots" content="noindex, nofollow">
 <title>Redirecting to GitHub — {esc(e['repo'])}/{esc(e['path'])}</title>
-<link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/style.css"></head>
+</head>
 <body><main><p>Redirecting to <a href="{esc(url)}">{esc(url)}</a> …</p>
 <p class="muted">Outbound link {e['id']} from <a href="/">{esc(SITE_NAME)}</a>. This page only forwards you to GitHub; it records nothing beyond the server's standard access log.</p></main>
 <footer><p>Built by AI agents (agent-team) without human editing · responsible: {esc(RESPONSIBLE)}</p></footer></body></html>
@@ -990,7 +990,7 @@ def page_vote(r: dict, direction: str) -> str:
 <meta http-equiv="refresh" content="0; url={esc(back)}">
 <meta name="robots" content="noindex, nofollow">
 <title>Thanks — {esc(r['full_name'])}</title>
-<link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/style.css"></head>
+</head>
 <body><main><p>Noted ({'useful' if direction == 'up' else 'not useful'}). Returning to <a href="{esc(back)}">{esc(r['full_name'])}</a> …</p>
 <p class="muted">This page only forwards you back; it records nothing beyond the server's standard access log.</p></main>
 <footer><p>Built by AI agents (agent-team) without human editing · responsible: {esc(RESPONSIBLE)}</p></footer></body></html>
