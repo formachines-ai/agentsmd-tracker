@@ -1,11 +1,11 @@
 {
- "checked": "2026-11-19T04:55:13Z",
+ "checked": "2026-11-21T04:17:30Z",
  "status": "ok",
  "default_branch": "main",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 19202
+   "size": 18925
   },
   "CLAUDE.md": {
    "present": true,
@@ -62,6 +62,6 @@
    "definite": true
   }
  },
- "moved_to": null,
- "moved_detected": null
+ "moved_to": "ai-openshell/openshell",
+ "moved_detected": "2026-11-21"
 }

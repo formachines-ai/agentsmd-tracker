@@ -1,77 +1,46 @@
 {
  "schema_version": 2,
  "site": "https://agentsmd.formachines.ai",
- "date": "2026-11-20",
- "generated": "2026-11-20T05:30:04Z",
+ "date": "2026-11-21",
+ "generated": "2026-11-21T05:30:20Z",
  "license": "CC BY 4.0",
  "added": [
   {
-   "full_name": "opencv/opencv",
-   "owner": "opencv",
-   "name": "opencv",
-   "language": "C++",
-   "stars": 91411,
-   "path": "AGENTS.md",
-   "size": 1745,
-   "url": "https://github.com/opencv/opencv/blob/5.x/AGENTS.md"
-  },
-  {
-   "full_name": "opencv/opencv",
-   "owner": "opencv",
-   "name": "opencv",
-   "language": "C++",
-   "stars": 91411,
-   "path": "AI_POLICY.md",
-   "size": 1901,
-   "url": "https://github.com/opencv/opencv/blob/5.x/AI_POLICY.md"
-  },
-  {
-   "full_name": "keycloak/keycloak",
-   "owner": "keycloak",
-   "name": "keycloak",
-   "language": "Java",
-   "stars": 37655,
+   "full_name": "storytold/photocraft",
+   "owner": "storytold",
+   "name": "photocraft",
+   "language": "Rust",
+   "stars": 76132,
    "path": "CLAUDE.md",
    "size": 11,
-   "url": "https://github.com/keycloak/keycloak/blob/main/CLAUDE.md"
+   "url": "https://github.com/storytold/photocraft/blob/main/CLAUDE.md"
   },
   {
-   "full_name": "envoyproxy/envoy",
-   "owner": "envoyproxy",
-   "name": "envoy",
-   "language": "C++",
-   "stars": 29166,
-   "path": ".github/instructions",
-   "size": null,
-   "url": "https://github.com/envoyproxy/envoy/tree/main/.github/instructions"
-  }
- ],
- "removed": [
-  {
-   "full_name": "pnpm/pnpm",
-   "owner": "pnpm",
-   "name": "pnpm",
-   "language": "Rust",
-   "stars": 36997,
-   "path": "CLAUDE.md",
-   "size": null,
-   "url": "https://github.com/pnpm/pnpm/blob/main/CLAUDE.md"
+   "full_name": "apache/skywalking",
+   "owner": "apache",
+   "name": "skywalking",
+   "language": "Java",
+   "stars": 24984,
+   "path": "AGENTS.md",
+   "size": 9,
+   "url": "https://github.com/apache/skywalking/blob/master/AGENTS.md"
   },
   {
-   "full_name": "envoyproxy/envoy",
-   "owner": "envoyproxy",
-   "name": "envoy",
+   "full_name": "simdjson/simdjson",
+   "owner": "simdjson",
+   "name": "simdjson",
    "language": "C++",
-   "stars": 29166,
-   "path": ".github/copilot-instructions.md",
-   "size": null,
-   "url": "https://github.com/envoyproxy/envoy/blob/main/.github/copilot-instructions.md"
+   "stars": 24496,
+   "path": "AGENTS.md",
+   "size": 6442,
+   "url": "https://github.com/simdjson/simdjson/blob/master/AGENTS.md"
   }
  ],
- "removed_count": 2,
+ "removed": [],
+ "removed_count": 0,
  "counts": {
-  "AGENTS.md": 567,
-  "CLAUDE.md": 318,
+  "AGENTS.md": 569,
+  "CLAUDE.md": 319,
   ".cursorrules": 16,
   ".cursor/rules": 33,
   ".github/copilot-instructions.md": 155,

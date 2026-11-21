@@ -1,5 +1,5 @@
 {
- "next_id": 1261,
+ "next_id": 1264,
  "links": {
   "affaan-m/ECC/AGENTS.md": {
    "id": 1,
@@ -7560,6 +7560,24 @@
    "url": "https://github.com/ZhuLinsen/daily_stock_analysis/tree/main/.github/instructions",
    "repo": "ZhuLinsen/daily_stock_analysis",
    "path": ".github/instructions"
+  },
+  "storytold/photocraft/CLAUDE.md": {
+   "id": 1261,
+   "url": "https://github.com/storytold/photocraft/blob/main/CLAUDE.md",
+   "repo": "storytold/photocraft",
+   "path": "CLAUDE.md"
+  },
+  "apache/skywalking/AGENTS.md": {
+   "id": 1262,
+   "url": "https://github.com/apache/skywalking/blob/master/AGENTS.md",
+   "repo": "apache/skywalking",
+   "path": "AGENTS.md"
+  },
+  "simdjson/simdjson/AGENTS.md": {
+   "id": 1263,
+   "url": "https://github.com/simdjson/simdjson/blob/master/AGENTS.md",
+   "repo": "simdjson/simdjson",
+   "path": "AGENTS.md"
   }
  }
 }

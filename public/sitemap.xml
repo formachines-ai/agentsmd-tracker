@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://agentsmd.formachines.ai/</loc><lastmod>2026-11-20</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/legal/</loc><lastmod>2026-11-20</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/brand/</loc><lastmod>2026-11-20</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/</loc><lastmod>2026-11-21</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/legal/</loc><lastmod>2026-11-21</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/brand/</loc><lastmod>2026-11-21</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/0x192/universal-android-debloater/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/0x7c13/Notepads/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/1jehuang/jcode/</loc><lastmod>2026-11-02</lastmod></url>
@@ -121,7 +121,7 @@
 <url><loc>https://agentsmd.formachines.ai/repo/apache/pulsar/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/apache/rocketmq/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/apache/shardingsphere/</loc><lastmod>2026-11-02</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/repo/apache/skywalking/</loc><lastmod>2026-11-02</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/repo/apache/skywalking/</loc><lastmod>2026-11-21</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/apache/superset/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/apache/zookeeper/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/apachecn/ailearning/</loc><lastmod>2026-11-02</lastmod></url>
@@ -1538,7 +1538,7 @@
 <url><loc>https://agentsmd.formachines.ai/repo/Significant-Gravitas/AutoGPT/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/SigNoz/signoz/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/SillyTavern/SillyTavern/</loc><lastmod>2026-11-02</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/repo/simdjson/simdjson/</loc><lastmod>2026-11-02</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/repo/simdjson/simdjson/</loc><lastmod>2026-11-21</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/simple-icons/simple-icons/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/simplecov-ruby/simplecov/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/SimplifyJobs/Summer2027-Internships/</loc><lastmod>2026-11-02</lastmod></url>
@@ -1603,7 +1603,7 @@
 <url><loc>https://agentsmd.formachines.ai/repo/storytold/filmcraft/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/storytold/lightcraft/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/storytold/pdfcraft/</loc><lastmod>2026-11-02</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/repo/storytold/photocraft/</loc><lastmod>2026-11-02</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/repo/storytold/photocraft/</loc><lastmod>2026-11-21</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/storytold/wordcraft/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/STranslate/STranslate/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/strapi/strapi/</loc><lastmod>2026-11-02</lastmod></url>
@@ -1925,14 +1925,14 @@
 <url><loc>https://agentsmd.formachines.ai/repo/zxing/zxing/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/zylon-ai/private-gpt/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://agentsmd.formachines.ai/repo/ZyperWave/ZyperWinOptimize/</loc><lastmod>2026-11-02</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/lang/c-sharp/</loc><lastmod>2026-11-20</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/lang/c-plus-plus/</loc><lastmod>2026-11-20</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/lang/go/</loc><lastmod>2026-11-20</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/lang/java/</loc><lastmod>2026-11-20</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/lang/javascript/</loc><lastmod>2026-11-20</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/lang/php/</loc><lastmod>2026-11-20</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/lang/python/</loc><lastmod>2026-11-20</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/lang/ruby/</loc><lastmod>2026-11-20</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/lang/rust/</loc><lastmod>2026-11-20</lastmod></url>
-<url><loc>https://agentsmd.formachines.ai/lang/typescript/</loc><lastmod>2026-11-20</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/lang/c-sharp/</loc><lastmod>2026-11-21</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/lang/c-plus-plus/</loc><lastmod>2026-11-21</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/lang/go/</loc><lastmod>2026-11-21</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/lang/java/</loc><lastmod>2026-11-21</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/lang/javascript/</loc><lastmod>2026-11-21</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/lang/php/</loc><lastmod>2026-11-21</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/lang/python/</loc><lastmod>2026-11-21</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/lang/ruby/</loc><lastmod>2026-11-21</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/lang/rust/</loc><lastmod>2026-11-21</lastmod></url>
+<url><loc>https://agentsmd.formachines.ai/lang/typescript/</loc><lastmod>2026-11-21</lastmod></url>
 </urlset>

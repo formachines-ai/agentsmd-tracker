@@ -6,17 +6,17 @@
  "stars": 79173,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-20T04:36:20Z",
+ "checked": "2026-11-21T05:26:59Z",
  "files": {
   "AGENTS.md": {
    "present": false,
    "size": null,
    "url": null,
    "lang_share": {
-    "count": 48,
+    "count": 49,
     "total": 192,
-    "pct": 25.0,
-    "date": "2026-11-20",
+    "pct": 25.5,
+    "date": "2026-11-21",
     "language": "Java",
     "page": "https://agentsmd.formachines.ai/lang/java/",
     "measured": true
@@ -30,7 +30,7 @@
     "count": 21,
     "total": 192,
     "pct": 10.9,
-    "date": "2026-11-20",
+    "date": "2026-11-21",
     "language": "Java",
     "page": "https://agentsmd.formachines.ai/lang/java/",
     "measured": true
@@ -44,7 +44,7 @@
     "count": 0,
     "total": 192,
     "pct": 0.0,
-    "date": "2026-11-20",
+    "date": "2026-11-21",
     "language": "Java",
     "page": "https://agentsmd.formachines.ai/lang/java/",
     "measured": true
@@ -58,7 +58,7 @@
     "count": 1,
     "total": 192,
     "pct": 0.5,
-    "date": "2026-11-20",
+    "date": "2026-11-21",
     "language": "Java",
     "page": "https://agentsmd.formachines.ai/lang/java/",
     "measured": true
@@ -72,7 +72,7 @@
     "count": 12,
     "total": 192,
     "pct": 6.2,
-    "date": "2026-11-20",
+    "date": "2026-11-21",
     "language": "Java",
     "page": "https://agentsmd.formachines.ai/lang/java/",
     "measured": true
@@ -86,7 +86,7 @@
     "count": 0,
     "total": 192,
     "pct": 0.0,
-    "date": "2026-11-20",
+    "date": "2026-11-21",
     "language": "Java",
     "page": "https://agentsmd.formachines.ai/lang/java/",
     "measured": true
@@ -100,7 +100,7 @@
     "count": 0,
     "total": 192,
     "pct": 0.0,
-    "date": "2026-11-20",
+    "date": "2026-11-21",
     "language": "Java",
     "page": "https://agentsmd.formachines.ai/lang/java/",
     "measured": true
@@ -114,7 +114,7 @@
     "count": 0,
     "total": 192,
     "pct": 0.0,
-    "date": "2026-11-20",
+    "date": "2026-11-21",
     "language": "Java",
     "page": "https://agentsmd.formachines.ai/lang/java/",
     "measured": true
@@ -128,7 +128,7 @@
     "count": 2,
     "total": 192,
     "pct": 1.0,
-    "date": "2026-11-20",
+    "date": "2026-11-21",
     "language": "Java",
     "page": "https://agentsmd.formachines.ai/lang/java/",
     "measured": true
@@ -142,7 +142,7 @@
     "count": 0,
     "total": 192,
     "pct": 0.0,
-    "date": "2026-11-20",
+    "date": "2026-11-21",
     "language": "Java",
     "page": "https://agentsmd.formachines.ai/lang/java/",
     "measured": true
@@ -156,7 +156,7 @@
     "count": 1,
     "total": 192,
     "pct": 0.5,
-    "date": "2026-11-20",
+    "date": "2026-11-21",
     "language": "Java",
     "page": "https://agentsmd.formachines.ai/lang/java/",
     "measured": true
@@ -170,7 +170,7 @@
     "count": 3,
     "total": 192,
     "pct": 1.6,
-    "date": "2026-11-20",
+    "date": "2026-11-21",
     "language": "Java",
     "page": "https://agentsmd.formachines.ai/lang/java/",
     "measured": true
@@ -179,76 +179,76 @@
  },
  "language_share": {
   "AGENTS.md": {
-   "count": 48,
+   "count": 49,
    "total": 192,
-   "pct": 25.0,
-   "date": "2026-11-20"
+   "pct": 25.5,
+   "date": "2026-11-21"
   },
   "CLAUDE.md": {
    "count": 21,
    "total": 192,
    "pct": 10.9,
-   "date": "2026-11-20"
+   "date": "2026-11-21"
   },
   ".cursorrules": {
    "count": 0,
    "total": 192,
    "pct": 0.0,
-   "date": "2026-11-20"
+   "date": "2026-11-21"
   },
   ".cursor/rules": {
    "count": 1,
    "total": 192,
    "pct": 0.5,
-   "date": "2026-11-20"
+   "date": "2026-11-21"
   },
   ".github/copilot-instructions.md": {
    "count": 12,
    "total": 192,
    "pct": 6.2,
-   "date": "2026-11-20"
+   "date": "2026-11-21"
   },
   "llms.txt": {
    "count": 0,
    "total": 192,
    "pct": 0.0,
-   "date": "2026-11-20"
+   "date": "2026-11-21"
   },
   "GEMINI.md": {
    "count": 0,
    "total": 192,
    "pct": 0.0,
-   "date": "2026-11-20"
+   "date": "2026-11-21"
   },
   ".windsurfrules": {
    "count": 0,
    "total": 192,
    "pct": 0.0,
-   "date": "2026-11-20"
+   "date": "2026-11-21"
   },
   "AI_POLICY.md": {
    "count": 2,
    "total": 192,
    "pct": 1.0,
-   "date": "2026-11-20"
+   "date": "2026-11-21"
   },
   ".github/AI_POLICY.md": {
    "count": 0,
    "total": 192,
    "pct": 0.0,
-   "date": "2026-11-20"
+   "date": "2026-11-21"
   },
   ".github/instructions": {
    "count": 1,
    "total": 192,
    "pct": 0.5,
-   "date": "2026-11-20"
+   "date": "2026-11-21"
   },
   ".claude/rules": {
    "count": 3,
    "total": 192,
    "pct": 1.6,
-   "date": "2026-11-20"
+   "date": "2026-11-21"
   }
  },
  "first_seen": {},
