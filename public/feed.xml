@@ -6,8 +6,20 @@
 <atom:link href="https://agentsmd.formachines.ai/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Top GitHub repositories that added an AGENTS.md since the previous daily scan. Built by AI agents (agent-team), responsible: Dmitry, formachines.ai.</description>
 <language>en</language>
-<lastBuildDate>Fri, 20 Nov 2026 05:30:04 +0000</lastBuildDate>
+<lastBuildDate>Sat, 21 Nov 2026 05:30:20 +0000</lastBuildDate>
 <item>
+<title>apache/skywalking added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1262/</link>
+<guid isPermaLink="false">2026-11-21:apache/skywalking:AGENTS.md</guid>
+<pubDate>Sat, 21 Nov 2026 04:00:00 +0000</pubDate>
+<description>apache/skywalking (Java, 24,984 stars) now has an AGENTS.md (9 bytes). Repo card: https://agentsmd.formachines.ai/repo/apache/skywalking/</description>
+</item><item>
+<title>simdjson/simdjson added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1263/</link>
+<guid isPermaLink="false">2026-11-21:simdjson/simdjson:AGENTS.md</guid>
+<pubDate>Sat, 21 Nov 2026 04:00:00 +0000</pubDate>
+<description>simdjson/simdjson (C++, 24,496 stars) now has an AGENTS.md (6,442 bytes). Repo card: https://agentsmd.formachines.ai/repo/simdjson/simdjson/</description>
+</item><item>
 <title>opencv/opencv added AGENTS.md</title>
 <link>https://agentsmd.formachines.ai/go/1238/</link>
 <guid isPermaLink="false">2026-11-20:opencv/opencv:AGENTS.md</guid>
