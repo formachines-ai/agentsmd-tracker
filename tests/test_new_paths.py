@@ -21,7 +21,7 @@ NEW = (".clinerules", ".windsurf/rules", ".agents")
 SCAN = "2026-11-18T05:30:07Z"
 
 
-def run_build(with_new):
+def run_build(with_new, cline=None):
     t = Path(tempfile.mkdtemp(prefix="newpaths-"))
     shutil.copy(REPO / "build.py", t / "build.py")
     shutil.copytree(REPO / "static", t / "static")
@@ -32,11 +32,11 @@ def run_build(with_new):
         {"id": 1, "full_name": "o/a", "owner": "o", "name": "a", "language": "Python", "stars": 9, "default_branch": "main"}]}))
     files = {"AGENTS.md": {"present": True, "size": 10}}
     if with_new:
-        files.update({NEW[0]: {"present": True, "size": 5}, NEW[1]: {"present": False, "size": None}, NEW[2]: {"present": False, "size": None}})
+        files.update({NEW[0]: cline or {"present": True, "size": 5, "form": "file"}, NEW[1]: {"present": False, "size": None}, NEW[2]: {"present": False, "size": None}})
     (t / "data" / "scan" / "o__a.json").write_text(json.dumps({"checked": SCAN, "status": "ok", "default_branch": "main", "files": files}))
     counts = {s["path"]: 0 for s in build.PATHS if with_new or s["path"] not in NEW}
     counts["AGENTS.md"] = 1
-    if with_new:
+    if with_new and files[NEW[0]]["present"]:
         counts[NEW[0]] = 1
     (t / "data" / "history" / "2026-11-18.json").write_text(json.dumps({
         "date": "2026-11-18", "generated": SCAN, "sample": 1, "scanned": 1, "total": 1, "counts": counts, "any": 1,
@@ -85,6 +85,44 @@ class NewPaths(unittest.TestCase):
         pub = run_build(False)
         home = (pub / "index.html").read_text()
         self.assertNotIn("<td>0</td><td>0</td><td>0</td></tr>", home.replace("\n", ""))
+
+    def test_clinerules_forms_in_check_path(self):
+        spec = next(p for p in build.PATHS if p["path"] == ".clinerules")
+        repo = {"full_name": "o/a", "default_branch": "main"}
+        orig = build.head
+        sleep = build.PAUSE_S
+        build.PAUSE_S = 0
+        try:
+            def fake(file_status, dir_status):
+                def h(url, token=None):
+                    return (file_status, {"Content-Length": "7"}) if "raw.githubusercontent" in url else (dir_status, {})
+                return h
+            build.head = fake(200, 404)
+            self.assertEqual(build.check_path(repo, spec), {"present": True, "size": 7, "form": "file"})
+            build.head = fake(404, 200)
+            self.assertEqual(build.check_path(repo, spec), {"present": True, "size": None, "form": "dir"})
+            build.head = fake(404, 404)
+            self.assertEqual(build.check_path(repo, spec), {"present": False, "size": None, "definite": True})
+            build.head = fake(404, 500)
+            self.assertIsNone(build.check_path(repo, spec))
+        finally:
+            build.head = orig
+            build.PAUSE_S = sleep
+
+    def test_clinerules_card_dir_and_absent(self):
+        pub = run_build(True, {"present": True, "size": None, "form": "dir"})
+        card = json.loads((pub / "repo" / "o" / "a" / "index.json").read_text())
+        stats = json.loads((pub / "stats.json").read_text())
+        c = card["files"][".clinerules"]
+        self.assertIs(c["present"], True)
+        self.assertEqual(c["form"], "dir")
+        self.assertIn("/tree/main/.clinerules", c["url"])
+        self.assertIn(".clinerules", stats["counts"])
+        html = (pub / "repo" / "o" / "a" / "index.html").read_text()
+        self.assertIn(".clinerules (file or directory)", html)
+        pub = run_build(True, {"present": False, "size": None})
+        card = json.loads((pub / "repo" / "o" / "a" / "index.json").read_text())
+        self.assertIs(card["files"][".clinerules"]["present"], False)
 
 
 if __name__ == "__main__":
