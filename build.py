@@ -1160,8 +1160,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
                      + '. Carried-over repos keep their last good value. Details: <a href="/build.json">build.json</a> field <code>scan</code>.</p>')
     hero = f"""<section class="hero">
 <h1>AGENTS.md Tracker</h1>
-<p class="summary" id="summary">On {esc(gen_raw[:10])}, {agg['counts'][PRIMARY_PATH]:,} of {total:,} top public GitHub repositories ({pct(agg['counts'][PRIMARY_PATH], total)} %) have an AGENTS.md. The sample is the top repositories by stars in each of {len(si['languages'])} languages. The tracker checks {len(PATHS)} file paths: {esc(', '.join(s['path'] for s in PATHS))}. The method is a HEAD request to each public file URL, recording presence and size only, never file contents. The scan runs daily at about 04:00 UTC. Data: <a href="/stats.json">stats.json</a>, <a href="/llms.txt">llms.txt</a>, <a href="/feed.xml">feed.xml</a>.</p>
-<p id="dated-counts">On {esc(gen_raw[:10])} (UTC), {agg['counts'][PRIMARY_PATH]:,} of {total:,} ({pct(agg['counts'][PRIMARY_PATH], total)} %) top GitHub repositories have AGENTS.md, {agg['counts']['CLAUDE.md']:,} of {total:,} ({pct(agg['counts']['CLAUDE.md'], total)} %) have CLAUDE.md, and {agg['counts']['llms.txt']:,} of {total:,} ({pct(agg['counts']['llms.txt'], total)} %) have llms.txt.</p>
+<p class="summary" id="summary">On {esc(gen_raw[:10])} (UTC), AGENTS.md was present in {agg['counts'][PRIMARY_PATH]:,} of {total:,} sampled repositories ({pct(agg['counts'][PRIMARY_PATH], total)} %). See the language table and the GitHub files below; presence does not establish quality or use. Data: <a href="/stats.json">stats.json</a>, <a href="/llms.txt">llms.txt</a>, <a href="/feed.xml">feed.xml</a>.</p>
 <h2 class="headline">{agg['counts'][PRIMARY_PATH]:,} of {total:,} top GitHub repositories ({pct(agg['counts'][PRIMARY_PATH], total)} %) have an <code>AGENTS.md</code></h2>
 <p class="lead">{any_n:,} ({pct(any_n, total)} %) have at least one agent-instruction file of the {len(PATHS)} kinds tracked here. Sample: {sample:,} public repositories, top by stars across {len(agg['by_lang']) or '—'} languages, rescanned daily. Only presence, size and a link are recorded — never the contents.</p>
 <p class="asof"><strong>Latest published scan: {esc(gen_txt)} UTC.</strong> A new scan starts daily at 04:00 UTC; results are published when it finishes. Numbers on this page are from the latest published scan{esc(stale_txt)}.</p>
@@ -1180,6 +1179,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
     heads = "".join(f'<th><code>{esc(s["label"])}</code></th>' for s in PATHS)
     lang_table = f"""<section id="languages">
 <h2>By language</h2>
+<p id="dated-counts">On {esc(gen_raw[:10])} (UTC), {agg['counts'][PRIMARY_PATH]:,} of {total:,} ({pct(agg['counts'][PRIMARY_PATH], total)} %) top GitHub repositories have AGENTS.md, {agg['counts']['CLAUDE.md']:,} of {total:,} ({pct(agg['counts']['CLAUDE.md'], total)} %) have CLAUDE.md, and {agg['counts']['llms.txt']:,} of {total:,} ({pct(agg['counts']['llms.txt'], total)} %) have llms.txt.</p>
 <div class="scroll table-wrap"><table>
 <thead><tr><th>Language</th><th>Repos</th><th>Any file</th>{heads}</tr></thead>
 <tbody>{''.join(rows)}</tbody>

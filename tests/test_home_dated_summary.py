@@ -34,6 +34,23 @@ class HomeDated(unittest.TestCase):
             self.assertIn(f"{n:,} of {M:,} (", txt)
             self.assertIn(f"have {p}", txt)
 
+    def test_one_headline_sentence_before_explore(self):
+        pre = self.html.split("Explore your language")[0]
+        pre = pre[pre.index("<h1"):]
+        st = self.st
+        M = st["denominator"]["M"]
+        n = st["counts"]["AGENTS.md"]
+        pre_txt = re.sub(r"<h2 class=\"headline\">.*?</h2>", "", pre, flags=re.S)
+        pre_txt = html.unescape(re.sub(r"<[^>]+>", " ", pre_txt))
+        self.assertEqual(pre_txt.count(f"{n:,} of {M:,}"), 1)
+        self.assertIn(f"AGENTS.md was present in {n:,} of {M:,} sampled repositories", pre_txt)
+        self.assertIn("presence does not establish quality or use", pre_txt)
+        self.assertNotIn("CLAUDE.md, and", pre_txt)
+
+    def test_dated_p_after_explore(self):
+        self.assertGreater(self.html.index('id="dated-counts"'), self.html.index("Explore your language"))
+        self.assertGreater(self.html.index('id="dated-counts"'), self.html.index('id="languages"'))
+
     def test_jsonld_and_meta(self):
         blocks = re.findall(r'<script type="application/ld\+json">(.*?)</script>', self.html, re.S)
         self.assertEqual(len(blocks), 1)
