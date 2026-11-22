@@ -45,6 +45,7 @@
   "date": "2026-11-22",
   "M": 1919,
   "sample_size": 1922,
+  "total": 1922,
   "excluded": 3,
   "excluded_by_reason": {
    "moved": 2,

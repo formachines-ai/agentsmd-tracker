@@ -50,6 +50,8 @@ Runs every `tests/test_*.py` from the repository root. Offline and read-only: no
 written to the checkout (tests that build use a temp copy), so it also passes after `chmod -R a-w .`. Python 3.12
 standard library only.
 
+`tests/test_sample_accounting.py` (T-0244): the note `#sample-accounting` on `/` (M, date, repos left out by status) equals `stats.json` `denominator` (`total` = `sample_size`; M + excluded = total).
+
 `stats.json` `tracked_since` maps each tracked path to the date of its first scan (from `data/history`); history[] zeros before that date were not measured, and first-scan counts are a baseline, not added files.
 
 ## What to commit
