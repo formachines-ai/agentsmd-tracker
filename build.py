@@ -621,7 +621,7 @@ def denominator_info(repos: list[dict], agg: dict, date: str, first_scanned_of: 
                           "excluded_since_source": (sc or {}).get("excluded_since_source") or "unknown",
                           "page": f"{SITE_BASE}/repo/{r['owner']}/{r['name']}/"})
     items.sort(key=lambda x: x["repo"].lower())
-    return {"date": date, "M": len(agg["ok"]), "sample_size": len(repos), "excluded": sum(reasons.values()), "excluded_by_reason": reasons,
+    return {"date": date, "M": len(agg["ok"]), "sample_size": len(repos), "total": len(repos), "excluded": sum(reasons.values()), "excluded_by_reason": reasons,
             "definition": DENOMINATOR_DEFINITION, "excluded_repos": items}
 
 
@@ -1172,6 +1172,15 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
     sample_line = (f'<p class="asof" id="sample-line">Sample on {esc(gen_raw[:10])}: {si["included"]:,} of {si["target_total"]:,} targeted repos '
                    f'(top {si["target_per_language"]:,} by stars in each of {len(si["languages"])} languages); '
                    f'{si["target_total"] - si["included"]:,} not included: {esc(reasons)}. Details: <a href="/stats.json">stats.json</a> field <code>sample</code>.</p>')
+    _ex = {}
+    for _r in agg["unreachable"]:
+        _w = exclusion_reason(agg["scans"].get(_r["full_name"]))
+        _ex[_w] = _ex.get(_w, 0) + 1
+    _exn = sum(_ex.values())
+    _exr = (" (" + ", ".join(f"{n:,} {k}" for k, n in sorted(_ex.items())) + ")") if _exn else ""
+    accounting_line = (f'<p class="asof" id="sample-accounting">Denominator on {esc(gen_raw[:10])}: M = {len(agg["ok"]):,} repos with a successful latest scan; '
+                       f'{_exn:,} of the {len(agg["ok"]) + _exn + len(agg["pending"]):,} sampled repos left out{esc(_exr)}, cards kept. '
+                       f'M changes only when a repo moves, is deleted or becomes unreachable. Details: <a href="/stats.json">stats.json</a> field <code>denominator</code>.</p>')
     sc_ = build_info.get("scan") or {}
     coverage_line = "" if "fresh" not in sc_ else (f'<p class="asof" id="scan-coverage">{sc_["fresh"]:,} repos checked on {esc(str(sc_["fresh_date"]))}, '
                      f'{sc_["carried_over"]:,} carried over from earlier scans'
@@ -1185,6 +1194,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
 <p class="lead">{any_n:,} ({pct(any_n, total)} %) have at least one agent-instruction file of the {len(PATHS)} kinds tracked here. Sample: {sample:,} public repositories, top by stars across {len(agg['by_lang']) or '—'} languages, rescanned daily. Only presence, size and a link are recorded — never the contents.</p>
 <p class="asof"><strong>Latest published scan: {esc(gen_txt)} UTC.</strong> A new scan starts daily at 04:00 UTC; results are published when it finishes. Numbers on this page are from the latest published scan{esc(stale_txt)}.</p>
 {sample_line}
+{accounting_line}
 {coverage_line}
 <p class="limit">What this share measures: whether a listed file path exists at one of its fixed conventional locations on the default branch (AGENTS.md, CLAUDE.md, GEMINI.md, llms.txt, AI_POLICY.md, .cursorrules and .windsurfrules at the repository root; .github/copilot-instructions.md; .github/AI_POLICY.md; .cursor/rules/, .github/instructions/ and .claude/rules/ as directories), in a sample of popular repositories per language. It is file presence only — not the quality or use of a file, and not all of GitHub.</p>
 <p class="paths"><a href="#languages">Explore your language</a> · <a href="#method">See the sampling method</a></p>
