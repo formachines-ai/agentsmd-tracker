@@ -1,11 +1,11 @@
 {
  "schema_version": 3,
  "site": "https://agentsmd.formachines.ai",
- "generated": "2026-11-21T05:30:20Z",
+ "generated": "2026-11-22T05:30:13Z",
  "license": "CC BY 4.0",
  "data_delayed": false,
  "method": "Top-by-stars sample of public repositories per language; one HEAD request per tracked path on the default branch; only presence and size are recorded, never file contents.",
- "attribution": "AGENTS.md Tracker, agentsmd.formachines.ai, 2026-11-21, CC BY 4.0",
+ "attribution": "AGENTS.md Tracker, agentsmd.formachines.ai, 2026-11-22, CC BY 4.0",
  "sample": {
   "target_per_language": 200,
   "languages": [
@@ -42,7 +42,7 @@
   }
  },
  "denominator": {
-  "date": "2026-11-21",
+  "date": "2026-11-22",
   "M": 1919,
   "sample_size": 1922,
   "excluded": 3,
@@ -59,7 +59,7 @@
     "repo": "DrKLO/Telegram",
     "status": "moved",
     "moved_to": "TelegramMessenger/Telegram-Android",
-    "last_checked": "2026-11-20T05:24:50Z",
+    "last_checked": "2026-11-22T04:44:08Z",
     "first_seen": "2026-11-02",
     "excluded_since": "2026-11-18",
     "excluded_since_source": "inferred_from_history",
@@ -69,7 +69,7 @@
     "repo": "feder-cr/invisible_dots",
     "status": "moved",
     "moved_to": "oss-invisible/dots",
-    "last_checked": "2026-11-20T05:20:47Z",
+    "last_checked": "2026-11-22T04:40:24Z",
     "first_seen": "2026-11-02",
     "excluded_since": "2026-11-18",
     "excluded_since_source": "inferred_from_history",
@@ -79,7 +79,7 @@
     "repo": "microsoft/onnxruntime",
     "status": "deleted",
     "moved_to": null,
-    "last_checked": "2026-11-21T04:14:46Z",
+    "last_checked": "2026-11-22T05:03:47Z",
     "first_seen": "2026-11-02",
     "excluded_since": "2026-11-13",
     "excluded_since_source": "inferred_from_history",
@@ -135,7 +135,7 @@
  },
  "counts": {
   "AGENTS.md": 569,
-  "CLAUDE.md": 319,
+  "CLAUDE.md": 318,
   ".cursorrules": 16,
   ".cursor/rules": 33,
   ".github/copilot-instructions.md": 155,
@@ -200,7 +200,7 @@
    "since": "2026-11-02"
   },
   "CLAUDE.md": {
-   "count": 319,
+   "count": 318,
    "checked": 1919,
    "unknown": 0,
    "total": 1919,
@@ -409,7 +409,7 @@
    "repos": 193,
    "any": 81,
    "AGENTS.md": 66,
-   "CLAUDE.md": 45,
+   "CLAUDE.md": 44,
    ".cursorrules": 1,
    ".cursor/rules": 2,
    ".github/copilot-instructions.md": 14,
@@ -450,7 +450,7 @@
    },
    "shares": {
     "AGENTS.md": 34.2,
-    "CLAUDE.md": 23.3,
+    "CLAUDE.md": 22.8,
     ".cursorrules": 0.5,
     ".cursor/rules": 1.0,
     ".github/copilot-instructions.md": 7.3,
@@ -1882,6 +1882,69 @@
    },
    "added": 3,
    "removed": 0
+  },
+  {
+   "date": "2026-11-22",
+   "scanned": 1919,
+   "counts": {
+    "AGENTS.md": 569,
+    "CLAUDE.md": 318,
+    ".cursorrules": 16,
+    ".cursor/rules": 33,
+    ".github/copilot-instructions.md": 155,
+    "llms.txt": 17,
+    "GEMINI.md": 20,
+    ".windsurfrules": 5,
+    "AI_POLICY.md": 33,
+    ".github/AI_POLICY.md": 2,
+    ".github/instructions": 39,
+    ".claude/rules": 27
+   },
+   "any": 712,
+   "shares": {
+    "AGENTS.md": 29.7,
+    "CLAUDE.md": 16.6,
+    ".cursorrules": 0.8,
+    ".cursor/rules": 1.7,
+    ".github/copilot-instructions.md": 8.1,
+    "llms.txt": 0.9,
+    "GEMINI.md": 1.0,
+    ".windsurfrules": 0.3,
+    "AI_POLICY.md": 1.7,
+    ".github/AI_POLICY.md": 0.1,
+    ".github/instructions": 2.0,
+    ".claude/rules": 1.4
+   },
+   "pct": {
+    "AGENTS.md": 29.7,
+    "CLAUDE.md": 16.6,
+    ".cursorrules": 0.8,
+    ".cursor/rules": 1.7,
+    ".github/copilot-instructions.md": 8.1,
+    "llms.txt": 0.9,
+    "GEMINI.md": 1.0,
+    ".windsurfrules": 0.3,
+    "AI_POLICY.md": 1.7,
+    ".github/AI_POLICY.md": 0.1,
+    ".github/instructions": 2.0,
+    ".claude/rules": 1.4
+   },
+   "share_pct": {
+    "AGENTS.md": 29.7,
+    "CLAUDE.md": 16.6,
+    ".cursorrules": 0.8,
+    ".cursor/rules": 1.7,
+    ".github/copilot-instructions.md": 8.1,
+    "llms.txt": 0.9,
+    "GEMINI.md": 1.0,
+    ".windsurfrules": 0.3,
+    "AI_POLICY.md": 1.7,
+    ".github/AI_POLICY.md": 0.1,
+    ".github/instructions": 2.0,
+    ".claude/rules": 1.4
+   },
+   "added": 0,
+   "removed": 1
   }
  ],
  "method_changes": [
@@ -1893,7 +1956,7 @@
    "url": "https://github.com/formachines-ai/agentsmd-tracker/commit/6887ed8"
   }
  ],
- "history_days": 20,
+ "history_days": 21,
  "change_7d_pp": {
   "AGENTS.md": 0.5,
   "CLAUDE.md": -0.1,
@@ -1909,26 +1972,26 @@
   ".claude/rules": 1.4
  },
  "combinations": {
-  "date": "2026-11-21",
+  "date": "2026-11-22",
   "total": 1919,
-  "agents_and_claude": 258,
-  "agents_only_of_pair": 311,
+  "agents_and_claude": 257,
+  "agents_only_of_pair": 312,
   "claude_only_of_pair": 61,
   "neither_of_pair": 1289,
   "same_size_agents_claude": 6,
   "repos_with_2plus_types": 364,
-  "agents_only": 311,
+  "agents_only": 312,
   "claude_only": 61,
-  "both": 258,
+  "both": 257,
   "neither": 1289,
   "agents_and_copilot": 92
  },
  "combos": {
-  "date": "2026-11-21",
+  "date": "2026-11-22",
   "total": 1919,
-  "both": 258,
-  "both_agents_claude": 258,
-  "agents_only": 311,
+  "both": 257,
+  "both_agents_claude": 257,
+  "agents_only": 312,
   "claude_only": 61,
   "neither": 1289,
   "unknown": 3
@@ -1937,133 +2000,134 @@
   "AGENTS.md": {
    "count": 569,
    "median_bytes": 6727,
-   "p25_bytes": 2844,
-   "p75_bytes": 13245,
+   "p25_bytes": 2899,
+   "p75_bytes": 13102,
    "n": 569,
    "median": 6727,
-   "p25": 2844,
-   "p75": 13245,
+   "p25": 2899,
+   "p75": 13102,
    "buckets": {
-    "lt_2k": 106,
+    "lt_2k": 104,
     "2k_8k": 228,
-    "8k_32k": 203,
-    "gt_32k": 32
+    "8k_32k": 204,
+    "gt_32k": 33
    },
    "unknown": 0,
    "bands": {
-    "lt_1k": 65,
-    "1k_4k": 127,
-    "4k_16k": 266,
-    "16k_32k": 79,
-    "gt_32k": 32,
+    "lt_1k": 63,
+    "1k_4k": 128,
+    "4k_16k": 268,
+    "16k_32k": 77,
+    "gt_32k": 33,
     "unknown": 0
    },
-   "date": "2026-11-21"
+   "date": "2026-11-22"
   },
   "CLAUDE.md": {
-   "count": 319,
-   "median_bytes": 59,
+   "count": 318,
+   "median_bytes": 65,
    "p25_bytes": 11,
-   "p75_bytes": 4192,
-   "n": 319,
-   "median": 59,
+   "p75_bytes": 4216,
+   "n": 318,
+   "median": 65,
    "p25": 11,
-   "p75": 4192,
+   "p75": 4216,
    "buckets": {
-    "lt_2k": 214,
+    "lt_2k": 213,
     "2k_8k": 62,
     "8k_32k": 35,
     "gt_32k": 8
    },
    "unknown": 0,
    "bands": {
-    "lt_1k": 209,
-    "1k_4k": 28,
-    "4k_16k": 64,
+    "lt_1k": 208,
+    "1k_4k": 27,
+    "4k_16k": 65,
     "16k_32k": 10,
     "gt_32k": 8,
     "unknown": 0
    },
-   "date": "2026-11-21"
+   "date": "2026-11-22"
   },
   ".cursorrules": {
    "count": 16,
    "median_bytes": 1677,
    "p25_bytes": 180,
    "p75_bytes": 3410,
-   "date": "2026-11-21"
+   "date": "2026-11-22"
   },
   ".cursor/rules": {
    "count": 0,
    "median_bytes": 0,
    "p25_bytes": 0,
    "p75_bytes": 0,
-   "date": "2026-11-21"
+   "date": "2026-11-22"
   },
   ".github/copilot-instructions.md": {
    "count": 155,
    "median_bytes": 3788,
    "p25_bytes": 491,
    "p75_bytes": 8398,
-   "date": "2026-11-21"
+   "date": "2026-11-22"
   },
   "llms.txt": {
    "count": 17,
    "median_bytes": 3574,
-   "p25_bytes": 2715,
+   "p25_bytes": 3058,
    "p75_bytes": 7732,
-   "date": "2026-11-21"
+   "date": "2026-11-22"
   },
   "GEMINI.md": {
    "count": 20,
    "median_bytes": 146,
    "p25_bytes": 12,
    "p75_bytes": 330,
-   "date": "2026-11-21"
+   "date": "2026-11-22"
   },
   ".windsurfrules": {
    "count": 5,
    "median_bytes": 380,
    "p25_bytes": 209,
    "p75_bytes": 4262,
-   "date": "2026-11-21"
+   "date": "2026-11-22"
   },
   "AI_POLICY.md": {
    "count": 33,
    "median_bytes": 2355,
    "p25_bytes": 1862,
    "p75_bytes": 3901,
-   "date": "2026-11-21"
+   "date": "2026-11-22"
   },
   ".github/AI_POLICY.md": {
    "count": 2,
    "median_bytes": 3128,
    "p25_bytes": 2460,
    "p75_bytes": 3796,
-   "date": "2026-11-21"
+   "date": "2026-11-22"
   },
   ".github/instructions": {
    "count": 0,
    "median_bytes": 0,
    "p25_bytes": 0,
    "p75_bytes": 0,
-   "date": "2026-11-21"
+   "date": "2026-11-22"
   },
   ".claude/rules": {
    "count": 0,
    "median_bytes": 0,
    "p25_bytes": 0,
    "p75_bytes": 0,
-   "date": "2026-11-21"
+   "date": "2026-11-22"
   }
  },
  "claude_agents_changes": {
   "since": "2026-11-02",
-  "date": "2026-11-21",
-  "claude_removed_agents_kept": 7,
+  "date": "2026-11-22",
+  "claude_removed_agents_kept": 8,
   "agents_added_claude_kept": 2,
   "repos_claude_removed_agents_kept": [
    "home-assistant/core",
+   "juanfont/headscale",
    "opendatalab/MinerU",
    "pnpm/pnpm",
    "quasarframework/quasar",
@@ -2073,12 +2137,12 @@
   ]
  },
  "small_files": {
-  "date": "2026-11-21",
+  "date": "2026-11-22",
   "threshold_bytes": 300,
   "agents_md_under_300": 34,
-  "claude_md_under_300": 192,
+  "claude_md_under_300": 191,
   "agents_md_total": 569,
-  "claude_md_total": 319,
+  "claude_md_total": 318,
   "AGENTS.md": {
    "count": 34,
    "threshold_bytes": 300,
@@ -2087,7 +2151,7 @@
    "unknown_size": 0
   },
   "CLAUDE.md": {
-   "count": 192,
+   "count": 191,
    "threshold_bytes": 300,
    "size_unknown": 0,
    "zero_bytes": 0,

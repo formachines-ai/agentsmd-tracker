@@ -1,46 +1,26 @@
 {
  "schema_version": 2,
  "site": "https://agentsmd.formachines.ai",
- "date": "2026-11-21",
- "generated": "2026-11-21T05:30:20Z",
+ "date": "2026-11-22",
+ "generated": "2026-11-22T05:30:13Z",
  "license": "CC BY 4.0",
- "added": [
+ "added": [],
+ "removed": [
   {
-   "full_name": "storytold/photocraft",
-   "owner": "storytold",
-   "name": "photocraft",
-   "language": "Rust",
-   "stars": 76132,
+   "full_name": "juanfont/headscale",
+   "owner": "juanfont",
+   "name": "headscale",
+   "language": "Go",
+   "stars": 45291,
    "path": "CLAUDE.md",
-   "size": 11,
-   "url": "https://github.com/storytold/photocraft/blob/main/CLAUDE.md"
-  },
-  {
-   "full_name": "apache/skywalking",
-   "owner": "apache",
-   "name": "skywalking",
-   "language": "Java",
-   "stars": 24984,
-   "path": "AGENTS.md",
-   "size": 9,
-   "url": "https://github.com/apache/skywalking/blob/master/AGENTS.md"
-  },
-  {
-   "full_name": "simdjson/simdjson",
-   "owner": "simdjson",
-   "name": "simdjson",
-   "language": "C++",
-   "stars": 24496,
-   "path": "AGENTS.md",
-   "size": 6442,
-   "url": "https://github.com/simdjson/simdjson/blob/master/AGENTS.md"
+   "size": null,
+   "url": "https://github.com/juanfont/headscale/blob/main/CLAUDE.md"
   }
  ],
- "removed": [],
- "removed_count": 0,
+ "removed_count": 1,
  "counts": {
   "AGENTS.md": 569,
-  "CLAUDE.md": 319,
+  "CLAUDE.md": 318,
   ".cursorrules": 16,
   ".cursor/rules": 33,
   ".github/copilot-instructions.md": 155,

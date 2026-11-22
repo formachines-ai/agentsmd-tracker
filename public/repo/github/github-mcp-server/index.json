@@ -6,7 +6,7 @@
  "stars": 34167,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-20T05:16:21Z",
+ "checked": "2026-11-22T04:36:07Z",
  "files": {
   "AGENTS.md": {
    "present": false,
@@ -16,7 +16,7 @@
     "count": 66,
     "total": 193,
     "pct": 34.2,
-    "date": "2026-11-21",
+    "date": "2026-11-22",
     "language": "Go",
     "page": "https://agentsmd.formachines.ai/lang/go/",
     "measured": true
@@ -27,10 +27,10 @@
    "size": null,
    "url": null,
    "lang_share": {
-    "count": 45,
+    "count": 44,
     "total": 193,
-    "pct": 23.3,
-    "date": "2026-11-21",
+    "pct": 22.8,
+    "date": "2026-11-22",
     "language": "Go",
     "page": "https://agentsmd.formachines.ai/lang/go/",
     "measured": true
@@ -44,7 +44,7 @@
     "count": 1,
     "total": 193,
     "pct": 0.5,
-    "date": "2026-11-21",
+    "date": "2026-11-22",
     "language": "Go",
     "page": "https://agentsmd.formachines.ai/lang/go/",
     "measured": true
@@ -58,7 +58,7 @@
     "count": 2,
     "total": 193,
     "pct": 1.0,
-    "date": "2026-11-21",
+    "date": "2026-11-22",
     "language": "Go",
     "page": "https://agentsmd.formachines.ai/lang/go/",
     "measured": true
@@ -72,7 +72,7 @@
     "count": 14,
     "total": 193,
     "pct": 7.3,
-    "date": "2026-11-21",
+    "date": "2026-11-22",
     "language": "Go",
     "page": "https://agentsmd.formachines.ai/lang/go/",
     "measured": true
@@ -89,7 +89,7 @@
     "count": 3,
     "total": 193,
     "pct": 1.6,
-    "date": "2026-11-21",
+    "date": "2026-11-22",
     "language": "Go",
     "page": "https://agentsmd.formachines.ai/lang/go/",
     "measured": true
@@ -103,7 +103,7 @@
     "count": 2,
     "total": 193,
     "pct": 1.0,
-    "date": "2026-11-21",
+    "date": "2026-11-22",
     "language": "Go",
     "page": "https://agentsmd.formachines.ai/lang/go/",
     "measured": true
@@ -117,7 +117,7 @@
     "count": 0,
     "total": 193,
     "pct": 0.0,
-    "date": "2026-11-21",
+    "date": "2026-11-22",
     "language": "Go",
     "page": "https://agentsmd.formachines.ai/lang/go/",
     "measured": true
@@ -131,7 +131,7 @@
     "count": 3,
     "total": 193,
     "pct": 1.6,
-    "date": "2026-11-21",
+    "date": "2026-11-22",
     "language": "Go",
     "page": "https://agentsmd.formachines.ai/lang/go/",
     "measured": true
@@ -145,7 +145,7 @@
     "count": 0,
     "total": 193,
     "pct": 0.0,
-    "date": "2026-11-21",
+    "date": "2026-11-22",
     "language": "Go",
     "page": "https://agentsmd.formachines.ai/lang/go/",
     "measured": true
@@ -159,7 +159,7 @@
     "count": 3,
     "total": 193,
     "pct": 1.6,
-    "date": "2026-11-21",
+    "date": "2026-11-22",
     "language": "Go",
     "page": "https://agentsmd.formachines.ai/lang/go/",
     "measured": true
@@ -173,7 +173,7 @@
     "count": 3,
     "total": 193,
     "pct": 1.6,
-    "date": "2026-11-21",
+    "date": "2026-11-22",
     "language": "Go",
     "page": "https://agentsmd.formachines.ai/lang/go/",
     "measured": true
@@ -185,73 +185,73 @@
    "count": 66,
    "total": 193,
    "pct": 34.2,
-   "date": "2026-11-21"
+   "date": "2026-11-22"
   },
   "CLAUDE.md": {
-   "count": 45,
+   "count": 44,
    "total": 193,
-   "pct": 23.3,
-   "date": "2026-11-21"
+   "pct": 22.8,
+   "date": "2026-11-22"
   },
   ".cursorrules": {
    "count": 1,
    "total": 193,
    "pct": 0.5,
-   "date": "2026-11-21"
+   "date": "2026-11-22"
   },
   ".cursor/rules": {
    "count": 2,
    "total": 193,
    "pct": 1.0,
-   "date": "2026-11-21"
+   "date": "2026-11-22"
   },
   ".github/copilot-instructions.md": {
    "count": 14,
    "total": 193,
    "pct": 7.3,
-   "date": "2026-11-21"
+   "date": "2026-11-22"
   },
   "llms.txt": {
    "count": 3,
    "total": 193,
    "pct": 1.6,
-   "date": "2026-11-21"
+   "date": "2026-11-22"
   },
   "GEMINI.md": {
    "count": 2,
    "total": 193,
    "pct": 1.0,
-   "date": "2026-11-21"
+   "date": "2026-11-22"
   },
   ".windsurfrules": {
    "count": 0,
    "total": 193,
    "pct": 0.0,
-   "date": "2026-11-21"
+   "date": "2026-11-22"
   },
   "AI_POLICY.md": {
    "count": 3,
    "total": 193,
    "pct": 1.6,
-   "date": "2026-11-21"
+   "date": "2026-11-22"
   },
   ".github/AI_POLICY.md": {
    "count": 0,
    "total": 193,
    "pct": 0.0,
-   "date": "2026-11-21"
+   "date": "2026-11-22"
   },
   ".github/instructions": {
    "count": 3,
    "total": 193,
    "pct": 1.6,
-   "date": "2026-11-21"
+   "date": "2026-11-22"
   },
   ".claude/rules": {
    "count": 3,
    "total": 193,
    "pct": 1.6,
-   "date": "2026-11-21"
+   "date": "2026-11-22"
   }
  },
  "first_seen": {

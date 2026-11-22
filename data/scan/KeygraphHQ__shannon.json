@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-20T04:51:06Z",
+ "checked": "2026-11-22T04:11:40Z",
  "status": "ok",
  "default_branch": "main",
  "files": {
@@ -10,7 +10,7 @@
   },
   "CLAUDE.md": {
    "present": true,
-   "size": 37835
+   "size": 40376
   },
   ".cursorrules": {
    "present": false,
@@ -29,7 +29,7 @@
   },
   "llms.txt": {
    "present": true,
-   "size": 2715
+   "size": 3143
   },
   "GEMINI.md": {
    "present": false,
