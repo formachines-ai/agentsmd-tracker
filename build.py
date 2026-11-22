@@ -80,6 +80,9 @@ PATHS: list[dict] = [
     {"path": ".github/AI_POLICY.md", "kind": "file", "label": ".github/AI_POLICY.md", "note": "AI contribution policy in .github (presence and size only)"},
     {"path": ".github/instructions", "kind": "dir", "label": ".github/instructions/", "note": "path-specific instruction files in .github (directory presence only)"},
     {"path": ".claude/rules", "kind": "dir", "label": ".claude/rules/", "note": "rule files in .claude (directory presence only)"},
+    {"path": ".clinerules", "kind": "file", "label": ".clinerules", "note": "Cline (single file; a .clinerules directory is not counted)"},
+    {"path": ".windsurf/rules", "kind": "dir", "label": ".windsurf/rules/", "note": "Windsurf (rules directory, presence only)"},
+    {"path": ".agents", "kind": "dir", "label": ".agents/", "note": "Antigravity (agent directory, presence only)"},
 ]
 PRIMARY_PATH = "AGENTS.md"
 
@@ -1337,6 +1340,9 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
             if lang_share:
                 files_json[s["path"]]["lang_share"] = lang_share
                 language_share[s["path"]] = {k: lang_share[k] for k in ("count", "total", "pct", "date")}
+            if meas and ts0[s["path"]] > history[0]["date"]:
+                share += f'<br><span class="muted">tracked since {esc(ts0[s["path"]])}</span>'
+                files_json[s["path"]]["tracked_since"] = ts0[s["path"]]
             seen_note = ""
             if present:
                 fs_day = added_on.get((r["full_name"], s["path"]))
@@ -1362,7 +1368,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
             elif present is False:
                 rows.append(f'<tr><td><code>{esc(shown)}</code>{share}</td><td class="no">no</td><td>—</td><td></td></tr>')
             elif not meas:
-                rows.append(f'<tr><td><code>{esc(shown)}</code>{share}</td><td class="muted">not measured yet</td><td>—</td><td></td></tr>')
+                rows.append(f'<tr><td><code>{esc(shown)}</code>{share}</td><td class="muted">not measured yet (not yet scanned)</td><td>—</td><td></td></tr>')
             else:
                 rows.append(f'<tr><td><code>{esc(shown)}</code>{share}</td><td class="muted">not checked yet</td><td>—</td><td></td></tr>')
         status = (sc or {}).get("status", "pending")

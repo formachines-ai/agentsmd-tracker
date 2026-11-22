@@ -103,7 +103,10 @@
   "AI_POLICY.md",
   ".github/AI_POLICY.md",
   ".github/instructions",
-  ".claude/rules"
+  ".claude/rules",
+  ".clinerules",
+  ".windsurf/rules",
+  ".agents"
  ],
  "tracked_since": {
   "AGENTS.md": "2026-11-02",
@@ -117,7 +120,10 @@
   "AI_POLICY.md": "2026-11-16",
   ".github/AI_POLICY.md": "2026-11-16",
   ".github/instructions": "2026-11-19",
-  ".claude/rules": "2026-11-19"
+  ".claude/rules": "2026-11-19",
+  ".clinerules": null,
+  ".windsurf/rules": null,
+  ".agents": null
  },
  "measured": {
   "AGENTS.md": true,
@@ -131,7 +137,10 @@
   "AI_POLICY.md": true,
   ".github/AI_POLICY.md": true,
   ".github/instructions": true,
-  ".claude/rules": true
+  ".claude/rules": true,
+  ".clinerules": false,
+  ".windsurf/rules": false,
+  ".agents": false
  },
  "counts": {
   "AGENTS.md": 569,
@@ -145,7 +154,10 @@
   "AI_POLICY.md": 33,
   ".github/AI_POLICY.md": 2,
   ".github/instructions": 39,
-  ".claude/rules": 27
+  ".claude/rules": 27,
+  ".clinerules": null,
+  ".windsurf/rules": null,
+  ".agents": null
  },
  "any": 712,
  "shares": {
@@ -160,7 +172,10 @@
   "AI_POLICY.md": 1.7,
   ".github/AI_POLICY.md": 0.1,
   ".github/instructions": 2.0,
-  ".claude/rules": 1.4
+  ".claude/rules": 1.4,
+  ".clinerules": null,
+  ".windsurf/rules": null,
+  ".agents": null
  },
  "checked": {
   "AGENTS.md": 1919,
@@ -174,7 +189,10 @@
   "AI_POLICY.md": 1919,
   ".github/AI_POLICY.md": 1919,
   ".github/instructions": 1919,
-  ".claude/rules": 1919
+  ".claude/rules": 1919,
+  ".clinerules": null,
+  ".windsurf/rules": null,
+  ".agents": null
  },
  "unknown": {
   "AGENTS.md": 0,
@@ -188,7 +206,10 @@
   "AI_POLICY.md": 0,
   ".github/AI_POLICY.md": 0,
   ".github/instructions": 0,
-  ".claude/rules": 0
+  ".claude/rules": 0,
+  ".clinerules": null,
+  ".windsurf/rules": null,
+  ".agents": null
  },
  "coverage": {
   "AGENTS.md": {
@@ -304,6 +325,9 @@
    ".github/AI_POLICY.md": 1,
    ".github/instructions": 7,
    ".claude/rules": 4,
+   ".clinerules": null,
+   ".windsurf/rules": null,
+   ".agents": null,
    "checked": {
     "AGENTS.md": 184,
     "CLAUDE.md": 184,
@@ -316,7 +340,10 @@
     "AI_POLICY.md": 184,
     ".github/AI_POLICY.md": 184,
     ".github/instructions": 184,
-    ".claude/rules": 184
+    ".claude/rules": 184,
+    ".clinerules": null,
+    ".windsurf/rules": null,
+    ".agents": null
    },
    "unknown": {
     "AGENTS.md": 0,
@@ -330,7 +357,10 @@
     "AI_POLICY.md": 0,
     ".github/AI_POLICY.md": 0,
     ".github/instructions": 0,
-    ".claude/rules": 0
+    ".claude/rules": 0,
+    ".clinerules": null,
+    ".windsurf/rules": null,
+    ".agents": null
    },
    "shares": {
     "AGENTS.md": 21.7,
@@ -344,7 +374,10 @@
     "AI_POLICY.md": 0.0,
     ".github/AI_POLICY.md": 0.5,
     ".github/instructions": 3.8,
-    ".claude/rules": 2.2
+    ".claude/rules": 2.2,
+    ".clinerules": null,
+    ".windsurf/rules": null,
+    ".agents": null
    }
   },
   "C++": {
@@ -362,6 +395,9 @@
    ".github/AI_POLICY.md": 0,
    ".github/instructions": 6,
    ".claude/rules": 0,
+   ".clinerules": null,
+   ".windsurf/rules": null,
+   ".agents": null,
    "checked": {
     "AGENTS.md": 190,
     "CLAUDE.md": 190,
@@ -374,7 +410,10 @@
     "AI_POLICY.md": 190,
     ".github/AI_POLICY.md": 190,
     ".github/instructions": 190,
-    ".claude/rules": 190
+    ".claude/rules": 190,
+    ".clinerules": null,
+    ".windsurf/rules": null,
+    ".agents": null
    },
    "unknown": {
     "AGENTS.md": 0,
@@ -388,7 +427,10 @@
     "AI_POLICY.md": 0,
     ".github/AI_POLICY.md": 0,
     ".github/instructions": 0,
-    ".claude/rules": 0
+    ".claude/rules": 0,
+    ".clinerules": null,
+    ".windsurf/rules": null,
+    ".agents": null
    },
    "shares": {
     "AGENTS.md": 29.5,
@@ -402,7 +444,10 @@
     "AI_POLICY.md": 3.7,
     ".github/AI_POLICY.md": 0.0,
     ".github/instructions": 3.2,
-    ".claude/rules": 0.0
+    ".claude/rules": 0.0,
+    ".clinerules": null,
+    ".windsurf/rules": null,
+    ".agents": null
    }
   },
   "Go": {
@@ -420,6 +465,9 @@
    ".github/AI_POLICY.md": 0,
    ".github/instructions": 3,
    ".claude/rules": 3,
+   ".clinerules": null,
+   ".windsurf/rules": null,
+   ".agents": null,
    "checked": {
     "AGENTS.md": 193,
     "CLAUDE.md": 193,
@@ -432,7 +480,10 @@
     "AI_POLICY.md": 193,
     ".github/AI_POLICY.md": 193,
     ".github/instructions": 193,
-    ".claude/rules": 193
+    ".claude/rules": 193,
+    ".clinerules": null,
+    ".windsurf/rules": null,
+    ".agents": null
    },
    "unknown": {
     "AGENTS.md": 0,
@@ -446,7 +497,10 @@
     "AI_POLICY.md": 0,
     ".github/AI_POLICY.md": 0,
     ".github/instructions": 0,
-    ".claude/rules": 0
+    ".claude/rules": 0,
+    ".clinerules": null,
+    ".windsurf/rules": null,
+    ".agents": null
    },
    "shares": {
     "AGENTS.md": 34.2,
@@ -460,7 +514,10 @@
     "AI_POLICY.md": 1.6,
     ".github/AI_POLICY.md": 0.0,
     ".github/instructions": 1.6,
-    ".claude/rules": 1.6
+    ".claude/rules": 1.6,
+    ".clinerules": null,
+    ".windsurf/rules": null,
+    ".agents": null
    }
   },
   "Java": {
@@ -478,6 +535,9 @@
    ".github/AI_POLICY.md": 0,
    ".github/instructions": 1,
    ".claude/rules": 3,
+   ".clinerules": null,
+   ".windsurf/rules": null,
+   ".agents": null,
    "checked": {
     "AGENTS.md": 192,
     "CLAUDE.md": 192,
@@ -490,7 +550,10 @@
     "AI_POLICY.md": 192,
     ".github/AI_POLICY.md": 192,
     ".github/instructions": 192,
-    ".claude/rules": 192
+    ".claude/rules": 192,
+    ".clinerules": null,
+    ".windsurf/rules": null,
+    ".agents": null
    },
    "unknown": {
     "AGENTS.md": 0,
@@ -504,7 +567,10 @@
     "AI_POLICY.md": 0,
     ".github/AI_POLICY.md": 0,
     ".github/instructions": 0,
-    ".claude/rules": 0
+    ".claude/rules": 0,
+    ".clinerules": null,
+    ".windsurf/rules": null,
+    ".agents": null
    },
    "shares": {
     "AGENTS.md": 25.5,
@@ -518,7 +584,10 @@
     "AI_POLICY.md": 1.0,
     ".github/AI_POLICY.md": 0.0,
     ".github/instructions": 0.5,
-    ".claude/rules": 1.6
+    ".claude/rules": 1.6,
+    ".clinerules": null,
+    ".windsurf/rules": null,
+    ".agents": null
    }
   },
   "JavaScript": {
@@ -536,6 +605,9 @@
    ".github/AI_POLICY.md": 0,
    ".github/instructions": 4,
    ".claude/rules": 3,
+   ".clinerules": null,
+   ".windsurf/rules": null,
+   ".agents": null,
    "checked": {
     "AGENTS.md": 191,
     "CLAUDE.md": 191,
@@ -548,7 +620,10 @@
     "AI_POLICY.md": 191,
     ".github/AI_POLICY.md": 191,
     ".github/instructions": 191,
-    ".claude/rules": 191
+    ".claude/rules": 191,
+    ".clinerules": null,
+    ".windsurf/rules": null,
+    ".agents": null
    },
    "unknown": {
     "AGENTS.md": 0,
@@ -562,7 +637,10 @@
     "AI_POLICY.md": 0,
     ".github/AI_POLICY.md": 0,
     ".github/instructions": 0,
-    ".claude/rules": 0
+    ".claude/rules": 0,
+    ".clinerules": null,
+    ".windsurf/rules": null,
+    ".agents": null
    },
    "shares": {
     "AGENTS.md": 18.3,
@@ -576,7 +654,10 @@
     "AI_POLICY.md": 0.5,
     ".github/AI_POLICY.md": 0.0,
     ".github/instructions": 2.1,
-    ".claude/rules": 1.6
+    ".claude/rules": 1.6,
+    ".clinerules": null,
+    ".windsurf/rules": null,
+    ".agents": null
    }
   },
   "PHP": {
@@ -594,6 +675,9 @@
    ".github/AI_POLICY.md": 0,
    ".github/instructions": 4,
    ".claude/rules": 2,
+   ".clinerules": null,
+   ".windsurf/rules": null,
+   ".agents": null,
    "checked": {
     "AGENTS.md": 191,
     "CLAUDE.md": 191,
@@ -606,7 +690,10 @@
     "AI_POLICY.md": 191,
     ".github/AI_POLICY.md": 191,
     ".github/instructions": 191,
-    ".claude/rules": 191
+    ".claude/rules": 191,
+    ".clinerules": null,
+    ".windsurf/rules": null,
+    ".agents": null
    },
    "unknown": {
     "AGENTS.md": 0,
@@ -620,7 +707,10 @@
     "AI_POLICY.md": 0,
     ".github/AI_POLICY.md": 0,
     ".github/instructions": 0,
-    ".claude/rules": 0
+    ".claude/rules": 0,
+    ".clinerules": null,
+    ".windsurf/rules": null,
+    ".agents": null
    },
    "shares": {
     "AGENTS.md": 13.6,
@@ -634,7 +724,10 @@
     "AI_POLICY.md": 0.5,
     ".github/AI_POLICY.md": 0.0,
     ".github/instructions": 2.1,
-    ".claude/rules": 1.0
+    ".claude/rules": 1.0,
+    ".clinerules": null,
+    ".windsurf/rules": null,
+    ".agents": null
    }
   },
   "Python": {
@@ -652,6 +745,9 @@
    ".github/AI_POLICY.md": 1,
    ".github/instructions": 3,
    ".claude/rules": 4,
+   ".clinerules": null,
+   ".windsurf/rules": null,
+   ".agents": null,
    "checked": {
     "AGENTS.md": 197,
     "CLAUDE.md": 197,
@@ -664,7 +760,10 @@
     "AI_POLICY.md": 197,
     ".github/AI_POLICY.md": 197,
     ".github/instructions": 197,
-    ".claude/rules": 197
+    ".claude/rules": 197,
+    ".clinerules": null,
+    ".windsurf/rules": null,
+    ".agents": null
    },
    "unknown": {
     "AGENTS.md": 0,
@@ -678,7 +777,10 @@
     "AI_POLICY.md": 0,
     ".github/AI_POLICY.md": 0,
     ".github/instructions": 0,
-    ".claude/rules": 0
+    ".claude/rules": 0,
+    ".clinerules": null,
+    ".windsurf/rules": null,
+    ".agents": null
    },
    "shares": {
     "AGENTS.md": 34.0,
@@ -692,7 +794,10 @@
     "AI_POLICY.md": 2.5,
     ".github/AI_POLICY.md": 0.5,
     ".github/instructions": 1.5,
-    ".claude/rules": 2.0
+    ".claude/rules": 2.0,
+    ".clinerules": null,
+    ".windsurf/rules": null,
+    ".agents": null
    }
   },
   "Ruby": {
@@ -710,6 +815,9 @@
    ".github/AI_POLICY.md": 0,
    ".github/instructions": 4,
    ".claude/rules": 0,
+   ".clinerules": null,
+   ".windsurf/rules": null,
+   ".agents": null,
    "checked": {
     "AGENTS.md": 189,
     "CLAUDE.md": 189,
@@ -722,7 +830,10 @@
     "AI_POLICY.md": 189,
     ".github/AI_POLICY.md": 189,
     ".github/instructions": 189,
-    ".claude/rules": 189
+    ".claude/rules": 189,
+    ".clinerules": null,
+    ".windsurf/rules": null,
+    ".agents": null
    },
    "unknown": {
     "AGENTS.md": 0,
@@ -736,7 +847,10 @@
     "AI_POLICY.md": 0,
     ".github/AI_POLICY.md": 0,
     ".github/instructions": 0,
-    ".claude/rules": 0
+    ".claude/rules": 0,
+    ".clinerules": null,
+    ".windsurf/rules": null,
+    ".agents": null
    },
    "shares": {
     "AGENTS.md": 19.6,
@@ -750,7 +864,10 @@
     "AI_POLICY.md": 0.0,
     ".github/AI_POLICY.md": 0.0,
     ".github/instructions": 2.1,
-    ".claude/rules": 0.0
+    ".claude/rules": 0.0,
+    ".clinerules": null,
+    ".windsurf/rules": null,
+    ".agents": null
    }
   },
   "Rust": {
@@ -768,6 +885,9 @@
    ".github/AI_POLICY.md": 0,
    ".github/instructions": 1,
    ".claude/rules": 4,
+   ".clinerules": null,
+   ".windsurf/rules": null,
+   ".agents": null,
    "checked": {
     "AGENTS.md": 198,
     "CLAUDE.md": 198,
@@ -780,7 +900,10 @@
     "AI_POLICY.md": 198,
     ".github/AI_POLICY.md": 198,
     ".github/instructions": 198,
-    ".claude/rules": 198
+    ".claude/rules": 198,
+    ".clinerules": null,
+    ".windsurf/rules": null,
+    ".agents": null
    },
    "unknown": {
     "AGENTS.md": 0,
@@ -794,7 +917,10 @@
     "AI_POLICY.md": 0,
     ".github/AI_POLICY.md": 0,
     ".github/instructions": 0,
-    ".claude/rules": 0
+    ".claude/rules": 0,
+    ".clinerules": null,
+    ".windsurf/rules": null,
+    ".agents": null
    },
    "shares": {
     "AGENTS.md": 44.9,
@@ -808,7 +934,10 @@
     "AI_POLICY.md": 5.6,
     ".github/AI_POLICY.md": 0.0,
     ".github/instructions": 0.5,
-    ".claude/rules": 2.0
+    ".claude/rules": 2.0,
+    ".clinerules": null,
+    ".windsurf/rules": null,
+    ".agents": null
    }
   },
   "TypeScript": {
@@ -826,6 +955,9 @@
    ".github/AI_POLICY.md": 0,
    ".github/instructions": 6,
    ".claude/rules": 4,
+   ".clinerules": null,
+   ".windsurf/rules": null,
+   ".agents": null,
    "checked": {
     "AGENTS.md": 194,
     "CLAUDE.md": 194,
@@ -838,7 +970,10 @@
     "AI_POLICY.md": 194,
     ".github/AI_POLICY.md": 194,
     ".github/instructions": 194,
-    ".claude/rules": 194
+    ".claude/rules": 194,
+    ".clinerules": null,
+    ".windsurf/rules": null,
+    ".agents": null
    },
    "unknown": {
     "AGENTS.md": 0,
@@ -852,7 +987,10 @@
     "AI_POLICY.md": 0,
     ".github/AI_POLICY.md": 0,
     ".github/instructions": 0,
-    ".claude/rules": 0
+    ".claude/rules": 0,
+    ".clinerules": null,
+    ".windsurf/rules": null,
+    ".agents": null
    },
    "shares": {
     "AGENTS.md": 53.6,
@@ -866,7 +1004,10 @@
     "AI_POLICY.md": 1.5,
     ".github/AI_POLICY.md": 0.0,
     ".github/instructions": 3.1,
-    ".claude/rules": 2.1
+    ".claude/rules": 2.1,
+    ".clinerules": null,
+    ".windsurf/rules": null,
+    ".agents": null
    }
   }
  },
@@ -1969,7 +2110,10 @@
   "AI_POLICY.md": 1.7,
   ".github/AI_POLICY.md": 0.1,
   ".github/instructions": 2.0,
-  ".claude/rules": 1.4
+  ".claude/rules": 1.4,
+  ".clinerules": 0.0,
+  ".windsurf/rules": 0.0,
+  ".agents": 0.0
  },
  "combinations": {
   "date": "2026-11-22",
@@ -2118,6 +2262,27 @@
    "p25_bytes": 0,
    "p75_bytes": 0,
    "date": "2026-11-22"
+  },
+  ".clinerules": {
+   "count": 0,
+   "median_bytes": 0,
+   "p25_bytes": 0,
+   "p75_bytes": 0,
+   "date": "2026-11-22"
+  },
+  ".windsurf/rules": {
+   "count": 0,
+   "median_bytes": 0,
+   "p25_bytes": 0,
+   "p75_bytes": 0,
+   "date": "2026-11-22"
+  },
+  ".agents": {
+   "count": 0,
+   "median_bytes": 0,
+   "p25_bytes": 0,
+   "p75_bytes": 0,
+   "date": "2026-11-22"
   }
  },
  "claude_agents_changes": {
@@ -2226,6 +2391,27 @@
    "size_unknown": 27,
    "zero_bytes": 0,
    "unknown_size": 27
+  },
+  ".clinerules": {
+   "count": 0,
+   "threshold_bytes": 300,
+   "size_unknown": 0,
+   "zero_bytes": 0,
+   "unknown_size": 0
+  },
+  ".windsurf/rules": {
+   "count": 0,
+   "threshold_bytes": 300,
+   "size_unknown": 0,
+   "zero_bytes": 0,
+   "unknown_size": 0
+  },
+  ".agents": {
+   "count": 0,
+   "threshold_bytes": 300,
+   "size_unknown": 0,
+   "zero_bytes": 0,
+   "unknown_size": 0
   }
  }
 }

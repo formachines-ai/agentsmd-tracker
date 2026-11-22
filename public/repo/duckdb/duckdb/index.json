@@ -139,6 +139,7 @@
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/",
     "measured": true
    },
+   "tracked_since": "2026-11-16",
    "first_seen": "2026-11-02",
    "first_seen_at_first_scan": true,
    "go_url": "https://agentsmd.formachines.ai/go/1157/"
@@ -155,7 +156,8 @@
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/",
     "measured": true
-   }
+   },
+   "tracked_since": "2026-11-16"
   },
   ".github/instructions": {
    "present": false,
@@ -169,7 +171,8 @@
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/",
     "measured": true
-   }
+   },
+   "tracked_since": "2026-11-19"
   },
   ".claude/rules": {
    "present": false,
@@ -183,6 +186,55 @@
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/",
     "measured": true
+   },
+   "tracked_since": "2026-11-19"
+  },
+  ".clinerules": {
+   "present": null,
+   "size": null,
+   "url": null,
+   "measured": false,
+   "lang_share": {
+    "count": null,
+    "share": null,
+    "pct": null,
+    "total": null,
+    "measured": false,
+    "date": "2026-11-22",
+    "language": "C++",
+    "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/"
+   }
+  },
+  ".windsurf/rules": {
+   "present": null,
+   "size": null,
+   "url": null,
+   "measured": false,
+   "lang_share": {
+    "count": null,
+    "share": null,
+    "pct": null,
+    "total": null,
+    "measured": false,
+    "date": "2026-11-22",
+    "language": "C++",
+    "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/"
+   }
+  },
+  ".agents": {
+   "present": null,
+   "size": null,
+   "url": null,
+   "measured": false,
+   "lang_share": {
+    "count": null,
+    "share": null,
+    "pct": null,
+    "total": null,
+    "measured": false,
+    "date": "2026-11-22",
+    "language": "C++",
+    "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/"
    }
   }
  },
@@ -257,6 +309,24 @@
    "count": 0,
    "total": 190,
    "pct": 0.0,
+   "date": "2026-11-22"
+  },
+  ".clinerules": {
+   "count": null,
+   "total": null,
+   "pct": null,
+   "date": "2026-11-22"
+  },
+  ".windsurf/rules": {
+   "count": null,
+   "total": null,
+   "pct": null,
+   "date": "2026-11-22"
+  },
+  ".agents": {
+   "count": null,
+   "total": null,
+   "pct": null,
    "date": "2026-11-22"
   }
  },
