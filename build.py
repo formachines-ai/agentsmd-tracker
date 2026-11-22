@@ -80,7 +80,7 @@ PATHS: list[dict] = [
     {"path": ".github/AI_POLICY.md", "kind": "file", "label": ".github/AI_POLICY.md", "note": "AI contribution policy in .github (presence and size only)"},
     {"path": ".github/instructions", "kind": "dir", "label": ".github/instructions/", "note": "path-specific instruction files in .github (directory presence only)"},
     {"path": ".claude/rules", "kind": "dir", "label": ".claude/rules/", "note": "rule files in .claude (directory presence only)"},
-    {"path": ".clinerules", "kind": "file", "label": ".clinerules", "note": "Cline (single file; a .clinerules directory is not counted)"},
+    {"path": ".clinerules", "kind": "file", "alt_dir": True, "label": ".clinerules (file or directory)", "note": "Cline (a .clinerules file or a .clinerules/ directory, presence only)"},
     {"path": ".windsurf/rules", "kind": "dir", "label": ".windsurf/rules/", "note": "Windsurf (rules directory, presence only)"},
     {"path": ".agents", "kind": "dir", "label": ".agents/", "note": "Antigravity (agent directory, presence only)"},
 ]
@@ -98,7 +98,7 @@ def token_text(token: bool) -> str:
             else "one thread, no token")
 
 
-REQ_PER_REPO = len(PATHS) + 2   # path HEADs + existence HEAD (all absent) + moved-detection HEAD; one fewer when any path is present
+REQ_PER_REPO = len(PATHS) + 3   # path HEADs + .clinerules/ directory HEAD (only when the file is absent) + existence HEAD (all absent) + moved-detection HEAD
 
 RAW_BASE = "https://raw.githubusercontent.com"
 GH_BASE = "https://github.com"
@@ -243,9 +243,26 @@ def head(url: str, token: str | None = None) -> tuple[int, dict]:
 
 
 def check_path(repo: dict, spec: dict) -> dict | None:
-    """Presence + size of one tracked path. None = network failure (unknown)."""
+    """Presence + size of one tracked path. None = network failure (unknown).
+    spec["alt_dir"] (T-0233): when the file is absent, the directory of the same name is checked too; "form" records which."""
+    r = _check_path(repo, spec, spec["kind"])
+    if spec.get("alt_dir") and r is not None and r["present"] is False:
+        d = _check_path(repo, spec, "dir")
+        time.sleep(PAUSE_S)
+        if d is None:
+            return None if r.get("definite") else r
+        if d["present"]:
+            return {"present": True, "size": None, "form": "dir"}
+        both = bool(r.get("definite") and d.get("definite"))
+        return {"present": False, "size": None, **({"definite": True} if both else {})}
+    if spec.get("alt_dir") and r and r["present"]:
+        r["form"] = "file"
+    return r
+
+
+def _check_path(repo: dict, spec: dict, kind: str) -> dict | None:
     full, branch = repo["full_name"], repo.get("default_branch") or "main"
-    if spec["kind"] == "file":
+    if kind == "file":
         url = f"{RAW_BASE}/{full}/{urllib.parse.quote(branch)}/{spec['path']}"
         status, hdrs = head(url)
         if status == 200:
@@ -558,9 +575,9 @@ def _change(repo: dict, path: str, sc: dict) -> dict:
             "url": file_url(repo, path, sc.get("default_branch"))}
 
 
-def file_url(repo: dict, path: str, branch: str | None = None) -> str:
+def file_url(repo: dict, path: str, branch: str | None = None, form: str | None = None) -> str:
     branch = branch or repo.get("default_branch") or "main"
-    kind = next((s["kind"] for s in PATHS if s["path"] == path), "file")
+    kind = form or next((s["kind"] for s in PATHS if s["path"] == path), "file")
     return f"{GH_BASE}/{repo['full_name']}/{'tree' if kind == 'dir' else 'blob'}/{urllib.parse.quote(branch)}/{path}"
 
 
@@ -1243,7 +1260,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
 <li><strong>Sample.</strong> {sample:,} public, non-fork, non-archived repositories with the most stars per language (GitHub Search API, collected once and extended over time). {len(agg['unreachable'])} are currently unreachable (moved or removed) and excluded.</li>
 <li><strong>Check.</strong> Once a day a HEAD request per path against the default branch: a <code>200</code> means the file exists, <code>Content-Length</code> is its size. <code>.cursor/rules/</code>, <code>.github/instructions/</code> and <code>.claude/rules/</code> are checked as directories (presence only). A path's first scan is a baseline; days before it show \"not tracked\". Names are matched case-sensitively, exactly as the conventions spell them.</li>
 <li><strong>Paths checked.</strong> Only these {len(PATHS)} fixed locations on the default branch: {esc(paths_text())}. Nested files, for example in subdirectories or packages, are not checked.</li>
-<li><strong>Requests per repository.</strong> {len(PATHS)} path HEAD requests, plus 1 existence HEAD (only when every path is absent) and 1 moved-detection HEAD: {REQ_PER_REPO} requests at most ({token_text(bool(build_info.get('github_token')))}). AI_POLICY.md and .github/AI_POLICY.md: presence and size only, contents are never read. They count as 0 on days before their first scan; a path's first scan is a baseline, not an added entry.</li>
+<li><strong>Requests per repository.</strong> {len(PATHS)} path HEAD requests, plus 1 HEAD for the .clinerules/ directory (only when the .clinerules file is absent), 1 existence HEAD (only when every path is absent) and 1 moved-detection HEAD: {REQ_PER_REPO} requests at most ({token_text(bool(build_info.get('github_token')))}). AI_POLICY.md and .github/AI_POLICY.md: presence and size only, contents are never read. They count as 0 on days before their first scan; a path's first scan is a baseline, not an added entry.</li>
 <li><strong>Added today.</strong> A path present in today's scan and absent in the previous snapshot of the same repository. Links go to the file on GitHub via <code>/go/&lt;id&gt;/</code>, a plain redirect page.</li>
 <li><strong>Languages.</strong> Each language in the table above has a full list of its sampled repositories (every sampled repository is listed) at <code>/lang/&lt;slug&gt;/</code>, for example <a href="/lang/python/">/lang/python/</a>.</li>
 <li><strong>Baseline.</strong> A repository seen for the first time is baseline: files it already has are counted, but not shown as added.</li>
@@ -1313,7 +1330,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
         lv = agg["by_lang"].get(r.get("language") or "")
         gh_links = []
         for s in PATHS:
-            shown = s["path"] + ("/" if s["kind"] == "dir" else "")
+            shown = s["label"] if s.get("alt_dir") else s["path"] + ("/" if s["kind"] == "dir" else "")
             share = ""
             lang_share = None
             meas = bool(ts0.get(s["path"]))   # T-0204: tracked_since null = not measured yet
@@ -1331,8 +1348,11 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
             present = f.get("present") if meas else None
             if meas and r["full_name"] in cov["repo"] and not cov["repo"][r["full_name"]][s["path"]]:
                 present = None   # T-0209: unknown for this repo (snapshot predates tracked_since or holds no result)
-            url = file_url(r, s["path"], (sc or {}).get("default_branch"))
+            form = f.get("form") if (present and s.get("alt_dir")) else None
+            url = file_url(r, s["path"], (sc or {}).get("default_branch"), form)
             files_json[s["path"]] = {"present": present, "size": f.get("size"), "url": url if present else None}
+            if form:
+                files_json[s["path"]]["form"] = form
             if not meas:
                 files_json[s["path"]]["measured"] = False
             elif present is None and sc and r["full_name"] in cov["repo"]:
@@ -1357,7 +1377,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
                     first_seen[s["path"]] = {"date": r_first, "baseline": True}
                 share += seen_note
             if present:
-                size = f"{f['size']:,} bytes" if isinstance(f.get("size"), int) else ("directory" if s["kind"] == "dir" else '<span title="size unknown">— (size unknown)</span>')
+                size = f"{f['size']:,} bytes" if isinstance(f.get("size"), int) else ("directory" if (s["kind"] == "dir" or form == "dir") else '<span title="size unknown">— (size unknown)</span>')
                 if isinstance(f.get("size"), int) and 0 <= f["size"] < SMALL_FILE_BYTES:
                     size += f" (under {SMALL_FILE_BYTES} bytes)"
                 golink = go.href(r, s["path"], url)
@@ -1641,7 +1661,7 @@ Latest (scan {generated}): {agg['counts'][PRIMARY_PATH]} of {total} scanned repo
 - claude_agents_changes in stats.json: since (first scan date), date (= generated), claude_removed_agents_kept (repos whose CLAUDE.md went away since their first scan while AGENTS.md stayed), agents_added_claude_kept (repos that added AGENTS.md while CLAUDE.md stayed) and repos_claude_removed_agents_kept (owner/name list, length = claude_removed_agents_kept); a first scan is a baseline; presence only, no reasons.
 - method_changes in stats.json: an array of detection changes, each entry with the fields date, path, summary, commit and url. Entry: date 2026-11-13, path .cursor/rules, summary "redirect check tightened", commit 6887ed8, url https://github.com/formachines-ai/agentsmd-tracker/commit/6887ed8. A count change on that date for that path comes from how the scan reads the site, not from the repositories.
 - today.json removed entries with reason "method_change": the path is no longer detected after a method change (see method_changes); this is a detection change, not a removal by the repository, and it says nothing about whether a file was deleted.
-- Requests per repository: {REQ_PER_REPO} at most ({len(PATHS)} path HEADs + 1 existence HEAD when every path is absent + 1 moved-detection HEAD; {token_text(bool(build_info.get('github_token')))}). AI_POLICY.md and .github/AI_POLICY.md are presence and size only; days before their first scan count as 0; the first scan of a path is a baseline, not an added entry.
+- Requests per repository: {REQ_PER_REPO} at most ({len(PATHS)} path HEADs + 1 .clinerules/ directory HEAD when the file is absent + 1 existence HEAD when every path is absent + 1 moved-detection HEAD; {token_text(bool(build_info.get('github_token')))}). AI_POLICY.md and .github/AI_POLICY.md are presence and size only; days before their first scan count as 0; the first scan of a path is a baseline, not an added entry.
 - Method for combinations and small_files: counts come from presence and size only, via HEAD requests to public file URLs; file contents are not read.
 - sample in stats.json (an object; the former integer sample is now sample_size, the headline total M): target_per_language, languages, target_total, included (= sample_size), excluded_by_reason (forks, archived, other; included + their sum = target_total) and per_language (adds up to included). other = targeted but absent from the stored sample (duplicates across languages, not found or dropped at seeding), reason not recorded per repo.
 - schema_version 2 (2026-11-07): change_7d_pp is an object per path; null until 8 dated history rows (schema_version 1: change_7d_pp was a scalar).

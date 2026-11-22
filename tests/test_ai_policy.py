@@ -77,10 +77,12 @@ class AiPolicy(unittest.TestCase):
 
     def test_requests_per_repo(self):
         n = len(build.PATHS)
-        self.assertEqual(build.REQ_PER_REPO, n + 2)
+        self.assertEqual(build.REQ_PER_REPO, n + 3)
         for name, sc in self.scans.items():
             any_present = any(f["present"] for f in sc["files"].values())
             want = n + 1 if any_present else n + 2   # T-0199: derived from PATHS (was fixture 11 / 12 for 10 paths)
+            if not sc["files"].get(".clinerules", {}).get("present"):
+                want += 1   # T-0233: .clinerules/ directory HEAD when the file is absent
             self.assertEqual(self.per_repo[name], want, name)
 
     def test_baseline_not_added(self):
