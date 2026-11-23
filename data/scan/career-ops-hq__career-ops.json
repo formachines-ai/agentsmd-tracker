@@ -1,11 +1,11 @@
 {
- "checked": "2026-11-21T05:26:54Z",
+ "checked": "2026-11-23T05:02:15Z",
  "status": "ok",
  "default_branch": "main",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 109543
+   "size": 111802
   },
   "CLAUDE.md": {
    "present": true,
@@ -58,6 +58,20 @@
    "present": false,
    "size": null,
    "definite": true
+  },
+  ".clinerules": {
+   "present": false,
+   "size": null,
+   "definite": true
+  },
+  ".windsurf/rules": {
+   "present": false,
+   "size": null,
+   "definite": true
+  },
+  ".agents": {
+   "present": true,
+   "size": null
   }
  },
  "moved_to": null,

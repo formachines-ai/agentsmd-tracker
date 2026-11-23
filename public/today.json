@@ -1,25 +1,25 @@
 {
  "schema_version": 2,
  "site": "https://agentsmd.formachines.ai",
- "date": "2026-11-22",
- "generated": "2026-11-22T05:30:13Z",
+ "date": "2026-11-23",
+ "generated": "2026-11-23T05:30:13Z",
  "license": "CC BY 4.0",
  "added": [],
  "removed": [
   {
-   "full_name": "juanfont/headscale",
-   "owner": "juanfont",
-   "name": "headscale",
-   "language": "Go",
-   "stars": 45291,
-   "path": "CLAUDE.md",
+   "full_name": "Tianyu199509/DeskBox",
+   "owner": "Tianyu199509",
+   "name": "DeskBox",
+   "language": "C#",
+   "stars": 8075,
+   "path": "AGENTS.md",
    "size": null,
-   "url": "https://github.com/juanfont/headscale/blob/main/CLAUDE.md"
+   "url": "https://github.com/Tianyu199509/DeskBox/blob/main/AGENTS.md"
   }
  ],
  "removed_count": 1,
  "counts": {
-  "AGENTS.md": 569,
+  "AGENTS.md": 568,
   "CLAUDE.md": 318,
   ".cursorrules": 16,
   ".cursor/rules": 33,
@@ -31,9 +31,9 @@
   ".github/AI_POLICY.md": 2,
   ".github/instructions": 39,
   ".claude/rules": 27,
-  ".clinerules": 0,
-  ".windsurf/rules": 0,
-  ".agents": 0
+  ".clinerules": 2,
+  ".windsurf/rules": 2,
+  ".agents": 105
  },
  "scanned": 1919,
  "pending": 0

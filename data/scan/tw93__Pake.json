@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-22T04:03:43Z",
+ "checked": "2026-11-23T05:11:55Z",
  "status": "ok",
  "default_branch": "main",
  "files": {
@@ -28,7 +28,7 @@
   },
   "llms.txt": {
    "present": true,
-   "size": 3574
+   "size": 3575
   },
   "GEMINI.md": {
    "present": false,
@@ -56,6 +56,20 @@
    "definite": true
   },
   ".claude/rules": {
+   "present": true,
+   "size": null
+  },
+  ".clinerules": {
+   "present": false,
+   "size": null,
+   "definite": true
+  },
+  ".windsurf/rules": {
+   "present": false,
+   "size": null,
+   "definite": true
+  },
+  ".agents": {
    "present": true,
    "size": null
   }

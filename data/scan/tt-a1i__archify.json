@@ -1,11 +1,11 @@
 {
- "checked": "2026-11-21T05:23:39Z",
+ "checked": "2026-11-23T04:57:41Z",
  "status": "ok",
  "default_branch": "main",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 2241
+   "size": 2486
   },
   "CLAUDE.md": {
    "present": true,
@@ -28,7 +28,7 @@
   },
   "llms.txt": {
    "present": true,
-   "size": 3565
+   "size": 3646
   },
   "GEMINI.md": {
    "present": false,
@@ -59,6 +59,20 @@
    "present": false,
    "size": null,
    "definite": true
+  },
+  ".clinerules": {
+   "present": false,
+   "size": null,
+   "definite": true
+  },
+  ".windsurf/rules": {
+   "present": false,
+   "size": null,
+   "definite": true
+  },
+  ".agents": {
+   "present": true,
+   "size": null
   }
  },
  "moved_to": null,

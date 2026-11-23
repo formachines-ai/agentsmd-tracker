@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-21T05:28:46Z",
+ "checked": "2026-11-23T05:04:50Z",
  "status": "ok",
  "default_branch": "main",
  "files": {
@@ -57,6 +57,20 @@
    "present": false,
    "size": null,
    "definite": true
+  },
+  ".clinerules": {
+   "present": false,
+   "size": null,
+   "definite": true
+  },
+  ".windsurf/rules": {
+   "present": false,
+   "size": null,
+   "definite": true
+  },
+  ".agents": {
+   "present": true,
+   "size": null
   }
  },
  "moved_to": "OpenMontageInc/OpenMontage",

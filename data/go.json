@@ -1,5 +1,5 @@
 {
- "next_id": 1264,
+ "next_id": 1373,
  "links": {
   "affaan-m/ECC/AGENTS.md": {
    "id": 1,
@@ -7578,6 +7578,660 @@
    "url": "https://github.com/simdjson/simdjson/blob/master/AGENTS.md",
    "repo": "simdjson/simdjson",
    "path": "AGENTS.md"
+  },
+  "abhigyanpatwari/GitNexus/.agents": {
+   "id": 1264,
+   "url": "https://github.com/abhigyanpatwari/GitNexus/tree/main/.agents",
+   "repo": "abhigyanpatwari/GitNexus",
+   "path": ".agents"
+  },
+  "addyosmani/agent-skills/.agents": {
+   "id": 1265,
+   "url": "https://github.com/addyosmani/agent-skills/tree/main/.agents",
+   "repo": "addyosmani/agent-skills",
+   "path": ".agents"
+  },
+  "affaan-m/ECC/.agents": {
+   "id": 1266,
+   "url": "https://github.com/affaan-m/ECC/tree/main/.agents",
+   "repo": "affaan-m/ECC",
+   "path": ".agents"
+  },
+  "alibaba/open-code-review/.agents": {
+   "id": 1267,
+   "url": "https://github.com/alibaba/open-code-review/tree/main/.agents",
+   "repo": "alibaba/open-code-review",
+   "path": ".agents"
+  },
+  "ant-design/ant-design/.agents": {
+   "id": 1268,
+   "url": "https://github.com/ant-design/ant-design/tree/master/.agents",
+   "repo": "ant-design/ant-design",
+   "path": ".agents"
+  },
+  "antiwork/gumroad/.agents": {
+   "id": 1269,
+   "url": "https://github.com/antiwork/gumroad/tree/main/.agents",
+   "repo": "antiwork/gumroad",
+   "path": ".agents"
+  },
+  "apache/airflow/.agents": {
+   "id": 1270,
+   "url": "https://github.com/apache/airflow/tree/main/.agents",
+   "repo": "apache/airflow",
+   "path": ".agents"
+  },
+  "astral-sh/ruff/.agents": {
+   "id": 1271,
+   "url": "https://github.com/astral-sh/ruff/tree/main/.agents",
+   "repo": "astral-sh/ruff",
+   "path": ".agents"
+  },
+  "ayghri/i-have-adhd/.agents": {
+   "id": 1272,
+   "url": "https://github.com/ayghri/i-have-adhd/tree/main/.agents",
+   "repo": "ayghri/i-have-adhd",
+   "path": ".agents"
+  },
+  "bilawalsidhu/gods-eye-view/.agents": {
+   "id": 1273,
+   "url": "https://github.com/bilawalsidhu/gods-eye-view/tree/main/.agents",
+   "repo": "bilawalsidhu/gods-eye-view",
+   "path": ".agents"
+  },
+  "btcpayserver/btcpayserver/.agents": {
+   "id": 1274,
+   "url": "https://github.com/btcpayserver/btcpayserver/tree/master/.agents",
+   "repo": "btcpayserver/btcpayserver",
+   "path": ".agents"
+  },
+  "calesthio/OpenMontage/.agents": {
+   "id": 1275,
+   "url": "https://github.com/calesthio/OpenMontage/tree/main/.agents",
+   "repo": "calesthio/OpenMontage",
+   "path": ".agents"
+  },
+  "career-ops-hq/career-ops/.agents": {
+   "id": 1276,
+   "url": "https://github.com/career-ops-hq/career-ops/tree/main/.agents",
+   "repo": "career-ops-hq/career-ops",
+   "path": ".agents"
+  },
+  "CherryHQ/cherry-studio/.agents": {
+   "id": 1277,
+   "url": "https://github.com/CherryHQ/cherry-studio/tree/main/.agents",
+   "repo": "CherryHQ/cherry-studio",
+   "path": ".agents"
+  },
+  "ClickHouse/ClickHouse/.agents": {
+   "id": 1278,
+   "url": "https://github.com/ClickHouse/ClickHouse/tree/master/.agents",
+   "repo": "ClickHouse/ClickHouse",
+   "path": ".agents"
+  },
+  "cline/cline/.clinerules": {
+   "id": 1279,
+   "url": "https://github.com/cline/cline/blob/main/.clinerules",
+   "repo": "cline/cline",
+   "path": ".clinerules"
+  },
+  "cline/cline/.agents": {
+   "id": 1280,
+   "url": "https://github.com/cline/cline/tree/main/.agents",
+   "repo": "cline/cline",
+   "path": ".agents"
+  },
+  "code-yeongyu/oh-my-openagent/.agents": {
+   "id": 1281,
+   "url": "https://github.com/code-yeongyu/oh-my-openagent/tree/dev/.agents",
+   "repo": "code-yeongyu/oh-my-openagent",
+   "path": ".agents"
+  },
+  "coollabsio/coolify/.agents": {
+   "id": 1282,
+   "url": "https://github.com/coollabsio/coolify/tree/main/.agents",
+   "repo": "coollabsio/coolify",
+   "path": ".agents"
+  },
+  "coreyhaines31/marketingskills/.agents": {
+   "id": 1283,
+   "url": "https://github.com/coreyhaines31/marketingskills/tree/main/.agents",
+   "repo": "coreyhaines31/marketingskills",
+   "path": ".agents"
+  },
+  "crmne/ruby_llm/.agents": {
+   "id": 1284,
+   "url": "https://github.com/crmne/ruby_llm/tree/main/.agents",
+   "repo": "crmne/ruby_llm",
+   "path": ".agents"
+  },
+  "dbeaver/dbeaver/.agents": {
+   "id": 1285,
+   "url": "https://github.com/dbeaver/dbeaver/tree/devel/.agents",
+   "repo": "dbeaver/dbeaver",
+   "path": ".agents"
+  },
+  "debpalash/VoiceStudio/.agents": {
+   "id": 1286,
+   "url": "https://github.com/debpalash/VoiceStudio/tree/main/.agents",
+   "repo": "debpalash/VoiceStudio",
+   "path": ".agents"
+  },
+  "deepseek-ai/deepseek-harness/.agents": {
+   "id": 1287,
+   "url": "https://github.com/deepseek-ai/deepseek-harness/tree/master/.agents",
+   "repo": "deepseek-ai/deepseek-harness",
+   "path": ".agents"
+  },
+  "DietrichGebert/ponytail/.clinerules": {
+   "id": 1288,
+   "url": "https://github.com/DietrichGebert/ponytail/blob/main/.clinerules",
+   "repo": "DietrichGebert/ponytail",
+   "path": ".clinerules"
+  },
+  "DietrichGebert/ponytail/.windsurf/rules": {
+   "id": 1289,
+   "url": "https://github.com/DietrichGebert/ponytail/tree/main/.windsurf/rules",
+   "repo": "DietrichGebert/ponytail",
+   "path": ".windsurf/rules"
+  },
+  "DietrichGebert/ponytail/.agents": {
+   "id": 1290,
+   "url": "https://github.com/DietrichGebert/ponytail/tree/main/.agents",
+   "repo": "DietrichGebert/ponytail",
+   "path": ".agents"
+  },
+  "discourse/discourse/.agents": {
+   "id": 1291,
+   "url": "https://github.com/discourse/discourse/tree/main/.agents",
+   "repo": "discourse/discourse",
+   "path": ".agents"
+  },
+  "docling-project/docling/.agents": {
+   "id": 1292,
+   "url": "https://github.com/docling-project/docling/tree/main/.agents",
+   "repo": "docling-project/docling",
+   "path": ".agents"
+  },
+  "doctrine/orm/.agents": {
+   "id": 1293,
+   "url": "https://github.com/doctrine/orm/tree/3.7.x/.agents",
+   "repo": "doctrine/orm",
+   "path": ".agents"
+  },
+  "Dolibarr/dolibarr/.agents": {
+   "id": 1294,
+   "url": "https://github.com/Dolibarr/dolibarr/tree/develop/.agents",
+   "repo": "Dolibarr/dolibarr",
+   "path": ".agents"
+  },
+  "doorkeeper-gem/doorkeeper/.agents": {
+   "id": 1295,
+   "url": "https://github.com/doorkeeper-gem/doorkeeper/tree/main/.agents",
+   "repo": "doorkeeper-gem/doorkeeper",
+   "path": ".agents"
+  },
+  "elsa-workflows/elsa-core/.agents": {
+   "id": 1296,
+   "url": "https://github.com/elsa-workflows/elsa-core/tree/main/.agents",
+   "repo": "elsa-workflows/elsa-core",
+   "path": ".agents"
+  },
+  "fastapi/full-stack-fastapi-template/.agents": {
+   "id": 1297,
+   "url": "https://github.com/fastapi/full-stack-fastapi-template/tree/master/.agents",
+   "repo": "fastapi/full-stack-fastapi-template",
+   "path": ".agents"
+  },
+  "Fission-AI/OpenSpec/.agents": {
+   "id": 1298,
+   "url": "https://github.com/Fission-AI/OpenSpec/tree/main/.agents",
+   "repo": "Fission-AI/OpenSpec",
+   "path": ".agents"
+  },
+  "fullstackhero/dotnet-starter-kit/.agents": {
+   "id": 1299,
+   "url": "https://github.com/fullstackhero/dotnet-starter-kit/tree/main/.agents",
+   "repo": "fullstackhero/dotnet-starter-kit",
+   "path": ".agents"
+  },
+  "getsentry/sentry/.agents": {
+   "id": 1300,
+   "url": "https://github.com/getsentry/sentry/tree/master/.agents",
+   "repo": "getsentry/sentry",
+   "path": ".agents"
+  },
+  "glpi-project/glpi/.agents": {
+   "id": 1301,
+   "url": "https://github.com/glpi-project/glpi/tree/12.0/bugfixes/.agents",
+   "repo": "glpi-project/glpi",
+   "path": ".agents"
+  },
+  "gogs/gogs/.agents": {
+   "id": 1302,
+   "url": "https://github.com/gogs/gogs/tree/main/.agents",
+   "repo": "gogs/gogs",
+   "path": ".agents"
+  },
+  "herdrdev/herdr/.agents": {
+   "id": 1303,
+   "url": "https://github.com/herdrdev/herdr/tree/master/.agents",
+   "repo": "herdrdev/herdr",
+   "path": ".agents"
+  },
+  "heygen-com/hyperframes/.agents": {
+   "id": 1304,
+   "url": "https://github.com/heygen-com/hyperframes/tree/main/.agents",
+   "repo": "heygen-com/hyperframes",
+   "path": ".agents"
+  },
+  "hiyouga/LlamaFactory/.agents": {
+   "id": 1305,
+   "url": "https://github.com/hiyouga/LlamaFactory/tree/main/.agents",
+   "repo": "hiyouga/LlamaFactory",
+   "path": ".agents"
+  },
+  "home-assistant/core/.agents": {
+   "id": 1306,
+   "url": "https://github.com/home-assistant/core/tree/dev/.agents",
+   "repo": "home-assistant/core",
+   "path": ".agents"
+  },
+  "Humanizr/Humanizer/.agents": {
+   "id": 1307,
+   "url": "https://github.com/Humanizr/Humanizer/tree/main/.agents",
+   "repo": "Humanizr/Humanizer",
+   "path": ".agents"
+  },
+  "infiniflow/ragflow/.agents": {
+   "id": 1308,
+   "url": "https://github.com/infiniflow/ragflow/tree/main/.agents",
+   "repo": "infiniflow/ragflow",
+   "path": ".agents"
+  },
+  "itsfatduck/optimizerDuck/.agents": {
+   "id": 1309,
+   "url": "https://github.com/itsfatduck/optimizerDuck/tree/master/.agents",
+   "repo": "itsfatduck/optimizerDuck",
+   "path": ".agents"
+  },
+  "jamiepine/voicebox/.agents": {
+   "id": 1310,
+   "url": "https://github.com/jamiepine/voicebox/tree/main/.agents",
+   "repo": "jamiepine/voicebox",
+   "path": ".agents"
+  },
+  "koala73/worldmonitor/.agents": {
+   "id": 1311,
+   "url": "https://github.com/koala73/worldmonitor/tree/main/.agents",
+   "repo": "koala73/worldmonitor",
+   "path": ".agents"
+  },
+  "langflow-ai/langflow/.agents": {
+   "id": 1312,
+   "url": "https://github.com/langflow-ai/langflow/tree/main/.agents",
+   "repo": "langflow-ai/langflow",
+   "path": ".agents"
+  },
+  "langgenius/dify/.agents": {
+   "id": 1313,
+   "url": "https://github.com/langgenius/dify/tree/main/.agents",
+   "repo": "langgenius/dify",
+   "path": ".agents"
+  },
+  "Leonxlnx/taste-skill/.agents": {
+   "id": 1314,
+   "url": "https://github.com/Leonxlnx/taste-skill/tree/main/.agents",
+   "repo": "Leonxlnx/taste-skill",
+   "path": ".agents"
+  },
+  "lobehub/lobehub/.agents": {
+   "id": 1315,
+   "url": "https://github.com/lobehub/lobehub/tree/canary/.agents",
+   "repo": "lobehub/lobehub",
+   "path": ".agents"
+  },
+  "mautic/mautic/.agents": {
+   "id": 1316,
+   "url": "https://github.com/mautic/mautic/tree/7.x/.agents",
+   "repo": "mautic/mautic",
+   "path": ".agents"
+  },
+  "mem0ai/mem0/.agents": {
+   "id": 1317,
+   "url": "https://github.com/mem0ai/mem0/tree/main/.agents",
+   "repo": "mem0ai/mem0",
+   "path": ".agents"
+  },
+  "MemPalace/mempalace/.agents": {
+   "id": 1318,
+   "url": "https://github.com/MemPalace/mempalace/tree/develop/.agents",
+   "repo": "MemPalace/mempalace",
+   "path": ".agents"
+  },
+  "meta/docusaurus/.agents": {
+   "id": 1319,
+   "url": "https://github.com/meta/docusaurus/tree/main/.agents",
+   "repo": "meta/docusaurus",
+   "path": ".agents"
+  },
+  "microsoft/vscode/.agents": {
+   "id": 1320,
+   "url": "https://github.com/microsoft/vscode/tree/main/.agents",
+   "repo": "microsoft/vscode",
+   "path": ".agents"
+  },
+  "moeru-ai/airi/.agents": {
+   "id": 1321,
+   "url": "https://github.com/moeru-ai/airi/tree/main/.agents",
+   "repo": "moeru-ai/airi",
+   "path": ".agents"
+  },
+  "moment/moment/.agents": {
+   "id": 1322,
+   "url": "https://github.com/moment/moment/tree/develop/.agents",
+   "repo": "moment/moment",
+   "path": ".agents"
+  },
+  "morluto/rea/.agents": {
+   "id": 1323,
+   "url": "https://github.com/morluto/rea/tree/main/.agents",
+   "repo": "morluto/rea",
+   "path": ".agents"
+  },
+  "mudler/LocalAI/.agents": {
+   "id": 1324,
+   "url": "https://github.com/mudler/LocalAI/tree/master/.agents",
+   "repo": "mudler/LocalAI",
+   "path": ".agents"
+  },
+  "mui/material-ui/.agents": {
+   "id": 1325,
+   "url": "https://github.com/mui/material-ui/tree/master/.agents",
+   "repo": "mui/material-ui",
+   "path": ".agents"
+  },
+  "multica-ai/multica/.agents": {
+   "id": 1326,
+   "url": "https://github.com/multica-ai/multica/tree/main/.agents",
+   "repo": "multica-ai/multica",
+   "path": ".agents"
+  },
+  "mvanhorn/last30days-skill/.agents": {
+   "id": 1327,
+   "url": "https://github.com/mvanhorn/last30days-skill/tree/main/.agents",
+   "repo": "mvanhorn/last30days-skill",
+   "path": ".agents"
+  },
+  "n8n-io/n8n/.agents": {
+   "id": 1328,
+   "url": "https://github.com/n8n-io/n8n/tree/master/.agents",
+   "repo": "n8n-io/n8n",
+   "path": ".agents"
+  },
+  "netdata/netdata/.agents": {
+   "id": 1329,
+   "url": "https://github.com/netdata/netdata/tree/master/.agents",
+   "repo": "netdata/netdata",
+   "path": ".agents"
+  },
+  "nextlevelbuilder/ui-ux-pro-max-skill/.agents": {
+   "id": 1330,
+   "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/tree/main/.agents",
+   "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+   "path": ".agents"
+  },
+  "NVIDIA/TensorRT/.agents": {
+   "id": 1331,
+   "url": "https://github.com/NVIDIA/TensorRT/tree/main/.agents",
+   "repo": "NVIDIA/TensorRT",
+   "path": ".agents"
+  },
+  "openclaw/openclaw/.agents": {
+   "id": 1332,
+   "url": "https://github.com/openclaw/openclaw/tree/main/.agents",
+   "repo": "openclaw/openclaw",
+   "path": ".agents"
+  },
+  "OpenHands/OpenHands/.agents": {
+   "id": 1333,
+   "url": "https://github.com/OpenHands/OpenHands/tree/main/.agents",
+   "repo": "OpenHands/OpenHands",
+   "path": ".agents"
+  },
+  "OrchardCMS/OrchardCore/.agents": {
+   "id": 1334,
+   "url": "https://github.com/OrchardCMS/OrchardCore/tree/main/.agents",
+   "repo": "OrchardCMS/OrchardCore",
+   "path": ".agents"
+  },
+  "pandas-dev/pandas/.agents": {
+   "id": 1335,
+   "url": "https://github.com/pandas-dev/pandas/tree/main/.agents",
+   "repo": "pandas-dev/pandas",
+   "path": ".agents"
+  },
+  "paperclipai/paperclip/.agents": {
+   "id": 1336,
+   "url": "https://github.com/paperclipai/paperclip/tree/master/.agents",
+   "repo": "paperclipai/paperclip",
+   "path": ".agents"
+  },
+  "payloadcms/payload/.agents": {
+   "id": 1337,
+   "url": "https://github.com/payloadcms/payload/tree/main/.agents",
+   "repo": "payloadcms/payload",
+   "path": ".agents"
+  },
+  "pbakaus/impeccable/.agents": {
+   "id": 1338,
+   "url": "https://github.com/pbakaus/impeccable/tree/main/.agents",
+   "repo": "pbakaus/impeccable",
+   "path": ".agents"
+  },
+  "PrestaShop/PrestaShop/.windsurf/rules": {
+   "id": 1339,
+   "url": "https://github.com/PrestaShop/PrestaShop/tree/develop/.windsurf/rules",
+   "repo": "PrestaShop/PrestaShop",
+   "path": ".windsurf/rules"
+  },
+  "prisma/orm/.agents": {
+   "id": 1340,
+   "url": "https://github.com/prisma/orm/tree/main/.agents",
+   "repo": "prisma/orm",
+   "path": ".agents"
+  },
+  "prometheus/prometheus/.agents": {
+   "id": 1341,
+   "url": "https://github.com/prometheus/prometheus/tree/main/.agents",
+   "repo": "prometheus/prometheus",
+   "path": ".agents"
+  },
+  "puma/puma/.agents": {
+   "id": 1342,
+   "url": "https://github.com/puma/puma/tree/main/.agents",
+   "repo": "puma/puma",
+   "path": ".agents"
+  },
+  "puppeteer/puppeteer/.agents": {
+   "id": 1343,
+   "url": "https://github.com/puppeteer/puppeteer/tree/main/.agents",
+   "repo": "puppeteer/puppeteer",
+   "path": ".agents"
+  },
+  "pytorch/pytorch/.agents": {
+   "id": 1344,
+   "url": "https://github.com/pytorch/pytorch/tree/main/.agents",
+   "repo": "pytorch/pytorch",
+   "path": ".agents"
+  },
+  "QuantumNous/new-api/.agents": {
+   "id": 1345,
+   "url": "https://github.com/QuantumNous/new-api/tree/main/.agents",
+   "repo": "QuantumNous/new-api",
+   "path": ".agents"
+  },
+  "rack/rack/.agents": {
+   "id": 1346,
+   "url": "https://github.com/rack/rack/tree/main/.agents",
+   "repo": "rack/rack",
+   "path": ".agents"
+  },
+  "redis/jedis/.agents": {
+   "id": 1347,
+   "url": "https://github.com/redis/jedis/tree/master/.agents",
+   "repo": "redis/jedis",
+   "path": ".agents"
+  },
+  "remix-run/react-router/.agents": {
+   "id": 1348,
+   "url": "https://github.com/remix-run/react-router/tree/main/.agents",
+   "repo": "remix-run/react-router",
+   "path": ".agents"
+  },
+  "remotion-dev/remotion/.agents": {
+   "id": 1349,
+   "url": "https://github.com/remotion-dev/remotion/tree/main/.agents",
+   "repo": "remotion-dev/remotion",
+   "path": ".agents"
+  },
+  "ruvnet/ruflo/.agents": {
+   "id": 1350,
+   "url": "https://github.com/ruvnet/ruflo/tree/main/.agents",
+   "repo": "ruvnet/ruflo",
+   "path": ".agents"
+  },
+  "ScottPlot/ScottPlot/.agents": {
+   "id": 1351,
+   "url": "https://github.com/ScottPlot/ScottPlot/tree/main/.agents",
+   "repo": "ScottPlot/ScottPlot",
+   "path": ".agents"
+  },
+  "shakacode/react_on_rails/.agents": {
+   "id": 1352,
+   "url": "https://github.com/shakacode/react_on_rails/tree/main/.agents",
+   "repo": "shakacode/react_on_rails",
+   "path": ".agents"
+  },
+  "sickn33/agentic-awesome-skills/.agents": {
+   "id": 1353,
+   "url": "https://github.com/sickn33/agentic-awesome-skills/tree/main/.agents",
+   "repo": "sickn33/agentic-awesome-skills",
+   "path": ".agents"
+  },
+  "Significant-Gravitas/AutoGPT/.agents": {
+   "id": 1354,
+   "url": "https://github.com/Significant-Gravitas/AutoGPT/tree/master/.agents",
+   "repo": "Significant-Gravitas/AutoGPT",
+   "path": ".agents"
+  },
+  "sj26/mailcatcher/.agents": {
+   "id": 1355,
+   "url": "https://github.com/sj26/mailcatcher/tree/main/.agents",
+   "repo": "sj26/mailcatcher",
+   "path": ".agents"
+  },
+  "storybookjs/storybook/.agents": {
+   "id": 1356,
+   "url": "https://github.com/storybookjs/storybook/tree/next/.agents",
+   "repo": "storybookjs/storybook",
+   "path": ".agents"
+  },
+  "supabase/supabase/.agents": {
+   "id": 1357,
+   "url": "https://github.com/supabase/supabase/tree/master/.agents",
+   "repo": "supabase/supabase",
+   "path": ".agents"
+  },
+  "sveltejs/svelte/.agents": {
+   "id": 1358,
+   "url": "https://github.com/sveltejs/svelte/tree/main/.agents",
+   "repo": "sveltejs/svelte",
+   "path": ".agents"
+  },
+  "thedotmack/claude-mem/.agents": {
+   "id": 1359,
+   "url": "https://github.com/thedotmack/claude-mem/tree/main/.agents",
+   "repo": "thedotmack/claude-mem",
+   "path": ".agents"
+  },
+  "tldraw/tldraw/.agents": {
+   "id": 1360,
+   "url": "https://github.com/tldraw/tldraw/tree/main/.agents",
+   "repo": "tldraw/tldraw",
+   "path": ".agents"
+  },
+  "TryGhost/Ghost/.agents": {
+   "id": 1361,
+   "url": "https://github.com/TryGhost/Ghost/tree/main/.agents",
+   "repo": "TryGhost/Ghost",
+   "path": ".agents"
+  },
+  "tt-a1i/archify/.agents": {
+   "id": 1362,
+   "url": "https://github.com/tt-a1i/archify/tree/main/.agents",
+   "repo": "tt-a1i/archify",
+   "path": ".agents"
+  },
+  "tw93/Pake/.agents": {
+   "id": 1363,
+   "url": "https://github.com/tw93/Pake/tree/main/.agents",
+   "repo": "tw93/Pake",
+   "path": ".agents"
+  },
+  "upstash/context7/.agents": {
+   "id": 1364,
+   "url": "https://github.com/upstash/context7/tree/master/.agents",
+   "repo": "upstash/context7",
+   "path": ".agents"
+  },
+  "usememos/memos/.agents": {
+   "id": 1365,
+   "url": "https://github.com/usememos/memos/tree/main/.agents",
+   "repo": "usememos/memos",
+   "path": ".agents"
+  },
+  "vercel/next.js/.agents": {
+   "id": 1366,
+   "url": "https://github.com/vercel/next.js/tree/canary/.agents",
+   "repo": "vercel/next.js",
+   "path": ".agents"
+  },
+  "vllm-project/vllm/.agents": {
+   "id": 1367,
+   "url": "https://github.com/vllm-project/vllm/tree/main/.agents",
+   "repo": "vllm-project/vllm",
+   "path": ".agents"
+  },
+  "warpdotdev/warp/.agents": {
+   "id": 1368,
+   "url": "https://github.com/warpdotdev/warp/tree/master/.agents",
+   "repo": "warpdotdev/warp",
+   "path": ".agents"
+  },
+  "withastro/astro/.agents": {
+   "id": 1369,
+   "url": "https://github.com/withastro/astro/tree/main/.agents",
+   "repo": "withastro/astro",
+   "path": ".agents"
+  },
+  "Yuan1z0825/nature-skills/.agents": {
+   "id": 1370,
+   "url": "https://github.com/Yuan1z0825/nature-skills/tree/main/.agents",
+   "repo": "Yuan1z0825/nature-skills",
+   "path": ".agents"
+  },
+  "zed-industries/zed/.agents": {
+   "id": 1371,
+   "url": "https://github.com/zed-industries/zed/tree/main/.agents",
+   "repo": "zed-industries/zed",
+   "path": ".agents"
+  },
+  "ZhuLinsen/daily_stock_analysis/.agents": {
+   "id": 1372,
+   "url": "https://github.com/ZhuLinsen/daily_stock_analysis/tree/main/.agents",
+   "repo": "ZhuLinsen/daily_stock_analysis",
+   "path": ".agents"
   }
  }
 }
