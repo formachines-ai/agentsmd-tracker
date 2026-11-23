@@ -52,6 +52,8 @@ standard library only.
 
 `tests/test_sample_accounting.py` (T-0244): the note `#sample-accounting` on `/` (M, date, repos left out by status) equals `stats.json` `denominator` (`total` = `sample_size`; M + excluded = total).
 
+`tests/test_home_order.py` (T-0246): on `/` the by-language table and the static "Find a repository" line (links every `/lang/` page, names `/repo/<owner>/<name>/`) come before the first per-file card; every `/lang/` link resolves.
+
 `stats.json` `tracked_since` maps each tracked path to the date of its first scan (from `data/history`); history[] zeros before that date were not measured, and first-scan counts are a baseline, not added files.
 
 ## What to commit

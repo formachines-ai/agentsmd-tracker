@@ -1207,8 +1207,10 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
         cells = "".join((f'<td>{v[s["path"]]}<span class="pc"> ({pct(v[s["path"]], lc_.get(s["path"], 0) if lc_.get(s["path"], 0) < v["repos"] else v["repos"])} %)</span>' + (f'<span class="muted"><br>{lc_.get(s["path"], 0)} of {v["repos"]} checked</span>' if lc_.get(s["path"], 0) < v["repos"] else '') + '</td>' if tracked_since(history)[s["path"]] else '<td class="muted">Not measured yet</td>') for s in PATHS)
         rows.append(f"<tr><th scope=\"row\"><a href=\"/lang/{lang_slug(lang)}/\">{esc(lang)}</a></th><td>{v['repos']}</td><td>{v['any']}<span class=\"pc\"> ({pct(v['any'], v['repos'])} %)</span></td>{cells}</tr>")
     heads = "".join(f'<th><code>{esc(s["label"])}</code></th>' for s in PATHS)
+    find_links = " · ".join(f'<a href="/lang/{lang_slug(l)}/">{esc(l)}</a>' for l, _v in sorted(agg["by_lang"].items(), key=lambda kv: -kv[1]["repos"]))
     lang_table = f"""<section id="languages">
 <h2>By language</h2>
+<p id="find-repo" class="paths"><strong>Find a repository:</strong> open its language page (every sampled repo is listed): {find_links} — or go to <code>/repo/&lt;owner&gt;/&lt;name&gt;/</code>.</p>
 <p id="dated-counts">On {esc(gen_raw[:10])} (UTC), {agg['counts'][PRIMARY_PATH]:,} of {total:,} ({pct(agg['counts'][PRIMARY_PATH], total)} %) top GitHub repositories have AGENTS.md, {agg['counts']['CLAUDE.md']:,} of {total:,} ({pct(agg['counts']['CLAUDE.md'], total)} %) have CLAUDE.md, and {agg['counts']['llms.txt']:,} of {total:,} ({pct(agg['counts']['llms.txt'], total)} %) have llms.txt.</p>
 <div class="scroll table-wrap"><table>
 <thead><tr><th>Language</th><th>Repos</th><th>Any file</th>{heads}</tr></thead>
@@ -1308,7 +1310,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
                                 {"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": SITE_BASE + "/today.json"},
                                 {"@type": "DataDownload", "encodingFormat": "application/rss+xml", "contentUrl": SITE_BASE + "/feed.xml"}]}
     write_text(out / "index.html", layout(f"{SITE_NAME} — AGENTS.md adoption in top GitHub repos",
-                                           banner + hero + trend_note + cite + base_note + '<div class="cards">' + "".join(cards) + '</div>' + combo_sec + size_sec + today_sec + lang_table + hist_sec + method,
+                                           banner + hero + trend_note + cite + base_note + lang_table + '<div class="cards">' + "".join(cards) + '</div>' + combo_sec + size_sec + today_sec + hist_sec + method,
                                            updated, canonical=SITE_BASE + "/", description=home_desc, jsonld=home_ld))
 
     # ---- repo pages
