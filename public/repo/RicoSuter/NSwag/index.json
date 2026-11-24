@@ -16,7 +16,7 @@
     "count": 39,
     "total": 184,
     "pct": 21.2,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/",
     "measured": true
@@ -32,7 +32,7 @@
     "count": 21,
     "total": 184,
     "pct": 11.4,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/",
     "measured": true
@@ -46,7 +46,7 @@
     "count": 2,
     "total": 184,
     "pct": 1.1,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/",
     "measured": true
@@ -60,7 +60,7 @@
     "count": 0,
     "total": 184,
     "pct": 0.0,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/",
     "measured": true
@@ -74,7 +74,7 @@
     "count": 29,
     "total": 184,
     "pct": 15.8,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/",
     "measured": true
@@ -88,7 +88,7 @@
     "count": 1,
     "total": 184,
     "pct": 0.5,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/",
     "measured": true
@@ -102,7 +102,7 @@
     "count": 2,
     "total": 184,
     "pct": 1.1,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/",
     "measured": true
@@ -116,7 +116,7 @@
     "count": 1,
     "total": 184,
     "pct": 0.5,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/",
     "measured": true
@@ -130,7 +130,7 @@
     "count": 0,
     "total": 184,
     "pct": 0.0,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/",
     "measured": true
@@ -145,7 +145,7 @@
     "count": 1,
     "total": 184,
     "pct": 0.5,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/",
     "measured": true
@@ -160,7 +160,7 @@
     "count": 7,
     "total": 184,
     "pct": 3.8,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/",
     "measured": true
@@ -175,7 +175,7 @@
     "count": 4,
     "total": 184,
     "pct": 2.2,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/",
     "measured": true
@@ -190,7 +190,7 @@
     "count": 0,
     "total": 184,
     "pct": 0.0,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/",
     "measured": true
@@ -205,7 +205,7 @@
     "count": 0,
     "total": 184,
     "pct": 0.0,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/",
     "measured": true
@@ -217,10 +217,10 @@
    "size": null,
    "url": null,
    "lang_share": {
-    "count": 7,
+    "count": 10,
     "total": 184,
-    "pct": 3.8,
-    "date": "2026-11-23",
+    "pct": 5.4,
+    "date": "2026-11-24",
     "language": "C#",
     "page": "https://agentsmd.formachines.ai/lang/c-sharp/",
     "measured": true
@@ -233,91 +233,91 @@
    "count": 39,
    "total": 184,
    "pct": 21.2,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   "CLAUDE.md": {
    "count": 21,
    "total": 184,
    "pct": 11.4,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   ".cursorrules": {
    "count": 2,
    "total": 184,
    "pct": 1.1,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   ".cursor/rules": {
    "count": 0,
    "total": 184,
    "pct": 0.0,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   ".github/copilot-instructions.md": {
    "count": 29,
    "total": 184,
    "pct": 15.8,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   "llms.txt": {
    "count": 1,
    "total": 184,
    "pct": 0.5,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   "GEMINI.md": {
    "count": 2,
    "total": 184,
    "pct": 1.1,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   ".windsurfrules": {
    "count": 1,
    "total": 184,
    "pct": 0.5,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   "AI_POLICY.md": {
    "count": 0,
    "total": 184,
    "pct": 0.0,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   ".github/AI_POLICY.md": {
    "count": 1,
    "total": 184,
    "pct": 0.5,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   ".github/instructions": {
    "count": 7,
    "total": 184,
    "pct": 3.8,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   ".claude/rules": {
    "count": 4,
    "total": 184,
    "pct": 2.2,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   ".clinerules": {
    "count": 0,
    "total": 184,
    "pct": 0.0,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   ".windsurf/rules": {
    "count": 0,
    "total": 184,
    "pct": 0.0,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   ".agents": {
-   "count": 7,
+   "count": 10,
    "total": 184,
-   "pct": 3.8,
-   "date": "2026-11-23"
+   "pct": 5.4,
+   "date": "2026-11-24"
   }
  },
  "first_seen": {

@@ -1,5 +1,5 @@
 {
- "next_id": 1373,
+ "next_id": 1464,
  "links": {
   "affaan-m/ECC/AGENTS.md": {
    "id": 1,
@@ -8231,6 +8231,552 @@
    "id": 1372,
    "url": "https://github.com/ZhuLinsen/daily_stock_analysis/tree/main/.agents",
    "repo": "ZhuLinsen/daily_stock_analysis",
+   "path": ".agents"
+  },
+  "ant-design/ant-design-pro/.agents": {
+   "id": 1373,
+   "url": "https://github.com/ant-design/ant-design-pro/tree/master/.agents",
+   "repo": "ant-design/ant-design-pro",
+   "path": ".agents"
+  },
+  "anywhere-labs/dsh-desktop/.agents": {
+   "id": 1374,
+   "url": "https://github.com/anywhere-labs/dsh-desktop/tree/master/.agents",
+   "repo": "anywhere-labs/dsh-desktop",
+   "path": ".agents"
+  },
+  "appsmithorg/appsmith/.agents": {
+   "id": 1375,
+   "url": "https://github.com/appsmithorg/appsmith/tree/release/.agents",
+   "repo": "appsmithorg/appsmith",
+   "path": ".agents"
+  },
+  "AprilNEA/OpenLogi/.agents": {
+   "id": 1376,
+   "url": "https://github.com/AprilNEA/OpenLogi/tree/master/.agents",
+   "repo": "AprilNEA/OpenLogi",
+   "path": ".agents"
+  },
+  "atuinsh/atuin/.agents": {
+   "id": 1377,
+   "url": "https://github.com/atuinsh/atuin/tree/main/.agents",
+   "repo": "atuinsh/atuin",
+   "path": ".agents"
+  },
+  "babalae/better-genshin-impact/.agents": {
+   "id": 1378,
+   "url": "https://github.com/babalae/better-genshin-impact/tree/refactor/20260930/.agents",
+   "repo": "babalae/better-genshin-impact",
+   "path": ".agents"
+  },
+  "backstage/backstage/.agents": {
+   "id": 1379,
+   "url": "https://github.com/backstage/backstage/tree/master/.agents",
+   "repo": "backstage/backstage",
+   "path": ".agents"
+  },
+  "baomidou/mybatis-plus/.agents": {
+   "id": 1380,
+   "url": "https://github.com/baomidou/mybatis-plus/tree/3.0/.agents",
+   "repo": "baomidou/mybatis-plus",
+   "path": ".agents"
+  },
+  "ben-manes/caffeine/.agents": {
+   "id": 1381,
+   "url": "https://github.com/ben-manes/caffeine/tree/master/.agents",
+   "repo": "ben-manes/caffeine",
+   "path": ".agents"
+  },
+  "biomejs/biome/.agents": {
+   "id": 1382,
+   "url": "https://github.com/biomejs/biome/tree/main/.agents",
+   "repo": "biomejs/biome",
+   "path": ".agents"
+  },
+  "block/buzz/.agents": {
+   "id": 1383,
+   "url": "https://github.com/block/buzz/tree/main/.agents",
+   "repo": "block/buzz",
+   "path": ".agents"
+  },
+  "bytecodealliance/wasmtime/.agents": {
+   "id": 1384,
+   "url": "https://github.com/bytecodealliance/wasmtime/tree/main/.agents",
+   "repo": "bytecodealliance/wasmtime",
+   "path": ".agents"
+  },
+  "CapSoftware/Cap/.agents": {
+   "id": 1385,
+   "url": "https://github.com/CapSoftware/Cap/tree/main/.agents",
+   "repo": "CapSoftware/Cap",
+   "path": ".agents"
+  },
+  "carbon-language/carbon-lang/.agents": {
+   "id": 1386,
+   "url": "https://github.com/carbon-language/carbon-lang/tree/trunk/.agents",
+   "repo": "carbon-language/carbon-lang",
+   "path": ".agents"
+  },
+  "ccusage/ccusage/.agents": {
+   "id": 1387,
+   "url": "https://github.com/ccusage/ccusage/tree/main/.agents",
+   "repo": "ccusage/ccusage",
+   "path": ".agents"
+  },
+  "ccxt/ccxt/.agents": {
+   "id": 1388,
+   "url": "https://github.com/ccxt/ccxt/tree/master/.agents",
+   "repo": "ccxt/ccxt",
+   "path": ".agents"
+  },
+  "charmbracelet/crush/.agents": {
+   "id": 1389,
+   "url": "https://github.com/charmbracelet/crush/tree/main/.agents",
+   "repo": "charmbracelet/crush",
+   "path": ".agents"
+  },
+  "chatwoot/chatwoot/.windsurf/rules": {
+   "id": 1390,
+   "url": "https://github.com/chatwoot/chatwoot/tree/develop/.windsurf/rules",
+   "repo": "chatwoot/chatwoot",
+   "path": ".windsurf/rules"
+  },
+  "clockworklabs/SpacetimeDB/.agents": {
+   "id": 1391,
+   "url": "https://github.com/clockworklabs/SpacetimeDB/tree/master/.agents",
+   "repo": "clockworklabs/SpacetimeDB",
+   "path": ".agents"
+  },
+  "datalab-to/marker/.agents": {
+   "id": 1392,
+   "url": "https://github.com/datalab-to/marker/tree/master/.agents",
+   "repo": "datalab-to/marker",
+   "path": ".agents"
+  },
+  "date-fns/date-fns/.agents": {
+   "id": 1393,
+   "url": "https://github.com/date-fns/date-fns/tree/main/.agents",
+   "repo": "date-fns/date-fns",
+   "path": ".agents"
+  },
+  "deepspeedai/DeepSpeed/.agents": {
+   "id": 1394,
+   "url": "https://github.com/deepspeedai/DeepSpeed/tree/master/.agents",
+   "repo": "deepspeedai/DeepSpeed",
+   "path": ".agents"
+  },
+  "Devolutions/UniGetUI/.agents": {
+   "id": 1395,
+   "url": "https://github.com/Devolutions/UniGetUI/tree/main/.agents",
+   "repo": "Devolutions/UniGetUI",
+   "path": ".agents"
+  },
+  "doocs/leetcode/.agents": {
+   "id": 1396,
+   "url": "https://github.com/doocs/leetcode/tree/main/.agents",
+   "repo": "doocs/leetcode",
+   "path": ".agents"
+  },
+  "envoyproxy/envoy/.agents": {
+   "id": 1397,
+   "url": "https://github.com/envoyproxy/envoy/tree/main/.agents",
+   "repo": "envoyproxy/envoy",
+   "path": ".agents"
+  },
+  "filamentphp/filament/.agents": {
+   "id": 1398,
+   "url": "https://github.com/filamentphp/filament/tree/4.x/.agents",
+   "repo": "filamentphp/filament",
+   "path": ".agents"
+  },
+  "gfx-rs/wgpu/.agents": {
+   "id": 1399,
+   "url": "https://github.com/gfx-rs/wgpu/tree/trunk/.agents",
+   "repo": "gfx-rs/wgpu",
+   "path": ".agents"
+  },
+  "gitbutlerapp/gitbutler/.agents": {
+   "id": 1400,
+   "url": "https://github.com/gitbutlerapp/gitbutler/tree/master/.agents",
+   "repo": "gitbutlerapp/gitbutler",
+   "path": ".agents"
+  },
+  "gitlabhq/gitlabhq/.agents": {
+   "id": 1401,
+   "url": "https://github.com/gitlabhq/gitlabhq/tree/master/.agents",
+   "repo": "gitlabhq/gitlabhq",
+   "path": ".agents"
+  },
+  "google/gvisor/.agents": {
+   "id": 1402,
+   "url": "https://github.com/google/gvisor/tree/master/.agents",
+   "repo": "google/gvisor",
+   "path": ".agents"
+  },
+  "GoogleChrome/lighthouse/.agents": {
+   "id": 1403,
+   "url": "https://github.com/GoogleChrome/lighthouse/tree/main/.agents",
+   "repo": "GoogleChrome/lighthouse",
+   "path": ".agents"
+  },
+  "gradio-app/gradio/.agents": {
+   "id": 1404,
+   "url": "https://github.com/gradio-app/gradio/tree/main/.agents",
+   "repo": "gradio-app/gradio",
+   "path": ".agents"
+  },
+  "gravitational/teleport/.agents": {
+   "id": 1405,
+   "url": "https://github.com/gravitational/teleport/tree/master/.agents",
+   "repo": "gravitational/teleport",
+   "path": ".agents"
+  },
+  "HKUDS/LightRAG/.clinerules": {
+   "id": 1406,
+   "url": "https://github.com/HKUDS/LightRAG/blob/main/.clinerules",
+   "repo": "HKUDS/LightRAG",
+   "path": ".clinerules"
+  },
+  "ifixai-ai/iFixAi/.agents": {
+   "id": 1407,
+   "url": "https://github.com/ifixai-ai/iFixAi/tree/main/.agents",
+   "repo": "ifixai-ai/iFixAi",
+   "path": ".agents"
+  },
+  "itwanger/toBeBetterJavaer/.agents": {
+   "id": 1408,
+   "url": "https://github.com/itwanger/toBeBetterJavaer/tree/master/.agents",
+   "repo": "itwanger/toBeBetterJavaer",
+   "path": ".agents"
+  },
+  "JanDeDobbeleer/oh-my-posh/.agents": {
+   "id": 1409,
+   "url": "https://github.com/JanDeDobbeleer/oh-my-posh/tree/main/.agents",
+   "repo": "JanDeDobbeleer/oh-my-posh",
+   "path": ".agents"
+  },
+  "JCodesMore/ai-website-cloner-template/.agents": {
+   "id": 1410,
+   "url": "https://github.com/JCodesMore/ai-website-cloner-template/tree/master/.agents",
+   "repo": "JCodesMore/ai-website-cloner-template",
+   "path": ".agents"
+  },
+  "jdx/mise/.agents": {
+   "id": 1411,
+   "url": "https://github.com/jdx/mise/tree/main/.agents",
+   "repo": "jdx/mise",
+   "path": ".agents"
+  },
+  "JetBrains/intellij-community/.agents": {
+   "id": 1412,
+   "url": "https://github.com/JetBrains/intellij-community/tree/master/.agents",
+   "repo": "JetBrains/intellij-community",
+   "path": ".agents"
+  },
+  "k3s-io/k3s/.agents": {
+   "id": 1413,
+   "url": "https://github.com/k3s-io/k3s/tree/main/.agents",
+   "repo": "k3s-io/k3s",
+   "path": ".agents"
+  },
+  "Kong/insomnia/.agents": {
+   "id": 1414,
+   "url": "https://github.com/Kong/insomnia/tree/develop/.agents",
+   "repo": "Kong/insomnia",
+   "path": ".agents"
+  },
+  "langfuse/langfuse/.agents": {
+   "id": 1415,
+   "url": "https://github.com/langfuse/langfuse/tree/main/.agents",
+   "repo": "langfuse/langfuse",
+   "path": ".agents"
+  },
+  "laravel/framework/.agents": {
+   "id": 1416,
+   "url": "https://github.com/laravel/framework/tree/13.x/.agents",
+   "repo": "laravel/framework",
+   "path": ".agents"
+  },
+  "longbridge/gpui-kit/.agents": {
+   "id": 1417,
+   "url": "https://github.com/longbridge/gpui-kit/tree/main/.agents",
+   "repo": "longbridge/gpui-kit",
+   "path": ".agents"
+  },
+  "MaaAssistantArknights/MaaAssistantArknights/.agents": {
+   "id": 1418,
+   "url": "https://github.com/MaaAssistantArknights/MaaAssistantArknights/tree/dev-v2/.agents",
+   "repo": "MaaAssistantArknights/MaaAssistantArknights",
+   "path": ".agents"
+  },
+  "mksglu/context-mode/.agents": {
+   "id": 1419,
+   "url": "https://github.com/mksglu/context-mode/tree/main/.agents",
+   "repo": "mksglu/context-mode",
+   "path": ".agents"
+  },
+  "motiondivision/motion/.agents": {
+   "id": 1420,
+   "url": "https://github.com/motiondivision/motion/tree/main/.agents",
+   "repo": "motiondivision/motion",
+   "path": ".agents"
+  },
+  "novuhq/novu/.agents": {
+   "id": 1421,
+   "url": "https://github.com/novuhq/novu/tree/next/.agents",
+   "repo": "novuhq/novu",
+   "path": ".agents"
+  },
+  "NVIDIA/OpenShell/.agents": {
+   "id": 1422,
+   "url": "https://github.com/NVIDIA/OpenShell/tree/main/.agents",
+   "repo": "NVIDIA/OpenShell",
+   "path": ".agents"
+  },
+  "opendataloader-project/opendataloader-pdf/.agents": {
+   "id": 1423,
+   "url": "https://github.com/opendataloader-project/opendataloader-pdf/tree/main/.agents",
+   "repo": "opendataloader-project/opendataloader-pdf",
+   "path": ".agents"
+  },
+  "osquery/osquery/.agents": {
+   "id": 1424,
+   "url": "https://github.com/osquery/osquery/tree/master/.agents",
+   "repo": "osquery/osquery",
+   "path": ".agents"
+  },
+  "ossrs/srs/.agents": {
+   "id": 1425,
+   "url": "https://github.com/ossrs/srs/tree/develop/.agents",
+   "repo": "ossrs/srs",
+   "path": ".agents"
+  },
+  "oxc-project/oxc/.agents": {
+   "id": 1426,
+   "url": "https://github.com/oxc-project/oxc/tree/main/.agents",
+   "repo": "oxc-project/oxc",
+   "path": ".agents"
+  },
+  "PaddlePaddle/Paddle/.agents": {
+   "id": 1427,
+   "url": "https://github.com/PaddlePaddle/Paddle/tree/develop/.agents",
+   "repo": "PaddlePaddle/Paddle",
+   "path": ".agents"
+  },
+  "photoprism/photoprism/.agents": {
+   "id": 1428,
+   "url": "https://github.com/photoprism/photoprism/tree/develop/.agents",
+   "repo": "photoprism/photoprism",
+   "path": ".agents"
+  },
+  "pingcap/tidb/.agents": {
+   "id": 1429,
+   "url": "https://github.com/pingcap/tidb/tree/master/.agents",
+   "repo": "pingcap/tidb",
+   "path": ".agents"
+  },
+  "pingdotgg/t3code/.agents": {
+   "id": 1430,
+   "url": "https://github.com/pingdotgg/t3code/tree/main/.agents",
+   "repo": "pingdotgg/t3code",
+   "path": ".agents"
+  },
+  "pnpm/pnpm/.agents": {
+   "id": 1431,
+   "url": "https://github.com/pnpm/pnpm/tree/main/.agents",
+   "repo": "pnpm/pnpm",
+   "path": ".agents"
+  },
+  "PostHog/posthog/.agents": {
+   "id": 1432,
+   "url": "https://github.com/PostHog/posthog/tree/master/.agents",
+   "repo": "PostHog/posthog",
+   "path": ".agents"
+  },
+  "prestodb/presto/.agents": {
+   "id": 1433,
+   "url": "https://github.com/prestodb/presto/tree/master/.agents",
+   "repo": "prestodb/presto",
+   "path": ".agents"
+  },
+  "pybind/pybind11/.agents": {
+   "id": 1434,
+   "url": "https://github.com/pybind/pybind11/tree/master/.agents",
+   "repo": "pybind/pybind11",
+   "path": ".agents"
+  },
+  "reactive-resume/reactive-resume/.agents": {
+   "id": 1435,
+   "url": "https://github.com/reactive-resume/reactive-resume/tree/main/.agents",
+   "repo": "reactive-resume/reactive-resume",
+   "path": ".agents"
+  },
+  "refined-github/refined-github/.agents": {
+   "id": 1436,
+   "url": "https://github.com/refined-github/refined-github/tree/main/.agents",
+   "repo": "refined-github/refined-github",
+   "path": ".agents"
+  },
+  "remix-run/remix/.agents": {
+   "id": 1437,
+   "url": "https://github.com/remix-run/remix/tree/main/.agents",
+   "repo": "remix-run/remix",
+   "path": ".agents"
+  },
+  "rollup/rollup/.agents": {
+   "id": 1438,
+   "url": "https://github.com/rollup/rollup/tree/master/.agents",
+   "repo": "rollup/rollup",
+   "path": ".agents"
+  },
+  "RSSNext/Folo/.agents": {
+   "id": 1439,
+   "url": "https://github.com/RSSNext/Folo/tree/dev/.agents",
+   "repo": "RSSNext/Folo",
+   "path": ".agents"
+  },
+  "rustfs/rustfs/.agents": {
+   "id": 1440,
+   "url": "https://github.com/rustfs/rustfs/tree/main/.agents",
+   "repo": "rustfs/rustfs",
+   "path": ".agents"
+  },
+  "RustPython/RustPython/.agents": {
+   "id": 1441,
+   "url": "https://github.com/RustPython/RustPython/tree/main/.agents",
+   "repo": "RustPython/RustPython",
+   "path": ".agents"
+  },
+  "saadeghi/daisyui/.agents": {
+   "id": 1442,
+   "url": "https://github.com/saadeghi/daisyui/tree/master/.agents",
+   "repo": "saadeghi/daisyui",
+   "path": ".agents"
+  },
+  "sgl-project/sglang/.agents": {
+   "id": 1443,
+   "url": "https://github.com/sgl-project/sglang/tree/main/.agents",
+   "repo": "sgl-project/sglang",
+   "path": ".agents"
+  },
+  "ShareX/ShareX/.agents": {
+   "id": 1444,
+   "url": "https://github.com/ShareX/ShareX/tree/develop/.agents",
+   "repo": "ShareX/ShareX",
+   "path": ".agents"
+  },
+  "spacedriveapp/spacedrive/.agents": {
+   "id": 1445,
+   "url": "https://github.com/spacedriveapp/spacedrive/tree/main/.agents",
+   "repo": "spacedriveapp/spacedrive",
+   "path": ".agents"
+  },
+  "stanfordnlp/dspy/.agents": {
+   "id": 1446,
+   "url": "https://github.com/stanfordnlp/dspy/tree/main/.agents",
+   "repo": "stanfordnlp/dspy",
+   "path": ".agents"
+  },
+  "swc-project/swc/.agents": {
+   "id": 1447,
+   "url": "https://github.com/swc-project/swc/tree/main/.agents",
+   "repo": "swc-project/swc",
+   "path": ".agents"
+  },
+  "symfony/symfony/.agents": {
+   "id": 1448,
+   "url": "https://github.com/symfony/symfony/tree/8.2/.agents",
+   "repo": "symfony/symfony",
+   "path": ".agents"
+  },
+  "telegramdesktop/tdesktop/.agents": {
+   "id": 1449,
+   "url": "https://github.com/telegramdesktop/tdesktop/tree/dev/.agents",
+   "repo": "telegramdesktop/tdesktop",
+   "path": ".agents"
+  },
+  "The-Vibe-Company/quivr/.agents": {
+   "id": 1450,
+   "url": "https://github.com/The-Vibe-Company/quivr/tree/main/.agents",
+   "repo": "The-Vibe-Company/quivr",
+   "path": ".agents"
+  },
+  "tikv/tikv/.agents": {
+   "id": 1451,
+   "url": "https://github.com/tikv/tikv/tree/master/.agents",
+   "repo": "tikv/tikv",
+   "path": ".agents"
+  },
+  "trpc/trpc/.agents": {
+   "id": 1452,
+   "url": "https://github.com/trpc/trpc/tree/main/.agents",
+   "repo": "trpc/trpc",
+   "path": ".agents"
+  },
+  "trycua/cua/.agents": {
+   "id": 1453,
+   "url": "https://github.com/trycua/cua/tree/main/.agents",
+   "repo": "trycua/cua",
+   "path": ".agents"
+  },
+  "tursodatabase/turso/.agents": {
+   "id": 1454,
+   "url": "https://github.com/tursodatabase/turso/tree/main/.agents",
+   "repo": "tursodatabase/turso",
+   "path": ".agents"
+  },
+  "ueberdosis/tiptap/.agents": {
+   "id": 1455,
+   "url": "https://github.com/ueberdosis/tiptap/tree/main/.agents",
+   "repo": "ueberdosis/tiptap",
+   "path": ".agents"
+  },
+  "vercel-labs/agent-browser/.agents": {
+   "id": 1456,
+   "url": "https://github.com/vercel-labs/agent-browser/tree/main/.agents",
+   "repo": "vercel-labs/agent-browser",
+   "path": ".agents"
+  },
+  "videojs/video.js/.agents": {
+   "id": 1457,
+   "url": "https://github.com/videojs/video.js/tree/main/.agents",
+   "repo": "videojs/video.js",
+   "path": ".agents"
+  },
+  "vitessio/vitess/.agents": {
+   "id": 1458,
+   "url": "https://github.com/vitessio/vitess/tree/main/.agents",
+   "repo": "vitessio/vitess",
+   "path": ".agents"
+  },
+  "volcengine/OpenViking/.agents": {
+   "id": 1459,
+   "url": "https://github.com/volcengine/OpenViking/tree/main/.agents",
+   "repo": "volcengine/OpenViking",
+   "path": ".agents"
+  },
+  "windmill-labs/windmill/.agents": {
+   "id": 1460,
+   "url": "https://github.com/windmill-labs/windmill/tree/main/.agents",
+   "repo": "windmill-labs/windmill",
+   "path": ".agents"
+  },
+  "Wox-launcher/Wox/.agents": {
+   "id": 1461,
+   "url": "https://github.com/Wox-launcher/Wox/tree/master/.agents",
+   "repo": "Wox-launcher/Wox",
+   "path": ".agents"
+  },
+  "wshobson/agents/.agents": {
+   "id": 1462,
+   "url": "https://github.com/wshobson/agents/tree/main/.agents",
+   "repo": "wshobson/agents",
+   "path": ".agents"
+  },
+  "Yeachan-Heo/oh-my-codex/.agents": {
+   "id": 1463,
+   "url": "https://github.com/Yeachan-Heo/oh-my-codex/tree/main/.agents",
+   "repo": "Yeachan-Heo/oh-my-codex",
    "path": ".agents"
   }
  }

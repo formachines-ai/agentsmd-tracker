@@ -6,7 +6,7 @@
  "stars": 24096,
  "default_branch": "2.2",
  "status": "ok",
- "checked": "2026-11-22T04:59:43Z",
+ "checked": "2026-11-24T05:00:19Z",
  "files": {
   "AGENTS.md": {
    "present": true,
@@ -16,7 +16,7 @@
     "count": 26,
     "total": 191,
     "pct": 13.6,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/",
     "measured": true
@@ -33,7 +33,7 @@
     "count": 20,
     "total": 191,
     "pct": 10.5,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/",
     "measured": true
@@ -47,7 +47,7 @@
     "count": 0,
     "total": 191,
     "pct": 0.0,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/",
     "measured": true
@@ -61,7 +61,7 @@
     "count": 4,
     "total": 191,
     "pct": 2.1,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/",
     "measured": true
@@ -75,7 +75,7 @@
     "count": 11,
     "total": 191,
     "pct": 5.8,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/",
     "measured": true
@@ -89,7 +89,7 @@
     "count": 0,
     "total": 191,
     "pct": 0.0,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/",
     "measured": true
@@ -103,7 +103,7 @@
     "count": 2,
     "total": 191,
     "pct": 1.0,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/",
     "measured": true
@@ -117,7 +117,7 @@
     "count": 0,
     "total": 191,
     "pct": 0.0,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/",
     "measured": true
@@ -131,7 +131,7 @@
     "count": 1,
     "total": 191,
     "pct": 0.5,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/",
     "measured": true
@@ -146,7 +146,7 @@
     "count": 0,
     "total": 191,
     "pct": 0.0,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/",
     "measured": true
@@ -161,7 +161,7 @@
     "count": 4,
     "total": 191,
     "pct": 2.1,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/",
     "measured": true
@@ -176,7 +176,7 @@
     "count": 2,
     "total": 191,
     "pct": 1.0,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/",
     "measured": true
@@ -184,15 +184,14 @@
    "tracked_since": "2026-11-19"
   },
   ".clinerules": {
-   "present": null,
+   "present": false,
    "size": null,
    "url": null,
-   "checked": false,
    "lang_share": {
     "count": 0,
     "total": 191,
     "pct": 0.0,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/",
     "measured": true
@@ -200,15 +199,14 @@
    "tracked_since": "2026-11-23"
   },
   ".windsurf/rules": {
-   "present": null,
+   "present": false,
    "size": null,
    "url": null,
-   "checked": false,
    "lang_share": {
     "count": 1,
     "total": 191,
     "pct": 0.5,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/",
     "measured": true
@@ -216,15 +214,14 @@
    "tracked_since": "2026-11-23"
   },
   ".agents": {
-   "present": null,
+   "present": false,
    "size": null,
    "url": null,
-   "checked": false,
    "lang_share": {
-    "count": 5,
+    "count": 8,
     "total": 191,
-    "pct": 2.6,
-    "date": "2026-11-23",
+    "pct": 4.2,
+    "date": "2026-11-24",
     "language": "PHP",
     "page": "https://agentsmd.formachines.ai/lang/php/",
     "measured": true
@@ -237,91 +234,91 @@
    "count": 26,
    "total": 191,
    "pct": 13.6,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   "CLAUDE.md": {
    "count": 20,
    "total": 191,
    "pct": 10.5,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   ".cursorrules": {
    "count": 0,
    "total": 191,
    "pct": 0.0,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   ".cursor/rules": {
    "count": 4,
    "total": 191,
    "pct": 2.1,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   ".github/copilot-instructions.md": {
    "count": 11,
    "total": 191,
    "pct": 5.8,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   "llms.txt": {
    "count": 0,
    "total": 191,
    "pct": 0.0,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   "GEMINI.md": {
    "count": 2,
    "total": 191,
    "pct": 1.0,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   ".windsurfrules": {
    "count": 0,
    "total": 191,
    "pct": 0.0,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   "AI_POLICY.md": {
    "count": 1,
    "total": 191,
    "pct": 0.5,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   ".github/AI_POLICY.md": {
    "count": 0,
    "total": 191,
    "pct": 0.0,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   ".github/instructions": {
    "count": 4,
    "total": 191,
    "pct": 2.1,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   ".claude/rules": {
    "count": 2,
    "total": 191,
    "pct": 1.0,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   ".clinerules": {
    "count": 0,
    "total": 191,
    "pct": 0.0,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   ".windsurf/rules": {
    "count": 1,
    "total": 191,
    "pct": 0.5,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   ".agents": {
-   "count": 5,
+   "count": 8,
    "total": 191,
-   "pct": 2.6,
-   "date": "2026-11-23"
+   "pct": 4.2,
+   "date": "2026-11-24"
   }
  },
  "first_seen": {

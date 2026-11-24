@@ -6,7 +6,7 @@
  "stars": 30386,
  "default_branch": "main",
  "status": "ok",
- "checked": "2026-11-22T04:43:59Z",
+ "checked": "2026-11-24T04:38:29Z",
  "files": {
   "AGENTS.md": {
    "present": true,
@@ -16,7 +16,7 @@
     "count": 66,
     "total": 193,
     "pct": 34.2,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "Go",
     "page": "https://agentsmd.formachines.ai/lang/go/",
     "measured": true
@@ -33,7 +33,7 @@
     "count": 44,
     "total": 193,
     "pct": 22.8,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "Go",
     "page": "https://agentsmd.formachines.ai/lang/go/",
     "measured": true
@@ -47,7 +47,7 @@
     "count": 1,
     "total": 193,
     "pct": 0.5,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "Go",
     "page": "https://agentsmd.formachines.ai/lang/go/",
     "measured": true
@@ -61,7 +61,7 @@
     "count": 2,
     "total": 193,
     "pct": 1.0,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "Go",
     "page": "https://agentsmd.formachines.ai/lang/go/",
     "measured": true
@@ -75,7 +75,7 @@
     "count": 14,
     "total": 193,
     "pct": 7.3,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "Go",
     "page": "https://agentsmd.formachines.ai/lang/go/",
     "measured": true
@@ -89,7 +89,7 @@
     "count": 3,
     "total": 193,
     "pct": 1.6,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "Go",
     "page": "https://agentsmd.formachines.ai/lang/go/",
     "measured": true
@@ -103,7 +103,7 @@
     "count": 2,
     "total": 193,
     "pct": 1.0,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "Go",
     "page": "https://agentsmd.formachines.ai/lang/go/",
     "measured": true
@@ -117,7 +117,7 @@
     "count": 0,
     "total": 193,
     "pct": 0.0,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "Go",
     "page": "https://agentsmd.formachines.ai/lang/go/",
     "measured": true
@@ -131,7 +131,7 @@
     "count": 3,
     "total": 193,
     "pct": 1.6,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "Go",
     "page": "https://agentsmd.formachines.ai/lang/go/",
     "measured": true
@@ -146,7 +146,7 @@
     "count": 0,
     "total": 193,
     "pct": 0.0,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "Go",
     "page": "https://agentsmd.formachines.ai/lang/go/",
     "measured": true
@@ -161,7 +161,7 @@
     "count": 3,
     "total": 193,
     "pct": 1.6,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "Go",
     "page": "https://agentsmd.formachines.ai/lang/go/",
     "measured": true
@@ -176,7 +176,7 @@
     "count": 3,
     "total": 193,
     "pct": 1.6,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "Go",
     "page": "https://agentsmd.formachines.ai/lang/go/",
     "measured": true
@@ -184,15 +184,14 @@
    "tracked_since": "2026-11-19"
   },
   ".clinerules": {
-   "present": null,
+   "present": false,
    "size": null,
    "url": null,
-   "checked": false,
    "lang_share": {
     "count": 0,
     "total": 193,
     "pct": 0.0,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "Go",
     "page": "https://agentsmd.formachines.ai/lang/go/",
     "measured": true
@@ -200,15 +199,14 @@
    "tracked_since": "2026-11-23"
   },
   ".windsurf/rules": {
-   "present": null,
+   "present": false,
    "size": null,
    "url": null,
-   "checked": false,
    "lang_share": {
     "count": 0,
     "total": 193,
     "pct": 0.0,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "Go",
     "page": "https://agentsmd.formachines.ai/lang/go/",
     "measured": true
@@ -216,15 +214,14 @@
    "tracked_since": "2026-11-23"
   },
   ".agents": {
-   "present": null,
+   "present": false,
    "size": null,
    "url": null,
-   "checked": false,
    "lang_share": {
-    "count": 9,
+    "count": 19,
     "total": 193,
-    "pct": 4.7,
-    "date": "2026-11-23",
+    "pct": 9.8,
+    "date": "2026-11-24",
     "language": "Go",
     "page": "https://agentsmd.formachines.ai/lang/go/",
     "measured": true
@@ -237,91 +234,91 @@
    "count": 66,
    "total": 193,
    "pct": 34.2,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   "CLAUDE.md": {
    "count": 44,
    "total": 193,
    "pct": 22.8,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   ".cursorrules": {
    "count": 1,
    "total": 193,
    "pct": 0.5,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   ".cursor/rules": {
    "count": 2,
    "total": 193,
    "pct": 1.0,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   ".github/copilot-instructions.md": {
    "count": 14,
    "total": 193,
    "pct": 7.3,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   "llms.txt": {
    "count": 3,
    "total": 193,
    "pct": 1.6,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   "GEMINI.md": {
    "count": 2,
    "total": 193,
    "pct": 1.0,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   ".windsurfrules": {
    "count": 0,
    "total": 193,
    "pct": 0.0,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   "AI_POLICY.md": {
    "count": 3,
    "total": 193,
    "pct": 1.6,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   ".github/AI_POLICY.md": {
    "count": 0,
    "total": 193,
    "pct": 0.0,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   ".github/instructions": {
    "count": 3,
    "total": 193,
    "pct": 1.6,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   ".claude/rules": {
    "count": 3,
    "total": 193,
    "pct": 1.6,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   ".clinerules": {
    "count": 0,
    "total": 193,
    "pct": 0.0,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   ".windsurf/rules": {
    "count": 0,
    "total": 193,
    "pct": 0.0,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   ".agents": {
-   "count": 9,
+   "count": 19,
    "total": 193,
-   "pct": 4.7,
-   "date": "2026-11-23"
+   "pct": 9.8,
+   "date": "2026-11-24"
   }
  },
  "first_seen": {

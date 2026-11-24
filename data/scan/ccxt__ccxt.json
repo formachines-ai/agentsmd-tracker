@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-22T04:18:28Z",
+ "checked": "2026-11-24T04:01:55Z",
  "status": "ok",
  "default_branch": "master",
  "files": {
@@ -56,6 +56,20 @@
    "definite": true
   },
   ".claude/rules": {
+   "present": true,
+   "size": null
+  },
+  ".clinerules": {
+   "present": false,
+   "size": null,
+   "definite": true
+  },
+  ".windsurf/rules": {
+   "present": false,
+   "size": null,
+   "definite": true
+  },
+  ".agents": {
    "present": true,
    "size": null
   }

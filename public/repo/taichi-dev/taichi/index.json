@@ -6,7 +6,7 @@
  "stars": 28447,
  "default_branch": "master",
  "status": "ok",
- "checked": "2026-11-22T04:48:09Z",
+ "checked": "2026-11-24T04:44:20Z",
  "files": {
   "AGENTS.md": {
    "present": false,
@@ -16,7 +16,7 @@
     "count": 56,
     "total": 190,
     "pct": 29.5,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/",
     "measured": true
@@ -30,7 +30,7 @@
     "count": 18,
     "total": 190,
     "pct": 9.5,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/",
     "measured": true
@@ -44,7 +44,7 @@
     "count": 3,
     "total": 190,
     "pct": 1.6,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/",
     "measured": true
@@ -58,7 +58,7 @@
     "count": 1,
     "total": 190,
     "pct": 0.5,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/",
     "measured": true
@@ -72,7 +72,7 @@
     "count": 20,
     "total": 190,
     "pct": 10.5,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/",
     "measured": true
@@ -86,7 +86,7 @@
     "count": 0,
     "total": 190,
     "pct": 0.0,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/",
     "measured": true
@@ -100,7 +100,7 @@
     "count": 2,
     "total": 190,
     "pct": 1.1,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/",
     "measured": true
@@ -114,7 +114,7 @@
     "count": 0,
     "total": 190,
     "pct": 0.0,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/",
     "measured": true
@@ -128,7 +128,7 @@
     "count": 7,
     "total": 190,
     "pct": 3.7,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/",
     "measured": true
@@ -143,7 +143,7 @@
     "count": 0,
     "total": 190,
     "pct": 0.0,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/",
     "measured": true
@@ -158,7 +158,7 @@
     "count": 6,
     "total": 190,
     "pct": 3.2,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/",
     "measured": true
@@ -173,7 +173,7 @@
     "count": 0,
     "total": 190,
     "pct": 0.0,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/",
     "measured": true
@@ -181,15 +181,14 @@
    "tracked_since": "2026-11-19"
   },
   ".clinerules": {
-   "present": null,
+   "present": false,
    "size": null,
    "url": null,
-   "checked": false,
    "lang_share": {
     "count": 0,
     "total": 190,
     "pct": 0.0,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/",
     "measured": true
@@ -197,15 +196,14 @@
    "tracked_since": "2026-11-23"
   },
   ".windsurf/rules": {
-   "present": null,
+   "present": false,
    "size": null,
    "url": null,
-   "checked": false,
    "lang_share": {
     "count": 0,
     "total": 190,
     "pct": 0.0,
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/",
     "measured": true
@@ -213,15 +211,14 @@
    "tracked_since": "2026-11-23"
   },
   ".agents": {
-   "present": null,
+   "present": false,
    "size": null,
    "url": null,
-   "checked": false,
    "lang_share": {
-    "count": 2,
+    "count": 10,
     "total": 190,
-    "pct": 1.1,
-    "date": "2026-11-23",
+    "pct": 5.3,
+    "date": "2026-11-24",
     "language": "C++",
     "page": "https://agentsmd.formachines.ai/lang/c-plus-plus/",
     "measured": true
@@ -234,91 +231,91 @@
    "count": 56,
    "total": 190,
    "pct": 29.5,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   "CLAUDE.md": {
    "count": 18,
    "total": 190,
    "pct": 9.5,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   ".cursorrules": {
    "count": 3,
    "total": 190,
    "pct": 1.6,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   ".cursor/rules": {
    "count": 1,
    "total": 190,
    "pct": 0.5,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   ".github/copilot-instructions.md": {
    "count": 20,
    "total": 190,
    "pct": 10.5,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   "llms.txt": {
    "count": 0,
    "total": 190,
    "pct": 0.0,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   "GEMINI.md": {
    "count": 2,
    "total": 190,
    "pct": 1.1,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   ".windsurfrules": {
    "count": 0,
    "total": 190,
    "pct": 0.0,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   "AI_POLICY.md": {
    "count": 7,
    "total": 190,
    "pct": 3.7,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   ".github/AI_POLICY.md": {
    "count": 0,
    "total": 190,
    "pct": 0.0,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   ".github/instructions": {
    "count": 6,
    "total": 190,
    "pct": 3.2,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   ".claude/rules": {
    "count": 0,
    "total": 190,
    "pct": 0.0,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   ".clinerules": {
    "count": 0,
    "total": 190,
    "pct": 0.0,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   ".windsurf/rules": {
    "count": 0,
    "total": 190,
    "pct": 0.0,
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   ".agents": {
-   "count": 2,
+   "count": 10,
    "total": 190,
-   "pct": 1.1,
-   "date": "2026-11-23"
+   "pct": 5.3,
+   "date": "2026-11-24"
   }
  },
  "first_seen": {},

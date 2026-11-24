@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-22T05:01:00Z",
+ "checked": "2026-11-24T05:02:05Z",
  "status": "ok",
  "default_branch": "main",
  "files": {
@@ -24,7 +24,7 @@
   },
   ".github/copilot-instructions.md": {
    "present": true,
-   "size": 27152
+   "size": 26734
   },
   "llms.txt": {
    "present": false,
@@ -56,6 +56,21 @@
    "size": null
   },
   ".claude/rules": {
+   "present": false,
+   "size": null,
+   "definite": true
+  },
+  ".clinerules": {
+   "present": false,
+   "size": null,
+   "definite": true
+  },
+  ".windsurf/rules": {
+   "present": false,
+   "size": null,
+   "definite": true
+  },
+  ".agents": {
    "present": false,
    "size": null,
    "definite": true

@@ -1,23 +1,12 @@
 {
  "schema_version": 2,
  "site": "https://agentsmd.formachines.ai",
- "date": "2026-11-23",
- "generated": "2026-11-23T05:30:13Z",
+ "date": "2026-11-24",
+ "generated": "2026-11-24T05:30:13Z",
  "license": "CC BY 4.0",
  "added": [],
- "removed": [
-  {
-   "full_name": "Tianyu199509/DeskBox",
-   "owner": "Tianyu199509",
-   "name": "DeskBox",
-   "language": "C#",
-   "stars": 8075,
-   "path": "AGENTS.md",
-   "size": null,
-   "url": "https://github.com/Tianyu199509/DeskBox/blob/main/AGENTS.md"
-  }
- ],
- "removed_count": 1,
+ "removed": [],
+ "removed_count": 0,
  "counts": {
   "AGENTS.md": 568,
   "CLAUDE.md": 318,
@@ -31,9 +20,9 @@
   ".github/AI_POLICY.md": 2,
   ".github/instructions": 39,
   ".claude/rules": 27,
-  ".clinerules": 2,
-  ".windsurf/rules": 2,
-  ".agents": 105
+  ".clinerules": 3,
+  ".windsurf/rules": 3,
+  ".agents": 194
  },
  "scanned": 1919,
  "pending": 0

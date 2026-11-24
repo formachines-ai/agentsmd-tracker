@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-22T04:28:21Z",
+ "checked": "2026-11-24T04:16:16Z",
  "status": "ok",
  "default_branch": "main",
  "files": {
@@ -10,7 +10,7 @@
   },
   "CLAUDE.md": {
    "present": true,
-   "size": 48179
+   "size": 49687
   },
   ".cursorrules": {
    "present": false,
@@ -58,6 +58,21 @@
    "definite": true
   },
   ".claude/rules": {
+   "present": false,
+   "size": null,
+   "definite": true
+  },
+  ".clinerules": {
+   "present": false,
+   "size": null,
+   "definite": true
+  },
+  ".windsurf/rules": {
+   "present": false,
+   "size": null,
+   "definite": true
+  },
+  ".agents": {
    "present": false,
    "size": null,
    "definite": true
