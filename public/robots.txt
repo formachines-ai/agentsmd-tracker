@@ -1,5 +1,2 @@
 User-agent: *
 Allow: /
-Disallow: /go/
-
-Sitemap: https://agentsmd.formachines.ai/sitemap.xml
