@@ -1,11 +1,11 @@
 {
- "checked": "2026-11-23T04:50:43Z",
+ "checked": "2026-11-25T05:06:41Z",
  "status": "ok",
  "default_branch": "canary",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 33017
+   "size": 30556
   },
   "CLAUDE.md": {
    "present": false,

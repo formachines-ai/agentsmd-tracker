@@ -1,11 +1,11 @@
 {
  "schema_version": 3,
  "site": "https://agentsmd.formachines.ai",
- "generated": "2026-11-24T05:30:13Z",
+ "generated": "2026-11-25T05:30:12Z",
  "license": "CC BY 4.0",
  "data_delayed": false,
  "method": "Top-by-stars sample of public repositories per language; one HEAD request per tracked path on the default branch; only presence and size are recorded, never file contents.",
- "attribution": "AGENTS.md Tracker, agentsmd.formachines.ai, 2026-11-24, CC BY 4.0",
+ "attribution": "AGENTS.md Tracker, agentsmd.formachines.ai, 2026-11-25, CC BY 4.0",
  "sample": {
   "target_per_language": 200,
   "languages": [
@@ -42,7 +42,7 @@
   }
  },
  "denominator": {
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "M": 1919,
   "sample_size": 1922,
   "total": 1922,
@@ -144,13 +144,13 @@
   ".agents": true
  },
  "counts": {
-  "AGENTS.md": 568,
+  "AGENTS.md": 570,
   "CLAUDE.md": 318,
   ".cursorrules": 16,
   ".cursor/rules": 33,
-  ".github/copilot-instructions.md": 155,
+  ".github/copilot-instructions.md": 156,
   "llms.txt": 17,
-  "GEMINI.md": 20,
+  "GEMINI.md": 21,
   ".windsurfrules": 5,
   "AI_POLICY.md": 33,
   ".github/AI_POLICY.md": 2,
@@ -158,17 +158,17 @@
   ".claude/rules": 27,
   ".clinerules": 3,
   ".windsurf/rules": 3,
-  ".agents": 194
+  ".agents": 203
  },
- "any": 739,
+ "any": 740,
  "shares": {
-  "AGENTS.md": 29.6,
+  "AGENTS.md": 29.7,
   "CLAUDE.md": 16.6,
   ".cursorrules": 0.8,
   ".cursor/rules": 1.7,
   ".github/copilot-instructions.md": 8.1,
   "llms.txt": 0.9,
-  "GEMINI.md": 1.0,
+  "GEMINI.md": 1.1,
   ".windsurfrules": 0.3,
   "AI_POLICY.md": 1.7,
   ".github/AI_POLICY.md": 0.1,
@@ -176,7 +176,7 @@
   ".claude/rules": 1.4,
   ".clinerules": 0.2,
   ".windsurf/rules": 0.2,
-  ".agents": 10.9
+  ".agents": 10.6
  },
  "checked": {
   "AGENTS.md": 1919,
@@ -191,9 +191,9 @@
   ".github/AI_POLICY.md": 1919,
   ".github/instructions": 1919,
   ".claude/rules": 1919,
-  ".clinerules": 1781,
-  ".windsurf/rules": 1781,
-  ".agents": 1781
+  ".clinerules": 1919,
+  ".windsurf/rules": 1919,
+  ".agents": 1919
  },
  "unknown": {
   "AGENTS.md": 0,
@@ -208,17 +208,17 @@
   ".github/AI_POLICY.md": 0,
   ".github/instructions": 0,
   ".claude/rules": 0,
-  ".clinerules": 138,
-  ".windsurf/rules": 138,
-  ".agents": 138
+  ".clinerules": 0,
+  ".windsurf/rules": 0,
+  ".agents": 0
  },
  "coverage": {
   "AGENTS.md": {
-   "count": 568,
+   "count": 570,
    "checked": 1919,
    "unknown": 0,
    "total": 1919,
-   "share": 29.6,
+   "share": 29.7,
    "since": "2026-11-02"
   },
   "CLAUDE.md": {
@@ -246,7 +246,7 @@
    "since": "2026-11-02"
   },
   ".github/copilot-instructions.md": {
-   "count": 155,
+   "count": 156,
    "checked": 1919,
    "unknown": 0,
    "total": 1919,
@@ -262,11 +262,11 @@
    "since": "2026-11-02"
   },
   "GEMINI.md": {
-   "count": 20,
+   "count": 21,
    "checked": 1919,
    "unknown": 0,
    "total": 1919,
-   "share": 1.0,
+   "share": 1.1,
    "since": "2026-11-02"
   },
   ".windsurfrules": {
@@ -311,26 +311,26 @@
   },
   ".clinerules": {
    "count": 3,
-   "checked": 1781,
-   "unknown": 138,
+   "checked": 1919,
+   "unknown": 0,
    "total": 1919,
    "share": 0.2,
    "since": "2026-11-23"
   },
   ".windsurf/rules": {
    "count": 3,
-   "checked": 1781,
-   "unknown": 138,
+   "checked": 1919,
+   "unknown": 0,
    "total": 1919,
    "share": 0.2,
    "since": "2026-11-23"
   },
   ".agents": {
-   "count": 194,
-   "checked": 1781,
-   "unknown": 138,
+   "count": 203,
+   "checked": 1919,
+   "unknown": 0,
    "total": 1919,
-   "share": 10.9,
+   "share": 10.6,
    "since": "2026-11-23"
   }
  },
@@ -338,7 +338,7 @@
   "C#": {
    "repos": 184,
    "any": 67,
-   "AGENTS.md": 39,
+   "AGENTS.md": 40,
    "CLAUDE.md": 21,
    ".cursorrules": 2,
    ".cursor/rules": 0,
@@ -352,7 +352,7 @@
    ".claude/rules": 4,
    ".clinerules": 0,
    ".windsurf/rules": 0,
-   ".agents": 10,
+   ".agents": 12,
    "checked": {
     "AGENTS.md": 184,
     "CLAUDE.md": 184,
@@ -366,9 +366,9 @@
     ".github/AI_POLICY.md": 184,
     ".github/instructions": 184,
     ".claude/rules": 184,
-    ".clinerules": 163,
-    ".windsurf/rules": 163,
-    ".agents": 163
+    ".clinerules": 184,
+    ".windsurf/rules": 184,
+    ".agents": 184
    },
    "unknown": {
     "AGENTS.md": 0,
@@ -383,12 +383,12 @@
     ".github/AI_POLICY.md": 0,
     ".github/instructions": 0,
     ".claude/rules": 0,
-    ".clinerules": 21,
-    ".windsurf/rules": 21,
-    ".agents": 21
+    ".clinerules": 0,
+    ".windsurf/rules": 0,
+    ".agents": 0
    },
    "shares": {
-    "AGENTS.md": 21.2,
+    "AGENTS.md": 21.7,
     "CLAUDE.md": 11.4,
     ".cursorrules": 1.1,
     ".cursor/rules": 0.0,
@@ -402,7 +402,7 @@
     ".claude/rules": 2.2,
     ".clinerules": 0.0,
     ".windsurf/rules": 0.0,
-    ".agents": 6.1
+    ".agents": 6.5
    }
   },
   "C++": {
@@ -414,7 +414,7 @@
    ".cursor/rules": 1,
    ".github/copilot-instructions.md": 20,
    "llms.txt": 0,
-   "GEMINI.md": 2,
+   "GEMINI.md": 3,
    ".windsurfrules": 0,
    "AI_POLICY.md": 7,
    ".github/AI_POLICY.md": 0,
@@ -422,7 +422,7 @@
    ".claude/rules": 0,
    ".clinerules": 0,
    ".windsurf/rules": 0,
-   ".agents": 10,
+   ".agents": 12,
    "checked": {
     "AGENTS.md": 190,
     "CLAUDE.md": 190,
@@ -436,9 +436,9 @@
     ".github/AI_POLICY.md": 190,
     ".github/instructions": 190,
     ".claude/rules": 190,
-    ".clinerules": 150,
-    ".windsurf/rules": 150,
-    ".agents": 150
+    ".clinerules": 190,
+    ".windsurf/rules": 190,
+    ".agents": 190
    },
    "unknown": {
     "AGENTS.md": 0,
@@ -453,9 +453,9 @@
     ".github/AI_POLICY.md": 0,
     ".github/instructions": 0,
     ".claude/rules": 0,
-    ".clinerules": 40,
-    ".windsurf/rules": 40,
-    ".agents": 40
+    ".clinerules": 0,
+    ".windsurf/rules": 0,
+    ".agents": 0
    },
    "shares": {
     "AGENTS.md": 29.5,
@@ -464,7 +464,7 @@
     ".cursor/rules": 0.5,
     ".github/copilot-instructions.md": 10.5,
     "llms.txt": 0.0,
-    "GEMINI.md": 1.1,
+    "GEMINI.md": 1.6,
     ".windsurfrules": 0.0,
     "AI_POLICY.md": 3.7,
     ".github/AI_POLICY.md": 0.0,
@@ -472,7 +472,7 @@
     ".claude/rules": 0.0,
     ".clinerules": 0.0,
     ".windsurf/rules": 0.0,
-    ".agents": 6.7
+    ".agents": 6.3
    }
   },
   "Go": {
@@ -562,7 +562,7 @@
    ".claude/rules": 3,
    ".clinerules": 0,
    ".windsurf/rules": 0,
-   ".agents": 9,
+   ".agents": 10,
    "checked": {
     "AGENTS.md": 192,
     "CLAUDE.md": 192,
@@ -576,9 +576,9 @@
     ".github/AI_POLICY.md": 192,
     ".github/instructions": 192,
     ".claude/rules": 192,
-    ".clinerules": 154,
-    ".windsurf/rules": 154,
-    ".agents": 154
+    ".clinerules": 192,
+    ".windsurf/rules": 192,
+    ".agents": 192
    },
    "unknown": {
     "AGENTS.md": 0,
@@ -593,9 +593,9 @@
     ".github/AI_POLICY.md": 0,
     ".github/instructions": 0,
     ".claude/rules": 0,
-    ".clinerules": 38,
-    ".windsurf/rules": 38,
-    ".agents": 38
+    ".clinerules": 0,
+    ".windsurf/rules": 0,
+    ".agents": 0
    },
    "shares": {
     "AGENTS.md": 25.5,
@@ -612,7 +612,7 @@
     ".claude/rules": 1.6,
     ".clinerules": 0.0,
     ".windsurf/rules": 0.0,
-    ".agents": 5.8
+    ".agents": 5.2
    }
   },
   "JavaScript": {
@@ -687,7 +687,7 @@
   },
   "PHP": {
    "repos": 191,
-   "any": 40,
+   "any": 41,
    "AGENTS.md": 26,
    "CLAUDE.md": 20,
    ".cursorrules": 0,
@@ -702,7 +702,7 @@
    ".claude/rules": 2,
    ".clinerules": 0,
    ".windsurf/rules": 1,
-   ".agents": 8,
+   ".agents": 10,
    "checked": {
     "AGENTS.md": 191,
     "CLAUDE.md": 191,
@@ -716,9 +716,9 @@
     ".github/AI_POLICY.md": 191,
     ".github/instructions": 191,
     ".claude/rules": 191,
-    ".clinerules": 179,
-    ".windsurf/rules": 179,
-    ".agents": 179
+    ".clinerules": 191,
+    ".windsurf/rules": 191,
+    ".agents": 191
    },
    "unknown": {
     "AGENTS.md": 0,
@@ -733,9 +733,9 @@
     ".github/AI_POLICY.md": 0,
     ".github/instructions": 0,
     ".claude/rules": 0,
-    ".clinerules": 12,
-    ".windsurf/rules": 12,
-    ".agents": 12
+    ".clinerules": 0,
+    ".windsurf/rules": 0,
+    ".agents": 0
    },
    "shares": {
     "AGENTS.md": 13.6,
@@ -751,18 +751,18 @@
     ".github/instructions": 2.1,
     ".claude/rules": 1.0,
     ".clinerules": 0.0,
-    ".windsurf/rules": 0.6,
-    ".agents": 4.5
+    ".windsurf/rules": 0.5,
+    ".agents": 5.2
    }
   },
   "Python": {
    "repos": 197,
    "any": 86,
-   "AGENTS.md": 67,
+   "AGENTS.md": 68,
    "CLAUDE.md": 38,
    ".cursorrules": 3,
    ".cursor/rules": 6,
-   ".github/copilot-instructions.md": 15,
+   ".github/copilot-instructions.md": 16,
    "llms.txt": 3,
    "GEMINI.md": 4,
    ".windsurfrules": 1,
@@ -808,11 +808,11 @@
     ".agents": 0
    },
    "shares": {
-    "AGENTS.md": 34.0,
+    "AGENTS.md": 34.5,
     "CLAUDE.md": 19.3,
     ".cursorrules": 1.5,
     ".cursor/rules": 3.0,
-    ".github/copilot-instructions.md": 7.6,
+    ".github/copilot-instructions.md": 8.1,
     "llms.txt": 1.5,
     "GEMINI.md": 2.0,
     ".windsurfrules": 0.5,
@@ -842,7 +842,7 @@
    ".claude/rules": 0,
    ".clinerules": 0,
    ".windsurf/rules": 1,
-   ".agents": 9,
+   ".agents": 10,
    "checked": {
     "AGENTS.md": 189,
     "CLAUDE.md": 189,
@@ -856,9 +856,9 @@
     ".github/AI_POLICY.md": 189,
     ".github/instructions": 189,
     ".claude/rules": 189,
-    ".clinerules": 178,
-    ".windsurf/rules": 178,
-    ".agents": 178
+    ".clinerules": 189,
+    ".windsurf/rules": 189,
+    ".agents": 189
    },
    "unknown": {
     "AGENTS.md": 0,
@@ -873,9 +873,9 @@
     ".github/AI_POLICY.md": 0,
     ".github/instructions": 0,
     ".claude/rules": 0,
-    ".clinerules": 11,
-    ".windsurf/rules": 11,
-    ".agents": 11
+    ".clinerules": 0,
+    ".windsurf/rules": 0,
+    ".agents": 0
    },
    "shares": {
     "AGENTS.md": 19.6,
@@ -891,8 +891,8 @@
     ".github/instructions": 2.1,
     ".claude/rules": 0.0,
     ".clinerules": 0.0,
-    ".windsurf/rules": 0.6,
-    ".agents": 5.1
+    ".windsurf/rules": 0.5,
+    ".agents": 5.3
    }
   },
   "Rust": {
@@ -912,7 +912,7 @@
    ".claude/rules": 4,
    ".clinerules": 0,
    ".windsurf/rules": 0,
-   ".agents": 30,
+   ".agents": 31,
    "checked": {
     "AGENTS.md": 198,
     "CLAUDE.md": 198,
@@ -926,9 +926,9 @@
     ".github/AI_POLICY.md": 198,
     ".github/instructions": 198,
     ".claude/rules": 198,
-    ".clinerules": 182,
-    ".windsurf/rules": 182,
-    ".agents": 182
+    ".clinerules": 198,
+    ".windsurf/rules": 198,
+    ".agents": 198
    },
    "unknown": {
     "AGENTS.md": 0,
@@ -943,9 +943,9 @@
     ".github/AI_POLICY.md": 0,
     ".github/instructions": 0,
     ".claude/rules": 0,
-    ".clinerules": 16,
-    ".windsurf/rules": 16,
-    ".agents": 16
+    ".clinerules": 0,
+    ".windsurf/rules": 0,
+    ".agents": 0
    },
    "shares": {
     "AGENTS.md": 44.9,
@@ -962,7 +962,7 @@
     ".claude/rules": 2.0,
     ".clinerules": 0.0,
     ".windsurf/rules": 0.0,
-    ".agents": 16.5
+    ".agents": 15.7
    }
   },
   "TypeScript": {
@@ -2261,6 +2261,81 @@
    },
    "added": 0,
    "removed": 0
+  },
+  {
+   "date": "2026-11-25",
+   "scanned": 1919,
+   "counts": {
+    "AGENTS.md": 570,
+    "CLAUDE.md": 318,
+    ".cursorrules": 16,
+    ".cursor/rules": 33,
+    ".github/copilot-instructions.md": 156,
+    "llms.txt": 17,
+    "GEMINI.md": 21,
+    ".windsurfrules": 5,
+    "AI_POLICY.md": 33,
+    ".github/AI_POLICY.md": 2,
+    ".github/instructions": 39,
+    ".claude/rules": 27,
+    ".clinerules": 3,
+    ".windsurf/rules": 3,
+    ".agents": 203
+   },
+   "any": 740,
+   "shares": {
+    "AGENTS.md": 29.7,
+    "CLAUDE.md": 16.6,
+    ".cursorrules": 0.8,
+    ".cursor/rules": 1.7,
+    ".github/copilot-instructions.md": 8.1,
+    "llms.txt": 0.9,
+    "GEMINI.md": 1.1,
+    ".windsurfrules": 0.3,
+    "AI_POLICY.md": 1.7,
+    ".github/AI_POLICY.md": 0.1,
+    ".github/instructions": 2.0,
+    ".claude/rules": 1.4,
+    ".clinerules": 0.2,
+    ".windsurf/rules": 0.2,
+    ".agents": 10.6
+   },
+   "pct": {
+    "AGENTS.md": 29.7,
+    "CLAUDE.md": 16.6,
+    ".cursorrules": 0.8,
+    ".cursor/rules": 1.7,
+    ".github/copilot-instructions.md": 8.1,
+    "llms.txt": 0.9,
+    "GEMINI.md": 1.1,
+    ".windsurfrules": 0.3,
+    "AI_POLICY.md": 1.7,
+    ".github/AI_POLICY.md": 0.1,
+    ".github/instructions": 2.0,
+    ".claude/rules": 1.4,
+    ".clinerules": 0.2,
+    ".windsurf/rules": 0.2,
+    ".agents": 10.6
+   },
+   "share_pct": {
+    "AGENTS.md": 29.7,
+    "CLAUDE.md": 16.6,
+    ".cursorrules": 0.8,
+    ".cursor/rules": 1.7,
+    ".github/copilot-instructions.md": 8.1,
+    "llms.txt": 0.9,
+    "GEMINI.md": 1.1,
+    ".windsurfrules": 0.3,
+    "AI_POLICY.md": 1.7,
+    ".github/AI_POLICY.md": 0.1,
+    ".github/instructions": 2.0,
+    ".claude/rules": 1.4,
+    ".clinerules": 0.2,
+    ".windsurf/rules": 0.2,
+    ".agents": 10.6
+   },
+   "added": 4,
+   "removed": 0
   }
  ],
  "method_changes": [
@@ -2272,15 +2347,15 @@
    "url": "https://github.com/formachines-ai/agentsmd-tracker/commit/6887ed8"
   }
  ],
- "history_days": 23,
+ "history_days": 24,
  "change_7d_pp": {
   "AGENTS.md": 0.3,
   "CLAUDE.md": -0.1,
   ".cursorrules": 0.0,
   ".cursor/rules": 0.0,
-  ".github/copilot-instructions.md": -0.1,
+  ".github/copilot-instructions.md": 0.0,
   "llms.txt": 0.0,
-  "GEMINI.md": 0.0,
+  "GEMINI.md": 0.1,
   ".windsurfrules": 0.0,
   "AI_POLICY.md": 0.0,
   ".github/AI_POLICY.md": 0.0,
@@ -2288,69 +2363,69 @@
   ".claude/rules": 1.4,
   ".clinerules": 0.2,
   ".windsurf/rules": 0.2,
-  ".agents": 10.1
+  ".agents": 10.6
  },
  "combinations": {
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "total": 1919,
-  "agents_and_claude": 257,
-  "agents_only_of_pair": 311,
-  "claude_only_of_pair": 61,
-  "neither_of_pair": 1290,
+  "agents_and_claude": 258,
+  "agents_only_of_pair": 312,
+  "claude_only_of_pair": 60,
+  "neither_of_pair": 1289,
   "same_size_agents_claude": 6,
-  "repos_with_2plus_types": 417,
-  "agents_only": 311,
-  "claude_only": 61,
-  "both": 257,
-  "neither": 1290,
-  "agents_and_copilot": 92
+  "repos_with_2plus_types": 421,
+  "agents_only": 312,
+  "claude_only": 60,
+  "both": 258,
+  "neither": 1289,
+  "agents_and_copilot": 94
  },
  "combos": {
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "total": 1919,
-  "both": 257,
-  "both_agents_claude": 257,
-  "agents_only": 311,
-  "claude_only": 61,
-  "neither": 1290,
+  "both": 258,
+  "both_agents_claude": 258,
+  "agents_only": 312,
+  "claude_only": 60,
+  "neither": 1289,
   "unknown": 3
  },
  "sizes": {
   "AGENTS.md": {
-   "count": 568,
+   "count": 570,
    "median_bytes": 6806,
-   "p25_bytes": 2885,
-   "p75_bytes": 13198,
-   "n": 568,
+   "p25_bytes": 2858,
+   "p75_bytes": 13162,
+   "n": 570,
    "median": 6806,
-   "p25": 2885,
-   "p75": 13198,
+   "p25": 2858,
+   "p75": 13162,
    "buckets": {
     "lt_2k": 104,
     "2k_8k": 227,
-    "8k_32k": 205,
-    "gt_32k": 32
+    "8k_32k": 208,
+    "gt_32k": 31
    },
    "unknown": 0,
    "bands": {
-    "lt_1k": 63,
+    "lt_1k": 64,
     "1k_4k": 127,
-    "4k_16k": 268,
-    "16k_32k": 78,
-    "gt_32k": 32,
+    "4k_16k": 269,
+    "16k_32k": 79,
+    "gt_32k": 31,
     "unknown": 0
    },
-   "date": "2026-11-24"
+   "date": "2026-11-25"
   },
   "CLAUDE.md": {
    "count": 318,
    "median_bytes": 65,
    "p25_bytes": 11,
-   "p75_bytes": 4216,
+   "p75_bytes": 4322,
    "n": 318,
    "median": 65,
    "p25": 11,
-   "p75": 4216,
+   "p75": 4322,
    "buckets": {
     "lt_2k": 213,
     "2k_8k": 62,
@@ -2366,105 +2441,105 @@
     "gt_32k": 8,
     "unknown": 0
    },
-   "date": "2026-11-24"
+   "date": "2026-11-25"
   },
   ".cursorrules": {
    "count": 16,
    "median_bytes": 1677,
    "p25_bytes": 180,
    "p75_bytes": 3410,
-   "date": "2026-11-24"
+   "date": "2026-11-25"
   },
   ".cursor/rules": {
    "count": 0,
    "median_bytes": 0,
    "p25_bytes": 0,
    "p75_bytes": 0,
-   "date": "2026-11-24"
+   "date": "2026-11-25"
   },
   ".github/copilot-instructions.md": {
-   "count": 155,
-   "median_bytes": 3788,
-   "p25_bytes": 491,
-   "p75_bytes": 8398,
-   "date": "2026-11-24"
+   "count": 156,
+   "median_bytes": 3796,
+   "p25_bytes": 499,
+   "p75_bytes": 8352,
+   "date": "2026-11-25"
   },
   "llms.txt": {
    "count": 17,
    "median_bytes": 3646,
    "p25_bytes": 3058,
    "p75_bytes": 7732,
-   "date": "2026-11-24"
+   "date": "2026-11-25"
   },
   "GEMINI.md": {
-   "count": 20,
-   "median_bytes": 146,
-   "p25_bytes": 12,
-   "p75_bytes": 330,
-   "date": "2026-11-24"
+   "count": 21,
+   "median_bytes": 145,
+   "p25_bytes": 11,
+   "p75_bytes": 314,
+   "date": "2026-11-25"
   },
   ".windsurfrules": {
    "count": 5,
    "median_bytes": 380,
    "p25_bytes": 209,
    "p75_bytes": 4262,
-   "date": "2026-11-24"
+   "date": "2026-11-25"
   },
   "AI_POLICY.md": {
    "count": 33,
    "median_bytes": 2355,
    "p25_bytes": 1862,
    "p75_bytes": 3901,
-   "date": "2026-11-24"
+   "date": "2026-11-25"
   },
   ".github/AI_POLICY.md": {
    "count": 2,
    "median_bytes": 3128,
    "p25_bytes": 2460,
    "p75_bytes": 3796,
-   "date": "2026-11-24"
+   "date": "2026-11-25"
   },
   ".github/instructions": {
    "count": 0,
    "median_bytes": 0,
    "p25_bytes": 0,
    "p75_bytes": 0,
-   "date": "2026-11-24"
+   "date": "2026-11-25"
   },
   ".claude/rules": {
    "count": 0,
    "median_bytes": 0,
    "p25_bytes": 0,
    "p75_bytes": 0,
-   "date": "2026-11-24"
+   "date": "2026-11-25"
   },
   ".clinerules": {
    "count": 0,
    "median_bytes": 0,
    "p25_bytes": 0,
    "p75_bytes": 0,
-   "date": "2026-11-24"
+   "date": "2026-11-25"
   },
   ".windsurf/rules": {
    "count": 0,
    "median_bytes": 0,
    "p25_bytes": 0,
    "p75_bytes": 0,
-   "date": "2026-11-24"
+   "date": "2026-11-25"
   },
   ".agents": {
    "count": 0,
    "median_bytes": 0,
    "p25_bytes": 0,
    "p75_bytes": 0,
-   "date": "2026-11-24"
+   "date": "2026-11-25"
   }
  },
  "claude_agents_changes": {
   "since": "2026-11-02",
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "claude_removed_agents_kept": 8,
-  "agents_added_claude_kept": 2,
+  "agents_added_claude_kept": 3,
   "repos_claude_removed_agents_kept": [
    "home-assistant/core",
    "juanfont/headscale",
@@ -2477,14 +2552,14 @@
   ]
  },
  "small_files": {
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "threshold_bytes": 300,
-  "agents_md_under_300": 34,
+  "agents_md_under_300": 35,
   "claude_md_under_300": 191,
-  "agents_md_total": 568,
+  "agents_md_total": 570,
   "claude_md_total": 318,
   "AGENTS.md": {
-   "count": 34,
+   "count": 35,
    "threshold_bytes": 300,
    "size_unknown": 0,
    "zero_bytes": 1,
@@ -2526,7 +2601,7 @@
    "unknown_size": 0
   },
   "GEMINI.md": {
-   "count": 14,
+   "count": 15,
    "threshold_bytes": 300,
    "size_unknown": 0,
    "zero_bytes": 0,
@@ -2584,9 +2659,9 @@
   ".agents": {
    "count": 0,
    "threshold_bytes": 300,
-   "size_unknown": 194,
+   "size_unknown": 203,
    "zero_bytes": 0,
-   "unknown_size": 194
+   "unknown_size": 203
   }
  }
 }

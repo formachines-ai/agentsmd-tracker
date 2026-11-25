@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-22T05:21:19Z",
+ "checked": "2026-11-25T04:01:50Z",
  "status": "ok",
  "default_branch": "master",
  "files": {
@@ -31,9 +31,8 @@
    "definite": true
   },
   "GEMINI.md": {
-   "present": false,
-   "size": null,
-   "definite": true
+   "present": true,
+   "size": 9
   },
   ".windsurfrules": {
    "present": false,
@@ -58,6 +57,20 @@
    "present": false,
    "size": null,
    "definite": true
+  },
+  ".clinerules": {
+   "present": false,
+   "size": null,
+   "definite": true
+  },
+  ".windsurf/rules": {
+   "present": false,
+   "size": null,
+   "definite": true
+  },
+  ".agents": {
+   "present": true,
+   "size": null
   }
  },
  "moved_to": null,

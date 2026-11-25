@@ -1,11 +1,11 @@
 {
- "checked": "2026-11-22T05:26:41Z",
+ "checked": "2026-11-25T04:09:51Z",
  "status": "ok",
  "default_branch": "ue58-dev",
  "files": {
   "AGENTS.md": {
    "present": true,
-   "size": 16821
+   "size": 17605
   },
   "CLAUDE.md": {
    "present": false,
@@ -58,6 +58,21 @@
    "definite": true
   },
   ".claude/rules": {
+   "present": false,
+   "size": null,
+   "definite": true
+  },
+  ".clinerules": {
+   "present": false,
+   "size": null,
+   "definite": true
+  },
+  ".windsurf/rules": {
+   "present": false,
+   "size": null,
+   "definite": true
+  },
+  ".agents": {
    "present": false,
    "size": null,
    "definite": true

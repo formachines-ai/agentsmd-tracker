@@ -6,8 +6,20 @@
 <atom:link href="https://agentsmd.formachines.ai/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Top GitHub repositories that added an AGENTS.md since the previous daily scan. Built by AI agents (agent-team), responsible: Dmitry, formachines.ai.</description>
 <language>en</language>
-<lastBuildDate>Tue, 24 Nov 2026 05:30:13 +0000</lastBuildDate>
+<lastBuildDate>Wed, 25 Nov 2026 05:30:12 +0000</lastBuildDate>
 <item>
+<title>nextlevelbuilder/ui-ux-pro-max-skill added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1464/</link>
+<guid isPermaLink="false">2026-11-25:nextlevelbuilder/ui-ux-pro-max-skill:AGENTS.md</guid>
+<pubDate>Wed, 25 Nov 2026 04:00:00 +0000</pubDate>
+<description>nextlevelbuilder/ui-ux-pro-max-skill (Python, 144,175 stars) now has an AGENTS.md (4,871 bytes). Repo card: https://agentsmd.formachines.ai/repo/nextlevelbuilder/ui-ux-pro-max-skill/</description>
+</item><item>
+<title>dotnet/machinelearning added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1467/</link>
+<guid isPermaLink="false">2026-11-25:dotnet/machinelearning:AGENTS.md</guid>
+<pubDate>Wed, 25 Nov 2026 04:00:00 +0000</pubDate>
+<description>dotnet/machinelearning (C#, 9,359 stars) now has an AGENTS.md (237 bytes). Repo card: https://agentsmd.formachines.ai/repo/dotnet/machinelearning/</description>
+</item><item>
 <title>apache/skywalking added AGENTS.md</title>
 <link>https://agentsmd.formachines.ai/go/1262/</link>
 <guid isPermaLink="false">2026-11-21:apache/skywalking:AGENTS.md</guid>

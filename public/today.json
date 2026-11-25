@@ -1,20 +1,61 @@
 {
  "schema_version": 2,
  "site": "https://agentsmd.formachines.ai",
- "date": "2026-11-24",
- "generated": "2026-11-24T05:30:13Z",
+ "date": "2026-11-25",
+ "generated": "2026-11-25T05:30:12Z",
  "license": "CC BY 4.0",
- "added": [],
+ "added": [
+  {
+   "full_name": "nextlevelbuilder/ui-ux-pro-max-skill",
+   "owner": "nextlevelbuilder",
+   "name": "ui-ux-pro-max-skill",
+   "language": "Python",
+   "stars": 144175,
+   "path": "AGENTS.md",
+   "size": 4871,
+   "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/main/AGENTS.md"
+  },
+  {
+   "full_name": "nextlevelbuilder/ui-ux-pro-max-skill",
+   "owner": "nextlevelbuilder",
+   "name": "ui-ux-pro-max-skill",
+   "language": "Python",
+   "stars": 144175,
+   "path": ".github/copilot-instructions.md",
+   "size": 5049,
+   "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/main/.github/copilot-instructions.md"
+  },
+  {
+   "full_name": "organicmaps/organicmaps",
+   "owner": "organicmaps",
+   "name": "organicmaps",
+   "language": "C++",
+   "stars": 15860,
+   "path": "GEMINI.md",
+   "size": 9,
+   "url": "https://github.com/organicmaps/organicmaps/blob/master/GEMINI.md"
+  },
+  {
+   "full_name": "dotnet/machinelearning",
+   "owner": "dotnet",
+   "name": "machinelearning",
+   "language": "C#",
+   "stars": 9359,
+   "path": "AGENTS.md",
+   "size": 237,
+   "url": "https://github.com/dotnet/machinelearning/blob/main/AGENTS.md"
+  }
+ ],
  "removed": [],
  "removed_count": 0,
  "counts": {
-  "AGENTS.md": 568,
+  "AGENTS.md": 570,
   "CLAUDE.md": 318,
   ".cursorrules": 16,
   ".cursor/rules": 33,
-  ".github/copilot-instructions.md": 155,
+  ".github/copilot-instructions.md": 156,
   "llms.txt": 17,
-  "GEMINI.md": 20,
+  "GEMINI.md": 21,
   ".windsurfrules": 5,
   "AI_POLICY.md": 33,
   ".github/AI_POLICY.md": 2,
@@ -22,7 +63,7 @@
   ".claude/rules": 27,
   ".clinerules": 3,
   ".windsurf/rules": 3,
-  ".agents": 194
+  ".agents": 203
  },
  "scanned": 1919,
  "pending": 0

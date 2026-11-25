@@ -1,5 +1,5 @@
 {
- "next_id": 1464,
+ "next_id": 1477,
  "links": {
   "affaan-m/ECC/AGENTS.md": {
    "id": 1,
@@ -8777,6 +8777,84 @@
    "id": 1463,
    "url": "https://github.com/Yeachan-Heo/oh-my-codex/tree/main/.agents",
    "repo": "Yeachan-Heo/oh-my-codex",
+   "path": ".agents"
+  },
+  "nextlevelbuilder/ui-ux-pro-max-skill/AGENTS.md": {
+   "id": 1464,
+   "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/main/AGENTS.md",
+   "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+   "path": "AGENTS.md"
+  },
+  "nextlevelbuilder/ui-ux-pro-max-skill/.github/copilot-instructions.md": {
+   "id": 1465,
+   "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/main/.github/copilot-instructions.md",
+   "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+   "path": ".github/copilot-instructions.md"
+  },
+  "organicmaps/organicmaps/GEMINI.md": {
+   "id": 1466,
+   "url": "https://github.com/organicmaps/organicmaps/blob/master/GEMINI.md",
+   "repo": "organicmaps/organicmaps",
+   "path": "GEMINI.md"
+  },
+  "dotnet/machinelearning/AGENTS.md": {
+   "id": 1467,
+   "url": "https://github.com/dotnet/machinelearning/blob/main/AGENTS.md",
+   "repo": "dotnet/machinelearning",
+   "path": "AGENTS.md"
+  },
+  "abpframework/abp/.agents": {
+   "id": 1468,
+   "url": "https://github.com/abpframework/abp/tree/dev/.agents",
+   "repo": "abpframework/abp",
+   "path": ".agents"
+  },
+  "akitaonrails/ai-memory/.agents": {
+   "id": 1469,
+   "url": "https://github.com/akitaonrails/ai-memory/tree/main/.agents",
+   "repo": "akitaonrails/ai-memory",
+   "path": ".agents"
+  },
+  "cachethq/cachet/.agents": {
+   "id": 1470,
+   "url": "https://github.com/cachethq/cachet/tree/3.x/.agents",
+   "repo": "cachethq/cachet",
+   "path": ".agents"
+  },
+  "dotnet/efcore/.agents": {
+   "id": 1471,
+   "url": "https://github.com/dotnet/efcore/tree/main/.agents",
+   "repo": "dotnet/efcore",
+   "path": ".agents"
+  },
+  "mltframework/shotcut/.agents": {
+   "id": 1472,
+   "url": "https://github.com/mltframework/shotcut/tree/master/.agents",
+   "repo": "mltframework/shotcut",
+   "path": ".agents"
+  },
+  "organicmaps/organicmaps/.agents": {
+   "id": 1473,
+   "url": "https://github.com/organicmaps/organicmaps/tree/master/.agents",
+   "repo": "organicmaps/organicmaps",
+   "path": ".agents"
+  },
+  "phpstan/phpstan/.agents": {
+   "id": 1474,
+   "url": "https://github.com/phpstan/phpstan/tree/2.3.x/.agents",
+   "repo": "phpstan/phpstan",
+   "path": ".agents"
+  },
+  "quarkusio/quarkus/.agents": {
+   "id": 1475,
+   "url": "https://github.com/quarkusio/quarkus/tree/main/.agents",
+   "repo": "quarkusio/quarkus",
+   "path": ".agents"
+  },
+  "spree/spree/.agents": {
+   "id": 1476,
+   "url": "https://github.com/spree/spree/tree/main/.agents",
+   "repo": "spree/spree",
    "path": ".agents"
   }
  }

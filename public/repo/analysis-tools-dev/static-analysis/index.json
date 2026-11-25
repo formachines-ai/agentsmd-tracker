@@ -6,7 +6,7 @@
  "stars": 14862,
  "default_branch": "master",
  "status": "ok",
- "checked": "2026-11-22T05:24:59Z",
+ "checked": "2026-11-25T04:07:25Z",
  "files": {
   "AGENTS.md": {
    "present": true,
@@ -16,7 +16,7 @@
     "count": 89,
     "total": 198,
     "pct": 44.9,
-    "date": "2026-11-24",
+    "date": "2026-11-25",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/",
     "measured": true
@@ -33,7 +33,7 @@
     "count": 53,
     "total": 198,
     "pct": 26.8,
-    "date": "2026-11-24",
+    "date": "2026-11-25",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/",
     "measured": true
@@ -50,7 +50,7 @@
     "count": 1,
     "total": 198,
     "pct": 0.5,
-    "date": "2026-11-24",
+    "date": "2026-11-25",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/",
     "measured": true
@@ -67,7 +67,7 @@
     "count": 5,
     "total": 198,
     "pct": 2.5,
-    "date": "2026-11-24",
+    "date": "2026-11-25",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/",
     "measured": true
@@ -81,7 +81,7 @@
     "count": 13,
     "total": 198,
     "pct": 6.6,
-    "date": "2026-11-24",
+    "date": "2026-11-25",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/",
     "measured": true
@@ -98,7 +98,7 @@
     "count": 3,
     "total": 198,
     "pct": 1.5,
-    "date": "2026-11-24",
+    "date": "2026-11-25",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/",
     "measured": true
@@ -112,7 +112,7 @@
     "count": 3,
     "total": 198,
     "pct": 1.5,
-    "date": "2026-11-24",
+    "date": "2026-11-25",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/",
     "measured": true
@@ -126,7 +126,7 @@
     "count": 1,
     "total": 198,
     "pct": 0.5,
-    "date": "2026-11-24",
+    "date": "2026-11-25",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/",
     "measured": true
@@ -143,7 +143,7 @@
     "count": 11,
     "total": 198,
     "pct": 5.6,
-    "date": "2026-11-24",
+    "date": "2026-11-25",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/",
     "measured": true
@@ -158,7 +158,7 @@
     "count": 0,
     "total": 198,
     "pct": 0.0,
-    "date": "2026-11-24",
+    "date": "2026-11-25",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/",
     "measured": true
@@ -173,7 +173,7 @@
     "count": 1,
     "total": 198,
     "pct": 0.5,
-    "date": "2026-11-24",
+    "date": "2026-11-25",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/",
     "measured": true
@@ -188,7 +188,7 @@
     "count": 4,
     "total": 198,
     "pct": 2.0,
-    "date": "2026-11-24",
+    "date": "2026-11-25",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/",
     "measured": true
@@ -196,15 +196,14 @@
    "tracked_since": "2026-11-19"
   },
   ".clinerules": {
-   "present": null,
+   "present": false,
    "size": null,
    "url": null,
-   "checked": false,
    "lang_share": {
     "count": 0,
     "total": 198,
     "pct": 0.0,
-    "date": "2026-11-24",
+    "date": "2026-11-25",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/",
     "measured": true
@@ -212,15 +211,14 @@
    "tracked_since": "2026-11-23"
   },
   ".windsurf/rules": {
-   "present": null,
+   "present": false,
    "size": null,
    "url": null,
-   "checked": false,
    "lang_share": {
     "count": 0,
     "total": 198,
     "pct": 0.0,
-    "date": "2026-11-24",
+    "date": "2026-11-25",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/",
     "measured": true
@@ -228,15 +226,14 @@
    "tracked_since": "2026-11-23"
   },
   ".agents": {
-   "present": null,
+   "present": false,
    "size": null,
    "url": null,
-   "checked": false,
    "lang_share": {
-    "count": 30,
+    "count": 31,
     "total": 198,
-    "pct": 15.2,
-    "date": "2026-11-24",
+    "pct": 15.7,
+    "date": "2026-11-25",
     "language": "Rust",
     "page": "https://agentsmd.formachines.ai/lang/rust/",
     "measured": true
@@ -249,91 +246,91 @@
    "count": 89,
    "total": 198,
    "pct": 44.9,
-   "date": "2026-11-24"
+   "date": "2026-11-25"
   },
   "CLAUDE.md": {
    "count": 53,
    "total": 198,
    "pct": 26.8,
-   "date": "2026-11-24"
+   "date": "2026-11-25"
   },
   ".cursorrules": {
    "count": 1,
    "total": 198,
    "pct": 0.5,
-   "date": "2026-11-24"
+   "date": "2026-11-25"
   },
   ".cursor/rules": {
    "count": 5,
    "total": 198,
    "pct": 2.5,
-   "date": "2026-11-24"
+   "date": "2026-11-25"
   },
   ".github/copilot-instructions.md": {
    "count": 13,
    "total": 198,
    "pct": 6.6,
-   "date": "2026-11-24"
+   "date": "2026-11-25"
   },
   "llms.txt": {
    "count": 3,
    "total": 198,
    "pct": 1.5,
-   "date": "2026-11-24"
+   "date": "2026-11-25"
   },
   "GEMINI.md": {
    "count": 3,
    "total": 198,
    "pct": 1.5,
-   "date": "2026-11-24"
+   "date": "2026-11-25"
   },
   ".windsurfrules": {
    "count": 1,
    "total": 198,
    "pct": 0.5,
-   "date": "2026-11-24"
+   "date": "2026-11-25"
   },
   "AI_POLICY.md": {
    "count": 11,
    "total": 198,
    "pct": 5.6,
-   "date": "2026-11-24"
+   "date": "2026-11-25"
   },
   ".github/AI_POLICY.md": {
    "count": 0,
    "total": 198,
    "pct": 0.0,
-   "date": "2026-11-24"
+   "date": "2026-11-25"
   },
   ".github/instructions": {
    "count": 1,
    "total": 198,
    "pct": 0.5,
-   "date": "2026-11-24"
+   "date": "2026-11-25"
   },
   ".claude/rules": {
    "count": 4,
    "total": 198,
    "pct": 2.0,
-   "date": "2026-11-24"
+   "date": "2026-11-25"
   },
   ".clinerules": {
    "count": 0,
    "total": 198,
    "pct": 0.0,
-   "date": "2026-11-24"
+   "date": "2026-11-25"
   },
   ".windsurf/rules": {
    "count": 0,
    "total": 198,
    "pct": 0.0,
-   "date": "2026-11-24"
+   "date": "2026-11-25"
   },
   ".agents": {
-   "count": 30,
+   "count": 31,
    "total": 198,
-   "pct": 15.2,
-   "date": "2026-11-24"
+   "pct": 15.7,
+   "date": "2026-11-25"
   }
  },
  "first_seen": {
