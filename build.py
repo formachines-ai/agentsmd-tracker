@@ -1813,6 +1813,8 @@ def main() -> int:
         age_h = (now_utc() - datetime.fromisoformat(last.replace("Z", "+00:00"))).total_seconds() / 3600
         if age_h > STALE_HOURS:
             delayed, reason = True, f"The last successful check is {age_h:.0f} hours old (expected daily)."
+        elif last[:10] < iso(now_utc())[:10]:   # T-0255: newest scan UTC day is earlier than the build day
+            delayed, reason = True, f"The newest scan is from {last[:10]}; today's ({iso(now_utc())[:10]}) has not been published yet."
         elif scan_stats and scan_stats["rate_limited"] and scan_stats["ok"] == 0:
             delayed, reason = True, "GitHub rate-limited today's scan before any repository could be checked."
     scan_block = None

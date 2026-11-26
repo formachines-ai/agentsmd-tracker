@@ -1,14 +1,14 @@
 {
  "site": "https://agentsmd.formachines.ai",
- "built_at": "2026-11-26T01:23:00Z",
- "build_seconds": 0.4,
+ "built_at": "2026-11-26T07:30:59Z",
+ "build_seconds": 0.7,
  "sample": 1922,
  "scanned_ok": 1919,
  "pending": 0,
  "unreachable": 3,
  "last_checked": "2026-11-25T05:30:12Z",
- "data_delayed": false,
- "delay_reason": "",
+ "data_delayed": true,
+ "delay_reason": "The newest scan is from 2026-11-25; today's (2026-11-26) has not been published yet.",
  "scan": {
   "scanned": 876,
   "ok": 876,

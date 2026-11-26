@@ -3,7 +3,7 @@
  "site": "https://agentsmd.formachines.ai",
  "generated": "2026-11-25T05:30:12Z",
  "license": "CC BY 4.0",
- "data_delayed": false,
+ "data_delayed": true,
  "method": "Top-by-stars sample of public repositories per language; one HEAD request per tracked path on the default branch; only presence and size are recorded, never file contents.",
  "attribution": "AGENTS.md Tracker, agentsmd.formachines.ai, 2026-11-25, CC BY 4.0",
  "sample": {
