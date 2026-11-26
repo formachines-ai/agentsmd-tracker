@@ -206,6 +206,150 @@
 <pubDate>Wed, 04 Nov 2026 04:00:00 +0000</pubDate>
 <description>nats-io/nats-server (Go, 20,986 stars) now has an AGENTS.md (2,186 bytes). Repo card: https://agentsmd.formachines.ai/repo/nats-io/nats-server/</description>
 </item><item>
+<title>Removed: Tianyu199509/DeskBox AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/repo/Tianyu199509/DeskBox/?src=removed</link>
+<guid isPermaLink="false">removed:2026-11-23:Tianyu199509/DeskBox:AGENTS.md</guid>
+<pubDate>Mon, 23 Nov 2026 04:00:00 +0000</pubDate>
+<description>Tianyu199509/DeskBox (C#, 8,075 stars): AGENTS.md was present in the previous snapshot and is absent in the scan of 2026-11-23.</description>
+</item><item>
+<title>Removed: juanfont/headscale CLAUDE.md</title>
+<link>https://agentsmd.formachines.ai/repo/juanfont/headscale/?src=removed</link>
+<guid isPermaLink="false">removed:2026-11-22:juanfont/headscale:CLAUDE.md</guid>
+<pubDate>Sun, 22 Nov 2026 04:00:00 +0000</pubDate>
+<description>juanfont/headscale (Go, 45,291 stars): CLAUDE.md was present in the previous snapshot and is absent in the scan of 2026-11-22.</description>
+</item><item>
+<title>Removed: pnpm/pnpm CLAUDE.md</title>
+<link>https://agentsmd.formachines.ai/repo/pnpm/pnpm/?src=removed</link>
+<guid isPermaLink="false">removed:2026-11-20:pnpm/pnpm:CLAUDE.md</guid>
+<pubDate>Fri, 20 Nov 2026 04:00:00 +0000</pubDate>
+<description>pnpm/pnpm (Rust, 36,997 stars): CLAUDE.md was present in the previous snapshot and is absent in the scan of 2026-11-20.</description>
+</item><item>
+<title>Removed: envoyproxy/envoy .github/copilot-instructions.md</title>
+<link>https://agentsmd.formachines.ai/repo/envoyproxy/envoy/?src=removed</link>
+<guid isPermaLink="false">removed:2026-11-20:envoyproxy/envoy:.github/copilot-instructions.md</guid>
+<pubDate>Fri, 20 Nov 2026 04:00:00 +0000</pubDate>
+<description>envoyproxy/envoy (C++, 29,166 stars): .github/copilot-instructions.md was present in the previous snapshot and is absent in the scan of 2026-11-20.</description>
+</item><item>
+<title>Removed: quasarframework/quasar CLAUDE.md</title>
+<link>https://agentsmd.formachines.ai/repo/quasarframework/quasar/?src=removed</link>
+<guid isPermaLink="false">removed:2026-11-19:quasarframework/quasar:CLAUDE.md</guid>
+<pubDate>Thu, 19 Nov 2026 04:00:00 +0000</pubDate>
+<description>quasarframework/quasar (JavaScript, 27,211 stars): CLAUDE.md was present in the previous snapshot and is absent in the scan of 2026-11-19.</description>
+</item><item>
+<title>Removed: vectordotdev/vector CLAUDE.md</title>
+<link>https://agentsmd.formachines.ai/repo/vectordotdev/vector/?src=removed</link>
+<guid isPermaLink="false">removed:2026-11-19:vectordotdev/vector:CLAUDE.md</guid>
+<pubDate>Thu, 19 Nov 2026 04:00:00 +0000</pubDate>
+<description>vectordotdev/vector (Rust, 22,785 stars): CLAUDE.md was present in the previous snapshot and is absent in the scan of 2026-11-19.</description>
+</item><item>
+<title>Removed: microsoft/TypeScript .github/copilot-instructions.md</title>
+<link>https://agentsmd.formachines.ai/repo/microsoft/TypeScript/?src=removed</link>
+<guid isPermaLink="false">removed:2026-11-18:microsoft/TypeScript:.github/copilot-instructions.md</guid>
+<pubDate>Wed, 18 Nov 2026 04:00:00 +0000</pubDate>
+<description>microsoft/TypeScript (Go, 111,721 stars): .github/copilot-instructions.md was present in the previous snapshot and is absent in the scan of 2026-11-18.</description>
+</item><item>
+<title>Removed: jgraph/drawio-desktop CLAUDE.md</title>
+<link>https://agentsmd.formachines.ai/repo/jgraph/drawio-desktop/?src=removed</link>
+<guid isPermaLink="false">removed:2026-11-18:jgraph/drawio-desktop:CLAUDE.md</guid>
+<pubDate>Wed, 18 Nov 2026 04:00:00 +0000</pubDate>
+<description>jgraph/drawio-desktop (JavaScript, 63,773 stars): CLAUDE.md was present in the previous snapshot and is absent in the scan of 2026-11-18.</description>
+</item><item>
+<title>Removed: zed-industries/zed CLAUDE.md</title>
+<link>https://agentsmd.formachines.ai/repo/zed-industries/zed/?src=removed</link>
+<guid isPermaLink="false">removed:2026-11-17:zed-industries/zed:CLAUDE.md</guid>
+<pubDate>Tue, 17 Nov 2026 04:00:00 +0000</pubDate>
+<description>zed-industries/zed (Rust, 92,559 stars): CLAUDE.md was present in the previous snapshot and is absent in the scan of 2026-11-17.</description>
+</item><item>
+<title>Removed: zed-industries/zed GEMINI.md</title>
+<link>https://agentsmd.formachines.ai/repo/zed-industries/zed/?src=removed</link>
+<guid isPermaLink="false">removed:2026-11-17:zed-industries/zed:GEMINI.md</guid>
+<pubDate>Tue, 17 Nov 2026 04:00:00 +0000</pubDate>
+<description>zed-industries/zed (Rust, 92,559 stars): GEMINI.md was present in the previous snapshot and is absent in the scan of 2026-11-17.</description>
+</item><item>
+<title>Removed: doctrine/dbal AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/repo/doctrine/dbal/?src=removed</link>
+<guid isPermaLink="false">removed:2026-11-15:doctrine/dbal:AGENTS.md</guid>
+<pubDate>Sun, 15 Nov 2026 04:00:00 +0000</pubDate>
+<description>doctrine/dbal (PHP, 9,701 stars): AGENTS.md was present in the previous snapshot and is absent in the scan of 2026-11-15.</description>
+</item><item>
+<title>Removed: BerriAI/litellm GEMINI.md</title>
+<link>https://agentsmd.formachines.ai/repo/BerriAI/litellm/?src=removed</link>
+<guid isPermaLink="false">removed:2026-11-12:BerriAI/litellm:GEMINI.md</guid>
+<pubDate>Thu, 12 Nov 2026 04:00:00 +0000</pubDate>
+<description>BerriAI/litellm (Python, 62,557 stars): GEMINI.md was present in the previous snapshot and is absent in the scan of 2026-11-12.</description>
+</item><item>
+<title>Removed: huggingface/transformers .github/copilot-instructions.md</title>
+<link>https://agentsmd.formachines.ai/repo/huggingface/transformers/?src=removed</link>
+<guid isPermaLink="false">removed:2026-11-11:huggingface/transformers:.github/copilot-instructions.md</guid>
+<pubDate>Wed, 11 Nov 2026 04:00:00 +0000</pubDate>
+<description>huggingface/transformers (Python, 168,449 stars): .github/copilot-instructions.md was present in the previous snapshot and is absent in the scan of 2026-11-11.</description>
+</item><item>
+<title>Removed: hashicorp/vault .github/copilot-instructions.md</title>
+<link>https://agentsmd.formachines.ai/repo/hashicorp/vault/?src=removed</link>
+<guid isPermaLink="false">removed:2026-11-11:hashicorp/vault:.github/copilot-instructions.md</guid>
+<pubDate>Wed, 11 Nov 2026 04:00:00 +0000</pubDate>
+<description>hashicorp/vault (Go, 36,458 stars): .github/copilot-instructions.md was present in the previous snapshot and is absent in the scan of 2026-11-11.</description>
+</item><item>
+<title>Removed: itsfatduck/optimizerDuck .windsurfrules</title>
+<link>https://agentsmd.formachines.ai/repo/itsfatduck/optimizerDuck/?src=removed</link>
+<guid isPermaLink="false">removed:2026-11-11:itsfatduck/optimizerDuck:.windsurfrules</guid>
+<pubDate>Wed, 11 Nov 2026 04:00:00 +0000</pubDate>
+<description>itsfatduck/optimizerDuck (C#, 10,769 stars): .windsurfrules was present in the previous snapshot and is absent in the scan of 2026-11-11.</description>
+</item><item>
+<title>Removed: opendatalab/MinerU CLAUDE.md</title>
+<link>https://agentsmd.formachines.ai/repo/opendatalab/MinerU/?src=removed</link>
+<guid isPermaLink="false">removed:2026-11-10:opendatalab/MinerU:CLAUDE.md</guid>
+<pubDate>Tue, 10 Nov 2026 04:00:00 +0000</pubDate>
+<description>opendatalab/MinerU (Python, 83,005 stars): CLAUDE.md was present in the previous snapshot and is absent in the scan of 2026-11-10.</description>
+</item><item>
+<title>Removed: microsoft/playwright-mcp CLAUDE.md</title>
+<link>https://agentsmd.formachines.ai/repo/microsoft/playwright-mcp/?src=removed</link>
+<guid isPermaLink="false">removed:2026-11-10:microsoft/playwright-mcp:CLAUDE.md</guid>
+<pubDate>Tue, 10 Nov 2026 04:00:00 +0000</pubDate>
+<description>microsoft/playwright-mcp (TypeScript, 38,996 stars): CLAUDE.md was present in the previous snapshot and is absent in the scan of 2026-11-10.</description>
+</item><item>
+<title>Removed: home-assistant/core CLAUDE.md</title>
+<link>https://agentsmd.formachines.ai/repo/home-assistant/core/?src=removed</link>
+<guid isPermaLink="false">removed:2026-11-08:home-assistant/core:CLAUDE.md</guid>
+<pubDate>Sun, 08 Nov 2026 04:00:00 +0000</pubDate>
+<description>home-assistant/core (Python, 91,917 stars): CLAUDE.md was present in the previous snapshot and is absent in the scan of 2026-11-08.</description>
+</item><item>
+<title>Removed: home-assistant/core .github/copilot-instructions.md</title>
+<link>https://agentsmd.formachines.ai/repo/home-assistant/core/?src=removed</link>
+<guid isPermaLink="false">removed:2026-11-08:home-assistant/core:.github/copilot-instructions.md</guid>
+<pubDate>Sun, 08 Nov 2026 04:00:00 +0000</pubDate>
+<description>home-assistant/core (Python, 91,917 stars): .github/copilot-instructions.md was present in the previous snapshot and is absent in the scan of 2026-11-08.</description>
+</item><item>
+<title>Removed: vitessio/vitess .github/copilot-instructions.md</title>
+<link>https://agentsmd.formachines.ai/repo/vitessio/vitess/?src=removed</link>
+<guid isPermaLink="false">removed:2026-11-07:vitessio/vitess:.github/copilot-instructions.md</guid>
+<pubDate>Sat, 07 Nov 2026 04:00:00 +0000</pubDate>
+<description>vitessio/vitess (Go, 21,399 stars): .github/copilot-instructions.md was present in the previous snapshot and is absent in the scan of 2026-11-07.</description>
+</item><item>
+<title>Removed: trpc/trpc .cursor/rules</title>
+<link>https://agentsmd.formachines.ai/repo/trpc/trpc/?src=removed</link>
+<guid isPermaLink="false">removed:2026-11-05:trpc/trpc:.cursor/rules</guid>
+<pubDate>Thu, 05 Nov 2026 04:00:00 +0000</pubDate>
+<description>trpc/trpc (TypeScript, 40,761 stars): .cursor/rules was present in the previous snapshot and is absent in the scan of 2026-11-05.</description>
+</item><item>
+<title>Removed: mksglu/context-mode CLAUDE.md</title>
+<link>https://agentsmd.formachines.ai/repo/mksglu/context-mode/?src=removed</link>
+<guid isPermaLink="false">removed:2026-11-05:mksglu/context-mode:CLAUDE.md</guid>
+<pubDate>Thu, 05 Nov 2026 04:00:00 +0000</pubDate>
+<description>mksglu/context-mode (TypeScript, 33,250 stars): CLAUDE.md was present in the previous snapshot and is absent in the scan of 2026-11-05.</description>
+</item><item>
+<title>Removed: streamlit/streamlit .github/copilot-instructions.md</title>
+<link>https://agentsmd.formachines.ai/repo/streamlit/streamlit/?src=removed</link>
+<guid isPermaLink="false">removed:2026-11-04:streamlit/streamlit:.github/copilot-instructions.md</guid>
+<pubDate>Wed, 04 Nov 2026 04:00:00 +0000</pubDate>
+<description>streamlit/streamlit (Python, 46,209 stars): .github/copilot-instructions.md was present in the previous snapshot and is absent in the scan of 2026-11-04.</description>
+</item><item>
+<title>Removed: rustdesk/rustdesk CLAUDE.md</title>
+<link>https://agentsmd.formachines.ai/repo/rustdesk/rustdesk/?src=removed</link>
+<guid isPermaLink="false">removed:2026-11-03:rustdesk/rustdesk:CLAUDE.md</guid>
+<pubDate>Tue, 03 Nov 2026 04:00:00 +0000</pubDate>
+<description>rustdesk/rustdesk (Rust, 127,914 stars): CLAUDE.md was present in the previous snapshot and is absent in the scan of 2026-11-03.</description>
+</item><item>
 <title>Baseline 2026-11-02: 540 of 1922 top repos have AGENTS.md</title>
 <link>https://agentsmd.formachines.ai/</link>
 <guid isPermaLink="false">baseline:2026-11-02</guid>
