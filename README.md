@@ -52,6 +52,8 @@ standard library only.
 
 `tests/test_removed.py` (T-0254): removed path listed; repo not checked today and first scan not listed; `/` has "Removed in 24 h" with `?src=removed` links or "none"; `feed.xml` removal items start with "Removed:".
 
+`tests/test_change_window.py` (T-0258): `stats.json` `change_7d_window` (from, to, M_from, M_to) matches the history rows `change_7d_pp` compares; `llms.txt` defines `sizes` in one bullet.
+
 `tests/test_sample_accounting.py` (T-0244): the note `#sample-accounting` on `/` (M, date, repos left out by status) equals `stats.json` `denominator` (`total` = `sample_size`; M + excluded = total).
 
 `tests/test_home_order.py` (T-0246): on `/` the by-language table and the static "Find a repository" line (links every `/lang/` page, names `/repo/<owner>/<name>/`) come before the first per-file card; every `/lang/` link resolves.

@@ -2365,6 +2365,12 @@
   ".windsurf/rules": 0.2,
   ".agents": 10.6
  },
+ "change_7d_window": {
+  "from": "2026-11-18",
+  "to": "2026-11-25",
+  "M_from": 1919,
+  "M_to": 1919
+ },
  "combinations": {
   "date": "2026-11-25",
   "total": 1919,

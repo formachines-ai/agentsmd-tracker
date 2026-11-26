@@ -1480,6 +1480,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
     # ---- JSON endpoints
     generated = today.get("generated") or (history[-1].get("generated") if history else None) or updated  # time of the last real scan
     change_7d_pp = {s_["path"]: None for s_ in PATHS}   # per path: latest pct minus pct of the row dated 7 days earlier; null until history has >= CHANGE_MIN_ROWS rows
+    prev = None
     if len(history) >= CHANGE_MIN_ROWS:
         prev_date = (datetime.fromisoformat(history[-1]["date"]) - timedelta(days=7)).date().isoformat()
         prev = next((d for d in history if d["date"] == prev_date), None)
@@ -1487,6 +1488,9 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
             for s_ in PATHS:
                 p_ = s_["path"]
                 change_7d_pp[p_] = round(pct(history[-1]["counts"].get(p_, 0), history[-1]["scanned"]) - pct(prev["counts"].get(p_, 0), prev["scanned"]), 1)
+    change_7d_window = {"from": None, "to": None, "M_from": None, "M_to": None}   # T-0258: the two history rows change_7d_pp compares
+    if len(history) >= CHANGE_MIN_ROWS and prev and prev["scanned"] and history[-1]["scanned"]:
+        change_7d_window = {"from": prev["date"], "to": history[-1]["date"], "M_from": int(prev["scanned"]), "M_to": int(history[-1]["scanned"])}
     stats = {
         "schema_version": STATS_SCHEMA_VERSION,
         "site": SITE_BASE, "generated": generated, "license": "CC BY 4.0", "data_delayed": delayed,
@@ -1516,6 +1520,7 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
         "method_changes": METHOD_CHANGES,
         "history_days": len(history),
         "change_7d_pp": change_7d_pp,
+        "change_7d_window": change_7d_window,
         "combinations": {"date": generated[:10], "total": total, **agg["combo"]},
         "combos": {"date": generated[:10], "total": total, "both": agg["combo"]["both"], "both_agents_claude": agg["combo"]["both"], "agents_only": agg["combo"]["agents_only"],
                    "claude_only": agg["combo"]["claude_only"], "neither": agg["combo"]["neither"],
@@ -1675,10 +1680,11 @@ Latest (scan {generated}): {agg['counts'][PRIMARY_PATH]} of {total} scanned repo
 - checked and unknown in stats.json (also coverage per path): a repository is checked for a path only if its latest snapshot is dated on or after that path's tracked_since and holds a result for the path; otherwise it is unknown (not yet checked), never counted as absent. checked + unknown = total repos scanned; shares[path] = counts[path] / checked. On repo cards (index.json) present is null where the repo is unknown for that path. Old paths are fully checked (unknown 0).
 - by_language in stats.json: each language also has checked, unknown and shares per path, worked like the top-level ones: checked + unknown = that language's repos, shares[path] = count / checked (null when checked is 0 or the path is not measured yet); unchecked repos are never counted as absent.
 - tracked_since in stats.json: path -> date of that path's first scan; history[] counts of 0 before that date were not measured, and the first-scan counts are a baseline, not added files.
-- sizes in stats.json holds two size schemes for AGENTS.md and CLAUDE.md: buckets (lt_2k <2048, 2k_8k, 8k_32k up to 32768 inclusive, gt_32k >32768 bytes) and bands (lt_1k <1024, 1k_4k, 4k_16k, 16k_32k up to 32768 inclusive, gt_32k >32768 bytes, unknown); the gt_32k counts of both are the same threshold (32 KiB = 32768 bytes).
-- sizes in stats.json, AGENTS.md and CLAUDE.md entries also bands: lt_1k, 1k_4k, 4k_16k, 16k_32k (up to 32768 inclusive), gt_32k (>32 KiB) and unknown (present, no size), counts summing to the number of repos with the file (KiB = 1024 bytes).
-- sizes in stats.json, AGENTS.md and CLAUDE.md entries also: n (known sizes), median, p25, p75 in bytes, buckets lt_2k (<2048), 2k_8k, 8k_32k (up to 32768 inclusive) and gt_32k (>32768) as counts summing to n, and unknown (present, size not known); n + unknown = repos with the file.
-- sizes in stats.json: per path, count, median_bytes, p25_bytes, p75_bytes and date of the scan, from the HEAD Content-Length of present files whose size is known, 0 included (count = those files only); 0 when none is known (e.g. the .cursor/rules/ directory).
+- sizes in stats.json (the only definition of the field): an object per tracked path, built from the HEAD Content-Length of present files whose size is known (0 included) and dated by the scan; entry fields: count, median_bytes, p25_bytes, p75_bytes, date (count = files with a known size; 0 when none is known, e.g. the .cursor/rules/ directory). The AGENTS.md and CLAUDE.md entries also hold n, median, p25, p75 and unknown, and two size schemes, buckets and bands, defined in the next three bullets.
+- sizes.<path>.n, median, p25, p75, unknown: n = files with a known size, median / p25 / p75 in bytes, unknown = present files with no known size; n + unknown = repos with the file.
+- sizes.<path>.buckets (AGENTS.md and CLAUDE.md): lt_2k (<2048 bytes), 2k_8k, 8k_32k (up to 32768 inclusive) and gt_32k (>32768 bytes), counts summing to n.
+- sizes.<path>.bands (AGENTS.md and CLAUDE.md): lt_1k (<1024 bytes), 1k_4k, 4k_16k, 16k_32k (up to 32768 inclusive), gt_32k (>32768 bytes) and unknown (present, no size), counts summing to the number of repos with the file (KiB = 1024 bytes); gt_32k is the same 32 KiB threshold as in buckets.
+- change_7d_window in stats.json: the two history days that change_7d_pp compares, as from (YYYY-MM-DD, the day 7 days before the latest history day), to (YYYY-MM-DD, the latest history day), M_from and M_to (integers: the scanned repos, M, on those two days); all four are null when change_7d_pp is null.
 - small_files in stats.json: date, threshold_bytes (300) and per path count (present files with a known size under 300 bytes, 0 bytes included; size only), threshold_bytes, zero_bytes (present files whose HEAD Content-Length is 0; counted in count, size 0 bytes) and unknown_size (present files with no Content-Length, size unknown, not counted; size_unknown is the same number, kept for compatibility).
 - small_files top-level fields: agents_md_under_300, claude_md_under_300, agents_md_total, claude_md_total, threshold_bytes, date.
 - small_files example ({generated[:10]}): agents_md_under_300 {agg['small']['AGENTS.md']['count']} of agents_md_total {agg['counts']['AGENTS.md']}, claude_md_under_300 {agg['small']['CLAUDE.md']['count']} of claude_md_total {agg['counts']['CLAUDE.md']}, threshold_bytes {SMALL_FILE_BYTES}, date {generated[:10]}.
