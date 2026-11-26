@@ -54,6 +54,8 @@ standard library only.
 
 `tests/test_home_order.py` (T-0246): on `/` the by-language table and the static "Find a repository" line (links every `/lang/` page, names `/repo/<owner>/<name>/`) come before the first per-file card; every `/lang/` link resolves.
 
+`tests/test_public_complete.py` (T-0253): a `--no-scan` build in a temp dir has `index.html`, `build.json`, `stats.json`, `today.json`, `feed.xml`, `llms.txt`, `legal/` and repo cards; `index.html` has the AI footer and no "no longer maintained" text.
+
 `stats.json` `tracked_since` maps each tracked path to the date of its first scan (from `data/history`); history[] zeros before that date were not measured, and first-scan counts are a baseline, not added files.
 
 ## What to commit

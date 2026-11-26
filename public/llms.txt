@@ -1,0 +1,61 @@
+# AGENTS.md Tracker
+
+> Daily tracker of agent-instruction files in top GitHub repositories: which of 1,922 public repositories (top by stars per language) have one of the 15 tracked paths: AGENTS.md, CLAUDE.md, .cursorrules, .cursor/rules/, .github/copilot-instructions.md, llms.txt, GEMINI.md, .windsurfrules, AI_POLICY.md, .github/AI_POLICY.md, .github/instructions/, .claude/rules/, .clinerules, .windsurf/rules/, .agents/. Only presence, size and a link to GitHub are published; file contents are never republished. Built by AI agents (agent-team) without human editing; responsible: Dmitry, formachines.ai. Data CC BY 4.0.
+
+Data scanned at: 2026-11-25T05:30:12Z
+The scan time changes only when new data is scanned; a rebuild of the same data keeps it. The build time is in build.json (built_at).
+Scan coverage (build.json scan): 876 fresh on 2026-11-25, 1043 carried over, 0 partial, stopped true. fresh = repos with status ok checked on the scan date; carried_over = repos whose last good value from an earlier scan is kept (fresh + carried_over = scanned_ok); partial = repos whose attempt in the run returned only some paths (their earlier good value is kept); stopped = the run ended early.
+Schema: stats.json v3, today.json v2
+Denominator: M = 1919 (sample repos whose latest scan is ok); excluded = 3 sample repos outside M with a status (moved, deleted, unreachable, archived, fork), cards kept; M + excluded = sample_size 1922. Breakdown and list: stats.json field denominator.
+History files data/history/<date>.json list the excluded repositories (repo, reason) from 2026-11-20.
+
+Latest (scan 2026-11-25T05:30:12Z): 570 of 1919 scanned repos (29.7 %) have AGENTS.md; 318 CLAUDE.md; 16 .cursorrules; 156 copilot-instructions.md; 17 llms.txt.
+
+## Machine-readable
+- [stats.json](https://agentsmd.formachines.ai/stats.json): totals, shares, by-language table, full daily history
+- combinations in stats.json: date, total and counts of scanned repos by co-existence of AGENTS.md and CLAUDE.md (agents_only, claude_only, both, neither, agents_and_copilot (AGENTS.md with .github/copilot-instructions.md), agents_and_claude, agents_only_of_pair, claude_only_of_pair, neither_of_pair), same_size_agents_claude (both present with equal byte size) and repos_with_2plus_types (at least 2 of the 15 paths).
+- combos in stats.json: date, total (scanned repos) and integer counts both (= both_agents_claude), agents_only, claude_only, neither and unknown (sample repos without a result for both types: unreachable or pending); the five sum to sample_size (presence of AGENTS.md and CLAUDE.md only).
+- combinations example (2026-11-25): agents_only 312, claude_only 60, both 258, neither 1289, agents_and_copilot 94 of 1919 scanned repos, date 2026-11-25.
+- null and measured:false in stats.json: a path with tracked_since null has not been measured yet (no first scan recorded). Its counts, shares and by_language values are null and measured is false; this is not "checked, found nowhere" and must not be read as 0 or 0.0 %. Measured paths have measured:true.
+- null presence on repo cards: in /repo/<owner>/<name>/index.json a null present, or lang_share with measured:false (count and share null), means that path is not measured yet (no first scan recorded), not "checked, absent". Measured paths keep their values.
+- checked and unknown in stats.json (also coverage per path): a repository is checked for a path only if its latest snapshot is dated on or after that path's tracked_since and holds a result for the path; otherwise it is unknown (not yet checked), never counted as absent. checked + unknown = total repos scanned; shares[path] = counts[path] / checked. On repo cards (index.json) present is null where the repo is unknown for that path. Old paths are fully checked (unknown 0).
+- by_language in stats.json: each language also has checked, unknown and shares per path, worked like the top-level ones: checked + unknown = that language's repos, shares[path] = count / checked (null when checked is 0 or the path is not measured yet); unchecked repos are never counted as absent.
+- tracked_since in stats.json: path -> date of that path's first scan; history[] counts of 0 before that date were not measured, and the first-scan counts are a baseline, not added files.
+- sizes in stats.json holds two size schemes for AGENTS.md and CLAUDE.md: buckets (lt_2k <2048, 2k_8k, 8k_32k up to 32768 inclusive, gt_32k >32768 bytes) and bands (lt_1k <1024, 1k_4k, 4k_16k, 16k_32k up to 32768 inclusive, gt_32k >32768 bytes, unknown); the gt_32k counts of both are the same threshold (32 KiB = 32768 bytes).
+- sizes in stats.json, AGENTS.md and CLAUDE.md entries also bands: lt_1k, 1k_4k, 4k_16k, 16k_32k (up to 32768 inclusive), gt_32k (>32 KiB) and unknown (present, no size), counts summing to the number of repos with the file (KiB = 1024 bytes).
+- sizes in stats.json, AGENTS.md and CLAUDE.md entries also: n (known sizes), median, p25, p75 in bytes, buckets lt_2k (<2048), 2k_8k, 8k_32k (up to 32768 inclusive) and gt_32k (>32768) as counts summing to n, and unknown (present, size not known); n + unknown = repos with the file.
+- sizes in stats.json: per path, count, median_bytes, p25_bytes, p75_bytes and date of the scan, from the HEAD Content-Length of present files whose size is known, 0 included (count = those files only); 0 when none is known (e.g. the .cursor/rules/ directory).
+- small_files in stats.json: date, threshold_bytes (300) and per path count (present files with a known size under 300 bytes, 0 bytes included; size only), threshold_bytes, zero_bytes (present files whose HEAD Content-Length is 0; counted in count, size 0 bytes) and unknown_size (present files with no Content-Length, size unknown, not counted; size_unknown is the same number, kept for compatibility).
+- small_files top-level fields: agents_md_under_300, claude_md_under_300, agents_md_total, claude_md_total, threshold_bytes, date.
+- small_files example (2026-11-25): agents_md_under_300 35 of agents_md_total 570, claude_md_under_300 191 of claude_md_total 318, threshold_bytes 300, date 2026-11-25.
+- claude_agents_changes in stats.json: since (first scan date), date (= generated), claude_removed_agents_kept (repos whose CLAUDE.md went away since their first scan while AGENTS.md stayed), agents_added_claude_kept (repos that added AGENTS.md while CLAUDE.md stayed) and repos_claude_removed_agents_kept (owner/name list, length = claude_removed_agents_kept); a first scan is a baseline; presence only, no reasons.
+- method_changes in stats.json: an array of detection changes, each entry with the fields date, path, summary, commit and url. Entry: date 2026-11-13, path .cursor/rules, summary "redirect check tightened", commit 6887ed8, url https://github.com/formachines-ai/agentsmd-tracker/commit/6887ed8. A count change on that date for that path comes from how the scan reads the site, not from the repositories.
+- today.json removed entries with reason "method_change": the path is no longer detected after a method change (see method_changes); this is a detection change, not a removal by the repository, and it says nothing about whether a file was deleted.
+- Requests per repository: 18 at most (15 path HEADs + 1 .clinerules/ directory HEAD when the file is absent + 1 existence HEAD when every path is absent + 1 moved-detection HEAD; one thread, with an optional GitHub token (used only for the one repository-exists API call)). AI_POLICY.md and .github/AI_POLICY.md are presence and size only; days before their first scan count as 0; the first scan of a path is a baseline, not an added entry.
+- Method for combinations and small_files: counts come from presence and size only, via HEAD requests to public file URLs; file contents are not read.
+- sample in stats.json (an object; the former integer sample is now sample_size, the headline total M): target_per_language, languages, target_total, included (= sample_size), excluded_by_reason (forks, archived, other; included + their sum = target_total) and per_language (adds up to included). other = targeted but absent from the stored sample (duplicates across languages, not found or dropped at seeding), reason not recorded per repo.
+- schema_version 2 (2026-11-07): change_7d_pp is an object per path; null until 8 dated history rows (schema_version 1: change_7d_pp was a scalar).
+- schema_version 3 (2026-11-08, stats.json only; today.json stays at 2): "sample" is now an object; the former integer is "sample_size".
+- history[].pct and change_7d_pp in stats.json: pct = share of scanned repos with the path on that day, in % with 1 decimal (count / scanned x 100); change_7d_pp = per path, today's pct minus the pct 7 days earlier in percentage points, null until history has at least 8 dated rows.
+- history[].share_pct in stats.json: per file type, that day's count / scanned x 100 with 1 decimal, computed from the same row (same values as pct).
+- change_7d_pp in stats.json: per file type, share on the latest history day minus share on the day exactly 7 days earlier, 1 decimal; null for a type when that earlier day is missing.
+- first_seen in /repo/<owner>/<name>/index.json: per present path, the day it was first recorded as added for that repository ({"date": YYYY-MM-DD}); {"date": ..., "baseline": true} means the path was already present on the repository's own first_scanned day, so its real first appearance is unknown.
+- first_scanned in /repo/<owner>/<name>/index.json: YYYY-MM-DD, the earliest daily scan (data/history) that holds this repository; repositories added to the sample later have a later date than 2026-11-02.
+- history "added" / "removed" in stats.json: number of (repository, path) pairs whose file appeared / disappeared since the previous snapshot of the same repository, counted per day; a repository's first scan is a baseline and adds none.
+- removed / removed_count in today.json: files whose path was a definite 200 in the previous snapshot of the same repository and a definite 404 in today's fresh check (errors, partial or carried-over values and first scans never count); removed_count = length of removed; the home page shows the same count as "Removed in 24 h on <date>: K".
+- [today.json](https://agentsmd.formachines.ai/today.json): files added/removed since the previous scan
+- [feed.xml](https://agentsmd.formachines.ai/feed.xml): RSS of repositories that added AGENTS.md
+- [build.json](https://agentsmd.formachines.ai/build.json): build time, scan status, data-delayed flag
+- moved_to / moved_detected in /repo/<owner>/<name>/index.json: new owner/name if github.com/<owner>/<name> answered a 301/302 to a different repository (case-only changes ignored), and the first UTC date it was seen; both null when not moved. Data only, the card stays.
+- excluded_since / excluded_since_source on each stats.json denominator.excluded_repos entry and in /repo/<owner>/<name>/index.json: the date the repository left M. excluded_since_source is observed (the scan saw it leave M on that date), inferred_from_history (the date comes from the daily history counts, and for a moved repository from its moved_detected date, not from a scan of this repository leaving M) or unknown (history cannot bound it; excluded_since is null). Dates are never invented.
+- Repo card JSON: https://agentsmd.formachines.ai/repo/<owner>/<name>/index.json (same fields as the HTML card)
+
+## Pages
+- [Home](https://agentsmd.formachines.ai/): headline numbers, added-today feed, by-language table, by-day table, method
+- [Language page](https://agentsmd.formachines.ai/lang/<slug>/): every sampled repo of one language (e.g. /lang/go/, /lang/c-plus-plus/) with yes/no per tracked path, alphabetical
+- [Repo card](https://agentsmd.formachines.ai/repo/<owner>/<name>/): per-repository presence table with links
+- [Legal](https://agentsmd.formachines.ai/legal/): responsible person, data source, licence
+
+## Rules for reuse
+- Cite as "AGENTS.md Tracker, agentsmd.formachines.ai, <date>". Attribution satisfies CC BY 4.0.
+- Do not infer file contents from this site; follow the GitHub link and respect each repository's licence.
