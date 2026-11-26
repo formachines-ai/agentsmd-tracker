@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>AGENTS.md Tracker — new AGENTS.md files</title>
+<link>https://agentsmd.formachines.ai/</link>
+<atom:link href="https://agentsmd.formachines.ai/feed.xml" rel="self" type="application/rss+xml"/>
+<description>Top GitHub repositories that added an AGENTS.md since the previous daily scan. Built by AI agents (agent-team), responsible: Dmitry, formachines.ai.</description>
+<language>en</language>
+<lastBuildDate>Wed, 25 Nov 2026 05:30:12 +0000</lastBuildDate>
+<item>
+<title>nextlevelbuilder/ui-ux-pro-max-skill added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1464/</link>
+<guid isPermaLink="false">2026-11-25:nextlevelbuilder/ui-ux-pro-max-skill:AGENTS.md</guid>
+<pubDate>Wed, 25 Nov 2026 04:00:00 +0000</pubDate>
+<description>nextlevelbuilder/ui-ux-pro-max-skill (Python, 144,175 stars) now has an AGENTS.md (4,871 bytes). Repo card: https://agentsmd.formachines.ai/repo/nextlevelbuilder/ui-ux-pro-max-skill/</description>
+</item><item>
+<title>dotnet/machinelearning added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1467/</link>
+<guid isPermaLink="false">2026-11-25:dotnet/machinelearning:AGENTS.md</guid>
+<pubDate>Wed, 25 Nov 2026 04:00:00 +0000</pubDate>
+<description>dotnet/machinelearning (C#, 9,359 stars) now has an AGENTS.md (237 bytes). Repo card: https://agentsmd.formachines.ai/repo/dotnet/machinelearning/</description>
+</item><item>
+<title>apache/skywalking added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1262/</link>
+<guid isPermaLink="false">2026-11-21:apache/skywalking:AGENTS.md</guid>
+<pubDate>Sat, 21 Nov 2026 04:00:00 +0000</pubDate>
+<description>apache/skywalking (Java, 24,984 stars) now has an AGENTS.md (9 bytes). Repo card: https://agentsmd.formachines.ai/repo/apache/skywalking/</description>
+</item><item>
+<title>simdjson/simdjson added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1263/</link>
+<guid isPermaLink="false">2026-11-21:simdjson/simdjson:AGENTS.md</guid>
+<pubDate>Sat, 21 Nov 2026 04:00:00 +0000</pubDate>
+<description>simdjson/simdjson (C++, 24,496 stars) now has an AGENTS.md (6,442 bytes). Repo card: https://agentsmd.formachines.ai/repo/simdjson/simdjson/</description>
+</item><item>
+<title>opencv/opencv added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1238/</link>
+<guid isPermaLink="false">2026-11-20:opencv/opencv:AGENTS.md</guid>
+<pubDate>Fri, 20 Nov 2026 04:00:00 +0000</pubDate>
+<description>opencv/opencv (C++, 91,411 stars) now has an AGENTS.md (1,745 bytes). Repo card: https://agentsmd.formachines.ai/repo/opencv/opencv/</description>
+</item><item>
+<title>solidjs/solid added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1191/</link>
+<guid isPermaLink="false">2026-11-19:solidjs/solid:AGENTS.md</guid>
+<pubDate>Thu, 19 Nov 2026 04:00:00 +0000</pubDate>
+<description>solidjs/solid (TypeScript, 36,207 stars) now has an AGENTS.md (14,462 bytes). Repo card: https://agentsmd.formachines.ai/repo/solidjs/solid/</description>
+</item><item>
+<title>microsoft/TypeScript added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1188/</link>
+<guid isPermaLink="false">2026-11-18:microsoft/TypeScript:AGENTS.md</guid>
+<pubDate>Wed, 18 Nov 2026 04:00:00 +0000</pubDate>
+<description>microsoft/TypeScript (Go, 111,721 stars) now has an AGENTS.md (6,521 bytes). Repo card: https://agentsmd.formachines.ai/repo/microsoft/TypeScript/</description>
+</item><item>
+<title>jasontaylordev/CleanArchitecture added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1189/</link>
+<guid isPermaLink="false">2026-11-18:jasontaylordev/CleanArchitecture:AGENTS.md</guid>
+<pubDate>Wed, 18 Nov 2026 04:00:00 +0000</pubDate>
+<description>jasontaylordev/CleanArchitecture (C#, 20,701 stars) now has an AGENTS.md (7,144 bytes). Repo card: https://agentsmd.formachines.ai/repo/jasontaylordev/CleanArchitecture/</description>
+</item><item>
+<title>JustArchiNET/ArchiSteamFarm added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1190/</link>
+<guid isPermaLink="false">2026-11-18:JustArchiNET/ArchiSteamFarm:AGENTS.md</guid>
+<pubDate>Wed, 18 Nov 2026 04:00:00 +0000</pubDate>
+<description>JustArchiNET/ArchiSteamFarm (C#, 13,784 stars) now has an AGENTS.md (6,659 bytes). Repo card: https://agentsmd.formachines.ai/repo/JustArchiNET/ArchiSteamFarm/</description>
+</item><item>
+<title>NginxProxyManager/nginx-proxy-manager added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1177/</link>
+<guid isPermaLink="false">2026-11-17:NginxProxyManager/nginx-proxy-manager:AGENTS.md</guid>
+<pubDate>Tue, 17 Nov 2026 04:00:00 +0000</pubDate>
+<description>NginxProxyManager/nginx-proxy-manager (TypeScript, 34,615 stars) now has an AGENTS.md (6,955 bytes). Repo card: https://agentsmd.formachines.ai/repo/NginxProxyManager/nginx-proxy-manager/</description>
+</item><item>
+<title>glpi-project/glpi added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1179/</link>
+<guid isPermaLink="false">2026-11-17:glpi-project/glpi:AGENTS.md</guid>
+<pubDate>Tue, 17 Nov 2026 04:00:00 +0000</pubDate>
+<description>glpi-project/glpi (PHP, 6,548 stars) now has an AGENTS.md (729 bytes). Repo card: https://agentsmd.formachines.ai/repo/glpi-project/glpi/</description>
+</item><item>
+<title>stride3d/stride added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1149/</link>
+<guid isPermaLink="false">2026-11-16:stride3d/stride:AGENTS.md</guid>
+<pubDate>Mon, 16 Nov 2026 04:00:00 +0000</pubDate>
+<description>stride3d/stride (C#, 7,938 stars) now has an AGENTS.md (6,475 bytes). Repo card: https://agentsmd.formachines.ai/repo/stride3d/stride/</description>
+</item><item>
+<title>Zackriya-Solutions/meetily added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1148/</link>
+<guid isPermaLink="false">2026-11-14:Zackriya-Solutions/meetily:AGENTS.md</guid>
+<pubDate>Sat, 14 Nov 2026 04:00:00 +0000</pubDate>
+<description>Zackriya-Solutions/meetily (Rust, 32,382 stars) now has an AGENTS.md (6,600 bytes). Repo card: https://agentsmd.formachines.ai/repo/Zackriya-Solutions/meetily/</description>
+</item><item>
+<title>baomidou/mybatis-plus added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1147/</link>
+<guid isPermaLink="false">2026-11-13:baomidou/mybatis-plus:AGENTS.md</guid>
+<pubDate>Fri, 13 Nov 2026 04:00:00 +0000</pubDate>
+<description>baomidou/mybatis-plus (Java, 17,480 stars) now has an AGENTS.md (2,652 bytes). Repo card: https://agentsmd.formachines.ai/repo/baomidou/mybatis-plus/</description>
+</item><item>
+<title>RicoSuter/NSwag added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1145/</link>
+<guid isPermaLink="false">2026-11-12:RicoSuter/NSwag:AGENTS.md</guid>
+<pubDate>Thu, 12 Nov 2026 04:00:00 +0000</pubDate>
+<description>RicoSuter/NSwag (C#, 7,369 stars) now has an AGENTS.md (8,768 bytes). Repo card: https://agentsmd.formachines.ai/repo/RicoSuter/NSwag/</description>
+</item><item>
+<title>sds/overcommit added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1146/</link>
+<guid isPermaLink="false">2026-11-12:sds/overcommit:AGENTS.md</guid>
+<pubDate>Thu, 12 Nov 2026 04:00:00 +0000</pubDate>
+<description>sds/overcommit (Ruby, 4,004 stars) now has an AGENTS.md (819 bytes). Repo card: https://agentsmd.formachines.ai/repo/sds/overcommit/</description>
+</item><item>
+<title>paperless-ngx/paperless-ngx added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1138/</link>
+<guid isPermaLink="false">2026-11-11:paperless-ngx/paperless-ngx:AGENTS.md</guid>
+<pubDate>Wed, 11 Nov 2026 04:00:00 +0000</pubDate>
+<description>paperless-ngx/paperless-ngx (Python, 47,582 stars) now has an AGENTS.md (4,369 bytes). Repo card: https://agentsmd.formachines.ai/repo/paperless-ngx/paperless-ngx/</description>
+</item><item>
+<title>deskflow/deskflow added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1140/</link>
+<guid isPermaLink="false">2026-11-11:deskflow/deskflow:AGENTS.md</guid>
+<pubDate>Wed, 11 Nov 2026 04:00:00 +0000</pubDate>
+<description>deskflow/deskflow (C++, 30,483 stars) now has an AGENTS.md (109 bytes). Repo card: https://agentsmd.formachines.ai/repo/deskflow/deskflow/</description>
+</item><item>
+<title>dolphin-emu/dolphin added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1141/</link>
+<guid isPermaLink="false">2026-11-11:dolphin-emu/dolphin:AGENTS.md</guid>
+<pubDate>Wed, 11 Nov 2026 04:00:00 +0000</pubDate>
+<description>dolphin-emu/dolphin (C++, 15,757 stars) now has an AGENTS.md (454 bytes). Repo card: https://agentsmd.formachines.ai/repo/dolphin-emu/dolphin/</description>
+</item><item>
+<title>jruby/jruby added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1142/</link>
+<guid isPermaLink="false">2026-11-11:jruby/jruby:AGENTS.md</guid>
+<pubDate>Wed, 11 Nov 2026 04:00:00 +0000</pubDate>
+<description>jruby/jruby (Ruby, 3,926 stars) now has an AGENTS.md (8,400 bytes). Repo card: https://agentsmd.formachines.ai/repo/jruby/jruby/</description>
+</item><item>
+<title>protocolbuffers/protobuf added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1136/</link>
+<guid isPermaLink="false">2026-11-10:protocolbuffers/protobuf:AGENTS.md</guid>
+<pubDate>Tue, 10 Nov 2026 04:00:00 +0000</pubDate>
+<description>protocolbuffers/protobuf (C++, 72,149 stars) now has an AGENTS.md (8,108 bytes). Repo card: https://agentsmd.formachines.ai/repo/protocolbuffers/protobuf/</description>
+</item><item>
+<title>microsoft/playwright-mcp added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1137/</link>
+<guid isPermaLink="false">2026-11-10:microsoft/playwright-mcp:AGENTS.md</guid>
+<pubDate>Tue, 10 Nov 2026 04:00:00 +0000</pubDate>
+<description>microsoft/playwright-mcp (TypeScript, 38,996 stars) now has an AGENTS.md (4,023 bytes). Repo card: https://agentsmd.formachines.ai/repo/microsoft/playwright-mcp/</description>
+</item><item>
+<title>gethomepage/homepage added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1134/</link>
+<guid isPermaLink="false">2026-11-09:gethomepage/homepage:AGENTS.md</guid>
+<pubDate>Mon, 09 Nov 2026 04:00:00 +0000</pubDate>
+<description>gethomepage/homepage (JavaScript, 33,484 stars) now has an AGENTS.md (4,377 bytes). Repo card: https://agentsmd.formachines.ai/repo/gethomepage/homepage/</description>
+</item><item>
+<title>dotnet/maui added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1135/</link>
+<guid isPermaLink="false">2026-11-09:dotnet/maui:AGENTS.md</guid>
+<pubDate>Mon, 09 Nov 2026 04:00:00 +0000</pubDate>
+<description>dotnet/maui (C#, 23,330 stars) now has an AGENTS.md (1,513 bytes). Repo card: https://agentsmd.formachines.ai/repo/dotnet/maui/</description>
+</item><item>
+<title>FreeCAD/FreeCAD added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1133/</link>
+<guid isPermaLink="false">2026-11-08:FreeCAD/FreeCAD:AGENTS.md</guid>
+<pubDate>Sun, 08 Nov 2026 04:00:00 +0000</pubDate>
+<description>FreeCAD/FreeCAD (C++, 35,058 stars) now has an AGENTS.md (4,687 bytes). Repo card: https://agentsmd.formachines.ai/repo/FreeCAD/FreeCAD/</description>
+</item><item>
+<title>thedotmack/claude-mem added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1130/</link>
+<guid isPermaLink="false">2026-11-07:thedotmack/claude-mem:AGENTS.md</guid>
+<pubDate>Sat, 07 Nov 2026 04:00:00 +0000</pubDate>
+<description>thedotmack/claude-mem (TypeScript, 110,445 stars) now has an AGENTS.md (1,731 bytes). Repo card: https://agentsmd.formachines.ai/repo/thedotmack/claude-mem/</description>
+</item><item>
+<title>Leaflet/Leaflet added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1132/</link>
+<guid isPermaLink="false">2026-11-07:Leaflet/Leaflet:AGENTS.md</guid>
+<pubDate>Sat, 07 Nov 2026 04:00:00 +0000</pubDate>
+<description>Leaflet/Leaflet (JavaScript, 45,805 stars) now has an AGENTS.md (1,278 bytes). Repo card: https://agentsmd.formachines.ai/repo/Leaflet/Leaflet/</description>
+</item><item>
+<title>doctrine/dbal added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1128/</link>
+<guid isPermaLink="false">2026-11-06:doctrine/dbal:AGENTS.md</guid>
+<pubDate>Fri, 06 Nov 2026 04:00:00 +0000</pubDate>
+<description>doctrine/dbal (PHP, 9,701 stars) now has an AGENTS.md (3,255 bytes). Repo card: https://agentsmd.formachines.ai/repo/doctrine/dbal/</description>
+</item><item>
+<title>chef/chef added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1129/</link>
+<guid isPermaLink="false">2026-11-06:chef/chef:AGENTS.md</guid>
+<pubDate>Fri, 06 Nov 2026 04:00:00 +0000</pubDate>
+<description>chef/chef (Ruby, 8,259 stars) now has an AGENTS.md (950 bytes). Repo card: https://agentsmd.formachines.ai/repo/chef/chef/</description>
+</item><item>
+<title>headroomlabs-ai/headroom added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1126/</link>
+<guid isPermaLink="false">2026-11-05:headroomlabs-ai/headroom:AGENTS.md</guid>
+<pubDate>Thu, 05 Nov 2026 04:00:00 +0000</pubDate>
+<description>headroomlabs-ai/headroom (Python, 78,645 stars) now has an AGENTS.md (3,494 bytes). Repo card: https://agentsmd.formachines.ai/repo/headroomlabs-ai/headroom/</description>
+</item><item>
+<title>trpc/trpc added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1127/</link>
+<guid isPermaLink="false">2026-11-05:trpc/trpc:AGENTS.md</guid>
+<pubDate>Thu, 05 Nov 2026 04:00:00 +0000</pubDate>
+<description>trpc/trpc (TypeScript, 40,761 stars) now has an AGENTS.md (3,531 bytes). Repo card: https://agentsmd.formachines.ai/repo/trpc/trpc/</description>
+</item><item>
+<title>notepad-plus-plus/notepad-plus-plus added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1124/</link>
+<guid isPermaLink="false">2026-11-04:notepad-plus-plus/notepad-plus-plus:AGENTS.md</guid>
+<pubDate>Wed, 04 Nov 2026 04:00:00 +0000</pubDate>
+<description>notepad-plus-plus/notepad-plus-plus (C++, 29,771 stars) now has an AGENTS.md (1,156 bytes). Repo card: https://agentsmd.formachines.ai/repo/notepad-plus-plus/notepad-plus-plus/</description>
+</item><item>
+<title>nats-io/nats-server added AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/go/1125/</link>
+<guid isPermaLink="false">2026-11-04:nats-io/nats-server:AGENTS.md</guid>
+<pubDate>Wed, 04 Nov 2026 04:00:00 +0000</pubDate>
+<description>nats-io/nats-server (Go, 20,986 stars) now has an AGENTS.md (2,186 bytes). Repo card: https://agentsmd.formachines.ai/repo/nats-io/nats-server/</description>
+</item><item>
+<title>Baseline 2026-11-02: 540 of 1922 top repos have AGENTS.md</title>
+<link>https://agentsmd.formachines.ai/</link>
+<guid isPermaLink="false">baseline:2026-11-02</guid>
+<pubDate>Mon, 02 Nov 2026 04:00:00 +0000</pubDate>
+<description>Tracking started. 540 of 1922 scanned repositories (28.1 %) had an AGENTS.md on the first day. New files appear here from the second day on.</description>
+</item>
+</channel>
+</rss>

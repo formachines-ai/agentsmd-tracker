@@ -1,0 +1,344 @@
+{
+ "repo": "owncloud/core",
+ "owner": "owncloud",
+ "name": "core",
+ "language": "PHP",
+ "stars": 8837,
+ "default_branch": "master",
+ "status": "ok",
+ "checked": "2026-11-25T04:34:39Z",
+ "files": {
+  "AGENTS.md": {
+   "present": true,
+   "size": 4142,
+   "url": "https://github.com/owncloud/core/blob/master/AGENTS.md",
+   "lang_share": {
+    "count": 26,
+    "total": 191,
+    "pct": 13.6,
+    "date": "2026-11-25",
+    "language": "PHP",
+    "page": "https://agentsmd.formachines.ai/lang/php/",
+    "measured": true
+   },
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true,
+   "go_url": "https://agentsmd.formachines.ai/go/754/"
+  },
+  "CLAUDE.md": {
+   "present": true,
+   "size": 9,
+   "url": "https://github.com/owncloud/core/blob/master/CLAUDE.md",
+   "lang_share": {
+    "count": 20,
+    "total": 191,
+    "pct": 10.5,
+    "date": "2026-11-25",
+    "language": "PHP",
+    "page": "https://agentsmd.formachines.ai/lang/php/",
+    "measured": true
+   },
+   "first_seen": "2026-11-02",
+   "first_seen_at_first_scan": true,
+   "go_url": "https://agentsmd.formachines.ai/go/755/"
+  },
+  ".cursorrules": {
+   "present": false,
+   "size": null,
+   "url": null,
+   "lang_share": {
+    "count": 0,
+    "total": 191,
+    "pct": 0.0,
+    "date": "2026-11-25",
+    "language": "PHP",
+    "page": "https://agentsmd.formachines.ai/lang/php/",
+    "measured": true
+   }
+  },
+  ".cursor/rules": {
+   "present": false,
+   "size": null,
+   "url": null,
+   "lang_share": {
+    "count": 4,
+    "total": 191,
+    "pct": 2.1,
+    "date": "2026-11-25",
+    "language": "PHP",
+    "page": "https://agentsmd.formachines.ai/lang/php/",
+    "measured": true
+   }
+  },
+  ".github/copilot-instructions.md": {
+   "present": false,
+   "size": null,
+   "url": null,
+   "lang_share": {
+    "count": 11,
+    "total": 191,
+    "pct": 5.8,
+    "date": "2026-11-25",
+    "language": "PHP",
+    "page": "https://agentsmd.formachines.ai/lang/php/",
+    "measured": true
+   }
+  },
+  "llms.txt": {
+   "present": false,
+   "size": null,
+   "url": null,
+   "lang_share": {
+    "count": 0,
+    "total": 191,
+    "pct": 0.0,
+    "date": "2026-11-25",
+    "language": "PHP",
+    "page": "https://agentsmd.formachines.ai/lang/php/",
+    "measured": true
+   }
+  },
+  "GEMINI.md": {
+   "present": false,
+   "size": null,
+   "url": null,
+   "lang_share": {
+    "count": 2,
+    "total": 191,
+    "pct": 1.0,
+    "date": "2026-11-25",
+    "language": "PHP",
+    "page": "https://agentsmd.formachines.ai/lang/php/",
+    "measured": true
+   }
+  },
+  ".windsurfrules": {
+   "present": false,
+   "size": null,
+   "url": null,
+   "lang_share": {
+    "count": 0,
+    "total": 191,
+    "pct": 0.0,
+    "date": "2026-11-25",
+    "language": "PHP",
+    "page": "https://agentsmd.formachines.ai/lang/php/",
+    "measured": true
+   }
+  },
+  "AI_POLICY.md": {
+   "present": false,
+   "size": null,
+   "url": null,
+   "lang_share": {
+    "count": 1,
+    "total": 191,
+    "pct": 0.5,
+    "date": "2026-11-25",
+    "language": "PHP",
+    "page": "https://agentsmd.formachines.ai/lang/php/",
+    "measured": true
+   },
+   "tracked_since": "2026-11-16"
+  },
+  ".github/AI_POLICY.md": {
+   "present": false,
+   "size": null,
+   "url": null,
+   "lang_share": {
+    "count": 0,
+    "total": 191,
+    "pct": 0.0,
+    "date": "2026-11-25",
+    "language": "PHP",
+    "page": "https://agentsmd.formachines.ai/lang/php/",
+    "measured": true
+   },
+   "tracked_since": "2026-11-16"
+  },
+  ".github/instructions": {
+   "present": false,
+   "size": null,
+   "url": null,
+   "lang_share": {
+    "count": 4,
+    "total": 191,
+    "pct": 2.1,
+    "date": "2026-11-25",
+    "language": "PHP",
+    "page": "https://agentsmd.formachines.ai/lang/php/",
+    "measured": true
+   },
+   "tracked_since": "2026-11-19"
+  },
+  ".claude/rules": {
+   "present": false,
+   "size": null,
+   "url": null,
+   "lang_share": {
+    "count": 2,
+    "total": 191,
+    "pct": 1.0,
+    "date": "2026-11-25",
+    "language": "PHP",
+    "page": "https://agentsmd.formachines.ai/lang/php/",
+    "measured": true
+   },
+   "tracked_since": "2026-11-19"
+  },
+  ".clinerules": {
+   "present": false,
+   "size": null,
+   "url": null,
+   "lang_share": {
+    "count": 0,
+    "total": 191,
+    "pct": 0.0,
+    "date": "2026-11-25",
+    "language": "PHP",
+    "page": "https://agentsmd.formachines.ai/lang/php/",
+    "measured": true
+   },
+   "tracked_since": "2026-11-23"
+  },
+  ".windsurf/rules": {
+   "present": false,
+   "size": null,
+   "url": null,
+   "lang_share": {
+    "count": 1,
+    "total": 191,
+    "pct": 0.5,
+    "date": "2026-11-25",
+    "language": "PHP",
+    "page": "https://agentsmd.formachines.ai/lang/php/",
+    "measured": true
+   },
+   "tracked_since": "2026-11-23"
+  },
+  ".agents": {
+   "present": false,
+   "size": null,
+   "url": null,
+   "lang_share": {
+    "count": 10,
+    "total": 191,
+    "pct": 5.2,
+    "date": "2026-11-25",
+    "language": "PHP",
+    "page": "https://agentsmd.formachines.ai/lang/php/",
+    "measured": true
+   },
+   "tracked_since": "2026-11-23"
+  }
+ },
+ "language_share": {
+  "AGENTS.md": {
+   "count": 26,
+   "total": 191,
+   "pct": 13.6,
+   "date": "2026-11-25"
+  },
+  "CLAUDE.md": {
+   "count": 20,
+   "total": 191,
+   "pct": 10.5,
+   "date": "2026-11-25"
+  },
+  ".cursorrules": {
+   "count": 0,
+   "total": 191,
+   "pct": 0.0,
+   "date": "2026-11-25"
+  },
+  ".cursor/rules": {
+   "count": 4,
+   "total": 191,
+   "pct": 2.1,
+   "date": "2026-11-25"
+  },
+  ".github/copilot-instructions.md": {
+   "count": 11,
+   "total": 191,
+   "pct": 5.8,
+   "date": "2026-11-25"
+  },
+  "llms.txt": {
+   "count": 0,
+   "total": 191,
+   "pct": 0.0,
+   "date": "2026-11-25"
+  },
+  "GEMINI.md": {
+   "count": 2,
+   "total": 191,
+   "pct": 1.0,
+   "date": "2026-11-25"
+  },
+  ".windsurfrules": {
+   "count": 0,
+   "total": 191,
+   "pct": 0.0,
+   "date": "2026-11-25"
+  },
+  "AI_POLICY.md": {
+   "count": 1,
+   "total": 191,
+   "pct": 0.5,
+   "date": "2026-11-25"
+  },
+  ".github/AI_POLICY.md": {
+   "count": 0,
+   "total": 191,
+   "pct": 0.0,
+   "date": "2026-11-25"
+  },
+  ".github/instructions": {
+   "count": 4,
+   "total": 191,
+   "pct": 2.1,
+   "date": "2026-11-25"
+  },
+  ".claude/rules": {
+   "count": 2,
+   "total": 191,
+   "pct": 1.0,
+   "date": "2026-11-25"
+  },
+  ".clinerules": {
+   "count": 0,
+   "total": 191,
+   "pct": 0.0,
+   "date": "2026-11-25"
+  },
+  ".windsurf/rules": {
+   "count": 1,
+   "total": 191,
+   "pct": 0.5,
+   "date": "2026-11-25"
+  },
+  ".agents": {
+   "count": 10,
+   "total": 191,
+   "pct": 5.2,
+   "date": "2026-11-25"
+  }
+ },
+ "first_seen": {
+  "AGENTS.md": {
+   "date": "2026-11-02",
+   "baseline": true
+  },
+  "CLAUDE.md": {
+   "date": "2026-11-02",
+   "baseline": true
+  }
+ },
+ "first_scanned": "2026-11-02",
+ "moved_to": null,
+ "moved_detected": null,
+ "excluded_since": null,
+ "excluded_since_source": null,
+ "page": "https://agentsmd.formachines.ai/repo/owncloud/core/",
+ "license": "CC BY 4.0"
+}
