@@ -1243,11 +1243,12 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
             + '</li>' for x in removed) + "</ul>"
     removed_html += "".join(f'<p class="muted">Method change {esc(m["date"])}: <code>{esc(m["path"])}</code> detection, {esc(m["summary"])} (a change in how the scan reads the site, not in the repositories); <a href="{esc(m["url"])}">commit {esc(m["commit"])}</a>.</p>' for m in METHOD_CHANGES)
     rl = sorted({(x["owner"], x["name"]) for x in removed})
-    removed_links = (" · " + ", ".join(f'<a href="/repo/{esc(o)}/{esc(n)}/">{esc(o)}/{esc(n)}</a>' for o, n in rl)) if rl else ""
+    removed_links = (" · " + ", ".join(f'<a href="/repo/{esc(o)}/{esc(n)}/?src=removed">{esc(o)}/{esc(n)}</a>' for o, n in rl)) if rl else " · none"
     today_sec = f"""<section id="today">
 <h2>Added today <span class="muted">(scan of {esc(today.get('date', ''))} UTC)</span></h2>
 {today_html}
 {removed_html}
+<h3>Removed in 24 h</h3>
 <p class="asof" id="removed-24h">Removed in 24 h on {esc(gen_raw[:10])}: {len(removed)}{removed_links}</p>
 <p class="muted">Machine-readable: <a href="/today.json">today.json</a> · <a href="/stats.json">stats.json</a> · <a href="/feed.xml">RSS of new AGENTS.md files</a>.</p>
 </section>"""
@@ -1542,6 +1543,17 @@ def render_site(repos: list[dict], agg: dict, history: list[dict], today: dict, 
 <guid isPermaLink="false">{xml_escape(d['date'] + ':' + x['full_name'] + ':' + x['path'])}</guid>
 <pubDate>{_rfc822(d['date'])}</pubDate>
 <description>{xml_escape(f"{x['full_name']} ({x['language']}, {x['stars']:,} stars) now has an AGENTS.md" + (f" ({x['size']:,} bytes)" if x.get('size') else '') + f". Repo card: {SITE_BASE}/repo/{x['owner']}/{x['name']}/")}</description>
+</item>""")
+    for d in reversed(history[-FEED_DAYS:]):
+        for x in sorted(annotate_removed(d.get("removed", []), d.get("date")), key=lambda x: -x["stars"]):
+            if x.get("reason") == "method_change":
+                continue
+            items.append(f"""<item>
+<title>Removed: {xml_escape(x['full_name'])} {xml_escape(x['path'])}</title>
+<link>{xml_escape(SITE_BASE + '/repo/' + x['owner'] + '/' + x['name'] + '/?src=removed')}</link>
+<guid isPermaLink="false">{xml_escape('removed:' + d['date'] + ':' + x['full_name'] + ':' + x['path'])}</guid>
+<pubDate>{_rfc822(d['date'])}</pubDate>
+<description>{xml_escape(f"{x['full_name']} ({x['language']}, {x['stars']:,} stars): {x['path']} was present in the previous snapshot and is absent in the scan of {d['date']}.")}</description>
 </item>""")
     if history:
         d0 = history[0]

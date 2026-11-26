@@ -50,6 +50,8 @@ Runs every `tests/test_*.py` from the repository root. Offline and read-only: no
 written to the checkout (tests that build use a temp copy), so it also passes after `chmod -R a-w .`. Python 3.12
 standard library only.
 
+`tests/test_removed.py` (T-0254): removed path listed; repo not checked today and first scan not listed; `/` has "Removed in 24 h" with `?src=removed` links or "none"; `feed.xml` removal items start with "Removed:".
+
 `tests/test_sample_accounting.py` (T-0244): the note `#sample-accounting` on `/` (M, date, repos left out by status) equals `stats.json` `denominator` (`total` = `sample_size`; M + excluded = total).
 
 `tests/test_home_order.py` (T-0246): on `/` the by-language table and the static "Find a repository" line (links every `/lang/` page, names `/repo/<owner>/<name>/`) come before the first per-file card; every `/lang/` link resolves.

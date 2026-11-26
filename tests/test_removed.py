@@ -62,6 +62,23 @@ class RemovedTest(unittest.TestCase):
         a, r = build.diff_snapshots(REPO, prev, new)
         self.assertEqual([(x["full_name"], x["path"]) for x in r], [("o/n", "AGENTS.md")])
 
+    def test_removed_listed_unchecked_and_first_scan_not(self):
+        """Three cases: removed path listed; repo not checked today (old snapshot kept, no new one) not listed; first scan not listed."""
+        a, r = build.diff_snapshots(REPO, snap(**{"AGENTS.md": PRESENT}), snap())
+        self.assertEqual(len(r), 1)
+        self.assertEqual(build.diff_snapshots(REPO, snap(**{"AGENTS.md": PRESENT}), {"status": "error", "files": {}}), ([], []))
+        self.assertEqual(build.diff_snapshots(REPO, None, snap()), ([], []))
+
+    def test_published_links_and_feed(self):
+        page = (ROOT / "public" / "index.html").read_text()
+        self.assertIn("<h3>Removed in 24 h</h3>", page)
+        sec = page.split('id="removed-24h">')[1].split("</p>")[0]
+        if "none" not in sec:
+            self.assertIn("?src=removed", sec)
+        feed = (ROOT / "public" / "feed.xml").read_text()
+        for t in re.findall(r"<title>(Removed:[^<]*)</title>", feed):
+            self.assertTrue(t.startswith("Removed:"))
+
     def test_published(self):
         d = json.loads((ROOT / "public" / "today.json").read_text())
         self.assertIsInstance(d["removed"], list)
